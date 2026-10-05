@@ -163,7 +163,7 @@ export function sceneNavigationRegression(test: typeof Test, expect: typeof Expe
     for(const lesson of book.lessons)for(const [index,scene]of lesson.scenes.entries()){
       await page.evaluate(hash=>{location.hash=hash;},new URL(url(lesson.id,'text',index+1),'http://fixture.invalid').hash);
       await expect(page.locator('#scene-content')).toHaveAttribute('data-scene-id',scene.id);await expect(page.locator('#reading-save-status')).toHaveAttribute('data-state','saved');
-      await page.locator('#text-show-original').check();await assertSceneGallery(page,lesson.id,scene.id,expect);scenes++;figures+=sceneFigures(lesson.id,scene.id).length;
+      await page.locator('#text-show-original').check();await assertSceneGallery(page,lesson.id,scene.id,expect);scenes++;figures+=sceneFigures(lesson.id,scene.id,(await loadActiveHsk1ForTests()).registry).length;
       await page.locator('#text-show-original').uncheck();await assertGalleryHidden(page,lesson.id,scene.id,expect);await expect(page.locator('[data-scene-audio]')).toBeEnabled();
       await page.locator('#text-show-original').check();
     }

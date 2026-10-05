@@ -22,6 +22,17 @@ for (const level of [2, 3] as const) for (let number = 1; number <= (level === 2
     await page.goto(`/#view=lesson&level=${level}&lesson=${number}&section=vocab`);
     await expect(page.locator('.vocabulary-item')).toHaveCount(lesson.vocabulary.length);
     for (const word of lesson.vocabulary) await expect(page.locator(`[data-word-id="${word.id}"] .word-open`)).toContainText(word.vi);
+    await page.goto(`/#view=lesson&level=${level}&lesson=${number}&section=grammar`);
+    const grammar = page.locator('.lesson-section.grammar');
+    await expect(grammar).toHaveCount(lesson.grammar.length);
+    for (const [index, item] of lesson.grammar.entries()) {
+      await expect(grammar.nth(index)).toContainText(item.explanation.vi);
+      const source = lesson.grammarSourceExplanations?.find(source => source.grammarId === item.id);
+      if (source) await expect(grammar.nth(index).locator('.grammar-source-explanation')).toContainText(source.explanation.vi);
+      const presentation = lesson.grammarPresentations?.find(presentation => presentation.grammarId === item.id);
+      for (const [groupIndex, group] of (presentation?.groups ?? []).entries()) await expect(grammar.nth(index).locator('.grammar-explanation-group').nth(groupIndex)).toContainText(group.explanation.vi);
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
     expect(errors).toEqual([]);
   });
 }
@@ -40,6 +51,9 @@ for (let number = 1; number <= 15; number++) test(`accepted HSK1 lesson ${number
   await page.goto(`/#view=lesson&level=1&lesson=${number}&section=vocab`);
   await expect(page.locator('.textbook-vocab-grid .vocab-card')).toHaveCount(lesson.vocab.length);
   for (const word of lesson.vocab) await expect(page.locator(`[data-word-id="${word.id}"] .vocab-back`)).toContainText(word.vn);
+  await page.goto(`/#view=lesson&level=1&lesson=${number}&section=grammar`);
+  for (const grammar of lesson.grammar) await expect(page.locator('#module-host')).toContainText(grammar.desc);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   expect(errors).toEqual([]);
 });
 for (const width of [320, 390, 768, 1440]) for (const [level, number] of [[1, 1], [2, 2], [3, 10]]) test(`official VI grammar HSK${level} at ${width}px keeps all explanations readable`, async ({page}) => {

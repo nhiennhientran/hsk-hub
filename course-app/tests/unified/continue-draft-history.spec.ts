@@ -18,13 +18,19 @@ const stored = (page: Page, level: 2 | 3): Promise<State> =>
   page.evaluate(key => JSON.parse(localStorage.getItem(key)!).data, configs[level].storageKey);
 
 for (const level of [2, 3] as const) {
-  test(`HSK${level} inactive legacy draft can repair an answer and captures only the current shown questions`, async ({page}) => {
+  test(`HSK${level} legacy draft retains answers until current adopted questions are acknowledged`, async ({page}) => {
     const lesson = lessons[level], questions = lesson.homework.filter(q => q.part === 'vocabGrammar'), q = questions[0]!, key = lesson.id + ':vocabGrammar';
     const initial = blank(configs[level]); initial.drafts[key] = {answers: {[q.id]: 99}, updatedAt: 500};
     await seed(page, level, initial); await page.goto(`/#view=homework&level=${level}&lesson=1&part=vocabGrammar`);
-    const form = page.locator('#assignment'); await expect(form).toHaveAttribute('data-draft-question-snapshot', 'current');
+    const form = page.locator('#assignment'); await expect(form).toHaveAttribute('data-draft-question-snapshot', 'missing');
+    await expect(form.locator('fieldset').first()).toBeDisabled();
+    expect(await stored(page, level)).toEqual(initial);
+    await page.getByRole('button', {name: '按当前题目继续草稿'}).click();
+    await expect(form).toHaveAttribute('data-draft-question-snapshot', 'saved');
     await expect(form.locator('fieldset').first()).toBeEnabled();
-    await expect(page.getByRole('button', {name: '按当前题目继续草稿'})).toHaveCount(0);
+    const acknowledged = await stored(page, level);
+    expect(acknowledged.drafts[key]!.answers).toEqual(initial.drafts[key]!.answers);
+    expect(acknowledged.drafts[key]!.questions).toEqual(questions);
     await form.locator(`input[name="${q.id}"][value="${q.answer}"]`).check();
     await expect(form).toHaveAttribute('data-draft-question-snapshot', 'saved');
     await expect(page.locator('.save-status')).toHaveAttribute('data-status', 'saved');
