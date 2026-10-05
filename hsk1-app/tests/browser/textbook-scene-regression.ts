@@ -48,6 +48,33 @@ async function assertGalleryHidden(page:Page,lesson:number,sceneId:string,expect
 
 /** Shared native regression: run against both legacy lifecycle and unified bridge. */
 export function sceneNavigationRegression(test: typeof Test, expect: typeof Expect, url: (lesson: number, section: string, scene?: number) => string) {
+  test('HSK1 selected scene labels remain readable while hovered', async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await seedNonempty(page);
+    await page.goto(url(1, 'text', 1));
+    await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');
+    const tabs = page.locator('[data-scene-tab]');
+    for (let index = 0; index < await tabs.count(); index++) {
+      const tab = tabs.nth(index);
+      await tab.click();
+      await expect(tab).toHaveAttribute('aria-selected', 'true');
+      await tab.hover();
+      const contrast = await tab.evaluate(node => {
+        const style = getComputedStyle(node);
+        const luminance = (color: string) => {
+          const rgb = color.match(/[\d.]+/g)!.slice(0, 3).map(Number).map(value => {
+            const channel = value / 255;
+            return channel <= .04045 ? channel / 12.92 : ((channel + .055) / 1.055) ** 2.4;
+          });
+          return .2126 * rgb[0]! + .7152 * rgb[1]! + .0722 * rgb[2]!;
+        };
+        const foreground = luminance(style.color), background = luminance(style.backgroundColor);
+        return (Math.max(foreground, background) + .05) / (Math.min(foreground, background) + .05);
+      });
+      expect(contrast, `scene ${index + 1} hovered label contrast`).toBeGreaterThanOrEqual(4.5);
+    }
+    await page.screenshot({ path: test.info().outputPath('selected-scene-hover.png'), fullPage: true });
+  });
   for (const width of [390, 1280]) for (const mode of ['listen', 'hide'] as const) {
     test(`HSK1 ${mode} retains hidden dialogue across scene history at ${width}px`, async ({ page }) => {
       await page.setViewportSize({ width, height: 900 });

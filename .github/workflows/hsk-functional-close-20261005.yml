@@ -1,0 +1,51 @@
+name: HSK functional close scoped checks
+on:
+  push:
+    branches: ['work/hsk-functional-close-20261005']
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  functional:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Install locked app dependencies
+        run: npm ci --prefix course-app && npm ci --prefix hsk1-app
+      - name: Build existing applications
+        run: npm run build --prefix course-app && npm run build --prefix hsk1-app
+      - name: Install browser and Chinese fonts
+        working-directory: course-app
+        run: |
+          node node_modules/@playwright/test/cli.js install --with-deps ${{ matrix.browser }}
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Learning drafts, listening and shared scene navigation
+        working-directory: course-app
+        run: |
+          node tools/run-browser.mjs --config=playwright.unified.config.ts --project=${{ matrix.browser }} tests/unified/continue-flow-navigation.spec.ts tests/unified/continue-draft-history.spec.ts tests/unified/hsk1-scene-navigation.spec.ts
+      - name: Retained HSK1 navigation and scene readability
+        if: ${{ !cancelled() }}
+        working-directory: hsk1-app
+        run: |
+          node tools/run-checkpoint.mjs browser --project=${{ matrix.browser }} tests/browser/navigation.spec.ts tests/browser/textbook-scene-navigation.spec.ts
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-functional-close-${{ matrix.browser }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: |
+            course-app/.repro-output/unified-browser.json
+            hsk1-app/.repro-output/step8-browser.json
+            course-app/test-results/
+            hsk1-app/test-results/

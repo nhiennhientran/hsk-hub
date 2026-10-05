@@ -50,7 +50,8 @@
 .textbook-body .textbook-scene-picker { display: none; }
 .textbook-scene-tabs { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
 .textbook-scene-tabs button { flex: 1 1 160px; }
-.textbook-scene-tabs [aria-selected="true"] { color: white; background: #245f46; }
+.textbook-scene-tabs button[aria-selected="true"],
+.textbook-scene-tabs button[aria-selected="true"]:hover:not(:disabled) { color: white; background: #245f46; border-color: #245f46; }
 #scene-select { max-width: 100%; }
 .textbook-scene-figures { display: flex; flex-wrap: wrap; align-items: start; gap: 16px; margin: 20px 0; }
 .textbook-scene-figures[hidden] { display: none; }

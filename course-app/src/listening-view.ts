@@ -23,7 +23,7 @@ export function mountListening(
 ): () => void {
   const root = el("article", undefined, "listening-module");
   root.append(
-    el("h1", copy("听一题，懂一句", "Nghe từng câu, hiểu từng ý")),
+    el("h1", copy("听课文，答问题", "Nghe bài khóa, trả lời câu hỏi")),
     el(
       "p",
       copy(
@@ -196,7 +196,7 @@ export function mountListening(
           `Đã phát thành công ${round.playCounts[id!] ?? 0} lần`,
         ),
       );
-    const play = button(copy("播放原音", "Phát âm thanh gốc"), async () => {
+    const play = button(copy("播放本篇原音", "Phát âm thanh gốc toàn bài khóa"), async () => {
       if (playing || retired || submitting || !round) return;
       playing = true;
       play.disabled = true;
@@ -220,7 +220,14 @@ export function mountListening(
         );
       }
     });
-    card.append(play, plays);
+    card.append(
+      play,
+      el("p", copy(
+        "播放完整课文，请根据问题寻找相关信息。",
+        "Nghe toàn bộ bài khóa và tìm thông tin liên quan đến câu hỏi.",
+      )),
+      plays,
+    );
     const field = el("fieldset"),
       legend = el("legend", copy("选择答案", "Chọn đáp án"));
     field.append(legend);
