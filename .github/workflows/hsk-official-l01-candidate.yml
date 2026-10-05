@@ -1,0 +1,63 @@
+name: HSK1 real official Vietnamese partial candidate
+on:
+  push:
+    branches: ['work/hsk-engineering-phase3-20261005']
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash --noprofile --norc -e -o pipefail {0}
+jobs:
+  l01-candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    env:
+      HSK_L01_BROWSER: ${{ matrix.browser }}
+      HSK_L01_OUTPUT: ${{ github.workspace }}/hsk1-app/.repro-output/continue-phase5/${{ matrix.browser }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Bind real checkout and inactive default before execution
+        run: node hsk1-app/tools/record-official-l01-candidate.mjs before
+      - name: Install exact locked app dependencies
+        run: npm ci --prefix hsk1-app && npm ci --prefix course-app
+      - name: Validate actual candidate and immutable source identities
+        working-directory: hsk1-app
+        run: |
+          node --experimental-strip-types --test --test-reporter=tap tests/official-vi-l01-candidate.test.mjs 2>&1 | tee "$HSK_L01_OUTPUT/candidate-units.log"
+          npm run check
+          npm run index:check
+          npm run assets:check
+          node node_modules/.bin/tsc -p tests/browser/tsconfig.l01-candidate.json
+      - name: Install real browser and Chinese fonts
+        working-directory: hsk1-app
+        run: node node_modules/@playwright/test/cli.js install --with-deps $HSK_L01_BROWSER && sudo apt-get install -y fonts-noto-cjk
+      - name: Compile explicit candidate fixture with actual application modules
+        working-directory: hsk1-app
+        run: |
+          node node_modules/vite/bin/vite.js build --config tests/browser/official-vi-l01-candidate.vite.config.ts 2>&1 | tee "$HSK_L01_OUTPUT/compiled-build.log"
+          node tools/record-official-l01-candidate.mjs builds
+          node node_modules/@playwright/test/cli.js test --config playwright.l01-candidate.config.ts --list --reporter=json > "$HSK_L01_OUTPUT/native-collection.json"
+      - name: Execute real rendered vocabulary dialogue and retained history
+        working-directory: hsk1-app
+        env:
+          DEBUG: pw:browser
+        run: node node_modules/@playwright/test/cli.js test --config playwright.l01-candidate.config.ts 2>&1 | tee "$HSK_L01_OUTPUT/browser-launches.log"
+      - name: Reject absent skipped retried or mismatched evidence
+        if: always()
+        run: node hsk1-app/tools/record-official-l01-candidate.mjs after
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk1-real-l01-${{ matrix.browser }}-attempt-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: error
+          path: hsk1-app/.repro-output/continue-phase5/${{ matrix.browser }}/

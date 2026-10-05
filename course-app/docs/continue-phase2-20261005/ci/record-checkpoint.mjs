@@ -64,7 +64,8 @@ if(phase==='before'){
   const launchLogs=nativePlan.map(plan=>readFileSync(join(out,plan.scope+'-browser-launches.log'),'utf8')).join('\n');
   const actualBrowserLaunch=verifyBrowserLaunchLog(launchLogs,{browser,entry:builds.installedBrowser});
   const units=[];
-  for(const [app,expected]of [['course',225],['hsk1',638]]){
+  // Six real L01 candidate regressions extend the existing 638 HSK1 cases.
+  for(const [app,expected]of [['course',225],['hsk1',644]]){
     const path=join(out,app+'-units.log'),text=readFileSync(path,'utf8'),counts={};
     for(const key of ['tests','pass','fail','cancelled','skipped'])counts[key]=Number([...text.matchAll(new RegExp('^(?:ℹ |# )'+key+' (\\d+)\\s*$','gm'))].at(-1)?.[1]);
     assert.deepEqual(counts,{tests:expected,pass:expected,fail:0,cancelled:0,skipped:0},'Unit completion mismatch');

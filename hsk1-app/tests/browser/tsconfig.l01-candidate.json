@@ -1,0 +1,5 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": { "types": ["node", "vite/client"] },
+  "include": ["official-vi-l01-candidate.spec.ts", "official-vi-l01-candidate.vite.config.ts", "fixtures/official-vi-l01-candidate.ts", "../../playwright.l01-candidate.config.ts"]
+}
