@@ -4,9 +4,10 @@ import raw3 from '../../content/hsk3/lesson-10.json' with {type:'json'};
 import {configs} from '../../src/config.ts';
 import {blank,grade,recordAttempt,type State} from '../../src/state.ts';
 import type {Lesson,Question} from '../../src/types.ts';
+import {currentViLesson} from './official-vi-expectations.ts';
 
 // Synthetic older display snapshots exercise history ownership, not official VI acceptance.
-const lessons={2:raw2 as unknown as Lesson,3:raw3 as unknown as Lesson};
+const lessons={2:currentViLesson(raw2 as unknown as Lesson),3:currentViLesson(raw3 as unknown as Lesson)};
 function earlierQuestion(current:Question):Question{
  const old=structuredClone(current);old.prompt.vi='SYNTHETIC earlier saved question — not textbook text';
  old.explanation={zh:current.explanation?.zh??current.prompt.zh,vi:'SYNTHETIC earlier saved explanation — not textbook text'};return old;

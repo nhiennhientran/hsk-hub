@@ -1,7 +1,17 @@
 {
   "schemaVersion": 1,
   "courses": {
-    "hsk2": null,
-    "hsk3": null
+    "hsk2": {
+      "manifestFile": "course-app/content/hsk2-official-vi-release-ready-20261005.json",
+      "manifestSHA256": "8f839c531cdcb2777db6d40baa467a0ff81cc981dd5d6b3c5bc5d977001ecaf9",
+      "reviewFile": "course-app/content/hsk2-official-vi-release-ready-20261005.review.json",
+      "reviewSHA256": "e39a434debe1b12348e6ff4a7c7509f4ed68237a1a3160cec055dbcc15ea3359"
+    },
+    "hsk3": {
+      "manifestFile": "course-app/content/hsk3-official-vi-release-ready-20261005.json",
+      "manifestSHA256": "9bc063cbf7501dae2949f29d238630624175b50dfa2e7f3769e15e2c08020a52",
+      "reviewFile": "course-app/content/hsk3-official-vi-release-ready-20261005.review.json",
+      "reviewSHA256": "0b9d5022a867676135226dfe285e781bedebc9f36f37b7c5c070b63a2a005f36"
+    }
   }
 }

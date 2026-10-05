@@ -10,7 +10,7 @@ if (!signature) throw new Error('Cannot resolve the baseline classroom gate for 
 const password = process.env.HSK_TEST_PASSWORD ?? signature.split('.').map(hex => String.fromCodePoint(Number.parseInt(hex, 16))).join('');
 const kind = process.argv[2];
 const args = kind === 'unit'
-  ? ['--experimental-strip-types', '--test', ...readdirSync(new URL('../tests/', import.meta.url)).filter(name => name.endsWith('.test.mjs')).map(name => 'tests/' + name)]
+  ? ['--import', './tests/helpers/baseline-vi-loader.mjs', '--experimental-strip-types', '--test', ...readdirSync(new URL('../tests/', import.meta.url)).filter(name => name.endsWith('.test.mjs')).map(name => 'tests/' + name)]
   : kind === 'browser' ? ['node_modules/@playwright/test/cli.js', 'test', ...process.argv.slice(3)] : undefined;
 if (!args) throw new Error('Choose unit or browser.');
 const result = spawnSync(process.execPath, args, {

@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { createOfficialViRegistry, defaultOfficialViRegistry } from '../src/services/content/official-vi-revisions.ts';
+import { createOfficialViRegistry, defaultOfficialViRegistry, validateOfficialViConfig } from '../src/services/content/official-vi-revisions.ts';
 import { createTextbookContent } from '../src/services/content/textbook.ts';
 import { createVocabularyContent } from '../src/services/content/vocabulary.ts';
 import { mixedVocabularyDeck, mixedCardFingerprint } from '../src/domain/vocabulary/mixed-state.ts';
@@ -25,7 +25,7 @@ function stripChangedLeaves(value, owner, component, candidate) {
   }
   return copy;
 }
-test('real L01 payload validates actual baseline bytes and independent proof while the default remains inactive', async () => {
+test('real L01 payload validates actual baseline bytes and independent proof in the inactive baseline fixture', async () => {
   const c = await loadOfficialViL01Candidate();
   assert.equal(c.manifest.changes.length, 24); assert.equal(c.manifest.changes.filter(x => x.component === 'textbook').length, 15);
   assert.equal(c.manifest.changes.filter(x => x.component === 'vocabulary').length, 9);
@@ -33,7 +33,10 @@ test('real L01 payload validates actual baseline bytes and independent proof whi
   assert.notEqual(c.proof.author, c.proof.reviewer); assert.equal(c.proof.status, 'accepted');
   assert.deepEqual(c.inputs.baselineFiles, c.manifest.baselineFiles);
   for (const change of c.manifest.changes) assert.equal(candidatePointer(c.values[change.baselineFile], change.field), change.expectedEffectiveValue);
-  assert.equal(defaultOfficialViRegistry().revisionId, null); assert.deepEqual(candidateJSON('official-vi-registry'), { schemaVersion: 1, active: null });
+  assert.equal(defaultOfficialViRegistry().revisionId, null);
+  // Activation is a separate accepted revision; it must not rewrite this
+  // historical 24-field candidate or change the baseline fixture's registry.
+  validateOfficialViConfig(candidateJSON('official-vi-registry'));
 });
 test('actual candidate projects book words and dialogue bodies only, preserving Chinese pinyin IDs source and audio identities', async () => {
   const c = await loadOfficialViL01Candidate(), before = structuredClone(c.values), current = bookContent(c);

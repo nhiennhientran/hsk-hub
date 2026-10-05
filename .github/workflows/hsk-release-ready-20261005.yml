@@ -1,0 +1,91 @@
+name: HSK accepted VI release candidate checks
+on:
+  push:
+    branches: ['work/hsk-release-ready-20261005']
+permissions:
+  contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  candidate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Install locked app dependencies
+        run: npm ci --prefix course-app && npm ci --prefix hsk1-app
+      - name: Frozen baseline units and actual active adoption invariants
+        run: |
+          npm test --prefix course-app
+          npm test --prefix hsk1-app
+          node --experimental-strip-types course-app/tools/verify-official-vi-adoption.mjs
+          npm run check:browser-fixtures --prefix course-app
+      - name: Build shared application and public standalone application
+        run: npm run build --prefix course-app && npm run build:release --prefix hsk1-app
+      - name: Install browser and Chinese fonts
+        working-directory: course-app
+        run: |
+          node node_modules/@playwright/test/cli.js install --with-deps ${{ matrix.browser }}
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Adopted VI, all 48 lessons, four widths and nonempty history
+        working-directory: course-app
+        run: |
+          hsk_display_status=0
+          node tools/run-browser.mjs --config=playwright.unified.config.ts --project=${{ matrix.browser }} tests/unified/official-vi-release-ready.spec.ts tests/unified/continue-flow-navigation.spec.ts tests/unified/continue-draft-history.spec.ts tests/unified/official-vi-history.spec.ts tests/unified/unified.spec.ts tests/unified/hsk1-scene-navigation.spec.ts || hsk_display_status=$?
+          cp .repro-output/unified-browser.json .repro-output/release-ready/display-browser.json
+          cp -r test-results .repro-output/release-ready/display-screenshots
+          exit "$hsk_display_status"
+      - name: Existing media fallback and handwriting
+        if: ${{ !cancelled() }}
+        working-directory: course-app
+        run: |
+          hsk_media_status=0
+          node tools/run-browser.mjs --config=playwright.unified.config.ts --project=${{ matrix.browser }} tests/unified/media.spec.ts tests/unified/reviewed-sentence-subset.spec.ts --grep 'multi-sentence source|pending short word|whole-track color|all three levels load|guarded source-frame|failed new checksum' || hsk_media_status=$?
+          cp .repro-output/unified-browser.json .repro-output/release-ready/media-browser.json
+          exit "$hsk_media_status"
+      - name: Standalone scene navigation with adopted VI
+        if: ${{ !cancelled() }}
+        working-directory: hsk1-app
+        run: node tools/run-checkpoint.mjs browser --project=${{ matrix.browser }} tests/browser/navigation.spec.ts tests/browser/textbook-scene-navigation.spec.ts
+      - name: Freeze the exact candidate and assemble retained site entries
+        if: ${{ !cancelled() }}
+        working-directory: course-app
+        run: |
+          node tools/package-unified.mjs --build --input .repro-output/release-ready/dist --output .repro-output/release-ready/frozen
+          mkdir .repro-output/release-ready/baseline
+          git archive 2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4 | tar -x -C .repro-output/release-ready/baseline
+          node tools/assemble-unified-checkpoint.mjs .repro-output/release-ready/baseline .repro-output/release-ready/frozen .repro-output/release-ready/site .repro-output/release-ready/assembly.json
+      - name: Test actual frozen HTTP bytes and all retained entry paths
+        if: ${{ !cancelled() }}
+        working-directory: course-app
+        env:
+          HSK_PACKAGE_ROOT: .repro-output/release-ready/site
+        run: node tools/run-browser.mjs --config=playwright.package-closure.config.ts --project=${{ matrix.browser }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: hsk-release-ready-${{ matrix.browser }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          path: |
+            course-app/.repro-output/release-ready/adoption.json
+            course-app/.repro-output/release-ready/display-browser.json
+            course-app/.repro-output/release-ready/media-browser.json
+            course-app/.repro-output/release-ready/display-screenshots/
+            course-app/.repro-output/release-ready/assembly.json
+            course-app/.repro-output/release-ready/frozen/course-engine/unified-release-manifest.json
+            course-app/.repro-output/package-closure-browser.json
+            hsk1-app/.repro-output/step8-browser.json
+            hsk1-app/.repro-output/student-build-source-audit.json
+            hsk1-app/test-results/
+            course-app/test-results-package-closure/

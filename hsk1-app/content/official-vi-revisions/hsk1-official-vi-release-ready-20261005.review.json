@@ -1,0 +1,1779 @@
+{
+  "reviewer": "/root",
+  "author": "/root/vi_hsk1_author",
+  "status": "accepted",
+  "proposalSHA256": "3e6f103b5ad0c40951291e7ab65cefbca4d843ab3fdcf795c0aa8576fd1de558",
+  "acceptedChangeIds": [
+    "hsk1-official-vi-release-ready-20261005:9347693535e267c7",
+    "hsk1-official-vi-release-ready-20261005:a8a617a55b305f4c",
+    "hsk1-official-vi-release-ready-20261005:1769359b08f5002f",
+    "hsk1-official-vi-release-ready-20261005:185d9f53c24b937f",
+    "hsk1-official-vi-release-ready-20261005:1728e1027b4b3f09",
+    "hsk1-official-vi-release-ready-20261005:8780c70becafd866",
+    "hsk1-official-vi-release-ready-20261005:0d5d459c2d1f580c",
+    "hsk1-official-vi-release-ready-20261005:2736e0e2654de15b",
+    "hsk1-official-vi-release-ready-20261005:f8da24bfff9e6698",
+    "hsk1-official-vi-release-ready-20261005:40b70fe50c818982",
+    "hsk1-official-vi-release-ready-20261005:ecd42cd206f5ea7c",
+    "hsk1-official-vi-release-ready-20261005:fb6573021c8b307c",
+    "hsk1-official-vi-release-ready-20261005:bc994cb71c45b773",
+    "hsk1-official-vi-release-ready-20261005:4c54451e31b195a7",
+    "hsk1-official-vi-release-ready-20261005:3f92ae2399b9fb23",
+    "hsk1-official-vi-release-ready-20261005:c36e63ea7d7557a1",
+    "hsk1-official-vi-release-ready-20261005:976ca7a7d12e703d",
+    "hsk1-official-vi-release-ready-20261005:2e8662c52a03bbf9",
+    "hsk1-official-vi-release-ready-20261005:fece978187536bc2",
+    "hsk1-official-vi-release-ready-20261005:a0a120d6adcafd8a",
+    "hsk1-official-vi-release-ready-20261005:fa38133d22b40fb2",
+    "hsk1-official-vi-release-ready-20261005:5012310a0d05365c",
+    "hsk1-official-vi-release-ready-20261005:5655dbbb33d72bff",
+    "hsk1-official-vi-release-ready-20261005:60bb267c343ce143",
+    "hsk1-official-vi-release-ready-20261005:8ffeb2e1546ce64b",
+    "hsk1-official-vi-release-ready-20261005:d274937d42f091cd",
+    "hsk1-official-vi-release-ready-20261005:c2391e44c7f5d015",
+    "hsk1-official-vi-release-ready-20261005:c0c599d42ef3bf82",
+    "hsk1-official-vi-release-ready-20261005:ddf7e2a9f9bd4f52",
+    "hsk1-official-vi-release-ready-20261005:eb79fdc6eee16318",
+    "hsk1-official-vi-release-ready-20261005:caadf7970e5d14e9",
+    "hsk1-official-vi-release-ready-20261005:b932ef47cfa9c53a",
+    "hsk1-official-vi-release-ready-20261005:a825c929534974e7",
+    "hsk1-official-vi-release-ready-20261005:cae1757de404c891",
+    "hsk1-official-vi-release-ready-20261005:89e39776e2bef1e3",
+    "hsk1-official-vi-release-ready-20261005:094b91ccb6102a04",
+    "hsk1-official-vi-release-ready-20261005:20e0f25508c3a80d",
+    "hsk1-official-vi-release-ready-20261005:d5c798e4aba79f1b",
+    "hsk1-official-vi-release-ready-20261005:d5674367b8b6b870",
+    "hsk1-official-vi-release-ready-20261005:813ab744c3e6e094",
+    "hsk1-official-vi-release-ready-20261005:29fb380561a2c93b",
+    "hsk1-official-vi-release-ready-20261005:228efa7cdac7031f",
+    "hsk1-official-vi-release-ready-20261005:d706fbf301d85915",
+    "hsk1-official-vi-release-ready-20261005:f5a02f7780c9fa25",
+    "hsk1-official-vi-release-ready-20261005:cca654003c97b718",
+    "hsk1-official-vi-release-ready-20261005:a53c3564d64f4e1e",
+    "hsk1-official-vi-release-ready-20261005:ed6f39bfcdfeb5ff",
+    "hsk1-official-vi-release-ready-20261005:5ae30012036f6e66",
+    "hsk1-official-vi-release-ready-20261005:cf4e6f8bd9e58bc5",
+    "hsk1-official-vi-release-ready-20261005:4d4d6cacc847457b",
+    "hsk1-official-vi-release-ready-20261005:feb39364471f50f2",
+    "hsk1-official-vi-release-ready-20261005:25a1dae23e7104e5",
+    "hsk1-official-vi-release-ready-20261005:ba3207255e79bffc",
+    "hsk1-official-vi-release-ready-20261005:e73ed8f4c87a860e",
+    "hsk1-official-vi-release-ready-20261005:0681cb8bb308201f",
+    "hsk1-official-vi-release-ready-20261005:31990c7c61176138",
+    "hsk1-official-vi-release-ready-20261005:1020b8fc35161536",
+    "hsk1-official-vi-release-ready-20261005:4d3293067697fc1b",
+    "hsk1-official-vi-release-ready-20261005:92c05f3665cd1209",
+    "hsk1-official-vi-release-ready-20261005:eb1b908b1e4cdd7a"
+  ],
+  "acceptedConsumerRefs": [
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/0/vn",
+      "ownerId": "textbook-l01-v001",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/2/vn",
+      "ownerId": "textbook-l01-v003",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/3/vn",
+      "ownerId": "textbook-l01-v004",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/4/vn",
+      "ownerId": "textbook-l01-v005",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/5/vn",
+      "ownerId": "textbook-l01-v006",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/6/vn",
+      "ownerId": "textbook-l01-v007",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/7/vn",
+      "ownerId": "textbook-l01-v008",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/10/vn",
+      "ownerId": "textbook-l01-v011",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/11/vn",
+      "ownerId": "textbook-l01-v012",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/vocab/12/vn",
+      "ownerId": "textbook-l01-v013",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/scenes/0/lines/0/vn",
+      "ownerId": "textbook-l01-text-1-line-01",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/scenes/0/lines/1/vn",
+      "ownerId": "textbook-l01-text-1-line-02",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/scenes/1/lines/1/vn",
+      "ownerId": "textbook-l01-text-2-line-02",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/scenes/2/lines/0/vn",
+      "ownerId": "textbook-l01-text-3-line-01",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/scenes/2/lines/1/vn",
+      "ownerId": "textbook-l01-text-3-line-02",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/textbook.json",
+      "field": "/lessons/0/scenes/2/lines/2/vn",
+      "ownerId": "textbook-l01-text-3-line-03",
+      "component": "textbook"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/listening/0/transcript/0/vi",
+      "ownerId": "l01-listen-01",
+      "component": "listening"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/listening/1/transcript/0/vi",
+      "ownerId": "l01-listen-02",
+      "component": "listening"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/listening/2/transcript/0/vi",
+      "ownerId": "l01-listen-03",
+      "component": "listening"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/listening/4/transcript/0/vi",
+      "ownerId": "l01-listen-05",
+      "component": "listening"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/listening/4/transcript/1/vi",
+      "ownerId": "l01-listen-05",
+      "component": "listening"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/0/vi",
+      "ownerId": "v-l01-lex-bbc044d7ea-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/2/vi",
+      "ownerId": "v-l01-lex-27e4fe4c3f-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/3/vi",
+      "ownerId": "v-l01-lex-494f23d624-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/4/vi",
+      "ownerId": "v-l01-lex-91c76e0b5a-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/5/vi",
+      "ownerId": "v-l01-lex-440ee0853a-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/6/vi",
+      "ownerId": "v-l01-lex-2fda3d6ec6-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/7/vi",
+      "ownerId": "v-l01-lex-7a424449a3-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/10/vi",
+      "ownerId": "v-l01-lex-b76783d38c-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/11/vi",
+      "ownerId": "v-l01-lex-82202bb725-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/stage3-catalog.json",
+      "field": "/vocabulary/12/vi",
+      "ownerId": "v-l01-lex-50fd66dd8e-s1",
+      "component": "vocabulary"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/1/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p001-text-1-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/1/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p001-text-1-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/2/table/rows/0/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p001-vocabulary-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/4/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-text-2-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/4/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-text-2-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/5/title/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-xiaoyu-original-tip-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/5/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-xiaoyu-original-tip-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/table/rows/1/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/table/rows/2/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/table/rows/3/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/table/rows/4/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/table/rows/5/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/table/rows/6/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/7/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-text-2-role-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/7/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-text-2-role-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/8/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-text-2-pair-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/8/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-text-2-pair-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/9/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-text-3-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/9/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-text-3-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/10/table/rows/1/cells/4/text/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-vocabulary-03",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/11/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-text-3-role-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/11/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-text-3-role-reading-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/12/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-text-3-pair-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/12/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-text-3-pair-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/13/title/vi",
+      "ownerId": "hsk1-original-2026-l01-p004-tongue-twister-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/13/instruction/vi",
+      "ownerId": "hsk1-original-2026-l01-p004-tongue-twister-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/14/title/vi",
+      "ownerId": "hsk1-original-2026-l01-p004-xiaoyu-original-tip-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/14/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p004-xiaoyu-original-tip-01",
+      "component": "source-activity"
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/bonus/title/vi",
+      "ownerId": "hsk1-l01-bonus",
+      "component": "source-bonus"
+    }
+  ],
+  "sourceEvidenceRefs": [
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-word-10-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "不客气",
+      "officialViText": "đừng khách sáo, không cần khách khí",
+      "printedViText": "đừng khách sáo, không cần khách khí",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "đừng khách sáo,",
+            "không cần khách khí"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-03-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "好",
+      "officialViText": "tốt, khoẻ",
+      "printedViText": "tốt, khoẻ",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "tốt, khoẻ"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-06-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "老师",
+      "officialViText": "thầy giáo, cô giáo, giáo viên",
+      "printedViText": "thầy giáo, cô giáo, giáo viên",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "thầy giáo, cô giáo,",
+            "giáo viên"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-05-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "们",
+      "officialViText": "dùng sau đại từ nhân xưng hoặc danh từ để chỉ số nhiều",
+      "printedViText": "dùng sau đại từ nhân xưng hoặc danh từ để chỉ số nhiều",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "dùng sau đại từ nhân",
+            "xưng hoặc danh từ để",
+            "chỉ số nhiều"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf017-word-01-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "你好",
+      "officialViText": "xin chào, chào bạn",
+      "printedViText": "xin chào, chào bạn",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "xin chào,",
+            "chào bạn"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-08-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "你们",
+      "officialViText": "các bạn, các anh, các chị... (đại từ nhân xưng ngôi thứ hai số nhiều)",
+      "printedViText": "các bạn, các anh, các chị... (đại từ nhân xưng ngôi thứ hai số nhiều)",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "các bạn, các anh, các chị...",
+            "(đại từ nhân xưng ngôi",
+            "thứ hai số nhiều)"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-07-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "您",
+      "officialViText": "ngài, ông, bà... (đại từ nhân xưng ngôi thứ hai thể hiện sự trang trọng)",
+      "printedViText": "ngài, ông, bà... (đại từ nhân xưng ngôi thứ hai thể hiện sự trang trọng)",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "ngài, ông, bà... (đại từ",
+            "nhân xưng ngôi thứ hai",
+            "thể hiện sự trang trọng)"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-04-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "学生",
+      "officialViText": "học sinh, sinh viên",
+      "printedViText": "học sinh, sinh viên",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "học sinh, sinh viên"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-word-12-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "生词 · Từ mới",
+      "zhContext": "再见",
+      "officialViText": "tạm biệt",
+      "printedViText": "tạm biệt",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "tạm biệt"
+          ]
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf017-proper-01-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "proper-name-gloss",
+      "zhContext": "王老师",
+      "printedViText": "cô Vương",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "cô Vương"
+          ]
+        }
+      ],
+      "officialViText": "cô Vương"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf017-text-1-line-01",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "课文译文 · textbook-l01-text-1",
+      "zhContext": "AI小语，你好！",
+      "officialViText": "Xin chào AI Tiểu Ngữ!",
+      "printedViText": "Vương Nhất Phi: Xin chào AI Tiểu Ngữ!",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "Vương Nhất Phi: Xin chào AI Tiểu Ngữ!"
+          ]
+        }
+      ],
+      "printedSpeakerVi": "Vương Nhất Phi",
+      "speakerZh": "王一飞",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Vương Nhất Phi: ",
+        "body": "Xin chào AI Tiểu Ngữ!",
+        "preservesPrintedRoleEvidence": true,
+        "runtimeRoleField": "s",
+        "runtimeRoleValue": "王一飞"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf017-text-1-line-02",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "课文译文 · textbook-l01-text-1",
+      "zhContext": "王老师，你好！",
+      "officialViText": "Chào cô Vương!",
+      "printedViText": "Tiểu Ngữ: Chào cô Vương!",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "Tiểu Ngữ: Chào cô Vương!"
+          ]
+        }
+      ],
+      "printedSpeakerVi": "Tiểu Ngữ",
+      "speakerZh": "小语",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Tiểu Ngữ: ",
+        "body": "Chào cô Vương!",
+        "preservesPrintedRoleEvidence": true,
+        "runtimeRoleField": "s",
+        "runtimeRoleValue": "小语"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-text-2-line-02",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "课文译文 · textbook-l01-text-2",
+      "zhContext": "老师，您好！",
+      "officialViText": "Chào cô ạ!",
+      "printedViText": "Học sinh: Chào cô ạ!",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Học sinh: Chào cô ạ!"
+          ]
+        }
+      ],
+      "printedSpeakerVi": "Học sinh",
+      "speakerZh": "学生们",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Học sinh: ",
+        "body": "Chào cô ạ!",
+        "preservesPrintedRoleEvidence": true,
+        "runtimeRoleField": "s",
+        "runtimeRoleValue": "学生们"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-01",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "课文译文 · textbook-l01-text-3",
+      "zhContext": "谢谢！",
+      "officialViText": "Cảm ơn bạn!",
+      "printedViText": "Học sinh: Cảm ơn bạn!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Học sinh: Cảm ơn bạn!"
+          ]
+        }
+      ],
+      "printedSpeakerVi": "Học sinh",
+      "speakerZh": "学生们",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Học sinh: ",
+        "body": "Cảm ơn bạn!",
+        "preservesPrintedRoleEvidence": true,
+        "runtimeRoleField": "s",
+        "runtimeRoleValue": "学生们"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-02",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "课文译文 · textbook-l01-text-3",
+      "zhContext": "不客气！",
+      "officialViText": "Đừng khách sáo!",
+      "printedViText": "Tiểu Ngữ: Đừng khách sáo!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Tiểu Ngữ: Đừng khách sáo!"
+          ]
+        }
+      ],
+      "printedSpeakerVi": "Tiểu Ngữ",
+      "speakerZh": "小语",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Tiểu Ngữ: ",
+        "body": "Đừng khách sáo!",
+        "preservesPrintedRoleEvidence": true,
+        "runtimeRoleField": "s",
+        "runtimeRoleValue": "小语"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-03",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "课文译文 · textbook-l01-text-3",
+      "zhContext": "同学们，再见！",
+      "officialViText": "Tạm biệt các em!",
+      "printedViText": "Vương Nhất Phi: Tạm biệt các em!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Vương Nhất Phi: Tạm biệt các em!"
+          ]
+        }
+      ],
+      "printedSpeakerVi": "Vương Nhất Phi",
+      "speakerZh": "王一飞",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Vương Nhất Phi: ",
+        "body": "Tạm biệt các em!",
+        "preservesPrintedRoleEvidence": true,
+        "runtimeRoleField": "s",
+        "runtimeRoleValue": "王一飞"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-01",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "dialogue-translation",
+      "zhContext": "谢谢。",
+      "printedViText": "Học sinh: Cảm ơn bạn!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Học sinh: Cảm ơn bạn!"
+          ]
+        }
+      ],
+      "officialViText": "Cảm ơn bạn!",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Học sinh: ",
+        "body": "Cảm ơn bạn!",
+        "speakerZh": "学生们"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-02",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "dialogue-translation",
+      "zhContext": "不客气。",
+      "printedViText": "Tiểu Ngữ: Đừng khách sáo!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Tiểu Ngữ: Đừng khách sáo!"
+          ]
+        }
+      ],
+      "officialViText": "Đừng khách sáo!",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Tiểu Ngữ: ",
+        "body": "Đừng khách sáo!",
+        "speakerZh": "小语"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-text-2-line-02",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "dialogue-translation",
+      "zhContext": "老师，您好！",
+      "printedViText": "Học sinh: Chào cô ạ!",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Học sinh: Chào cô ạ!"
+          ]
+        }
+      ],
+      "officialViText": "Chào cô ạ!",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Học sinh: ",
+        "body": "Chào cô ạ!",
+        "speakerZh": "学生们"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-03",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "dialogue-translation",
+      "zhContext": "同学们，再见！",
+      "printedViText": "Vương Nhất Phi: Tạm biệt các em!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Vương Nhất Phi: Tạm biệt các em!"
+          ]
+        }
+      ],
+      "officialViText": "Tạm biệt các em!",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Vương Nhất Phi: ",
+        "body": "Tạm biệt các em!",
+        "speakerZh": "王一飞"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-line-04",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "dialogue-translation",
+      "zhContext": "老师，再见！",
+      "printedViText": "Học sinh: Tạm biệt cô ạ!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Học sinh: Tạm biệt cô ạ!"
+          ]
+        }
+      ],
+      "officialViText": "Tạm biệt cô ạ!",
+      "bodyDerivation": {
+        "operation": "remove-exact-printed-speaker-prefix",
+        "prefix": "Học sinh: ",
+        "body": "Tạm biệt cô ạ!",
+        "speakerZh": "学生们"
+      }
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf017-text-1-read",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "instruction",
+      "zhContext": "朗读对话。",
+      "printedViText": "Đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "officialViText": "Đọc to đoạn hội thoại."
+    },
+    {
+      "sourceId": "composed:hsk1-original-2026-l01-p001-text-1-reading-01:/prompt/vi",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "scene + dialogue-translation",
+      "zhContext": "开学第一天，在办公室里，王一飞和AI助教小语打招呼。\n\n王一飞：AI小语，你好！\n小语：王老师，你好！",
+      "printedViText": "Ngày đầu tiên đi học, Vương Nhất Phi chào hỏi trợ giảng AI Tiểu Ngữ ở trong văn phòng.\nVương Nhất Phi: Xin chào AI Tiểu Ngữ!\nTiểu Ngữ: Chào cô Vương!",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "Ngày đầu tiên đi học, Vương",
+            "Nhất Phi chào hỏi trợ giảng AI Tiểu Ngữ ở trong văn phòng."
+          ]
+        },
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "Vương Nhất Phi: Xin chào AI Tiểu Ngữ!"
+          ]
+        },
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "Tiểu Ngữ: Chào cô Vương!"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "此网页字段合并同一课文的场景和分角色正文；采用已审教材原越文场景及印出角色前缀，用空行连接场景与正文，保持每段发生顺序。中文实质一致但容器合并，标记组合派生。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf017-word-01-gloss",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        17
+      ],
+      "printedPages": [
+        "001"
+      ],
+      "section": "word-gloss",
+      "zhContext": "你好（招呼用语）",
+      "printedViText": "xin chào, chào bạn",
+      "fragments": [
+        {
+          "pdfPage": 17,
+          "printedPage": "001",
+          "lineTexts": [
+            "xin chào,",
+            "chào bạn"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "来源对应本表同一词语「你好」；网页中文释义是「你好（招呼用语）」。按词语及本课义项采用教材释义，非逐字中文直引。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-text-2-read",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "instruction",
+      "zhContext": "朗读对话。",
+      "printedViText": "Đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "officialViText": "Đọc to đoạn hội thoại."
+    },
+    {
+      "sourceId": "composed:hsk1-original-2026-l01-p002-text-2-reading-01:/prompt/vi",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "scene + dialogue-translation",
+      "zhContext": "开学第一天，课堂上，学生们学习打招呼用语。\n\n王一飞：大家好！\n学生们：老师，您好！\n小语：你们好！\n学生们：你好，小语！",
+      "printedViText": "Ngày đầu tiên đi học, các bạn học sinh học cách diễn đạt chào hỏi tại lớp.\nVương Nhất Phi: Chào cả lớp!\nHọc sinh: Chào cô ạ!\nTiểu Ngữ: Chào các bạn!\nHọc sinh: Chào Tiểu Ngữ!",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Ngày đầu tiên đi học, các bạn học sinh",
+            "học cách diễn đạt chào hỏi tại lớp."
+          ]
+        },
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Vương Nhất Phi: Chào cả lớp!"
+          ]
+        },
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Học sinh: Chào cô ạ!"
+          ]
+        },
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Tiểu Ngữ: Chào các bạn!"
+          ]
+        },
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Học sinh: Chào Tiểu Ngữ!"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "此网页字段合并同一课文的场景和分角色正文；采用已审教材原越文场景及印出角色前缀，用空行连接场景与正文，保持每段发生顺序。中文实质一致但容器合并，标记组合派生。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-tip-label",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "tip-label",
+      "zhContext": "小语助力",
+      "printedViText": "Tiểu Ngữ giúp sức",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "officialViText": "Tiểu Ngữ giúp sức"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-tip-politeness",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "tip",
+      "zhContext": "“您”，敬称，对年长者或尊敬的人使用。",
+      "printedViText": "“您” là đại từ nhân xưng mang sắc thái trang trọng, được dùng để xưng hô với người lớn tuổi hoặc những người mà bạn kính trọng.",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "“您” là đại từ nhân xưng mang sắc thái trang trọng,",
+            "được dùng để xưng hô với người lớn tuổi hoặc những người mà bạn kính trọng."
+          ]
+        }
+      ],
+      "officialViText": "“您” là đại từ nhân xưng mang sắc thái trang trọng, được dùng để xưng hô với người lớn tuổi hoặc những người mà bạn kính trọng."
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-03-gloss",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "word-gloss",
+      "zhContext": "好；健康",
+      "printedViText": "tốt, khoẻ",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "tốt, khoẻ"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "来源对应本表同一词语「好」；网页中文释义是「好；健康」。按词语及本课义项采用教材释义，非逐字中文直引。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-04-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "word-gloss",
+      "zhContext": "学生",
+      "printedViText": "học sinh, sinh viên",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "học sinh, sinh viên"
+          ]
+        }
+      ],
+      "officialViText": "học sinh, sinh viên"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-05-gloss",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "word-gloss",
+      "zhContext": "用于人称代词或名词后，表示复数",
+      "printedViText": "dùng sau đại từ nhân xưng hoặc danh từ để chỉ số nhiều",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "dùng sau đại từ nhân",
+            "xưng hoặc danh từ để",
+            "chỉ số nhiều"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "来源对应本表同一词语「们」；网页中文释义是「用于人称代词或名词后，表示复数」。按词语及本课义项采用教材释义，非逐字中文直引。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-06-gloss",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "word-gloss",
+      "zhContext": "老师",
+      "printedViText": "thầy giáo, cô giáo, giáo viên",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "thầy giáo, cô giáo,",
+            "giáo viên"
+          ]
+        }
+      ],
+      "officialViText": "thầy giáo, cô giáo, giáo viên"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-07-gloss",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "word-gloss",
+      "zhContext": "第二人称敬称",
+      "printedViText": "ngài, ông, bà... (đại từ nhân xưng ngôi thứ hai thể hiện sự trang trọng)",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "ngài, ông, bà... (đại từ",
+            "nhân xưng ngôi thứ hai",
+            "thể hiện sự trang trọng)"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "来源对应本表同一词语「您」；网页中文释义是「第二人称敬称」。按词语及本课义项采用教材释义，非逐字中文直引。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-word-08-gloss",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "word-gloss",
+      "zhContext": "你（复数）",
+      "printedViText": "các bạn, các anh, các chị... (đại từ nhân xưng ngôi thứ hai số nhiều)",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "các bạn, các anh, các chị...",
+            "(đại từ nhân xưng ngôi",
+            "thứ hai số nhiều)"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "来源对应本表同一词语「你们」；网页中文释义是「你（复数）」。按词语及本课义项采用教材释义，非逐字中文直引。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-text-2-role-read",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "printedViText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "officialViText": "Phân vai đọc to đoạn hội thoại."
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf018-text-2-pair-practice",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        18
+      ],
+      "printedPages": [
+        "002"
+      ],
+      "section": "instruction",
+      "zhContext": "两人一组或多人一组，用真实姓名对话。",
+      "printedViText": "Hai người một nhóm hoặc nhiều người một nhóm, tiến hành hội thoại với nhau bằng họ tên thật.",
+      "fragments": [
+        {
+          "pdfPage": 18,
+          "printedPage": "002",
+          "lineTexts": [
+            "Hai người một nhóm hoặc nhiều người một nhóm,",
+            "tiến hành hội thoại với nhau bằng họ tên thật."
+          ]
+        }
+      ],
+      "officialViText": "Hai người một nhóm hoặc nhiều người một nhóm, tiến hành hội thoại với nhau bằng họ tên thật."
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-read",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "instruction",
+      "zhContext": "朗读对话。",
+      "printedViText": "Đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "officialViText": "Đọc to đoạn hội thoại."
+    },
+    {
+      "sourceId": "composed:hsk1-original-2026-l01-p003-text-3-reading-01:/prompt/vi",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "scene + dialogue-translation",
+      "zhContext": "开学第一天，课堂上，学生们学习致谢语、告别语。\n\n学生们：谢谢！\n小语：不客气！\n王一飞：同学们，再见！\n学生们：老师，再见！",
+      "printedViText": "Ngày đầu tiên đi học, các bạn học sinh học các mẫu câu cảm ơn và tạm biệt ở trong lớp học.\nHọc sinh: Cảm ơn bạn!\nTiểu Ngữ: Đừng khách sáo!\nVương Nhất Phi: Tạm biệt các em!\nHọc sinh: Tạm biệt cô ạ!",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Ngày đầu tiên đi học, các bạn học sinh",
+            "học các mẫu câu cảm ơn và tạm biệt ở trong lớp học."
+          ]
+        },
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Học sinh: Cảm ơn bạn!"
+          ]
+        },
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Tiểu Ngữ: Đừng khách sáo!"
+          ]
+        },
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Vương Nhất Phi: Tạm biệt các em!"
+          ]
+        },
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Học sinh: Tạm biệt cô ạ!"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "此网页字段合并同一课文的场景和分角色正文；采用已审教材原越文场景及印出角色前缀，用空行连接场景与正文，保持每段发生顺序。中文实质一致但容器合并，标记组合派生。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-word-10-gloss",
+      "kind": "terminologyDerived",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "word-gloss",
+      "zhContext": "不用客气",
+      "printedViText": "đừng khách sáo, không cần khách khí",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "đừng khách sáo,",
+            "không cần khách khí"
+          ]
+        }
+      ],
+      "verbatim": false,
+      "rationale": "来源对应本表同一词语「不客气」；网页中文释义是「不用客气」。按词语及本课义项采用教材释义，非逐字中文直引。"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-role-read",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "printedViText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "officialViText": "Phân vai đọc to đoạn hội thoại."
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf019-text-3-pair-practice",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        19
+      ],
+      "printedPages": [
+        "003"
+      ],
+      "section": "instruction",
+      "zhContext": "两人一组，用对方的名字对话。",
+      "printedViText": "Hai người một nhóm, sử dụng tên của nhau để thực hành hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 19,
+          "printedPage": "003",
+          "lineTexts": [
+            "Hai người một nhóm, sử dụng tên của nhau để thực hành",
+            "hội thoại."
+          ]
+        }
+      ],
+      "officialViText": "Hai người một nhóm, sử dụng tên của nhau để thực hành hội thoại."
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf020-tongue-heading",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        20
+      ],
+      "printedPages": [
+        "004"
+      ],
+      "section": "section-heading",
+      "zhContext": "跟读绕口令",
+      "printedViText": "Cùng đọc bài vè",
+      "fragments": [
+        {
+          "pdfPage": 20,
+          "printedPage": "004",
+          "lineTexts": [
+            "Cùng đọc bài vè"
+          ]
+        }
+      ],
+      "officialViText": "Cùng đọc bài vè"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf020-tongue-heading",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        20
+      ],
+      "printedPages": [
+        "004"
+      ],
+      "section": "section-heading",
+      "zhContext": "跟读绕口令。",
+      "printedViText": "Cùng đọc bài vè",
+      "fragments": [
+        {
+          "pdfPage": 20,
+          "printedPage": "004",
+          "lineTexts": [
+            "Cùng đọc bài vè"
+          ]
+        }
+      ],
+      "officialViText": "Cùng đọc bài vè"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf020-tip-label",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        20
+      ],
+      "printedPages": [
+        "004"
+      ],
+      "section": "tip-label",
+      "zhContext": "小语助力",
+      "printedViText": "Tiểu Ngữ giúp sức",
+      "fragments": [
+        {
+          "pdfPage": 20,
+          "printedPage": "004",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "officialViText": "Tiểu Ngữ giúp sức"
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf020-tip-pinyin-video",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        20
+      ],
+      "printedPages": [
+        "004"
+      ],
+      "section": "tip",
+      "zhContext": "你还想学习更多的汉语拼音知识吗？那就去敲敲“小语的彩蛋”吧，惊喜等着你。",
+      "printedViText": "Bạn có muốn học thêm kiến thức về phiên âm tiếng Trung Quốc không? Hãy ghé thăm chuyên mục “Món quà của Tiểu Ngữ” nhé, một điều bất ngờ đang chờ đợi bạn.",
+      "fragments": [
+        {
+          "pdfPage": 20,
+          "printedPage": "004",
+          "lineTexts": [
+            "Bạn có muốn học thêm kiến thức về phiên âm",
+            "tiếng Trung Quốc không? Hãy ghé thăm chuyên mục “Món quà của",
+            "Tiểu Ngữ” nhé, một điều bất ngờ đang chờ đợi bạn."
+          ]
+        }
+      ],
+      "officialViText": "Bạn có muốn học thêm kiến thức về phiên âm tiếng Trung Quốc không? Hãy ghé thăm chuyên mục “Món quà của Tiểu Ngữ” nhé, một điều bất ngờ đang chờ đợi bạn."
+    },
+    {
+      "sourceId": "hsk1-official-vi-l01-pdf020-video-topic",
+      "kind": "directOfficial",
+      "documentSourceId": "hsk1-official-vietnamese-20261004",
+      "pdfSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+      "pdfPages": [
+        20
+      ],
+      "printedPages": [
+        "004"
+      ],
+      "section": "video-topic",
+      "zhContext": "汉语拼音",
+      "printedViText": "Phiên âm tiếng Trung Quốc",
+      "fragments": [
+        {
+          "pdfPage": 20,
+          "printedPage": "004",
+          "lineTexts": [
+            "Phiên âm tiếng Trung Quốc"
+          ]
+        }
+      ],
+      "officialViText": "Phiên âm tiếng Trung Quốc"
+    }
+  ]
+}

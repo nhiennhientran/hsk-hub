@@ -587,7 +587,7 @@ export function mountLesson(
     tabs.setAttribute("aria-label", "课文情境 · Ngữ cảnh bài khóa");
     for (const t of l.texts) {
       const a = link(
-        copy(`课文${t.number}`, `Bài khóa ${t.number}`),
+        t.title,
         routeHref({ ...c.route, section: "text", scene: t.number }),
       );
       if (t.number === scene) a.setAttribute("aria-current", "page");
@@ -596,12 +596,7 @@ export function mountLesson(
     body.append(tabs);
     const text = l.texts.find((t) => t.number === scene)??l.texts[0]!;
     body.append(
-      el(
-        "h2",
-        text.title.zh === `课文${text.number}`
-          ? copy(`课文${text.number}`, `Bài khóa ${text.number}`)
-          : text.title,
-      ),
+      el("h2", text.title),
       el("p", text.context),
       c.audioControl(
         text.audioTrack,

@@ -4,9 +4,10 @@ import raw3 from '../../content/hsk3/lesson-01.json' with {type: 'json'};
 import {configs} from '../../src/config.ts';
 import {blank, captureDraftAnswer, captureListeningDraftAnswer, questionRevision, type State} from '../../src/state.ts';
 import type {Lesson} from '../../src/types.ts';
+import {currentViLesson} from './official-vi-expectations.ts';
 
 // All edited texts below are synthetic ownership probes, never textbook acceptance.
-const lessons = {2: raw2 as unknown as Lesson, 3: raw3 as unknown as Lesson};
+const lessons = {2: currentViLesson(raw2 as unknown as Lesson), 3: currentViLesson(raw3 as unknown as Lesson)};
 async function seed(page: Page, level: 2 | 3, data: State) {
   await page.addInitScript(({key, app, data}) => {
     sessionStorage.setItem('hsk_portal_unlocked_v2', '1');

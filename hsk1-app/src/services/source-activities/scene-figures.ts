@@ -3,6 +3,7 @@
  * cannot provide figure IDs, paths or images. Every crop keeps its source hash.
  */
 import {getSourceLesson,sourceFigureAssetPath,type SourceFigure,type SourceLesson} from './content.ts';
+import type {OfficialViRegistry} from '../content/official-vi-revisions.ts';
 const textbookSHA256='25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba';
 export const sceneFigureBindings = {
   "textbook-l01-text-1": {
@@ -483,7 +484,7 @@ export function resolveSceneFigureBindings(source:SourceLesson|undefined,sceneId
   });
 }
 
-export function sceneFigures(lessonId:number,sceneId:string):readonly SourceFigure[]{
+export function sceneFigures(lessonId:number,sceneId:string,officialVi?:OfficialViRegistry):readonly SourceFigure[]{
   const binding=sceneFigureBindings[sceneId as keyof typeof sceneFigureBindings];
-  return binding?.lesson===lessonId?resolveSceneFigureBindings(getSourceLesson(lessonId),sceneId):[];
+  return binding?.lesson===lessonId?resolveSceneFigureBindings(getSourceLesson(lessonId,officialVi),sceneId):[];
 }

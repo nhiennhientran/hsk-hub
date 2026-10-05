@@ -5,6 +5,7 @@ import { getHomework30Bank } from '../../src/services/content/homework30.ts';
 import { homework30Group, submitHomework30 } from '../../src/domain/homework30/engine.ts';
 import { createCompatibility } from '../../src/services/storage/compatibility.ts';
 import { sceneFigures } from '../../src/services/source-activities/scene-figures.ts';
+import { loadActiveHsk1ForTests } from './active-official-vi.ts';
 const stateKey = 'ran_hsk1_modular_v1';
 const oldKey = 'ran_hsk1_stage2_v3';
 const original = readFileSync(new URL('../fixtures/migration/stage2.json', import.meta.url), 'utf8');
@@ -25,7 +26,7 @@ async function seedNonempty(page:Page){
   }, { oldKey, original, stateKey, seed });
 }
 async function assertSceneGallery(page:Page,lesson:number,sceneId:string,expect:typeof Expect){
-  const expected=sceneFigures(lesson,sceneId);expect(expected.length,sceneId).toBeGreaterThan(0);
+  const expected=sceneFigures(lesson,sceneId,(await loadActiveHsk1ForTests()).registry);expect(expected.length,sceneId).toBeGreaterThan(0);
   const gallery=page.locator('#scene-content .textbook-scene-figures[data-original-text]');await expect(gallery).toBeVisible();
   expect(await gallery.locator('[data-scene-figure]').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('data-scene-figure')))).toEqual(expected.map(figure=>figure.id));
   for(const figure of expected){
@@ -43,7 +44,7 @@ async function assertGalleryHidden(page:Page,lesson:number,sceneId:string,expect
   await expect(page.locator('#scene-content .textbook-scene-figures')).toBeHidden();
   await expect(page.locator('[data-original-text]:visible')).toHaveCount(0);
   const accessible=await page.locator('#scene-content').ariaSnapshot();
-  for(const figure of sceneFigures(lesson,sceneId))for(const text of [figure.alt.zh,figure.alt.vi,`教材原图 · 第${figure.source.printedPage}页`,`Hình gốc trong sách · Trang ${figure.source.printedPage}`])expect(accessible).not.toContain(text);
+  for(const figure of sceneFigures(lesson,sceneId,(await loadActiveHsk1ForTests()).registry))for(const text of [figure.alt.zh,figure.alt.vi,`教材原图 · 第${figure.source.printedPage}页`,`Hình gốc trong sách · Trang ${figure.source.printedPage}`])expect(accessible).not.toContain(text);
 }
 
 /** Shared native regression: run against both legacy lifecycle and unified bridge. */
