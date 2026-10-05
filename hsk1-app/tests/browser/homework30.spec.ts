@@ -11,11 +11,12 @@ const oldBank = JSON.parse(await readFile(new URL('../../content/stage2-bank.jso
 const key = 'ran_hsk1_modular_v1', at = 1790812800000;
 function ordered(q: Homework30Question): number[] {
   if (q.kind !== 'sort') throw Error('Expected sort');
+  const tokens = q.tokens;
   const target = legacy.normal(q.answers[0]);
   function walk(order: number[], remaining: string): number[] | null {
-    if (order.length === q.tokens.length) return remaining ? null : order;
-    for (let i = 0; i < q.tokens.length; i++) if (!order.includes(i)) {
-      const token = legacy.normal(q.tokens[i]); if (remaining.startsWith(token)) { const found = walk([...order, i], remaining.slice(token.length)); if (found) return found; }
+    if (order.length === tokens.length) return remaining ? null : order;
+    for (let i = 0; i < tokens.length; i++) if (!order.includes(i)) {
+      const token = legacy.normal(tokens[i]); if (remaining.startsWith(token)) { const found = walk([...order, i], remaining.slice(token.length)); if (found) return found; }
     }
     return null;
   }
@@ -31,7 +32,8 @@ function seed(completeParts: readonly Homework30Part[] = []) {
   return { reading: { lessons: {}, mastered: {}, modules: {} }, homework, homework30, practice: practice.blank(), exercises: blankExercisesState(), navigation: null, legacyRaw: {} };
 }
 async function login(page: Page, data = seed()) {
-  await page.addInitScript(({ key, data, at }) => { sessionStorage.setItem('hsk_portal_unlocked_v2', '1'); if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify({ app: 'hsk1-modular', schema: 1, revision: 1, updatedAt: at, data, recovery: null })); }, { key, data, at });
+  const fixture: { key: string; data: unknown; at: number } = { key, data, at };
+  await page.addInitScript(({ key, data, at }) => { sessionStorage.setItem('hsk_portal_unlocked_v2', '1'); if (!localStorage.getItem(key)) localStorage.setItem(key, JSON.stringify({ app: 'hsk1-modular', schema: 1, revision: 1, updatedAt: at, data, recovery: null })); }, fixture);
 }
 async function ready(page: Page, part: Homework30Part) {
   await expect(page.locator('#module-host')).toHaveAttribute('data-state', 'ready');

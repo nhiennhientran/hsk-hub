@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtempSync,mkdirSync,writeFileSync,readFileSync,rmSync,symlinkSync,chmodSync} from 'node:fs';
+import {mkdtempSync,mkdirSync,writeFileSync,readFileSync,rmSync,symlinkSync,chmodSync,statSync} from 'node:fs';
 import {join} from 'node:path';
 import {tmpdir} from 'node:os';
 import {execFileSync} from 'node:child_process';
@@ -8,9 +8,24 @@ import {hash} from '../tools/package-core.mjs';
 import {assertUnifiedAcceptance,runtimeSourceSnapshot} from '../tools/package-unified.mjs';
 import {semanticLessonScopes,crossSiteScopes} from '../tools/release-readiness.mjs';
 
+function runFixtureGit(repo,args){
+  try{return execFileSync('git',args,{cwd:repo,encoding:'utf8',stdio:['pipe','pipe','pipe']}).trim();}
+  catch(error){
+    const fileState=path=>{try{const s=statSync(path);return {exists:true,directory:s.isDirectory(),bytes:s.size};}catch(e){return {exists:false,errorCode:e.code??null};}};
+    const diagnostics={command:'git',args:[...args],cwd:repo,status:error.status??null,signal:error.signal??null,
+      errorCode:error.code??null,stdout:String(error.stdout??''),stderr:String(error.stderr??''),
+      cwdState:fileState(repo),indexState:fileState(join(repo,'.git/index')),indexLockState:fileState(join(repo,'.git/index.lock')),
+      // Names only: inherited Git config values may contain credentials.
+      inheritedGitEnvironmentNames:Object.keys(process.env).filter(name=>name.startsWith('GIT_')).sort()};
+    const failure=new Error('Temporary readiness fixture Git command failed: '+JSON.stringify(diagnostics),{cause:error});
+    failure.fixtureGit=diagnostics;
+    throw failure; // Do not retry or turn an unexplained exit 128 into a pass.
+  }
+}
 function fixture(){
   const repo=mkdtempSync(join(tmpdir(),'hsk-readiness-'));
-  const git=args=>execFileSync('git',args,{cwd:repo,encoding:'utf8',stdio:['pipe','pipe','ignore']}).trim();
+  try{
+  const git=args=>runFixtureGit(repo,args);
   const write=(path,bytes)=>{mkdirSync(join(repo,path,'..'),{recursive:true});writeFileSync(join(repo,path),bytes);return {path,sha256:hash(Buffer.from(bytes))};};
   const json=(path,value)=>write(path,JSON.stringify(value));
   const commit=message=>{git(['add','.']);git(['-c','user.name=Readiness Test','-c','user.email=readiness@example.invalid','commit','-m',message]);return git(['rev-parse','HEAD']);};
@@ -42,6 +57,11 @@ function fixture(){
   const validate=()=>assertUnifiedAcceptance(gate,head(),{repo});
   const mutate=(reference,fn)=>{const value=JSON.parse(readFileSync(join(repo,reference.path),'utf8'));fn(value);const updated=json(reference.path,value);reference.sha256=updated.sha256;};
   return {repo,git,write,json,commit,gate,evidence,head,validate,mutate};
+  }catch(error){
+    try{rmSync(repo,{recursive:true,force:true});}
+    catch(cleanupError){error.fixtureCleanup={cwd:repo,message:cleanupError.message,code:cleanupError.code??null};}
+    throw error;
+  }
 }
 function withFixture(fn){const f=fixture();try{return fn(f);}finally{rmSync(f.repo,{recursive:true,force:true});}}
 

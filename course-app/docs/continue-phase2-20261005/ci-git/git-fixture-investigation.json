@@ -1,0 +1,254 @@
+{
+  "schemaVersion": 1,
+  "status": "fixture-diagnostics-and-constructor-cleanup-verified-historical-cause-undetermined",
+  "writtenAt": "2026-10-05T09:17:29.678881+00:00",
+  "author": "continue_inventory (author checks, not independent acceptance)",
+  "baseline": {
+    "head": "a18a8cae149f3e63079b6d2b6b5b9f4ab630267d",
+    "tree": "d88aa0c0d27bd9c6cc91fe0339c32ff9020b7f1f",
+    "testGitBlob": "6ba8341427b01e37647cce18fb562ed7c301cf9e",
+    "testBytes": 13052,
+    "testSHA256": "efb2f3753dbe799d374b8fc962a24e65f8dc35d57c315417311ff47ddaa01cc9"
+  },
+  "sourcePins": [
+    {
+      "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/tests/release-readiness.test.mjs",
+      "bytes": 14306,
+      "sha256": "f9ae8776f3815ee684acdc571f4c3969c76c59c1c8539645d557a0fc0b1d131e"
+    },
+    {
+      "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-readiness.mjs",
+      "bytes": 7827,
+      "sha256": "08dd15f4fe4235958a26ef0efecc39dc3840482cbad4a1987110df3d10a3cc74"
+    }
+  ],
+  "historicalFailure": {
+    "runId": 37284257855,
+    "attempt": 1,
+    "engineJob": "webkit",
+    "testFile": "course-app/tests/release-readiness.test.mjs",
+    "reportedDefinitionLine": 58,
+    "testName": "clean committed runtime/tool/raw input drift fails even when both gate snapshot fields are forged to agree",
+    "command": [
+      "git",
+      "add",
+      "."
+    ],
+    "status": 128,
+    "signal": null,
+    "stdout": "",
+    "stderr": null,
+    "fixtureCall": "second fixture commit after runtime source mutation (the initial fixture setup/commit had succeeded)",
+    "metrics": {
+      "tests": 225,
+      "pass": 224,
+      "fail": 1,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "evidence": {
+      "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-save/ci-artifacts-second/webkit/course-app/.repro-output/continue-20261005/webkit/course-units.log",
+      "bytes": 23963,
+      "sha256": "339717ca6127d108b5edcb31207617e5eea8ce7f1dc71c9af7aa9314b1247a7f"
+    },
+    "causeStatus": "undetermined",
+    "failureMessageDiscardedByOldHelper": true,
+    "oldHelperStdio": [
+      "pipe",
+      "pipe",
+      "ignore"
+    ],
+    "cannotConclude": [
+      "Index lock conflict caused the historical failure",
+      "Inherited Git environment caused the historical failure",
+      "The cause was transient and is now fixed",
+      "A same-HEAD rerun or finite local stress establishes root-cause closure"
+    ]
+  },
+  "sameHeadRerun": {
+    "runId": 37284257855,
+    "attempt": 2,
+    "engineJob": "webkit",
+    "baseline": "a18a8cae149f3e63079b6d2b6b5b9f4ab630267d",
+    "metrics": {
+      "tests": 225,
+      "pass": 225,
+      "fail": 0,
+      "cancelled": 0,
+      "skipped": 0,
+      "todo": 0
+    },
+    "evidence": {
+      "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/continue-save/ci-artifacts-second-attempt2/webkit/course-app/.repro-output/continue-20261005/webkit/course-units.log",
+      "bytes": 22781,
+      "sha256": "8340731e37a951f0660d341e9bedd10abdf35baecb599f8eebefb9ab21ecaeae"
+    },
+    "interpretation": "Same source passed on rerun; historical cause is still unknown because original stderr was not recorded."
+  },
+  "staticFindings": [
+    "Each readiness fixture has a unique mkdtempSync hsk-readiness-* directory and Git commands run synchronously with its own cwd/index.",
+    "No test suite process.chdir or process.env mutation was found during the targeted parallel/environment inspection; separate package fixtures also use unique temporary directories.",
+    "Git parent config and inherited environment remain in force. Diagnostics record GIT_* variable names only, never their values; no global config or environment mutation was added.",
+    "A permanent inherited initialization failure does not explain the observed second-add-only failure without additional evidence; the initial fixture init/add/commit succeeded.",
+    "The old constructor lacked cleanup on setup failure because withFixture() only enters try/finally after fixture() returns. A controlled injected init failure proves this distinct cleanup defect."
+  ],
+  "implementation": {
+    "scope": "Only readiness test fixture helper and a dedicated diagnostic runner; no application runtime, release gate assertions, workflow, production assets or source content modified by this agent.",
+    "stderr": "Capture stdout and stderr, command argv/cwd/exit status/signal/error code, cwd/index/index.lock file state, and inherited GIT_* variable names.",
+    "failureSemantics": "Re-throw a diagnostic error with the original cause. No retries, swallowed failures, automatic lock removal, or claimed root-cause repair.",
+    "constructorCleanup": "Remove the uniquely created temporary directory after any constructor failure; retain the original error and attach cleanup error metadata if cleanup itself fails.",
+    "existingTests": {
+      "allBytesFromWithFixtureThroughEOFUnchanged": true,
+      "testDefinitions": 9,
+      "tailSHA256": "8cda453193fe12f852da6f64ae8a4ad5d63a48f2e121a79a3105e6491b045eac"
+    },
+    "outputIsolation": {
+      "env": "HSK_PHASE2_DIAGNOSTIC_OUT",
+      "resolution": "Absolute or relative env path resolved with path.resolve; fallback to script directory only when no override is supplied. All generated JSON and TAP files use the selected output directory.",
+      "ciRelativeOutput": "course-app/.repro-output/continue-phase2/<browser>/ci-git",
+      "rerunVerified": true
+    }
+  },
+  "authorVerification": {
+    "initialBatch": {
+      "runs": 12,
+      "parallel": 3,
+      "actualTests": 108,
+      "passed": 108,
+      "failed": 0,
+      "sourceBytesStable": true,
+      "runnerSHA256AtExecution": "58eaa70dd42a23f7c4041cefdf9f85883070172b0908ebf7127e300ad8ca423a",
+      "startedAt": "2026-10-05T09:10:38.700Z",
+      "completedAt": "2026-10-05T09:10:52.357Z",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/helper-negative-probes.json",
+          "bytes": 2147,
+          "sha256": "97ff8c22559d7d207e9617028593c489367de98f9d5a111852a9880ffd6e7f6d"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-results.json",
+          "bytes": 10769,
+          "sha256": "00fd7ac9b4b6428f4dfee48f56df7ac7d3462b62705c94ffc252f286ec89319d"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-01.tap",
+          "bytes": 2413,
+          "sha256": "039b77102a1f034971b27942d8a233cf73b55d8a20a5d46144a5205738364f2e"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-02.tap",
+          "bytes": 2415,
+          "sha256": "e7ec922fde3b5db7944e0e6b3ce22a12da4a3aad0bfa669361294050503a054c"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-03.tap",
+          "bytes": 2417,
+          "sha256": "6c23d9107dbd0a533171286b48c1fc6dbd783a047f7463b5ef74e91f8d6623be"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-04.tap",
+          "bytes": 2416,
+          "sha256": "31d0a568010048cfa8aaea5a06e59b0864228c08cad06c9182e9f779a1fb5f3c"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-05.tap",
+          "bytes": 2417,
+          "sha256": "4e9e3b0dc6b8933a426bf6c68cae1fc7b7d0d604f035887431e2f7e952173521"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-06.tap",
+          "bytes": 2417,
+          "sha256": "0539f8e46d4616814618e9f60938c403a4dc234078f7da05d521936408791939"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-07.tap",
+          "bytes": 2417,
+          "sha256": "5a94e582df709a2993c5a6d8cb4e96ce598c5fe81d25b4650723f0921d2e4ebb"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-08.tap",
+          "bytes": 2415,
+          "sha256": "d7d9c38b2e11806d7b130233ff8f7c5e31065c327f59cf9e8ff7815b8ce1df6d"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-09.tap",
+          "bytes": 2415,
+          "sha256": "6322038b21721ee5496d4a4673f22ebd8ae0d2817935d0868f6895721fb97a43"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-10.tap",
+          "bytes": 2415,
+          "sha256": "a7a030b928934995f14b9f796363c2cf36fa7eec9e64dae6dc86793c0aa63016"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-11.tap",
+          "bytes": 2415,
+          "sha256": "869fe0138e26ce44f78b8614a1268a58dd542865e2ade464bb11e8dfb703e351"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/hsk-hub-engineering-restored/course-app/docs/continue-phase2-20261005/ci-git/stress-run-12.tap",
+          "bytes": 2416,
+          "sha256": "16ec253131f9663dabdbaaff22f37270df35fbb5288cc4951e86fbe708099186"
+        }
+      ]
+    },
+    "outputIsolationBatch": {
+      "runs": 1,
+      "parallel": 1,
+      "actualTests": 9,
+      "passed": 9,
+      "failed": 0,
+      "sourceBytesStable": true,
+      "runnerSHA256AtExecution": "08dd15f4fe4235958a26ef0efecc39dc3840482cbad4a1987110df3d10a3cc74",
+      "outputDirectory": "/workspace/scratch/28b55072841a/project-recovery-20261005/phase2-ci-git-isolated-output",
+      "initialTAPPinsStillMatch": true,
+      "startedAt": "2026-10-05T09:14:41.527Z",
+      "completedAt": "2026-10-05T09:14:45.193Z",
+      "artifacts": [
+        {
+          "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/phase2-ci-git-isolated-output/helper-negative-probes.json",
+          "bytes": 2147,
+          "sha256": "9cc91d853134ab91706b89a5eefe2bf96d7159c747664dae02692cdad892a8e5"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/phase2-ci-git-isolated-output/stress-results.json",
+          "bytes": 1846,
+          "sha256": "a468ff81e8ca76e4aa6a8818db86e1575d58e90623f1ee3c887b11439cdf5382"
+        },
+        {
+          "path": "/workspace/scratch/28b55072841a/project-recovery-20261005/phase2-ci-git-isolated-output/stress-run-01.tap",
+          "bytes": 2417,
+          "sha256": "e7c1e3b3678dead775c2970e6221510f5e75499fa906dd5d2fc3ee180cfa7e5a"
+        }
+      ]
+    },
+    "totalActualTestExecutions": 117,
+    "controlledProbeDefinitions": 4,
+    "controlledProbeBatches": 2,
+    "controlledProbes": [
+      "Actual helper with explicitly held synthetic .git/index.lock returns 128 and records command/cwd/status/stderr/lock state; repeated call remains rejected.",
+      "Actual add succeeds after the probe explicitly removes its own synthetic lock.",
+      "Original baseline fixture leaves its unique directory behind after an injected constructor init failure; the diagnostic runner detects and then cleans it.",
+      "Current actual fixture cleans its unique directory on the same injected constructor failure and preserves diagnostics."
+    ],
+    "syntheticIsNotHistorical": "These probes deliberately induce failures to test observability/cleanup; they are not a reproduction or diagnosis of the historical CI failure.",
+    "historicalFailureReproduced": false,
+    "runtime": "Local locked dependencies, Node v24.19.0, git version 2.51.1, linux",
+    "broaderCI": "Not executed by this agent in this report; parent owns the new native CI matrix and its independent review."
+  },
+  "integration": {
+    "safeSourceCandidates": [
+      "course-app/tests/release-readiness.test.mjs",
+      "course-app/docs/continue-phase2-20261005/ci-git/stress-readiness.mjs",
+      "course-app/docs/continue-phase2-20261005/ci-git/git-fixture-investigation.json",
+      "course-app/docs/continue-phase2-20261005/ci-git/README.md"
+    ],
+    "excludeGeneratedLocalOutputs": "Do not treat local helper-negative-probes.json, stress-results.json or stress-run-*.tap as source-code inputs for safe source commit; collect fresh CI outputs under .repro-output. Local report pins are observation records only.",
+    "ciCommandFromRepoRoot": "HSK_PHASE2_DIAGNOSTIC_OUT=\"$PWD/course-app/.repro-output/continue-phase2/${HSK_PHASE2_BROWSER}/ci-git\" node --experimental-strip-types course-app/docs/continue-phase2-20261005/ci-git/stress-readiness.mjs --runs=12 --parallel=3",
+    "expectedSuccess": "12 processes, each 9 actual tests with no skipped/cancelled/todo cases, four controlled probes, source bytes stable. Any nonzero child or failing metric makes the runner fail.",
+    "approval": "Independent review required by the parent; this author report does not self-certify independent acceptance."
+  },
+  "remainingRisk": "The original CI exit 128 root cause cannot be recovered from discarded stderr. If it recurs, the new diagnostic failure should preserve useful command/path/status/error context; no prevention claim is made."
+}
