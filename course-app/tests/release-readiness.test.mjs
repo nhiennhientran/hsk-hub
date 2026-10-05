@@ -30,6 +30,10 @@ function fixture(){
   const json=(path,value)=>write(path,JSON.stringify(value));
   const commit=message=>{git(['add','.']);git(['-c','user.name=Readiness Test','-c','user.email=readiness@example.invalid','commit','-m',message]);return git(['rev-parse','HEAD']);};
   git(['init']);
+  // This short-lived fixture must own all Git writers until cleanup. Keep
+  // automatic maintenance enabled, but finish it synchronously before return.
+  git(['config','--local','maintenance.autoDetach','false']);
+  git(['config','--local','gc.autoDetach','false']);
   for(const path of ['course-app/src/main.ts','course-app/tools/package-unified.mjs','course-app/index.html','new-hsk1/hsk1/audio/1-1.mp3','new-hsk1/assets/hanzi-data/一.json'])write(path,'runtime fixture '+path);
   const testedSourceCommit=commit('tested runtime fixture'),runtimeSourceSnapshotValue=runtimeSourceSnapshot(repo);
   const evidence=write('course-app/docs/evidence.txt','Synthetic test evidence, never a real acceptance certificate.');
