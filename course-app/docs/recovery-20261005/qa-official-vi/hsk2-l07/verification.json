@@ -1,0 +1,2466 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "sourceAuthor": "remaining_media_audit",
+  "sourceSHA256": "8d97d28e2ee072b33204018fe4ccac000f1fbbe0b0fc4da04ea0127aece8b14a",
+  "originalPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "runAtUTC": "2026-10-05T03:01:37.217178+00:00",
+  "checks": [
+    {
+      "check": "actual original PDF identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact frozen author source",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact frozen author FREEZE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze README.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze author-input.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze author-verification.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze build-source-pack.py",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-069.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-070.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-071.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-072.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-073.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-074.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-075.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-076.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-077.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze original-pages/pdf-078.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze page-scope-ledger.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze render-manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze source-transcription.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "author freeze STAGE-FILES.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archived author input page-scope-ledger.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archived author input render-manifest.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archived author input source-transcription.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archived author input FREEZE.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archived author input author-verification.json",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "archived author input STAGE-FILES.txt",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual fresh 8 source pages and 2 boundaries read",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "91 unique source records",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exact four original-page transcription repairs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:lesson-number-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:lesson-number-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:lesson-number-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:lesson-number-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:lesson-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:lesson-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:lesson-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:lesson-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:goals-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:goals-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:goals-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:goals-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:goal1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:goal1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:goal1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:goal1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:goal2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:goal2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:goal2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:goal2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:goal3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:goal3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:goal3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:goal3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:warmup-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:warmup-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:warmup-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:warmup-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:warmup1-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:warmup1-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:warmup1-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:warmup1-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:warmup2-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:warmup2-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:warmup2-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:warmup2-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:warmup2-column1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:warmup2-column1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:warmup2-column1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:warmup2-column1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p056:warmup2-column2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p056:warmup2-column2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p056:warmup2-column2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p056:warmup2-column2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p063:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p063:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p063:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p063:running-lesson-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:running-series-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:text2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:text2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:text2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:text2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:text2-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:text2-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:text2-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:text2-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:text2-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:text2-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:text2-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:text2-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:text3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:text3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:text3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:text3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:text3-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:text3-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:text3-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:text3-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:text3-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:text3-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:text3-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:text3-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:text4-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:text4-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:text4-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:text4-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:text4-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:text4-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:text4-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:text4-context",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:text4-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:text4-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:text4-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:text4-listen-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:words-header-text1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:words-header-text1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:words-header-text1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:words-header-text1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:words-header-text2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:words-header-text2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:words-header-text2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:words-header-text2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:words-header-text3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:words-header-text3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:words-header-text3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:words-header-text3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:words-header-text4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:words-header-text4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:words-header-text4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:words-header-text4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:word01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:word01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:word01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:word01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:word02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:word02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:word02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:word02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:word03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:word03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:word03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:word03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:word04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:word04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:word04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:word04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:word05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:word05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:word05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:word05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:word06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:word06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:word06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:word06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:word07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:word07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:word07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:word07",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:word08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:word08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:word08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:word08",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:word09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:word09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:word09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:word09",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:word10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:word10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:word10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:word10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:word11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:word11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:word11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:word11",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:word12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:word12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:word12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:word12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:word13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:word13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:word13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:word13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:word14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:word14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:word14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:word14",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:word15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:word15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:word15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:word15",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p057:text1-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p057:text1-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p057:text1-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p057:text1-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "known original-page mismatch hsk2-official-vi:l07:p059:text2-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-line01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "known original-page mismatch hsk2-official-vi:l07:p061:text3-line02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-line03",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-line04",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-line05",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-line06",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:text1-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:text1-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:text1-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:text1-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:text2-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:text2-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:text2-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:text2-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:text3-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:text3-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:text3-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:text3-role-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:text4-paragraph1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:text4-paragraph1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:text4-paragraph1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:text4-paragraph1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:text4-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:text4-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:text4-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:text4-read-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:grammar1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:grammar1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:grammar1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:grammar1-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:grammar1-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:grammar1-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:grammar1-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:grammar1-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:grammar2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:grammar2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:grammar2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:grammar2-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p059:grammar2-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p059:grammar2-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p059:grammar2-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p059:grammar2-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:grammar3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:grammar3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:grammar3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:grammar3-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:grammar3-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:grammar3-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:grammar3-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:grammar3-title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:grammar1-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:grammar1-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:grammar1-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:grammar1-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "known original-page mismatch hsk2-official-vi:l07:p058:grammar1-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:grammar2-explanation1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:grammar2-explanation1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:grammar2-explanation1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:grammar2-explanation1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "known original-page mismatch hsk2-official-vi:l07:p060:grammar2-explanation1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:grammar2-explanation2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:grammar2-explanation2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:grammar2-explanation2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:grammar2-explanation2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:grammar3-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:grammar3-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:grammar3-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:grammar3-explanation",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p058:grammar1-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p058:grammar1-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p058:grammar1-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p058:grammar1-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p060:grammar2-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p060:grammar2-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p060:grammar2-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p060:grammar2-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p061:grammar3-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p061:grammar3-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p061:grammar3-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p061:grammar3-complete-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:exercises-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:exercises-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:exercises-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:exercises-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p062:fillword-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p062:fillword-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p062:fillword-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p062:fillword-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p063:describe-picture-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p063:describe-picture-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p063:describe-picture-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p063:describe-picture-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p063:activity-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p063:activity-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p063:activity-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p063:activity-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p063:group-survey-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p063:group-survey-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p063:group-survey-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p063:group-survey-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p063:group-survey-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p063:group-survey-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p063:group-survey-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p063:group-survey-instruction",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "literal integrity hsk2-official-vi:l07:p063:example-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "VI fragment join hsk2-official-vi:l07:p063:example-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "ZH fragment join hsk2-official-vi:l07:p063:example-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual cross-language physical anchors hsk2-official-vi:l07:p063:example-header",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "all 15 original word/POS/PY tuples independently read",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual complete text 1 roles and order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual complete text 1 independent VI utterances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual complete text 2 roles and order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual complete text 2 independent VI utterances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual complete text 3 roles and order",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual complete text 3 independent VI utterances",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "whole unlabelled diary, no invented role",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "grammar cross-page ZH73 to VI74",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf070-p056.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf070-p056.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf070-p056.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf071-p057.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf071-p057.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf071-p057.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf072-p058.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf072-p058.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf072-p058.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf073-p059.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf073-p059.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf073-p059.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf074-p060.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf074-p060.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf074-p060.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf075-p061.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf075-p061.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf075-p061.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf076-p062.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf076-p062.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf076-p062.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf077-p063.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf077-p063.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf077-p063.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf069-p055.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf069-p055.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf069-p055.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact renders/pdf078-p064.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify renders/pdf078-p064.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt renders/pdf078-p064.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact details/pdf072-grammar1-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify details/pdf072-grammar1-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt details/pdf072-grammar1-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact details/pdf073-text2-and-grammarZH-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify details/pdf073-text2-and-grammarZH-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt details/pdf073-text2-and-grammarZH-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact details/pdf074-grammar2-start-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify details/pdf074-grammar2-start-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt details/pdf074-grammar2-start-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact details/pdf075-text3-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify details/pdf075-text3-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt details/pdf075-text3-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG exact details/pdf075-grammar3-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "independent PNG full load+verify details/pdf075-grammar3-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual pre-view guard receipt details/pdf075-grammar3-5x.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-070.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-071.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-072.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-073.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-074.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-075.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-076.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-077.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-069.png",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "actual original PDF same-recipe author rerender original-pages/pdf-078.png",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "checkCount": 462,
+  "passed": true,
+  "failed": [],
+  "sameRecipeActualRerenders": [
+    {
+      "pdfPage": 70,
+      "authorFile": "original-pages/pdf-070.png",
+      "bytes": 871966,
+      "sha256": "c5b5045cac5eccd6a816d615ff06b69d240968e1cd4fdac2b7452b185676e10f",
+      "expectedBytes": 871966,
+      "expectedSHA256": "c5b5045cac5eccd6a816d615ff06b69d240968e1cd4fdac2b7452b185676e10f",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 71,
+      "authorFile": "original-pages/pdf-071.png",
+      "bytes": 1243629,
+      "sha256": "8ed05f00f763e1ea244696f85645f37e37617726b7d5240dac6e0d1aa7f56745",
+      "expectedBytes": 1243629,
+      "expectedSHA256": "8ed05f00f763e1ea244696f85645f37e37617726b7d5240dac6e0d1aa7f56745",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 72,
+      "authorFile": "original-pages/pdf-072.png",
+      "bytes": 500042,
+      "sha256": "0541d46975c8f44d8b28827fc1fec030e1efc92058907a0512411312ad0fa8cd",
+      "expectedBytes": 500042,
+      "expectedSHA256": "0541d46975c8f44d8b28827fc1fec030e1efc92058907a0512411312ad0fa8cd",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 73,
+      "authorFile": "original-pages/pdf-073.png",
+      "bytes": 1339866,
+      "sha256": "01d572ec9578994626f8c291856acbc191b0a629569dbbd16e6490c68857f944",
+      "expectedBytes": 1339866,
+      "expectedSHA256": "01d572ec9578994626f8c291856acbc191b0a629569dbbd16e6490c68857f944",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 74,
+      "authorFile": "original-pages/pdf-074.png",
+      "bytes": 363675,
+      "sha256": "0c58777707d9a086cd15d2f61ba5087e0133d98c259c6dc352d98b3b16542991",
+      "expectedBytes": 363675,
+      "expectedSHA256": "0c58777707d9a086cd15d2f61ba5087e0133d98c259c6dc352d98b3b16542991",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 75,
+      "authorFile": "original-pages/pdf-075.png",
+      "bytes": 1192811,
+      "sha256": "6389b4ba9d7a009a12abe110156c3058d459078c1db5fdf4a51641d2190d0418",
+      "expectedBytes": 1192811,
+      "expectedSHA256": "6389b4ba9d7a009a12abe110156c3058d459078c1db5fdf4a51641d2190d0418",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 76,
+      "authorFile": "original-pages/pdf-076.png",
+      "bytes": 890140,
+      "sha256": "38cc90d98da5238a0655e856b26644f00cb01dd58444a8fb1b11c4526e2e7264",
+      "expectedBytes": 890140,
+      "expectedSHA256": "38cc90d98da5238a0655e856b26644f00cb01dd58444a8fb1b11c4526e2e7264",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 77,
+      "authorFile": "original-pages/pdf-077.png",
+      "bytes": 1575752,
+      "sha256": "21c5d25ef473254d5e4abef5774e020068e08214352071d1eceb48fcd67da685",
+      "expectedBytes": 1575752,
+      "expectedSHA256": "21c5d25ef473254d5e4abef5774e020068e08214352071d1eceb48fcd67da685",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 69,
+      "authorFile": "original-pages/pdf-069.png",
+      "bytes": 860055,
+      "sha256": "5ec450b9d17278ac4608bcadb4b2a32c04fe3bcbd22266515ab608a24052ad3b",
+      "expectedBytes": 860055,
+      "expectedSHA256": "5ec450b9d17278ac4608bcadb4b2a32c04fe3bcbd22266515ab608a24052ad3b",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    },
+    {
+      "pdfPage": 78,
+      "authorFile": "original-pages/pdf-078.png",
+      "bytes": 852956,
+      "sha256": "8120e470e782bbe2666bcc8e1c320dc6169b396036d7711bd29560961279791b",
+      "expectedBytes": 852956,
+      "expectedSHA256": "8120e470e782bbe2666bcc8e1c320dc6169b396036d7711bd29560961279791b",
+      "fullLoadAndVerify": true,
+      "imageSize": [
+        1023,
+        1433
+      ],
+      "exact": true
+    }
+  ],
+  "qualification": "Integrity guards support fresh actual independent page reading; they do not replace it or accept website translations."
+}

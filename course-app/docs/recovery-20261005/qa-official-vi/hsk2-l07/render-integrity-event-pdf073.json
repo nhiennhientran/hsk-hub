@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "detectedUTC": "2026-10-05T02:40:59.394218+00:00",
+  "reviewer": "release_assembly",
+  "state": "unfrozen-own-PNG-restored-before-visual-read",
+  "originalManifest": {
+    "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l07/render-manifest.json",
+    "sha256": "51cb62e30de64406add1f44fdc8d3f5c349c480be2fadb45c5d20f12271c3192",
+    "PNGbytes": 2064048,
+    "PNGsha256": "ab31cb6c0ed93fa4f0fc4c98264138aa0fc4e79d4c5b3080391ed1c756ae3827"
+  },
+  "detectedBadPNG": {
+    "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l07/renders/pdf073-p059.png",
+    "bytes": 1564672,
+    "sha256": "d265f317c9b0020e3496963f03f44661add2febd72d5f4c4099bda2729a24c4c"
+  },
+  "badPNGPreviouslyVisuallyRead": false,
+  "originalPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "rerenderArgv": [
+    "pdftoppm",
+    "-f",
+    "73",
+    "-l",
+    "73",
+    "-r",
+    "180",
+    "-cropbox",
+    "-singlefile",
+    "-png",
+    "/workspace/scratch/28b55072841a/upload/HSK2 ( 3.0).pdf",
+    "/tmp/qa-pdf73-integrity-q8rcktgi/pdf73"
+  ],
+  "rerenderExitCode": 0,
+  "rerenderBytes": 2064048,
+  "rerenderSHA256": "ab31cb6c0ed93fa4f0fc4c98264138aa0fc4e79d4c5b3080391ed1c756ae3827",
+  "restoredBytes": 2064048,
+  "restoredSHA256": "ab31cb6c0ed93fa4f0fc4c98264138aa0fc4e79d4c5b3080391ed1c756ae3827",
+  "fullPILLoadAndVerify": "passed",
+  "frozenFilesRewritten": false,
+  "lostBadBytesRetained": false,
+  "whyNoBadCopy": "Unfrozen own output; recorded exact bad SHA/size before replacement. Freeze did not exist."
+}

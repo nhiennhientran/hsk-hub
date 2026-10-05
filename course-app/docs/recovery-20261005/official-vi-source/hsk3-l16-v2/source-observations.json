@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "sourceOnly": true,
+  "publisherErrataConfirmed": false,
+  "websiteAdjudicationPerformed": false,
+  "observations": [
+    {
+      "observationId": "hsk3-l16-warmup-zoo-versus-animals",
+      "classification": "source-faithful-book-difference-candidate-not-confirmed-error",
+      "sourceId": "hsk3-official-vi:l16:p145:warmup-question-1",
+      "sourceRecordCanonicalSHA256": "7f22cc2bbb55cc31eb77c9dd369f4aa3813d190350e1251dac347ec09519c2bf",
+      "zhAnchorPDFPage": 157,
+      "zhAnchorPrintedPage": 145,
+      "viPDFPage": 157,
+      "viPrintedPage": 145,
+      "zhPrinted": "你喜欢去动物园吗？你在动物园最喜欢看什么动物？",
+      "viPrinted": "Bạn có thích động vật không? Bạn thích xem loài nào nhất trong vườn bách thú?",
+      "zhFocus": "你喜欢去动物园吗？",
+      "viFocus": "Bạn có thích động vật không?",
+      "authorObservation": "FirstZHquestion askswhetherlikegoingtozoo; firstVIquestion askswhetherlikeanimals. Preservebothrawsources; notconfirmedpublishererratum/nowebsiteadjudication.",
+      "primaryEvidencePaths": [
+        "evidence/pdf157-p145.png"
+      ],
+      "detailEvidencePath": "evidence/pdf157-detail-warmup.png",
+      "primaryEvidenceSHA256": {
+        "evidence/pdf157-p145.png": "1c0870482872f4c19d2ce07362d74f2c91c589d0df21c55e1b629845241a1e02"
+      },
+      "detailEvidenceSHA256": "b9096ce5addb577561a07007f9f7cc609e608e88e53551ec89fca0b549a062fc"
+    },
+    {
+      "observationId": "hsk3-l16-Chinese-panda-pronoun",
+      "classification": "source-faithful-book-difference-candidate-not-confirmed-error",
+      "sourceId": "hsk3-official-vi:l16:p195:appendix-text2-line07",
+      "sourceRecordCanonicalSHA256": "ff4ac6c2d05af68d14a38ed44d531940c8687cf0e8fda57d41fa3374788ac93e",
+      "zhAnchorPDFPage": 159,
+      "zhAnchorPrintedPage": 147,
+      "viPDFPage": 207,
+      "viPrintedPage": 195,
+      "zhPrinted": "我听说有的熊猫出国了，他们去哪儿了？",
+      "viPrinted": "Con nghe nói đã có vài con gấu trúc được gửi ra nước ngoài, chúng đã đi đâu vậy mẹ?",
+      "zhFocus": "他们去哪儿了？",
+      "viFocus": "chúng đã đi đâu vậy mẹ?",
+      "authorObservation": "ZHprinted他们refers熊猫, VIuseschúng. PreserveoriginalZHpronounandVI; rawprintobservationnotautomaticVIerror.",
+      "primaryEvidencePaths": [
+        "evidence/pdf159-p147.png",
+        "evidence/pdf207-p195.png"
+      ],
+      "detailEvidencePath": "evidence/pdf207-detail-appendix-text2-left.png",
+      "primaryEvidenceSHA256": {
+        "evidence/pdf159-p147.png": "f265fd63afbe6f8d13630cff8dfe7b9b22f3ac79c3fe8a5ec9b152d0dc774a6f",
+        "evidence/pdf207-p195.png": "40d25cfebaf55d7ffebcd29f4e8611e6ea47fc83317022c13a716876cec9ac9d"
+      },
+      "detailEvidenceSHA256": "0a07ab8e05cb669827f57bf82995b3f0d62c30e3bde224f591564bd44230f15c"
+    }
+  ],
+  "qualification": "Originalprintfaithfulnessseparatefromsemanticcorrectness."
+}

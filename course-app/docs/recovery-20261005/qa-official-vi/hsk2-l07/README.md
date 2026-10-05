@@ -1,0 +1,7 @@
+# HSK2 lesson 7: independent original-source audit
+
+Original PDF 70–77 (printed 056–063) and both 69/78 boundaries were actually independently read, with five fresh 5× detail crops and per-view complete PNG decode/SHA guards. All 91 author records and 18 original ZH/VI utterance or whole-paragraph bindings were reviewed. V1 requires four precise repairs: two original `tàm tạm` readings, a semicolon, and a comma. The frozen author V1 remains untouched. 87 full source records and 16 full bindings are accepted; four records and two bindings require the isolated repair list. No source item was missing.
+
+The actual integrity verifier passed 462 checks, including exact fresh reproduction of all ten author PNGs from the original restored PDF using the author fitz 1.8 recipe. Our independent whole-page views used Poppler, so their bytes are separately identified. Rendering manifest generation states remain historical; the journal and final visual/decode proof record completed actual reads. The bad own unfrozen page-73 PNG and its exact original rerender recovery are separately preserved. Two initial verifier path/journal-shape failures are recorded as reviewer-tool failures, not author failures.
+
+This is source fidelity evidence, not website comparison, website acceptance, semantic errata approval, or display-revision activation. It is locally frozen and awaits the unique writer’s complete remote raw-byte/SHA/Git-blob readback receipt.

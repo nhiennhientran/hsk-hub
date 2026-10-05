@@ -1,0 +1,1 @@
+Initial verifier invocation exited 1 before any source checks. Reviewer helper incorrectly resolved repo using parents[6] (workspace), causing FileNotFoundError for official-vi-source/hsk2-l07/source-transcription.json. Corrected to parents[5] (repo). This was a reviewer tool path error, not source acceptance or author source failure.

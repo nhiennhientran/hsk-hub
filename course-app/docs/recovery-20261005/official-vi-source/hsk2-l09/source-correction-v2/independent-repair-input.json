@@ -1,0 +1,22 @@
+{
+  "inputSourceSHA256": "7b4f9f0dab99160e0aac72bc7a7175459520acc1f2410b2cdaccb176f5b9764c",
+  "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "sourceCount": 124,
+  "repairCount": 1,
+  "missingCount": 0,
+  "repairList": [
+    {
+      "sourceId": "hsk2-official-vi:l09:p074:word04",
+      "field": "printedPOSRaw",
+      "actualCandidate": "dt.",
+      "requiredPrintedValue": "đt.",
+      "pdfPage": 88,
+      "printedPage": 74,
+      "reason": "Original fine crossbar visible on d in five-times original-PDF raster, same printed abbreviation as 那么; differs from noun dt. in neighboring rows.",
+      "detailPNG": "details/pdf088-words4-7-pos.png",
+      "detailPNGSHA256": "cf81cfe3d2c52b7d4e758af65e4b58d8a11a81c2dce7391d1855ef65c9b5d3f6",
+      "evidenceReceipt": "details/pdf088-words4-7-pos.json",
+      "onlyOneLeafCorrectionAuthorizedByThisFinding": true
+    }
+  ]
+}

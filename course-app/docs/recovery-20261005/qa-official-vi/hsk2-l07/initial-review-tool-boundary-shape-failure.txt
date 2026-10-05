@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/scratch/28b55072841a/hsk-hub-resume-recovered/course-app/docs/recovery-20261005/qa-official-vi/hsk2-l07/verify-review.py", line 23, in <module>
+    ck('actual fresh 8 source pages and 2 boundaries read',journal['fullPDFPagesActuallyRead']==list(range(70,78)) and set(journal['actuallyReadBoundaries'])=={69,78})
+                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unhashable type: 'dict'
+
+Reviewer verifier assumed boundary journal list of integers; actual journal contains page+scope objects. No acceptance emitted. Fixed reader to actual pdfPage keys.
