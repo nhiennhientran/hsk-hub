@@ -23,11 +23,13 @@ for (const level of [2, 3] as const) {
     const initial = blank(configs[level]); initial.drafts[key] = {answers: {[q.id]: 99}, updatedAt: 500};
     await seed(page, level, initial); await page.goto(`/#view=homework&level=${level}&lesson=1&part=vocabGrammar`);
     const form = page.locator('#assignment'); await expect(form).toHaveAttribute('data-draft-question-snapshot', 'missing');
-    await expect(form.locator('fieldset').first()).toBeDisabled();
+    await expect(form.locator('fieldset').first()).toHaveAttribute('disabled', '');
+    for (const control of await form.locator('fieldset').first().locator('input,textarea,select').all()) await expect(control).toBeDisabled();
     expect(await stored(page, level)).toEqual(initial);
     await page.getByRole('button', {name: '按当前题目继续草稿'}).click();
     await expect(form).toHaveAttribute('data-draft-question-snapshot', 'saved');
-    await expect(form.locator('fieldset').first()).toBeEnabled();
+    await expect(form.locator('fieldset').first()).not.toHaveAttribute('disabled');
+    for (const control of await form.locator('fieldset').first().locator('input,textarea,select').all()) await expect(control).toBeEnabled();
     const acknowledged = await stored(page, level);
     expect(acknowledged.drafts[key]!.answers).toEqual(initial.drafts[key]!.answers);
     expect(acknowledged.drafts[key]!.questions).toEqual(questions);

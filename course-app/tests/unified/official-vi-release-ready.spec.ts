@@ -52,7 +52,7 @@ for (let number = 1; number <= 15; number++) test(`accepted HSK1 lesson ${number
   await expect(page.locator('.textbook-vocab-grid .vocab-card')).toHaveCount(lesson.vocab.length);
   for (const word of lesson.vocab) await expect(page.locator(`[data-word-id="${word.id}"] .vocab-back`)).toContainText(word.vn);
   await page.goto(`/#view=lesson&level=1&lesson=${number}&section=grammar`);
-  for (const grammar of lesson.grammar) await expect(page.locator('#module-host')).toContainText(grammar.desc);
+  for (const grammar of [...lesson.phonetics, ...lesson.grammar]) await expect(page.locator(`[data-language-item="${grammar.id}"]`)).toContainText(grammar.desc);
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   expect(errors).toEqual([]);
 });

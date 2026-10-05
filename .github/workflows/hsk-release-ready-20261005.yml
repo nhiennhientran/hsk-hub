@@ -71,6 +71,16 @@ jobs:
         env:
           HSK_PACKAGE_ROOT: .repro-output/release-ready/site
         run: node tools/run-browser.mjs --config=playwright.package-closure.config.ts --project=${{ matrix.browser }}
+      - name: Retain exact tested website bytes for publication confirmation
+        if: ${{ success() && matrix.browser == 'chromium' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-release-candidate-site-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
+          path: course-app/.repro-output/release-ready/site/
       - uses: actions/upload-artifact@v4
         if: always()
         with:

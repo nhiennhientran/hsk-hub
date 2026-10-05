@@ -124,6 +124,9 @@ export async function createOfficialViRegistry(input: ViRegistryInputs): Promise
     if (!row(value) || !text(value.sourceId) || sources.has(value.sourceId) || !hash(value.pdfSHA256) || !Number.isSafeInteger(value.pdfPageCount) || Number(value.pdfPageCount) < 1) fail('VI document source mismatch.');
     sources.set(value.sourceId, value);
   }
+  // Canonicalize each evidence anchor once. Repeatedly scanning the complete
+  // proof for every field makes a full-course registry block lesson startup.
+  const evidenceAnchors = new Set(proof.sourceEvidenceRefs.map(viCanonical));
   const ids: string[] = [], consumers: ViFieldRef[] = [], snapshots: ViDisplayField[] = [], seen = new Set<string>();
   for (const change of manifest.changes) {
     if (!row(change) || !text(change.changeId) || ids.includes(change.changeId) || !text(change.baselineFile) || !text(change.field) || !text(change.ownerId) || !text(change.component) || !text(change.newValue) || !text(change.expectedEffectiveValue) || !Number.isSafeInteger(change.lesson) || !Array.isArray(change.consumers) || !change.consumers.length || !row(change.authorReview) || !text(change.authorReview.reviewer) || change.authorReview.reviewer !== proof.author || change.authorReview.status !== 'accepted' || !row(change.independentReview) || change.independentReview.reviewer !== proof.reviewer || change.independentReview.status !== 'accepted' || change.independentReview.evidenceRef !== review.evidenceFile) fail('VI change review mismatch.');
@@ -134,7 +137,7 @@ export async function createOfficialViRegistry(input: ViRegistryInputs): Promise
     viPointer(change.field); viPointer(registered.relativeField);
     seen.add(refKey(ref)); ids.push(change.changeId);
     const anchor = change.sourceAnchor;
-    if (!row(anchor) || !text(anchor.sourceId) || !proof.sourceEvidenceRefs.some(a => viCanonical(a) === viCanonical(anchor)) || anchor.zhContext !== registered.zhContext) fail('VI source occurrence/Chinese context mismatch.');
+    if (!row(anchor) || !text(anchor.sourceId) || !evidenceAnchors.has(viCanonical(anchor)) || anchor.zhContext !== registered.zhContext) fail('VI source occurrence/Chinese context mismatch.');
     if (anchor.kind === 'directOfficial' || anchor.kind === 'terminologyDerived') {
       const source = sources.get(String(anchor.documentSourceId));
       if (!source || anchor.pdfSHA256 !== source.pdfSHA256 || !Array.isArray(anchor.pdfPages) || !anchor.pdfPages.length || new Set(anchor.pdfPages).size !== anchor.pdfPages.length || anchor.pdfPages.some(p => !Number.isSafeInteger(p) || p < 1 || p > Number(source.pdfPageCount)) || !Array.isArray(anchor.printedPages) || anchor.printedPages.length !== anchor.pdfPages.length || !anchor.printedPages.every(p => typeof p === 'string' && p.trim() || Number.isSafeInteger(p) && Number(p) > 0) || !text(anchor.section)) fail('VI official source page mismatch.');
