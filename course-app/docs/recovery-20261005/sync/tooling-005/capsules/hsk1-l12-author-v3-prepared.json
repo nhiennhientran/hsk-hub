@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "repository": "nhiennhientran/hsk-hub",
+  "targetBranch": "work/hsk-source-recovery-20261005",
+  "scope": "hsk1-l12-author-v3",
+  "qualification": "author-only-v3-correction",
+  "stage": "/workspace/scratch/28b55072841a/hsk-hub-resume-recovered/course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/STAGE-V3-FILES.txt",
+  "stageSHA256": "7597ddc83e61e70961607b4207c5023bd337bd1aaab33bbdc7915f57ac59e483",
+  "stageDeclaredPathCount": 8,
+  "stageMetadataItselfIncluded": true,
+  "freezePath": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/FREEZE-V3.json",
+  "freezeSHA256": "25188516bd1ad750c92d5877ddb14891c803a04b4717c12be8abe3ae37f44396",
+  "freezeReferencesVerified": 7,
+  "immutableExternalReferences": [],
+  "expectedLocalParentCommit": "e4c25a156da0998a090f7fc19fff3393100c1942",
+  "expectedLocalParentTree": "bc9ca1c1df0191d248d404a5c8dd8bfa301534e0",
+  "entries": [
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/FREEZE-V3.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "367ff81dcc05d712c391c9536e8eeac74c24a18f",
+      "bytes": 1506,
+      "sha256": "25188516bd1ad750c92d5877ddb14891c803a04b4717c12be8abe3ae37f44396",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/STAGE-V3-FILES.txt",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "45fe3f7e216b73ccce8b7837a7a679c27a5940b9",
+      "bytes": 696,
+      "sha256": "7597ddc83e61e70961607b4207c5023bd337bd1aaab33bbdc7915f57ac59e483",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/author-correction-v3.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "9ae8eb5e5236780219b5a6024e9b9b3f34d6a33b",
+      "bytes": 1788,
+      "sha256": "f0b5559b300334b44d016ff82a7d8a4cf6c7c39b42a777236771ef9cfa90ca1e",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/codepoints.author-v3.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "eec79025bcb6fa1eaba71808ae10089d1ebe8181",
+      "bytes": 134998,
+      "sha256": "2aa7bb08d42c20146b096af5e2b691c62845cab0a7eb2568968e223867716665",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/self-verification.author-v3.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "c64ff394ad743fdb3013ceff880959f8b28e2aab",
+      "bytes": 163071,
+      "sha256": "8f208f8c02a0855d927060262b032344fe6ae87bfe5d08c629bda5cb37d51282",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/self-verification.author-v3.log",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "993f3bf59b726da562ab88b1e8ac262fe12e4501",
+      "bytes": 342,
+      "sha256": "4f927f2da7801c52ae10d19221245e3254c99336676123b3e4f5719f410ffd1a",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/source.author-v3.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "e90580415a3c7cf1e4817fad81c96cbc8e912c2d",
+      "bytes": 152279,
+      "sha256": "f56162bb2f62af6593a57af97e6f8d33ff2f5ef494a24ba6ff86e0861a326f64",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l12/verify-source-author-v3.py",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "f2b167147d550f4430e9a3c3ccbe02af9efb7862",
+      "bytes": 6975,
+      "sha256": "a75299c881de3d0aa21f047fba9e3d59a44d496ae60847f2608642ca787459fe",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    }
+  ],
+  "largeBlobBlockers": [],
+  "productionPublicationAuthorized": false
+}

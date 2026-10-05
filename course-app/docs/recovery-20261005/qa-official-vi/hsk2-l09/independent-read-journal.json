@@ -1,0 +1,107 @@
+{
+  "reviewer": "/root/qa_hsk1_05_08",
+  "sourceOnly": true,
+  "completedFullManualReview": true,
+  "completedWholePageVisualReads": [
+    {
+      "pdfPage": 86,
+      "printedPageObserved": 72,
+      "qualification": "excluded boundary visually seen",
+      "note": "Excluded prior L8 classroom activity/culture ending; footer072 actually seen, not an L9 accepted page."
+    },
+    {
+      "pdfPage": 87,
+      "printedPageObserved": 73,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Bài9 title/three goals/warmup2 instructions and all four VI table row headers matched. No VI translations for warmup choice words or filled-table Chinese prompts."
+    },
+    {
+      "pdfPage": 88,
+      "printedPageObserved": 74,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Text1 context/listen/helper, words1–7 whole ZH/PY/VI read. High-resolution actual PDF crop shows 这样 printed POS đt. but author dt.: one leaf repair required. 旁边/男孩儿/个子 are dt.; 那么 is đt. Whole Chinese role turns on074 link to VI075."
+    },
+    {
+      "pdfPage": 89,
+      "printedPageObserved": 75,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Seven complete text1 VI role turns and actual full names read against Chinese074. Correct paired88/89 pages. Read instruction, grammar1 full two explanations/completion prompt, mixed formula spaces faithfully retained; Chinese-only examples not fabricated as Vietnamese."
+    },
+    {
+      "pdfPage": 90,
+      "printedPageObserved": 76,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Text2 context from store outward, listen instruction/9-3 and words8–10 exact ZH/PY/POS/gloss matched. Chinese seven turns actually here; VI on091. Grammar1 continuation Chinese only, no missing VI."
+    },
+    {
+      "pdfPage": 91,
+      "printedPageObserved": 77,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "All seven text2 role translations matched full Chinese076 and paired90/91 bindings. Role-read/grammar2 entire explanation/completion instruction matched. Text3 context/listening and heading present on077."
+    },
+    {
+      "pdfPage": 92,
+      "printedPageObserved": 78,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "All five text3 role translations read against same-page Chinese; words11–12/POS/PY exact. Printed Hàng ngày anh đi làm bằng ô tô is retained against Chinese 每天上下班都坐车 as source-fidelity only, not a semantic website approval. Grammar3 first complete explanation actually on078."
+    },
+    {
+      "pdfPage": 93,
+      "printedPageObserved": 79,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Grammar3 all remaining four complete VI explanations and actual Chinese anchors matched, including tân ngữ positions, repetition, separable verb, continuing action. Complete-dialogue instruction present. No VI examples for Chinese-only exercises."
+    },
+    {
+      "pdfPage": 94,
+      "printedPageObserved": 80,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Whole four-sentence unlabelled diary read: printed VI says cà phê where Chinese says 东西; faithful source observation only, no website semantic verdict. Context 王一雪 separately named, no printed dialogue speaker inferred. Word13 周/zhōu/dt./tuần, helper formula and reading/listening instructions all match."
+    },
+    {
+      "pdfPage": 95,
+      "printedPageObserved": 81,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Exercises heading/word-fill/picture-describe instructions matched. Chinese option tokens and assessment stems carry no printed VI; source completeness checked, no grading review claim."
+    },
+    {
+      "pdfPage": 96,
+      "printedPageObserved": 82,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "Complete pairwork instruction/Chinese anchor, example label, culture/video title, all summary headings/scope/vocabulary rows matched. Actual 7–9 summary begins and continues next page. Chinese A/B utterances are not invented Vietnamese examples."
+    },
+    {
+      "pdfPage": 97,
+      "printedPageObserved": 83,
+      "qualification": "all L9 printed Vietnamese/Chinese anchors manually read",
+      "note": "All nine mixed VI/Chinese grammar-summary rows plus four relevant headers/columns matched. Row1 physical wrap after 打 joins to 电话 with no inserted CJK space; row6 wraps before 但是 with no injected Chinese space. All Chinese anchors/examples are original, no invented VI examples. Footer083 actual."
+    },
+    {
+      "pdfPage": 98,
+      "printedPageObserved": 84,
+      "qualification": "excluded boundary visually seen",
+      "note": "Excluded next Bài10 title/footer084 actually seen; no L10 source acceptance in this report."
+    }
+  ],
+  "repairs": [
+    {
+      "sourceId": "hsk2-official-vi:l09:p074:word04",
+      "field": "printedPOSRaw",
+      "actualCandidate": "dt.",
+      "requiredPrintedValue": "đt.",
+      "pdfPage": 88,
+      "printedPage": 74,
+      "reason": "Original fine crossbar visible on d in five-times original-PDF raster, same printed abbreviation as 那么; differs from noun dt. in neighboring rows.",
+      "detailPNG": "details/pdf088-words4-7-pos.png",
+      "detailPNGSHA256": "cf81cfe3d2c52b7d4e758af65e4b58d8a11a81c2dce7391d1855ef65c9b5d3f6",
+      "evidenceReceipt": "details/pdf088-words4-7-pos.json",
+      "onlyOneLeafCorrectionAuthorizedByThisFinding": true
+    }
+  ],
+  "heldSourceIds": [],
+  "missingVietnameseUnitsFound": [],
+  "physicalWrapQualification": "Author fragments are full same-page source blocks, not one-object-per-physical-line claims. All actual wraps read. VI word wraps reflow with spaces; mixed contiguous CJK wrap joins without space. All source page unions checked.",
+  "sharedAppendix": "Not reviewed by this body-only audit, separately assigned to release_assembly.",
+  "acceptedWholeInput": false,
+  "websiteAlignmentComplete": false,
+  "oldLostAcceptedReportsReused": false
+}
