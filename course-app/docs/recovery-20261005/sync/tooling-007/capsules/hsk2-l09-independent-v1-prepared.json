@@ -1,0 +1,371 @@
+{
+  "schemaVersion": 1,
+  "repository": "nhiennhientran/hsk-hub",
+  "targetBranch": "work/hsk-source-recovery-20261005",
+  "scope": "hsk2-l09-independent-v1",
+  "qualification": "independent-repair-required-no-whole-source-acceptance",
+  "stage": "/workspace/scratch/28b55072841a/hsk-hub-resume-recovered/course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/STAGE-FILES.txt",
+  "stageSHA256": "1eed5d243e2a3e820f4853c65f56cdf301128e139df23932f7cb6f5f5e7e5099",
+  "stageDeclaredPathCount": 35,
+  "stageMetadataItselfIncluded": true,
+  "freezePath": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/FREEZE.json",
+  "freezeSHA256": "f2d6fb4fd0fdc1014564e6543d084a35571dc34f2e9510bb4f27a9371792556e",
+  "freezeReferencesVerified": 34,
+  "immutableExternalReferences": [],
+  "expectedLocalParentCommit": "06a534cacfec5a2c0aa263b2090dfff99147de42",
+  "expectedLocalParentTree": "c7369585cfbb4fd0899c579722cc477937f03ab4",
+  "entries": [
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/FREEZE.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "93b00c3c4d6d6b031394b5e302cacdfa19af0223",
+      "bytes": 5727,
+      "sha256": "f2d6fb4fd0fdc1014564e6543d084a35571dc34f2e9510bb4f27a9371792556e",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "224643026c40a08003b957a4be14888b9aa1ff7b",
+      "bytes": 1237,
+      "sha256": "03886f1b6cb16c896aad6906d9fa8b88009ac5fdddad77ff17a389d61e855104",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/STAGE-FILES.txt",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "a6ac8dd9d262d70f3382bea896b81654decdc3c1",
+      "bytes": 2841,
+      "sha256": "1eed5d243e2a3e820f4853c65f56cdf301128e139df23932f7cb6f5f5e7e5099",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/author-FREEZE.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "f9a613c0a9192e82c764891b8fe3488b87bba9e2",
+      "bytes": 3871,
+      "sha256": "8ab7c5960f3ec7f67c8e675597a0d88a2329781bbe9c3d148955b9e1d55e11be",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/author-STAGE-FILES.txt",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "ef1d1acad0f11ea22dd36abf02c18f946be944dc",
+      "bytes": 1887,
+      "sha256": "e3670c5040a484ee55a74f13a8e8c23ce007ec0d32351d3a05f2f28e18cd26d8",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/author-render-manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "7f45293ddcad597e95df58c76db522de77360868",
+      "bytes": 5848,
+      "sha256": "55a8ecc00de4300a4e1afa7dfaa6df0b927c22499d54a0a03c651591520aae52",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/author-source-transcription.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "733544cee942f73b57e2052856f86bc93426f830",
+      "bytes": 196790,
+      "sha256": "7b4f9f0dab99160e0aac72bc7a7175459520acc1f2410b2cdaccb176f5b9764c",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/details/pdf088-words4-7-pos.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "3c3c8b578b155ad197febce105dd4ad1d339e950",
+      "bytes": 475,
+      "sha256": "1298701f693be72a51124307d6a08b58be587498e08de887d343988159b14a40",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/details/pdf088-words4-7-pos.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "2a9464f225fac9c5089f28c7a25c85aca2d4e47d",
+      "bytes": 714705,
+      "sha256": "cf81cfe3d2c52b7d4e758af65e4b58d8a11a81c2dce7391d1855ef65c9b5d3f6",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/freeze-review.py",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "350d15c6c4040007540c6a57fba129b70d6cfa31",
+      "bytes": 6253,
+      "sha256": "e47f6dbad73fc702dd157642132a286b618f34ea718b8b1098427bb407320f5c",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/freeze-time-verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "0abc53d93710de6591ee2cfd10c226d151c25bef",
+      "bytes": 3036,
+      "sha256": "91d4aa3eba01d785863877a6bf7edbb27924670fe5fb01b6a80603dd2d012795",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/independent-read-journal.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "0c34341102a619b3c42cd367d26e01e72128d805",
+      "bytes": 6350,
+      "sha256": "25ba1242f763bf4a05884807a2e0dfe3dd0bee57d03ac40d1e4f743bb26418cd",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/input-intake.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "dd646a8bfbd8110dce0a5f4749e159fa7c5682bc",
+      "bytes": 6049,
+      "sha256": "bcffe6f1bd7633c86da5f1110a142e8a5ab7253ca7368eaf0d34763408123cef",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/pre-view-check.py",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "4b2c8d5cbfdb8b23a1f4ebe562eed38d78cdd0ad",
+      "bytes": 1055,
+      "sha256": "f2079810dec11571d55b76d1be4d50f8f1c84122c837c409a5f2b76024702a5a",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/pre-view-checks/1791168957745956979.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "599c9a38314acdb97455d4773dc18d2555830eb5",
+      "bytes": 909,
+      "sha256": "a34503d13bc3f39aa14d674ea5b7f66ff3babd67a37e786c3c4c79a0f737c506",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/pre-view-checks/1791169039693922274.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "24f04a7bcf1af35ecae282b74198a20ff59fdc71",
+      "bytes": 682,
+      "sha256": "206231fc5e68e203fffe439f4b34f79b64bbba14667f3b0411ddf6e68fb869b7",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/pre-view-checks/1791169060699893623.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "d89e8455b59b748119e28b17f077276c6b67fc44",
+      "bytes": 684,
+      "sha256": "ccbd1749da14ba7e1d9a188d26885529f49e6925e764465566cf52603a4496ae",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/pre-view-checks/1791169082078490157.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "c5cdac2efd7ad13d9433ad1847f3ee10e2687756",
+      "bytes": 681,
+      "sha256": "0854e5f6b5ad24f3250ef5f82e89d8bcfb8aac0487357ad4a247f730c9a3c51a",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/prepare-review.py",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "7d81b02416b9ba261c1b3493c580a61121d840bb",
+      "bytes": 2964,
+      "sha256": "12bf945f720e49fe12fa4e655fbcbec388b28ba0486322843da72738c3a32237",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/render-manifest.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "dd6f1cc7932c40b276a170d7b9c690b55399face",
+      "bytes": 7079,
+      "sha256": "4152a66714a6610be4529aca04b23fb9454760b6ade1a7f9d67b4c3714fc9043",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-086.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "cb855ed3df62d096e267fab43fa2f38e698ddef2",
+      "bytes": 650293,
+      "sha256": "42c73b5ae5d2f8d1091e8e19a40fb376a6ce0b13e4a0413316fce3607d5515e8",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-087.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "3b7dadb2a1f42052393f273907414466a6028cf9",
+      "bytes": 1199209,
+      "sha256": "fb8c08c2f6ef8169c4c37c38c315eaf933255c0d6fc210683aa86eafc7c49673",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-088.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "5242b78f11ff2e71981d71dab5d93f46456c57b5",
+      "bytes": 935494,
+      "sha256": "295b5cc5cfa022cc6318de3e843b8d525b740779fa54bb86655214c836ce07db",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-089.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "d871e3f8215f0033d2add7563a5d6fad4b16f979",
+      "bytes": 1190911,
+      "sha256": "8613b316fb97cfcb4e3039d124f3fc28f1f090ac28f53e9b5c5fc6e8fd02bddf",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-090.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "8a6e820fa7db0cb6834b93b66bc180ac3ccc6ed5",
+      "bytes": 794945,
+      "sha256": "495b5a266005acd728500bd3dd0fcde1f322992d06fbdd37d566920ce72bb52a",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-091.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "558ef1052d448ba064d347dc92619fe358555c91",
+      "bytes": 1027988,
+      "sha256": "dc9833eafda7b0f642686c719b260da58f170f52e2e22c70ef42666cdbaf77e1",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-092.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "ee68f5d015c1cd5d4c8ffc9b53f5c8cbb114b8c9",
+      "bytes": 961680,
+      "sha256": "f86b0c29483bf51a10050ffe2eea6f2a3af62fce1302821892e6debb5eb31de2",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-093.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "bf39149cf44bff3e535895b82fbea10e653ea229",
+      "bytes": 1151234,
+      "sha256": "9b119a15f48c7d23274773904989a8183d5aaf035a7a4c383214e8c0b738e064",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-094.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "f4415d10eaff0b995269e4b58a2ed69fed8418cf",
+      "bytes": 1059618,
+      "sha256": "079280e60557cfbfa61179296589076053b9d127326bc293aaa3dadae4e05c98",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-095.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "c3f9440e8b2074f292e98f8e10ce2f99f9bd9f04",
+      "bytes": 1425540,
+      "sha256": "40c6104b59875820d2574ece146cfc99d5b22c0923f79bdd22ce5f5c4c3c8e95",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-096.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "e56a9d10b0a06e570c72143d325fee34e20390a8",
+      "bytes": 943545,
+      "sha256": "e8f760e623021ee484f0aeb80086adb7646b77f6abdb47eed82d1282b2b5dc49",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-097.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "31047a071a8f5a021f16b21236b44942258c3183",
+      "bytes": 668288,
+      "sha256": "cdc51c94f0d8e33d0841a95205677b2deaaf53da442842a9a193e13cfec72e3b",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/renders/pdf-098.png",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "66ef204022222e9c8b3d586ae7c45ff92b5284c5",
+      "bytes": 870864,
+      "sha256": "7a1f91e864b9bab26aa1615c803991cedad800030ad81fbb1aa822929f4ecba6",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/repair-list.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "9e0face935c0973e78f3c58300f4103d76fc2674",
+      "bytes": 922,
+      "sha256": "99908c16625f4676c6b2dd6ec919243f74740a9b3d37b854023669f07441a9d1",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/review.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "866a1202975fea553108cc52da6616caeb420cdd",
+      "bytes": 312394,
+      "sha256": "7e417af758dd9c0a44c313e5533f45eb10e088fd14cd70362c195f3f773f3aeb",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    }
+  ],
+  "largeBlobBlockers": [],
+  "productionPublicationAuthorized": false
+}
