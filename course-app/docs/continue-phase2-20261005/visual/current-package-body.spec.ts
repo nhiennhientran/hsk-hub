@@ -22,7 +22,9 @@ test(`current packaged HSK${level} body, free lesson choice and five manually as
   await page.goto(entry.href);
   await expect(page.locator('#app')).toHaveAttribute('data-level',String(level));
   await expect(page.locator('#lesson-select')).toHaveValue(String(last));
-  await expect(page.locator('.text-section').first()).toBeVisible();
+  const textModule=page.locator('.textbook-module[data-section="text"]');
+  await expect(textModule).toBeVisible();
+  expect(await textModule.locator('.dialogue-text .dialogue-line').count()).toBeGreaterThan(0);
   await page.evaluate(()=>document.fonts.ready);await fits(page);
   const levels=page.locator('.level-switch [data-level]');await expect(levels).toHaveCount(3);
   for(const link of await levels.all())await inside(link,page.locator('.level-switch'));
@@ -31,11 +33,14 @@ test(`current packaged HSK${level} body, free lesson choice and five manually as
   expect(await selected.locator('option').evaluateAll(ns=>ns.every(n=>!(n as HTMLOptionElement).disabled))).toBe(true);
   await selected.selectOption('1');await expect(selected).toHaveValue('1');
   await selected.selectOption(String(last));await expect(selected).toHaveValue(String(last));
-  await expect(page.locator('.text-section').first()).toBeVisible();
+  await expect(textModule).toBeVisible();
+  expect(await textModule.locator('.dialogue-text .dialogue-line').count()).toBeGreaterThan(0);
   await page.evaluate(()=>document.fonts.ready);await fits(page);
   const controls=[];
   controls.push({kind:'lesson-selector',...(await inside(selected,page.locator('.lesson-tools')))});
-  for(const button of await page.locator('.text-section button').all())await inside(button,page.locator('main'));
+  const textButtons=textModule.locator('button');
+  expect(await textButtons.count()).toBeGreaterThan(0);
+  for(const button of await textButtons.all())await inside(button,page.locator('main'));
   for(const image of await page.locator('main img').all()){
     await image.scrollIntoViewIfNeeded();
     await expect.poll(()=>image.evaluate(n=>(n as HTMLImageElement).complete&&(n as HTMLImageElement).naturalWidth>0)).toBe(true);
@@ -64,7 +69,7 @@ test(`current packaged HSK${level} body, free lesson choice and five manually as
     key:`ran_hsk${level}_fltrp_2026_v1`,part:`hsk${level}-fltrp-2026:l${String(last).padStart(2,'0')}:writing`,
   });
   expect(record.latest.assessment).toBe('manual');expect(record.latest.total).toBe(5);
-  expect(record.latest.correct).toBeUndefined();expect(record.latest.questionIds).toHaveLength(5);
+  expect(record.latest.correct).toBeNull();expect(record.latest.questionIds).toHaveLength(5);
   await page.reload();await expect(page.locator('#receipt')).toContainText('不自动评分');
   await expect(page.locator('#assignment textarea')).toHaveCount(5);
   await page.evaluate(()=>document.fonts.ready);await fits(page);
