@@ -16,7 +16,18 @@ for(const [id,segment]of [...Object.entries(subset.lines),...Object.entries(subs
 });
 test('whole-track color retains its honest pending independent-word label',async({page})=>{await page.goto('/#view=lesson&level=2&lesson=4&section=vocab');await page.locator('[data-word-id="hsk2-fltrp-2026:l04:word16"] .word-open').click();const dialog=page.getByRole('dialog',{name:'颜色',exact:true});await expect(dialog.getByRole('button',{name:'播放单词原音'})).toHaveCount(0);await expect(dialog).toContainText('独立原音尚待核验');await expect(dialog.getByRole('button',{name:'听所在生词组原音'})).toBeVisible()});
 test('failed new checksum leaves legacy accepted clips and new whole-track fallback available',async({page})=>{
- await page.addInitScript(()=>{crypto.subtle.digest=async()=>new Uint8Array(32).buffer});
+ // Fail only the new audio authority; unrelated content hashes identify cached lessons.
+ await page.addInitScript((authoritySHA256)=>{
+  const probe=window as typeof window & {__reviewedSentenceDigestFaults:number};probe.__reviewedSentenceDigestFaults=0;
+  const nativeDigest=crypto.subtle.digest.bind(crypto.subtle);
+  crypto.subtle.digest=async(algorithm,data)=>{
+   const digest=await nativeDigest(algorithm,data);
+   const hex=[...new Uint8Array(digest)].map(byte=>byte.toString(16).padStart(2,'0')).join('');
+   if(hex===authoritySHA256){probe.__reviewedSentenceDigestFaults++;return new Uint8Array(32).buffer}
+   return digest;
+  };
+ },'5fde9de3374e597ecd7cffaf84223288f51ad6d1c48c41c109374cdefcb4869b');
  await page.goto('/#view=lesson&level=2&lesson=4&section=text&scene=2');await expect(page.locator('.chinese-line')).toHaveCount(6);await expect(page.locator('[data-audio-segment]')).toHaveCount(0);await expect(page.locator('.audio-control small').first()).toContainText('完整课文原音');
+ expect(await page.evaluate(()=>(window as typeof window & {__reviewedSentenceDigestFaults:number}).__reviewedSentenceDigestFaults)).toBeGreaterThan(0);
  await page.goto('/#view=lesson&level=2&lesson=1&section=vocab');await page.locator('[data-word-id="hsk2-fltrp-2026:l01:word01"] .word-open').click();await expect(page.getByRole('dialog').getByRole('button',{name:'播放单词原音'})).toBeVisible();
 });
