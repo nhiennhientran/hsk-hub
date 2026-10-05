@@ -1,0 +1,9 @@
+HSK3 L16 recovered official source independent review
+
+121 / 121 source IDs accepted for faithful original-PDF transcription: 95 body + 26 appendix, 26 raw numbered words, 24 printed role lines (8/9/7), one whole unlabelled diary and 25 Chinese-body–official-appendix bindings. Actual original physical156–165/footer144–153 and207/footer195 were freshly rendered and visually read by a reviewer distinct from the author. Locators12/X,166/154,208/196 were separately read. No printed VI source loci were missing within this declared lesson scope.
+
+371 independent actual byte/structure checks passed, including the exact V2 source/freeze/STAGE, all34 original PNG SHA/bytes/full decode+CRC, actual paired Chinese/VI source pages, ordered roles, and exact one-leaf V1→V2 boundary-title repair. The unchanged author verifier was additionally invoked read-only (422 checks); this does not replace the reviewer visual judgments. Whole fresh rasters are reproducible scratch inputs; durable author original PNGs are precisely pinned, and three decisive fresh five-times crops are retained here. The suspected word in appendix text3 line6 was freshly checked: original does contain “của”, so no repair is proposed.
+
+Animal/zoo first warmup question and original Chinese panda-pronoun differences are faithfully retained as book observations. No publisher erratum or website resolution is approved. Pinyin 大熊猫 retains printed line-end hyphen, 可爱/喜爱 retain their printed separator, 半天 retains raw sl. Source printed role labels are separate from utterances; text2 changes column only between whole turns7 and8, no false fragment. All Chinese-only exercise/examples remain Chinese-only; diary has no fabricated role or website sentence partition.
+
+0 website VI reads/comparisons/proposals, 0 runtime/registry/raw/IDs/grading/media edits, 0 deployment, no old lost acceptance claims reused. Original author V1/V2/freezes remain immutable. This is source fidelity acceptance only.

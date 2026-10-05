@@ -1,0 +1,44 @@
+{
+  "allJSONLeafDiffs": [
+    {
+      "pointer": "/correctionOfSourceSHA256",
+      "oldMissing": true,
+      "new": "7b4f9f0dab99160e0aac72bc7a7175459520acc1f2410b2cdaccb176f5b9764c"
+    },
+    {
+      "pointer": "/correctionQualification",
+      "oldMissing": true,
+      "new": "source author correction awaiting a different reviewer to accept corrected actual bytes; no automatic website replacement"
+    },
+    {
+      "pointer": "/independentRepairInput",
+      "oldMissing": true,
+      "new": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l09/repair-list.json",
+        "sha256": "99908c16625f4676c6b2dd6ec919243f74740a9b3d37b854023669f07441a9d1",
+        "reviewer": "qa_hsk1_05_08"
+      }
+    },
+    {
+      "pointer": "/records/42/printedPOSRaw",
+      "old": "dt.",
+      "new": "đt."
+    },
+    {
+      "pointer": "/sourceRevision",
+      "old": "20261005-fresh-recovery-v1",
+      "new": "20261005-fresh-recovery-v2-author-correction-from-independent-source-fidelity-review"
+    }
+  ],
+  "recordLeafDiffs": [
+    {
+      "pointer": "/records/42/printedPOSRaw",
+      "old": "dt.",
+      "new": "đt."
+    }
+  ],
+  "unchangedRecords": 123,
+  "recordOrderAndIDsUnchanged": true,
+  "allOtherCandidateFieldsUnchanged": true,
+  "nonRecordDiffsOnlyFourExplicitRevisionAndProvenanceKeys": true
+}

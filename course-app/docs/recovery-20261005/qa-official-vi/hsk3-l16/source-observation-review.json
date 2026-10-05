@@ -1,0 +1,36 @@
+{
+  "reviewer": "remaining_media_audit",
+  "inputSourceSHA256": "60628d1641fdc944d7f5199f82e2fa2aa8a54b06e8b7d1b04b419f49e94d73ea",
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "observations": [
+    {
+      "observationId": "hsk3-l16-warmup-zoo-versus-animals",
+      "sourceId": "hsk3-official-vi:l16:p145:warmup-question-1",
+      "originalZHAndVIActuallyReviewed": true,
+      "faithfulTranscriptionAccepted": true,
+      "classification": "source-faithful-book-difference-observation",
+      "publisherErrataConfirmed": false,
+      "websiteResolutionApproved": false,
+      "scope": "source-faithful-book-difference-candidate-not-confirmed-error"
+    },
+    {
+      "observationId": "hsk3-l16-Chinese-panda-pronoun",
+      "sourceId": "hsk3-official-vi:l16:p195:appendix-text2-line07",
+      "originalZHAndVIActuallyReviewed": true,
+      "faithfulTranscriptionAccepted": true,
+      "classification": "source-faithful-book-difference-observation",
+      "publisherErrataConfirmed": false,
+      "websiteResolutionApproved": false,
+      "scope": "source-faithful-book-difference-candidate-not-confirmed-error"
+    }
+  ],
+  "additionalDoubtResolved": {
+    "sourceId": "hsk3-official-vi:l16:p195:appendix-text3-line06",
+    "originalActuallyContainsCua": true,
+    "expectedWholePrintedVI": "Cuộc sống của gấu trúc thật thoải mái biết bao!",
+    "candidateCorrect": true,
+    "freshFiveTimesCrop": "details/pdf207-text3-line06-5x.png",
+    "sha256": "ed6bae28f74a7453395ba935dc542617db80892c641a3bec57233354c0ab7fc9",
+    "notARepair": true
+  }
+}

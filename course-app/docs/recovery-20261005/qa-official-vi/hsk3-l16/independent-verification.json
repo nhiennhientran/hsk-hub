@@ -1,0 +1,1843 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "sourceAuthor": "native_catalogue",
+  "inputSourceSHA256": "60628d1641fdc944d7f5199f82e2fa2aa8a54b06e8b7d1b04b419f49e94d73ea",
+  "inputFreezeSHA256": "9f3d73c2259f2bf7e6502fd5a93e3bcf2e5aeb1e75cf8e1ef62dd164c405b266",
+  "inputSTAGESHA256": "7f32090ba0193928ec148b7b19e6c02d87d5ec46a30d94df468edd39c8164d81",
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "checksTotal": 371,
+  "checksPassed": 371,
+  "issues": [],
+  "checks": [
+    {
+      "check": "real-PDF-bytes-SHA",
+      "passed": true
+    },
+    {
+      "check": "candidate-source-SHA",
+      "passed": true
+    },
+    {
+      "check": "candidate-freeze-SHA",
+      "passed": true
+    },
+    {
+      "check": "candidate-stage-SHA",
+      "passed": true
+    },
+    {
+      "check": "manual-full-scope-literal-counts",
+      "passed": true
+    },
+    {
+      "check": "actual-full-body-and-appendix-scope",
+      "passed": true
+    },
+    {
+      "check": "actual-next-body-boundary",
+      "passed": true
+    },
+    {
+      "check": "actual-next-appendix-boundary",
+      "passed": true
+    },
+    {
+      "check": "exact-candidate-inventory-no-missing-extra",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:README.md",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:STAGE",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:author-expected-scope.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:author-rerender-proof.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:author-source.py",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:author-verification.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/locator-pdf166-154.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/locator-pdf208-196.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf156-detail-title-goals.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf156-p144.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf157-detail-warmup.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf157-p145.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf158-detail-grammar1.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf158-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf158-p146.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf159-detail-help.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf159-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf159-p147.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf160-detail-grammar2.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf160-p148.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf161-detail-grammar3.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf161-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf161-p149.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf162-detail-diary.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf162-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf162-p150.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf163-detail-grammar4.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf163-p151.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf164-detail-help.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf164-p152.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf165-detail-activity.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf165-detail-video.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf165-p153.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf207-detail-appendix-text1.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf207-detail-appendix-text2-left.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf207-detail-appendix-text2-right.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf207-detail-appendix-text3.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf207-detail-appendix-text4.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:evidence/pdf207-p195.png",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:render-evidence.py",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:revision-diff.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:source-locator-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:source-observations.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:source.json",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:source.tsv",
+      "passed": true
+    },
+    {
+      "check": "candidate-frozen-file:verify-source.py",
+      "passed": true
+    },
+    {
+      "check": "exact-stage-50-unique-paths",
+      "passed": true
+    },
+    {
+      "check": "all34actualPNG-fully-decoded",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:lesson-marker",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:lesson-marker",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:lesson-title",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:lesson-title",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:goals-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:goals-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:goal-1",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:goal-1",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:goal-2",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:goal-2",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:goal-3",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:goal-3",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:goal-4",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:goal-4",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:warmup-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:warmup-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p144:warmup-label-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p144:warmup-label-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:warmup-pair-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:warmup-pair-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:warmup-question-1",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:warmup-question-1",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:warmup-question-2",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:warmup-question-2",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:text1-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:text1-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:text1-background",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:text1-background",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p145:text1-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p145:text1-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:text1-words-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:text1-words-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-01",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-01",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-02",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-02",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-03",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-03",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-04",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-04",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-05",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-05",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-06",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-06",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-07",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-07",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-08",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-08",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-09",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-09",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:word-10",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:word-10",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:text1-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:text1-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:grammar1-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:grammar1-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:grammar1-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:grammar1-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:grammar1-explanation",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:grammar1-explanation",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p146:grammar1-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p146:grammar1-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:text2-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:text2-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:text2-background",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:text2-background",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:text2-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:text2-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:text2-words-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:text2-words-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-11",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-11",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-12",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-12",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-13",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-13",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-14",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-14",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-15",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-15",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-16",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-16",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-17",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-17",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:word-18",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:word-18",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:help-shiwangeweishenme-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:help-shiwangeweishenme-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p147:help-shiwangeweishenme-explanation",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p147:help-shiwangeweishenme-explanation",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:text2-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:text2-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:grammar2-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:grammar2-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:grammar2-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:grammar2-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:grammar2-explanation",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:grammar2-explanation",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:grammar2-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:grammar2-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:text3-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:text3-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:text3-background",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:text3-background",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p148:text3-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p148:text3-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:text3-words-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:text3-words-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:word-19",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:word-19",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:word-20",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:word-20",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:word-21",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:word-21",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:word-22",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:word-22",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:word-23",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:word-23",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:word-24",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:word-24",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:text3-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:text3-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:grammar3-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:grammar3-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:grammar3-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:grammar3-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p149:grammar3-explanation",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p149:grammar3-explanation",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:grammar3-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:grammar3-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:text4-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:text4-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:text4-background",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:text4-background",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:text4-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:text4-listen-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:text4-words-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:text4-words-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:word-25",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:word-25",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p150:word-26",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p150:word-26",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:text4-read-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:grammar4-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:grammar4-classroom-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:grammar4-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:grammar4-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:grammar4-explanation",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:grammar4-explanation",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:grammar4-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:grammar4-complete-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:integrated-exercise-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:integrated-exercise-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p151:integrated-wordfill-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p151:integrated-wordfill-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p152:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p152:series-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p152:help-you-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p152:help-you-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p152:help-you-explanation",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p152:help-you-explanation",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p152:integrated-picture-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p152:integrated-picture-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p153:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p153:lesson-running-header",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p153:classroom-activity-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p153:classroom-activity-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p153:classroom-group-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p153:classroom-group-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p153:classroom-activity-instruction",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p153:classroom-activity-instruction",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p153:video-heading",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p153:video-heading",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p153:video-title",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p153:video-title",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-lesson-marker",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line01",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line02",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line03",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line04",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line05",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line06",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line07",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text1-line08",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text1-line08",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line01",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line02",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line03",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line04",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line05",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line06",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line07",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line08",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text2-line09",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text2-line09",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line01",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line02",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line03",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line04",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line05",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line06",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text3-line07",
+      "passed": true
+    },
+    {
+      "check": "ID-and-primary-source-page:hsk3-official-vi:l16:p195:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "check": "exact-full-ZH-and-VI-page-pair:hsk3-official-vi:l16:p195:appendix-text4-whole-paragraph",
+      "passed": true
+    },
+    {
+      "check": "26actual-raw-word-rows",
+      "passed": true
+    },
+    {
+      "check": "actual-rare-raw-PY-POS-fields",
+      "passed": true
+    },
+    {
+      "check": "actual-Chinese-role-order:1",
+      "passed": true
+    },
+    {
+      "check": "actual-Chinese-role-order:2",
+      "passed": true
+    },
+    {
+      "check": "actual-Chinese-role-order:3",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line01",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line02",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line03",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line04",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line05",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line06",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line07",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text1:line08",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line01",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line02",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line03",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line04",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line05",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line06",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line07",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line08",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text2:line09",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line01",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line02",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line03",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line04",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line05",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line06",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text3:line07",
+      "passed": true
+    },
+    {
+      "check": "body-to-official-appendix-bijection:hsk3-official-body:l16:text4:line01",
+      "passed": true
+    },
+    {
+      "check": "whole-unlabelled-diary-no-speaker-partition",
+      "passed": true
+    },
+    {
+      "check": "24printed-VI-role-labels",
+      "passed": true
+    },
+    {
+      "check": "no-fabricated-cross-page-VI-prose",
+      "passed": true
+    },
+    {
+      "check": "source-only-no-OCR-website-runtime",
+      "passed": true
+    },
+    {
+      "check": "V2-exact-one-source-leaf-repair",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf162-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf164-detail-help.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf207-detail-appendix-text1.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf207-detail-appendix-text2-right.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:locator-pdf166-154.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf207-detail-appendix-text2-left.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf161-detail-grammar3.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf156-detail-title-goals.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf165-detail-video.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf161-p149.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf165-detail-activity.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf207-detail-appendix-text4.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf158-p146.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf207-detail-appendix-text3.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf159-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf207-p195.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf163-p151.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf160-detail-grammar2.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf159-detail-help.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:locator-pdf012-X.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf163-detail-grammar4.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf157-detail-warmup.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf165-p153.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf159-p147.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf156-p144.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf157-p145.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf162-p150.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf158-detail-grammar1.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf162-detail-diary.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf160-p148.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf161-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:locator-pdf208-196.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf158-detail-words.png",
+      "passed": true
+    },
+    {
+      "check": "V1-V2-original-image-unchanged:pdf164-p152.png",
+      "passed": true
+    }
+  ],
+  "actualAuthorPNGs": [
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/locator-pdf012-X.png",
+      "sha256": "836476de17db5792697d140b1a9820baf34b3ad886b8df1862839e4059320c11",
+      "bytes": 780191,
+      "dimensions": [
+        1085,
+        1543
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/locator-pdf166-154.png",
+      "sha256": "93e62a7027b0605a879d046519b8269473468b04e2889d4a327a29b287f29e5f",
+      "bytes": 1426753,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/locator-pdf208-196.png",
+      "sha256": "84b4960256006be4a191779e7501193838c5ecc11f27bb24adb2c121b6557775",
+      "bytes": 1643630,
+      "dimensions": [
+        1550,
+        2204
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf156-detail-title-goals.png",
+      "sha256": "211a4bcdcf2196eb523d3c0eda8873283cbdfe2580d2c783065077f827a9119b",
+      "bytes": 1833494,
+      "dimensions": [
+        2480,
+        1510
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf156-p144.png",
+      "sha256": "556fbab23cf1e96070d5b2e5fc1cacc0c9486e6a86689f97fe567e76bf9a97e8",
+      "bytes": 1686757,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf157-detail-warmup.png",
+      "sha256": "b9096ce5addb577561a07007f9f7cc609e608e88e53551ec89fca0b549a062fc",
+      "bytes": 1029031,
+      "dimensions": [
+        2290,
+        610
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf157-p145.png",
+      "sha256": "1c0870482872f4c19d2ce07362d74f2c91c589d0df21c55e1b629845241a1e02",
+      "bytes": 2221850,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf158-detail-grammar1.png",
+      "sha256": "dc99fb48588a3c1e8ddda30654046404febea6430fc9f35bd1cc377102c096d7",
+      "bytes": 907322,
+      "dimensions": [
+        2400,
+        1190
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf158-detail-words.png",
+      "sha256": "8b699c86df3614330f34f2841e7f522c44703c216e989fb97dc4cf6d53525db4",
+      "bytes": 2072510,
+      "dimensions": [
+        2460,
+        1200
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf158-p146.png",
+      "sha256": "63183fc4e84a9095b6188dbe5e15e86180840afcc0b0f4028843be286de9f4de",
+      "bytes": 1392340,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf159-detail-help.png",
+      "sha256": "757cd3124a469a3fe36b16c1d5d33e90b8a238d2a3ff29a12d77f5eadb30bb52",
+      "bytes": 754559,
+      "dimensions": [
+        1150,
+        1020
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf159-detail-words.png",
+      "sha256": "826e159e5c5131479632734a4a5ae85be91fce8b6306da18d644fb019ec6070a",
+      "bytes": 900506,
+      "dimensions": [
+        1140,
+        1540
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf159-p147.png",
+      "sha256": "f265fd63afbe6f8d13630cff8dfe7b9b22f3ac79c3fe8a5ec9b152d0dc774a6f",
+      "bytes": 2164814,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf160-detail-grammar2.png",
+      "sha256": "9eec58f33df6ca8fe67a5184ef0fc6922d895caa33c1a9deb800665597c1d657",
+      "bytes": 616481,
+      "dimensions": [
+        2380,
+        950
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf160-p148.png",
+      "sha256": "54614147482c5d92897c90ebdc19d48202e0f794e213df18d277dad6a1505fc3",
+      "bytes": 796867,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf161-detail-grammar3.png",
+      "sha256": "a280a2a13546b323fad6707b6de4c2c20fa0282dc09b215750de1839e1f96546",
+      "bytes": 1306207,
+      "dimensions": [
+        2400,
+        940
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf161-detail-words.png",
+      "sha256": "43d22b2372c488f21c40aad8978924162069a367d59ee1f9b10d017f50669d6f",
+      "bytes": 554893,
+      "dimensions": [
+        1150,
+        900
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf161-p149.png",
+      "sha256": "07bb3422787c9b6700b0537651e323d1348a476cd66cdbba49ecc24954ce27a7",
+      "bytes": 2119135,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf162-detail-diary.png",
+      "sha256": "b33ddd2a8663890ec4330d512620e6951a6d12f6345e69fd82500a34bdc622c6",
+      "bytes": 2366188,
+      "dimensions": [
+        2340,
+        1110
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf162-detail-words.png",
+      "sha256": "f2647483cf78c65163f321e66de624d93fa820bb12004388f619271b981769f0",
+      "bytes": 493780,
+      "dimensions": [
+        2300,
+        480
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf162-p150.png",
+      "sha256": "94dd8f32b589f9b75cf1881fe3fde0aaae2b40f1e6da7b8917a3529487df7606",
+      "bytes": 1490371,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf163-detail-grammar4.png",
+      "sha256": "570aaf4d80fac4ed02166680e5ecbbb9686ec0aa0e5c0f22bd59ad7a74e77b9e",
+      "bytes": 1561257,
+      "dimensions": [
+        2400,
+        930
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf163-p151.png",
+      "sha256": "d88dbb5457d8647b97da7cc7821aecb4a581583bbfd1926623acc729f1e88e37",
+      "bytes": 2193898,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf164-detail-help.png",
+      "sha256": "f9dd31456d772a9f9dd1db9e24466d6128cfdb9c5bd8b48064c3fa3406f2696b",
+      "bytes": 462175,
+      "dimensions": [
+        2010,
+        380
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf164-p152.png",
+      "sha256": "b0b9711be3420a8685a2e943ad2b8e56b5dfd283575547ccb59c3b66c7362c16",
+      "bytes": 1149065,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf165-detail-activity.png",
+      "sha256": "52798635023ed697d0921f87eac4dc7c864ed592e400507a762157ba5f9860a2",
+      "bytes": 1761407,
+      "dimensions": [
+        2300,
+        1080
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf165-detail-video.png",
+      "sha256": "acb157136d9c9157cb9fb4f6729183a89e5878690c00297c8f0cb61ff0373acd",
+      "bytes": 1628157,
+      "dimensions": [
+        1860,
+        1090
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf165-p153.png",
+      "sha256": "6947d2bc6e09dbdb60ab02d609eaca890864710945f97d16c53171bcdc743ff4",
+      "bytes": 2268047,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf207-detail-appendix-text1.png",
+      "sha256": "4cec3ccbe5c6c1a6b50890ab86df6598f0879dceda611971b4549bec3ad4a205",
+      "bytes": 769599,
+      "dimensions": [
+        1180,
+        1460
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf207-detail-appendix-text2-left.png",
+      "sha256": "0a07ab8e05cb669827f57bf82995b3f0d62c30e3bde224f591564bd44230f15c",
+      "bytes": 749112,
+      "dimensions": [
+        1190,
+        1570
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf207-detail-appendix-text2-right.png",
+      "sha256": "4aeb536958abdc7b2425fd214afcde6435bb052a63af533b8cd679b0e79db647",
+      "bytes": 163736,
+      "dimensions": [
+        1180,
+        440
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf207-detail-appendix-text3.png",
+      "sha256": "e8665738b5b8953948819ce75a178adb6776f046526ed1ca2ad51de2c0fe97e6",
+      "bytes": 677439,
+      "dimensions": [
+        1220,
+        1200
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf207-detail-appendix-text4.png",
+      "sha256": "77bccf54809b0b10284566891520c139de3ef36f72c38631162dd7035d23b0a2",
+      "bytes": 668675,
+      "dimensions": [
+        1230,
+        1270
+      ],
+      "fullDecodeAndCRC": true
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l16-v2/evidence/pdf207-p195.png",
+      "sha256": "40d25cfebaf55d7ffebcd29f4e8611e6ea47fc83317022c13a716876cec9ac9d",
+      "bytes": 1454970,
+      "dimensions": [
+        1550,
+        2204
+      ],
+      "fullDecodeAndCRC": true
+    }
+  ],
+  "qualification": "actual independent byte/structure checks; visual verdicts are separately recorded from actual original PDF reads, never inferred from these checks",
+  "websiteCompared": false,
+  "runtimeChanged": false
+}
