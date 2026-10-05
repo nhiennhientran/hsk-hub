@@ -28,7 +28,7 @@ jobs:
         run: |
           npm test --prefix course-app
           npm test --prefix hsk1-app
-          node --experimental-strip-types course-app/tools/verify-official-vi-adoption.mjs
+          node --experimental-strip-types course-app/tools/verify-official-vi-adoption.mjs --require-complete-course-adoption
           npm run check:browser-fixtures --prefix course-app
       - name: Build shared application and public standalone application
         run: npm run build --prefix course-app && npm run build:release --prefix hsk1-app

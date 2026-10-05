@@ -59,7 +59,23 @@ for (let number = 1; number <= 15; number++) test(`accepted HSK1 lesson ${number
 for (const width of [320, 390, 768, 1440]) for (const [level, number] of [[1, 1], [2, 2], [3, 10]]) test(`official VI grammar HSK${level} at ${width}px keeps all explanations readable`, async ({page}) => {
   await page.setViewportSize({width, height: 900});
   await page.goto(`/#view=lesson&level=${level}&lesson=${number}&section=grammar`);
-  await expect(page.locator('main h1').first()).toBeVisible();
+  if (level === 1) {
+    const {content, registry} = await loadActiveHsk1ForTests();
+    expect(registry.revisionId).not.toBeNull();
+    const lesson = content.lessons.find(lesson => lesson.id === number)!;
+    await expect(page.locator('main')).toHaveAttribute('data-module-state', 'ready');
+    for (const item of [...lesson.phonetics, ...lesson.grammar]) {
+      await expect(page.locator(`[data-language-item="${item.id}"]`)).toContainText(item.desc);
+    }
+  } else {
+    const raw = JSON.parse(readFileSync(new URL(`../../content/hsk${level}/lesson-${String(number).padStart(2, '0')}.json`, import.meta.url), 'utf8')) as Lesson;
+    const lesson = currentViLesson(raw);
+    const sections = page.locator('.lesson-section.grammar');
+    await expect(sections).toHaveCount(lesson.grammar.length);
+    for (const [index, item] of lesson.grammar.entries()) {
+      await expect(sections.nth(index)).toContainText(item.explanation.vi);
+    }
+  }
   await expect(page.locator('main')).not.toContainText('暂时无法打开');
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
   await page.screenshot({path: test.info().outputPath(`official-vi-hsk${level}-grammar-${width}.png`), fullPage: true});
