@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "scope": "execution recovery baseline and single-owner checkpoint workflow",
+  "qualification": "byte-recovery audit; restored prior source-fidelity certificates only; no new website or native acceptance",
+  "recordedAtUTC": "2026-10-05T02:03:20.528430+00:00",
+  "files": [
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/README.md",
+      "bytes": 733,
+      "sha256": "89b0b0845adf220fea7a72e6cc00347404c78dd6e8bb7841824101d36cf266c2"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/audit_original_freezes.py",
+      "bytes": 7153,
+      "sha256": "ceba74d89e671ee3b132d7045eeb33fc4cad0fb5b1082c63ccb86ec533f23f0a"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/baseline-progress.json",
+      "bytes": 12854,
+      "sha256": "8cfdae2bb9366ff66f73ff5b3aac15f90385ef83dc51a1a277e091fae80f3cdf"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/original-freeze-byte-audit.json",
+      "bytes": 703189,
+      "sha256": "1bc9ec257a3e687ab1cab7a2929d305bdd9eeb5d8454e087f266839da7ef0d82"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/pdf-recovery-byte-audit.json",
+      "bytes": 768,
+      "sha256": "cfdabedcb9b3aa7df5a10e734ab6badac008a023b684381a286ba130b19f385c"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/prepare_checkpoint.py",
+      "bytes": 6646,
+      "sha256": "4d95bc8f960aa89b3a5e2c69d6669223d459a4e66a343b6370daeca5878890ac"
+    },
+    {
+      "file": "course-app/docs/recovery-20261005/sync/initial-baseline/sync-policy.md",
+      "bytes": 2631,
+      "sha256": "da2a907fc27325c26e24eba96db153e37d4b19efe02b4c2f74e335734e38c2be"
+    }
+  ]
+}
