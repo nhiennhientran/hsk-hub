@@ -1,0 +1,3529 @@
+{
+  "schemaVersion": 1,
+  "courseId": "hsk1",
+  "lesson": 8,
+  "reviewer": "/root",
+  "author": {
+    "reviewer": "hsk23_remaining_source",
+    "status": "author-transcribed-source-only",
+    "method": "Full visual reading of all 7 complete original-PDF pages and retained same-source detail crops. No website VI read or comparison."
+  },
+  "method": "independent manual review of the original uploaded PDF; full-page fresh raster and all author source records were actually read",
+  "sourceSHA256": "95a395d982916d7ad316e1ae3680235d2c91870505c5977d4479e4aa691344a5",
+  "sourcePDFSHA256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+  "authorFreezeSHA256": "6bd9ee4dc0aa4f506cc9a6274c7cdfecb318228b1b1273c4c114cc4d2ec9d892",
+  "status": "accepted-source-transcription",
+  "acceptedOccurrenceCount": 119,
+  "repairs": [],
+  "holds": [],
+  "missingPrintedVietnamese": [],
+  "pageObservations": {
+    "70": {
+      "pdfPage": 70,
+      "printedPage": "054",
+      "sourceOccurrenceCount": 8,
+      "actuallyViewedWholePage": true,
+      "observation": "Bài 8, complete title, Mục tiêu, three goals and warmup instruction all match. Goal 1 wraps after vị trí,; goal 2 after chỉ. Warmup photos/options contain Chinese and pinyin, without Vietnamese option translations."
+    },
+    "71": {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "sourceOccurrenceCount": 33,
+      "actuallyViewedWholePage": true,
+      "observation": "Text 1 scene, four complete Chinese/Vietnamese speaker turns, ten ordinary word glosses/POS and both parts of Tiểu Ngữ giúp sức match. External/location ngoài, bên ngoài and lượng. con (chim, chó, hổ...) have physical wraps preserved. Role instruction and pair-activity instruction match; no missing Vietnamese on the page."
+    },
+    "72": {
+      "pdfPage": 72,
+      "printedPage": "056",
+      "sourceOccurrenceCount": 8,
+      "actuallyViewedWholePage": true,
+      "observation": "Full directional-noun explanation, grammar labels/read instruction and text 2 scene/listen instruction match. Chinese-only grammar examples and listening options have no invented Vietnamese. Scene continues structurally on page 73, not a truncated scene fragment."
+    },
+    "73": {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "sourceOccurrenceCount": 26,
+      "actuallyViewedWholePage": true,
+      "observation": "Words 11–17, all POS labels (including giới. for 在 and đtnn. for 能), seven glosses, four complete dialogue turns, pair instruction and full 在 explanation match. The book prints trước cửa hiệu sách; retain this actual wording without silently deleting cửa. Raw ZH and pinyin are also paired with the printed word rows."
+    },
+    "74": {
+      "pdfPage": 74,
+      "printedPage": "058",
+      "sourceOccurrenceCount": 8,
+      "actuallyViewedWholePage": true,
+      "observation": "Full 能 grammar explanation, all instructions, text 3 scene and the actual inline gloss ít for 少 match. Other question/option text is Chinese-only. The scene speaker relation Lưu Minh / colleague bác sĩ Hồ is correct."
+    },
+    "75": {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "sourceOccurrenceCount": 30,
+      "actuallyViewedWholePage": true,
+      "observation": "Words 18–23, six ordinary POS labels, proper noun 胡医生 / bác sĩ Hồ, complete six-turn text 3 dialogue and its physical wraps match. Both reading questions are complete. 小 + họ tip, all section labels, role/read/question instructions and fill-blank instruction match. Proper noun has no fabricated POS."
+    },
+    "76": {
+      "pdfPage": 76,
+      "printedPage": "060",
+      "sourceOccurrenceCount": 6,
+      "actuallyViewedWholePage": true,
+      "observation": "Whole next-page continuation of fill-blank Chinese items reviewed. Vietnamese picture instruction, classroom heading, two-person activity name/instruction and Ví dụ của Tiểu Ngữ label match. Chinese activity vocabulary and example turns have no Vietnamese printed. This page closes lesson 8."
+    },
+    "77": {
+      "pdfPage": 77,
+      "printedPage": "061",
+      "sourceOccurrenceCount": 0,
+      "actuallyViewedWholePage": true,
+      "observation": "Whole boundary page actually viewed: Bài 9 / 我明天上午在学校学习 begins a new lesson. Excluded from lesson 8 source occurrences."
+    }
+  },
+  "categoryCounts": {
+    "lesson-label": 4,
+    "lesson-title": 1,
+    "section-heading": 13,
+    "goal": 3,
+    "instruction": 15,
+    "scene": 3,
+    "word-gloss": 23,
+    "word-pos": 23,
+    "tip-label": 2,
+    "tip": 2,
+    "dialogue-translation": 14,
+    "running-header": 3,
+    "grammar-title": 3,
+    "grammar-explanation": 3,
+    "inline-option-gloss": 1,
+    "proper-name-gloss": 1,
+    "reading-question": 2,
+    "activity-title": 1,
+    "activity-instruction": 1,
+    "activity-example-label": 1
+  },
+  "decisions": [
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-lesson-label",
+      "decision": "accept-source-transcription",
+      "category": "lesson-label",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "我爸爸也在医院工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-title",
+      "decision": "accept-source-transcription",
+      "category": "lesson-title",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Bố em cũng làm việc ở bệnh viện",
+      "verifiedChineseContext": "我爸爸也在医院工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Bố em cũng làm việc ở bệnh viện"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-goals-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Mục tiêu",
+      "verifiedChineseContext": "目标",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Mục tiêu"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-goal-01",
+      "decision": "accept-source-transcription",
+      "category": "goal",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Có thể nghe hiểu và miêu tả được thông tin về vị trí, địa điểm...",
+      "verifiedChineseContext": "能听懂并描述处所、位置等信息。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Có thể nghe hiểu và miêu tả được thông tin về vị trí,",
+            "địa điểm..."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-goal-02",
+      "decision": "accept-source-transcription",
+      "category": "goal",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Nắm vững cách dùng của giới từ “在” để chỉ phương hướng, vị trí.",
+      "verifiedChineseContext": "掌握介词“在”表示方位的用法。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Nắm vững cách dùng của giới từ “在” để chỉ",
+            "phương hướng, vị trí."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-goal-03",
+      "decision": "accept-source-transcription",
+      "category": "goal",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Nắm vững cách dùng của động từ năng nguyện “能”.",
+      "verifiedChineseContext": "掌握能愿动词“能”的用法。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Nắm vững cách dùng của động từ năng nguyện “能”."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-warmup-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Khởi động",
+      "verifiedChineseContext": "热身",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Khởi động"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf070-warmup-instruction",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 70,
+      "printedPage": "054",
+      "verifiedVietnamese": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "verifiedChineseContext": "给下面的词语选择对应的图片。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 70,
+          "printedPage": "054",
+          "lineTexts": [
+            "Lựa chọn hình ảnh tương ứng với các từ ngữ sau."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "70",
+      "evidence": "renders/pdf-070-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-lesson-label",
+      "decision": "accept-source-transcription",
+      "category": "lesson-label",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "我爸爸也在医院工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Bài khoá 1",
+      "verifiedChineseContext": "课文1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Bài khoá 1"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-scene",
+      "decision": "accept-source-transcription",
+      "category": "scene",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Bạch Gia Nguyệt và Trần Thiên Trung đến thăm nhà Vương Nhất Phi.",
+      "verifiedChineseContext": "在王一飞家，白家月和陈天中来做客。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Bạch Gia Nguyệt và Trần Thiên Trung đến thăm nhà",
+            "Vương Nhất Phi."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-words-1-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Từ mới",
+      "verifiedChineseContext": "生词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-01-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "căn phòng",
+      "verifiedChineseContext": "房间",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "căn phòng"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-01-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "房间",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-02-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "ngoài, bên ngoài",
+      "verifiedChineseContext": "外",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "ngoài,",
+            "bên ngoài"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-02-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "外",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-03-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "con (chim, chó, hổ...)",
+      "verifiedChineseContext": "只",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "con (chim,",
+            "chó, hổ...)"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-03-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "lượng.",
+      "verifiedChineseContext": "只",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "lượng."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-04-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "nhỏ, bé",
+      "verifiedChineseContext": "小",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "nhỏ, bé"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-04-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "小",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-05-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "mèo",
+      "verifiedChineseContext": "猫",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "mèo"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-05-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "猫",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-06-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "không, chưa",
+      "verifiedChineseContext": "没",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "không, chưa"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-06-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "phó.",
+      "verifiedChineseContext": "没",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "phó."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-07-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "nhìn thấy, trông thấy",
+      "verifiedChineseContext": "看见",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "nhìn thấy,",
+            "trông thấy"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-07-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "đgt.",
+      "verifiedChineseContext": "看见",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-08-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "bàn, cái bàn",
+      "verifiedChineseContext": "桌子",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "bàn, cái bàn"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-08-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "桌子",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-09-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "dưới, bên dưới",
+      "verifiedChineseContext": "下",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "dưới,",
+            "bên dưới"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-09-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "下",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-10-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "đẹp, xinh đẹp",
+      "verifiedChineseContext": "漂亮",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "đẹp,",
+            "xinh đẹp"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-word-10-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "漂亮",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-tip-01-label",
+      "decision": "accept-source-transcription",
+      "category": "tip-label",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Tiểu Ngữ giúp sức",
+      "verifiedChineseContext": "小语助力",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-tip-01",
+      "decision": "accept-source-transcription",
+      "category": "tip",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Lượng từ có thể kết hợp trực tiếp với đại từ chỉ thị.",
+      "verifiedChineseContext": "量词可以和指示代词直接组合。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Lượng từ có thể kết hợp trực tiếp",
+            "với đại từ chỉ thị."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-role-01",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Bạch Gia Nguyệt: Bên ngoài phòng có một con mèo nhỏ.",
+      "verifiedChineseContext": "房间外有一只小猫。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Bên ngoài phòng",
+            "có một con mèo nhỏ."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-role-02",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Trần Thiên Trung: Mình không nhìn thấy, nó ở đâu thế?",
+      "verifiedChineseContext": "我没看见，它在哪儿呢？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Trần Thiên Trung: Mình không nhìn",
+            "thấy, nó ở đâu thế?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-role-03",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Bạch Gia Nguyệt: Nó ở dưới cái bàn kia.",
+      "verifiedChineseContext": "它在桌子下呢。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Nó ở dưới cái bàn kia."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-role-04",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Trần Thiên Trung: Con mèo nhỏ này xinh thật!",
+      "verifiedChineseContext": "这只小猫真漂亮！",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Trần Thiên Trung: Con mèo nhỏ này",
+            "xinh thật!"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-role-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Phân vai đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "分角色朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf071-text-1-pair-practice",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 71,
+      "printedPage": "055",
+      "verifiedVietnamese": "Hai người một nhóm, chọn một đồ vật, hỏi đáp vị trí của vật đó.",
+      "verifiedChineseContext": "两人一组，选择一个物品，问答物品的方位。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 71,
+          "printedPage": "055",
+          "lineTexts": [
+            "Hai người một nhóm, chọn một đồ vật,",
+            "hỏi đáp vị trí của vật đó."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "71",
+      "evidence": "renders/pdf-071-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-book-header",
+      "decision": "accept-source-transcription",
+      "category": "running-header",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Giáo trình New HSK 1",
+      "verifiedChineseContext": "新HSK教程1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-grammar-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Lớp học của Tiểu Ngữ",
+      "verifiedChineseContext": "小语讲堂",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-grammar-01-title",
+      "decision": "accept-source-transcription",
+      "category": "grammar-title",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Phương vị từ",
+      "verifiedChineseContext": "方位词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Phương vị từ"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-grammar-01-explanation",
+      "decision": "accept-source-transcription",
+      "category": "grammar-explanation",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Các phương vị từ dùng để diễn đạt phương hướng và vị trí được giới thiệu trong quyển sách này gồm có: 上, 下, 里, 外, 前, 后 và 外边.",
+      "verifiedChineseContext": "本册学习的表达方向、位置的方位词有：上、下、里、外、前、后、外边。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Các phương vị từ dùng để diễn đạt phương hướng và vị trí được giới thiệu trong quyển sách",
+            "này gồm có: 上, 下, 里, 外, 前, 后 và 外边."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-grammar-01-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Đọc to các câu sau.",
+      "verifiedChineseContext": "大声朗读。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Đọc to các câu sau."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-text-2-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Bài khoá 2",
+      "verifiedChineseContext": "课文2",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Bài khoá 2"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-text-2-scene",
+      "decision": "accept-source-transcription",
+      "category": "scene",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Bạch Gia Nguyệt gọi điện thoại cho Lý Văn ở trong lớp sau khi tan học.",
+      "verifiedChineseContext": "在教室里，下课后，白家月给李文打电话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Bạch Gia Nguyệt gọi điện thoại cho Lý Văn",
+            "ở trong lớp sau khi tan học."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf072-text-2-listen",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 72,
+      "printedPage": "056",
+      "verifiedVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "verifiedChineseContext": "听两遍对话，选择正确答案。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 72,
+          "printedPage": "056",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "72",
+      "evidence": "renders/pdf-072-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-lesson-label",
+      "decision": "accept-source-transcription",
+      "category": "lesson-label",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "我爸爸也在医院工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-words-2-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Từ mới",
+      "verifiedChineseContext": "生词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-11-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "ở, tại",
+      "verifiedChineseContext": "在",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "ở, tại"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-11-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "giới.",
+      "verifiedChineseContext": "在",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "giới."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-12-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "trường học",
+      "verifiedChineseContext": "学校",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "trường học"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-12-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "学校",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-13-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "hiệu sách, nhà sách",
+      "verifiedChineseContext": "书店",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "hiệu sách,",
+            "nhà sách"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-13-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "书店",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-14-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "phía trước",
+      "verifiedChineseContext": "前",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "phía trước"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-14-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "前",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-15-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "có thể",
+      "verifiedChineseContext": "能",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "có thể"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-15-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "đtnn.",
+      "verifiedChineseContext": "能",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "đtnn."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-16-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "đến",
+      "verifiedChineseContext": "到",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "đến"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-16-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "đgt.",
+      "verifiedChineseContext": "到",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-17-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "bữa trưa",
+      "verifiedChineseContext": "午饭",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "bữa trưa"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-word-17-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "午饭",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-role-01",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Bạch Gia Nguyệt: Chúng mình gặp nhau ở đâu nhỉ?",
+      "verifiedChineseContext": "我们在哪儿见呢？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Chúng mình gặp nhau ở",
+            "đâu nhỉ?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-role-02",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Lý Văn: Ở trước cửa hiệu sách của trường nhé.",
+      "verifiedChineseContext": "在学校书店前见吧。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Lý Văn: Ở trước cửa hiệu sách của trường nhé."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-role-03",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Bạch Gia Nguyệt: Ừ. 2 giờ chiều bạn đến được không?",
+      "verifiedChineseContext": "好的。下午两点你能到吗？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Ừ. 2 giờ chiều bạn đến",
+            "được không?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-role-04",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Lý Văn: Mình đến được. Mình ăn trưa ở trường.",
+      "verifiedChineseContext": "我能到。我在学校吃午饭。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Lý Văn: Mình đến được. Mình ăn trưa ở trường."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-role-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Phân vai đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "分角色朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-pair-practice",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Hai người một nhóm, tiến hành hội thoại theo tình huống thực tế.",
+      "verifiedChineseContext": "两人一组，根据实际情况对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Hai người một nhóm, tiến hành hội thoại theo tình huống",
+            "thực tế."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-grammar-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Lớp học của Tiểu Ngữ",
+      "verifiedChineseContext": "小语讲堂",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-grammar-02-title",
+      "decision": "accept-source-transcription",
+      "category": "grammar-title",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Giới từ “在”",
+      "verifiedChineseContext": "介词“在”",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Giới từ “在”"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-grammar-02-explanation",
+      "decision": "accept-source-transcription",
+      "category": "grammar-explanation",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Cấu trúc được kết hợp bởi giới từ “在” và từ ngữ chỉ vị trí, nơi chốn thường đứng trước động từ, biểu thị vị trí, nơi chốn diễn ra hành động.",
+      "verifiedChineseContext": "介词“在”和表示位置、处所的词语组合，在动词前，表示在什么位置、处所做什么。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Cấu trúc được kết hợp bởi giới từ “在” và từ ngữ chỉ vị trí, nơi chốn thường đứng trước",
+            "động từ, biểu thị vị trí, nơi chốn diễn ra hành động."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-grammar-02-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 73,
+      "printedPage": "057",
+      "verifiedVietnamese": "Đọc to các câu sau.",
+      "verifiedChineseContext": "大声朗读。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 73,
+          "printedPage": "057",
+          "lineTexts": [
+            "Đọc to các câu sau."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "73",
+      "evidence": "renders/pdf-073-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-book-header",
+      "decision": "accept-source-transcription",
+      "category": "running-header",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Giáo trình New HSK 1",
+      "verifiedChineseContext": "新HSK教程1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-grammar-03-title",
+      "decision": "accept-source-transcription",
+      "category": "grammar-title",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Động từ năng nguyện “能”",
+      "verifiedChineseContext": "能愿动词“能”",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Động từ năng nguyện “能”"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-grammar-03-explanation",
+      "decision": "accept-source-transcription",
+      "category": "grammar-explanation",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Động từ năng nguyện “能” đứng trước động từ, biểu thị có năng lực, điều kiện hoặc khả năng làm một việc gì đó.",
+      "verifiedChineseContext": "能愿动词“能”位于动词前，表示有能力、有条件或可能做某事。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Động từ năng nguyện “能” đứng trước động từ, biểu thị có năng lực, điều kiện hoặc",
+            "khả năng làm một việc gì đó."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-grammar-03-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Đọc to các câu sau.",
+      "verifiedChineseContext": "大声朗读。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Đọc to các câu sau."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-text-3-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Bài khoá 3",
+      "verifiedChineseContext": "课文3",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Bài khoá 3"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-text-3-scene",
+      "decision": "accept-source-transcription",
+      "category": "scene",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Lưu Minh đang trò chuyện với đồng nghiệp của anh là bác sĩ Hồ ở trong bệnh viện.",
+      "verifiedChineseContext": "在医院里，刘明和同事胡医生在聊天儿。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Lưu Minh đang trò chuyện với đồng nghiệp của",
+            "anh là bác sĩ Hồ ở trong bệnh viện."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-text-3-listen",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "verifiedChineseContext": "听两遍对话，选择正确答案。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf074-text-3-q1-A-inline",
+      "decision": "accept-source-transcription",
+      "category": "inline-option-gloss",
+      "pdfPage": 74,
+      "printedPage": "058",
+      "verifiedVietnamese": "ít",
+      "verifiedChineseContext": "少",
+      "verifiedFragments": [
+        {
+          "pdfPage": 74,
+          "printedPage": "058",
+          "lineTexts": [
+            "ít"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "74",
+      "evidence": "renders/pdf-074-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-lesson-label",
+      "decision": "accept-source-transcription",
+      "category": "lesson-label",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bài",
+      "verifiedChineseContext": "我爸爸也在医院工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-tip-02-label",
+      "decision": "accept-source-transcription",
+      "category": "tip-label",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Tiểu Ngữ giúp sức",
+      "verifiedChineseContext": "小语助力",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-tip-02",
+      "decision": "accept-source-transcription",
+      "category": "tip",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "“小 + họ” là cách xưng hô thân mật với những người ít tuổi hơn mình.",
+      "verifiedChineseContext": "“小+姓氏”是对年纪比自己小的人的亲切称呼。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "“小 + họ” là cách xưng hô thân mật với",
+            "những người ít tuổi hơn mình."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-words-3-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Từ mới",
+      "verifiedChineseContext": "生词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-18-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "cơm",
+      "verifiedChineseContext": "饭",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "cơm"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-18-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "饭",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-19-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "lớn, to",
+      "verifiedChineseContext": "大",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "lớn, to"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-19-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "大",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-20-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "bệnh nhân",
+      "verifiedChineseContext": "病人",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "bệnh nhân"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-20-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "病人",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-21-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "nhiều",
+      "verifiedChineseContext": "多",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "nhiều"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-21-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "tt.",
+      "verifiedChineseContext": "多",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-22-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "bác sĩ",
+      "verifiedChineseContext": "医生",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "bác sĩ"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-22-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "dt.",
+      "verifiedChineseContext": "医生",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-23-gloss",
+      "decision": "accept-source-transcription",
+      "category": "word-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "làm việc",
+      "verifiedChineseContext": "工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "làm việc"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-word-23-pos",
+      "decision": "accept-source-transcription",
+      "category": "word-pos",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "đgt.",
+      "verifiedChineseContext": "工作",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-proper-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Danh từ riêng",
+      "verifiedChineseContext": "专有名词",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Danh từ riêng"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-proper-01-gloss",
+      "decision": "accept-source-transcription",
+      "category": "proper-name-gloss",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "bác sĩ Hồ",
+      "verifiedChineseContext": "胡医生",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "bác sĩ Hồ"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-01",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Lưu Minh: Tiểu Hồ, em vẫn chưa ăn cơm à?",
+      "verifiedChineseContext": "小胡，还没吃饭呢？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Lưu Minh: Tiểu Hồ, em vẫn chưa ăn cơm à?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-02",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bác sĩ Hồ: Em chưa ăn ạ.",
+      "verifiedChineseContext": "没吃呢。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bác sĩ Hồ: Em chưa ăn ạ."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-03",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Lưu Minh: Ở bệnh viện lớn, bệnh nhân rất đông, bác sĩ cực kỳ bận.",
+      "verifiedChineseContext": "大医院病人多，医生非常忙。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Lưu Minh: Ở bệnh viện lớn, bệnh nhân",
+            "rất đông, bác sĩ cực kỳ bận."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-04",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bác sĩ Hồ: Vâng. Bố em cũng làm việc ở bệnh viện, ông ấy cũng bận lắm.",
+      "verifiedChineseContext": "是的。我爸爸也在医院工作，他也非常忙。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bác sĩ Hồ: Vâng. Bố em cũng làm việc ở",
+            "bệnh viện, ông ấy cũng bận lắm."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-05",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Lưu Minh: Nhà em có hai bác sĩ cơ à?",
+      "verifiedChineseContext": "你家有两个医生？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Lưu Minh: Nhà em có hai bác sĩ cơ à?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-06",
+      "decision": "accept-source-transcription",
+      "category": "dialogue-translation",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bác sĩ Hồ: Vâng.",
+      "verifiedChineseContext": "对。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bác sĩ Hồ: Vâng."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-role-read",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Phân vai đọc to đoạn hội thoại.",
+      "verifiedChineseContext": "分角色朗读对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-questions-instruction",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "verifiedChineseContext": "根据课文内容回答问题。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Trả lời câu hỏi theo nội dung bài khoá."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-question-01",
+      "decision": "accept-source-transcription",
+      "category": "reading-question",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bố của bác sĩ Hồ làm việc ở đâu?",
+      "verifiedChineseContext": "胡医生的爸爸在哪儿工作？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bố của bác sĩ Hồ làm việc ở đâu?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-text-3-question-02",
+      "decision": "accept-source-transcription",
+      "category": "reading-question",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bố của bác sĩ Hồ làm việc có bận không?",
+      "verifiedChineseContext": "胡医生的爸爸工作忙吗？",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bố của bác sĩ Hồ làm việc có bận không?"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-exercises-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Bài tập tổng hợp",
+      "verifiedChineseContext": "综合练习",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Bài tập tổng hợp"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf075-exercise-01-instruction",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 75,
+      "printedPage": "059",
+      "verifiedVietnamese": "Chọn từ thích hợp điền vào chỗ trống.",
+      "verifiedChineseContext": "选词填空。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 75,
+          "printedPage": "059",
+          "lineTexts": [
+            "Chọn từ thích hợp điền vào chỗ trống."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "75",
+      "evidence": "renders/pdf-075-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf076-book-header",
+      "decision": "accept-source-transcription",
+      "category": "running-header",
+      "pdfPage": 76,
+      "printedPage": "060",
+      "verifiedVietnamese": "Giáo trình New HSK 1",
+      "verifiedChineseContext": "新HSK教程1",
+      "verifiedFragments": [
+        {
+          "pdfPage": 76,
+          "printedPage": "060",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "76",
+      "evidence": "renders/pdf-076-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf076-exercise-02-instruction",
+      "decision": "accept-source-transcription",
+      "category": "instruction",
+      "pdfPage": 76,
+      "printedPage": "060",
+      "verifiedVietnamese": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "verifiedChineseContext": "用本课新学的词语和语言点描述图片。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 76,
+          "printedPage": "060",
+          "lineTexts": [
+            "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài",
+            "để miêu tả các hình ảnh sau."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "76",
+      "evidence": "renders/pdf-076-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf076-activity-heading",
+      "decision": "accept-source-transcription",
+      "category": "section-heading",
+      "pdfPage": 76,
+      "printedPage": "060",
+      "verifiedVietnamese": "Hoạt động trên lớp",
+      "verifiedChineseContext": "课堂活动",
+      "verifiedFragments": [
+        {
+          "pdfPage": 76,
+          "printedPage": "060",
+          "lineTexts": [
+            "Hoạt động trên lớp"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "76",
+      "evidence": "renders/pdf-076-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf076-activity-title",
+      "decision": "accept-source-transcription",
+      "category": "activity-title",
+      "pdfPage": 76,
+      "printedPage": "060",
+      "verifiedVietnamese": "Hoạt động theo nhóm hai người",
+      "verifiedChineseContext": "双人活动",
+      "verifiedFragments": [
+        {
+          "pdfPage": 76,
+          "printedPage": "060",
+          "lineTexts": [
+            "Hoạt động theo nhóm hai người"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "76",
+      "evidence": "renders/pdf-076-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf076-activity-instruction",
+      "decision": "accept-source-transcription",
+      "category": "activity-instruction",
+      "pdfPage": 76,
+      "printedPage": "060",
+      "verifiedVietnamese": "Hai người một nhóm, sử dụng các từ ngữ sau để hội thoại.",
+      "verifiedChineseContext": "两人一组，使用以下词语对话。",
+      "verifiedFragments": [
+        {
+          "pdfPage": 76,
+          "printedPage": "060",
+          "lineTexts": [
+            "Hai người một nhóm, sử dụng các từ ngữ sau để hội thoại."
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "76",
+      "evidence": "renders/pdf-076-independent.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf076-activity-example-label",
+      "decision": "accept-source-transcription",
+      "category": "activity-example-label",
+      "pdfPage": 76,
+      "printedPage": "060",
+      "verifiedVietnamese": "Ví dụ của Tiểu Ngữ",
+      "verifiedChineseContext": "小语的例子",
+      "verifiedFragments": [
+        {
+          "pdfPage": 76,
+          "printedPage": "060",
+          "lineTexts": [
+            "Ví dụ của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "checks": [
+        "printed Vietnamese spelling/diacritics/punctuation",
+        "complete phrase and physical line/page fragments",
+        "category and original page anchor",
+        "Chinese context and speaker/POS association where applicable"
+      ],
+      "pageObservationRef": "76",
+      "evidence": "renders/pdf-076-independent.png"
+    }
+  ],
+  "verifiedWordRows": [
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 1,
+      "kind": "ordinary",
+      "zhPrinted": "房间",
+      "pinyinPrinted": "fángjiān",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-01-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-01-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 2,
+      "kind": "ordinary",
+      "zhPrinted": "外",
+      "pinyinPrinted": "wài",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-02-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-02-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 3,
+      "kind": "ordinary",
+      "zhPrinted": "只",
+      "pinyinPrinted": "zhī",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-03-gloss",
+      "rawPosLabel": "lượng.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-03-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 4,
+      "kind": "ordinary",
+      "zhPrinted": "小",
+      "pinyinPrinted": "xiǎo",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-04-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-04-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 5,
+      "kind": "ordinary",
+      "zhPrinted": "猫",
+      "pinyinPrinted": "māo",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-05-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-05-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 6,
+      "kind": "ordinary",
+      "zhPrinted": "没",
+      "pinyinPrinted": "méi",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-06-gloss",
+      "rawPosLabel": "phó.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-06-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 7,
+      "kind": "ordinary",
+      "zhPrinted": "看见",
+      "pinyinPrinted": "kànjiàn",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-07-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-07-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 8,
+      "kind": "ordinary",
+      "zhPrinted": "桌子",
+      "pinyinPrinted": "zhuōzi",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-08-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-08-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 9,
+      "kind": "ordinary",
+      "zhPrinted": "下",
+      "pinyinPrinted": "xià",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-09-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-09-pos"
+    },
+    {
+      "pdfPage": 71,
+      "printedPage": "055",
+      "printOrdinal": 10,
+      "kind": "ordinary",
+      "zhPrinted": "漂亮",
+      "pinyinPrinted": "piàoliang",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf071-word-10-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf071-word-10-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 11,
+      "kind": "ordinary",
+      "zhPrinted": "在",
+      "pinyinPrinted": "zài",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-11-gloss",
+      "rawPosLabel": "giới.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-11-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 12,
+      "kind": "ordinary",
+      "zhPrinted": "学校",
+      "pinyinPrinted": "xuéxiào",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-12-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-12-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 13,
+      "kind": "ordinary",
+      "zhPrinted": "书店",
+      "pinyinPrinted": "shūdiàn",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-13-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-13-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 14,
+      "kind": "ordinary",
+      "zhPrinted": "前",
+      "pinyinPrinted": "qián",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-14-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-14-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 15,
+      "kind": "ordinary",
+      "zhPrinted": "能",
+      "pinyinPrinted": "néng",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-15-gloss",
+      "rawPosLabel": "đtnn.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-15-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 16,
+      "kind": "ordinary",
+      "zhPrinted": "到",
+      "pinyinPrinted": "dào",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-16-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-16-pos"
+    },
+    {
+      "pdfPage": 73,
+      "printedPage": "057",
+      "printOrdinal": 17,
+      "kind": "ordinary",
+      "zhPrinted": "午饭",
+      "pinyinPrinted": "wǔfàn",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf073-word-17-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf073-word-17-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 18,
+      "kind": "ordinary",
+      "zhPrinted": "饭",
+      "pinyinPrinted": "fàn",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-word-18-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf075-word-18-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 19,
+      "kind": "ordinary",
+      "zhPrinted": "大",
+      "pinyinPrinted": "dà",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-word-19-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf075-word-19-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 20,
+      "kind": "ordinary",
+      "zhPrinted": "病人",
+      "pinyinPrinted": "bìngrén",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-word-20-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf075-word-20-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 21,
+      "kind": "ordinary",
+      "zhPrinted": "多",
+      "pinyinPrinted": "duō",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-word-21-gloss",
+      "rawPosLabel": "tt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf075-word-21-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 22,
+      "kind": "ordinary",
+      "zhPrinted": "医生",
+      "pinyinPrinted": "yīshēng",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-word-22-gloss",
+      "rawPosLabel": "dt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf075-word-22-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 23,
+      "kind": "ordinary",
+      "zhPrinted": "工作",
+      "pinyinPrinted": "gōngzuò",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-word-23-gloss",
+      "rawPosLabel": "đgt.",
+      "posOccurrenceId": "hsk1-official-vi-l08-pdf075-word-23-pos"
+    },
+    {
+      "pdfPage": 75,
+      "printedPage": "059",
+      "printOrdinal": 1,
+      "kind": "properName",
+      "zhPrinted": "胡医生",
+      "pinyinPrinted": "Hú yīshēng",
+      "glossOccurrenceId": "hsk1-official-vi-l08-pdf075-proper-01-gloss",
+      "rawPosLabel": null,
+      "posOccurrenceId": null
+    }
+  ],
+  "layoutContinuationsVerified": [
+    {
+      "module": "text2",
+      "pdfPages": [
+        72,
+        73
+      ],
+      "note": "Heading/scene/listening on PDF72; full dialogue translations and words11–17/role instructions on PDF73."
+    },
+    {
+      "module": "text3",
+      "pdfPages": [
+        74,
+        75
+      ],
+      "note": "Scene/listening on PDF74; tip/dialogue/words18–23/proper-name/read questions on PDF75."
+    },
+    {
+      "module": "fill-blank exercise",
+      "pdfPages": [
+        75,
+        76
+      ],
+      "note": "Translated instruction and first item on PDF75; remaining Chinese items continue on PDF76 without repeated VI instruction."
+    }
+  ],
+  "textbookSemanticObservations": [
+    {
+      "occurrenceId": "hsk1-official-vi-l08-pdf073-text-2-role-02",
+      "observation": "The Vietnamese print has trước cửa hiệu sách while the Chinese has 在学校书店前见吧. This is the actual textbook wording and a contextually compatible location expression.",
+      "classification": "source-faithful-compatible-expression",
+      "requiresErratum": false
+    }
+  ],
+  "websiteVietnameseRead": false,
+  "websiteFieldVerificationComplete": false,
+  "runtimeActivation": false,
+  "productionDeployment": false,
+  "reviewCompletedAtUTC": "2026-10-05T02:04:39.464132+00:00"
+}
