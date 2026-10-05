@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "status": "execution-environment-disconnected-recovery-checkpoint",
+  "recordedAtUTC": "2026-10-05T00:52:20.156Z",
+  "repository": "nhiennhientran/hsk-hub",
+  "userAuthorization": "按这版执行，过程自主推进，上线前给我确认",
+  "publicationAuthorized": false,
+  "productionDeploymentPerformed": false,
+  "verifiedProductionHead": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
+  "lastActuallyReadLocalHead": "9c9be50680fd03438620270cb2ca843df888cbae",
+  "lastActuallyReadLocalTree": "7a2e425b26984621099a66b06d77b8d226d06821",
+  "durableSourceBackup": {
+    "branch": "work/hsk-b-source-backup-20261004",
+    "remoteCommit": "524acd77a62c7f72a8ad41f4ec9b86b2318cd137",
+    "remoteTree": "51a6e5b02cb80137718e869c1a955bcbb4203bb2",
+    "status": "partial-not-complete",
+    "uniqueBlobsPresent": 805,
+    "uniqueBlobsRequired": 806,
+    "originalCheckpointFilesPresent": 886,
+    "originalCheckpointFilesRequired": 890,
+    "originalLocalCommit": "4a8ed2d0fa9ec1fe2b4e14d3260a9c1b8a54bb4e",
+    "requiredCompletedTree": "3b12e0126340dc51c2487376bf02158c35ec718b",
+    "remainingGitBlobSHA": "5544c811bc98fa0814e7be0f797af5c18d5ce895",
+    "remainingBytes": 12667967,
+    "remainingSHA256": "e9cec5c4be50577b5c45d68a81ee3c9d4127dca021dd63ec3c692dd660611966",
+    "failure": "GitHub MCP request exceeds16MiB; helper will reconstruct exact original from two verified parts. Helper source and parts are local, not yet remotely committed."
+  },
+  "localOnlyLaterCodeCheckpoints": [
+    "e53114ad59d01700598d8afad3d1099229ef1b06",
+    "e9d59d9542ce6ed76075f5d97c799c67299023a8",
+    "815f568a6281df254c3da23bb085b25159949416",
+    "9c9be50680fd03438620270cb2ca843df888cbae"
+  ],
+  "completedThisTurnReportedByIndependentAgents": [
+    {
+      "scope": "HSK2 L7–9 412 old/new proposed strings",
+      "reviewSHA256": "274d956df2b910d796d75bd71f9e0db5378828801b1452e67243d36745d5160f",
+      "freezeSHA256": "a7b5248a303598dc63e7cc18b8317568d112bfd108041730acd91b04565b7a5a",
+      "qualification": "394 JSON accepted;3 SVG content-only;15 changed page scopes held in this historical report"
+    },
+    {
+      "scope": "HSK2 L7–9 separate corrected metadata sidecars",
+      "reviewSHA256": "b64be3ddde5a24dbe68ee5249bd1942603d7e86a72ec210c6ff3c6954b902239",
+      "freezeSHA256": "494dba141c0abf2ca3f3db909fb1e05458c305c95e43a63e749f0d016ab9b1ff",
+      "qualification": "19 fields/20 anchors;accept original review plus exact3 sidecars;old ledger unchanged;409 JSON now eligible for common manifest review;3 SVG still content-only"
+    },
+    {
+      "scope": "HSK2 L9 hw20 new one-field editorial precision",
+      "reviewSHA256": "5c8e7476bd548efb5e3f0a247a598246d575b9c64251e039f046dd915d95a432",
+      "freezeSHA256": "2bc97056cb1599161a955eb89aaee08922eda3ce6a82c4e926a819d42c034516",
+      "qualification": "Only RID66f824e1984e57ceb7f9f26d /homework/19/explanation/vi;no activation"
+    },
+    {
+      "scope": "H1/H23 two singular editorial-page guards",
+      "reviewSHA256": "15f91a153ee309d392dfb53b9620cadec16a8c5352d4e277e859758886dee1b3",
+      "freezeSHA256": "5db94c78573a91430e872529725ddf55c19ec6e013387a14d055b016096537a0",
+      "qualification": "bounded independent tests/types;native0;647/209 author runs not misrepresented as independent reruns"
+    }
+  ],
+  "rootRehashOfNewAgentFrozenFilesAfterMessages": "pending-environment-recovery",
+  "pendingUnfrozen": {
+    "sourceUploadHelper": "20 final tests real exit0 reported;final dry-run existence unverified;STAGE/FREEZE not written;no actual HTTP upload",
+    "hsk2L01to06CommonNormalization": "797 candidate,563direct/234derived;16 meaningful tests passed;pending proof/finalfreeze/third-party review;20eligible neweditorial+1mixed nonVI hold and2bus separate",
+    "hsk3L11Source": "all11pages actual manually read by reviewer;119VI118correct1repair;117 complete records accepted2repair;fix đây→đấy plus two repeated Chinese 帮忙→帮帮忙 fields in isolatedv2;report andfreeze not finished",
+    "hsk3L15Source": "page145–156+appendix206 manually read by author;one write command failure has unknown outcome;read existing draft before resuming",
+    "hsk2L15WebsiteComparison": "author prepared535candidates470bindings;remaining317fields and34assessmentowners/finalfreeze not completed",
+    "hsk3L10CompiledNative": "frozen46 authorfiles;16cases/engine32 collected;nativetest0;rootreviewCI wrapper added successfully, syntax/preparation verification failed to start due outage,not passed",
+    "b14ManualVisual": "native20 same actualremotehead accepted;120 original closed selects and20navregions manually reviewed. Hidden-scenefullpages actually reviewed WKshared320 + Chromiumbothsurfaces320 + WKbothsurfaces390;earlier8-image output was truncated and is not proof of8 manual views. Other hidden/source-table cases remain pending."
+  },
+  "nextActionsInOrder": [
+    "First successful read-only probe: git HEAD/tree/status;hash existing last-stage files and determine whether failed write commands actually created files. Do not blindly repeat mutations.",
+    "Finish helper final dry-run/freeze and root review;upload two original verified parts plus helper to isolated work/hsk-b-source-largeblob-20261005;CI creates only blob5544… and no refs;verify actual201 exactSHA receipt.",
+    "Add remaining original gzip+3 global source metadata;remove partial-progress file;require exact completed tree3b12…;update only backup branch nonforce;verify production unchanged.",
+    "Remotely checkpoint local code9c exacttree7a2… on separate review branch;verify source bytes and keep actuallocal and remoteheads distinct.",
+    "Freeze root H3L10 CI wrapper on unchanged227 runtime source bytes;create isolated compiled-native branch;execute two locked default browsers and verify exact16 identities per engine, freshbuilds, actual DEBUG launches and artifacts.",
+    "Finish new source/comparison/common-manifest independent reviews and apply only accepted Vietnamese display projections;preserve rawIDs/ZH/PY/media/answer indices/historical receipts.",
+    "Complete commonUI/POS/source labels, all48lesson/522page scope, legacy/SVG/appendix/media closure;fresh exact-final C15 tests and reviewable preview;ask user before production publication."
+  ],
+  "failureEvidence": {
+    "tool": "exec_command",
+    "actualError": "exec-server transport disconnected; failed to resume exec-server session: recovery timed out after25s",
+    "affected": "root and all six agents;read-only pwd and image probes also blocked",
+    "action": "terminated hung no-side-effect probes;do not count blocked tool invocations as tests"
+  },
+  "persistenceScope": "This small recovery record is remotely committed on a separate private work branch. It does not make unfinished local source evidence or code backups complete."
+}
