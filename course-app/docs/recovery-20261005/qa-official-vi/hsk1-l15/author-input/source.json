@@ -1,0 +1,5081 @@
+{
+  "schemaVersion": 2,
+  "documentSourceId": "hsk1-official-vietnamese-20261004",
+  "sourceRevision": "recovered-official-vietnamese-upload-99ca3e63",
+  "sourcePDF": {
+    "fileName": "HSK1  (3.0).pdf",
+    "sha256": "99ca3e635bbf99bcbbe003e32a0dbdf7ad0af2300b7380959d647e1028cf2764",
+    "bytes": 63200770,
+    "pdfPageCount": 148
+  },
+  "lesson": 15,
+  "pdfPages": [
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137
+  ],
+  "printedPages": [
+    "112",
+    "113",
+    "114",
+    "115",
+    "116",
+    "117",
+    "118",
+    "119",
+    "120",
+    "121"
+  ],
+  "appendixPDFPages": [
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144
+  ],
+  "authorReview": {
+    "reviewer": "/root/qa_hsk1_05_08",
+    "status": "author-transcribed-source-only-not-independent-acceptance",
+    "method": "All ten body pages and seven appendix pages actually visually read in original-PDF CropBox rasters; original PDF detail checked for appendix POS labels. No website VI or OCR used as transcription authority."
+  },
+  "independentReview": {
+    "status": "pending",
+    "reviewer": null
+  },
+  "textPolicy": {
+    "viText": "Physical Vietnamese word-line wraps joined with one space by default. Fragment lineJoiner or per-boundary lineJoiners overrides default where a mixed CJK sentence/quoted construction crosses a physical line: concatenate continuous Chinese without injecting word space. Physical lineTexts retained; printed accents/casing/punctuation preserved, no inferred translations or automatic Unicode correction.",
+    "fragments": "Actual Vietnamese printed lines; separate Chinese-anchor PDF pages preserve cross-page role mapping.",
+    "roles": "Whole printed role prefixes retained, speakerZh/speakerViPrinted separately recorded.",
+    "rawPos": "Actual printed body labels retained separately from shared printed appendix crosswalk.",
+    "sharedAppendix": "The same appendix physical occurrences reuse the same shared source IDs across lesson packs; deduplicate them rather than count as lesson-specific new vocabulary."
+  },
+  "occurrences": [
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-lesson-label",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "lesson-label",
+      "zhContext": "大兴机场见！",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png",
+      "adjacentNumeralPrinted": "15"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-title",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "lesson-title",
+      "zhContext": "大兴机场见！",
+      "viText": "Hẹn gặp ở sân bay Đại Hưng!",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Hẹn gặp ở sân bay Đại Hưng!"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png",
+      "titlePinyinPrinted": "Dàxīng Jīchǎng jiàn!"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-goals-heading",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "section-heading",
+      "zhContext": "目标",
+      "viText": "Mục tiêu",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Mục tiêu"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-goal-01",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "goal",
+      "zhContext": "能听懂并使用相关词语表达旅行意愿、计划。",
+      "viText": "Có thể nghe hiểu và sử dụng được các từ ngữ liên quan để diễn đạt ý định và kế hoạch du lịch.",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Có thể nghe hiểu và sử dụng được các",
+            "từ ngữ liên quan để diễn đạt ý định và kế hoạch du lịch."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-goal-02",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "goal",
+      "zhContext": "掌握并列复句“……，还/也……”。",
+      "viText": "Nắm vững câu ghép đẳng lập “……，还/也……”.",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Nắm vững câu ghép đẳng lập “……，还/也……”."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-goal-03",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "goal",
+      "zhContext": "了解中国餐桌文化、待客礼仪。",
+      "viText": "Hiểu về văn hoá bàn ăn và nghi lễ tiếp khách của Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Hiểu về văn hoá bàn ăn và nghi lễ tiếp khách của",
+            "Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-goal-04",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "goal",
+      "zhContext": "了解中国的首都——北京。",
+      "viText": "Hiểu về thủ đô Bắc Kinh của Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Hiểu về thủ đô Bắc Kinh của Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-warmup-heading",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "section-heading",
+      "zhContext": "热身",
+      "viText": "Khởi động",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Khởi động"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf128-warmup-instruction",
+      "lesson": 15,
+      "pdfPage": 128,
+      "printedPage": "112",
+      "category": "instruction",
+      "zhContext": "给下面的词语选择对应的图片。",
+      "viText": "Lựa chọn hình ảnh tương ứng với các từ ngữ sau.",
+      "fragments": [
+        {
+          "pdfPage": 128,
+          "printedPage": "112",
+          "lineTexts": [
+            "Lựa chọn hình ảnh tương ứng với các từ ngữ sau."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-128.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-lesson-label",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "lesson-label",
+      "zhContext": "大兴机场见！",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "adjacentNumeralPrinted": "15"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-heading",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "section-heading",
+      "zhContext": "课文1",
+      "viText": "Bài khoá 1",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Bài khoá 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-scene",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "scene",
+      "zhContext": "在李文家，李文邀请陈天中、白家月等朋友品尝中餐。",
+      "viText": "Lý Văn mời các bạn Trần Thiên Trung, Bạch Gia Nguyệt thưởng thức món ăn Trung Quốc tại nhà mình.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Lý Văn mời các bạn Trần Thiên Trung,",
+            "Bạch Gia Nguyệt thưởng thức món ăn Trung Quốc tại nhà mình."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-listen",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "instruction",
+      "zhContext": "听两遍对话，选择正确答案。",
+      "viText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "audioPrinted": "15-1"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-words-1-heading",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "section-heading",
+      "zhContext": "生词",
+      "viText": "Từ mới",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "audioPrinted": "15-2"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-word-01-gloss",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "word-gloss",
+      "zhContext": "爱",
+      "viText": "thích, yêu thích",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "thích, yêu thích"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "printOrdinal": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-word-01-pos",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "word-pos",
+      "zhContext": "爱",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "printOrdinal": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-word-02-gloss",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "word-gloss",
+      "zhContext": "哪个",
+      "viText": "cái nào, nào",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "cái nào, nào"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "printOrdinal": 2
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-word-02-pos",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "word-pos",
+      "zhContext": "哪个",
+      "viText": "đt.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png",
+      "printOrdinal": 2
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-tip-01-label",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "tip-label",
+      "zhContext": "小语帮忙",
+      "viText": "Tiểu Ngữ giúp sức",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Tiểu Ngữ",
+            "giúp sức"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-tip-01",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "tip",
+      "zhContext": "劝饭是一种中式餐桌文化，体现了中国人的热情好客。",
+      "viText": "Mời người khác ăn nhiều hơn là một nét văn hoá trên bàn ăn của Trung Quốc, thể hiện sự nhiệt tình và hiếu khách của người Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Mời người khác ăn nhiều hơn là một",
+            "nét văn hoá trên bàn ăn của Trung",
+            "Quốc, thể hiện sự nhiệt tình và hiếu",
+            "khách của người Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-role-read",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "viText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-questions",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "instruction",
+      "zhContext": "根据课文内容回答问题。",
+      "viText": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Trả lời câu hỏi theo nội dung bài khoá."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-question-01",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "reading-question",
+      "zhContext": "白家月爱吃哪个菜？",
+      "viText": "Bạch Gia Nguyệt thích ăn món nào?",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Bạch Gia Nguyệt thích ăn món nào?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf129-text-1-question-02",
+      "lesson": 15,
+      "pdfPage": 129,
+      "printedPage": "113",
+      "category": "reading-question",
+      "zhContext": "李文做饭好吃不好吃？",
+      "viText": "Lý Văn nấu ăn có ngon không?",
+      "fragments": [
+        {
+          "pdfPage": 129,
+          "printedPage": "113",
+          "lineTexts": [
+            "Lý Văn nấu ăn có ngon không?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-129.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-book-header",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-1-role-01",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "dialogue-translation",
+      "zhContext": "你们爱吃哪个菜？",
+      "viText": "Lý Văn: Các bạn thích món ăn nào?",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Lý Văn: Các bạn thích món ăn nào?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png",
+      "speakerZh": "李文",
+      "speakerViPrinted": "Lý Văn",
+      "textNumber": 1,
+      "dialogueLine": 1,
+      "zhAnchorPDFPage": 129,
+      "zhAnchorPrintedPage": "113"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-1-role-02",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "dialogue-translation",
+      "zhContext": "我喜欢这个，也喜欢那个。",
+      "viText": "Bạch Gia Nguyệt: Mình thích món này, cũng thích món kia nữa.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Mình thích món này, cũng thích món kia nữa."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png",
+      "speakerZh": "白家月",
+      "speakerViPrinted": "Bạch Gia Nguyệt",
+      "textNumber": 1,
+      "dialogueLine": 2,
+      "zhAnchorPDFPage": 129,
+      "zhAnchorPrintedPage": "113"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-1-role-03",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "dialogue-translation",
+      "zhContext": "这些菜都好吃，还很好看。",
+      "viText": "Trần Thiên Trung: Những món ăn này đều ngon, còn rất đẹp mắt nữa.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Trần Thiên Trung: Những món ăn này đều ngon, còn rất đẹp mắt nữa."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png",
+      "speakerZh": "陈天中",
+      "speakerViPrinted": "Trần Thiên Trung",
+      "textNumber": 1,
+      "dialogueLine": 3,
+      "zhAnchorPDFPage": 129,
+      "zhAnchorPrintedPage": "113"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-1-role-04",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "dialogue-translation",
+      "zhContext": "我爱吃中国菜，也喜欢做。大家多吃点儿。",
+      "viText": "Lý Văn: Mình thích ăn món Trung Quốc, cũng rất thích nấu nữa. Mọi người ăn nhiều một chút nhé.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Lý Văn: Mình thích ăn món Trung Quốc, cũng rất thích nấu nữa. Mọi người ăn nhiều",
+            "một chút nhé."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png",
+      "speakerZh": "李文",
+      "speakerViPrinted": "Lý Văn",
+      "textNumber": 1,
+      "dialogueLine": 4,
+      "zhAnchorPDFPage": 129,
+      "zhAnchorPrintedPage": "113"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-grammar-heading",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "section-heading",
+      "zhContext": "小语讲堂",
+      "viText": "Lớp học của Tiểu Ngữ",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Lớp học của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-grammar-01-title",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "grammar-title",
+      "zhContext": "并列复句“……，还/也……”",
+      "viText": "Câu ghép đẳng lập “……，还/也……”",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Câu ghép đẳng lập “……，还/也……”"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png",
+      "printedGrammarNumber": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-grammar-01-explanation",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "grammar-explanation",
+      "zhContext": "并列复句由两个或两个以上逻辑关联、结构对称的小句构成。本册学习并列复句“……，还/也……”。",
+      "viText": "Câu ghép đẳng lập là câu được tạo bởi hai hay nhiều vế câu có liên quan về mặt lôgic và đối xứng với nhau về mặt cấu trúc. Trong quyển sách này giới thiệu câu ghép đẳng lập “……，还/也……”.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Câu ghép đẳng lập là câu được tạo bởi hai hay nhiều vế câu có liên quan về mặt lôgic và",
+            "đối xứng với nhau về mặt cấu trúc. Trong quyển sách này giới thiệu câu ghép đẳng lập “……，",
+            "还/也……”."
+          ],
+          "lineJoiners": [
+            " ",
+            ""
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-grammar-01-read",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "instruction",
+      "zhContext": "大声朗读。",
+      "viText": "Đọc to các câu sau.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Đọc to các câu sau."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-2-heading",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "section-heading",
+      "zhContext": "课文2",
+      "viText": "Bài khoá 2",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Bài khoá 2"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-2-scene",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "scene",
+      "zhContext": "在李文家，大家边吃饭边谈论假期计划。",
+      "viText": "Mọi người vừa ăn vừa thảo luận về kế hoạch kỳ nghỉ tại nhà Lý Văn.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Mọi người vừa ăn vừa thảo luận về kế hoạch",
+            "kỳ nghỉ tại nhà Lý Văn."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf130-text-2-listen",
+      "lesson": 15,
+      "pdfPage": 130,
+      "printedPage": "114",
+      "category": "instruction",
+      "zhContext": "听两遍对话，选择正确答案。",
+      "viText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "fragments": [
+        {
+          "pdfPage": 130,
+          "printedPage": "114",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-130.png",
+      "audioPrinted": "15-3"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-lesson-label",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "lesson-label",
+      "zhContext": "大兴机场见！",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "adjacentNumeralPrinted": "15"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-words-2-heading",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "section-heading",
+      "zhContext": "生词",
+      "viText": "Từ mới",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "audioPrinted": "15-4"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-03-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-gloss",
+      "zhContext": "去年",
+      "viText": "năm ngoái",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "năm ngoái"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 3
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-03-pos",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-pos",
+      "zhContext": "去年",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 3
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-04-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-gloss",
+      "zhContext": "男朋友",
+      "viText": "bạn trai, người yêu",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "bạn trai,",
+            "người yêu"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 4
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-04-pos",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-pos",
+      "zhContext": "男朋友",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 4
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-05-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-gloss",
+      "zhContext": "几",
+      "viText": "vài, mấy",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "vài, mấy"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 5
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-05-pos",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-pos",
+      "zhContext": "几",
+      "viText": "số.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "số."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 5
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-06-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-gloss",
+      "zhContext": "年",
+      "viText": "năm",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "năm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 6
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-06-pos",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-pos",
+      "zhContext": "年",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 6
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-07-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-gloss",
+      "zhContext": "好玩儿",
+      "viText": "vui, thích, thú vị",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "vui, thích,",
+            "thú vị"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 7
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-word-07-pos",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "word-pos",
+      "zhContext": "好玩儿",
+      "viText": "tt.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 7
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-proper-words-1-heading",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "section-heading",
+      "zhContext": "专有名词",
+      "viText": "Danh từ riêng",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Danh từ riêng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-proper-word-01-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "proper-word-gloss",
+      "zhContext": "西安",
+      "viText": "Tây An",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Tây An"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 1,
+      "wordKind": "proper"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-proper-word-02-gloss",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "proper-word-gloss",
+      "zhContext": "北京",
+      "viText": "Bắc Kinh",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Bắc Kinh"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "printOrdinal": 2,
+      "wordKind": "proper"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-role-01",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "dialogue-translation",
+      "zhContext": "你们都想去哪儿？",
+      "viText": "Lý Văn: Các bạn đều muốn đi đâu vậy?",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Lý Văn: Các bạn đều muốn đi",
+            "đâu vậy?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "speakerZh": "李文",
+      "speakerViPrinted": "Lý Văn",
+      "textNumber": 2,
+      "dialogueLine": 1,
+      "zhAnchorPDFPage": 131,
+      "zhAnchorPrintedPage": "115"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-role-02",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "dialogue-translation",
+      "zhContext": "去年我和男朋友去了西安，今年我想去北京。",
+      "viText": "Annie: Năm ngoái mình và bạn trai đã đi Tây An, năm nay mình muốn đi Bắc Kinh.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Annie: Năm ngoái mình và",
+            "bạn trai đã đi Tây An, năm",
+            "nay mình muốn đi Bắc Kinh."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "speakerZh": "安妮",
+      "speakerViPrinted": "Annie",
+      "textNumber": 2,
+      "dialogueLine": 2,
+      "zhAnchorPDFPage": 131,
+      "zhAnchorPrintedPage": "115"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-role-03",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "dialogue-translation",
+      "zhContext": "前几年我去了西安，非常好玩儿。今年我也想去北京。",
+      "viText": "Bạch Gia Nguyệt: Mấy năm trước mình đã đi Tây An, rất vui. Năm nay mình cũng muốn đi Bắc Kinh.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Mấy năm",
+            "trước mình đã đi Tây An, rất vui.",
+            "Năm nay mình cũng muốn đi",
+            "Bắc Kinh."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "speakerZh": "白家月",
+      "speakerViPrinted": "Bạch Gia Nguyệt",
+      "textNumber": 2,
+      "dialogueLine": 3,
+      "zhAnchorPDFPage": 131,
+      "zhAnchorPrintedPage": "115"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-role-04",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "dialogue-translation",
+      "zhContext": "我和王老师都是北京人，北京非常漂亮。",
+      "viText": "Lý Văn: Mình và cô Vương đều là người Bắc Kinh, Bắc Kinh rất đẹp.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Lý Văn: Mình và cô Vương đều",
+            "là người Bắc Kinh, Bắc Kinh",
+            "rất đẹp."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png",
+      "speakerZh": "李文",
+      "speakerViPrinted": "Lý Văn",
+      "textNumber": 2,
+      "dialogueLine": 4,
+      "zhAnchorPDFPage": 131,
+      "zhAnchorPrintedPage": "115"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-role-read",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "viText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-questions",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "instruction",
+      "zhContext": "根据课文内容回答问题。",
+      "viText": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Trả lời câu hỏi theo nội dung bài khoá."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-question-01",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "reading-question",
+      "zhContext": "安妮今年想去哪儿？",
+      "viText": "Annie năm nay muốn đi đâu?",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Annie năm nay muốn đi đâu?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf131-text-2-question-02",
+      "lesson": 15,
+      "pdfPage": 131,
+      "printedPage": "115",
+      "category": "reading-question",
+      "zhContext": "前几年白家月去了哪儿？",
+      "viText": "Mấy năm trước, Bạch Gia Nguyệt đã đi đâu?",
+      "fragments": [
+        {
+          "pdfPage": 131,
+          "printedPage": "115",
+          "lineTexts": [
+            "Mấy năm trước, Bạch Gia Nguyệt đã đi đâu?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-131.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf132-book-header",
+      "lesson": 15,
+      "pdfPage": 132,
+      "printedPage": "116",
+      "category": "running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 132,
+          "printedPage": "116",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-132.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf132-text-3-heading",
+      "lesson": 15,
+      "pdfPage": 132,
+      "printedPage": "116",
+      "category": "section-heading",
+      "zhContext": "课文3",
+      "viText": "Bài khoá 3",
+      "fragments": [
+        {
+          "pdfPage": 132,
+          "printedPage": "116",
+          "lineTexts": [
+            "Bài khoá 3"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-132.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf132-text-3-scene",
+      "lesson": 15,
+      "pdfPage": 132,
+      "printedPage": "116",
+      "category": "scene",
+      "zhContext": "在教室外，白家月、安妮和王老师在谈论去北京旅游的事。",
+      "viText": "Bạch Gia Nguyệt, Annie và cô Vương đang nói chuyện về việc đi du lịch Bắc Kinh ở bên ngoài lớp học.",
+      "fragments": [
+        {
+          "pdfPage": 132,
+          "printedPage": "116",
+          "lineTexts": [
+            "Bạch Gia Nguyệt, Annie và",
+            "cô Vương đang nói chuyện về việc đi du lịch Bắc Kinh ở bên ngoài lớp học."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-132.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf132-text-3-listen",
+      "lesson": 15,
+      "pdfPage": 132,
+      "printedPage": "116",
+      "category": "instruction",
+      "zhContext": "听两遍对话，选择正确答案。",
+      "viText": "Nghe hội thoại hai lượt và chọn đáp án đúng.",
+      "fragments": [
+        {
+          "pdfPage": 132,
+          "printedPage": "116",
+          "lineTexts": [
+            "Nghe hội thoại hai lượt và chọn đáp án đúng."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-132.png",
+      "audioPrinted": "15-5"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-lesson-label",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "lesson-label",
+      "zhContext": "大兴机场见！",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "adjacentNumeralPrinted": "15"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-words-3-heading",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "section-heading",
+      "zhContext": "生词",
+      "viText": "Từ mới",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Từ mới"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "audioPrinted": "15-6"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-08-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "飞机",
+      "viText": "máy bay",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "máy bay"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-08-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "飞机",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-09-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "要",
+      "viText": "cần, mất (thời gian)",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "cần,",
+            "mất (thời gian)"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 9
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-09-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "要",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 9
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-10-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "小时",
+      "viText": "tiếng đồng hồ, giờ",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "tiếng đồng hồ,",
+            "giờ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 10
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-10-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "小时",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 10
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-11-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "家人",
+      "viText": "người nhà",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "người nhà"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 11
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-11-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "家人",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 11
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-12-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "时间",
+      "viText": "thời gian",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "thời gian"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 12
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-12-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "时间",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 12
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-13-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "机场",
+      "viText": "sân bay",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "sân bay"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 13
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-13-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "机场",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 13
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-14-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "接",
+      "viText": "đón, tiếp đón",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "đón, tiếp đón"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 14
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-14-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "接",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 14
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-15-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "住",
+      "viText": "ở",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "ở"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 15
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-15-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "住",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 15
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-16-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "早",
+      "viText": "sớm",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "sớm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 16
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-16-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "早",
+      "viText": "tt.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 16
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-17-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-gloss",
+      "zhContext": "那",
+      "viText": "vậy thì, thế thì",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "vậy thì,",
+            "thế thì"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 17
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-word-17-pos",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "word-pos",
+      "zhContext": "那",
+      "viText": "liên.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "liên."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 17
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-proper-words-2-heading",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "section-heading",
+      "zhContext": "专有名词",
+      "viText": "Danh từ riêng",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Danh từ riêng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-proper-word-03-gloss",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "proper-word-gloss",
+      "zhContext": "大兴机场",
+      "viText": "sân bay Đại Hưng",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "sân bay Đại Hưng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "printOrdinal": 3,
+      "wordKind": "proper"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-01",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "dialogue-translation",
+      "zhContext": "你们的飞机到北京要几个小时？",
+      "viText": "Vương Nhất Phi: Chuyến bay của các em đến Bắc Kinh mất mấy tiếng?",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Vương Nhất Phi: Chuyến bay của các em",
+            "đến Bắc Kinh mất mấy tiếng?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "speakerZh": "王一飞",
+      "speakerViPrinted": "Vương Nhất Phi",
+      "textNumber": 3,
+      "dialogueLine": 1,
+      "zhAnchorPDFPage": 133,
+      "zhAnchorPrintedPage": "117"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-02",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "dialogue-translation",
+      "zhContext": "九个小时。",
+      "viText": "Bạch Gia Nguyệt: 9 tiếng ạ.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: 9 tiếng ạ."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "speakerZh": "白家月",
+      "speakerViPrinted": "Bạch Gia Nguyệt",
+      "textNumber": 3,
+      "dialogueLine": 2,
+      "zhAnchorPDFPage": 133,
+      "zhAnchorPrintedPage": "117"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-03",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "dialogue-translation",
+      "zhContext": "我家人都在北京，星期天我姐姐也有时间，她可以去机场接你们，你们也可以住我家。",
+      "viText": "Vương Nhất Phi: Người nhà cô đều ở Bắc Kinh. Chủ nhật chị gái cô cũng có thời gian, chị ấy có thể đi sân bay đón các em, các em cũng có thể ở nhà cô.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Vương Nhất Phi: Người nhà cô đều ở",
+            "Bắc Kinh. Chủ nhật chị gái cô cũng có",
+            "thời gian, chị ấy có thể đi sân bay đón",
+            "các em, các em cũng có thể ở nhà cô."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "speakerZh": "王一飞",
+      "speakerViPrinted": "Vương Nhất Phi",
+      "textNumber": 3,
+      "dialogueLine": 3,
+      "zhAnchorPDFPage": 133,
+      "zhAnchorPrintedPage": "117"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-04",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "dialogue-translation",
+      "zhContext": "我们星期日早上八点到大兴机场，早不早？",
+      "viText": "Annie: 8 giờ sáng Chủ nhật chúng em đã đến sân bay Đại Hưng, có sớm không cô?",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Annie: 8 giờ sáng Chủ nhật chúng em đã",
+            "đến sân bay Đại Hưng, có sớm không cô?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "speakerZh": "安妮",
+      "speakerViPrinted": "Annie",
+      "textNumber": 3,
+      "dialogueLine": 4,
+      "zhAnchorPDFPage": 133,
+      "zhAnchorPrintedPage": "117"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-05",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "dialogue-translation",
+      "zhContext": "不早。",
+      "viText": "Vương Nhất Phi: Không sớm đâu.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Vương Nhất Phi: Không sớm đâu."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "speakerZh": "王一飞",
+      "speakerViPrinted": "Vương Nhất Phi",
+      "textNumber": 3,
+      "dialogueLine": 5,
+      "zhAnchorPDFPage": 133,
+      "zhAnchorPrintedPage": "117"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-06",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "dialogue-translation",
+      "zhContext": "谢谢老师！那我们和您姐姐在大兴机场见！",
+      "viText": "Bạch Gia Nguyệt: Cảm ơn cô ạ! Vậy chúng em hẹn gặp chị cô ở sân bay Đại Hưng nhé!",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Bạch Gia Nguyệt: Cảm ơn cô ạ! Vậy chúng",
+            "em hẹn gặp chị cô ở sân bay Đại Hưng nhé!"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png",
+      "speakerZh": "白家月",
+      "speakerViPrinted": "Bạch Gia Nguyệt",
+      "textNumber": 3,
+      "dialogueLine": 6,
+      "zhAnchorPDFPage": 133,
+      "zhAnchorPrintedPage": "117"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-read",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "instruction",
+      "zhContext": "分角色朗读对话。",
+      "viText": "Phân vai đọc to đoạn hội thoại.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Phân vai đọc to đoạn hội thoại."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-questions",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "instruction",
+      "zhContext": "根据课文内容回答问题。",
+      "viText": "Trả lời câu hỏi theo nội dung bài khoá.",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Trả lời câu hỏi theo nội dung bài khoá."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-question-01",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "reading-question",
+      "zhContext": "大兴机场在哪儿？",
+      "viText": "Sân bay Đại Hưng ở đâu?",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Sân bay Đại Hưng ở đâu?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf133-text-3-question-02",
+      "lesson": 15,
+      "pdfPage": 133,
+      "printedPage": "117",
+      "category": "reading-question",
+      "zhContext": "王老师的姐姐可以去接白家月和安妮吗？",
+      "viText": "Chị gái của cô Vương có thể đi đón Bạch Gia Nguyệt và Annie không?",
+      "fragments": [
+        {
+          "pdfPage": 133,
+          "printedPage": "117",
+          "lineTexts": [
+            "Chị gái của cô Vương có thể",
+            "đi đón Bạch Gia Nguyệt và Annie không?"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-133.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf134-book-header",
+      "lesson": 15,
+      "pdfPage": 134,
+      "printedPage": "118",
+      "category": "running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 134,
+          "printedPage": "118",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-134.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf134-exercises-heading",
+      "lesson": 15,
+      "pdfPage": 134,
+      "printedPage": "118",
+      "category": "section-heading",
+      "zhContext": "综合练习",
+      "viText": "Bài tập tổng hợp",
+      "fragments": [
+        {
+          "pdfPage": 134,
+          "printedPage": "118",
+          "lineTexts": [
+            "Bài tập tổng hợp"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-134.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf134-exercises-01",
+      "lesson": 15,
+      "pdfPage": 134,
+      "printedPage": "118",
+      "category": "instruction",
+      "zhContext": "选词填空。",
+      "viText": "Chọn từ thích hợp điền vào chỗ trống.",
+      "fragments": [
+        {
+          "pdfPage": 134,
+          "printedPage": "118",
+          "lineTexts": [
+            "Chọn từ thích hợp điền vào chỗ trống."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-134.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf134-picture-description",
+      "lesson": 15,
+      "pdfPage": 134,
+      "printedPage": "118",
+      "category": "instruction",
+      "zhContext": "用本课新学的词语和语言点描述图片。",
+      "viText": "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài để miêu tả các hình ảnh sau.",
+      "fragments": [
+        {
+          "pdfPage": 134,
+          "printedPage": "118",
+          "lineTexts": [
+            "Sử dụng từ ngữ và điểm ngôn ngữ đã học trong bài",
+            "để miêu tả các hình ảnh sau."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-134.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-lesson-label",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "lesson-label",
+      "zhContext": "大兴机场见！",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png",
+      "adjacentNumeralPrinted": "15"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-activity-heading",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "section-heading",
+      "zhContext": "课堂活动",
+      "viText": "Hoạt động trên lớp",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Hoạt động trên lớp"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-activity-title",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "activity-title",
+      "zhContext": "角色扮演",
+      "viText": "Đóng vai",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Đóng vai"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-activity-instruction",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "activity-instruction",
+      "zhContext": "三个人分别扮演李文、陈天中和白家月，李文邀请陈天中和白家月做客，一起做中国菜。",
+      "viText": "Ba người lần lượt đóng vai Lý Văn, Trần Thiên Trung và Bạch Gia Nguyệt. Lý Văn mời Trần Thiên Trung và Bạch Gia Nguyệt đến nhà chơi và cùng làm món ăn Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Ba người lần lượt đóng vai Lý Văn, Trần Thiên Trung và Bạch Gia Nguyệt. Lý Văn mời",
+            "Trần Thiên Trung và Bạch Gia Nguyệt đến nhà chơi và cùng làm món ăn Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-activity-example-label",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "activity-example-label",
+      "zhContext": "小语的例子",
+      "viText": "Ví dụ của Tiểu Ngữ",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Ví dụ của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-culture-heading",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "section-heading",
+      "zhContext": "小语的彩蛋",
+      "viText": "Món quà của Tiểu Ngữ",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Món quà của Tiểu Ngữ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png",
+      "videoPrinted": "15-1"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf135-culture-subtitle",
+      "lesson": 15,
+      "pdfPage": 135,
+      "printedPage": "119",
+      "category": "culture-subtitle",
+      "zhContext": "北京欢迎你",
+      "viText": "Bắc Kinh chào đón bạn",
+      "fragments": [
+        {
+          "pdfPage": 135,
+          "printedPage": "119",
+          "lineTexts": [
+            "Bắc Kinh chào đón bạn"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-135.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-book-header",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-heading",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "section-heading",
+      "zhContext": "学习小结",
+      "viText": "Tổng kết học tập",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Tổng kết học tập"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-introduction",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-instruction",
+      "zhContext": "13～15课我的学习情况：",
+      "viText": "Tình hình học tập từ bài 13 đến bài 15 của tôi:",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Tình hình học tập từ bài 13 đến bài 15 của tôi:"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-vocabulary-heading",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "section-heading",
+      "zhContext": "词语学习",
+      "viText": "Việc học từ ngữ",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Việc học từ ngữ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-vocabulary-remembered",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-label",
+      "zhContext": "我已经记住并会使用的词语",
+      "viText": "Những từ ngữ tôi đã nhớ và biết sử dụng",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Những từ ngữ tôi đã nhớ và biết sử dụng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-vocabulary-not-remembered",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-label",
+      "zhContext": "我还没记住的词语",
+      "viText": "Những từ ngữ tôi chưa nhớ",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Những từ ngữ tôi chưa nhớ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-grammar-heading",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "section-heading",
+      "zhContext": "我理解并会用",
+      "viText": "Tôi đã hiểu và đã biết dùng",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Tôi đã hiểu và đã biết dùng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-understand-column",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-column",
+      "zhContext": "理解",
+      "viText": "Đã hiểu",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Đã hiểu"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-use-column",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-column",
+      "zhContext": "会用",
+      "viText": "Đã biết dùng",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Đã biết dùng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-item-01",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-row",
+      "zhContext": "能愿动词“可以”，例如：我可以吃吗？",
+      "viText": "Động từ năng nguyện “可以”, ví dụ: 我可以吃吗？",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Động từ năng nguyện “可以”, ví dụ: 我可以吃吗？"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png",
+      "tableRow": 1,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-item-02",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-row",
+      "zhContext": "“动词+一下”结构，例如：看一下",
+      "viText": "Cấu trúc “động từ + 一下”, ví dụ: 看一下",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Cấu trúc “động từ + 一下”, ví dụ: 看一下"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png",
+      "tableRow": 2,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-item-03",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-row",
+      "zhContext": "双宾语句（1），例如：给我一杯水。",
+      "viText": "Câu có hai tân ngữ (1), ví dụ: 给我一杯水。",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Câu có hai tân ngữ (1), ví dụ: 给我一杯水。"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png",
+      "tableRow": 3,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf136-summary-item-04",
+      "lesson": 15,
+      "pdfPage": 136,
+      "printedPage": "120",
+      "category": "summary-table-row",
+      "zhContext": "动态助词“了（2）”，例如：读了一本书",
+      "viText": "Trợ từ động thái “了 (2)”, ví dụ: 读了一本书",
+      "fragments": [
+        {
+          "pdfPage": 136,
+          "printedPage": "120",
+          "lineTexts": [
+            "Trợ từ động thái “了 (2)”, ví dụ: 读了一本书"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-136.png",
+      "tableRow": 4,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf137-lesson-label",
+      "lesson": 15,
+      "pdfPage": 137,
+      "printedPage": "121",
+      "category": "lesson-label",
+      "zhContext": "大兴机场见！",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 137,
+          "printedPage": "121",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-137.png",
+      "adjacentNumeralPrinted": "15"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf137-summary-item-05",
+      "lesson": 15,
+      "pdfPage": 137,
+      "printedPage": "121",
+      "category": "summary-table-row",
+      "zhContext": "离合词（1），例如：吃了饭，睡一觉",
+      "viText": "Từ li hợp (1), ví dụ: 吃了饭，睡一觉",
+      "fragments": [
+        {
+          "pdfPage": 137,
+          "printedPage": "121",
+          "lineTexts": [
+            "Từ li hợp (1), ví dụ: 吃了饭，睡一觉"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-137.png",
+      "tableRow": 5,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf137-summary-item-06",
+      "lesson": 15,
+      "pdfPage": 137,
+      "printedPage": "121",
+      "category": "summary-table-row",
+      "zhContext": "范围副词“都”，例如：我们都来了。",
+      "viText": "Phó từ chỉ phạm vi “都”, ví dụ: 我们都来了。",
+      "fragments": [
+        {
+          "pdfPage": 137,
+          "printedPage": "121",
+          "lineTexts": [
+            "Phó từ chỉ phạm vi “都”, ví dụ: 我们都来了。"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-137.png",
+      "tableRow": 6,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf137-summary-item-07",
+      "lesson": 15,
+      "pdfPage": 137,
+      "printedPage": "121",
+      "category": "summary-table-row",
+      "zhContext": "并列复句“……，还/也……”，例如：我喜欢看书，也喜欢看电影。",
+      "viText": "Câu ghép đẳng lập “……，还/也……”, ví dụ: 我喜欢看书，也喜欢看电影。",
+      "fragments": [
+        {
+          "pdfPage": 137,
+          "printedPage": "121",
+          "lineTexts": [
+            "Câu ghép đẳng lập “……，还/也……”, ví dụ: 我喜欢看",
+            "书，也喜欢看电影。"
+          ],
+          "lineJoiner": ""
+        }
+      ],
+      "renderRef": "renders/pdf-137.png",
+      "tableRow": 7,
+      "mixedPrintedChineseExamplesRetained": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf137-summary-item-08",
+      "lesson": 15,
+      "pdfPage": 137,
+      "printedPage": "121",
+      "category": "summary-table-row",
+      "zhContext": "了解中国餐桌文化、待客礼仪。",
+      "viText": "Hiểu về văn hoá bàn ăn và nghi lễ tiếp khách của Trung Quốc.",
+      "fragments": [
+        {
+          "pdfPage": 137,
+          "printedPage": "121",
+          "lineTexts": [
+            "Hiểu về văn hoá bàn ăn và nghi lễ tiếp khách của Trung Quốc."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-137.png",
+      "tableRow": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-l15-pdf137-summary-effort-heading",
+      "lesson": 15,
+      "pdfPage": 137,
+      "printedPage": "121",
+      "category": "section-heading",
+      "zhContext": "我需要努力的",
+      "viText": "Những điểm tôi cần cố gắng",
+      "fragments": [
+        {
+          "pdfPage": 137,
+          "printedPage": "121",
+          "lineTexts": [
+            "Những điểm tôi cần cố gắng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-137.png"
+    }
+  ],
+  "wordTableRows": [
+    {
+      "pdfPage": 129,
+      "printedPage": "113",
+      "printOrdinal": 1,
+      "kind": "ordinary",
+      "zhPrinted": "爱",
+      "pinyinPrinted": "ài",
+      "rawPosLabel": "đgt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf129-word-01-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf129-word-01-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 129,
+      "printedPage": "113",
+      "printOrdinal": 2,
+      "kind": "ordinary",
+      "zhPrinted": "哪个",
+      "pinyinPrinted": "nǎge",
+      "rawPosLabel": "đt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf129-word-02-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf129-word-02-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 3,
+      "kind": "ordinary",
+      "zhPrinted": "去年",
+      "pinyinPrinted": "qùnián",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-word-03-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf131-word-03-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 4,
+      "kind": "ordinary",
+      "zhPrinted": "男朋友",
+      "pinyinPrinted": "nánpéngyou",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-word-04-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf131-word-04-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 5,
+      "kind": "ordinary",
+      "zhPrinted": "几",
+      "pinyinPrinted": "jǐ",
+      "rawPosLabel": "số.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-word-05-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf131-word-05-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 6,
+      "kind": "ordinary",
+      "zhPrinted": "年",
+      "pinyinPrinted": "nián",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-word-06-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf131-word-06-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 7,
+      "kind": "ordinary",
+      "zhPrinted": "好玩儿",
+      "pinyinPrinted": "hǎowánr",
+      "rawPosLabel": "tt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-word-07-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf131-word-07-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 1,
+      "kind": "proper",
+      "zhPrinted": "西安",
+      "pinyinPrinted": "Xī’ān",
+      "rawPosLabel": null,
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-proper-word-01-gloss",
+      "posOccurrenceId": null,
+      "printedPOSFieldPresent": false,
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 131,
+      "printedPage": "115",
+      "printOrdinal": 2,
+      "kind": "proper",
+      "zhPrinted": "北京",
+      "pinyinPrinted": "Běijīng",
+      "rawPosLabel": null,
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf131-proper-word-02-gloss",
+      "posOccurrenceId": null,
+      "printedPOSFieldPresent": false,
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 8,
+      "kind": "ordinary",
+      "zhPrinted": "飞机",
+      "pinyinPrinted": "fēijī",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-08-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-08-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 9,
+      "kind": "ordinary",
+      "zhPrinted": "要",
+      "pinyinPrinted": "yào",
+      "rawPosLabel": "đgt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-09-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-09-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 10,
+      "kind": "ordinary",
+      "zhPrinted": "小时",
+      "pinyinPrinted": "xiǎoshí",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-10-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-10-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 11,
+      "kind": "ordinary",
+      "zhPrinted": "家人",
+      "pinyinPrinted": "jiārén",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-11-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-11-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 12,
+      "kind": "ordinary",
+      "zhPrinted": "时间",
+      "pinyinPrinted": "shíjiān",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-12-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-12-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 13,
+      "kind": "ordinary",
+      "zhPrinted": "机场",
+      "pinyinPrinted": "jīchǎng",
+      "rawPosLabel": "dt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-13-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-13-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 14,
+      "kind": "ordinary",
+      "zhPrinted": "接",
+      "pinyinPrinted": "jiē",
+      "rawPosLabel": "đgt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-14-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-14-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 15,
+      "kind": "ordinary",
+      "zhPrinted": "住",
+      "pinyinPrinted": "zhù",
+      "rawPosLabel": "đgt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-15-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-15-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 16,
+      "kind": "ordinary",
+      "zhPrinted": "早",
+      "pinyinPrinted": "zǎo",
+      "rawPosLabel": "tt.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-16-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-16-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 17,
+      "kind": "ordinary",
+      "zhPrinted": "那",
+      "pinyinPrinted": "nà",
+      "rawPosLabel": "liên.",
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-word-17-gloss",
+      "posOccurrenceId": "hsk1-official-vi-l15-pdf133-word-17-pos",
+      "starPrintedInBody": false
+    },
+    {
+      "pdfPage": 133,
+      "printedPage": "117",
+      "printOrdinal": 3,
+      "kind": "proper",
+      "zhPrinted": "大兴机场",
+      "pinyinPrinted": "Dàxīng Jīchǎng",
+      "rawPosLabel": null,
+      "glossOccurrenceId": "hsk1-official-vi-l15-pdf133-proper-word-03-gloss",
+      "posOccurrenceId": null,
+      "printedPOSFieldPresent": false,
+      "starPrintedInBody": false,
+      "zhPrintedLineTexts": [
+        "大兴",
+        "机场"
+      ],
+      "pinyinPrintedLineTexts": [
+        "Dàxīng",
+        "Jīchǎng"
+      ]
+    }
+  ],
+  "appendixOccurrences": [
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-book-header",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-book-header",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-book-header",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-book-header",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-running-header",
+      "zhContext": "新HSK教程1",
+      "viText": "Giáo trình New HSK 1",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Giáo trình New HSK 1"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-heading",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-heading",
+      "zhContext": "词性对照表",
+      "viText": "Bảng đối chiếu từ loại",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Bảng đối chiếu từ loại"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-left-header-pos",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "词性",
+      "viText": "Từ loại",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Từ loại"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-left-header-vi",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "越南文",
+      "viText": "Tiếng Việt",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Tiếng Việt"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-left-header-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "越南文简写",
+      "viText": "Viết tắt",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Viết tắt"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-right-header-pos",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "词性",
+      "viText": "Từ loại",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Từ loại"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-right-header-vi",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "越南文",
+      "viText": "Tiếng Việt",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Tiếng Việt"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-right-header-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "越南文简写",
+      "viText": "Viết tắt",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Viết tắt"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-01-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "名词",
+      "viText": "danh từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "danh từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-01-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "名词",
+      "viText": "dt.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "dt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 1
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-02-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "动词",
+      "viText": "động từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "động từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 2
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-02-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "动词",
+      "viText": "đgt.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "đgt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 2
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-03-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "形容词",
+      "viText": "tính từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "tính từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 3
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-03-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "形容词",
+      "viText": "tt.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "tt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 3
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-04-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "代词",
+      "viText": "đại từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "đại từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 4
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-04-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "代词",
+      "viText": "đt.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "đt."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 4
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-05-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "副词",
+      "viText": "phó từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "phó từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 5
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-05-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "副词",
+      "viText": "phó.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "phó."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 5
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-06-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "介词",
+      "viText": "giới từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "giới từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 6
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-06-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "介词",
+      "viText": "giới.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "giới."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 6
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-07-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "连词",
+      "viText": "liên từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "liên từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 7
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-07-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "连词",
+      "viText": "liên.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "liên."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 7
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-08-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "助词",
+      "viText": "trợ từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "trợ từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-08-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "助词",
+      "viText": "trợ.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "trợ."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 8
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-09-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "数词",
+      "viText": "từ chỉ số đếm",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "từ chỉ số đếm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 9
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-09-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "数词",
+      "viText": "số.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "số."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 9
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-10-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "量词",
+      "viText": "lượng từ",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "lượng từ"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 10
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-10-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "量词",
+      "viText": "lượng.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "lượng."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 10
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-11-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "数量词",
+      "viText": "từ chỉ số lượng",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "từ chỉ số lượng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 11
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-11-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "数量词",
+      "viText": "sl.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "sl."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 11
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-12-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "叹词",
+      "viText": "từ cảm thán",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "từ cảm thán"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 12
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-12-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "叹词",
+      "viText": "ct.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "ct."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 12
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-13-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "拟声词",
+      "viText": "từ tượng thanh",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "từ tượng thanh"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 13
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-13-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "拟声词",
+      "viText": "tượng.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "tượng."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 13
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-14-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "能愿动词",
+      "viText": "động từ năng nguyện",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "động từ",
+            "năng nguyện"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 14
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-14-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "能愿动词",
+      "viText": "đtnn.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "đtnn."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 14
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-15-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "前缀",
+      "viText": "tiền tố",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "tiền tố"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 15
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-15-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "前缀",
+      "viText": "ttố.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "ttố."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 15
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-16-term",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-term",
+      "zhContext": "后缀",
+      "viText": "hậu tố",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "hậu tố"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 16
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-pos-16-abbreviation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-pos-abbreviation",
+      "zhContext": "后缀",
+      "viText": "htố.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "htố."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "tableRow": 16
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-vocabulary-heading",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-heading",
+      "zhContext": "词语表",
+      "viText": "Bảng từ vựng",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Bảng từ vựng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-index-left-header-word",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-index-left-header-pinyin",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-index-left-header-lesson",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-index-right-header-word",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-index-right-header-pinyin",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-index-right-header-lesson",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf139-index-left-header-word",
+      "pdfPage": 139,
+      "printedPage": "123",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 139,
+          "printedPage": "123",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-139.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf139-index-left-header-pinyin",
+      "pdfPage": 139,
+      "printedPage": "123",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 139,
+          "printedPage": "123",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-139.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf139-index-left-header-lesson",
+      "pdfPage": 139,
+      "printedPage": "123",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 139,
+          "printedPage": "123",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-139.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf139-index-right-header-word",
+      "pdfPage": 139,
+      "printedPage": "123",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 139,
+          "printedPage": "123",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-139.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf139-index-right-header-pinyin",
+      "pdfPage": 139,
+      "printedPage": "123",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 139,
+          "printedPage": "123",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-139.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf139-index-right-header-lesson",
+      "pdfPage": 139,
+      "printedPage": "123",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 139,
+          "printedPage": "123",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-139.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-index-left-header-word",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-index-left-header-pinyin",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-index-left-header-lesson",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-index-right-header-word",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-index-right-header-pinyin",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf140-index-right-header-lesson",
+      "pdfPage": 140,
+      "printedPage": "124",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 140,
+          "printedPage": "124",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-140.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf141-index-left-header-word",
+      "pdfPage": 141,
+      "printedPage": "125",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 141,
+          "printedPage": "125",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-141.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf141-index-left-header-pinyin",
+      "pdfPage": 141,
+      "printedPage": "125",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 141,
+          "printedPage": "125",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-141.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf141-index-left-header-lesson",
+      "pdfPage": 141,
+      "printedPage": "125",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 141,
+          "printedPage": "125",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-141.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf141-index-right-header-word",
+      "pdfPage": 141,
+      "printedPage": "125",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 141,
+          "printedPage": "125",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-141.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf141-index-right-header-pinyin",
+      "pdfPage": 141,
+      "printedPage": "125",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 141,
+          "printedPage": "125",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-141.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf141-index-right-header-lesson",
+      "pdfPage": 141,
+      "printedPage": "125",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 141,
+          "printedPage": "125",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-141.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-index-left-header-word",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-index-left-header-pinyin",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-index-left-header-lesson",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-index-right-header-word",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-index-right-header-pinyin",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf142-index-right-header-lesson",
+      "pdfPage": 142,
+      "printedPage": "126",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 142,
+          "printedPage": "126",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-142.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf143-index-left-header-word",
+      "pdfPage": 143,
+      "printedPage": "127",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 143,
+          "printedPage": "127",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-143.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf143-index-left-header-pinyin",
+      "pdfPage": 143,
+      "printedPage": "127",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 143,
+          "printedPage": "127",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-143.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf143-index-left-header-lesson",
+      "pdfPage": 143,
+      "printedPage": "127",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 143,
+          "printedPage": "127",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-143.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf143-index-right-header-word",
+      "pdfPage": 143,
+      "printedPage": "127",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 143,
+          "printedPage": "127",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-143.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf143-index-right-header-pinyin",
+      "pdfPage": 143,
+      "printedPage": "127",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 143,
+          "printedPage": "127",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-143.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf143-index-right-header-lesson",
+      "pdfPage": 143,
+      "printedPage": "127",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 143,
+          "printedPage": "127",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-143.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-index-left-header-word",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-index-left-header-pinyin",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-index-left-header-lesson",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "left"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-index-right-header-word",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-table-header",
+      "zhContext": "词语",
+      "viText": "Từ/Cụm",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Từ/Cụm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-index-right-header-pinyin",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-table-header",
+      "zhContext": "拼音",
+      "viText": "Phiên âm",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Phiên âm"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-index-right-header-lesson",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-table-header",
+      "zhContext": "课号",
+      "viText": "Bài",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Bài"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true,
+      "physicalColumnGroup": "right"
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf138-star-explanation",
+      "pdfPage": 138,
+      "printedPage": "122",
+      "category": "appendix-footnote",
+      "zhContext": "前面加“*”的是本级超纲词。",
+      "viText": "Những từ có đánh dấu “*” ở phía trước là từ vựng vượt khung của cấp độ này.",
+      "fragments": [
+        {
+          "pdfPage": 138,
+          "printedPage": "122",
+          "lineTexts": [
+            "Những từ có đánh dấu “*” ở phía trước là từ vựng vượt khung",
+            "của cấp độ này."
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-138.png",
+      "sharedPhysicalOccurrence": true
+    },
+    {
+      "occurrenceId": "hsk1-official-vi-shared-appendix-pdf144-proper-heading",
+      "pdfPage": 144,
+      "printedPage": "128",
+      "category": "appendix-heading",
+      "zhContext": "专有名词",
+      "viText": "Danh từ riêng",
+      "fragments": [
+        {
+          "pdfPage": 144,
+          "printedPage": "128",
+          "lineTexts": [
+            "Danh từ riêng"
+          ]
+        }
+      ],
+      "renderRef": "renders/pdf-144.png",
+      "sharedPhysicalOccurrence": true
+    }
+  ],
+  "appendixRelevantIndexRows": [
+    {
+      "pdfPage": 138,
+      "printedPage": "122",
+      "zhPrinted": "爱",
+      "pinyinPrinted": "ài",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-138.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 141,
+      "printedPage": "125",
+      "zhPrinted": "哪个",
+      "pinyinPrinted": "nǎge",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-141.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 141,
+      "printedPage": "125",
+      "zhPrinted": "去年",
+      "pinyinPrinted": "qùnián",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-141.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 141,
+      "printedPage": "125",
+      "zhPrinted": "男朋友",
+      "pinyinPrinted": "nánpéngyou",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-141.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 140,
+      "printedPage": "124",
+      "zhPrinted": "几",
+      "pinyinPrinted": "jǐ",
+      "lessonNumbersPrinted": "4, 15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-140.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 141,
+      "printedPage": "125",
+      "zhPrinted": "年",
+      "pinyinPrinted": "nián",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-141.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 140,
+      "printedPage": "124",
+      "zhPrinted": "好玩儿",
+      "pinyinPrinted": "hǎowánr",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-140.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 139,
+      "printedPage": "123",
+      "zhPrinted": "飞机",
+      "pinyinPrinted": "fēijī",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-139.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 143,
+      "printedPage": "127",
+      "zhPrinted": "要",
+      "pinyinPrinted": "yào",
+      "lessonNumbersPrinted": "11, 13, 15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-143.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 142,
+      "printedPage": "126",
+      "zhPrinted": "小时",
+      "pinyinPrinted": "xiǎoshí",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-142.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 140,
+      "printedPage": "124",
+      "zhPrinted": "家人",
+      "pinyinPrinted": "jiārén",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-140.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 141,
+      "printedPage": "125",
+      "zhPrinted": "时间",
+      "pinyinPrinted": "shíjiān",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-141.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 140,
+      "printedPage": "124",
+      "zhPrinted": "机场",
+      "pinyinPrinted": "jīchǎng",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": true,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-140.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 140,
+      "printedPage": "124",
+      "zhPrinted": "接",
+      "pinyinPrinted": "jiē",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": true,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-140.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 143,
+      "printedPage": "127",
+      "zhPrinted": "住",
+      "pinyinPrinted": "zhù",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-143.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 143,
+      "printedPage": "127",
+      "zhPrinted": "早",
+      "pinyinPrinted": "zǎo",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-143.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 141,
+      "printedPage": "125",
+      "zhPrinted": "那",
+      "pinyinPrinted": "nà",
+      "lessonNumbersPrinted": "9, 15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-141.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 144,
+      "printedPage": "128",
+      "zhPrinted": "西安",
+      "pinyinPrinted": "Xī’ān",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-144.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 144,
+      "printedPage": "128",
+      "zhPrinted": "北京",
+      "pinyinPrinted": "Běijīng",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-144.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition"
+    },
+    {
+      "pdfPage": 144,
+      "printedPage": "128",
+      "zhPrinted": "大兴机场",
+      "pinyinPrinted": "Dàxīng Jīchǎng",
+      "lessonNumbersPrinted": "15",
+      "starPrinted": false,
+      "viGlossPrinted": false,
+      "renderRef": "renders/pdf-144.png",
+      "scope": "bounded-L15-relevant-index-row-not-a-Vietnamese-definition",
+      "pinyinPrintedLineTexts": [
+        "Dàxīng",
+        "Jīchǎng"
+      ]
+    }
+  ],
+  "layoutContinuations": [
+    {
+      "module": "text1",
+      "pdfPages": [
+        129,
+        130
+      ],
+      "printedPages": [
+        "113",
+        "114"
+      ],
+      "note": "Chinese four dialogue roles129; corresponding complete VI four roles130, explicit Chinese-anchor page129 per role."
+    },
+    {
+      "module": "text2",
+      "pdfPages": [
+        130,
+        131
+      ],
+      "printedPages": [
+        "114",
+        "115"
+      ],
+      "note": "Heading/scene/listening130; Chinese/VI roles and ordinary/proper words131."
+    },
+    {
+      "module": "text3",
+      "pdfPages": [
+        132,
+        133
+      ],
+      "printedPages": [
+        "116",
+        "117"
+      ],
+      "note": "Heading/scene/listening132; Chinese/VI six roles and ordinary/proper words133."
+    },
+    {
+      "module": "learning-summary",
+      "pdfPages": [
+        136,
+        137
+      ],
+      "printedPages": [
+        "120",
+        "121"
+      ],
+      "note": "Headers and rows1–4 on136; rows5–8 and effort heading137. Mixed-Chinese quoted construction/example line boundaries use explicit joiners, not automatic extra Chinese spaces."
+    }
+  ],
+  "coverage": {
+    "bodyOccurrenceCount": 127,
+    "byBodyCategory": {
+      "lesson-label": 6,
+      "lesson-title": 1,
+      "section-heading": 18,
+      "goal": 4,
+      "instruction": 13,
+      "scene": 3,
+      "word-gloss": 17,
+      "word-pos": 17,
+      "tip-label": 1,
+      "tip": 1,
+      "reading-question": 6,
+      "running-header": 4,
+      "dialogue-translation": 14,
+      "grammar-title": 1,
+      "grammar-explanation": 1,
+      "proper-word-gloss": 3,
+      "activity-title": 1,
+      "activity-instruction": 1,
+      "activity-example-label": 1,
+      "culture-subtitle": 1,
+      "summary-instruction": 1,
+      "summary-table-label": 2,
+      "summary-table-column": 2,
+      "summary-table-row": 8
+    },
+    "ordinaryWordRows": 17,
+    "properNameRows": 3,
+    "totalWordTableRows": 20,
+    "printedBodyPosOccurrences": 17,
+    "dialogueTranslatedLines": 14,
+    "sharedAppendixVIOccurrences": 88,
+    "appendixRelevantIndexRows": 20,
+    "learningSummaryRows": 8,
+    "chapterBoundary": {
+      "firstPDFPage": 128,
+      "firstPrintedPage": "112",
+      "lastPDFPage": 137,
+      "lastPrintedPage": "121",
+      "nextSectionStartActuallyObserved": {
+        "pdfPage": 138,
+        "printedPage": "122",
+        "section": "printed-POS-crosswalk-and-vocabulary-appendix"
+      }
+    },
+    "noPrintedVietnameseAreas": [
+      {
+        "pdfPages": [
+          128
+        ],
+        "area": "Six warmup word/image choices Chinese/pinyin only."
+      },
+      {
+        "pdfPages": [
+          129,
+          130,
+          132
+        ],
+        "area": "Listening stems/options Chinese/pinyin only, VI instructions separate."
+      },
+      {
+        "pdfPages": [
+          130
+        ],
+        "area": "Grammar examples Chinese/pinyin only, no inferred VI translations."
+      },
+      {
+        "pdfPages": [
+          131
+        ],
+        "area": "City photo captions 西安/北京 are Chinese/pinyin only; separate proper-word glosses are real VI words but not invented image subtitles."
+      },
+      {
+        "pdfPages": [
+          134,
+          135
+        ],
+        "area": "Blank-exercise stems/options, four picture stems and classroom roleplay example dialogue have no printed VI translations."
+      },
+      {
+        "pdfPages": [
+          138,
+          139,
+          140,
+          141,
+          142,
+          143,
+          144
+        ],
+        "area": "Vocabulary/proper index body Chinese/PY/lesson-number only; no VI definitions. Actual VI appendix headers, full POS terms/abbreviations and star footnote88shared retained."
+      }
+    ],
+    "candidateErrata": [],
+    "semanticObservations": [
+      {
+        "sourceOccurrenceId": "hsk1-official-vi-l15-pdf133-text-3-role-04",
+        "observation": "Actual printed VI is 8 giờ sáng Chủ nhật chúng em đã đến sân bay Đại Hưng, có sớm không cô? Chinese and surrounding travel-plan dialogue discuss the arrival itinerary. Printed đã is faithfully retained as a book/context tense observation; no website future-to-past repair or blanket semantic acceptance."
+      },
+      {
+        "word": "机场/接",
+        "observation": "Body words13/14 have no stars; appendix *机场/*接 have stars. Actual markings separately retained, no canonical overwrite."
+      },
+      {
+        "word": "西安/北京/大兴机场",
+        "observation": "Three proper rows no printed POS field; rawPosLabel/posOccurrenceId null and printedPOSFieldPresent false. 大兴机场 and its pinyin actually wrap in two physical lines, explicit metadata retained."
+      },
+      {
+        "sourceOccurrenceId": "hsk1-official-vi-l15-pdf130-grammar-01-explanation",
+        "observation": "Three physical VI lines have boundary joiners space then empty; the quoted Chinese construction crosses between lines2/3 without an invented Chinese word-space."
+      },
+      {
+        "sourceOccurrenceId": "hsk1-official-vi-l15-pdf137-summary-item-07",
+        "observation": "Printed mixed-language row ends line1 at 看 and line2 starts书; lineJoiner empty keeps 我喜欢看书 continuous while preserving physical lineTexts."
+      }
+    ],
+    "oldChineseSourceNotes": {
+      "status": "not-recovered-or-read-for-this-source-pack",
+      "claim": "Only official Vietnamese PDF SHA99ca3e63; no lost source QA or old Chinese edition equivalence asserted."
+    }
+  },
+  "activation": 0,
+  "runtimeWrites": 0,
+  "websiteComparison": 0,
+  "trustedProof": false
+}
