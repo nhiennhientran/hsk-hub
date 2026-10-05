@@ -1,22 +1,24 @@
 {
   "schemaVersion": 1,
-  "updatedAtUTC": "2026-10-05T02:51:56.740726+00:00",
+  "updatedAtUTC": "2026-10-05T02:58:45.905895+00:00",
   "scope": "recovery source-fidelity and checkpoint durability; no complete website Vietnamese or native release acceptance",
   "restoredHistoricalIndependentLessons": 17,
   "restoredHistoricalSourceOccurrences": 1932,
   "newIndependentLessonsWithFullExactReadback": [
     "hsk1-l08",
     "hsk1-l09",
+    "hsk1-l10",
     "hsk3-l04"
   ],
   "independentApprovedLessonsPendingFullExactReadback": [
-    "hsk1-l10",
     "hsk1-l11",
     "hsk1-l12",
     "hsk1-l13",
+    "hsk1-l14",
+    "hsk2-l08",
     "hsk3-l11"
   ],
-  "independentAcceptedAndFullSavedLessonCount": 20,
+  "independentAcceptedAndFullSavedLessonCount": 21,
   "totalLessonCount": 48,
   "uniquePhysicalPrintedOccurrenceCountClaimed": false,
   "packages": [
@@ -137,10 +139,10 @@
         "verifiedAtUTC": "2026-10-05T02:13:15.701928+00:00"
       },
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -599,7 +601,7 @@
     {
       "scope": "hsk1-l10-independent-v2",
       "lessonKey": "hsk1-l10",
-      "status": "independent-approved-but-partial",
+      "status": "independent-approved-and-full-exact-readback",
       "qualification": "independent-source-only-v2-selected-pending-full-backup",
       "stageSHA256": "d50957e68d047da19ab4a5fab914172333d06b2d79cc5074624575ba0f65adfa",
       "freezePath": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l10/boundary-observation-correction-v2/FREEZE.json",
@@ -614,7 +616,12 @@
       "authorFreezeSHA256": "3cf8a378dec3dfeb7dff9dcaf466320615ff94097fff22305af5a44b6e6de297",
       "independentFreezeSHA256": "902fddb67a0fdb658ddf70809e4e22c7ea069581c44c517d9ec743ffb2e7ab6b",
       "fullRequiredFileCount": 25,
-      "fullReceipt": null,
+      "fullReceipt": {
+        "remoteCommit": "e113f8f8bb60a4d18db30647cc2d78899e1b5d99",
+        "localAndRemoteTree": "6d06c12495f4858f7252a319ac76b13a54fd18b3",
+        "remoteNetworkBlobsVerified": 25,
+        "verifiedAtUTC": "2026-10-05T02:56:44.743655+00:00"
+      },
       "textShieldReceipt": {
         "remoteCommit": "115e859afc5810aee1cc7eb1e35789331b005529",
         "localAndRemoteTree": "de37d2bb9b6ebe197281247255a4838eb9c9578f",
@@ -1052,10 +1059,10 @@
       "fullRequiredFileCount": 22,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1083,10 +1090,10 @@
       "fullRequiredFileCount": 28,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1212,10 +1219,10 @@
       "fullRequiredFileCount": 24,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1243,10 +1250,10 @@
       "fullRequiredFileCount": 26,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1274,10 +1281,10 @@
       "fullRequiredFileCount": 4,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1305,10 +1312,10 @@
       "fullRequiredFileCount": 27,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1436,10 +1443,10 @@
       "fullRequiredFileCount": 20,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1587,10 +1594,10 @@
       "fullRequiredFileCount": 45,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1738,10 +1745,10 @@
       "fullRequiredFileCount": 43,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1769,10 +1776,10 @@
       "fullRequiredFileCount": 8,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1920,10 +1927,10 @@
       "fullRequiredFileCount": 14,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -1954,10 +1961,10 @@
       "fullRequiredFileCount": 29,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -2095,10 +2102,10 @@
       "fullRequiredFileCount": 21,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -2126,10 +2133,10 @@
       "fullRequiredFileCount": 45,
       "fullReceipt": null,
       "textShieldReceipt": {
-        "remoteCommit": "38238ae425a747891de36ab0757124f1b0f69256",
-        "localAndRemoteTree": "d0905b1b481076f87802e3b57449c3b6d204709b",
-        "remoteNetworkBlobsVerified": 202,
-        "verifiedAtUTC": "2026-10-05T02:49:59.976211+00:00"
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
       },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
@@ -2142,7 +2149,7 @@
     {
       "scope": "hsk1-l13-independent",
       "lessonKey": "hsk1-l13",
-      "status": "independent-approved-local-only",
+      "status": "independent-approved-but-partial",
       "qualification": "independent-source-accepted-requires-l11-shared-reading",
       "stageSHA256": "223b091518f3d2fc2d5f0552e6230399f741acff776f8583365fd5e0ebaf8d97",
       "freezePath": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l13/FREEZE.json",
@@ -2158,7 +2165,12 @@
       "independentFreezeSHA256": "5d184dea41d64007287a304efcafa25d75b4b5a822297174d233add652262c80",
       "fullRequiredFileCount": 30,
       "fullReceipt": null,
-      "textShieldReceipt": null,
+      "textShieldReceipt": {
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
+      },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
       "wholeSourceAcceptanceApproved": true,
@@ -2170,7 +2182,7 @@
     {
       "scope": "hsk3-l15-author",
       "lessonKey": "hsk3-l15",
-      "status": "author-only-local-frozen",
+      "status": "author-only-text-shield",
       "qualification": "author-only",
       "stageSHA256": "e78a391a725dcc4e50073b182edf1db8141deaf555aaaa131d72dca68436121c",
       "freezePath": "course-app/docs/recovery-20261005/official-vi-source/hsk3-l15/freeze-manifest.json",
@@ -2325,7 +2337,12 @@
       "independentFreezeSHA256": null,
       "fullRequiredFileCount": 50,
       "fullReceipt": null,
-      "textShieldReceipt": null,
+      "textShieldReceipt": {
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
+      },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
       "wholeSourceAcceptanceApproved": false,
@@ -2335,7 +2352,7 @@
     {
       "scope": "hsk2-l13-author",
       "lessonKey": "hsk2-l13",
-      "status": "author-only-local-frozen",
+      "status": "author-only-text-shield",
       "qualification": "author-only",
       "stageSHA256": "ccf6ea71c380de62fbecbf0298f1ba4da03ca3d986ac5984e13abc05b73cf42c",
       "freezePath": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l13/FREEZE.json",
@@ -2446,7 +2463,12 @@
       "independentFreezeSHA256": null,
       "fullRequiredFileCount": 20,
       "fullReceipt": null,
-      "textShieldReceipt": null,
+      "textShieldReceipt": {
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
+      },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
       "wholeSourceAcceptanceApproved": false,
@@ -2456,7 +2478,7 @@
     {
       "scope": "hsk1-l15-author",
       "lessonKey": "hsk1-l15",
-      "status": "author-only-local-frozen",
+      "status": "author-only-text-shield",
       "qualification": "author-only",
       "stageSHA256": "539cfa4139b7a0cb926e2a955a148bbbfca174ed1998509532cfbe0a8af36acd",
       "freezePath": "course-app/docs/recovery-20261005/official-vi-source/hsk1-l15/FREEZE.json",
@@ -2472,7 +2494,12 @@
       "independentFreezeSHA256": null,
       "fullRequiredFileCount": 29,
       "fullReceipt": null,
-      "textShieldReceipt": null,
+      "textShieldReceipt": {
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
+      },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
       "wholeSourceAcceptanceApproved": false,
@@ -2482,7 +2509,7 @@
     {
       "scope": "hsk2-l14-author",
       "lessonKey": "hsk2-l14",
-      "status": "author-only-local-frozen",
+      "status": "author-only-text-shield",
       "qualification": "author-only",
       "stageSHA256": "f8ab91e0b4e1e2fb14e0107875085fdfbda6349d151d5c66f20a1e3984f6c6bc",
       "freezePath": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l14/FREEZE.json",
@@ -2590,15 +2617,172 @@
       "independentFreezeSHA256": null,
       "fullRequiredFileCount": 20,
       "fullReceipt": null,
-      "textShieldReceipt": null,
+      "textShieldReceipt": {
+        "remoteCommit": "4f72ce4744e4999d26e7cdd9c3cbf98173517c02",
+        "localAndRemoteTree": "b4cb8b4ede628e4711203900d9471ce11a6089f3",
+        "remoteNetworkBlobsVerified": 108,
+        "verifiedAtUTC": "2026-10-05T02:57:18.164906+00:00"
+      },
       "websiteAlignmentAccepted": false,
       "runtimeActivated": false,
       "wholeSourceAcceptanceApproved": false,
       "wholeAcceptanceRequiresFreezeSHA256": [],
       "wholeAcceptanceDependenciesFullReadback": true
+    },
+    {
+      "scope": "hsk2-l08-independent",
+      "lessonKey": "hsk2-l08",
+      "status": "independent-approved-local-only",
+      "qualification": "independent-source-fidelity-accepted",
+      "stageSHA256": "7b96fc72e177c4564212efa5164dc5f8c9406288087a223342de6a3835e9cce5",
+      "freezePath": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l08/FREEZE.json",
+      "freezeSHA256": "794643ebea6a1e8aaf0c6bb8c08ea491433ec358b0c013154400850193e0609e",
+      "primaryText": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-l08/review.json",
+      "primaryTextSHA256": "65fde5f12f7e96cc02d3ed09778834ca5688108afe4e1d0f5be3b67a27be0950",
+      "sourceIds": [
+        "hsk2-official-vi:l08:p064:lesson-number-header",
+        "hsk2-official-vi:l08:p064:lesson-title",
+        "hsk2-official-vi:l08:p064:goals-header",
+        "hsk2-official-vi:l08:p064:goal1",
+        "hsk2-official-vi:l08:p064:goal2",
+        "hsk2-official-vi:l08:p064:goal3",
+        "hsk2-official-vi:l08:p064:goal4",
+        "hsk2-official-vi:l08:p064:warmup-header",
+        "hsk2-official-vi:l08:p064:warmup1-instruction",
+        "hsk2-official-vi:l08:p064:warmup2-instruction",
+        "hsk2-official-vi:l08:p065:running-lesson-header",
+        "hsk2-official-vi:l08:p067:running-lesson-header",
+        "hsk2-official-vi:l08:p069:running-lesson-header",
+        "hsk2-official-vi:l08:p071:running-lesson-header",
+        "hsk2-official-vi:l08:p066:running-series-header",
+        "hsk2-official-vi:l08:p068:running-series-header",
+        "hsk2-official-vi:l08:p070:running-series-header",
+        "hsk2-official-vi:l08:p072:running-series-header",
+        "hsk2-official-vi:l08:p065:text1-header",
+        "hsk2-official-vi:l08:p065:text1-context",
+        "hsk2-official-vi:l08:p065:text1-listen-instruction",
+        "hsk2-official-vi:l08:p066:text2-header",
+        "hsk2-official-vi:l08:p066:text2-context",
+        "hsk2-official-vi:l08:p066:text2-listen-instruction",
+        "hsk2-official-vi:l08:p068:text3-header",
+        "hsk2-official-vi:l08:p068:text3-context",
+        "hsk2-official-vi:l08:p068:text3-listen-instruction",
+        "hsk2-official-vi:l08:p070:text4-header",
+        "hsk2-official-vi:l08:p070:text4-context",
+        "hsk2-official-vi:l08:p070:text4-listen-instruction",
+        "hsk2-official-vi:l08:p065:words-header-text1",
+        "hsk2-official-vi:l08:p067:words-header-text2",
+        "hsk2-official-vi:l08:p069:words-header-text3",
+        "hsk2-official-vi:l08:p070:words-header-text4",
+        "hsk2-official-vi:l08:p065:word01",
+        "hsk2-official-vi:l08:p065:word02",
+        "hsk2-official-vi:l08:p065:word03",
+        "hsk2-official-vi:l08:p065:word04",
+        "hsk2-official-vi:l08:p067:word05",
+        "hsk2-official-vi:l08:p067:word06",
+        "hsk2-official-vi:l08:p067:word07",
+        "hsk2-official-vi:l08:p069:word08",
+        "hsk2-official-vi:l08:p069:word09",
+        "hsk2-official-vi:l08:p069:word10",
+        "hsk2-official-vi:l08:p069:word11",
+        "hsk2-official-vi:l08:p070:word12",
+        "hsk2-official-vi:l08:p070:word13",
+        "hsk2-official-vi:l08:p070:word14",
+        "hsk2-official-vi:l08:p065:word02-subword-left",
+        "hsk2-official-vi:l08:p065:word04-subword-right",
+        "hsk2-official-vi:l08:p065:text1-line01",
+        "hsk2-official-vi:l08:p065:text1-line02",
+        "hsk2-official-vi:l08:p065:text1-line03",
+        "hsk2-official-vi:l08:p065:text1-line04",
+        "hsk2-official-vi:l08:p065:text1-line05",
+        "hsk2-official-vi:l08:p065:text1-line06",
+        "hsk2-official-vi:l08:p067:text2-line01",
+        "hsk2-official-vi:l08:p067:text2-line02",
+        "hsk2-official-vi:l08:p067:text2-line03",
+        "hsk2-official-vi:l08:p067:text2-line04",
+        "hsk2-official-vi:l08:p067:text2-line05",
+        "hsk2-official-vi:l08:p067:text2-line06",
+        "hsk2-official-vi:l08:p069:text3-line01",
+        "hsk2-official-vi:l08:p069:text3-line02",
+        "hsk2-official-vi:l08:p069:text3-line03",
+        "hsk2-official-vi:l08:p069:text3-line04",
+        "hsk2-official-vi:l08:p069:text3-line05",
+        "hsk2-official-vi:l08:p069:text3-line06",
+        "hsk2-official-vi:l08:p069:text3-line07",
+        "hsk2-official-vi:l08:p066:text1-role-read-instruction",
+        "hsk2-official-vi:l08:p067:text2-role-read-instruction",
+        "hsk2-official-vi:l08:p069:text3-role-read-instruction",
+        "hsk2-official-vi:l08:p070:text4-paragraph1",
+        "hsk2-official-vi:l08:p071:text4-read-instruction",
+        "hsk2-official-vi:l08:p066:grammar1-header",
+        "hsk2-official-vi:l08:p066:grammar1-title",
+        "hsk2-official-vi:l08:p068:grammar2-header",
+        "hsk2-official-vi:l08:p068:grammar2-title",
+        "hsk2-official-vi:l08:p069:grammar3-header",
+        "hsk2-official-vi:l08:p069:grammar3-title",
+        "hsk2-official-vi:l08:p066:grammar1-explanation",
+        "hsk2-official-vi:l08:p068:grammar2-explanation",
+        "hsk2-official-vi:l08:p070:grammar3-explanation",
+        "hsk2-official-vi:l08:p066:grammar1-complete-instruction",
+        "hsk2-official-vi:l08:p068:grammar2-complete-instruction",
+        "hsk2-official-vi:l08:p070:grammar3-complete-instruction",
+        "hsk2-official-vi:l08:p070:helper-header",
+        "hsk2-official-vi:l08:p070:helper-explanation",
+        "hsk2-official-vi:l08:p071:exercises-header",
+        "hsk2-official-vi:l08:p071:fillword-instruction",
+        "hsk2-official-vi:l08:p071:describe-picture-instruction",
+        "hsk2-official-vi:l08:p072:activity-header",
+        "hsk2-official-vi:l08:p072:roleplay-header",
+        "hsk2-official-vi:l08:p072:roleplay-instruction",
+        "hsk2-official-vi:l08:p072:example-header",
+        "hsk2-official-vi:l08:p072:video-header",
+        "hsk2-official-vi:l08:p072:video-title"
+      ],
+      "sourceIdCount": 97,
+      "bodyOrLocalRecordCount": 97,
+      "sharedAppendixOccurrenceCountRequiringDedup": 0,
+      "recordedIndependentAcceptedOccurrenceCount": 97,
+      "authorFreezeSHA256": "b6eb63c36475b8e0c5b2840768f2bebda285cc503fb49aef5624e5f4a80d30bc",
+      "independentFreezeSHA256": "794643ebea6a1e8aaf0c6bb8c08ea491433ec358b0c013154400850193e0609e",
+      "fullRequiredFileCount": 28,
+      "fullReceipt": null,
+      "textShieldReceipt": null,
+      "websiteAlignmentAccepted": false,
+      "runtimeActivated": false,
+      "wholeSourceAcceptanceApproved": true,
+      "wholeAcceptanceRequiresFreezeSHA256": [],
+      "wholeAcceptanceDependenciesFullReadback": true
+    },
+    {
+      "scope": "hsk1-l14-independent",
+      "lessonKey": "hsk1-l14",
+      "status": "independent-approved-local-only",
+      "qualification": "independent-source-accepted-requires-l11-shared-reading",
+      "stageSHA256": "3fd78a6a43760248c261e73ee6253a5a191d2e948bd902d1868f0e223748b599",
+      "freezePath": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l14/FREEZE.json",
+      "freezeSHA256": "d7a5339c8acb6413d6602ebf88229a341b8c50f464a2269558de4e88f1c9db21",
+      "primaryText": "course-app/docs/recovery-20261005/qa-official-vi/hsk1-l14/review.json",
+      "primaryTextSHA256": "1723e2b0d2fcea0bb9b8e729d4c634f375e57630544e94a428599f2a21eb95de",
+      "sourceIds": [],
+      "sourceIdCount": 0,
+      "bodyOrLocalRecordCount": 136,
+      "sharedAppendixOccurrenceCountRequiringDedup": 88,
+      "recordedIndependentAcceptedOccurrenceCount": 136,
+      "authorFreezeSHA256": null,
+      "independentFreezeSHA256": "d7a5339c8acb6413d6602ebf88229a341b8c50f464a2269558de4e88f1c9db21",
+      "fullRequiredFileCount": 33,
+      "fullReceipt": null,
+      "textShieldReceipt": null,
+      "websiteAlignmentAccepted": false,
+      "runtimeActivated": false,
+      "wholeSourceAcceptanceApproved": true,
+      "wholeAcceptanceRequiresFreezeSHA256": [
+        "4097a508da5e3d9f378fabb421035b878ef35ccf481b6d2d5f41d0c2fb0a5166"
+      ],
+      "wholeAcceptanceDependenciesFullReadback": false
     }
   ],
-  "receiptCount": 9,
+  "receiptCount": 11,
   "productionDeploymentPerformed": false,
   "publicationAuthorized": false,
   "protectedRemoteHeads": {
