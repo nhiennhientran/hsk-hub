@@ -1,0 +1,427 @@
+name: Recover frozen HSK workspace source
+on:
+  push:
+    branches: [work/hsk-workspace-recovery-20261005]
+    paths: [.github/workflows/hsk-workspace-recovery-20261005.yml]
+permissions:
+  contents: read
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out exact persisted source without credentials
+        uses: actions/checkout@v4
+        with:
+          ref: 9e89fa7145c285ec92990bbbeb5dce3080c5ddf0
+          fetch-depth: 1
+          persist-credentials: false
+      - name: Archive source and Git metadata into downloadable parts
+        shell: bash
+        env:
+          FROZEN_SOURCE_SHA: 9e89fa7145c285ec92990bbbeb5dce3080c5ddf0
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$FROZEN_SOURCE_SHA"
+          test -d .git
+          mkdir -p recovery-out
+          tar --exclude=./recovery-out -czf "$RUNNER_TEMP/repo-source.tar.gz" .
+          split -b 29M -d -a 2 "$RUNNER_TEMP/repo-source.tar.gz" recovery-out/repo-source.tar.gz.part
+          python3 - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          def digest(path):
+              h = hashlib.sha256()
+              with path.open('rb') as f:
+                  for block in iter(lambda: f.read(1024 * 1024), b''):
+                      h.update(block)
+              return h.hexdigest()
+          archive = Path(os.environ['RUNNER_TEMP']) / 'repo-source.tar.gz'
+          parts = sorted(Path('recovery-out').glob('repo-source.tar.gz.part*'))
+          assert parts and len(parts) <= 40, f'Unsupported part count: {len(parts)}'
+          assert all(p.stat().st_size <= 29 * 1024 * 1024 for p in parts)
+          metadata = {
+              'schemaVersion': 1,
+              'repository': os.environ['GITHUB_REPOSITORY'],
+              'sourceSHA': os.environ['FROZEN_SOURCE_SHA'],
+              'workflowSHA': os.environ['GITHUB_SHA'],
+              'runId': os.environ['GITHUB_RUN_ID'],
+              'runAttempt': os.environ['GITHUB_RUN_ATTEMPT'],
+              'archive': {'file': archive.name, 'bytes': archive.stat().st_size, 'sha256': digest(archive)},
+              'containsGitMetadata': True,
+              'checkoutDepth': 1,
+              'parts': [{'file': p.name, 'bytes': p.stat().st_size, 'sha256': digest(p),
+                         'artifactName': 'hsk-source-recovery-' + p.name.rsplit('part', 1)[1]} for p in parts],
+              'operation': 'read-only-recovery-no-build-no-deploy'
+          }
+          Path('recovery-out/recovery-metadata.json').write_text(json.dumps(metadata, indent=2) + '\n')
+          print(json.dumps({'archiveBytes': archive.stat().st_size, 'parts': len(parts), 'archiveSHA256': metadata['archive']['sha256']}))
+          PY
+      - name: Retain recovery metadata
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-metadata
+          path: recovery-out/recovery-metadata.json
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 00
+        if: hashFiles('recovery-out/repo-source.tar.gz.part00') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-00
+          path: recovery-out/repo-source.tar.gz.part00
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 01
+        if: hashFiles('recovery-out/repo-source.tar.gz.part01') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-01
+          path: recovery-out/repo-source.tar.gz.part01
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 02
+        if: hashFiles('recovery-out/repo-source.tar.gz.part02') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-02
+          path: recovery-out/repo-source.tar.gz.part02
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 03
+        if: hashFiles('recovery-out/repo-source.tar.gz.part03') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-03
+          path: recovery-out/repo-source.tar.gz.part03
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 04
+        if: hashFiles('recovery-out/repo-source.tar.gz.part04') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-04
+          path: recovery-out/repo-source.tar.gz.part04
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 05
+        if: hashFiles('recovery-out/repo-source.tar.gz.part05') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-05
+          path: recovery-out/repo-source.tar.gz.part05
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 06
+        if: hashFiles('recovery-out/repo-source.tar.gz.part06') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-06
+          path: recovery-out/repo-source.tar.gz.part06
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 07
+        if: hashFiles('recovery-out/repo-source.tar.gz.part07') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-07
+          path: recovery-out/repo-source.tar.gz.part07
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 08
+        if: hashFiles('recovery-out/repo-source.tar.gz.part08') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-08
+          path: recovery-out/repo-source.tar.gz.part08
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 09
+        if: hashFiles('recovery-out/repo-source.tar.gz.part09') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-09
+          path: recovery-out/repo-source.tar.gz.part09
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 10
+        if: hashFiles('recovery-out/repo-source.tar.gz.part10') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-10
+          path: recovery-out/repo-source.tar.gz.part10
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 11
+        if: hashFiles('recovery-out/repo-source.tar.gz.part11') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-11
+          path: recovery-out/repo-source.tar.gz.part11
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 12
+        if: hashFiles('recovery-out/repo-source.tar.gz.part12') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-12
+          path: recovery-out/repo-source.tar.gz.part12
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 13
+        if: hashFiles('recovery-out/repo-source.tar.gz.part13') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-13
+          path: recovery-out/repo-source.tar.gz.part13
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 14
+        if: hashFiles('recovery-out/repo-source.tar.gz.part14') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-14
+          path: recovery-out/repo-source.tar.gz.part14
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 15
+        if: hashFiles('recovery-out/repo-source.tar.gz.part15') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-15
+          path: recovery-out/repo-source.tar.gz.part15
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 16
+        if: hashFiles('recovery-out/repo-source.tar.gz.part16') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-16
+          path: recovery-out/repo-source.tar.gz.part16
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 17
+        if: hashFiles('recovery-out/repo-source.tar.gz.part17') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-17
+          path: recovery-out/repo-source.tar.gz.part17
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 18
+        if: hashFiles('recovery-out/repo-source.tar.gz.part18') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-18
+          path: recovery-out/repo-source.tar.gz.part18
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 19
+        if: hashFiles('recovery-out/repo-source.tar.gz.part19') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-19
+          path: recovery-out/repo-source.tar.gz.part19
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 20
+        if: hashFiles('recovery-out/repo-source.tar.gz.part20') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-20
+          path: recovery-out/repo-source.tar.gz.part20
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 21
+        if: hashFiles('recovery-out/repo-source.tar.gz.part21') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-21
+          path: recovery-out/repo-source.tar.gz.part21
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 22
+        if: hashFiles('recovery-out/repo-source.tar.gz.part22') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-22
+          path: recovery-out/repo-source.tar.gz.part22
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 23
+        if: hashFiles('recovery-out/repo-source.tar.gz.part23') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-23
+          path: recovery-out/repo-source.tar.gz.part23
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 24
+        if: hashFiles('recovery-out/repo-source.tar.gz.part24') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-24
+          path: recovery-out/repo-source.tar.gz.part24
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 25
+        if: hashFiles('recovery-out/repo-source.tar.gz.part25') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-25
+          path: recovery-out/repo-source.tar.gz.part25
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 26
+        if: hashFiles('recovery-out/repo-source.tar.gz.part26') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-26
+          path: recovery-out/repo-source.tar.gz.part26
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 27
+        if: hashFiles('recovery-out/repo-source.tar.gz.part27') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-27
+          path: recovery-out/repo-source.tar.gz.part27
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 28
+        if: hashFiles('recovery-out/repo-source.tar.gz.part28') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-28
+          path: recovery-out/repo-source.tar.gz.part28
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 29
+        if: hashFiles('recovery-out/repo-source.tar.gz.part29') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-29
+          path: recovery-out/repo-source.tar.gz.part29
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 30
+        if: hashFiles('recovery-out/repo-source.tar.gz.part30') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-30
+          path: recovery-out/repo-source.tar.gz.part30
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 31
+        if: hashFiles('recovery-out/repo-source.tar.gz.part31') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-31
+          path: recovery-out/repo-source.tar.gz.part31
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 32
+        if: hashFiles('recovery-out/repo-source.tar.gz.part32') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-32
+          path: recovery-out/repo-source.tar.gz.part32
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 33
+        if: hashFiles('recovery-out/repo-source.tar.gz.part33') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-33
+          path: recovery-out/repo-source.tar.gz.part33
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 34
+        if: hashFiles('recovery-out/repo-source.tar.gz.part34') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-34
+          path: recovery-out/repo-source.tar.gz.part34
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 35
+        if: hashFiles('recovery-out/repo-source.tar.gz.part35') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-35
+          path: recovery-out/repo-source.tar.gz.part35
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 36
+        if: hashFiles('recovery-out/repo-source.tar.gz.part36') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-36
+          path: recovery-out/repo-source.tar.gz.part36
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 37
+        if: hashFiles('recovery-out/repo-source.tar.gz.part37') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-37
+          path: recovery-out/repo-source.tar.gz.part37
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 38
+        if: hashFiles('recovery-out/repo-source.tar.gz.part38') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-38
+          path: recovery-out/repo-source.tar.gz.part38
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
+      - name: Retain source part 39
+        if: hashFiles('recovery-out/repo-source.tar.gz.part39') != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-source-recovery-39
+          path: recovery-out/repo-source.tar.gz.part39
+          retention-days: 90
+          compression-level: 0
+          if-no-files-found: error
