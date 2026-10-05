@@ -54,12 +54,16 @@ fs.mkdirSync(outputDir,{recursive:true});fs.writeFileSync(path.join(outputDir,'h
 const execution=[];let next=0;
 async function worker(){while(next<runs){const run=++next,name='stress-run-'+String(run).padStart(2,'0')+'.tap',file=path.join(outputDir,name),startedAt=new Date().toISOString(),start=Date.now();
   const output=fs.createWriteStream(file),args=['--experimental-strip-types','--test','--test-reporter=tap','tests/release-readiness.test.mjs'];
-  const child=spawn(process.execPath,args,{cwd:course,env:process.env});child.stdout.pipe(output,{end:false});child.stderr.pipe(output,{end:false});
+  // Observe actual Git child lifetimes without changing Git behavior or retrying.
+  // Each worker owns a separate file; no credentials or environment values are requested.
+  const trace=path.join(outputDir,'stress-run-'+String(run).padStart(2,'0')+'.trace2.jsonl');
+  const child=spawn(process.execPath,args,{cwd:course,env:{...process.env,GIT_TRACE2_EVENT:trace}});child.stdout.pipe(output,{end:false});child.stderr.pipe(output,{end:false});
   const outcome=await new Promise(resolve=>{child.on('error',error=>resolve({spawnError:String(error),exitCode:null,signal:null}));child.on('close',(exitCode,signal)=>resolve({exitCode,signal}));});
   await new Promise(resolve=>output.end(resolve));const bytes=fs.readFileSync(file),text=bytes.toString('utf8'),metrics={};
   for(const key of ['tests','pass','fail','cancelled','skipped','todo'])metrics[key]=Number(text.match(new RegExp('^# '+key+' (\\d+)\\s*$','m'))?.[1]??NaN);
   execution.push({run,argv:[process.execPath,...args],cwd:course,startedAt,durationMilliseconds:Date.now()-start,...outcome,metrics,
-    output:{file:name,bytes:bytes.length,sha256:hash(bytes)},passed:outcome.exitCode===0&&metrics.tests===9&&metrics.pass===9&&['fail','cancelled','skipped','todo'].every(k=>metrics[k]===0)});
+    output:{file:name,bytes:bytes.length,sha256:hash(bytes)},gitTrace:fs.existsSync(trace)?{file:path.basename(trace),bytes:fs.statSync(trace).size,sha256:hash(fs.readFileSync(trace))}:null,
+    passed:outcome.exitCode===0&&metrics.tests===9&&metrics.pass===9&&['fail','cancelled','skipped','todo'].every(k=>metrics[k]===0)});
   process.stdout.write(JSON.stringify({run,exitCode:outcome.exitCode,metrics})+'\n');
 }}
 const startedAt=new Date().toISOString();await Promise.all(Array.from({length:parallel},worker));
