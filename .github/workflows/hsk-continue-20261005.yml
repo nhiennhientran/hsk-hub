@@ -5,6 +5,9 @@ on:
     branches: ['work/hsk-continue-20261005']
 permissions:
   contents: read
+defaults:
+  run:
+    shell: bash --noprofile --norc -e -o pipefail {0}
 jobs:
   continuation:
     runs-on: ubuntu-latest

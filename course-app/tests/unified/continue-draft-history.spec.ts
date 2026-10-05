@@ -57,7 +57,10 @@ for (const level of [2, 3] as const) {
     await seed(page, level, initial); await page.goto(`/#view=homework&level=${level}&lesson=1&part=vocabGrammar`);
     const form = page.locator('#assignment'); await expect(form).toHaveAttribute('data-draft-question-snapshot', 'incompatible');
     await expect(form.locator('legend').first()).toContainText(earlier[0]!.prompt.zh);
-    for (const field of await form.locator('fieldset').all()) await expect(field).toBeDisabled();
+    for (const field of await form.locator('fieldset').all()) {
+      expect(await field.evaluate(node => (node as HTMLFieldSetElement).disabled)).toBe(true);
+      for (const control of await field.locator('input,textarea,button,select').all()) await expect(control).toBeDisabled();
+    }
     await expect(form.getByRole('button', {name: '提交并查看结果'})).toBeDisabled();
     expect(await stored(page, level)).toEqual(initial);
     await page.goto(`/#view=progress&level=${level}`);

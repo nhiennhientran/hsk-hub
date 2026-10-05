@@ -42,6 +42,10 @@ for (const level of [2, 3]) {
     const input = page.locator('#assignment textarea').first();
     const select = page.locator('#lesson-select');
     const key = `ran_hsk${level}_fltrp_2026_v1`;
+    await input.fill('先前已保存的草稿');
+    await expect(page.locator('.save-status')).toHaveAttribute('data-status', 'saved');
+    const originalRaw = await page.evaluate(key => localStorage.getItem(key), key);
+    expect(originalRaw).not.toBeNull();
     await page.evaluate(key => {
       const original = Storage.prototype.setItem;
       Storage.prototype.setItem = function (name, value) {
@@ -60,7 +64,7 @@ for (const level of [2, 3]) {
     await expect(page).toHaveURL(new RegExp(`level=${level}&lesson=1&part=writing$`));
     await expect(page.locator('.global-message')).toContainText('未确认保存');
     await expect(input).toHaveValue(draft);
-    expect(await page.evaluate(key => JSON.parse(localStorage.getItem(key)!).data.homework, key)).toEqual({});
+    expect(await page.evaluate(key => localStorage.getItem(key), key)).toEqual(originalRaw);
 
     await page.evaluate(() => (window as typeof window & {restoreContinueFlowStorage?: () => void}).restoreContinueFlowStorage?.());
     await select.selectOption('2');
