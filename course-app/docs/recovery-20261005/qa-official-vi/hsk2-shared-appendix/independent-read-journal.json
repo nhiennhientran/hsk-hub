@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "sourceAuthor": "remaining_media_audit",
+  "officialPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "actualOriginalFullPDFPagesReadBeforeAuthorRecordComparison": [
+    155,
+    156,
+    157,
+    158,
+    159
+  ],
+  "actualPrintedFootersRead": [
+    141,
+    142,
+    143,
+    144,
+    145
+  ],
+  "originalFreshFullpageRenderer": "Poppler pdftoppm180 cropbox; different byte recipe from author fitz1.8",
+  "notes": [
+    {
+      "pdfPage": 155,
+      "printedPage": 141,
+      "POSHeader": "Bảng đối chiếu từ loại",
+      "bothPOSColumnHeaders": [
+        "Từ loại",
+        "Tiếng Việt",
+        "Viết tắt"
+      ],
+      "wordlistHeading": "Bảng từ vựng",
+      "bothIndexColumnHeaders": [
+        "Từ/Cụm",
+        "Phiên âm",
+        "Bài"
+      ],
+      "entirePOSRowsActuallyRead": [
+        [
+          "名词",
+          "danh từ",
+          "dt."
+        ],
+        [
+          "动词",
+          "động từ",
+          "đgt."
+        ],
+        [
+          "形容词",
+          "tính từ",
+          "tt."
+        ],
+        [
+          "代词",
+          "đại từ",
+          "đt."
+        ],
+        [
+          "副词",
+          "phó từ",
+          "phó."
+        ],
+        [
+          "介词",
+          "giới từ",
+          "giới."
+        ],
+        [
+          "连词",
+          "liên từ",
+          "liên."
+        ],
+        [
+          "助词",
+          "trợ từ",
+          "trợ."
+        ],
+        [
+          "数词",
+          "từ chỉ số đếm",
+          "số."
+        ],
+        [
+          "量词",
+          "lượng từ",
+          "lượng."
+        ],
+        [
+          "数量词",
+          "từ chỉ số lượng",
+          "sl."
+        ],
+        [
+          "叹词",
+          "từ cảm thán",
+          "ct."
+        ],
+        [
+          "拟声词",
+          "từ tượng thanh",
+          "tượng."
+        ],
+        [
+          "能愿动词",
+          "động từ năng nguyện",
+          "đtnn."
+        ],
+        [
+          "前缀",
+          "tiền tố",
+          "ttố."
+        ],
+        [
+          "后缀",
+          "hậu tố",
+          "htố."
+        ]
+      ],
+      "starLegendVI": "Những từ có đánh dấu “*” ở phía trước là từ vượt khung của cấp độ này.",
+      "starLegendZH": "前面加“★”的是本级超纲词。",
+      "glyphQualification": "Scanned printed VI asterisk-like glyph is manually represented by *; ZH quoted star by ★. Not decoded original PDF Unicode. Full 5× fresh legend image actually read."
+    },
+    {
+      "pdfPage": 156,
+      "printedPage": 142,
+      "runningSeriesZH": "新HSK教程2",
+      "runningSeriesVI": "Giáo trình New HSK 2",
+      "twoIndexColumnsActuallyRead": true,
+      "allColumnsChinesePinyinLessonOnlyNoVIWordGlossses": true
+    },
+    {
+      "pdfPage": 157,
+      "printedPage": 143,
+      "runningHeaderChineseOnly": "词语表",
+      "noVIHeaderFabricated": true,
+      "twoIndexColumnsActuallyRead": true,
+      "allColumnsChinesePinyinLessonOnlyNoVIWordGlossses": true
+    },
+    {
+      "pdfPage": 158,
+      "printedPage": 144,
+      "runningSeriesZH": "新HSK教程2",
+      "runningSeriesVI": "Giáo trình New HSK 2",
+      "twoIndexColumnsActuallyRead": true,
+      "allColumnsChinesePinyinLessonOnlyNoVIWordGlossses": true
+    },
+    {
+      "pdfPage": 159,
+      "printedPage": 145,
+      "runningHeaderChineseOnly": "词语表",
+      "noVIHeaderFabricated": true,
+      "twoIndexColumnsActuallyRead": true,
+      "properNameHeadingZH": "专有名词",
+      "properNameHeadingVI": "Danh từ riêng",
+      "properNameIndexHeaders": [
+        "Từ/Cụm",
+        "Phiên âm",
+        "Bài"
+      ],
+      "properNameRowsChinesePinyinLessonOnly": [
+        "北京烤鸭",
+        "北京大学",
+        "颐和园"
+      ],
+      "noIndividualVIProperNameGlosses": true
+    }
+  ],
+  "author61RecordsAllPrimaryAndFragmentsCompared": true,
+  "originalV1Accepted": false,
+  "V1ErrorsConfirmedIndependently": [
+    "pos-row14 abbreviation đnn.→đtnn.",
+    "star-legend quoted VI glyph representation ★→* with explicit hand proxy note"
+  ],
+  "V2SourceSHA256": "a1b29b19c1b772b8ec92ad23b405e7012740ac17a8c3c394d5c47fd44b5652e7",
+  "freshDetailViews": {
+    "pos-right": "actually read and confirms đtnn.",
+    "star-legend": "first crop missed text and shows only footnote rule/blank; kept as reviewer positioning miss",
+    "star-legend-complete": "second fresh crop actually read full legend"
+  },
+  "boundaryPages160To162": {
+    "actualIndependentVisualRead": false,
+    "classificationScope": "Author-only colophon/activation/backcover classification outside accepted five-page source scope. No numeric footer fabricated, no activation code transcribed or reproduced by reviewer."
+  },
+  "websiteVIRead": false,
+  "lostAcceptanceReused": false,
+  "qualification": "61 actual VI occurrences only; source fidelity not website acceptance. Chinese/PY lexical index rows classify no VI glosses; individual index row accuracy is not a new VI source item."
+}

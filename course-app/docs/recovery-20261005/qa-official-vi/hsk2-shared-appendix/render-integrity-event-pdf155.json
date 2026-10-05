@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "detectedUTC": "2026-10-05T02:42:01.928293+00:00",
+  "originalManifestFile": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/render-manifest.json",
+  "originalManifestSHA256": "e7f71ae4c34dec6e80e1c848cb95ab6da507419dcf1572dbb8ec6167bf6b618d",
+  "originalExpectedPNG": {
+    "bytes": 1270006,
+    "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+  },
+  "detectedBadPNG": {
+    "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+    "bytes": 794624,
+    "sha256": "183c8bcd5c1e004bae7494c7324c70e9dd0c7ed2c49857e1379f6bdcc00ccead",
+    "error": ""
+  },
+  "recovery": "unfrozen own PNG only; no acceptance or prior visual read for this page",
+  "rerenderArgv": [
+    "pdftoppm",
+    "-f",
+    "155",
+    "-l",
+    "155",
+    "-r",
+    "180",
+    "-cropbox",
+    "-singlefile",
+    "-png",
+    "/workspace/scratch/28b55072841a/upload/HSK2 ( 3.0).pdf",
+    "/tmp/qa-integrity-original-tgndehee/original"
+  ],
+  "rerenderExitCode": 0,
+  "originalPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "rerenderExpectedSHA256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9",
+  "restored": {
+    "bytes": 1270006,
+    "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9",
+    "fullPILLoad": "passed",
+    "PILVerify": "passed"
+  },
+  "frozenBytesRewritten": false
+}

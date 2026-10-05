@@ -1,0 +1,2141 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "release_assembly",
+  "sourceAuthor": "remaining_media_audit",
+  "status": "accepted-V2-original-source-fidelity-local-only-until-full-remote-receipt",
+  "originalPDFSHA256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b",
+  "sourceV1SHA256": "5d410fd3122ef36dbcdb74446e0d4a9fe9b08d10c86f2634f566d14e82864255",
+  "authorV1FreezeSHA256": "b1e0b645c2de4ae72721f4a80911d0088007eba61e4fc7604502133ee0be7bb9",
+  "sourceV2SHA256": "a1b29b19c1b772b8ec92ad23b405e7012740ac17a8c3c394d5c47fd44b5652e7",
+  "authorV2FreezeSHA256": "4a61c883176358f1715c66379f661905c02bde29e605a4c7ff56cfaa9e44a79e",
+  "scope": {
+    "actualPDFPages": [
+      155,
+      156,
+      157,
+      158,
+      159
+    ],
+    "actualPrintedPages": [
+      141,
+      142,
+      143,
+      144,
+      145
+    ],
+    "sourceOccurrences": 61,
+    "V2Accepted": 61,
+    "V2Repair": 0,
+    "V2Hold": 0,
+    "V2Missing": 0,
+    "V1AcceptedComplete": 59,
+    "V1RepairComplete": 2,
+    "fullPOSRows": 16,
+    "sourceFullpageImagesActuallyRead": 5,
+    "relevantFresh5xDetailImagesActuallyRead": 2,
+    "retainedPositioningMissImage": 1,
+    "actualSameRecipeAuthorFullImages": 8,
+    "actualSameRecipeAuthorDetails": 2,
+    "boundaries160To162IndependentVisualAccepted": false
+  },
+  "V2SourceDecisions": [
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-header",
+      "recordIndex": 0,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "7bb07654b69cb3a02570c99d62183fe1fe6de911d05f5393614c3db9ced59205",
+      "candidateVI": "Bảng đối chiếu từ loại",
+      "candidateZH": "词性对照表",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-pos",
+      "recordIndex": 1,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "63ef3e46aff6b6792e627602f82797f026cd686a3e2d53b36b14ebb76af454e9",
+      "candidateVI": "Từ loại",
+      "candidateZH": "词性",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-language",
+      "recordIndex": 2,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "d527db53bb6521404408ccd29c9b481e083e0bff234fb97724260776540e1a0e",
+      "candidateVI": "Tiếng Việt",
+      "candidateZH": "越南文",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-abbreviation",
+      "recordIndex": 3,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "5cc7514bf171aa1b01e37b9c2379df0356351e5bc7f23af21fd295b7aa9620a0",
+      "candidateVI": "Viết tắt",
+      "candidateZH": "越南文简写",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-pos",
+      "recordIndex": 4,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "b64988938fed18ef1f813b29494420ebfb6c44b74f977be200310c4b8805a45a",
+      "candidateVI": "Từ loại",
+      "candidateZH": "词性",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-language",
+      "recordIndex": 5,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "c99a6cfa7f2f7d138582246a1fc7200481907d572acd39fc705953b5eda89ffc",
+      "candidateVI": "Tiếng Việt",
+      "candidateZH": "越南文",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-abbreviation",
+      "recordIndex": 6,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "77a4af74802cb4d29f6b15802e05cd370921d956239fe78aa1c3c28cc9f4f3c5",
+      "candidateVI": "Viết tắt",
+      "candidateZH": "越南文简写",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row01",
+      "recordIndex": 7,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "1318e3fe8ff48e634fe30a5e9df0e8e487a5336847b0cd519f99aebdf2368ec8",
+      "candidateVI": "danh từ",
+      "candidateZH": "名词",
+      "printedAbbreviation": "dt.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row02",
+      "recordIndex": 8,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "1e27f6fd44103e7f39def75bc365a5c963cf70678e94920519c0a080253c294c",
+      "candidateVI": "động từ",
+      "candidateZH": "动词",
+      "printedAbbreviation": "đgt.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row03",
+      "recordIndex": 9,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "a9bb1f7f271fdbef14e093f0c49e9fe5a7264009d8f8a5ae5fc4805d0295939f",
+      "candidateVI": "tính từ",
+      "candidateZH": "形容词",
+      "printedAbbreviation": "tt.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row04",
+      "recordIndex": 10,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "68c5c7cbf1bc56942bc9a77892045c2fda76f02128ca67cce61c4b38470ec780",
+      "candidateVI": "đại từ",
+      "candidateZH": "代词",
+      "printedAbbreviation": "đt.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row05",
+      "recordIndex": 11,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ffe261ad50e44ce6bb773dd4dfd34de389f2f9684f943cb4311da91455121575",
+      "candidateVI": "phó từ",
+      "candidateZH": "副词",
+      "printedAbbreviation": "phó.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row06",
+      "recordIndex": 12,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "13ec5407825caccb73509e4ef44415947cfb5efea6fa6327e757d1dad7319bc7",
+      "candidateVI": "giới từ",
+      "candidateZH": "介词",
+      "printedAbbreviation": "giới.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row07",
+      "recordIndex": 13,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "70fd4cd21f75b087b9263a4d8e33ed97eb73fd24a77707f2a675673186a5612e",
+      "candidateVI": "liên từ",
+      "candidateZH": "连词",
+      "printedAbbreviation": "liên.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row08",
+      "recordIndex": 14,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "7bc0a82f9c6a563c74abe195e5aeade763e0c1f287b5ab80a6750b75ff1d111c",
+      "candidateVI": "trợ từ",
+      "candidateZH": "助词",
+      "printedAbbreviation": "trợ.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row09",
+      "recordIndex": 15,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "76776c9338bcf7cce898ec4880327df142b5173dc12e91188c411267dcc3e461",
+      "candidateVI": "từ chỉ số đếm",
+      "candidateZH": "数词",
+      "printedAbbreviation": "số.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row10",
+      "recordIndex": 16,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "bcf5a721685adfa76e63cea77508d28c09f240c6378c1190c0c86b77fda178c9",
+      "candidateVI": "lượng từ",
+      "candidateZH": "量词",
+      "printedAbbreviation": "lượng.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row11",
+      "recordIndex": 17,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "f5699efcb3083811420e0ab6c0c28cb6be4757756de341ff25d8fb33fd216fcd",
+      "candidateVI": "từ chỉ số lượng",
+      "candidateZH": "数量词",
+      "printedAbbreviation": "sl.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row12",
+      "recordIndex": 18,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "10a0740a62a410dca9a5cebe73c58f4bceffc874f0366230f3c9091d74a892c5",
+      "candidateVI": "từ cảm thán",
+      "candidateZH": "叹词",
+      "printedAbbreviation": "ct.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row13",
+      "recordIndex": 19,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "a3febd008bdc19fc4c101f3dc1ddf1e34986234faef76fd4bc2aef0d3147bd6e",
+      "candidateVI": "từ tượng thanh",
+      "candidateZH": "拟声词",
+      "printedAbbreviation": "tượng.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row14",
+      "recordIndex": 20,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "3b08200e938d0dc43b10c06df062bb4cd0ff4722ec8357ac733c49a8ab0690f5",
+      "candidateVI": "động từ năng nguyện",
+      "candidateZH": "能愿动词",
+      "printedAbbreviation": "đtnn.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row15",
+      "recordIndex": 21,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "aa8a0f5e12110408d3b8c42686ae155c03aca38b020b1aa2c3bba5577372c322",
+      "candidateVI": "tiền tố",
+      "candidateZH": "前缀",
+      "printedAbbreviation": "ttố.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row16",
+      "recordIndex": 22,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ae269224743eaf6bf0d04fc905bb446ccd63fc4aa1cdc7ba82ff214f659877c2",
+      "candidateVI": "hậu tố",
+      "candidateZH": "后缀",
+      "printedAbbreviation": "htố.",
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:wordlist-header",
+      "recordIndex": 23,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "4b0c71e8a42b99963d0c5dff7e6c6c100d91dc76cc96c9ad3f4e705ff9428f14",
+      "candidateVI": "Bảng từ vựng",
+      "candidateZH": "词语表",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-word",
+      "recordIndex": 24,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "4f1781680e6e3f46f6faa1765f3e2e747e42d1d4b013436675c5dec4052cdf0c",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-pinyin",
+      "recordIndex": 25,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "f31e063f7140fcb6f29d3cebb93a6018c27f71dd936d748ad12ed635f3f258d9",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-lesson",
+      "recordIndex": 26,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "22dfd9f9538ac61f3a4634a860e246f98fb172223363e280ec2a8c8e9c6c0108",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-word",
+      "recordIndex": 27,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "cac52bf43df7f78538ce8492faefd4af66e88be532197b6240121ad3cf32ff11",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-pinyin",
+      "recordIndex": 28,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "5a71bc4a77dc2d8144444cec080219dae6c42b06cbc38611d1edd34a84244c09",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-lesson",
+      "recordIndex": 29,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "2d77c634ebf529fbbf750ba77fc50a319c90688b5a99686ab90f7cc7718c2815",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-word",
+      "recordIndex": 30,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "946552297e2aa342879415ab9ed106ce7bb0cb8cd1cd1d250bb4c14c8ac2b417",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-pinyin",
+      "recordIndex": 31,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "81c9fddf482d8439a81476aeb3437f6ee1a1e97d314675513400b8721c7039d7",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-lesson",
+      "recordIndex": 32,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "811d3ba554eb3abb269ac5f026210c87e0ae4ff18f725038e086d887379f5900",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-word",
+      "recordIndex": 33,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "a26203705bef81b56b2363e343ca9b67ebc0095e99886d5d5906249520963a98",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-pinyin",
+      "recordIndex": 34,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "78f2a65fcaae71419e02eedc8f14757e7a5cfc6faf0f1bc36785563b2dcb33d4",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-lesson",
+      "recordIndex": 35,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ea31c99df86c01e88bf1b4d70e7616d924ea45e782a18f3c817b427acfa1544c",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-word",
+      "recordIndex": 36,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "9cafb877b466a3aa6ac417361a09f349071c71eac1009b074e761c06a9e097df",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        157
+      ],
+      "actualPrintedPages": [
+        143
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf157-p143.png",
+        "sha256": "ee7fb9e292700d357997d3a32282dbbe617dff3aa721fca73ee1bd07d4f4a72f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-pinyin",
+      "recordIndex": 37,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "b037d34cd994da605ce508ab2c7d12ef1e2326e582cfd790a366e3f813434e1c",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        157
+      ],
+      "actualPrintedPages": [
+        143
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf157-p143.png",
+        "sha256": "ee7fb9e292700d357997d3a32282dbbe617dff3aa721fca73ee1bd07d4f4a72f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-lesson",
+      "recordIndex": 38,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "3ec9319f0e73652fe4a3d94bb4ca9bee2439680b9473e8b89990128fdaa20661",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        157
+      ],
+      "actualPrintedPages": [
+        143
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf157-p143.png",
+        "sha256": "ee7fb9e292700d357997d3a32282dbbe617dff3aa721fca73ee1bd07d4f4a72f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-word",
+      "recordIndex": 39,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "cca673dd82dbd15326472081c7e307b1a1a2ac562d35825547ecdca5d0023a63",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        157
+      ],
+      "actualPrintedPages": [
+        143
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf157-p143.png",
+        "sha256": "ee7fb9e292700d357997d3a32282dbbe617dff3aa721fca73ee1bd07d4f4a72f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-pinyin",
+      "recordIndex": 40,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "17ae88de39298937aa6e35c72ec120952d1d2f8a0225812967ad6bc98f6113b1",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        157
+      ],
+      "actualPrintedPages": [
+        143
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf157-p143.png",
+        "sha256": "ee7fb9e292700d357997d3a32282dbbe617dff3aa721fca73ee1bd07d4f4a72f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-lesson",
+      "recordIndex": 41,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "27241574422e92c10db4becdfaeb541a9baa34b708f19dfefee97a39626c2dbc",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        157
+      ],
+      "actualPrintedPages": [
+        143
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf157-p143.png",
+        "sha256": "ee7fb9e292700d357997d3a32282dbbe617dff3aa721fca73ee1bd07d4f4a72f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-word",
+      "recordIndex": 42,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "fafc74816505e995fc191547459fde1715ba309bc2c35ce3240f79f55c95625e",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-pinyin",
+      "recordIndex": 43,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "6f633e42a6048c3fc5ebee390ae3f4af0d2f5d271c60ede783adeadff2132605",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-lesson",
+      "recordIndex": 44,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "b4dad5993ac7fbe7dbe1daf931d78e109e2aa274961560736b2f6fa80c5600d1",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-word",
+      "recordIndex": 45,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "e7e255ecb38da2c89efe42570ec9b355a99e181b8a95fb13fb3cc3e666776260",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-pinyin",
+      "recordIndex": 46,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "e0ba54e4f123a5494921d8594a82dd7ed7c973a7a423d11f5f2e0abc73b58575",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-lesson",
+      "recordIndex": 47,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "df57c80a5993fc2c8bed97e047bc5ec8d3de393d274799c565d4a6d97d75f2eb",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-word",
+      "recordIndex": 48,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "85b96bb248a6b8ae5c653a5b342762f97d8f690c4aab70efb1cfdee519ec91c5",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-pinyin",
+      "recordIndex": 49,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "e3fa73d6da9d37489818999245686fa4e30d4278f06894fdcbdda2459f619e6a",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-lesson",
+      "recordIndex": 50,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "3b3976c4b582b5459ded0eed9a5a4a40c8ee13710659ab1906c5732ae799ca4c",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-word",
+      "recordIndex": 51,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ef3d71a05dfe16e4f043a90d09b96756bc0fa8890a69cba5de169487c7fa5f1b",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-pinyin",
+      "recordIndex": 52,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "d26a0b7d2b2e07a89610ea820e346dc5a801984a239fee50cf6d4dd0ae1db2ef",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-lesson",
+      "recordIndex": 53,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "0738b494deca277dc21a016b34efddade4d8a8304cb43a61075809d2ae1a8eb0",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-word",
+      "recordIndex": 54,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "7b2f676ab2faaf57d5ff6ac4b1a2a158bd684fac2d8df02f5e4fd29385da8a9b",
+      "candidateVI": "Từ/Cụm",
+      "candidateZH": "词语",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-pinyin",
+      "recordIndex": 55,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "8c49414b68aff2baf75cd0181f188f420c6f13cdfa164b797bf2df68778eae1f",
+      "candidateVI": "Phiên âm",
+      "candidateZH": "拼音",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-lesson",
+      "recordIndex": 56,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "382ec8db009b4b2f7ea96258c353810030afb3037df73c2bcec279c26bd6c144",
+      "candidateVI": "Bài",
+      "candidateZH": "课号",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:star-legend",
+      "recordIndex": 57,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "f870868757b9da2bdb1bb3a163b37ae5bf1c2922d6f03484c11185383c9c81cf",
+      "candidateVI": "Những từ có đánh dấu “*” ở phía trước là từ vượt khung của cấp độ này.",
+      "candidateZH": "前面加“★”的是本级超纲词。",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        155
+      ],
+      "actualPrintedPages": [
+        141
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf155-p141.png",
+        "sha256": "20567d9cf9b8a04c0c1bc8080b375737d84237627a8bfa556541903b981c19d9"
+      },
+      "qualification": "Printed scanned glyph proxies are manually represented, never claimed as original decoded codepoints."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:running-series-header",
+      "recordIndex": 58,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "fab41a96938137895ae10b53d23b8639694bdc45c5fa10512f546a6157e2faa8",
+      "candidateVI": "Giáo trình New HSK 2",
+      "candidateZH": "新HSK教程2",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        156
+      ],
+      "actualPrintedPages": [
+        142
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf156-p142.png",
+        "sha256": "e6a9a7f392a6c9472caca077501ad2937874061bfd88c9674cbf9c2d58842ee0"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:running-series-header",
+      "recordIndex": 59,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ee1ccc938f8ffdf4da262d2f62b76ba455441a49714cc07c2969952925ceb9d7",
+      "candidateVI": "Giáo trình New HSK 2",
+      "candidateZH": "新HSK教程2",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        158
+      ],
+      "actualPrintedPages": [
+        144
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf158-p144.png",
+        "sha256": "587d1f0b29100312eb8fec76c637de87cfb001b3909b3502b8c25f76369d7f0f"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-header",
+      "recordIndex": 60,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "2c2bbd5b237c9b8c8054c7df6a8cb74894c91058529c2457b60e28f0f44b2bb2",
+      "candidateVI": "Danh từ riêng",
+      "candidateZH": "专有名词",
+      "printedAbbreviation": null,
+      "actualPDFPages": [
+        159
+      ],
+      "actualPrintedPages": [
+        145
+      ],
+      "fieldDecisions": {
+        "VI": "accepted-source-fidelity",
+        "ZH": "accepted-source-fidelity",
+        "physicalPagePrintedFooterFragmentAssociation": "accepted-source-fidelity",
+        "printedAbbreviationWhenPresent": "accepted-source-fidelity",
+        "metadataSHAUnicode": "425-actual-integrity-checks-passed"
+      },
+      "freshIndependentEvidence": {
+        "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/renders/pdf159-p145.png",
+        "sha256": "192af6eb305cd02258bf86a52c4cf3fe2ba18f8443edb73c1a0feba0d9cc04eb"
+      },
+      "qualification": "Actual original full page independently read before candidate comparison."
+    }
+  ],
+  "V1SourceDecisions": [
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-header",
+      "recordIndex": 0,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "7bb07654b69cb3a02570c99d62183fe1fe6de911d05f5393614c3db9ced59205",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-pos",
+      "recordIndex": 1,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "63ef3e46aff6b6792e627602f82797f026cd686a3e2d53b36b14ebb76af454e9",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-language",
+      "recordIndex": 2,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "d527db53bb6521404408ccd29c9b481e083e0bff234fb97724260776540e1a0e",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-left-column-abbreviation",
+      "recordIndex": 3,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "5cc7514bf171aa1b01e37b9c2379df0356351e5bc7f23af21fd295b7aa9620a0",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-pos",
+      "recordIndex": 4,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "b64988938fed18ef1f813b29494420ebfb6c44b74f977be200310c4b8805a45a",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-language",
+      "recordIndex": 5,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "c99a6cfa7f2f7d138582246a1fc7200481907d572acd39fc705953b5eda89ffc",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-right-column-abbreviation",
+      "recordIndex": 6,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "77a4af74802cb4d29f6b15802e05cd370921d956239fe78aa1c3c28cc9f4f3c5",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row01",
+      "recordIndex": 7,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "1318e3fe8ff48e634fe30a5e9df0e8e487a5336847b0cd519f99aebdf2368ec8",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row02",
+      "recordIndex": 8,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "1e27f6fd44103e7f39def75bc365a5c963cf70678e94920519c0a080253c294c",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row03",
+      "recordIndex": 9,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "a9bb1f7f271fdbef14e093f0c49e9fe5a7264009d8f8a5ae5fc4805d0295939f",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row04",
+      "recordIndex": 10,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "68c5c7cbf1bc56942bc9a77892045c2fda76f02128ca67cce61c4b38470ec780",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row05",
+      "recordIndex": 11,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ffe261ad50e44ce6bb773dd4dfd34de389f2f9684f943cb4311da91455121575",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row06",
+      "recordIndex": 12,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "13ec5407825caccb73509e4ef44415947cfb5efea6fa6327e757d1dad7319bc7",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row07",
+      "recordIndex": 13,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "70fd4cd21f75b087b9263a4d8e33ed97eb73fd24a77707f2a675673186a5612e",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row08",
+      "recordIndex": 14,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "7bc0a82f9c6a563c74abe195e5aeade763e0c1f287b5ab80a6750b75ff1d111c",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row09",
+      "recordIndex": 15,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "76776c9338bcf7cce898ec4880327df142b5173dc12e91188c411267dcc3e461",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row10",
+      "recordIndex": 16,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "bcf5a721685adfa76e63cea77508d28c09f240c6378c1190c0c86b77fda178c9",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row11",
+      "recordIndex": 17,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "f5699efcb3083811420e0ab6c0c28cb6be4757756de341ff25d8fb33fd216fcd",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row12",
+      "recordIndex": 18,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "10a0740a62a410dca9a5cebe73c58f4bceffc874f0366230f3c9091d74a892c5",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row13",
+      "recordIndex": 19,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "a3febd008bdc19fc4c101f3dc1ddf1e34986234faef76fd4bc2aef0d3147bd6e",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row14",
+      "recordIndex": 20,
+      "decision": "repair-required",
+      "candidateRecordSHA256": "8d98e06213a4d1fe2adaaea88ed6e737b68346747964a7f804f3ccf56896a34b",
+      "repair": {
+        "oldAbbreviation": "đnn.",
+        "actualAbbreviation": "đtnn."
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row15",
+      "recordIndex": 21,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "aa8a0f5e12110408d3b8c42686ae155c03aca38b020b1aa2c3bba5577372c322",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:pos-row16",
+      "recordIndex": 22,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ae269224743eaf6bf0d04fc905bb446ccd63fc4aa1cdc7ba82ff214f659877c2",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:wordlist-header",
+      "recordIndex": 23,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "4b0c71e8a42b99963d0c5dff7e6c6c100d91dc76cc96c9ad3f4e705ff9428f14",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-word",
+      "recordIndex": 24,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "4f1781680e6e3f46f6faa1765f3e2e747e42d1d4b013436675c5dec4052cdf0c",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-pinyin",
+      "recordIndex": 25,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "f31e063f7140fcb6f29d3cebb93a6018c27f71dd936d748ad12ed635f3f258d9",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-left-column-lesson",
+      "recordIndex": 26,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "22dfd9f9538ac61f3a4634a860e246f98fb172223363e280ec2a8c8e9c6c0108",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-word",
+      "recordIndex": 27,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "cac52bf43df7f78538ce8492faefd4af66e88be532197b6240121ad3cf32ff11",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-pinyin",
+      "recordIndex": 28,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "5a71bc4a77dc2d8144444cec080219dae6c42b06cbc38611d1edd34a84244c09",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:index-right-column-lesson",
+      "recordIndex": 29,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "2d77c634ebf529fbbf750ba77fc50a319c90688b5a99686ab90f7cc7718c2815",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-word",
+      "recordIndex": 30,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "946552297e2aa342879415ab9ed106ce7bb0cb8cd1cd1d250bb4c14c8ac2b417",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-pinyin",
+      "recordIndex": 31,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "81c9fddf482d8439a81476aeb3437f6ee1a1e97d314675513400b8721c7039d7",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-left-column-lesson",
+      "recordIndex": 32,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "811d3ba554eb3abb269ac5f026210c87e0ae4ff18f725038e086d887379f5900",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-word",
+      "recordIndex": 33,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "a26203705bef81b56b2363e343ca9b67ebc0095e99886d5d5906249520963a98",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-pinyin",
+      "recordIndex": 34,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "78f2a65fcaae71419e02eedc8f14757e7a5cfc6faf0f1bc36785563b2dcb33d4",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:index-right-column-lesson",
+      "recordIndex": 35,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ea31c99df86c01e88bf1b4d70e7616d924ea45e782a18f3c817b427acfa1544c",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-word",
+      "recordIndex": 36,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "9cafb877b466a3aa6ac417361a09f349071c71eac1009b074e761c06a9e097df",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-pinyin",
+      "recordIndex": 37,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "b037d34cd994da605ce508ab2c7d12ef1e2326e582cfd790a366e3f813434e1c",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-left-column-lesson",
+      "recordIndex": 38,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "3ec9319f0e73652fe4a3d94bb4ca9bee2439680b9473e8b89990128fdaa20661",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-word",
+      "recordIndex": 39,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "cca673dd82dbd15326472081c7e307b1a1a2ac562d35825547ecdca5d0023a63",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-pinyin",
+      "recordIndex": 40,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "17ae88de39298937aa6e35c72ec120952d1d2f8a0225812967ad6bc98f6113b1",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p143:index-right-column-lesson",
+      "recordIndex": 41,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "27241574422e92c10db4becdfaeb541a9baa34b708f19dfefee97a39626c2dbc",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-word",
+      "recordIndex": 42,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "fafc74816505e995fc191547459fde1715ba309bc2c35ce3240f79f55c95625e",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-pinyin",
+      "recordIndex": 43,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "6f633e42a6048c3fc5ebee390ae3f4af0d2f5d271c60ede783adeadff2132605",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-left-column-lesson",
+      "recordIndex": 44,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "b4dad5993ac7fbe7dbe1daf931d78e109e2aa274961560736b2f6fa80c5600d1",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-word",
+      "recordIndex": 45,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "e7e255ecb38da2c89efe42570ec9b355a99e181b8a95fb13fb3cc3e666776260",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-pinyin",
+      "recordIndex": 46,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "e0ba54e4f123a5494921d8594a82dd7ed7c973a7a423d11f5f2e0abc73b58575",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:index-right-column-lesson",
+      "recordIndex": 47,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "df57c80a5993fc2c8bed97e047bc5ec8d3de393d274799c565d4a6d97d75f2eb",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-word",
+      "recordIndex": 48,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "85b96bb248a6b8ae5c653a5b342762f97d8f690c4aab70efb1cfdee519ec91c5",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-pinyin",
+      "recordIndex": 49,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "e3fa73d6da9d37489818999245686fa4e30d4278f06894fdcbdda2459f619e6a",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-left-column-lesson",
+      "recordIndex": 50,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "3b3976c4b582b5459ded0eed9a5a4a40c8ee13710659ab1906c5732ae799ca4c",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-word",
+      "recordIndex": 51,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ef3d71a05dfe16e4f043a90d09b96756bc0fa8890a69cba5de169487c7fa5f1b",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-pinyin",
+      "recordIndex": 52,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "d26a0b7d2b2e07a89610ea820e346dc5a801984a239fee50cf6d4dd0ae1db2ef",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:index-right-column-lesson",
+      "recordIndex": 53,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "0738b494deca277dc21a016b34efddade4d8a8304cb43a61075809d2ae1a8eb0",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-word",
+      "recordIndex": 54,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "7b2f676ab2faaf57d5ff6ac4b1a2a158bd684fac2d8df02f5e4fd29385da8a9b",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-pinyin",
+      "recordIndex": 55,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "8c49414b68aff2baf75cd0181f188f420c6f13cdfa164b797bf2df68778eae1f",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-index-column-lesson",
+      "recordIndex": 56,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "382ec8db009b4b2f7ea96258c353810030afb3037df73c2bcec279c26bd6c144",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p141:star-legend",
+      "recordIndex": 57,
+      "decision": "repair-required",
+      "candidateRecordSHA256": "9d56cb22d7b1bd814ee7b0f20fd0ca77fec9df09f47db2427df64ceeb799e86f",
+      "repair": {
+        "oldVI": "Những từ có đánh dấu “★” ở phía trước là từ vượt khung của cấp độ này.",
+        "actualVI": "Những từ có đánh dấu “*” ở phía trước là từ vượt khung của cấp độ này.",
+        "glyphQualification": "Vietnamese quoted asterisk-like printed glyph is transcribed as *; Chinese quoted five-point star is represented as ★. These are manual visual glyph proxies from a scanned page, not extracted PDF codepoints."
+      }
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p142:running-series-header",
+      "recordIndex": 58,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "fab41a96938137895ae10b53d23b8639694bdc45c5fa10512f546a6157e2faa8",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p144:running-series-header",
+      "recordIndex": 59,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "ee1ccc938f8ffdf4da262d2f62b76ba455441a49714cc07c2969952925ceb9d7",
+      "repair": null
+    },
+    {
+      "sourceId": "hsk2-official-vi:appendix:p145:proper-header",
+      "recordIndex": 60,
+      "decision": "accepted-source-fidelity",
+      "candidateRecordSHA256": "2c2bbd5b237c9b8c8054c7df6a8cb74894c91058529c2457b60e28f0f44b2bb2",
+      "repair": null
+    }
+  ],
+  "actualAutomatedEvidence": {
+    "file": "course-app/docs/recovery-20261005/qa-official-vi/hsk2-shared-appendix/verification.json",
+    "sha256": "95f72856d9180c500393ffe81c4c33a534544fa1aafd0bff1832a0581609afa4",
+    "checks": 425,
+    "passed": true
+  },
+  "qualification": {
+    "websiteVIRead": false,
+    "websiteAccepted": false,
+    "oldLostAcceptanceReused": false,
+    "lexicalIndexRows": "Chinese/pinyin/lessonNo only; no per-word Vietnamese gloss fabricated. This61scope does not newly certify every Chinese/PY lexical index row.",
+    "excludedBoundaryClassification": "160–162 colophon/activation/backcover classified by author; not independently visually accepted here; no numeric footer presumed and no activation code transcribed/reproduced by reviewer.",
+    "originalScannedGlyphs": "* and ★ are explicit manual visual proxies, not decoded PDF Unicode.",
+    "durability": "Need author V1 + author V2 + this own original fresh evidence all raw-byte/SHA/Gitblob remote readback receipt before saved-source-accepted count; shared appendix not an additional course."
+  }
+}
