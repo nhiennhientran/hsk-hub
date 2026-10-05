@@ -1,0 +1,122 @@
+name: Prepare user-approved exact HSK publication
+on:
+  push:
+    branches: [work/hsk-publish-frozen-20261006]
+    paths: [.github/workflows/hsk-publish-frozen-20261006.yml]
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: hsk-publish-frozen-20261006
+  cancel-in-progress: false
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Verify original archive and prepare exact publication commit without updating production
+        env:
+          HSK_PUBLISH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PYCODE'
+          import base64, gzip, hashlib, json, os, stat, subprocess, urllib.request, urllib.error, urllib.parse, zipfile
+          from pathlib import Path, PurePosixPath
+          REPO='nhiennhientran/hsk-hub'
+          PARENT='2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4'
+          SOURCE='003cbae9fe3a8f9f085522bb66ea108d451fa52a'
+          CHECKPOINT='f137c69793095ae19cb2cbda1fd5358be4519c2a'
+          STAGING='work/hsk-frozen-publication-20261006'
+          ARCHIVE_HASH='18e36158e3ea1726aaa3981cf361ff9d7c941477d077c237cc4b95b8bb27f539'
+          EVIDENCE_HASH='daf00c97da758c07cc16fd60bd66f21aff21b2040debf3493d2747919c30f947'
+          RECORD_HASH='21fcabc42251ac3b4eee1650e7c11f4d57f4471f4c5329208a61015807ef078c'
+          base=Path(os.environ['RUNNER_TEMP'])/'hsk-exact-publication';base.mkdir()
+          receipt_dir=Path('publication-receipt');receipt_dir.mkdir()
+          evidence_url=f'https://raw.githubusercontent.com/{REPO}/{CHECKPOINT}/course-app/docs/release-ready-20261005/final-acceptance-evidence.json.gz'
+          evidence_bytes=urllib.request.urlopen(evidence_url,timeout=90).read()
+          assert hashlib.sha256(evidence_bytes).hexdigest()==EVIDENCE_HASH
+          evidence=json.loads(gzip.decompress(evidence_bytes))
+          assert evidence['sourceCommit']==SOURCE and evidence['workflowRun']==37357340218
+          entry=next(x for x in evidence['files'] if x['path']=='final-ci/publication-ready-exact-files.json')
+          record_bytes=entry['text'].encode()
+          assert entry['sha256']==RECORD_HASH and hashlib.sha256(record_bytes).hexdigest()==RECORD_HASH
+          record=json.loads(record_bytes)
+          assert record['testedSourceCommit']==SOURCE and record['productionParentMustEqual']==PARENT
+          assert record['rebuiltAfterNativeTests'] is False
+          assert record['inventorySHA256']=='a7ba990d7e1b7a5825950c4967e61c420d0b910f587e4baa3f0430bce43fb84b'
+          expected=record['files'];assert len(expected)==3931
+          expected_by_path={x['path']:x for x in expected};assert len(expected_by_path)==3931
+          class NoRedirect(urllib.request.HTTPRedirectHandler):
+              def redirect_request(self,req,fp,code,msg,headers,newurl):return None
+          endpoint=f'https://api.github.com/repos/{REPO}/actions/artifacts/11364813960/zip'
+          request=urllib.request.Request(endpoint,headers={'Authorization':'Bearer '+os.environ['HSK_PUBLISH_TOKEN'],'Accept':'application/vnd.github+json','X-GitHub-Api-Version':'2022-11-28'})
+          try:
+              urllib.request.build_opener(NoRedirect).open(request,timeout=60)
+              raise RuntimeError('Expected temporary artifact redirect')
+          except urllib.error.HTTPError as error:
+              if error.code not in (301,302,303,307,308):raise RuntimeError('Artifact API status '+str(error.code)) from None
+              location=error.headers['Location']
+          assert urllib.parse.urlsplit(location).scheme=='https'
+          archive_path=base/'original-tested-site.zip';archive_hash=hashlib.sha256()
+          with urllib.request.urlopen(location,timeout=90) as stream,archive_path.open('wb') as output:
+              for block in iter(lambda:stream.read(1024*1024),b''):
+                  archive_hash.update(block);output.write(block)
+          assert archive_path.stat().st_size==493209134 and archive_hash.hexdigest()==ARCHIVE_HASH
+          repo_dir=base/'git-tree';repo_dir.mkdir()
+          askpass=base/'askpass.sh'
+          askpass.write_text('#!/bin/sh\ncase "$1" in *Username*) printf "%s\\n" x-access-token ;; *) printf "%s\\n" "$HSK_PUBLISH_TOKEN" ;; esac\n')
+          askpass.chmod(0o700)
+          env={**os.environ,'GIT_ASKPASS':str(askpass),'GIT_TERMINAL_PROMPT':'0','GIT_AUTHOR_NAME':'HSK Publication','GIT_AUTHOR_EMAIL':'41898282+github-actions[bot]@users.noreply.github.com','GIT_COMMITTER_NAME':'HSK Publication','GIT_COMMITTER_EMAIL':'41898282+github-actions[bot]@users.noreply.github.com'}
+          def git(*args,input=None):
+              result=subprocess.run(['git','-C',str(repo_dir),*args],input=input,env=env,stdout=subprocess.PIPE,stderr=subprocess.PIPE,check=True)
+              return result.stdout.decode().strip()
+          git('init','--quiet');git('remote','add','origin',f'https://github.com/{REPO}.git')
+          current=git('ls-remote','--heads','origin','refs/heads/gh-pages').split()[0]
+          assert current==PARENT,'Production changed since acceptance'
+          assert not git('ls-remote','--heads','origin','refs/heads/'+STAGING),'Staging ref already exists'
+          git('fetch','--quiet','--filter=blob:none','--depth=1','origin','gh-pages')
+          assert git('rev-parse','FETCH_HEAD')==PARENT
+          git('read-tree','--empty')
+          index_lines=[];total_bytes=0
+          with zipfile.ZipFile(archive_path) as archive:
+              items=archive.infolist();files=[x for x in items if not x.is_dir()]
+              assert len(files)==3931 and len({x.filename for x in files})==3931
+              assert {x.filename for x in files}==set(expected_by_path)
+              for item in items:
+                  path=PurePosixPath(item.filename)
+                  assert not path.is_absolute() and '..' not in path.parts and '.git' not in path.parts
+                  assert '\\' not in item.filename and '\t' not in item.filename and '\n' not in item.filename
+                  assert not stat.S_ISLNK(item.external_attr>>16)
+              for item in files:
+                  wanted=expected_by_path[item.filename];data=archive.read(item)
+                  assert len(data)==wanted['bytes'] and hashlib.sha256(data).hexdigest()==wanted['sha256'],item.filename
+                  assert wanted['type']=='blob' and wanted['mode'] in ('100644','100755')
+                  object_sha=git('hash-object','-w','--stdin',input=data)
+                  assert object_sha==wanted['sha'],item.filename
+                  index_lines.append(wanted['mode']+' '+object_sha+'\t'+item.filename+'\n')
+                  total_bytes+=len(data)
+          assert total_bytes==492494668
+          git('update-index','--index-info',input=''.join(index_lines).encode())
+          tree=git('write-tree')
+          actual={}
+          for line in git('ls-tree','-r','-z',tree).split('\0'):
+              if not line:continue
+              identity,path=line.split('\t');mode,kind,sha=identity.split()
+              actual[path]=(mode,kind,sha)
+          assert actual=={x['path']:(x['mode'],x['type'],x['sha']) for x in expected}
+          message='Publish exact user-approved HSK1/2/3 release, 48 lessons\n\nUser confirmed publication on 2026-10-06.\nTested source: '+SOURCE+'\nOriginal artifact: 11364813960 from run 37357340218\nArchive SHA256: '+ARCHIVE_HASH+'\nExact files: 3931; no rebuild or content changes.\n'
+          commit=git('commit-tree',tree,'-p',PARENT,input=message.encode())
+          assert git('rev-parse',commit+'^')==PARENT
+          assert git('ls-remote','--heads','origin','refs/heads/gh-pages').split()[0]==PARENT
+          git('push','--quiet','origin',commit+':refs/heads/'+STAGING)
+          assert git('ls-remote','--heads','origin','refs/heads/'+STAGING).split()[0]==commit
+          receipt={'status':'exact-tested-tree-staged-production-not-updated','userApproved':True,'sourceCommit':SOURCE,'sourceCheckpoint':CHECKPOINT,'productionBranch':'gh-pages','productionParent':PARENT,'stagingBranch':STAGING,'publicationCommit':commit,'publicationTree':tree,'files':3931,'fileBytes':total_bytes,'archive':{'artifactId':11364813960,'runId':37357340218,'bytes':493209134,'sha256':ARCHIVE_HASH},'evidenceSHA256':EVIDENCE_HASH,'inventorySHA256':record['inventorySHA256'],'verifiedAllFileSHA256AndGitObjectSHA':True,'rebuilt':False,'productionUpdated':False}
+          (receipt_dir/'exact-publication.json').write_text(json.dumps(receipt,indent=2)+'\n')
+          print(json.dumps(receipt))
+          PYCODE
+      - name: Retain exact publication receipt
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-exact-publication-receipt-20261006
+          path: publication-receipt/exact-publication.json
+          if-no-files-found: error
+          retention-days: 90
