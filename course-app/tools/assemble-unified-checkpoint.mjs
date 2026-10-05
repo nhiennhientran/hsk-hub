@@ -26,6 +26,7 @@ export function baselineExclusion(path){
   return undefined;
 }
 const mutableEntries=new Set(['index.html','course-engine/content-manifest.json',...[1,2,3].flatMap(n=>[`new-hsk${n}/index.html`,`new-hsk${n}/hsk${n}/index.html`]),...['lesson.html','learning.html','lesson9-pilot.html'].map(p=>'new-hsk1/hsk1/'+p)]);
+export const isApprovedUnifiedBaselineReplacement=path=>mutableEntries.has(path);
 export function assembleUnifiedCheckpoint({repo,baseline,packageRoot,output,report}){
   repo=resolve(repo);baseline=resolve(baseline);packageRoot=resolve(packageRoot);output=resolve(output);
   if(existsSync(output))throw Error('Assembly destination must not exist');

@@ -2,7 +2,8 @@ import assert from 'node:assert/strict';
 import {readFileSync, writeFileSync, mkdirSync} from 'node:fs';
 import {resolve, dirname} from 'node:path';
 import {createHash} from 'node:crypto';
-import {viBindingsForDocument, viProposalCanonicalJSON} from '../src/official-vi-revisions.ts';
+import {execFileSync} from 'node:child_process';
+import {viBindingsForDocument, viProposalCanonicalJSON, validateTrustedViRegistry} from '../src/official-vi-revisions.ts';
 
 // Compile only exact author bytes whose entire official/changed scope has an
 // independent accepted binding. Runtime still performs its full atomic guard.
@@ -24,6 +25,9 @@ const key = value => JSON.stringify([value.baselineFile, value.field, value.owne
 const ref = value => Object.fromEntries(['baselineFile', 'field', 'ownerId', 'component'].map(k => [k, value[k]]));
 const baselineFiles = new Map(), allBindings = [], lessons = [];
 const reviewEvidence = [];
+const inheritedText = execFileSync('git', ['show', '9e89fa7145c285ec92990bbbeb5dce3080c5ddf0:course-app/content/hsk3-official-vi-release-ready-20261005.json'], {cwd:repo,encoding:'utf8',maxBuffer:16*1024*1024});
+assert.equal(digest(inheritedText), '9bc063cbf7501dae2949f29d238630624175b50dfa2e7f3769e15e2c08020a52');
+const inheritedChanges = new Map(JSON.parse(inheritedText).changes.map(change => [key(change),change]));
 for (let number = 1; number <= 18; number++) {
   const nn = String(number).padStart(2, '0');
   const candidateFile = resolve(candidateRoot, `l${nn}.candidate.json`);
@@ -65,7 +69,11 @@ for (let number = 1; number <= 18; number++) {
     assert.equal(binding.sourceAnchor.zhContext, baseline.zhContext);
     const mustReview = binding.sourceAnchor.kind !== 'editorial' || binding.newValue !== binding.expectedEffectiveValue;
     if (mustReview) {
-      assert.ok(['accepted-by-author', 'accepted-by-author-awaiting-new-independent-field-review'].includes(binding.authorSemanticReview?.status), `Author did not accept: ${nn} ${binding.field}`);
+      const authorStatus = binding.authorSemanticReview?.status;
+      if(authorStatus === 'accepted-by-author-inheriting-exact-persisted-root-reviewed-value') {
+        assert.equal(number,10);
+        assert.equal(inheritedChanges.get(key(binding))?.newValue,binding.newValue,`Not an exact persisted inherited value: ${binding.field}`);
+      } else assert.ok(['accepted-by-author', 'accepted-by-author-awaiting-new-independent-field-review'].includes(authorStatus), `Author did not accept: ${nn} ${binding.field}`);
       required.add(key(binding));
       const seal = accepted.get(key(binding));
       assert.ok(seal, `Unreviewed official/changed field: ${nn} ${binding.field}`);
@@ -119,14 +127,17 @@ const proofText = JSON.stringify(proof, null, 2) + '\n', proofSHA256 = digest(pr
 manifest.independentReview = {status: 'accepted', reviewer, proposalSHA256, evidenceFile: reviewFile,
   evidenceSHA256: proofSHA256, acceptedChangeIds: proof.acceptedChangeIds};
 const manifestText = JSON.stringify(manifest, null, 2) + '\n';
+await validateTrustedViRegistry({courseId,parentDisplayRevision:manifest.parentDisplayRevision,
+  manifestText,manifestSHA256:digest(manifestText),reviewFile,reviewText:proofText,reviewSHA256:proofSHA256,
+  documents:manifest.baselineFiles.map(baseline => ({file:baseline.file,rawText:read(resolve(repo,baseline.file))}))});
 writeFileSync(resolve(repo, reviewFile), proofText); writeFileSync(resolve(repo, manifestFile), manifestText);
 const registryFile = resolve(repo, 'course-app/content/official-vi-registry.json'), registry = parse(registryFile);
 registry.courses.hsk3 = {manifestFile, manifestSHA256: digest(manifestText), reviewFile, reviewSHA256: proofSHA256};
-writeFileSync(registryFile, JSON.stringify(registry, null, 2) + '\n');
 const receipt = {schemaVersion: 1, status: 'independently-sealed-candidate-compiled', lessons,
   allRegisteredLessonFields: lessons.reduce((sum, lesson) => sum + lesson.registeredFields, 0),
   changes: changes.length, manifestSHA256: digest(manifestText), reviewSHA256: proofSHA256,
   sourceCounterpartsComplete: true, immutableBaselineHashes: manifest.baselineFiles};
 const receiptFile = resolve(repo, 'course-app/docs/release-ready-20261005/hsk3-compiled-scope.json');
 mkdirSync(dirname(receiptFile), {recursive: true}); writeFileSync(receiptFile, JSON.stringify(receipt, null, 2) + '\n');
+writeFileSync(registryFile, JSON.stringify(registry, null, 2) + '\n');
 console.log(JSON.stringify(receipt));

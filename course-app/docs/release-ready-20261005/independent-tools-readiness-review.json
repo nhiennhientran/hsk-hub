@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "status": "resolved-current-tools-awaiting-final-native-ci-and-frozen-package",
+  "reviewer": "/root/release_candidate_acceptance",
+  "reviewedAt": "2026-10-05T18:32:45.457552+00:00",
+  "localBaseHead": "9e89fa7145c285ec92990bbbeb5dce3080c5ddf0",
+  "rootProvidedSourceCheckpoint": "2b7921760156a2565474a49547332ad836c3312f",
+  "reviewedFiles": [
+    {
+      "path": "course-app/tools/compile-final-hsk3.mjs",
+      "sha256": "7c3a92e38593521b6541e629c1388d6fe46e794af98123b5ede178c0433fd454"
+    },
+    {
+      "path": "course-app/tools/verify-official-vi-adoption.mjs",
+      "sha256": "6326e6cb97f70c758d4e7d49bde531e7854ef1012c713b7a1bf3db7816d5ab65"
+    },
+    {
+      "path": "course-app/tools/prepare-tested-publication.mjs",
+      "sha256": "a3e5c84b05ba8aca04d1e9e31845092bd819c4d3667b122018c2b4a30a183106"
+    },
+    {
+      "path": "course-app/tools/assemble-unified-checkpoint.mjs",
+      "sha256": "fa8b32c471d4eaee60320a214c527c720f3a1b160547dd19118eef5716800876"
+    },
+    {
+      "path": ".github/workflows/hsk-release-ready-20261005.yml",
+      "sha256": "0fb750a70861ccc9ef3bb0efbf58a9ed8d8e48b2854452bf30f72ad4873b2bd7"
+    }
+  ],
+  "checks": {
+    "compiler": {
+      "all18BaselineSHAAndExactConsumerSets": true,
+      "exactAssignedIndependentReviewersAndAuthorIdentity": true,
+      "officialAndChangedEditorialScopePreciselySealed": true,
+      "actualIndependentLessonProofs": 18,
+      "requiredSealedBindings": 2757,
+      "sourceBoundSealedBindings": 2750,
+      "changedEditorialSealedBindings": 7,
+      "activeProofBindsExactCandidateAndIndependentReviewFileSHA": true,
+      "unchangedEditorialNotFreshSemanticReview": true,
+      "all523LexiconAliasesUseActualSingletonStableWordId": true,
+      "ChineseContextExpectedValuesRemainImmutable": true,
+      "sourceProofsCompleteBeforeAnySourceWrite": true,
+      "realRuntimePreflightBeforeAnyWrites": true,
+      "scopeReceiptWrittenBeforeRegistryActivation": true,
+      "registryIsLastWrite": true,
+      "lesson10InheritedStatusRequiresExactGitShow9eManifestSHAConsumerAndNewVI": true,
+      "lesson10InheritedStatusStillRequiresFreshIndependentSourceAnchorSeal": true
+    },
+    "adoption": {
+      "actualConsumerEnumerationIncludesLessonLexiconCourseIndex": 27735,
+      "all48ActualLessonChangesRequired": true,
+      "runtimeProjectorsAndImmutableBaselinesChecked": true,
+      "partialHSK3PreviouslyActuallyRejected": true,
+      "finalCompleteAdoptionActuallyPassed": true,
+      "currentActualChanges": 5364,
+      "actualObjectiveHomeworkChecks": 825,
+      "actualManualHomeworkChecks": 165,
+      "actualListeningChecks": 132,
+      "noClaimOfNewSemanticReviewOf27735": true,
+      "courses": [
+        {
+          "level": 1,
+          "lessons": 15,
+          "lessonsWithAcceptedChanges": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "revisionId": "hsk1-official-vi-release-ready-20261005",
+          "changed": 1667,
+          "registeredLessonFields": 10726,
+          "registeredConsumerFields": 10726,
+          "manifestSHA256": "4b41c41fd5ef18e0c1b803195015dfccc352ef4f9b58dc80e6d7ea6fc68b8e7e",
+          "reviewSHA256": "dc375a677399a4a99d54778a2b3439621cdd937a30a2c3ce05dd45bbd8b4caec",
+          "originalAnswerOrderAndMediaPreserved": true
+        },
+        {
+          "level": 2,
+          "lessons": 15,
+          "lessonsWithAcceptedChanges": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "revisionId": "hsk2-official-vi-release-ready-20261005",
+          "changed": 1619,
+          "registeredLessonFields": 6583,
+          "registeredConsumerFields": 6824,
+          "manifestSHA256": "aa9619a5e9037c4c5d04d36b30f5e4ccb590d55f6bf68406d555f438e0488cfa",
+          "reviewSHA256": "af954c6e077c90dc695fc49628325bb721a55a50ff2d8b7e48150cda39c08598",
+          "originalAnswerOrderAndMediaPreserved": true
+        },
+        {
+          "level": 3,
+          "lessons": 18,
+          "lessonsWithAcceptedChanges": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ],
+          "revisionId": "hsk3-official-vi-release-ready-20261005",
+          "changed": 2078,
+          "registeredLessonFields": 9644,
+          "registeredConsumerFields": 10185,
+          "manifestSHA256": "c8b9732e63638a0b579a4f8f0ca1fb97ef76faf8809632f0a14f0c9401253ae3",
+          "reviewSHA256": "cfa3cb005e6ff93b0e08f109e1e50c2956ff64093883dcdc0df28a6ed60151a7",
+          "originalAnswerOrderAndMediaPreserved": true
+        }
+      ]
+    },
+    "publication": {
+      "noProductionWriteUploadOrBuild": true,
+      "everySuppliedInventoryByteAndHashVerified": true,
+      "originalProtectedProductionGitTreePinned": true,
+      "everyOriginalNonexcludedPublicPathMustExist": true,
+      "all11AllowedBaselineEntryReplacementsCheckedBySharedAssemblerPredicate": true,
+      "uniqueReplacementPathsAndExactBeforeGitBlobChecked": true,
+      "actualChangedBaselinePathSetEqualsReceiptReplacements": true,
+      "replacementAfterSHA256MatchesActualBytes": true,
+      "all55PrivateExclusionsMatchExactRealBaselinePathModeTypeGitBlobAndReason": true,
+      "privatePublicPathFilterApplied": true,
+      "protectedOriginalPublicFileCountRequired": 1380
+    }
+  },
+  "resolvedFindings": [
+    {
+      "tool": "prepare-tested-publication.mjs",
+      "finding": "Original baseline presence, approved replacements, exact actual replacement set, and private exclusion identity checks added; the reported missing-path/replacement-exemption defect is resolved in the recorded file bytes."
+    },
+    {
+      "tool": "compile-final-hsk3.mjs",
+      "finding": "Existing real runtime registry now validates the entire in-memory proposal before writes. Receipt is saved before the active registry; registry activation is the last write. The narrow historical lesson10 author status is pinned to the actual accepted9e manifest SHA and exact consumer/newVI while retaining the fresh source-anchor seal."
+    }
+  ],
+  "remainingToolBlockers": [],
+  "scope": "Read-only review of the exact current tool bytes plus actual complete adoption execution and all18 candidate/review SHA bindings. No formal16-stage release gate approval, no new semantic approval of every27735 field, and no final native CI or retained-package acceptance is claimed. Publication still requires explicit user confirmation after that final evidence."
+}
