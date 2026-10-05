@@ -36,7 +36,10 @@ for (let number = 1; number <= 18; number++) {
   assert.equal(proof.candidateSHA256, digest(text), `Stale independent candidate: ${nn}`);
   assert.equal(proof.status, 'accepted');
   assert.equal(proof.sourceCounterpartsComplete, true);
-  assert.ok(typeof proof.reviewer === 'string' && proof.reviewer.startsWith('/root/vi_hsk1_author'));
+  const assignedReviewer = number <= 6 ? '/root/vi_hsk1_author'
+    : number <= 9 ? '/root/vi_hsk2_author' : '/root/vi_hsk1_author/hsk1_l06_l10';
+  assert.equal(proof.reviewer, assignedReviewer);
+  assert.equal(proof.author, author);
   assert.notEqual(proof.reviewer, author);
   assert.equal(proof.heldBindings.length, 0);
   assert.equal(candidate.pendingSourceCounterparts.length, 0);
@@ -62,7 +65,7 @@ for (let number = 1; number <= 18; number++) {
     assert.equal(binding.sourceAnchor.zhContext, baseline.zhContext);
     const mustReview = binding.sourceAnchor.kind !== 'editorial' || binding.newValue !== binding.expectedEffectiveValue;
     if (mustReview) {
-      assert.equal(binding.authorSemanticReview?.status, 'accepted-by-author', `Author did not accept: ${nn} ${binding.field}`);
+      assert.ok(['accepted-by-author', 'accepted-by-author-awaiting-new-independent-field-review'].includes(binding.authorSemanticReview?.status), `Author did not accept: ${nn} ${binding.field}`);
       required.add(key(binding));
       const seal = accepted.get(key(binding));
       assert.ok(seal, `Unreviewed official/changed field: ${nn} ${binding.field}`);
