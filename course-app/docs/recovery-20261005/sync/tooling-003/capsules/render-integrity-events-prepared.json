@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "repository": "nhiennhientran/hsk-hub",
+  "targetBranch": "work/hsk-source-recovery-20261005",
+  "scope": "render-integrity-events",
+  "qualification": "non-course-integrity-evidence",
+  "stage": "/workspace/scratch/28b55072841a/hsk-hub-resume-recovered/course-app/docs/recovery-20261005/qa-official-vi/render-integrity-events/STAGE-FILES.txt",
+  "stageSHA256": "5309b5e7e005ec18f2d7786afa25bd1a564c16e60e58863011c2f1b01ed972dd",
+  "stageDeclaredPathCount": 4,
+  "stageMetadataItselfIncluded": true,
+  "freezePath": "course-app/docs/recovery-20261005/qa-official-vi/render-integrity-events/FREEZE.json",
+  "freezeSHA256": "17d99b65581c94a1ee91d94e0abcdd2e3e5fd25f30899b130fc90556df7c16ce",
+  "freezeReferencesVerified": 3,
+  "immutableExternalReferences": [],
+  "expectedLocalParentCommit": "9edb8fc5ed45968511ebe7589f6fa15031dd94c2",
+  "expectedLocalParentTree": "1737aeedb82deb0f879cfb2152a24cac5010456d",
+  "entries": [
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/render-integrity-events/FREEZE.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "78c30b333eca0ddf10b8bff68dbf91030d6ccbda",
+      "bytes": 871,
+      "sha256": "17d99b65581c94a1ee91d94e0abcdd2e3e5fd25f30899b130fc90556df7c16ce",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/render-integrity-events/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "728b3bdab24ac4aa95c46edd7bc8e89168ffa038",
+      "bytes": 673,
+      "sha256": "a7d600508518f4a2804de7a6e41527868ed565909115960736b9230a4f1e9477",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/render-integrity-events/STAGE-FILES.txt",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "f5196015cdbecf99b772405443f797ac5dd088fd",
+      "bytes": 380,
+      "sha256": "5309b5e7e005ec18f2d7786afa25bd1a564c16e60e58863011c2f1b01ed972dd",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/qa-official-vi/render-integrity-events/hsk3-l11-postfreeze-complete-decode-20261005.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "f9e01249ab11246cbeb42be429b50fc55af2dd67",
+      "bytes": 4760,
+      "sha256": "86517d18421ba3adeae6a131fc643b7373756f84e03fc5c1a7294d558d4751c0",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    }
+  ],
+  "largeBlobBlockers": [],
+  "productionPublicationAuthorized": false
+}

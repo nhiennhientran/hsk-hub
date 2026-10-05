@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 1,
+  "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "authorReproducibilityOnly": true,
+  "independentSourceAcceptancePerformed": false,
+  "firstActualRendererExitCode": 1,
+  "firstFailureWasNotCountedAsSuccess": true,
+  "firstRendererCompletedOriginalGenerationCount": 35,
+  "finalReadbackInitiallyDetectedTruncatedPNGs": true,
+  "originalRetryCount": 2,
+  "retryDetails": [
+    {
+      "path": "evidence/pdf153-detail-inline.png",
+      "observedBytesBeforeRetry": 458752,
+      "expectedBytes": 723119,
+      "issue": "image file is truncated",
+      "actualOriginalRerendered": true,
+      "rerenderSHA256": "e600b9991e52ebcf80c34a7d77f7cfc56277e9e2754758d7566cc808342f0d78",
+      "rerenderCommandArgv": [
+        "pdftoppm",
+        "-f",
+        "153",
+        "-l",
+        "153",
+        "-singlefile",
+        "-cropbox",
+        "-r",
+        "360",
+        "-x",
+        "1170",
+        "-y",
+        "2300",
+        "-W",
+        "1380",
+        "-H",
+        "760",
+        "-png",
+        "/workspace/scratch/28b55072841a/upload/HSK3 (3.0).pdf",
+        "/workspace/scratch/28b55072841a/source-recovery-work/hsk3/l15/retry-pdf153-detail-inline"
+      ]
+    },
+    {
+      "path": "evidence/pdf206-detail-appendix-text3.png",
+      "observedBytesBeforeRetry": 745472,
+      "expectedBytes": 924571,
+      "issue": "image file is truncated",
+      "actualOriginalRerendered": true,
+      "rerenderSHA256": "e20dcb585fe500d1f567b53d8d258f40fe7137fe440c32da81f8494afbbcd51b",
+      "rerenderCommandArgv": [
+        "pdftoppm",
+        "-f",
+        "206",
+        "-l",
+        "206",
+        "-singlefile",
+        "-cropbox",
+        "-r",
+        "360",
+        "-x",
+        "1290",
+        "-y",
+        "530",
+        "-W",
+        "1400",
+        "-H",
+        "1600",
+        "-png",
+        "/workspace/scratch/28b55072841a/upload/HSK3 (3.0).pdf",
+        "/workspace/scratch/28b55072841a/source-recovery-work/hsk3/l15/retry-pdf206-detail-appendix-text3"
+      ]
+    }
+  ],
+  "actualFinalPNGCount": 35,
+  "actualFinalAllSHAAndCRCPass": true,
+  "permanentArchiveWasNotOverwrittenByReproduction": true,
+  "qualification": "Actual first CLI failed at final readback. Two affected temporary output files were freshly original-rendered again; the complete 35 output members then passed exact SHA/full decode/CRC. This is a mixed initial-plus-targeted-repeat original-render receipt, not a claim that the initial CLI exit was 0.",
+  "images": [
+    {
+      "path": "evidence/pdf145-p133.png",
+      "actualSHA256": "20c368b9619ad1c03ee831370fbbb0c8f7be5fd04eac1b2904b687da6ebcbd15",
+      "expectedSHA256": "20c368b9619ad1c03ee831370fbbb0c8f7be5fd04eac1b2904b687da6ebcbd15",
+      "bytes": 2237869,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf146-p134.png",
+      "actualSHA256": "8786e32c0aa4279f542a37fd5cfed045822262f64d3c5c05dddecf75a35250b0",
+      "expectedSHA256": "8786e32c0aa4279f542a37fd5cfed045822262f64d3c5c05dddecf75a35250b0",
+      "bytes": 1785718,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf147-p135.png",
+      "actualSHA256": "a0bce8ca71b2d72edac35015249b1d6290adb6aa388cdea635fabdc2f984fa40",
+      "expectedSHA256": "a0bce8ca71b2d72edac35015249b1d6290adb6aa388cdea635fabdc2f984fa40",
+      "bytes": 2053574,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf148-p136.png",
+      "actualSHA256": "95f43c37ab08be70efdd4edb94c154253b9bf0039a66c02f5d334369c82f89e5",
+      "expectedSHA256": "95f43c37ab08be70efdd4edb94c154253b9bf0039a66c02f5d334369c82f89e5",
+      "bytes": 1853257,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf149-p137.png",
+      "actualSHA256": "1735be2ea7f185400d0da2e02c5101e8f3a0918ccc48b6e43105be9459bc3827",
+      "expectedSHA256": "1735be2ea7f185400d0da2e02c5101e8f3a0918ccc48b6e43105be9459bc3827",
+      "bytes": 2264071,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf150-p138.png",
+      "actualSHA256": "176c8afe7476f86c1ac7247b6ef6274d825187b06dee509ebfc9a69e79abf19d",
+      "expectedSHA256": "176c8afe7476f86c1ac7247b6ef6274d825187b06dee509ebfc9a69e79abf19d",
+      "bytes": 1214064,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf151-p139.png",
+      "actualSHA256": "c2720ff107bede499afa62218fe85f70531e305cd133da91a3c52ec6242ded53",
+      "expectedSHA256": "c2720ff107bede499afa62218fe85f70531e305cd133da91a3c52ec6242ded53",
+      "bytes": 1888113,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf152-p140.png",
+      "actualSHA256": "1d9ce071d204b0b2610024e74a3bfeea0d4503a8761c1484b2087249904c2d97",
+      "expectedSHA256": "1d9ce071d204b0b2610024e74a3bfeea0d4503a8761c1484b2087249904c2d97",
+      "bytes": 813219,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf153-p141.png",
+      "actualSHA256": "c08851db8fa345866677e7f2e53b40b6aa2f738ca2189bfc99257418bfccaac4",
+      "expectedSHA256": "c08851db8fa345866677e7f2e53b40b6aa2f738ca2189bfc99257418bfccaac4",
+      "bytes": 2395502,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf154-p142.png",
+      "actualSHA256": "b3171730e3c80dba529d3fc1322b994a109df1188c895eedfa61e8e6490b1400",
+      "expectedSHA256": "b3171730e3c80dba529d3fc1322b994a109df1188c895eedfa61e8e6490b1400",
+      "bytes": 1576231,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf155-p143.png",
+      "actualSHA256": "5fa87f1f1e1b2c37634dfdea0e4c6417e2a9362cfeb4b669197369c0640c0228",
+      "expectedSHA256": "5fa87f1f1e1b2c37634dfdea0e4c6417e2a9362cfeb4b669197369c0640c0228",
+      "bytes": 1588582,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf206-p194.png",
+      "actualSHA256": "2ced45b9596c5ad00651d41ae8985a628f567bf771f3e1af2544ad01dbb4ee4f",
+      "expectedSHA256": "2ced45b9596c5ad00651d41ae8985a628f567bf771f3e1af2544ad01dbb4ee4f",
+      "bytes": 1548152,
+      "dimensions": [
+        1550,
+        2204
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf145-detail-title-goals.png",
+      "actualSHA256": "da8c4850510588fd99382d5686f8bb27e475fe38be41b19a1271b9f242da811f",
+      "expectedSHA256": "da8c4850510588fd99382d5686f8bb27e475fe38be41b19a1271b9f242da811f",
+      "bytes": 1865762,
+      "dimensions": [
+        2370,
+        1600
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf146-detail-words.png",
+      "actualSHA256": "4cd5e1e03962a3483bd11c96218c3a2de16727207548c08bce2fe54b0d733e3a",
+      "expectedSHA256": "4cd5e1e03962a3483bd11c96218c3a2de16727207548c08bce2fe54b0d733e3a",
+      "bytes": 1566284,
+      "dimensions": [
+        1270,
+        1620
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf147-detail-grammar1.png",
+      "actualSHA256": "a87ff59f013b4373916abfe7f434e0bd80c8120be5d29aa58a13e38756f29a3c",
+      "expectedSHA256": "a87ff59f013b4373916abfe7f434e0bd80c8120be5d29aa58a13e38756f29a3c",
+      "bytes": 1565974,
+      "dimensions": [
+        2390,
+        1100
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf148-detail-words.png",
+      "actualSHA256": "e5f033da4db89ed651d7542eb790e561e2af56e40a2a8943312a2283c0b12ebe",
+      "expectedSHA256": "e5f033da4db89ed651d7542eb790e561e2af56e40a2a8943312a2283c0b12ebe",
+      "bytes": 1633826,
+      "dimensions": [
+        1320,
+        1700
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf149-detail-grammar2.png",
+      "actualSHA256": "4a5a0e5cd0ed19f0bd23c7044fa9ba94a4b9d561e60978920bba1c3ed7e40458",
+      "expectedSHA256": "4a5a0e5cd0ed19f0bd23c7044fa9ba94a4b9d561e60978920bba1c3ed7e40458",
+      "bytes": 1159328,
+      "dimensions": [
+        2390,
+        810
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf150-detail-word19.png",
+      "actualSHA256": "a2945f12a87295598f4c32da64c1ada82ece79ce27da02c5e458a75e08adc5e9",
+      "expectedSHA256": "a2945f12a87295598f4c32da64c1ada82ece79ce27da02c5e458a75e08adc5e9",
+      "bytes": 631370,
+      "dimensions": [
+        1190,
+        830
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf150-detail-grammar3.png",
+      "actualSHA256": "65e98869bbbafdcbf95e4c24505920e5008af744fd0a81e0101dab9eca0bace4",
+      "expectedSHA256": "65e98869bbbafdcbf95e4c24505920e5008af744fd0a81e0101dab9eca0bace4",
+      "bytes": 749074,
+      "dimensions": [
+        2350,
+        970
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf151-detail-diary.png",
+      "actualSHA256": "9c85d0cb8aa8f45b76ec5ce0d0dd970bc3f9fec738289537484556ae010608eb",
+      "expectedSHA256": "9c85d0cb8aa8f45b76ec5ce0d0dd970bc3f9fec738289537484556ae010608eb",
+      "bytes": 1488791,
+      "dimensions": [
+        2380,
+        1190
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf151-detail-words.png",
+      "actualSHA256": "edcb13f33e7c39f67e26295db0af53a3666b0570fbf3a3402930b87b08afe3c3",
+      "expectedSHA256": "edcb13f33e7c39f67e26295db0af53a3666b0570fbf3a3402930b87b08afe3c3",
+      "bytes": 515548,
+      "dimensions": [
+        2370,
+        540
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf152-detail-grammar4.png",
+      "actualSHA256": "2859fc5b9c195f127a1fcb058d5e1787d56cdfba3a97fb44e2a396f109d7ef5e",
+      "expectedSHA256": "2859fc5b9c195f127a1fcb058d5e1787d56cdfba3a97fb44e2a396f109d7ef5e",
+      "bytes": 694444,
+      "dimensions": [
+        2390,
+        1120
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf153-detail-inline.png",
+      "actualSHA256": "e600b9991e52ebcf80c34a7d77f7cfc56277e9e2754758d7566cc808342f0d78",
+      "expectedSHA256": "e600b9991e52ebcf80c34a7d77f7cfc56277e9e2754758d7566cc808342f0d78",
+      "bytes": 723119,
+      "dimensions": [
+        1380,
+        760
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf154-detail-activity.png",
+      "actualSHA256": "78fb5da7f863ee23bb9d63b86694bfc75d41555a0ff8062635de94bed363b9ac",
+      "expectedSHA256": "78fb5da7f863ee23bb9d63b86694bfc75d41555a0ff8062635de94bed363b9ac",
+      "bytes": 739821,
+      "dimensions": [
+        2330,
+        750
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf154-detail-video.png",
+      "actualSHA256": "8aeab77ff9855f968dcc4e6ebeb05273184b5229492da616720f70d13c7dbd0a",
+      "expectedSHA256": "8aeab77ff9855f968dcc4e6ebeb05273184b5229492da616720f70d13c7dbd0a",
+      "bytes": 1693478,
+      "dimensions": [
+        1810,
+        1140
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf154-detail-summary.png",
+      "actualSHA256": "81d80c83c7648f600844ef50158504b4f9f34dc3bfee37e6fe2424f7663e1406",
+      "expectedSHA256": "81d80c83c7648f600844ef50158504b4f9f34dc3bfee37e6fe2424f7663e1406",
+      "bytes": 631471,
+      "dimensions": [
+        2400,
+        860
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf155-detail-summary-upper.png",
+      "actualSHA256": "faa2c3460f4854aa6bf228318f279ce3a834c22117c9586e75a5f256ab05ea74",
+      "expectedSHA256": "faa2c3460f4854aa6bf228318f279ce3a834c22117c9586e75a5f256ab05ea74",
+      "bytes": 1682118,
+      "dimensions": [
+        2440,
+        1650
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf155-detail-summary-lower.png",
+      "actualSHA256": "245a4c1e32af77686f9f66c97c6162290cf4a4c6d01db4f62cd757605bfc6e6c",
+      "expectedSHA256": "245a4c1e32af77686f9f66c97c6162290cf4a4c6d01db4f62cd757605bfc6e6c",
+      "bytes": 1537433,
+      "dimensions": [
+        2290,
+        1420
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf206-detail-appendix-text1.png",
+      "actualSHA256": "47fa6e84f5659c3b0bebc8c5df0639a116fd4e0fdc75f93be103b9d8e6443301",
+      "expectedSHA256": "47fa6e84f5659c3b0bebc8c5df0639a116fd4e0fdc75f93be103b9d8e6443301",
+      "bytes": 865992,
+      "dimensions": [
+        1240,
+        1450
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf206-detail-appendix-text2.png",
+      "actualSHA256": "04964f743504ec2058b4057206225c57338498a9c4b0104c80a504ab2a3fe7d6",
+      "expectedSHA256": "04964f743504ec2058b4057206225c57338498a9c4b0104c80a504ab2a3fe7d6",
+      "bytes": 865071,
+      "dimensions": [
+        1250,
+        1500
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf206-detail-appendix-text3.png",
+      "actualSHA256": "e20dcb585fe500d1f567b53d8d258f40fe7137fe440c32da81f8494afbbcd51b",
+      "expectedSHA256": "e20dcb585fe500d1f567b53d8d258f40fe7137fe440c32da81f8494afbbcd51b",
+      "bytes": 924571,
+      "dimensions": [
+        1400,
+        1600
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/pdf206-detail-appendix-text4.png",
+      "actualSHA256": "25ce954b290637831a5e9463f689fe9a512bcedde51a857b22fb29897c10315f",
+      "expectedSHA256": "25ce954b290637831a5e9463f689fe9a512bcedde51a857b22fb29897c10315f",
+      "bytes": 639228,
+      "dimensions": [
+        1410,
+        1140
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/locator-pdf012-X.png",
+      "actualSHA256": "836476de17db5792697d140b1a9820baf34b3ad886b8df1862839e4059320c11",
+      "expectedSHA256": "836476de17db5792697d140b1a9820baf34b3ad886b8df1862839e4059320c11",
+      "bytes": 780191,
+      "dimensions": [
+        1085,
+        1543
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/locator-pdf156-144.png",
+      "actualSHA256": "556fbab23cf1e96070d5b2e5fc1cacc0c9486e6a86689f97fe567e76bf9a97e8",
+      "expectedSHA256": "556fbab23cf1e96070d5b2e5fc1cacc0c9486e6a86689f97fe567e76bf9a97e8",
+      "bytes": 1686757,
+      "dimensions": [
+        1395,
+        1983
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    },
+    {
+      "path": "evidence/locator-pdf207-195.png",
+      "actualSHA256": "40d25cfebaf55d7ffebcd29f4e8611e6ea47fc83317022c13a716876cec9ac9d",
+      "expectedSHA256": "40d25cfebaf55d7ffebcd29f4e8611e6ea47fc83317022c13a716876cec9ac9d",
+      "bytes": 1454970,
+      "dimensions": [
+        1550,
+        2204
+      ],
+      "fullDecodeAndCRCPassed": true,
+      "actualByteMatch": true
+    }
+  ]
+}
