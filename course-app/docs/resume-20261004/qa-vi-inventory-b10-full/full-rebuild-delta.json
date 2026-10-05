@@ -1,0 +1,1055 @@
+{
+  "sourceHead": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "sourceTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+  "oldHead": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "oldTree": "a80360230b94da2a40a83c405a6bc06ea2f155f3",
+  "originalFileScopeRetained": 837,
+  "originalFilesRemoved": [],
+  "addedFiles": [
+    {
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "sha256": "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97",
+      "format": "code",
+      "component": "active-ui",
+      "state": "runtime-source-static-candidate",
+      "service": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ]
+    },
+    {
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd",
+      "format": "code",
+      "component": "active-ui",
+      "state": "runtime-source-static-candidate",
+      "service": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ]
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+      "format": "code",
+      "component": "active-ui",
+      "state": "runtime-source-static-candidate",
+      "service": "app i18n/copy module or rendering function",
+      "consumers": [
+        "standalone HSK1",
+        "shared HSK1/2/3; module-dependent"
+      ]
+    }
+  ],
+  "newFileCount": 840,
+  "originalSourceChanges": [
+    {
+      "file": "course-app/src/content.ts",
+      "oldSHA256": "0388a6882b8db4065b56f92526ebfe4ff91d8d3abd8b50fc60086360c0c56f67",
+      "newSHA256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2"
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "oldSHA256": "3c7384db55bf7fba043c76e3ff8120a278f576fec4310a836a1fdfcb9d4a8050",
+      "newSHA256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70"
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "oldSHA256": "9f0309622e30f4362132ddfa381b18494de99df3761ae609cd5c60b9bbaa928d",
+      "newSHA256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744"
+    },
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "oldSHA256": "efc2e61e946eb6a53ab2a59e099b0dc349079ea9c4ab4c237fe09da99334976b",
+      "newSHA256": "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf"
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/controller.ts",
+      "oldSHA256": "4af055a9b23c3e943bee4c19b66d783260977e33cbcae133feb60fe079e7d8b0",
+      "newSHA256": "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2"
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "oldSHA256": "d4dc9527486957232967eb7fd2fc393481560061474cfc753306f154fe7c7601",
+      "newSHA256": "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "oldSHA256": "ddc94ee93ca6235b942769d7876be757d0c171946546c91e7b9cdd86128e9fac",
+      "newSHA256": "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21"
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "oldSHA256": "3ce482e147eccf909fd7ec81b42d2cb4b3f0bd740209cd9549416df2d03fdbaf",
+      "newSHA256": "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller.ts",
+      "oldSHA256": "687b5df3b4a6af90141a58d23e4f762d196f16db42dfea4ce15500506815a66c",
+      "newSHA256": "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller30.ts",
+      "oldSHA256": "4dc4039edc555cf1010db261dde223c35612e70b94f5ad4ed3ad671e333e900e",
+      "newSHA256": "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index.ts",
+      "oldSHA256": "461c0a88e13fd7cf539724326332b6556cc331a7676c037e0c4501fbeb948b91",
+      "newSHA256": "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index30.ts",
+      "oldSHA256": "29ac0b1fb16fe910cb1350775cb08bcff38af586840e8b36293cbaf30660b889",
+      "newSHA256": "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18"
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "oldSHA256": "181c78deff63c6b2a9414b57fb8d229a93ac6d3d58e7511dc32e6a41dab7f0be",
+      "newSHA256": "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca"
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "oldSHA256": "9536ff2bb6e3a09f2f9f7acfdb72d465d81e984919edcda528f65c4cfaa627e9",
+      "newSHA256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81"
+    },
+    {
+      "file": "hsk1-app/src/features/vocabulary/view.ts",
+      "oldSHA256": "db2c3cd7aa923222240b68c5eb8d8924b3a2566c3689e428118941d243f3a53f",
+      "newSHA256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed"
+    },
+    {
+      "file": "hsk1-app/src/services/content/index.ts",
+      "oldSHA256": "cfb69a76da67f3939c01892c112688ef0cf675221e69841c8a2e0fb2c132cea3",
+      "newSHA256": "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d"
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "oldSHA256": "f3e141a36d98ad7abf1576c5fc4f267a81a696b3f3c98b5708ecfc4c60d344e1",
+      "newSHA256": "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73"
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook.ts",
+      "oldSHA256": "0628c59d758196ebe924568e1b8cb1977a99e2562bbdc1de7656e33204d54ce1",
+      "newSHA256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18"
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "oldSHA256": "11285cbb3907225e79413ab0a902602935b16e312ea7bee9eaaccdb825bd8cbe",
+      "newSHA256": "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3"
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "oldSHA256": "ce624cc1b417586aea6d6c674608d890ff5483652d5e742eb072392cde3cff6f",
+      "newSHA256": "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104"
+    }
+  ],
+  "inputFormats": {
+    "json": 63,
+    "display-overlay": 1,
+    "code": 237,
+    "html": 19,
+    "css-content": 34,
+    "compressed-content-input": 34,
+    "svg": 452
+  },
+  "oldRecords": 46463,
+  "newRecords": 55430,
+  "fieldOccurrenceCandidateDelta": 8967,
+  "filesWithOccurrenceCountChanges": 103,
+  "allFileOccurrenceDeltas": [
+    {
+      "file": "assets/hsk2-content-audit.js",
+      "oldRows": 16,
+      "newRows": 39,
+      "delta": 23,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/hsk2-parity.js",
+      "oldRows": 17,
+      "newRows": 18,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/hsk2-textbook-locked.js",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/hsk4-trilingual-ui.js",
+      "oldRows": 1,
+      "newRows": 291,
+      "delta": 290,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/lesson-core.js",
+      "oldRows": 28,
+      "newRows": 60,
+      "delta": 32,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/lesson-packed.js",
+      "oldRows": 64,
+      "newRows": 91,
+      "delta": 27,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/site-shell.js",
+      "oldRows": 9,
+      "newRows": 14,
+      "delta": 5,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/student-polish.js",
+      "oldRows": 33,
+      "newRows": 106,
+      "delta": 73,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/vocab-hanzi-panel.js",
+      "oldRows": 9,
+      "newRows": 10,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/vocab-unified.js",
+      "oldRows": 30,
+      "newRows": 63,
+      "delta": 33,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/activity-history.ts",
+      "oldRows": 0,
+      "newRows": 5,
+      "delta": 5,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "oldRows": 3,
+      "newRows": 2,
+      "delta": -1,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "course-app/src/dom.ts",
+      "oldRows": 0,
+      "newRows": 2,
+      "delta": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/hsk1-bridge.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "oldRows": 85,
+      "newRows": 87,
+      "delta": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "oldRows": 29,
+      "newRows": 33,
+      "delta": 4,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "oldRows": 157,
+      "newRows": 176,
+      "delta": 19,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "course-app/src/segment-resolver.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/core.ts",
+      "oldRows": 0,
+      "newRows": 36,
+      "delta": 36,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/exercises.ts",
+      "oldRows": 24,
+      "newRows": 131,
+      "delta": 107,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/homework.ts",
+      "oldRows": 14,
+      "newRows": 97,
+      "delta": 83,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/homework30.ts",
+      "oldRows": 0,
+      "newRows": 19,
+      "delta": 19,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/listening.ts",
+      "oldRows": 18,
+      "newRows": 93,
+      "delta": 75,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/mixed-vocabulary.ts",
+      "oldRows": 0,
+      "newRows": 31,
+      "delta": 31,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/progress.ts",
+      "oldRows": 0,
+      "newRows": 51,
+      "delta": 51,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/review.ts",
+      "oldRows": 0,
+      "newRows": 9,
+      "delta": 9,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/textbook.ts",
+      "oldRows": 23,
+      "newRows": 147,
+      "delta": 124,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/vocabulary.ts",
+      "oldRows": 22,
+      "newRows": 139,
+      "delta": 117,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/labels.ts",
+      "oldRows": 0,
+      "newRows": 18,
+      "delta": 18,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/navigation.ts",
+      "oldRows": 0,
+      "newRows": 4,
+      "delta": 4,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/domain/exercises/catalogue.ts",
+      "oldRows": 2,
+      "newRows": 13,
+      "delta": 11,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/controller.ts",
+      "oldRows": 2,
+      "newRows": 10,
+      "delta": 8,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/domain/progress/reset.ts",
+      "oldRows": 0,
+      "newRows": 18,
+      "delta": 18,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/domain/textbook/practice.ts",
+      "oldRows": 2,
+      "newRows": 11,
+      "delta": 9,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/controller.ts",
+      "oldRows": 1,
+      "newRows": 4,
+      "delta": 3,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/mixed-controller.ts",
+      "oldRows": 1,
+      "newRows": 6,
+      "delta": 5,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "oldRows": 8,
+      "newRows": 38,
+      "delta": 30,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/home/index.ts",
+      "oldRows": 1,
+      "newRows": 4,
+      "delta": 3,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index.ts",
+      "oldRows": 0,
+      "newRows": 2,
+      "delta": 2,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index30.ts",
+      "oldRows": 0,
+      "newRows": 8,
+      "delta": 8,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "oldRows": 2,
+      "newRows": 3,
+      "delta": 1,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/features/progress/data-panel.ts",
+      "oldRows": 2,
+      "newRows": 3,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/progress/index.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/progress/summary.ts",
+      "oldRows": 0,
+      "newRows": 13,
+      "delta": 13,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/index.ts",
+      "oldRows": 41,
+      "newRows": 49,
+      "delta": 8,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/hanzi.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/text.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/vocabulary.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/services/content/exercises.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/services/content/homework30.ts",
+      "oldRows": 1,
+      "newRows": 2,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "oldRows": 12,
+      "newRows": 13,
+      "delta": 1,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook.ts",
+      "oldRows": 34,
+      "newRows": 40,
+      "delta": 6,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "oldRows": 16,
+      "newRows": 17,
+      "delta": 1,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/services/learning/progress.ts",
+      "oldRows": 3,
+      "newRows": 6,
+      "delta": 3,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/summary.ts",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "oldRows": 3,
+      "newRows": 54,
+      "delta": 51,
+      "sourceBytesChanged": true
+    },
+    {
+      "file": "hsk1-app/src/services/storage/copy.ts",
+      "oldRows": 0,
+      "newRows": 103,
+      "delta": 103,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/services/storage/index.ts",
+      "oldRows": 15,
+      "newRows": 17,
+      "delta": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/app-core.js",
+      "oldRows": 32,
+      "newRows": 39,
+      "delta": 7,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/content-audit.js",
+      "oldRows": 15,
+      "newRows": 58,
+      "delta": 43,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/corrections.js",
+      "oldRows": 6,
+      "newRows": 28,
+      "delta": 22,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-1.js",
+      "oldRows": 0,
+      "newRows": 216,
+      "delta": 216,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-2.js",
+      "oldRows": 0,
+      "newRows": 233,
+      "delta": 233,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-3.js",
+      "oldRows": 0,
+      "newRows": 257,
+      "delta": 257,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-4.js",
+      "oldRows": 0,
+      "newRows": 262,
+      "delta": 262,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-5.js",
+      "oldRows": 0,
+      "newRows": 268,
+      "delta": 268,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/practice-l12.js",
+      "oldRows": 0,
+      "newRows": 165,
+      "delta": 165,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/textbook-locked.js",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/app-core.js",
+      "oldRows": 32,
+      "newRows": 39,
+      "delta": 7,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/corrections.js",
+      "oldRows": 0,
+      "newRows": 30,
+      "delta": 30,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/textbook-audit-ui.js",
+      "oldRows": 19,
+      "newRows": 24,
+      "delta": 5,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/textbook-audit.js",
+      "oldRows": 0,
+      "newRows": 440,
+      "delta": 440,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/textbook-baseline.js",
+      "oldRows": 0,
+      "newRows": 366,
+      "delta": 366,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/content-audit.js",
+      "oldRows": 1,
+      "newRows": 123,
+      "delta": 122,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/content-final.js",
+      "oldRows": 4,
+      "newRows": 71,
+      "delta": 67,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/hanzi-parity.js",
+      "oldRows": 9,
+      "newRows": 10,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/modules.js",
+      "oldRows": 11,
+      "newRows": 13,
+      "delta": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/practice-final.js",
+      "oldRows": 12,
+      "newRows": 13,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/practice.js",
+      "oldRows": 33,
+      "newRows": 50,
+      "delta": 17,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/runtime.js",
+      "oldRows": 33,
+      "newRows": 38,
+      "delta": 5,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4up/app-content.js",
+      "oldRows": 15,
+      "newRows": 17,
+      "delta": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4up/app-core.js",
+      "oldRows": 36,
+      "newRows": 41,
+      "delta": 5,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4up/app-practice.js",
+      "oldRows": 18,
+      "newRows": 39,
+      "delta": 21,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4up/textbook-detail-ui.js",
+      "oldRows": 5,
+      "newRows": 12,
+      "delta": 7,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/app-core.js",
+      "oldRows": 36,
+      "newRows": 59,
+      "delta": 23,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/app-practice.js",
+      "oldRows": 15,
+      "newRows": 22,
+      "delta": 7,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-app.js",
+      "oldRows": 129,
+      "newRows": 133,
+      "delta": 4,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-bank.js",
+      "oldRows": 0,
+      "newRows": 1095,
+      "delta": 1095,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-vocab.js",
+      "oldRows": 37,
+      "newRows": 48,
+      "delta": 11,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/new-data.js",
+      "oldRows": 0,
+      "newRows": 476,
+      "delta": 476,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/new-enrichment.js",
+      "oldRows": 0,
+      "newRows": 388,
+      "delta": 388,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/pilot9-data.js",
+      "oldRows": 0,
+      "newRows": 157,
+      "delta": 157,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/pilot9-engine.js",
+      "oldRows": 1,
+      "newRows": 3,
+      "delta": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/pos-tips.js",
+      "oldRows": 1,
+      "newRows": 52,
+      "delta": 51,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage1/sample-bank.js",
+      "oldRows": 0,
+      "newRows": 69,
+      "delta": 69,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage2/app.js",
+      "oldRows": 75,
+      "newRows": 81,
+      "delta": 6,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage2/bank.js",
+      "oldRows": 0,
+      "newRows": 1059,
+      "delta": 1059,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/app.js",
+      "oldRows": 89,
+      "newRows": 96,
+      "delta": 7,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/catalog.js",
+      "oldRows": 0,
+      "newRows": 1332,
+      "delta": 1332,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/player.js",
+      "oldRows": 6,
+      "newRows": 13,
+      "delta": 7,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-data-corrections.js",
+      "oldRows": 0,
+      "newRows": 1,
+      "delta": 1,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-final-corrections.js",
+      "oldRows": 1,
+      "newRows": 21,
+      "delta": 20,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-integration-corrections.js",
+      "oldRows": 5,
+      "newRows": 198,
+      "delta": 193,
+      "sourceBytesChanged": false
+    }
+  ],
+  "topDeltas": [
+    {
+      "file": "new-hsk1/hsk1/stage3/catalog.js",
+      "oldRows": 0,
+      "newRows": 1332,
+      "delta": 1332,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-bank.js",
+      "oldRows": 0,
+      "newRows": 1095,
+      "delta": 1095,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/stage2/bank.js",
+      "oldRows": 0,
+      "newRows": 1059,
+      "delta": 1059,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/new-data.js",
+      "oldRows": 0,
+      "newRows": 476,
+      "delta": 476,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/textbook-audit.js",
+      "oldRows": 0,
+      "newRows": 440,
+      "delta": 440,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/new-enrichment.js",
+      "oldRows": 0,
+      "newRows": 388,
+      "delta": 388,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk3/textbook-baseline.js",
+      "oldRows": 0,
+      "newRows": 366,
+      "delta": 366,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "assets/hsk4-trilingual-ui.js",
+      "oldRows": 1,
+      "newRows": 291,
+      "delta": 290,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-5.js",
+      "oldRows": 0,
+      "newRows": 268,
+      "delta": 268,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-4.js",
+      "oldRows": 0,
+      "newRows": 262,
+      "delta": 262,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-3.js",
+      "oldRows": 0,
+      "newRows": 257,
+      "delta": 257,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-2.js",
+      "oldRows": 0,
+      "newRows": 233,
+      "delta": 233,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/data-1.js",
+      "oldRows": 0,
+      "newRows": 216,
+      "delta": 216,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-integration-corrections.js",
+      "oldRows": 5,
+      "newRows": 198,
+      "delta": 193,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1/practice-l12.js",
+      "oldRows": 0,
+      "newRows": 165,
+      "delta": 165,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "new-hsk1/hsk1/pilot9-data.js",
+      "oldRows": 0,
+      "newRows": 157,
+      "delta": 157,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/textbook.ts",
+      "oldRows": 23,
+      "newRows": 147,
+      "delta": 124,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk4/content-audit.js",
+      "oldRows": 1,
+      "newRows": 123,
+      "delta": 122,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/vocabulary.ts",
+      "oldRows": 22,
+      "newRows": 139,
+      "delta": 117,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/exercises.ts",
+      "oldRows": 24,
+      "newRows": 131,
+      "delta": 107,
+      "sourceBytesChanged": false
+    }
+  ],
+  "sourceKindDelta": {
+    "svg-embedded": 0,
+    "explicit-language-field": 0,
+    "html-attribute": 0,
+    "schema-declared-vietnamese-legacy-truth-choice": 0,
+    "unlabelled-vietnamese-string": 0,
+    "code-literal": 8762,
+    "dynamic-template": 205,
+    "html-text": 0,
+    "schema-declared-vietnamese-array": 0
+  },
+  "exactUnchangedHistoricalEvidenceFiles": 39,
+  "exactUnchangedNewBuilderProbeFiles": 5,
+  "identityRowsCoveredByIndependentFamilies": {
+    "pointerJSON": 43109,
+    "AST": 11308,
+    "HTMLSource": 601,
+    "XMLSVG": 412,
+    "total": 55430
+  },
+  "consumersExactSet": {
+    "approved-svg-asset": 438,
+    "retained-practice-question": 1360,
+    "source-activity": 918,
+    "source-activity-version": 484,
+    "word-sense": 1093
+  },
+  "scopeLimit": "Occurrences/candidates are distinct producer sites, not unique semantics or official review approvals; retained HSK4 candidates are not covered by supplied HSK1-3 books."
+}

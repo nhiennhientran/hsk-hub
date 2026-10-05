@@ -1,0 +1,3810 @@
+{
+  "schemaVersion": 1,
+  "status": "all-v2-deltas-explicitly-reviewed",
+  "initialProposalSHA256": "fb744e2808f60f28d43830179ec2f164f66e293789628710bbe90ee153e0b7f1",
+  "v2ProposalSHA256": "c443e01f08292a0c632723b6a130b5d50382b51486c87873c59f7317ac5bfb08",
+  "deltaLeafCount": 570,
+  "deltaKindCounts": {
+    "new-final-author-proposal-identity": 1,
+    "root-explicit-author-review": 270,
+    "repaired-complete-cross-page-source": 2,
+    "root-explicit-derived-composition-review": 74,
+    "independently-reviewed-context-erratum-candidate": 1,
+    "explicit-changed-field-only-touched-owner-coverage": 222
+  },
+  "deltaChecks": [
+    {
+      "path": "/revisionId",
+      "before": "hsk3-official-vi-pilot-l10-draft-20261004",
+      "after": "hsk3-official-vi-pilot-l10-v2-20261004",
+      "reviewDecision": "accepted",
+      "reviewKind": "new-final-author-proposal-identity"
+    },
+    {
+      "path": "/changes/0/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/0/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/1/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/1/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/2/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/2/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/3/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/3/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/4/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/4/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/5/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/5/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/6/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/6/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/7/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/7/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/8/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/8/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/9/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/9/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/10/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/10/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/11/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/11/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/12/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/12/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/13/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/13/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/14/sourceAnchor/pdfPages/1",
+      "after": 202,
+      "reviewDecision": "accepted",
+      "reviewKind": "repaired-complete-cross-page-source"
+    },
+    {
+      "path": "/changes/14/sourceAnchor/printedPages/1",
+      "after": 190,
+      "reviewDecision": "accepted",
+      "reviewKind": "repaired-complete-cross-page-source"
+    },
+    {
+      "path": "/changes/14/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/14/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/15/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/15/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/16/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/16/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/17/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/17/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/18/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/18/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/19/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/19/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/20/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/20/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/21/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/21/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/22/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/22/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/23/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/23/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/24/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/24/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/25/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/25/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/26/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/26/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/27/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/27/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/28/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/28/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/28/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/28/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/29/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/29/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/30/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/30/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/31/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/31/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/32/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/32/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/33/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/33/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/34/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/34/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/35/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/35/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/36/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/36/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/37/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/37/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/38/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/38/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/39/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/39/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/40/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/40/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/41/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/41/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/42/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/42/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/43/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/43/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/44/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/44/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/45/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/45/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/46/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/46/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/47/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/47/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/48/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/48/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/48/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/48/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/49/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/49/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/50/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/50/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/51/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/51/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/52/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/52/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/53/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/53/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/54/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/54/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/54/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/54/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/55/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/55/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/55/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/55/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/56/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/56/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/57/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/57/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/58/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/58/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/59/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/59/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/60/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/60/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/61/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/61/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/62/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/62/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/63/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/63/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/63/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/63/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/64/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/64/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/64/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/64/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/65/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/65/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/66/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/66/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/66/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/66/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/67/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/67/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/68/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/68/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/68/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/68/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/69/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/69/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/70/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/70/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/70/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/70/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/71/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/71/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/72/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/72/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/72/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/72/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/73/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/73/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/74/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/74/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/74/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/74/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/75/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/75/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/76/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/76/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/76/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/76/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/77/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/77/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/78/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/78/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/79/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/79/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/80/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/80/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/81/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/81/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/82/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/82/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/83/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/83/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/84/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/84/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/85/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/85/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/85/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/85/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/86/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/86/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/87/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/87/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/87/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/87/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/88/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/88/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/88/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/88/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/89/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/89/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/89/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/89/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/90/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/90/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/90/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/90/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/91/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/91/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/92/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/92/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/92/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/92/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/93/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/93/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/93/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/93/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/94/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/94/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/94/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/94/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/95/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/95/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/96/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/96/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/96/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/96/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/97/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/97/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/97/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/97/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/98/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/98/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/98/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/98/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/99/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/99/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/100/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/100/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/100/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/100/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/101/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/101/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/101/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/101/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/102/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/102/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/102/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/102/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/103/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/103/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/103/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/103/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/104/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/104/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/104/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/104/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/105/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/105/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/105/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/105/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/106/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/106/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/106/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/106/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/107/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/107/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/107/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/107/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/108/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/108/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/108/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/108/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/109/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/109/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/110/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/110/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/111/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/111/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/112/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/112/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/113/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/113/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/114/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/114/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/115/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/115/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/116/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/116/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/117/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/117/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/118/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/118/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/118/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/118/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/119/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/119/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/120/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/120/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/121/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/121/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/122/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/122/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/123/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/123/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/124/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/124/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/124/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/124/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/125/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/125/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/125/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/125/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/126/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/126/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/127/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/127/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/128/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/128/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/129/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/129/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/130/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/130/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/131/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/131/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/132/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/132/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/133/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/133/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/133/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/133/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/134/sourceAnchor/compositionReview/status",
+      "before": "pending",
+      "after": "accepted-by-author-awaiting-independent-proof",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/134/sourceAnchor/compositionReview/author",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-derived-composition-review"
+    },
+    {
+      "path": "/changes/134/authorReview/reviewer",
+      "before": "remaining_media_audit",
+      "after": "root",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/134/authorReview/status",
+      "before": "proposal-awaiting-explicit-manifest-author-review",
+      "after": "accepted",
+      "reviewDecision": "accepted",
+      "reviewKind": "root-explicit-author-review"
+    },
+    {
+      "path": "/changes/135",
+      "after": {
+        "changeId": "hsk3-l10:ee4eeda1d3f100b2e82f761a",
+        "baselineFile": "course-app/content/hsk3/lesson-10.json",
+        "field": "/texts/2/context/vi",
+        "ownerId": "hsk3-fltrp-2026:l10:text3",
+        "component": "texts",
+        "lesson": 10,
+        "expectedEffectiveValue": "Trong văn phòng cô Lý, Tiểu Tuyết và bạn hỏi bài.",
+        "newValue": "Lưu Tiểu Tuyết cùng bạn học hỏi bài ở trong phòng làm việc của cô Lý.",
+        "classification": "official-book-erratum",
+        "sourceAnchor": {
+          "kind": "directOfficial",
+          "sourceId": "hsk3-official-vi-20261004:l10:pdf102:vn08",
+          "documentSourceId": "hsk3-official-vietnamese-20261004",
+          "pdfSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+          "pdfPages": [
+            102
+          ],
+          "printedPages": [
+            90
+          ],
+          "section": "text3",
+          "officialViText": "Lưu Tiểu Tuyết hỏi bài bạn học ở trong phòng làm việc của cô Lý.",
+          "officialZhText": "在李老师办公室，刘小雪跟同学问问题。",
+          "zhContext": "在李老师办公室，刘小雪跟同学问问题。",
+          "correctionRationale": "The previous dialogue proposes that both students go together to ask teacher Lý; the next dialogue and its Vietnamese appendix jointly address teacher Lý. Move cùng bạn học before hỏi bài so the setup does not present the classmate as the question recipient, preserving the official full name and office wording. Faithful printed source is retained unchanged.",
+          "erratumId": "hsk3-vi-20261004:l10:text3-context",
+          "publisherIssuedCorrection": false,
+          "corroboratingSameBookSource": [
+            {
+              "pdfPage": 103,
+              "printedPage": 91,
+              "zh": "李老师，书上有几个问题，我们想问问您。"
+            },
+            {
+              "pdfPage": 202,
+              "printedPage": 190,
+              "sourceId": "hsk3-official-vi-20261004:l10:appendix:text3:line1",
+              "vi": "Thưa cô Lý, chúng em muốn hỏi cô một vài câu hỏi trong sách giáo khoa ạ."
+            },
+            {
+              "pdfPage": 202,
+              "printedPage": 190,
+              "sourceId": "hsk3-official-vi-20261004:l10:appendix:text2:line8",
+              "vi": "Xin lỗi, mình cũng không biết cách giải những câu này. Chúng ta hãy cùng đến văn phòng để hỏi cô Lý đi."
+            }
+          ]
+        },
+        "consumers": [
+          {
+            "baselineFile": "course-app/content/hsk3/lesson-10.json",
+            "field": "/texts/2/context/vi",
+            "ownerId": "hsk3-fltrp-2026:l10:text3",
+            "component": "texts"
+          }
+        ],
+        "authorReview": {
+          "reviewer": "root",
+          "status": "accepted",
+          "evidenceRef": "course-app/docs/resume-20261004/b10-source-errata/hsk3-l10-context-investigation.json"
+        }
+      },
+      "reviewDecision": "accepted",
+      "reviewKind": "independently-reviewed-context-erratum-candidate"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/0",
+      "after": "hsk3-fltrp-2026:l10",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/1",
+      "after": "hsk3-fltrp-2026:l10:objective1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/2",
+      "after": "hsk3-fltrp-2026:l10:objective2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/3",
+      "after": "hsk3-fltrp-2026:l10:objective3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/4",
+      "after": "hsk3-fltrp-2026:l10:objective4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/5",
+      "after": "hsk3-fltrp-2026:l10:warmup1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/6",
+      "after": "hsk3-fltrp-2026:l10:warmup2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/7",
+      "after": "hsk3-fltrp-2026:l10:text1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/8",
+      "after": "hsk3-fltrp-2026:l10:text1:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/9",
+      "after": "hsk3-fltrp-2026:l10:text1:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/10",
+      "after": "hsk3-fltrp-2026:l10:text1:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/11",
+      "after": "hsk3-fltrp-2026:l10:text1:line4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/12",
+      "after": "hsk3-fltrp-2026:l10:text1:line5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/13",
+      "after": "hsk3-fltrp-2026:l10:text1:line6",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/14",
+      "after": "hsk3-fltrp-2026:l10:text1:line7",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/15",
+      "after": "hsk3-fltrp-2026:l10:text2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/16",
+      "after": "hsk3-fltrp-2026:l10:text2:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/17",
+      "after": "hsk3-fltrp-2026:l10:text2:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/18",
+      "after": "hsk3-fltrp-2026:l10:text2:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/19",
+      "after": "hsk3-fltrp-2026:l10:text2:line4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/20",
+      "after": "hsk3-fltrp-2026:l10:text2:line5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/21",
+      "after": "hsk3-fltrp-2026:l10:text2:line6",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/22",
+      "after": "hsk3-fltrp-2026:l10:text2:line7",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/23",
+      "after": "hsk3-fltrp-2026:l10:text2:line8",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/24",
+      "after": "hsk3-fltrp-2026:l10:text2:question2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/25",
+      "after": "hsk3-fltrp-2026:l10:text3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/26",
+      "after": "hsk3-fltrp-2026:l10:text3:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/27",
+      "after": "hsk3-fltrp-2026:l10:text3:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/28",
+      "after": "hsk3-fltrp-2026:l10:text3:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/29",
+      "after": "hsk3-fltrp-2026:l10:text3:line4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/30",
+      "after": "hsk3-fltrp-2026:l10:text3:line5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/31",
+      "after": "hsk3-fltrp-2026:l10:text3:line6",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/32",
+      "after": "hsk3-fltrp-2026:l10:text3:line7",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/33",
+      "after": "hsk3-fltrp-2026:l10:text3:line8",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/34",
+      "after": "hsk3-fltrp-2026:l10:text4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/35",
+      "after": "hsk3-fltrp-2026:l10:text4:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/36",
+      "after": "hsk3-fltrp-2026:l10:text4:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/37",
+      "after": "hsk3-fltrp-2026:l10:text4:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/38",
+      "after": "hsk3-fltrp-2026:l10:text4:question3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/39",
+      "after": "hsk3-fltrp-2026:l10:text4:question4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/40",
+      "after": "hsk3-fltrp-2026:l10:word01",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/41",
+      "after": "hsk3-fltrp-2026:l10:word02",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/42",
+      "after": "hsk3-fltrp-2026:l10:word03",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/43",
+      "after": "hsk3-fltrp-2026:l10:word05",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/44",
+      "after": "hsk3-fltrp-2026:l10:word07",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/45",
+      "after": "hsk3-fltrp-2026:l10:word09",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/46",
+      "after": "hsk3-fltrp-2026:l10:word10",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/47",
+      "after": "hsk3-fltrp-2026:l10:word11",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/48",
+      "after": "hsk3-fltrp-2026:l10:word12",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/49",
+      "after": "hsk3-fltrp-2026:l10:word14",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/50",
+      "after": "hsk3-fltrp-2026:l10:word15",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/51",
+      "after": "hsk3-fltrp-2026:l10:word19",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/52",
+      "after": "hsk3-fltrp-2026:l10:word21",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/53",
+      "after": "hsk3-fltrp-2026:l10:word22",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/54",
+      "after": "hsk3-fltrp-2026:l10:word23",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/55",
+      "after": "hsk3-fltrp-2026:l10:word27",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/56",
+      "after": "hsk3-fltrp-2026:l10:word29",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/57",
+      "after": "hsk3-fltrp-2026:l10:word31",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/58",
+      "after": "hsk3-fltrp-2026:l10:word32",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/59",
+      "after": "hsk3-fltrp-2026:l10:word33",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/60",
+      "after": "hsk3-fltrp-2026:l10:grammar1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/61",
+      "after": "hsk3-fltrp-2026:l10:grammar2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/62",
+      "after": "hsk3-fltrp-2026:l10:grammar3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/63",
+      "after": "hsk3-fltrp-2026:l10:section1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/64",
+      "after": "hsk3-fltrp-2026:l10:section2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/65",
+      "after": "hsk3-fltrp-2026:l10:section4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/66",
+      "after": "hsk3-fltrp-2026:l10:section5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/67",
+      "after": "hsk3-fltrp-2026:l10:field:objective1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/68",
+      "after": "hsk3-fltrp-2026:l10:field:objective2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/69",
+      "after": "hsk3-fltrp-2026:l10:field:objective3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/70",
+      "after": "hsk3-fltrp-2026:l10:field:objective4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/71",
+      "after": "hsk3-fltrp-2026:l10:activity:warmup1-matching",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/72",
+      "after": "hsk3-fltrp-2026:l10:activity:warmup2-discussion",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/73",
+      "after": "hsk3-fltrp-2026:l10:field:warmup2-prompt1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/74",
+      "after": "hsk3-fltrp-2026:l10:field:warmup2-prompt2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/75",
+      "after": "hsk3-fltrp-2026:l10:activity:text1-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/76",
+      "after": "hsk3-fltrp-2026:l10:activity:text1-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/77",
+      "after": "hsk3-fltrp-2026:l10:activity:text2-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/78",
+      "after": "hsk3-fltrp-2026:l10:field:text2-question2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/79",
+      "after": "hsk3-fltrp-2026:l10:activity:text2-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/80",
+      "after": "hsk3-fltrp-2026:l10:activity:text3-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/81",
+      "after": "hsk3-fltrp-2026:l10:activity:text3-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/82",
+      "after": "hsk3-fltrp-2026:l10:activity:text4-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/83",
+      "after": "hsk3-fltrp-2026:l10:activity:text4-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/84",
+      "after": "hsk3-fltrp-2026:l10:activity:comprehensive-words1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/85",
+      "after": "hsk3-fltrp-2026:l10:activity:comprehensive-words2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/86",
+      "after": "hsk3-fltrp-2026:l10:activity:picture-dialogue1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/87",
+      "after": "hsk3-fltrp-2026:l10:activity:picture-dialogue2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/88",
+      "after": "hsk3-fltrp-2026:l10:activity:picture-dialogue3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/89",
+      "after": "hsk3-fltrp-2026:l10:activity:classroom-group",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/90",
+      "after": "hsk3-fltrp-2026:sense:l10-word01",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/91",
+      "after": "hsk3-fltrp-2026:sense:l10-word02",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/92",
+      "after": "hsk3-fltrp-2026:sense:l10-word03",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/93",
+      "after": "hsk3-fltrp-2026:sense:l10-word05",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/94",
+      "after": "hsk3-fltrp-2026:sense:l10-word07",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/95",
+      "after": "hsk3-fltrp-2026:sense:l10-word09",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/96",
+      "after": "hsk3-fltrp-2026:sense:l10-word10",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/97",
+      "after": "hsk3-fltrp-2026:sense:l10-word11",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/98",
+      "after": "hsk3-fltrp-2026:sense:l10-word12",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/99",
+      "after": "hsk3-fltrp-2026:sense:l10-word14",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/100",
+      "after": "hsk3-fltrp-2026:sense:l10-word15",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/101",
+      "after": "hsk3-fltrp-2026:sense:l10-word19",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/102",
+      "after": "hsk3-fltrp-2026:sense:l10-word21",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/103",
+      "after": "hsk3-fltrp-2026:sense:l10-word22",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/104",
+      "after": "hsk3-fltrp-2026:sense:l10-word23",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/105",
+      "after": "hsk3-fltrp-2026:sense:l10-word27",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/106",
+      "after": "hsk3-fltrp-2026:sense:l10-word29",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/107",
+      "after": "hsk3-fltrp-2026:sense:l10-word31",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/108",
+      "after": "hsk3-fltrp-2026:sense:l10-word32",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/acceptedOwnerIds/109",
+      "after": "hsk3-fltrp-2026:sense:l10-word33",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/0",
+      "before": "hsk3-fltrp-2026:l10",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/1",
+      "before": "hsk3-fltrp-2026:l10:objective1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/2",
+      "before": "hsk3-fltrp-2026:l10:objective2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/3",
+      "before": "hsk3-fltrp-2026:l10:objective3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/4",
+      "before": "hsk3-fltrp-2026:l10:objective4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/5",
+      "before": "hsk3-fltrp-2026:l10:warmup1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/6",
+      "before": "hsk3-fltrp-2026:l10:warmup2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/7",
+      "before": "hsk3-fltrp-2026:l10:text1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/8",
+      "before": "hsk3-fltrp-2026:l10:text1:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/9",
+      "before": "hsk3-fltrp-2026:l10:text1:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/10",
+      "before": "hsk3-fltrp-2026:l10:text1:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/11",
+      "before": "hsk3-fltrp-2026:l10:text1:line4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/12",
+      "before": "hsk3-fltrp-2026:l10:text1:line5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/13",
+      "before": "hsk3-fltrp-2026:l10:text1:line6",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/14",
+      "before": "hsk3-fltrp-2026:l10:text1:line7",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/15",
+      "before": "hsk3-fltrp-2026:l10:text2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/16",
+      "before": "hsk3-fltrp-2026:l10:text2:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/17",
+      "before": "hsk3-fltrp-2026:l10:text2:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/18",
+      "before": "hsk3-fltrp-2026:l10:text2:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/19",
+      "before": "hsk3-fltrp-2026:l10:text2:line4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/20",
+      "before": "hsk3-fltrp-2026:l10:text2:line5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/21",
+      "before": "hsk3-fltrp-2026:l10:text2:line6",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/22",
+      "before": "hsk3-fltrp-2026:l10:text2:line7",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/23",
+      "before": "hsk3-fltrp-2026:l10:text2:line8",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/24",
+      "before": "hsk3-fltrp-2026:l10:text2:question2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/25",
+      "before": "hsk3-fltrp-2026:l10:text3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/26",
+      "before": "hsk3-fltrp-2026:l10:text3:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/27",
+      "before": "hsk3-fltrp-2026:l10:text3:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/28",
+      "before": "hsk3-fltrp-2026:l10:text3:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/29",
+      "before": "hsk3-fltrp-2026:l10:text3:line4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/30",
+      "before": "hsk3-fltrp-2026:l10:text3:line5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/31",
+      "before": "hsk3-fltrp-2026:l10:text3:line6",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/32",
+      "before": "hsk3-fltrp-2026:l10:text3:line7",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/33",
+      "before": "hsk3-fltrp-2026:l10:text3:line8",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/34",
+      "before": "hsk3-fltrp-2026:l10:text4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/35",
+      "before": "hsk3-fltrp-2026:l10:text4:line1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/36",
+      "before": "hsk3-fltrp-2026:l10:text4:line2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/37",
+      "before": "hsk3-fltrp-2026:l10:text4:line3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/38",
+      "before": "hsk3-fltrp-2026:l10:text4:question3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/39",
+      "before": "hsk3-fltrp-2026:l10:text4:question4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/40",
+      "before": "hsk3-fltrp-2026:l10:word01",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/41",
+      "before": "hsk3-fltrp-2026:l10:word02",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/42",
+      "before": "hsk3-fltrp-2026:l10:word03",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/43",
+      "before": "hsk3-fltrp-2026:l10:word05",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/44",
+      "before": "hsk3-fltrp-2026:l10:word07",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/45",
+      "before": "hsk3-fltrp-2026:l10:word09",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/46",
+      "before": "hsk3-fltrp-2026:l10:word10",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/47",
+      "before": "hsk3-fltrp-2026:l10:word11",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/48",
+      "before": "hsk3-fltrp-2026:l10:word12",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/49",
+      "before": "hsk3-fltrp-2026:l10:word14",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/50",
+      "before": "hsk3-fltrp-2026:l10:word15",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/51",
+      "before": "hsk3-fltrp-2026:l10:word19",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/52",
+      "before": "hsk3-fltrp-2026:l10:word21",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/53",
+      "before": "hsk3-fltrp-2026:l10:word22",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/54",
+      "before": "hsk3-fltrp-2026:l10:word23",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/55",
+      "before": "hsk3-fltrp-2026:l10:word27",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/56",
+      "before": "hsk3-fltrp-2026:l10:word29",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/57",
+      "before": "hsk3-fltrp-2026:l10:word31",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/58",
+      "before": "hsk3-fltrp-2026:l10:word32",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/59",
+      "before": "hsk3-fltrp-2026:l10:word33",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/60",
+      "before": "hsk3-fltrp-2026:l10:grammar1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/61",
+      "before": "hsk3-fltrp-2026:l10:grammar2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/62",
+      "before": "hsk3-fltrp-2026:l10:grammar3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/63",
+      "before": "hsk3-fltrp-2026:l10:section1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/64",
+      "before": "hsk3-fltrp-2026:l10:section2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/65",
+      "before": "hsk3-fltrp-2026:l10:section4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/66",
+      "before": "hsk3-fltrp-2026:l10:section5",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/67",
+      "before": "hsk3-fltrp-2026:l10:field:objective1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/68",
+      "before": "hsk3-fltrp-2026:l10:field:objective2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/69",
+      "before": "hsk3-fltrp-2026:l10:field:objective3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/70",
+      "before": "hsk3-fltrp-2026:l10:field:objective4",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/71",
+      "before": "hsk3-fltrp-2026:l10:activity:warmup1-matching",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/72",
+      "before": "hsk3-fltrp-2026:l10:activity:warmup2-discussion",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/73",
+      "before": "hsk3-fltrp-2026:l10:field:warmup2-prompt1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/74",
+      "before": "hsk3-fltrp-2026:l10:field:warmup2-prompt2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/75",
+      "before": "hsk3-fltrp-2026:l10:activity:text1-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/76",
+      "before": "hsk3-fltrp-2026:l10:activity:text1-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/77",
+      "before": "hsk3-fltrp-2026:l10:activity:text2-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/78",
+      "before": "hsk3-fltrp-2026:l10:field:text2-question2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/79",
+      "before": "hsk3-fltrp-2026:l10:activity:text2-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/80",
+      "before": "hsk3-fltrp-2026:l10:activity:text3-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/81",
+      "before": "hsk3-fltrp-2026:l10:activity:text3-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/82",
+      "before": "hsk3-fltrp-2026:l10:activity:text4-listening",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/83",
+      "before": "hsk3-fltrp-2026:l10:activity:text4-reading",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/84",
+      "before": "hsk3-fltrp-2026:l10:activity:comprehensive-words1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/85",
+      "before": "hsk3-fltrp-2026:l10:activity:comprehensive-words2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/86",
+      "before": "hsk3-fltrp-2026:l10:activity:picture-dialogue1",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/87",
+      "before": "hsk3-fltrp-2026:l10:activity:picture-dialogue2",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/88",
+      "before": "hsk3-fltrp-2026:l10:activity:picture-dialogue3",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/89",
+      "before": "hsk3-fltrp-2026:l10:activity:classroom-group",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/90",
+      "before": "hsk3-fltrp-2026:sense:l10-word01",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/91",
+      "before": "hsk3-fltrp-2026:sense:l10-word02",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/92",
+      "before": "hsk3-fltrp-2026:sense:l10-word03",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/93",
+      "before": "hsk3-fltrp-2026:sense:l10-word05",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/94",
+      "before": "hsk3-fltrp-2026:sense:l10-word07",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/95",
+      "before": "hsk3-fltrp-2026:sense:l10-word09",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/96",
+      "before": "hsk3-fltrp-2026:sense:l10-word10",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/97",
+      "before": "hsk3-fltrp-2026:sense:l10-word11",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/98",
+      "before": "hsk3-fltrp-2026:sense:l10-word12",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/99",
+      "before": "hsk3-fltrp-2026:sense:l10-word14",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/100",
+      "before": "hsk3-fltrp-2026:sense:l10-word15",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/101",
+      "before": "hsk3-fltrp-2026:sense:l10-word19",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/102",
+      "before": "hsk3-fltrp-2026:sense:l10-word21",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/103",
+      "before": "hsk3-fltrp-2026:sense:l10-word22",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/104",
+      "before": "hsk3-fltrp-2026:sense:l10-word23",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/105",
+      "before": "hsk3-fltrp-2026:sense:l10-word27",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/106",
+      "before": "hsk3-fltrp-2026:sense:l10-word29",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/107",
+      "before": "hsk3-fltrp-2026:sense:l10-word31",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/108",
+      "before": "hsk3-fltrp-2026:sense:l10-word32",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/pendingOwnerIds/109",
+      "before": "hsk3-fltrp-2026:sense:l10-word33",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/scope",
+      "after": "136 changed fields only; owner IDs identify touched consumers and do not certify all owner fields",
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    },
+    {
+      "path": "/coverage/fullLessonAlignmentAccepted",
+      "after": false,
+      "reviewDecision": "accepted",
+      "reviewKind": "explicit-changed-field-only-touched-owner-coverage"
+    }
+  ],
+  "initial135CompleteContentValuesAndSourceSpansPreserved": true,
+  "oneSourcePageSpanRepaired": true,
+  "oneNewIndependentlyReviewedContextCorrection": true,
+  "unexpectedValueDeltas": 0
+}

@@ -1,0 +1,150 @@
+{
+  "status": "passed-historical-vs-B10-source-AST-quantification",
+  "method": "Run actual frozen revised crawler declarations read-only over the exact 20 changed historical source blobs; current counts independently matched exhaustive walker. All unmodified old source files retain the current full-AST count.",
+  "historicalHead": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+  "currentHead": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "changedSourceFiles": 20,
+  "sourceChanges": [
+    {
+      "file": "course-app/src/content.ts",
+      "oldSourceFullASTRows": 3,
+      "newSourceFullASTRows": 2,
+      "netRuntimeSourceCandidateChange": -1
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "oldSourceFullASTRows": 29,
+      "newSourceFullASTRows": 33,
+      "netRuntimeSourceCandidateChange": 4
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "oldSourceFullASTRows": 175,
+      "newSourceFullASTRows": 176,
+      "netRuntimeSourceCandidateChange": 1
+    },
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "oldSourceFullASTRows": 0,
+      "newSourceFullASTRows": 0,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/controller.ts",
+      "oldSourceFullASTRows": 10,
+      "newSourceFullASTRows": 10,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "oldSourceFullASTRows": 0,
+      "newSourceFullASTRows": 0,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "oldSourceFullASTRows": 0,
+      "newSourceFullASTRows": 0,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "oldSourceFullASTRows": 37,
+      "newSourceFullASTRows": 38,
+      "netRuntimeSourceCandidateChange": 1
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller.ts",
+      "oldSourceFullASTRows": 1,
+      "newSourceFullASTRows": 1,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller30.ts",
+      "oldSourceFullASTRows": 1,
+      "newSourceFullASTRows": 1,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index.ts",
+      "oldSourceFullASTRows": 2,
+      "newSourceFullASTRows": 2,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index30.ts",
+      "oldSourceFullASTRows": 8,
+      "newSourceFullASTRows": 8,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "oldSourceFullASTRows": 3,
+      "newSourceFullASTRows": 3,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "oldSourceFullASTRows": 0,
+      "newSourceFullASTRows": 0,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/features/vocabulary/view.ts",
+      "oldSourceFullASTRows": 0,
+      "newSourceFullASTRows": 0,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/index.ts",
+      "oldSourceFullASTRows": 0,
+      "newSourceFullASTRows": 0,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "oldSourceFullASTRows": 13,
+      "newSourceFullASTRows": 13,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook.ts",
+      "oldSourceFullASTRows": 40,
+      "newSourceFullASTRows": 40,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "oldSourceFullASTRows": 17,
+      "newSourceFullASTRows": 17,
+      "netRuntimeSourceCandidateChange": 0
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "oldSourceFullASTRows": 54,
+      "newSourceFullASTRows": 54,
+      "netRuntimeSourceCandidateChange": 0
+    }
+  ],
+  "historicalReportedASTRows": 2341,
+  "historicalCompleteASTRows": 11303,
+  "currentCompleteASTRows": 11308,
+  "restoredHistoricalASTOccurrenceCandidates": 8962,
+  "netActualB10RuntimeSourceASTCandidates": 5,
+  "totalInventoryOccurrenceDelta": 8967,
+  "newModulesASTCandidates": [
+    {
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "rows": 0
+    }
+  ],
+  "limit": "Net static producer candidate changes are not unique semantic additions; template branches, dead code and retained duplicate producers remain separate candidates."
+}

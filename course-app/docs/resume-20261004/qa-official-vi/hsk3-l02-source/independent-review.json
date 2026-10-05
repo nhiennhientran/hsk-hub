@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "reviewUTC": "2026-10-04T21:47:39.736200+00:00",
+  "level": 3,
+  "lesson": 2,
+  "status": "independent-original-source-fidelity-accepted",
+  "author": "native_catalogue",
+  "authorSourcePath": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l02/source-transcription.json",
+  "authorSourceSHA256": "4cae41c91c02471ad1e2d226e7dc2d6aa006f8cfabebf9f95a36e3d61cde7881",
+  "authorFreezeSHA256": "b8c19cab6c41e217d81bc1065d86a633dfc5359e580d71b4678153d4219cce82",
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "officialPDFBytes": 96266563,
+  "actualPDFPageCount": 212,
+  "actualBodyPDFPages": [
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "actualAppendixPDFPages": [
+    195,
+    196
+  ],
+  "bodyPrintedFooters": [
+    "010",
+    "011",
+    "012",
+    "013",
+    "014",
+    "015",
+    "016",
+    "017",
+    "018"
+  ],
+  "appendixPrintedFooters": [
+    "183",
+    "184"
+  ],
+  "counts": {
+    "sourceItems": 118,
+    "accepted": 118,
+    "repair": 0,
+    "hold": 0,
+    "bodyVietnameseLoci": 96,
+    "appendixContextAndTextLoci": 22,
+    "numberedWordEntries": 28,
+    "inlineWordGlosses": 4,
+    "appendixRoleLines": 18,
+    "appendixWholeUnlabelledParagraphs": 1,
+    "bodyAppendixBindings": 19,
+    "visuallyReadFullSourcePages": 11,
+    "visuallyReadBoundaryPages": 1,
+    "freshOriginalDetailCrops": 9,
+    "sharedPhysicalHeaderContextIds": 2
+  },
+  "manualCoverage": [
+    "All118 sourceIDs individually checked against actual original page render.",
+    "Numbered28 words include Vietnamese/PY/POS; htố., lượng., đgt./tt., dt./đgt., búyòng retained.",
+    "Four small printed glosses cừu/kem/sạch, sạch sẽ/nghe nói included; helper full paragraph contains all six actual printed example translations.",
+    "Body text1/2/3 Chinese-only6/6/6 role lines; text4 one unlabelled diary; exact19 actual Chinese-anchor links to appendix.",
+    "Appendix text1 first2 full utterances are at183; remaining4 at184. No individual utterance pretended to cross page.",
+    "Shared183 global heading also recorded forL1; shared184 series header may serve later lesson. Their stable physical occurrence keys are context identities, not duplicate physical printings.",
+    "Grammar1 actual formula1/2 subscripts preserved as Unicode₁/₂.",
+    "Grammar2 VI explanation ends013; Chinese-only examples continue014. Grammar3 VI list faithfully stops after time...; Chinese has同一个地点等, recorded separate nonexhaustive-list observation.",
+    "Group instruction actual original prints tự nấu ăn... (three dots); independently fresh crop rejects single-period visual ambiguity.",
+    "PDF30/footer018 finishes group/video; nextPDF31/footer019 isL3; no connected learning-summary page."
+  ],
+  "sharedPhysicalContextKeys": [
+    "hsk3-pdf195-p183-appendix-global-heading",
+    "hsk3-pdf196-p184-series-running-header"
+  ],
+  "sourceObservations": [
+    {
+      "type": "printed-POS-literal",
+      "sourceId": "hsk3-official-vi:l02:p013:word-09",
+      "raw": "htố.",
+      "freshOriginalDetail": "pdf025-suffix-pos-detail-4x.png"
+    },
+    {
+      "type": "printed-dual-POS",
+      "sourceIds": [
+        "hsk3-official-vi:l02:p011:word-05",
+        "hsk3-official-vi:l02:p015:word-23"
+      ],
+      "rawValues": [
+        "đgt./tt.",
+        "dt./đgt."
+      ]
+    },
+    {
+      "type": "printed-nonexhaustive-list-content-difference",
+      "sourceId": "hsk3-official-vi:l02:p015:grammar3-rule",
+      "ChineseExplicitExample": "同一个地点",
+      "printedVietnameseListEnding": "một thời điểm...",
+      "sourceTranscriptionVerdict": "accepted-faithful",
+      "semanticWebsiteDecision": "not performed; no silent addition and no publisher-issued correction claimed",
+      "freshOriginalDetail": "pdf027-grammar3-list-detail-4x.png"
+    }
+  ],
+  "boundaries": {
+    "websiteRead": false,
+    "websiteComparison": false,
+    "runtimeChanged": false,
+    "registryChanged": false,
+    "deploymentApproved": false,
+    "sourceFidelityOnly": true,
+    "fullPageRendersReused": true,
+    "freshWholePageRendersClaimed": false,
+    "OCRUsed": false,
+    "textLayerUsedAsAuthority": false
+  }
+}

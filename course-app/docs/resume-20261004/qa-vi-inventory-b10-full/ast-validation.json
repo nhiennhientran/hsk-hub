@@ -1,0 +1,1902 @@
+{
+  "status": "passed-independent-full-AST-target-validation",
+  "sourceHEAD": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "policy": "Exact authored language candidate policy loaded read-only; independent exhaustive node walker compares every range/value/template/AST path/recordId/semanticKey.",
+  "parsedCodeHTMLFiles": 256,
+  "parsedVirtualPrograms": 8,
+  "matchedASTOccurrences": 11308,
+  "uniqueExpectedIDs": 11308,
+  "allActualASTTargetsMatched": true,
+  "perFile": [
+    {
+      "file": "hsk1-app/src/app/bilingual.ts",
+      "format": "code",
+      "sha256": "fc774d7a7a3dbdfcd04b8c68f0977504ee075202f97c4e25fece941498782098",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/app/contracts.ts",
+      "format": "code",
+      "sha256": "4af2258587aafd208f8cdac28f4ab3765c10b0f2591ef768b002aeee9442387f",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/core.ts",
+      "format": "code",
+      "sha256": "17f1f11d4b4b13c21fa1d6a75e7da4050bd035dcaabe17c65211bf3e8b59e798",
+      "rows": 36
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/exercises.ts",
+      "format": "code",
+      "sha256": "503c1756e194cfbab236beea964034f1d1e9ca4ad4bf7780b2c5e38a08bdc1db",
+      "rows": 131
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/homework.ts",
+      "format": "code",
+      "sha256": "47e6a9b048ab10f84df30d1797b009b8fe3b3bd1293133dfb6484fd714e8d8f1",
+      "rows": 97
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/homework30.ts",
+      "format": "code",
+      "sha256": "142aa915f665c33d3582d8beabfd8c78cbf9ab7630eb669f0b293dddcc266bd9",
+      "rows": 19
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/listening.ts",
+      "format": "code",
+      "sha256": "80c10b3cf550f458f0e2f8e5c85891216e16126c07787e42a9f8c2d5e958bae4",
+      "rows": 93
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/mixed-vocabulary.ts",
+      "format": "code",
+      "sha256": "4e437551785540c8893974637e36c68d838ddb59d7b04cf6c5f71b61ced8189f",
+      "rows": 31
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/progress.ts",
+      "format": "code",
+      "sha256": "5927e8efd9a762ff2d3b340b1e059b4cc08bad0fce9f9c37762cb43e864cb93d",
+      "rows": 51
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/review.ts",
+      "format": "code",
+      "sha256": "0b7a533c20cd52149170086e858ff6b7cf41bd3b0f46fc0f79ffd5dda8ae2bb7",
+      "rows": 9
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/textbook.ts",
+      "format": "code",
+      "sha256": "97842af5c0f4e77a4cdb613b213e03b5533147d90c426fd220ca790b44a1e1a6",
+      "rows": 147
+    },
+    {
+      "file": "hsk1-app/src/app/i18n/vocabulary.ts",
+      "format": "code",
+      "sha256": "d1354be31355e895191d56aecb9776fb03c54159ad476d30c362c49aec60b345",
+      "rows": 139
+    },
+    {
+      "file": "hsk1-app/src/app/labels.ts",
+      "format": "code",
+      "sha256": "d2e3748543487a5d039724e89cca0b4266a2cb3d8db069a3a921c85b9a632b01",
+      "rows": 18
+    },
+    {
+      "file": "hsk1-app/src/app/lifecycle.ts",
+      "format": "code",
+      "sha256": "43c16c25c8ff4998fd5c79b98163ff24edaf83fecfabccf458bb6d4617d4cb4f",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/app/main.ts",
+      "format": "code",
+      "sha256": "cd54d9e3e2f0136bf7c59e291728f7b9e910faa8c3205481fc9665552433ce07",
+      "rows": 2
+    },
+    {
+      "file": "hsk1-app/src/app/navigation.ts",
+      "format": "code",
+      "sha256": "cf3af0f9b70b2a2a73baba4e1e44ab3c19cea3ccc540caf4f6f165235e5b2c43",
+      "rows": 4
+    },
+    {
+      "file": "hsk1-app/src/app/router.ts",
+      "format": "code",
+      "sha256": "1cfc787bacc667f73445db0b3506a7ef6b53951ad5f120759314f754cdc95126",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/app/ui.ts",
+      "format": "code",
+      "sha256": "e1f9b1de8d8fab64c82b5e826b9274db90e23f6e92ab3a9a8188f65b5a26c444",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/domain/exercises/catalogue.ts",
+      "format": "code",
+      "sha256": "745ecd83ca30f2364af8ef942783c57c4792ef5f521d73d8634923ddd4c735b0",
+      "rows": 13
+    },
+    {
+      "file": "hsk1-app/src/domain/exercises/engine.ts",
+      "format": "code",
+      "sha256": "d8e4358f814216e4e3da0e8fcc761f6ef4b81938dbfcb53b57ef9e6410afb6f5",
+      "rows": 5
+    },
+    {
+      "file": "hsk1-app/src/domain/exercises/migration.ts",
+      "format": "code",
+      "sha256": "465bb566ef0075943a590a3e05b21e37cc7685c3e897e6e07cfdf75af731fc10",
+      "rows": 9
+    },
+    {
+      "file": "hsk1-app/src/domain/homework/engine.js",
+      "format": "code",
+      "sha256": "5a8ac5bbab07bf3dc505c46d3d0ea8ef48d14017e6875742ff816d4646295321",
+      "rows": 53
+    },
+    {
+      "file": "hsk1-app/src/domain/homework30/engine.ts",
+      "format": "code",
+      "sha256": "f5684607b1cb73ce316e6c65fa135b645ee274859ac14a428d6d50cc654532cb",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/controller.ts",
+      "format": "code",
+      "sha256": "281270a2bf35164f38f50eca6dee37204209387d296c2f5c16a80aa0be05fcf2",
+      "rows": 10
+    },
+    {
+      "file": "hsk1-app/src/domain/listening/types.ts",
+      "format": "code",
+      "sha256": "6523e64a3ab848b2e707ada96237c2ef4d0687cf8bcf4147a1a74b0d0644f282",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/domain/practice/engine.js",
+      "format": "code",
+      "sha256": "2c9b3c43f5980b12e4333e56a06cb660a012d3842c5b1e04e22a7756af79452c",
+      "rows": 79
+    },
+    {
+      "file": "hsk1-app/src/domain/progress/reset.ts",
+      "format": "code",
+      "sha256": "a06540eab010fb1affd1be008a69f7f2287ba938677e2b5fdf575ae329644ea8",
+      "rows": 18
+    },
+    {
+      "file": "hsk1-app/src/domain/textbook/practice.ts",
+      "format": "code",
+      "sha256": "96f737f5a4186616a032c8b8e4c00914dafd35990221b3bbd11692b1d7cf2096",
+      "rows": 11
+    },
+    {
+      "file": "hsk1-app/src/domain/types.ts",
+      "format": "code",
+      "sha256": "79b2d72b3eb1578c4f685a8c6144a204fa3889e243c72c4e732b0b588299af17",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/controller.ts",
+      "format": "code",
+      "sha256": "03f51f9b69162b537abdb80c49904deac92bebdf847d91378468f24d32ecbd03",
+      "rows": 4
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/mixed-controller.ts",
+      "format": "code",
+      "sha256": "f7d4d6aa00649abebbf376ce34ef58b9dda02cb6b23306f32b742e33e93fbae3",
+      "rows": 6
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/mixed-state.ts",
+      "format": "code",
+      "sha256": "763a4a30a5eccad4c0d1cc25d743f1d14af013f4235868a398e57b91254f11ac",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/domain/vocabulary/types.ts",
+      "format": "code",
+      "sha256": "e4168931a907da8cb2c596a5a371e41a7dbb4a7d4f834b93a45027608f63286d",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/due-refresh.ts",
+      "format": "code",
+      "sha256": "80763c1d7b99cbdb2b5ceffc0ed3e0a56d627e75916930f532ccf36c3f8fbb38",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive-data.ts",
+      "format": "code",
+      "sha256": "adf9646230c856cbe0b30611277498ccfba7a950b4e18c592f86d77b01a9df21",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/archive.ts",
+      "format": "code",
+      "sha256": "7a96475f3d0c99baf4e16fcdfc8137dc7b6f05e717b1259d1c26a1aa96e4e78f",
+      "rows": 38
+    },
+    {
+      "file": "hsk1-app/src/features/exercises/index.ts",
+      "format": "code",
+      "sha256": "9cb023534e3eddb12254ea9bb18636b0fb394c5fcd89813317b58b61ca76bc14",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/home/index.ts",
+      "format": "code",
+      "sha256": "3dd89b11892caf4ea1822de4cf441b3923f1bc39b6c38567978edd45c511b59d",
+      "rows": 4
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller.ts",
+      "format": "code",
+      "sha256": "d333f18fe625419ba088c86c9d24a14157ff5ff68861cb1aeaf806fc5bfa7839",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/homework/controller30.ts",
+      "format": "code",
+      "sha256": "4999a4546260a28efcc5ec054265004034ddbac107d4447ff947f5568505f824",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index.ts",
+      "format": "code",
+      "sha256": "158e4307488bbf08bd410c8cf2cccaf09b7194337825993c306fcfdcddb3ddd3",
+      "rows": 2
+    },
+    {
+      "file": "hsk1-app/src/features/homework/index30.ts",
+      "format": "code",
+      "sha256": "c5b1db1092ddf3926e9b6ded68c501f350dc3c1bb9b7ebb9a63acad1d7a92b18",
+      "rows": 8
+    },
+    {
+      "file": "hsk1-app/src/features/homework/receipt.ts",
+      "format": "code",
+      "sha256": "ee5aa392a3f7a382c702c856781af7780b55b57905ba94dbc20d6951013b08ca",
+      "rows": 3
+    },
+    {
+      "file": "hsk1-app/src/features/listening/index.ts",
+      "format": "code",
+      "sha256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/progress/content.ts",
+      "format": "code",
+      "sha256": "515d1f6823c57a8ad5631489de5eb0ce98748e8ffdbc29d7eca659cc30e8537e",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/progress/data-panel.ts",
+      "format": "code",
+      "sha256": "de7ab121385d5f46ff4df685073087a1b48ef524b5498053f99a02ac9cc89347",
+      "rows": 3
+    },
+    {
+      "file": "hsk1-app/src/features/progress/index.ts",
+      "format": "code",
+      "sha256": "82d968bc21afadb5373bd284c0295ffde94321bb4d2251de9446a4207e14e6ea",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/progress/summary.ts",
+      "format": "code",
+      "sha256": "c267e1ea400c5df5a2cb547d7d9c8aa3c731001416ef9530d2b41764df96f054",
+      "rows": 13
+    },
+    {
+      "file": "hsk1-app/src/features/review/index.ts",
+      "format": "code",
+      "sha256": "f3ecdccbce0d3e7a8588c32a47980e30bbc8e575981beeeae2f07a97cbff993e",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/figures.ts",
+      "format": "code",
+      "sha256": "796666a581ce4fbcaabee7706f72347e71cfee3a305b01a9a8019f320736da26",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/index.ts",
+      "format": "code",
+      "sha256": "75982f634a8969ff8faf90e15593c33c551e0edde325c3e5d07c921a498d9d1f",
+      "rows": 49
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/numbers.ts",
+      "format": "code",
+      "sha256": "24c1d99c84df061e5dab90fbb1c8fbd2548bc1dbcbb85366a904df4ce3859fb8",
+      "rows": 7
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/pair-panel.ts",
+      "format": "code",
+      "sha256": "ef837f9199a39c462e0edd0d65dc6acf9b5807d18840916530c54f800dc9f6de",
+      "rows": 25
+    },
+    {
+      "file": "hsk1-app/src/features/source-activities/tables.ts",
+      "format": "code",
+      "sha256": "62aae21466b6611171d5412f92d663dfd6248e19f57b166f3595b991f4a8c4c0",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/dom.ts",
+      "format": "code",
+      "sha256": "86bf14ecd018d132c78fcc9d0be0b18c1513f2d9787b4beae892db2ecddeee86",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/hanzi.ts",
+      "format": "code",
+      "sha256": "fce02d427bdb1a4c5a385d90bc8559aea45baa3935a8bb81b5b7edb67e468ec4",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/index.ts",
+      "format": "code",
+      "sha256": "13870e1c6897c8da10eb39a5828d98ddf5da1206f70d8683e85fbd16461707de",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/language.ts",
+      "format": "code",
+      "sha256": "c859d4644d1b6fc2625ae3dcfe1b048b9d45b88e1e8214a8151b71deb0dc02fd",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/player.ts",
+      "format": "code",
+      "sha256": "df001d9f4604009981fbfcafc90001ee138de0322245fe9eb0816d8503314af5",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/practice.ts",
+      "format": "code",
+      "sha256": "61f9cda16d070d2d35678bf034df693b67fae8dc6a6dae6b3fd43133792c4a4c",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/text.ts",
+      "format": "code",
+      "sha256": "4858677c9840db097e8dfae0ea6180c725ebd33dbadc8bd2ea27933454b84330",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/textbook/vocabulary.ts",
+      "format": "code",
+      "sha256": "73af993be2ba0a20bcc90c80f2e59710326cadc9c8772d4e9bc972a159a059ca",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/features/vocabulary/index.ts",
+      "format": "code",
+      "sha256": "d0de31b4d68f76f757a4df207e6ae2e1fd1a1da9a95ade233f9d064ed875af81",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/features/vocabulary/view.ts",
+      "format": "code",
+      "sha256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/audio/index.ts",
+      "format": "code",
+      "sha256": "2e8674730405a59bc82556923f588013378495e238f097e75356083dcf2ec4d0",
+      "rows": 21
+    },
+    {
+      "file": "hsk1-app/src/services/auth/index.ts",
+      "format": "code",
+      "sha256": "20baf085907525a92eaab3b15b835e4abb5c5aa2732d205dcda8f58df946a8e7",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/asset-base.ts",
+      "format": "code",
+      "sha256": "d78a5b141d1e674210171de2ed980258620880c5cd4629ddcdb2161699c163f1",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/exercises.ts",
+      "format": "code",
+      "sha256": "7df974c888f176d3b8661cda9fd86d951c74f7b4be37601fc5f95941f05fc9a2",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/services/content/homework.ts",
+      "format": "code",
+      "sha256": "b0c023917c79a096ff62860eb3e4a309054b5ce4f1fa1420169e08374bc306e3",
+      "rows": 3
+    },
+    {
+      "file": "hsk1-app/src/services/content/homework30.ts",
+      "format": "code",
+      "sha256": "83e025aa50bf6264fe680c2b31037009def653bb40f63b4ec5e1e4818e0b0c62",
+      "rows": 2
+    },
+    {
+      "file": "hsk1-app/src/services/content/index.ts",
+      "format": "code",
+      "sha256": "6ad70e75d43afafd5643e5df7c55e0633e5b1ef3cecf737d260b05da12392c2d",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/listening.ts",
+      "format": "code",
+      "sha256": "3fb45587a73f4829c4a2ea30c455a1f7f28567b8bc19ae59864d3160516e8d73",
+      "rows": 13
+    },
+    {
+      "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+      "format": "code",
+      "sha256": "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook-display-revisions.ts",
+      "format": "code",
+      "sha256": "2ee435e327f656981fc4bf30ecd680907c2d33b31ef79f7074cef8176f308a09",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook-supplements.ts",
+      "format": "code",
+      "sha256": "2ba686a76536d37f40aa83634a0a0dbcdecb1e0db487bc6da370ba804c9de0a6",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/textbook.ts",
+      "format": "code",
+      "sha256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18",
+      "rows": 40
+    },
+    {
+      "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+      "format": "code",
+      "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/content/vocabulary.ts",
+      "format": "code",
+      "sha256": "3647506c4532d74607716ef67271dab5a314ae25b8e4a18b5f4897cce1bb01a3",
+      "rows": 17
+    },
+    {
+      "file": "hsk1-app/src/services/learning/homework30-progress.ts",
+      "format": "code",
+      "sha256": "989a32e093a75451fb5e990f70b9255b4fe6d09917dd7bf8dd1414185cfb7dd4",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/learning/progress.ts",
+      "format": "code",
+      "sha256": "20e63f49375842920f00c8a4e4ba46f00ec33044a303ce8d9b57cc4b56dae321",
+      "rows": 6
+    },
+    {
+      "file": "hsk1-app/src/services/learning/reading.ts",
+      "format": "code",
+      "sha256": "f5d5ea6b81494d4a5a69f641f135ba9980860f605cd80ea2bb6d8a644d0e61fd",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/learning/session.ts",
+      "format": "code",
+      "sha256": "50460eb3f8015997acbf68ee837da8f0f5fbe8d6b3c20d1efbfb17d296853a8f",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/browser-pair.ts",
+      "format": "code",
+      "sha256": "60c93905d9c78def58316d5d810405d18d264f7bc533c48e0d21816bf0301331",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/content.ts",
+      "format": "code",
+      "sha256": "e77761c05bcc24418eee07cfedd217950cdbb381157d21f8b8c019d52d062d44",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/paired.ts",
+      "format": "code",
+      "sha256": "7e2dd046dec52366cdbf981a08f84d24aec47928b39f3159a5cd8e4faf70d079",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/scene-figures.ts",
+      "format": "code",
+      "sha256": "230617e627d65df37127ad918adf0f7f7a7647ed350a6aef999c4e93d4dc8e20",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/state.ts",
+      "format": "code",
+      "sha256": "7678c98fa0d2a53d335971de3f8c9e0346d19d732ac734b99e8191443ac9c34a",
+      "rows": 2
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/store.ts",
+      "format": "code",
+      "sha256": "630613cdc164b142fee6f2fd159736576fb761e47958001df8b676058b0fa9a6",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/services/source-activities/summary.ts",
+      "format": "code",
+      "sha256": "f5c22f935a05ae733f1055cb7607e6aa67b522df585ef15aa348844072cef79b",
+      "rows": 1
+    },
+    {
+      "file": "hsk1-app/src/services/storage/compatibility.ts",
+      "format": "code",
+      "sha256": "6a72f0792459e9744ce67b8b81a0c578daef12fcf2096ace1f274d136c6d9104",
+      "rows": 54
+    },
+    {
+      "file": "hsk1-app/src/services/storage/copy.ts",
+      "format": "code",
+      "sha256": "ee0ba4491f91a56e9f9829bf168d1d52849a6a409d433140dbbae753619642d6",
+      "rows": 103
+    },
+    {
+      "file": "hsk1-app/src/services/storage/index.ts",
+      "format": "code",
+      "sha256": "a0f3c1838c7c83c4af7ae46c61418f674d332499a61e56b69cfbcb080a4efab0",
+      "rows": 17
+    },
+    {
+      "file": "hsk1-app/src/shared/activity-card.ts",
+      "format": "code",
+      "sha256": "46873514edf100bb97d116cd2d1038e18d398b4b577fcb725beddaa52eb60ecd",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/activity-commit.ts",
+      "format": "code",
+      "sha256": "173e4fd812cfbf62738304e3bd8c901946a0bae705d3e70bba38ad9ad1d0b79b",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/activity-history.ts",
+      "format": "code",
+      "sha256": "7edeeacf227f030bcf5377f7f9b364c80c844e37dcc2843e37aa2197d7e1bc46",
+      "rows": 5
+    },
+    {
+      "file": "course-app/src/activity-provenance.ts",
+      "format": "code",
+      "sha256": "59b711b1d57a5c6d0d61d033356d37830e5c7caefe5ae53988091a47a32cef67",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/attempt-commit.ts",
+      "format": "code",
+      "sha256": "d0351c5f3ae5dd3a0ed356baae5ea8073dd7bbb71768693ab0e6eed379cf004d",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/audio-segment-contract.ts",
+      "format": "code",
+      "sha256": "42d2daff068e43f8d957dcbc6f640b7a8ce6f2136db590c94a87b64214583657",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/backup-view.ts",
+      "format": "code",
+      "sha256": "c0da5580179d6aadbb1f22cd1679fa410cf31f413db20f7dd7020e5cd31a779b",
+      "rows": 28
+    },
+    {
+      "file": "course-app/src/config.ts",
+      "format": "code",
+      "sha256": "efe61e8926f4ec76f968a64095c014659a026b71b19d3d5fa16c25acba016684",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/content.ts",
+      "format": "code",
+      "sha256": "c773cd17f210f58af9cb0a82efab3c98a285bfa163ce87ded4581db1959557e2",
+      "rows": 2
+    },
+    {
+      "file": "course-app/src/dom.ts",
+      "format": "code",
+      "sha256": "8b507b05fa20a5506dbac7d31ae2907e272261e115e10a0ba232541ffcf5c54e",
+      "rows": 2
+    },
+    {
+      "file": "course-app/src/hsk1-bridge.ts",
+      "format": "code",
+      "sha256": "013b682bf884bef3211277166fb285114f8824392e88bb615885596057bd7ae5",
+      "rows": 1
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "format": "code",
+      "sha256": "9cd7463c9097f722c53ef4829b20e0ad1a708a569a1e70969a9d8a81838eb11a",
+      "rows": 87
+    },
+    {
+      "file": "course-app/src/lexicon.ts",
+      "format": "code",
+      "sha256": "eea19bf5871009d76c7af075a53d737ecba9e5587696343407fd391c04dd73bf",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/listening-view.ts",
+      "format": "code",
+      "sha256": "9637ebb3fd62546924b45a97407f3ed19ab634e647cc9b4812adfc1e1925bb70",
+      "rows": 33
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "format": "code",
+      "sha256": "a91844f06ecb3491b5bc5bde9071b29bc75c29f315ed4795d7f3d26e5920b744",
+      "rows": 176
+    },
+    {
+      "file": "course-app/src/official-vi-revisions.ts",
+      "format": "code",
+      "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/router.ts",
+      "format": "code",
+      "sha256": "51bdd40c7adff3d1c83aa9229310aae781cd748a3a1cfba7f206617f18fbc697",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/segment-resolver.ts",
+      "format": "code",
+      "sha256": "f07829059f3426d5d57e79b5e7cf0739bfa8bba2b7737a68f2773b683e186a61",
+      "rows": 1
+    },
+    {
+      "file": "course-app/src/segments.ts",
+      "format": "code",
+      "sha256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00",
+      "rows": 0
+    },
+    {
+      "file": "course-app/src/state.ts",
+      "format": "code",
+      "sha256": "92674c843f7dc4002661557588e465eddc0f390e6f84f1c2233136795772326c",
+      "rows": 2
+    },
+    {
+      "file": "course-app/src/types.ts",
+      "format": "code",
+      "sha256": "b7b2dfee504bd764ac6560f0d698d5ae996110100ec98577fc4f378dfa832626",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/index.html",
+      "format": "html",
+      "sha256": "8e3055829b0e68bfec9f47b94a1f30c149028b172d7976e392f54277d72ed2f1",
+      "rows": 0
+    },
+    {
+      "file": "hsk1-app/public/help.html",
+      "format": "html",
+      "sha256": "0797ded7075ebd69e83d0851eff6388881147a1838d0a4d0b1028edd0440e87e",
+      "rows": 0
+    },
+    {
+      "file": "course-app/index.html",
+      "format": "html",
+      "sha256": "39b219530e84cfa008013ca19763f884c59c0470387a7a25fbd3e3048e7b07e0",
+      "rows": 0
+    },
+    {
+      "file": "course-app/tools/package-unified.mjs",
+      "format": "code",
+      "sha256": "0b7bdbfe136b17108f0b5ee5ec0413e96d1e9f6a87c084636b56009439ce1cdf",
+      "rows": 0
+    },
+    {
+      "file": "course-app/tools/package-core.mjs",
+      "format": "code",
+      "sha256": "cbd2a2d8e2bbe301bf8cfd4ec4137a5c84c8d927ab8de4cf8df8f99a34485d2a",
+      "rows": 7
+    },
+    {
+      "file": "assets/app-packed.js",
+      "format": "code",
+      "sha256": "c7464200c025b17517c1064f7766cf3eacbc49171bbd69c568f2221b4c93930f",
+      "rows": 1
+    },
+    {
+      "file": "assets/app.js",
+      "format": "code",
+      "sha256": "80b6bac2c2c82ee5d5e789c79b4a1340771708e6c813b696fe7ba37f69a3d163",
+      "rows": 2
+    },
+    {
+      "file": "assets/hanzi-curriculum.js",
+      "format": "code",
+      "sha256": "db7065b77e47bf8de744ce1c82292dddf9015bb071027b56a8ab8c576083d935",
+      "rows": 9
+    },
+    {
+      "file": "assets/hsk2-content-audit.js",
+      "format": "code",
+      "sha256": "d1907644fd59ee89a4101262903de31d000e2b3d2cef965f5c1975e54d716ac9",
+      "rows": 39
+    },
+    {
+      "file": "assets/hsk2-grammar-canonical.js",
+      "format": "code",
+      "sha256": "e6368ca519757519f4ab9c53e2f71fedff2e10a6632de76b00d774898601799a",
+      "rows": 0
+    },
+    {
+      "file": "assets/hsk2-nav-fix.js",
+      "format": "code",
+      "sha256": "be14e74b3391e63084235a2c4ba3a5a22c9346eb280fbcad8e7dd5c44879bb2d",
+      "rows": 1
+    },
+    {
+      "file": "assets/hsk2-parity.js",
+      "format": "code",
+      "sha256": "65be635838ca208b9e421a49388fb8933789e1590cfa6f9b133d8fa0c11e6702",
+      "rows": 18
+    },
+    {
+      "file": "assets/hsk2-practice-audit.js",
+      "format": "code",
+      "sha256": "c6bd2c5978ac95b955a23b563235c1650dd0212d1ae0366713ead377626319fb",
+      "rows": 5
+    },
+    {
+      "file": "assets/hsk2-textbook-locked-1.js",
+      "format": "code",
+      "sha256": "3d71f82a8fdba16a786b40c13afed827c025a2d833c516a19982a461661e2fe1",
+      "rows": 0
+    },
+    {
+      "file": "assets/hsk2-textbook-locked-2.js",
+      "format": "code",
+      "sha256": "a594cabdaf4b366f6d96eb7222d2f8ea01805eef2f5fb1ff757e745f95d23714",
+      "rows": 0
+    },
+    {
+      "file": "assets/hsk2-textbook-locked-3.js",
+      "format": "code",
+      "sha256": "86ad1cc2af702a07f12e9176c684a8cc7ad08a5dbbfc899430397d53f8f4feb2",
+      "rows": 0
+    },
+    {
+      "file": "assets/hsk2-textbook-locked-4.js",
+      "format": "code",
+      "sha256": "822e7ec422bb440f9fe551a974117dbb96f19b4996b8f6d16581f25e1ddc7b1d",
+      "rows": 0
+    },
+    {
+      "file": "assets/hsk2-textbook-locked-ui.js",
+      "format": "code",
+      "sha256": "b8913cbb8ae07d7b1b03dbe1addd3aaff8ebc35bba17122297e34e911302b338",
+      "rows": 2
+    },
+    {
+      "file": "assets/hsk2-textbook-locked.js",
+      "format": "code",
+      "sha256": "45a9ff5b7932b01e9e0b5c202195422398842aca7293e340a350a4a2404450bf",
+      "rows": 1
+    },
+    {
+      "file": "assets/hsk4-trilingual-ui.js",
+      "format": "code",
+      "sha256": "7411cb8ac13d3cc1beb92d0b201fe2d864c245b7d4ace6e3fa9aa0542b26d97c",
+      "rows": 291
+    },
+    {
+      "file": "assets/lesson-core.js",
+      "format": "code",
+      "sha256": "0b474d939001f655379734d51b7cfcd4b8c1816ea8b68c534491dfcbf7cce76e",
+      "rows": 60
+    },
+    {
+      "file": "assets/lesson-menu-parity.js",
+      "format": "code",
+      "sha256": "6755a00068b303eedea94e94cebdbbc6ac05779a495e80f5a316fce42b48dc08",
+      "rows": 1
+    },
+    {
+      "file": "assets/lesson-packed.js",
+      "format": "code",
+      "sha256": "ecfadcad815946ac87177fcbdb4e28e34cba909cfac40dd29b3712f2ebf1cd26",
+      "rows": 91
+    },
+    {
+      "file": "assets/lesson-practice.js",
+      "format": "code",
+      "sha256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "rows": 28
+    },
+    {
+      "file": "assets/practice-advanced.js",
+      "format": "code",
+      "sha256": "f59527f00d017531c97e631bc34f69ef43adfb42b125175e21fb5767be627570",
+      "rows": 16
+    },
+    {
+      "file": "assets/practice-explain.js",
+      "format": "code",
+      "sha256": "6c12dbf99213e142896d5f9f0cf1ede2ddaf7163a2f4a542fce28ce7efe0aeef",
+      "rows": 38
+    },
+    {
+      "file": "assets/reviewed-practice.js",
+      "format": "code",
+      "sha256": "f53b119c6cae13c30cd120bf85db002129b2fe1ad4dc09b1029a1f444d8c660b",
+      "rows": 23
+    },
+    {
+      "file": "assets/session-auth.js",
+      "format": "code",
+      "sha256": "e41493d4cbcae410ac52fb5c8d2e4a69e8a4ed21e88f0ea5f88e1677f0d1404a",
+      "rows": 9
+    },
+    {
+      "file": "assets/site-shell.js",
+      "format": "code",
+      "sha256": "570d82301592a2b5c23cd39ff7d20393cd2477849b8a79ac8687dc515d4217c1",
+      "rows": 14
+    },
+    {
+      "file": "assets/student-polish.js",
+      "format": "code",
+      "sha256": "66219a29ce6ae914787b291a8cfff856824f978735ebcf72b31fca10a5b3f1c3",
+      "rows": 106
+    },
+    {
+      "file": "assets/vocab-hanzi-panel.js",
+      "format": "code",
+      "sha256": "869cd4ca52e2fa2701a321f84e090bf733bb6b6444b6bf70cf78a92e586bf445",
+      "rows": 10
+    },
+    {
+      "file": "assets/vocab-unified.js",
+      "format": "code",
+      "sha256": "5efa5358fa4672c84c2ed36b9a7fbd8b31d9f6a2fcbf67e151b483450ad42eed",
+      "rows": 63
+    },
+    {
+      "file": "hsk3/app-core.js",
+      "format": "code",
+      "sha256": "b19a512d51f12a712e80a51d915c8f10d6b4eaa8641d563a95cb8441e1f8a534",
+      "rows": 39
+    },
+    {
+      "file": "hsk3/app-practice.js",
+      "format": "code",
+      "sha256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
+      "rows": 26
+    },
+    {
+      "file": "hsk3/corrections.js",
+      "format": "code",
+      "sha256": "2945b580af86d4f8db13b599e2ceaae9f33a58d1bcd4fa6764c7d8b83cc95794",
+      "rows": 30
+    },
+    {
+      "file": "hsk3/index.html",
+      "format": "html",
+      "sha256": "b0644c24cadae15d762ab34df1898c01833b502f0625b04e3971b9d6be0195c7",
+      "rows": 0
+    },
+    {
+      "file": "hsk3/lesson.html",
+      "format": "html",
+      "sha256": "6497783cbb212162d110043d4974502dd07db451d179c3acf2a8772b0781e603",
+      "rows": 0
+    },
+    {
+      "file": "hsk3/runtime-loader-core.js",
+      "format": "code",
+      "sha256": "3d8a6d8e2166294449c0e67f9c16a8db757296d28259bffbe60961162d96a6e5",
+      "rows": 51
+    },
+    {
+      "file": "hsk3/runtime-loader.js",
+      "format": "code",
+      "sha256": "62e4b0628ba18d6401ae262340693f811911e247ac56489c88c485d59ae6e58a",
+      "rows": 1
+    },
+    {
+      "file": "hsk3/textbook-audit-ui.js",
+      "format": "code",
+      "sha256": "1c07c1284120b43241a9213252a440fab6cee4a0840f0201fe5a0369447cecff",
+      "rows": 24
+    },
+    {
+      "file": "hsk3/textbook-audit.js",
+      "format": "code",
+      "sha256": "88b14047a18ba8fdc2ee9ebaa265bf70d4b6cea3d7ba58d7853d68c11af63e2d",
+      "rows": 440
+    },
+    {
+      "file": "hsk3/textbook-baseline.js",
+      "format": "code",
+      "sha256": "4fd05365cec3b4647d3750a71fb858adbc62030bc341e7c737cf2dda8313b4ac",
+      "rows": 366
+    },
+    {
+      "file": "hsk3/textbook-locked-ui.js",
+      "format": "code",
+      "sha256": "1244cf25892402b3fbceca9311fb2e74e03ff656091a7371fd367a7b66f9cba3",
+      "rows": 5
+    },
+    {
+      "file": "hsk3/textbook-locked.js",
+      "format": "code",
+      "sha256": "63492c3489212b7ffd8b78b8e32822e8ca078fd97916107649a0f32c6b31ccd7",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/content-audit.js",
+      "format": "code",
+      "sha256": "2364bd4eeac5c30e9a1d22ad1495ae1adce89f0daead43363f5385f85fbcf94e",
+      "rows": 123
+    },
+    {
+      "file": "hsk4/content-final.js",
+      "format": "code",
+      "sha256": "a78ef6ff4316bd60f16f6a146b007b3e1af4ba8b725b6ddcbede73d0a675eb96",
+      "rows": 71
+    },
+    {
+      "file": "hsk4/content-ui-final.js",
+      "format": "code",
+      "sha256": "5b76e0ad5baff42868c3dfed95f0bcc6248131d42182ea9c33b9679e38d2d67f",
+      "rows": 8
+    },
+    {
+      "file": "hsk4/grammar-canonical.js",
+      "format": "code",
+      "sha256": "848fa910d446cb9b1b0db020909ce64808b3ed4f542105accc090c1c7fc799d6",
+      "rows": 18
+    },
+    {
+      "file": "hsk4/hanzi-parity.js",
+      "format": "code",
+      "sha256": "9a7dd35ac83140923612c9aa87b2cd65e023c1311a6f3b8fc4ea5839245ee950",
+      "rows": 10
+    },
+    {
+      "file": "hsk4/index.html",
+      "format": "html",
+      "sha256": "c2928aeab22f10931fd0a101a91222f24f0c46f280a5a1244eb4472d5e136790",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/lesson.html",
+      "format": "html",
+      "sha256": "0de6b03c4956dcaeb4a80e55d4776249f4c64b1bcd10c19e2c10417c0398c012",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk1.js",
+      "format": "code",
+      "sha256": "0243c7d88531066c8a8b5cdd2910f3357742a9362640001811cbd29837fced14",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk2.js",
+      "format": "code",
+      "sha256": "6e66e7daf9092e4afef89e92a2b88839ceb7a9b9428e9889f314ef5bf53f5363",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk3.js",
+      "format": "code",
+      "sha256": "d44354cb6712ba702fd4daa7a373ad3f3539964f254a73c8f1d3d1a5df10de88",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk4.js",
+      "format": "code",
+      "sha256": "cac93e84223bd94a8a7d5b39fea3661383d7a4a3194f0ef5df7575117a0ad328",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk5.js",
+      "format": "code",
+      "sha256": "a9c92d57e1d6a74b89ef43ab4d60b47f1e0c6e90d602f3a1758855feb76f8e28",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk6.js",
+      "format": "code",
+      "sha256": "c84b8fcbb6e26a063b3d9a548b508aa72597b418256e5bb40153887614f7fef5",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk7.js",
+      "format": "code",
+      "sha256": "fd26baa978aa62a5bba322fe955e8e965fccd2da4cd897726acb19828cfd6d8b",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/chunk8.js",
+      "format": "code",
+      "sha256": "69c7db50e86920269dfb5ac0a88a8990863876b841993fa1dfefe37351e63bb7",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text/load.js",
+      "format": "code",
+      "sha256": "07c15dc6c631b2c5fac98b0dc7794ff662e1293a236e8d8a659043b6598915e6",
+      "rows": 0
+    },
+    {
+      "file": "hsk4/locked-text-guard.js",
+      "format": "code",
+      "sha256": "659b5e751455796e7babca962e2c664e1b922fe084cd50cb2397f2a2f680f7f0",
+      "rows": 5
+    },
+    {
+      "file": "hsk4/locked-text-ui.js",
+      "format": "code",
+      "sha256": "a4013a3e0a36b32e30304fa6ccc98aa5a3460f1e51314ade432c7a7407b72b8a",
+      "rows": 3
+    },
+    {
+      "file": "hsk4/modules.js",
+      "format": "code",
+      "sha256": "0bc466d697cbffc5be49b924cd12348728d00b09834a5320887c915b9ca392e2",
+      "rows": 13
+    },
+    {
+      "file": "hsk4/practice-final.js",
+      "format": "code",
+      "sha256": "e6f5ce7c934e7636216b5c27d2b52849778523357edcceaa4ed9c7de8eceba03",
+      "rows": 13
+    },
+    {
+      "file": "hsk4/practice.js",
+      "format": "code",
+      "sha256": "f3c691005dda8fc64d78c8c3e1cfab79d9a4e3960a4f8686ad592738fb579762",
+      "rows": 50
+    },
+    {
+      "file": "hsk4/reviewed-practice-config.js",
+      "format": "code",
+      "sha256": "3c0c6784118f6f8400c610ff1236d756027bbb05a5f246e874aa16cbfe18751d",
+      "rows": 2
+    },
+    {
+      "file": "hsk4/runtime.js",
+      "format": "code",
+      "sha256": "ea74ed1af315f00b9163855e7779c791cce18c33940bf04cf1c1bd696b75558d",
+      "rows": 38
+    },
+    {
+      "file": "hsk4up/app-content.js",
+      "format": "code",
+      "sha256": "1fb70ea6ec7d5063aa2ee45e82286cd44acf19f40496c906ba0c92ae35583e8b",
+      "rows": 17
+    },
+    {
+      "file": "hsk4up/app-core.js",
+      "format": "code",
+      "sha256": "6e4e2d5158ca889660753615fd70f8f45e405398a73f0e1dd8b8b6035ad6316b",
+      "rows": 41
+    },
+    {
+      "file": "hsk4up/app-practice.js",
+      "format": "code",
+      "sha256": "125ef2ebcc3137642c5a6bac83c3a44fbc1dd00770258c937c36b3d7b7b0cad6",
+      "rows": 39
+    },
+    {
+      "file": "hsk4up/grammar-canonical.js",
+      "format": "code",
+      "sha256": "3271ba0e0955cd8714ab3e5b4594f50795028552115ea223a0deb9dd0f7a60a0",
+      "rows": 3
+    },
+    {
+      "file": "hsk4up/hanzi-steps.js",
+      "format": "code",
+      "sha256": "e117cbeb676f1977189fcefb5b8c729c3a47a15fe743b597faddef8e9a2a5dbc",
+      "rows": 2
+    },
+    {
+      "file": "hsk4up/index.html",
+      "format": "html",
+      "sha256": "350f4450015ca9fa68496880cb3c31573a9a9c145d3a98e0ada428cafe96d84e",
+      "rows": 0
+    },
+    {
+      "file": "hsk4up/lesson.html",
+      "format": "html",
+      "sha256": "3b93b047b741a6cbe384097371521fd224d005b38ffa0a8ad5d80b15a2d29fc5",
+      "rows": 0
+    },
+    {
+      "file": "hsk4up/reviewed-practice-config.js",
+      "format": "code",
+      "sha256": "0edab5c59616121e4ef7060de4690a16de9858f936b4c16f79daac2b4362d9b4",
+      "rows": 0
+    },
+    {
+      "file": "hsk4up/textbook-detail-ui.js",
+      "format": "code",
+      "sha256": "c9cbf70220cace39f599047beff942e0cacdbb5f64c43b413a27108b089acb38",
+      "rows": 12
+    },
+    {
+      "file": "hsk4up/textbook-locked-guard.js",
+      "format": "code",
+      "sha256": "c3fbccb06c0be32534b90266763feed2464199d5601e09b431a01d945ef0ac1c",
+      "rows": 4
+    },
+    {
+      "file": "hsk4up/textbook-locked-ui.js",
+      "format": "code",
+      "sha256": "b6d43e18e8d6e54633fea823e659ee1aa4e8775f8bcf97e38c51940b8d842cc6",
+      "rows": 4
+    },
+    {
+      "file": "hsk4up/textbook-locked.js",
+      "format": "code",
+      "sha256": "9eb16f5f7575f5f2a397fa8a8447916cab872fc81594cd720661b286492999c5",
+      "rows": 0
+    },
+    {
+      "file": "data/data-load-v5.js",
+      "format": "code",
+      "sha256": "1a5422504d274c97b1b3d8e7e8ed20ba171a2db2da5d508b8b52e0a7610a456c",
+      "rows": 0
+    },
+    {
+      "file": "data/data-load.js",
+      "format": "code",
+      "sha256": "1a5422504d274c97b1b3d8e7e8ed20ba171a2db2da5d508b8b52e0a7610a456c",
+      "rows": 0
+    },
+    {
+      "file": "data/v7-load.js",
+      "format": "code",
+      "sha256": "af7b87cdad3a1b2a5e0b6a6f767df67e3ee62968ea389ced8d136ba3dd4adb71",
+      "rows": 0
+    },
+    {
+      "file": "data/v8-load.js",
+      "format": "code",
+      "sha256": "85e4c3bdad5123973b1ec52d8742beafc0553e632df98cad7bdf1794f3715f4f",
+      "rows": 5
+    },
+    {
+      "file": "index.html",
+      "format": "html",
+      "sha256": "55a202847e44ac00d089e397d82bb97ef7335f2e25914c40fa1a5adbfad646ab",
+      "rows": 0
+    },
+    {
+      "file": "hsk2.html",
+      "format": "html",
+      "sha256": "d7ab497b9bf654821af23791d5bdd4ec5e3823539581805806a3ba2ddcc232bf",
+      "rows": 14
+    },
+    {
+      "file": "lesson.html",
+      "format": "html",
+      "sha256": "f569f82d921d2e0afea5c74dfd6e80087bf0c97c97ddfbd6ff0b1f9754e162c8",
+      "rows": 6
+    },
+    {
+      "file": "hsk1/app-core.js",
+      "format": "code",
+      "sha256": "940c1afdcdf0de950630c4dec88bce0ba22a3ce4a942fa0d0688d365123051ca",
+      "rows": 39
+    },
+    {
+      "file": "hsk1/app-practice.js",
+      "format": "code",
+      "sha256": "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d",
+      "rows": 17
+    },
+    {
+      "file": "hsk1/audio-fix.js",
+      "format": "code",
+      "sha256": "35b963b04c2c6892b0b8ca56054125762c0c284727b4009af7b07f9fd9ca9213",
+      "rows": 14
+    },
+    {
+      "file": "hsk1/auth-patch.js",
+      "format": "code",
+      "sha256": "f3d0060ed3cbcd8bdb38a1f4eaab765e2b597c309739c93b0da3a2cc8658e6df",
+      "rows": 1
+    },
+    {
+      "file": "hsk1/content-audit.js",
+      "format": "code",
+      "sha256": "3b956aec007e738bac2011f0d78a9670ac459c6bb5a866ea15fcd22590f183b0",
+      "rows": 58
+    },
+    {
+      "file": "hsk1/corrections.js",
+      "format": "code",
+      "sha256": "e5c93d9b761837e3260476171087c26a857aaef2e1cf8b029818bd9e14c37042",
+      "rows": 28
+    },
+    {
+      "file": "hsk1/data-1.js",
+      "format": "code",
+      "sha256": "36bf71a24d2eaba66b2000d4d02e8078d9dc9e503a78210ff6a0c87d42e8eb2a",
+      "rows": 216
+    },
+    {
+      "file": "hsk1/data-2.js",
+      "format": "code",
+      "sha256": "114e497150c142d6b7cb1fdeaf20c74bd100fa2c4d43bb105bbfffc15e0a2e84",
+      "rows": 233
+    },
+    {
+      "file": "hsk1/data-3.js",
+      "format": "code",
+      "sha256": "51a550d1c00cfbffb5e0ed8ad5038b61623bb130b9f6f6947a95ee9054c9a10f",
+      "rows": 257
+    },
+    {
+      "file": "hsk1/data-4.js",
+      "format": "code",
+      "sha256": "cbaa7c19c69ce11e02dbfcb4f5b7b34a3e7d8c32ced67af8e800396620fa0a84",
+      "rows": 262
+    },
+    {
+      "file": "hsk1/data-5.js",
+      "format": "code",
+      "sha256": "d90fca6515ab63cc68551239bedaf9fbd203b269f6981fc933fd633d47758e5e",
+      "rows": 268
+    },
+    {
+      "file": "hsk1/hanzi-visibility-fix.js",
+      "format": "code",
+      "sha256": "2144cd0a616c406e5e42901ab8292c466301aabe7b385ddbc356603dac97330d",
+      "rows": 0
+    },
+    {
+      "file": "hsk1/index.html",
+      "format": "html",
+      "sha256": "19af58489e8eac442ff1140de8af77177332992c1839d501992fd4fe7a43dfd2",
+      "rows": 0
+    },
+    {
+      "file": "hsk1/lesson.html",
+      "format": "html",
+      "sha256": "0eb80a62bf0e8b389d1d4fa680d988a2a606870ee374f6a3a7416c1c3da4a6bf",
+      "rows": 0
+    },
+    {
+      "file": "hsk1/practice-l12.js",
+      "format": "code",
+      "sha256": "30a0269edc7d9bb4f217df179c311371bbb343a950082795392231182a8baa24",
+      "rows": 165
+    },
+    {
+      "file": "hsk1/textbook-locked.js",
+      "format": "code",
+      "sha256": "19011d36ea43c82df0e5ed1edb0ec0be829d666933a8990d57034a189d8ec985",
+      "rows": 1
+    },
+    {
+      "file": "new-hsk1/hsk1/app-core.js",
+      "format": "code",
+      "sha256": "62721bc1d2a7c643daa6659fc6a1b2b1294af6dc4961aa0ccb000ed09d56060d",
+      "rows": 59
+    },
+    {
+      "file": "new-hsk1/hsk1/app-practice.js",
+      "format": "code",
+      "sha256": "bf23b07fd7c59fd7ddfdd812197a2a1238dba6b35d879983bca15d0f970a03b1",
+      "rows": 22
+    },
+    {
+      "file": "new-hsk1/hsk1/audio-fix.js",
+      "format": "code",
+      "sha256": "35b963b04c2c6892b0b8ca56054125762c0c284727b4009af7b07f9fd9ca9213",
+      "rows": 14
+    },
+    {
+      "file": "new-hsk1/hsk1/auth-patch.js",
+      "format": "code",
+      "sha256": "335b0a8e5072920ecfe3cc6392f8bed8e594ef62e25527ef941bc6aa97c794de",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/hanzi-visibility-fix.js",
+      "format": "code",
+      "sha256": "c26d86a151b3c8a53ad5dbb31e00b159fdd7774ebdd821f5fb8c5c2435dfda3b",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/help.html",
+      "format": "html",
+      "sha256": "7717687c9e4ca86e1780e6c76d1374ec3224c112cc6e6d32ca0d45deca9bc742",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/index.html",
+      "format": "html",
+      "sha256": "af6d6872936daadee077e0568d274119a40e892c58d10d583dd284391e13bd86",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-app.js",
+      "format": "code",
+      "sha256": "6830a8d2ae6a383fe8d6e3c29b8e126b834820dc44a25a09670e68869318ec12",
+      "rows": 133
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-bank.js",
+      "format": "code",
+      "sha256": "873c387aaedb95877e64382d40b89c55dc0dbdb3a48eead0c1e7a0fac3ae875d",
+      "rows": 1095
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-engine.js",
+      "format": "code",
+      "sha256": "e59effa4fca9adfdf601ca83377611cad9cd4afab0d7549d1ec610e42831e192",
+      "rows": 10
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-integrated.js",
+      "format": "code",
+      "sha256": "f7fb42c1b9a74e674f32803572571d1ebd4c447c72b824cb1cd2f7f6029b9363",
+      "rows": 42
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-links.js",
+      "format": "code",
+      "sha256": "41bcd7ec6bbc402b2bbf9f09e4c65990555d32c402644d5c345afdcc3ff7948e",
+      "rows": 23
+    },
+    {
+      "file": "new-hsk1/hsk1/learning-vocab.js",
+      "format": "code",
+      "sha256": "044448db43d0cad26c56f78837b6e52d5cb772201f508ed7398773b8c47f3db7",
+      "rows": 48
+    },
+    {
+      "file": "new-hsk1/hsk1/learning.html",
+      "format": "html",
+      "sha256": "551bb49f1bc32532dcb5143415f261e7a1c6fae32c0b3259a9cc126ee6222616",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/lesson.html",
+      "format": "html",
+      "sha256": "a8d6a4acd70e0fabfec2bdde353218515c40e43ecee9fd5e67ef23cf7fa0d278",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/lesson9-pilot.html",
+      "format": "html",
+      "sha256": "41663a2eb3de9dbc61da16fd55b8a0c74f98ffd0c81fe6d5a7b5ac5d0462fb60",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/new-data.js",
+      "format": "code",
+      "sha256": "4e558495b6f1726bc4f023a1857a3aac1b5238d841e5d26028c725b05e940254",
+      "rows": 476
+    },
+    {
+      "file": "new-hsk1/hsk1/new-enrichment.js",
+      "format": "code",
+      "sha256": "19ab9cf8fbf832bf7f6e855213310187ba205f4c464ccd35a3933ee97e2e55b4",
+      "rows": 388
+    },
+    {
+      "file": "new-hsk1/hsk1/new-practice-bank-packed.js",
+      "format": "code",
+      "sha256": "29334ef7e0e4a3ac96cb0af0c3071c32da758e36eaf6cfcb8ffa38ad7ff1958d",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/pilot9-data.js",
+      "format": "code",
+      "sha256": "6966a3fd65357b6f6e2b11e7814675783c80c51ab7e69ee23c8097a6476bd54a",
+      "rows": 157
+    },
+    {
+      "file": "new-hsk1/hsk1/pilot9-engine.js",
+      "format": "code",
+      "sha256": "97a7c2e2309beb584a453ae9d0e5837b9910229b470d17d0ddf479de3f0ce765",
+      "rows": 3
+    },
+    {
+      "file": "new-hsk1/hsk1/pilot9.js",
+      "format": "code",
+      "sha256": "7931fef243a4cc2c595b0bde9f554800b63840ed8a8410df9e334cbe40f9097b",
+      "rows": 82
+    },
+    {
+      "file": "new-hsk1/hsk1/pos-tips.js",
+      "format": "code",
+      "sha256": "e68ec837b951fedd73bec34c75f5f507bf05b1f87b1abffeb0ebc985fbed6746",
+      "rows": 52
+    },
+    {
+      "file": "new-hsk1/hsk1/stage1/engine.js",
+      "format": "code",
+      "sha256": "515cfc474a399be6e69e6fcb3ea2e9a249ac4147636fb1035925d380dcf641ee",
+      "rows": 44
+    },
+    {
+      "file": "new-hsk1/hsk1/stage1/sample-bank.js",
+      "format": "code",
+      "sha256": "f0f7183a64107c9aa26b3419f00495e193b998f3a389584e174f7d874c68cbdc",
+      "rows": 69
+    },
+    {
+      "file": "new-hsk1/hsk1/stage2/app.js",
+      "format": "code",
+      "sha256": "a25e0dcadf7ec84e354a4457d1ca00be8b05bb72e34dfd7628cebfb0b8004153",
+      "rows": 81
+    },
+    {
+      "file": "new-hsk1/hsk1/stage2/bank.js",
+      "format": "code",
+      "sha256": "c24e11fc24004c88b74b8239be60acc98c9d2a65f83606e69d65256553f10256",
+      "rows": 1059
+    },
+    {
+      "file": "new-hsk1/hsk1/stage2/engine.js",
+      "format": "code",
+      "sha256": "2c0f552b815a3c7ae215fee67d187887210d6c5754bbfdb726022760fc8bf12c",
+      "rows": 53
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/app.js",
+      "format": "code",
+      "sha256": "c27435c0e00bd2b94c1c72410051060be608ba1a85e901d1d46288c422e77b68",
+      "rows": 96
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/catalog.js",
+      "format": "code",
+      "sha256": "4d377f18461f58f103120adde9aed74713fc7478bb5933f4e23177e637a04f80",
+      "rows": 1332
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/engine.js",
+      "format": "code",
+      "sha256": "010cfde850b1b9a49f90b5b2ceb2c70991d255750c3514761f7b064401d36a17",
+      "rows": 74
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/media-index.js",
+      "format": "code",
+      "sha256": "d9be8f94d724d134aa99ce515a0c5f3f00b8899ad2f72a8ba4d8f3e72d45b993",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/stage3/player.js",
+      "format": "code",
+      "sha256": "5d50e436d8af720073aeda326e8114d0a885d8351283a3ef9ba4015a65f03d6c",
+      "rows": 13
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-audio-guard.js",
+      "format": "code",
+      "sha256": "22d316c848877c7e83eb691f3383795d94cfa496f601d6b01a8f2376018e77c2",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-audio-segments.js",
+      "format": "code",
+      "sha256": "15d4c2eca98f1368796ee863a3e517ff60fe5a6beb12fb3f712b47c32eec99b5",
+      "rows": 0
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-audio.js",
+      "format": "code",
+      "sha256": "c40656a5b8afd11cd0f936ea68ea874ebbb9d29bb1bd43e5718eb78ee6db4f95",
+      "rows": 12
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-data-corrections.js",
+      "format": "code",
+      "sha256": "4da1baf55ccb210b9d2e4fb89a65acf083932a34fd2addd530774e09ccf6823c",
+      "rows": 1
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-final-corrections.js",
+      "format": "code",
+      "sha256": "ca409b646b7a146d381d9deaee1e5f0edc018424a25137bcf10bab8bc840baeb",
+      "rows": 21
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-integration-corrections.js",
+      "format": "code",
+      "sha256": "17fbcb8f8344924695265fca1d735acaff9a289d0737e8e85c86bf4a16a54a3d",
+      "rows": 198
+    },
+    {
+      "file": "new-hsk1/hsk1/textbook-segment-audio.js",
+      "format": "code",
+      "sha256": "9bb1d0ea66313b6b504c37f274501c9269f8c25f848c3676a4ad561b09b4ccb5",
+      "rows": 5
+    },
+    {
+      "file": "new-hsk1/hsk1/tts-only.js",
+      "format": "code",
+      "sha256": "be06c778a4aa4aa4dc2079c234d7c497d6e681ebf6c0e06a070f604e171a93a8",
+      "rows": 3
+    }
+  ],
+  "virtualPrograms": [
+    {
+      "file": "assets/app-packed.js",
+      "virtualSource": "gzip-code@34",
+      "rows": 1,
+      "textSHA256": "d6744090581542f553edfe4d2e6d45ba37c8e5949b825e1530674e2b76d93b34"
+    },
+    {
+      "file": "assets/lesson-packed.js",
+      "virtualSource": "gzip-code@34",
+      "rows": 91,
+      "textSHA256": "50eee72abb65f7721fe9e0357959fad2262710d1d87791bba38d61fc25c1542a"
+    },
+    {
+      "file": "hsk3/index.html",
+      "virtualSource": "inline-script-1",
+      "rows": 0,
+      "textSHA256": "09c5b3171879143846234b2288069956dbfab7f54c7e1b42c8e92fd2581939ed"
+    },
+    {
+      "file": "hsk3/index.html",
+      "virtualSource": "inline-script-2",
+      "rows": 0,
+      "textSHA256": "db255859e80b92295dabd9a54aeb0f04f177c9b16f38cbd0c8d509926fe3f526"
+    },
+    {
+      "file": "hsk3/lesson.html",
+      "virtualSource": "inline-script-1",
+      "rows": 0,
+      "textSHA256": "09c5b3171879143846234b2288069956dbfab7f54c7e1b42c8e92fd2581939ed"
+    },
+    {
+      "file": "hsk3/lesson.html",
+      "virtualSource": "inline-script-2",
+      "rows": 0,
+      "textSHA256": "8596f1078b631f6870bdbcafba7b6392b9a07c2d7c797ae12293788572f8f441"
+    },
+    {
+      "file": "hsk2.html",
+      "virtualSource": "inline-script-11",
+      "rows": 14,
+      "textSHA256": "1d7d66a8861bc09852f80793ffea4a1c056b9431b037848ca3455fdb56e705cf"
+    },
+    {
+      "file": "lesson.html",
+      "virtualSource": "inline-script-12",
+      "rows": 6,
+      "textSHA256": "be3e9df97935f279fbe927def00c5c5e44e7ab9285a59c0d3ed116e6b028a389"
+    }
+  ],
+  "selectedFiles": [
+    {
+      "file": "course-app/src/dom.ts",
+      "oldRows": 0,
+      "newRows": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "oldRows": 85,
+      "newRows": 87,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "oldRows": 157,
+      "newRows": 176,
+      "sourceBytesChanged": true
+    }
+  ],
+  "mainDelta": {
+    "oldReportedRows": 157,
+    "oldSourceFullASTRows": 175,
+    "newReportedRows": 176,
+    "historicalPropertyValueMisses": 18,
+    "actualB10NewRuntimeLiterals": 1,
+    "old157ShapesStillPresent": true,
+    "oldCodeRowsChangedRange": 157,
+    "rangeDriftIsNotNewMissingText": true,
+    "newRuntimeLiteral": "Tiêu đề bài theo nội dung hiện tại; câu hỏi chỉ lấy từ ảnh chụp đã lưu của lần nộp này."
+  },
+  "historicalMainRecoveredTargets": [
+    {
+      "recordId": "6dbe2e1d08f8affc9a3c25bb",
+      "semanticKey": "active-ui:course-app/src/main.ts:labels:/body/38/declarations/0/init/properties/0/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/38/declarations/0/init/properties/0/value/arguments/1",
+      "value": "Bài học",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3498,
+        "end": 3507,
+        "line": 111,
+        "column": 23
+      }
+    },
+    {
+      "recordId": "69a245aa38f45c70c59e0f0d",
+      "semanticKey": "active-ui:course-app/src/main.ts:labels:/body/38/declarations/0/init/properties/1/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/38/declarations/0/init/properties/1/value/arguments/1",
+      "value": "Bài tập về nhà",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3535,
+        "end": 3551,
+        "line": 112,
+        "column": 26
+      }
+    },
+    {
+      "recordId": "87c1af5fc5d735ae143fbc77",
+      "semanticKey": "active-ui:course-app/src/main.ts:labels:/body/38/declarations/0/init/properties/2/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/38/declarations/0/init/properties/2/value/arguments/1",
+      "value": "Luyện tập & ôn tập",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3580,
+        "end": 3600,
+        "line": 113,
+        "column": 27
+      }
+    },
+    {
+      "recordId": "45d54cf0264e9afa832a1396",
+      "semanticKey": "active-ui:course-app/src/main.ts:labels:/body/38/declarations/0/init/properties/3/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/38/declarations/0/init/properties/3/value/arguments/1",
+      "value": "Tiến độ học tập",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3628,
+        "end": 3645,
+        "line": 114,
+        "column": 26
+      }
+    },
+    {
+      "recordId": "ed05110c76d45535e180052c",
+      "semanticKey": "active-ui:course-app/src/main.ts:partNames:/body/39/declarations/0/init/properties/0/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/39/declarations/0/init/properties/0/value/arguments/1",
+      "value": "Từ vựng & ngữ pháp · 10 câu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3727,
+        "end": 3756,
+        "line": 117,
+        "column": 37
+      }
+    },
+    {
+      "recordId": "83afd9c27f9b52537e265c4b",
+      "semanticKey": "active-ui:course-app/src/main.ts:partNames:/body/39/declarations/0/init/properties/1/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/39/declarations/0/init/properties/1/value/arguments/1",
+      "value": "Sắp xếp câu · 5 câu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3789,
+        "end": 3810,
+        "line": 118,
+        "column": 31
+      }
+    },
+    {
+      "recordId": "e0b5ede5ac2284a19c9850db",
+      "semanticKey": "active-ui:course-app/src/main.ts:partNames:/body/39/declarations/0/init/properties/2/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/39/declarations/0/init/properties/2/value/arguments/1",
+      "value": "Nghe chọn đáp án · 5 câu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3844,
+        "end": 3870,
+        "line": 119,
+        "column": 32
+      }
+    },
+    {
+      "recordId": "863fdd03c988f5c1071f42da",
+      "semanticKey": "active-ui:course-app/src/main.ts:partNames:/body/39/declarations/0/init/properties/3/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/39/declarations/0/init/properties/3/value/arguments/1",
+      "value": "Chọn bản dịch Việt–Trung · 5 câu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3922,
+        "end": 3956,
+        "line": 122,
+        "column": 5
+      }
+    },
+    {
+      "recordId": "977fc829c80d85497c46afe4",
+      "semanticKey": "active-ui:course-app/src/main.ts:partNames:/body/39/declarations/0/init/properties/4/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/39/declarations/0/init/properties/4/value/arguments/1",
+      "value": "Viết bản dịch Việt–Trung · 5 câu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 3993,
+        "end": 4027,
+        "line": 124,
+        "column": 31
+      }
+    },
+    {
+      "recordId": "533a3375b686b6732908b228",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/0/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/0/value/arguments/1",
+      "value": "Chưa có dữ liệu học tập",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5362,
+        "end": 5387,
+        "line": 167,
+        "column": 25
+      }
+    },
+    {
+      "recordId": "e5744b074234b4674d143d7d",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/1/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/1/value/arguments/1",
+      "value": "Đã lưu trong trình duyệt này",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5416,
+        "end": 5446,
+        "line": 168,
+        "column": 27
+      }
+    },
+    {
+      "recordId": "409be3b8d9de6447de8b7887",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/2/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/2/value/arguments/1",
+      "value": "Chưa lưu, vui lòng không đóng trang",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5489,
+        "end": 5526,
+        "line": 171,
+        "column": 5
+      }
+    },
+    {
+      "recordId": "c02ff7187e2fe0939052fb8a",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/3/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/3/value/arguments/1",
+      "value": "Đang lưu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5556,
+        "end": 5566,
+        "line": 173,
+        "column": 24
+      }
+    },
+    {
+      "recordId": "67fcb0da17725c2c847c36c0",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/4/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/4/value/arguments/1",
+      "value": "Tab khác đã thay đổi, hãy sao lưu trước",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5612,
+        "end": 5653,
+        "line": 176,
+        "column": 5
+      }
+    },
+    {
+      "recordId": "b35367d5d136a92d0461e485",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/5/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/5/value/arguments/1",
+      "value": "Không đọc được dữ liệu, đã chặn ghi đè",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5702,
+        "end": 5742,
+        "line": 180,
+        "column": 5
+      }
+    },
+    {
+      "recordId": "9f148bc5ada91be3dd6d921e",
+      "semanticKey": "active-ui:course-app/src/main.ts:stateLabel:/body/58/declarations/0/init/properties/6/value/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/58/declarations/0/init/properties/6/value/arguments/1",
+      "value": "Không thể lưu, hãy tải bản sao lưu",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 5793,
+        "end": 5829,
+        "line": 184,
+        "column": 5
+      }
+    },
+    {
+      "recordId": "54bce72a041f9cb8827cec56",
+      "semanticKey": "active-ui:course-app/src/main.ts:render:/body/77/body/body/7/block/body/12/alternate/alternate/alternate/consequent/expression/right/arguments/2/properties/6/value/body/body/3/consequent/expression/arguments/0/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/77/body/body/7/block/body/12/alternate/alternate/alternate/consequent/expression/right/arguments/2/properties/6/value/body/body/3/consequent/expression/arguments/0/arguments/1",
+      "value": "Tạm thời không phát được âm thanh, hãy thử lại",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 16159,
+        "end": 16207,
+        "line": 513,
+        "column": 17
+      }
+    },
+    {
+      "recordId": "9b4a6b2781fd5aa33b329f29",
+      "semanticKey": "active-ui:course-app/src/main.ts:renderLesson:/body/79/body/body/0/expression/right/arguments/2/properties/6/value/body/body/2/consequent/expression/arguments/0/arguments/1",
+      "file": "course-app/src/main.ts",
+      "astPath": "/body/79/body/body/0/expression/right/arguments/2/properties/6/value/body/body/2/consequent/expression/arguments/0/arguments/1",
+      "value": "Chưa xác nhận nộp; hãy hoàn tất nhập rồi nộp lại. Bản nháp vẫn được giữ.",
+      "sourceKind": "code-literal",
+      "expressions": [],
+      "range": {
+        "start": 20768,
+        "end": 20842,
+        "line": 629,
+        "column": 73
+      }
+    }
+  ],
+  "limits": "Candidate discovery and source identity only; static policy may omit unknown ASCII VI and does not establish visibility, official semantics, native DOM or accessibility."
+}

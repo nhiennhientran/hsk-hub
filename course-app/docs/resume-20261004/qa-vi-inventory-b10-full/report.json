@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-independent-complete-B10-source-inventory-review-not-semantic-acceptance",
+  "reviewer": "release_assembly/hsk23_adapter_review",
+  "recordedAtUtc": "2026-10-04T21:37:23.047361+00:00",
+  "sourceHead": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "sourceTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+  "actualHeadAtCollector": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "actualHeadAtFinalReview": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "actualTreeAtFinalReview": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+  "sourceWorktreeClean": true,
+  "sourceScopeStatus": "",
+  "collector": {
+    "actualCommand": "VI_SOURCE_REF=c197ca63cef12f98755a30c9d6cce3a183b3c41d node course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs",
+    "exitCode": 0,
+    "generatedAt": "2026-10-04T21:20:59.826Z",
+    "log": {
+      "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/actual-collector.log",
+      "bytes": 108940,
+      "sha256": "4fb1cb9b8793cc38d87a92ec89eeefde9b0e7a1a7c4844ccd78a3bb2317b4d56"
+    },
+    "builder": {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/build-inventory.mjs",
+      "bytes": 44899,
+      "sha256": "0c23ca8f61f6883513827d461afd82dc6684333420f32dfd27ab2106a93a0b44"
+    },
+    "svgScanner": {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/supplement-svg-scan.mjs",
+      "bytes": 13406,
+      "sha256": "e8837a6a0c26ba344ff947db7db882466faa0a518f83ba21787158f6f71875be"
+    },
+    "runtimeSourceMustMatchHead": true,
+    "newDocumentationUntrackedOutsideRuntimeScope": true,
+    "auditGeneratorNotClaimedAsRuntimeInput": true,
+    "installedParserVersion": "1.2.12",
+    "installedParserPackage": {
+      "path": "course-app/node_modules/rolldown/package.json",
+      "bytes": 6101,
+      "sha256": "6cbb247d5ff8ae3d45cba6af71ab424aa887835d917573ad1bb54ef6b2ff3b0f"
+    },
+    "parserEntry": {
+      "path": "course-app/node_modules/rolldown/dist/utils-index.mjs",
+      "bytes": 70392,
+      "sha256": "caa42e141b2597a238783b1a1745d6a1ad55be9861503f90db4d75a41e1881fd"
+    },
+    "lock": {
+      "path": "course-app/package-lock.json",
+      "bytes": 40416,
+      "sha256": "689007b5345c99f014a0cee8382a5cb65e06a9945162e057bd46d6b32586d583"
+    }
+  },
+  "actualCounts": {
+    "originalInputScopeRetained": 837,
+    "addedAdapterModules": 3,
+    "files": 840,
+    "records": 55430,
+    "recordIDs": 55430,
+    "semanticKeys": 55430,
+    "bindings": 4293,
+    "ASTSourceFiles": 256,
+    "virtualASTPrograms": 8,
+    "ASTOccurrences": 11308,
+    "pointerJSONRows": 43109,
+    "HTMLSourceOccurrences": 601,
+    "SVGVIRecords": 412,
+    "XMLStringNodes": 1243,
+    "JSONSourceFiles": 63,
+    "namedVIJSONLeaves": 24827,
+    "retainedLegacyQuestions": 1360,
+    "retainedLegacyQuestionLeaves": 15630,
+    "pilotFieldCandidates": 1798,
+    "parseDecodeFailures": 0,
+    "duplicateIDs": 0,
+    "duplicateSemanticKeys": 0
+  },
+  "sourceSetDelta": {
+    "originalFilesRemoved": [],
+    "addedFiles": [
+      {
+        "file": "hsk1-app/src/services/content/official-vi-revisions.ts",
+        "sha256": "c488eabcc22449a5734d28b75b5fdc0b91de2bfdf54427160bed38c9a9bf9f97",
+        "format": "code",
+        "component": "active-ui",
+        "state": "runtime-source-static-candidate",
+        "service": "app i18n/copy module or rendering function",
+        "consumers": [
+          "standalone HSK1",
+          "shared HSK1/2/3; module-dependent"
+        ]
+      },
+      {
+        "file": "hsk1-app/src/services/content/vi-presentation-state.ts",
+        "sha256": "1b9b11803d43325defd8c9819149d88290f548de697413a2371242657e8288fd",
+        "format": "code",
+        "component": "active-ui",
+        "state": "runtime-source-static-candidate",
+        "service": "app i18n/copy module or rendering function",
+        "consumers": [
+          "standalone HSK1",
+          "shared HSK1/2/3; module-dependent"
+        ]
+      },
+      {
+        "file": "course-app/src/official-vi-revisions.ts",
+        "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f",
+        "format": "code",
+        "component": "active-ui",
+        "state": "runtime-source-static-candidate",
+        "service": "app i18n/copy module or rendering function",
+        "consumers": [
+          "standalone HSK1",
+          "shared HSK1/2/3; module-dependent"
+        ]
+      }
+    ],
+    "originalFilesWithByteChanges": 20,
+    "fieldOccurrenceDelta": 8967,
+    "historicalASTCandidatesRecovered": 8962,
+    "netActualB10SourceASTCandidateChange": 5,
+    "historicalCompleteASTRows": 11303,
+    "historicalReportedASTRows": 2341,
+    "newCompleteASTRows": 11308
+  },
+  "knownOmissionsRecovered": {
+    "domTS": {
+      "oldRows": 0,
+      "newRows": 2,
+      "sourceBytesChanged": false,
+      "newValues": [
+        "SGK trang ${expression}${expression}",
+        " · Nội dung bổ trợ"
+      ]
+    },
+    "lessonViewTS": {
+      "oldRows": 85,
+      "newRows": 87,
+      "sourceBytesChanged": false,
+      "newValues": [
+        "Câu trả lời của bạn",
+        "合成语音 · Giọng tổng hợp · ${expression}"
+      ]
+    },
+    "mainTS": {
+      "oldReportedRows": 157,
+      "oldSourceFullASTRows": 175,
+      "newReportedRows": 176,
+      "historicalPropertyValueMisses": 18,
+      "actualB10NewRuntimeLiterals": 1,
+      "old157ShapesStillPresent": true,
+      "oldCodeRowsChangedRange": 157,
+      "rangeDriftIsNotNewMissingText": true,
+      "newRuntimeLiteral": "Tiêu đề bài theo nội dung hiện tại; câu hỏi chỉ lấy từ ảnh chụp đã lưu của lần nộp này."
+    }
+  },
+  "independentCheckFamilies": [
+    {
+      "name": "Exact complete source file SHA and requested HEAD blobs",
+      "passed": true,
+      "count": 840,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/file-head-checks.json",
+        "bytes": 164577,
+        "sha256": "de4908bfe43fde841732c442ad990316b9782122eac5223d0beb8adf3e0acbba"
+      }
+    },
+    {
+      "name": "Every direct JSON record value/ID and every nonempty named VI leaf",
+      "passed": true,
+      "files": 63,
+      "namedLeaves": 24827,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/json-coverage.json",
+        "bytes": 12328,
+        "sha256": "3d7eb757011832a061105cf3bd0262a8000d4006b31b71c7a19f04b3dccb35e1"
+      }
+    },
+    {
+      "name": "Validated existing HSK1 book overlay and immutable protected source interpretation",
+      "passed": true,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/source-json-xml-consumer-validation.json",
+        "bytes": 4001,
+        "sha256": "738d73fbf53f9ba0bdeef3bb07e28626bc9e2332ccd5fdfac09b560d18ad94e0"
+      }
+    },
+    {
+      "name": "Exhaustive independent AST child traversal including property/method values",
+      "passed": true,
+      "rows": 11308,
+      "files": 256,
+      "virtualPrograms": 8,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/ast-validation.json",
+        "bytes": 60881,
+        "sha256": "9ce29c7aab9b5584b3bde9f8b01f3e029d8e3891dd74ffc9ec4e7bc32ae4202b"
+      }
+    },
+    {
+      "name": "Independent ElementTree XML parse of all SVG string nodes, paths and source values",
+      "passed": true,
+      "files": 452,
+      "nodes": 1243,
+      "VIRecords": 412,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/source-json-xml-consumer-validation.json",
+        "bytes": 4001,
+        "sha256": "738d73fbf53f9ba0bdeef3bb07e28626bc9e2332ccd5fdfac09b560d18ad94e0"
+      }
+    },
+    {
+      "name": "All question IDs, every original leaf/options/segments/answer index from actual fetched gzip banks",
+      "passed": true,
+      "questions": 1360,
+      "leaves": 15630,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/source-json-xml-consumer-validation.json",
+        "bytes": 4001,
+        "sha256": "738d73fbf53f9ba0bdeef3bb07e28626bc9e2332ccd5fdfac09b560d18ad94e0"
+      }
+    },
+    {
+      "name": "Exact all semantic consumer bindings reconstructed from actual source",
+      "passed": true,
+      "bindings": 4293,
+      "byKind": {
+        "approved-svg-asset": 438,
+        "retained-practice-question": 1360,
+        "source-activity": 918,
+        "source-activity-version": 484,
+        "word-sense": 1093
+      },
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/source-json-xml-consumer-validation.json",
+        "bytes": 4001,
+        "sha256": "738d73fbf53f9ba0bdeef3bb07e28626bc9e2332ccd5fdfac09b560d18ad94e0"
+      }
+    },
+    {
+      "name": "Every pointer/HTML source record ID and retained legacy replay compatibility",
+      "passed": true,
+      "pointerRows": 43109,
+      "HTMLRows": 601,
+      "legacyRows": 6276,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/pointer-identity-and-legacy-compatibility.json",
+        "bytes": 1744,
+        "sha256": "b846a04f3ebfc84af55abac471e7ad4553f32396e114718eb713413ccfae3f1f"
+      }
+    },
+    {
+      "name": "Historical AST recovery separated from runtime source changes/range drift",
+      "passed": true,
+      "recoveredCandidates": 8962,
+      "netSourceChange": 5,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/historical-full-AST-quantification.json",
+        "bytes": 4839,
+        "sha256": "fb73678934d320c13f1cbdabc89415742e81b8004072e2a052b467e9f88298b5"
+      }
+    },
+    {
+      "name": "Existing actual AST probe separately executed without modifying author probe",
+      "passed": true,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/actual-bounded-ast-probe.log",
+        "bytes": 544,
+        "sha256": "e8df8cda95d462e4ed4099dca90d3dfe5f2b29db73b28687f9843a122f1ac2fd"
+      }
+    },
+    {
+      "name": "Historical full inventory and existing new builder/probe files unchanged",
+      "passed": true,
+      "historicalFiles": 39,
+      "newBuilderProbeFiles": 5,
+      "evidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/before.json",
+        "bytes": 9896,
+        "sha256": "cf7eefc2d83fcd82732bddf47a8ecb94959be3bc5f3cd547821bae5707051f0d"
+      }
+    },
+    {
+      "name": "All new source items pending official semantic audit and registries inactive",
+      "passed": true,
+      "pendingRecords": 55430,
+      "registryEvidence": {
+        "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/source-json-xml-consumer-validation.json",
+        "bytes": 4001,
+        "sha256": "738d73fbf53f9ba0bdeef3bb07e28626bc9e2332ccd5fdfac09b560d18ad94e0"
+      }
+    }
+  ],
+  "allIndependentCheckFamiliesPassed": true,
+  "immutableHistoricalInventory": {
+    "sourceHead": "835e5bd41045655cc2724ba2ba59235064ff92cf",
+    "files": 837,
+    "records": 46463,
+    "evidenceFilesUnchanged": 39,
+    "originalBuilderSHA256": "8ef5eb37677d333beb4117310f79160b902b242809edda57122bed7858949d72",
+    "newBuilderFrozenSHA256": "0c23ca8f61f6883513827d461afd82dc6684333420f32dfd27ab2106a93a0b44"
+  },
+  "newCollectorOutputs": [
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/inventory.json.gz",
+      "bytes": 12667967,
+      "sha256": "e9cec5c4be50577b5c45d68a81ee3c9d4127dca021dd63ec3c692dd660611966"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/legacy-content-contracts.json",
+      "bytes": 34829,
+      "sha256": "bf49a5f671c8dd33028018ec30ebbab86446b0ff007667d2794b3830a9c689a9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/legacy-content-layers.json",
+      "bytes": 2955,
+      "sha256": "d97a9e0de1b40dab09ebf4ba1f6438d81bbc6f5f5e47d956d4d9a6ebcb8158a0"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/legacy-practice-banks.json",
+      "bytes": 6590,
+      "sha256": "b5c094a16ea8c00b4a7793ac527ca5b5f621e585d3e82c87bcaea3fb4353e5d7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/legacy-practice-consumers.json",
+      "bytes": 5789901,
+      "sha256": "86f541c5c60f1690584f1929ab5a864da42f6593523a6c02d45dcc371376eb27"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/parse-failures.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/pilot-audit-template.json.gz",
+      "bytes": 95235,
+      "sha256": "6a2512401b763997a7cc796c88e503c3241010937b33a8fadf0a2dc3fc293846"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/pilot-source-index.json",
+      "bytes": 3015,
+      "sha256": "032978c310edc47fe083794e8e20f80bb48d621457098837b99fac634eab4190"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/runtime-files.json",
+      "bytes": 2003462,
+      "sha256": "2c9d15c08a6aa46c544f97d674cebbdc62b3dec13193ff0d88a934f206c2fdb1"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/semantic-consumers.json",
+      "bytes": 5353010,
+      "sha256": "c9fa49dfbd312cc3d7b9fba468fda872ae42f35e6e7b9ca2e1caeceef00a8b2e"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/summary.json",
+      "bytes": 108940,
+      "sha256": "4fb1cb9b8793cc38d87a92ec89eeefde9b0e7a1a7c4844ccd78a3bb2317b4d56"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/vi-inventory-b10/svg-consumers.json",
+      "bytes": 1771468,
+      "sha256": "b10ae766104a6afe61dc7a8646f4436d025e49f0357d7e62574e9287d5a40104"
+    }
+  ],
+  "targetIdentityArtifact": {
+    "path": "course-app/docs/resume-20261004/qa-vi-inventory-b10-full/final-target-identities.json.gz",
+    "bytes": 2749152,
+    "sha256": "40c1ed69089a4c261cf61ef6afacce9e745fd0392091f1dfb371607ba9482836"
+  },
+  "activeRegistries": {
+    "hsk1": null,
+    "hsk2": null,
+    "hsk3": null,
+    "activeEntries": 0,
+    "exactHeadBytesVerified": true
+  },
+  "notClaimed": [
+    "Official Vietnamese textbook semantic/page/translation approval",
+    "All website VI or arbitrary ASCII text exhaustively identified",
+    "All static or retained source candidates actually visible or shipped",
+    "All dynamic template branches/learner content enumerated",
+    "Native browser DOM or accessibility execution",
+    "Source inventory is a production release certificate",
+    "Whole raw book/history snapshot restoration or textbook edition inference"
+  ],
+  "limitations": [
+    "The language detector is an explicit candidate policy. Unknown ASCII-only Vietnamese can remain undetected.",
+    "Runtime static AST candidates include dead branches and retained duplicate producer sites; the 55430 count is neither unique semantic-unit count nor review completion.",
+    "HTML positions are source UTF-16 offsets; markup/entity representations are not a browser rendering claim.",
+    "Fresh collector executes bounded retained content-only VM layers; independent review compares all 6276 resulting IDs/semantic values with preserved source-bound historical data and separately decodes all fetched practice bank leaves. It does not simulate legacy DOM/routes/storage.",
+    "SVG source desc/title text is an asset/accessibility metadata candidate; actual embedding exposure requires native checks.",
+    "Retained HSK4 candidates have no supplied HSK4 official textbook and remain editorial/unmapped.",
+    "Both official registries stay null and all extracted records remain pending-phase-B."
+  ],
+  "writesScope": "Only actual provided collector writes its 12 new vi-inventory-b10 output files; independent QA artifacts/logs under qa-vi-inventory-b10-full. Existing builder/probe, historical inventory, runtime code, workflows, registries and raw source files unchanged.",
+  "runtimeSourceMutations": 0,
+  "workflowMutations": 0,
+  "registryMutations": 0,
+  "rawSourceMutations": 0,
+  "historicalEvidenceMutations": 0,
+  "productionMutations": 0,
+  "nativeCasesExecuted": 0,
+  "officialSemanticItemsAccepted": 0
+}

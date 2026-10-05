@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "reviewUTC": "2026-10-04T21:55:11.292678+00:00",
+  "level": 3,
+  "lesson": 3,
+  "status": "independent-original-source-fidelity-accepted",
+  "author": "native_catalogue",
+  "authorSourcePath": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l03/source-transcription.json",
+  "authorSourceSHA256": "2fef8aaa2057c41e1849bccffd137211227e500d9838ec3292bbedc39a47d82c",
+  "authorFreezeSHA256": "6aadcaaa5a38d3e4520c86decd477f95ba1bc59b1937f043e09513aaf7a3ae01",
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "officialPDFBytes": 96266563,
+  "actualPDFPageCount": 212,
+  "actualBodyPDFPages": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40
+  ],
+  "actualAppendixPDFPages": [
+    196,
+    197
+  ],
+  "bodyPrintedFooters": [
+    "019",
+    "020",
+    "021",
+    "022",
+    "023",
+    "024",
+    "025",
+    "026",
+    "027",
+    "028"
+  ],
+  "appendixPrintedFooters": [
+    "184",
+    "185"
+  ],
+  "counts": {
+    "sourceItems": 130,
+    "accepted": 130,
+    "repair": 0,
+    "hold": 0,
+    "bodyVietnameseLoci": 106,
+    "appendixContextAndTextLoci": 24,
+    "numberedWordEntries": 26,
+    "inlineWordGlosses": 2,
+    "appendixRoleUnits": 22,
+    "appendixRoleDialogueLines": 20,
+    "appendixRoleLabelledWholeParagraphs": 2,
+    "appendixWholeUnlabelledParagraphs": 0,
+    "bodyAppendixBindings": 22,
+    "visuallyReadFullSourcePages": 12,
+    "visuallyReadBoundaryPages": 1,
+    "freshOriginalDetailCrops": 9,
+    "sharedPhysicalHeaderContextIds": 1,
+    "connectedSummaryGrammarRows": 9
+  },
+  "manualCoverage": [
+    "All130 frozen sourceIDs individually checked against actual original page render; preread ledger earlier pending stage preserved unchanged.",
+    "Numbered26 words include Vietnamese/PY/POS; 咱们 printed đt.; 需要 printed đgt./dt.; 卫生间 printed wèishēng- then jiān line wrap recorded faithfully.",
+    "Two printed inline glosses 打算 định, dự định and 遇到 gặp phải included.",
+    "Body20 dialogue lines6/7/7 plus text4 TWO explicit role-labelled whole paragraphs; exact22 actual Chinese-anchor links to appendix.",
+    "Appendix text2 first6 utterances complete184; seventh complete185lefttop; no cut utterance assumed.",
+    "Text3 appendix5 left-column +2 right-column semantic order checked. Text4 both named role paragraphs complete in right column.",
+    "PDF39/footer027 begins learning-summary1–3; PDF40/footer028 completes nine grammar rows, table column labels and effort heading. Printed VI rows retain actual Chinese examples, no invented Vietnamese example translations.",
+    "Shared184 series-running-header stable physical key also appearsL2, not additional book printing; global183 heading only contextual reference, not newL3 locus.",
+    "PDF41/footer029 startsL4, excluded except visual boundary. All original pages Chinese-only examples/options are recorded as no printed VI, not official Vietnamese inferred from website."
+  ],
+  "sharedPhysicalContextKeys": [
+    "hsk3-pdf196-p184-series-running-header"
+  ],
+  "sourceObservations": [
+    {
+      "type": "printed-POS-literal",
+      "sourceId": "hsk3-official-vi:l03:p020:word-02",
+      "raw": "đt.",
+      "freshOriginalDetail": "pdf032-vocab-pronoun-pos-4x.png"
+    },
+    {
+      "type": "printed-dual-POS",
+      "sourceId": "hsk3-official-vi:l03:p025:word-26",
+      "raw": "đgt./dt.",
+      "freshOriginalDetail": "pdf037-word26-dual-POS-detail-4x.png"
+    },
+    {
+      "type": "printed-pinyin-linewrap-hyphen",
+      "sourceId": "hsk3-official-vi:l03:p022:word-15",
+      "raw": "wèishēng-jiān",
+      "note": "Physical wèishēng- at first line, jiān at next; raw source fidelity only, no runtime pinyin normalisation proposal.",
+      "freshOriginalDetail": "pdf034-word15-printed-pinyin-wrap-4x.png"
+    }
+  ],
+  "boundaries": {
+    "websiteRead": false,
+    "websiteComparison": false,
+    "runtimeChanged": false,
+    "registryChanged": false,
+    "deploymentApproved": false,
+    "sourceFidelityOnly": true,
+    "fullPageRendersReused": true,
+    "freshWholePageRendersClaimed": false,
+    "OCRUsed": false,
+    "textLayerUsedAsAuthority": false
+  }
+}

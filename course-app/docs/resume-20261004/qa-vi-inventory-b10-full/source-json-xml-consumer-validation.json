@@ -1,0 +1,151 @@
+{
+  "status": "passed-independent-source-json-xml-consumer-validation",
+  "checks": [
+    {
+      "name": "exact source identity",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "full unique identity/count",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "all actual file SHA and HEAD blobs",
+      "passed": true,
+      "details": {
+        "count": 840,
+        "allMatch": true
+      }
+    },
+    {
+      "name": "no parse/replay failures",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "official audit remains entirely pending",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "complete named JSON leaves and all direct JSON row values/IDs",
+      "passed": true,
+      "details": {
+        "jsonFiles": 63,
+        "namedVILeaves": 24827,
+        "rows": 35647
+      }
+    },
+    {
+      "name": "actual effective book overlay expected guards and resulting values",
+      "passed": true,
+      "details": {
+        "changes": 34,
+        "effectiveRows": 1186
+      }
+    },
+    {
+      "name": "all fetched practice question IDs, every leaf and original answer/index",
+      "passed": true,
+      "details": {
+        "questions": 1360,
+        "leafOccurrences": 15630,
+        "banks": 3
+      }
+    },
+    {
+      "name": "full independently parsed XML string-node/value/XPath and all VI record identities",
+      "passed": true,
+      "details": {
+        "SVGFiles": 452,
+        "allXMLStringNodes": 1243,
+        "VIRecords": 412
+      }
+    },
+    {
+      "name": "exact full semantic consumer identity and source binding sets",
+      "passed": true,
+      "details": {
+        "bindings": 4293,
+        "byKind": {
+          "approved-svg-asset": 438,
+          "retained-practice-question": 1360,
+          "word-sense": 1093,
+          "source-activity": 918,
+          "source-activity-version": 484
+        },
+        "noPlaceholderSourceViews": true
+      }
+    },
+    {
+      "name": "600 schema VI listening arrays and 186 truth-choice leaves",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "registries inspected exact frozen bytes",
+      "passed": true,
+      "details": [
+        {
+          "file": "course-app/content/official-vi-registry.json",
+          "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+          "value": {
+            "schemaVersion": 1,
+            "courses": {
+              "hsk2": null,
+              "hsk3": null
+            }
+          }
+        },
+        {
+          "file": "hsk1-app/content/official-vi-registry.json",
+          "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004",
+          "value": {
+            "schemaVersion": 1,
+            "active": null
+          }
+        }
+      ]
+    },
+    {
+      "name": "all historical inventory and existing builder/probe files unchanged",
+      "passed": true,
+      "details": {
+        "historicalFiles": 39,
+        "newBuilderProbeFiles": 5
+      }
+    },
+    {
+      "name": "both actual registry files inactive and exact HEAD bytes",
+      "passed": true,
+      "details": [
+        {
+          "file": "course-app/content/official-vi-registry.json",
+          "sha256": "d9deeedac38330b4666d6a604a3696a9a9624e0b93bc9197a7cd73776f69cb81",
+          "value": {
+            "schemaVersion": 1,
+            "courses": {
+              "hsk2": null,
+              "hsk3": null
+            }
+          },
+          "HEADBlobEqual": true,
+          "activeCount": 0
+        },
+        {
+          "file": "hsk1-app/content/official-vi-registry.json",
+          "sha256": "6f323b55400c596663608b1a25d172f313f6388907d8c7eb889f2954b248c004",
+          "value": {
+            "schemaVersion": 1,
+            "active": null
+          },
+          "HEADBlobEqual": true,
+          "activeCount": 0
+        }
+      ]
+    }
+  ],
+  "limits": "Source extraction/identity only; no official semantic or native browser approval."
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "independently-accepted-context-correction-candidate-awaiting-final-aggregate-hash-review",
+  "reviewer": "qa_hsk1_05_08",
+  "author": "root",
+  "contextInvestigationInputSHA256": "4655b2ddc0d402678a26f4f525b5d123b52c02aaa2ff5e8b7bbbb539f6ee7d31",
+  "sourcePDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "sourceRecordId": "hsk3-official-vi-20261004:l10:pdf102:vn08",
+  "candidateOrdinalOutsideInitialManifest": 136,
+  "target": {
+    "recordId": "ee4eeda1d3f100b2e82f761a",
+    "file": "course-app/content/hsk3/lesson-10.json",
+    "field": "/texts/2/context/vi",
+    "expectedEffectiveValue": "Trong văn phòng cô Lý, Tiểu Tuyết và bạn hỏi bài.",
+    "newValue": "Lưu Tiểu Tuyết cùng bạn học hỏi bài ở trong phòng làm việc của cô Lý."
+  },
+  "classification": "official-book-erratum",
+  "publisherIssuedCorrection": false,
+  "originalPrintedVietnamesePreserved": "Lưu Tiểu Tuyết hỏi bài bạn học ở trong phòng làm việc của cô Lý.",
+  "sourceTranscriptionChanged": false,
+  "independentVisualPages": [
+    102,
+    103,
+    202
+  ],
+  "semanticReview": {
+    "sourceContextRead": "PDF102/printed90 actually prints hỏi bài bạn học, placing the classmate after hỏi bài as the apparent recipient.",
+    "ChineseContextRead": "在李老师办公室，刘小雪跟同学问问题。 expresses Liu Xiaoxue together with a classmate asking questions in teacher Li’s office.",
+    "corroboratingDialogue": "The previous source dialogue explicitly proposes both students go together to ask cô Lý. The next Chinese dialogue begins 我们想问问您, and its appendix says chúng em ... hỏi cô. Teacher Li answers.",
+    "proposedCorrectionRead": "Lưu Tiểu Tuyết cùng bạn học hỏi bài ở trong phòng làm việc của cô Lý. places cùng bạn học before the action to identify joint askers, preserves the full official name and office description, and does not falsely claim publisher-issued errata.",
+    "decision": "accept explicit editorial correction to printed source wording, retaining original source and correction rationale as separate evidence"
+  },
+  "actualBaselineExpectedGuard": "The real /texts/2/context/vi equals the candidate expectedEffectiveValue in the immutable raw baseline, and its actual Chinese owner equals the printed Chinese anchor.",
+  "finalManifestAccepted": false,
+  "trustedRuntimeProofGenerated": false,
+  "productionChanged": false
+}

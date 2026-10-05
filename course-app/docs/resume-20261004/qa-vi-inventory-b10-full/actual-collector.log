@@ -1,0 +1,2793 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-10-04T21:20:59.826Z",
+  "gitHead": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "gitTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+  "actualHEADAtGeneration": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "sourceRef": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+  "snapshotMode": "runtime input bytes match requested HEAD; evidence generator and outputs have separate working-file SHA256",
+  "definition": "Rows are field occurrences/candidates, not unique semantic units, source-book match percentage, or native verification.",
+  "records": 55430,
+  "learningFieldOccurrencesByComponent": {
+    "active-ui": 0,
+    "hsk1-homework30": 2561,
+    "hsk1-legacy-exercises": 1167,
+    "hsk1-source-l1": 142,
+    "hsk1-source-l10": 266,
+    "hsk1-source-l11": 257,
+    "hsk1-source-l12": 435,
+    "hsk1-source-l13": 313,
+    "hsk1-source-l14": 380,
+    "hsk1-source-l15": 389,
+    "hsk1-source-l2": 166,
+    "hsk1-source-l3": 382,
+    "hsk1-source-l4": 262,
+    "hsk1-source-l4-historical": 0,
+    "hsk1-source-l5": 499,
+    "hsk1-source-l6": 588,
+    "hsk1-source-l7": 555,
+    "hsk1-source-l8": 462,
+    "hsk1-source-l9": 362,
+    "hsk1-stage2": 819,
+    "hsk1-stage3": 1340,
+    "hsk1-summary": 15,
+    "hsk1-textbook": 0,
+    "hsk1-textbook-effective": 1186,
+    "hsk2-illustration-svg": 0,
+    "hsk2-lesson": 7093,
+    "hsk2-lexicon": 0,
+    "hsk3-illustration-svg": 0,
+    "hsk3-lesson": 10589,
+    "hsk3-lexicon": 0,
+    "legacy-hsk1-reviewed-practice": 923,
+    "legacy-hsk2-effective": 1817,
+    "legacy-hsk2-reviewed-practice": 720,
+    "legacy-hsk3-effective": 1481,
+    "legacy-hsk3-reviewed-practice": 1335,
+    "legacy-ui": 0,
+    "retained-hsk1-producer": 0,
+    "shared-summary": 33
+  },
+  "missingChineseContextByComponent": {
+    "active-ui": 581,
+    "hsk1-homework30": 0,
+    "hsk1-legacy-exercises": 104,
+    "hsk1-source-l1": 0,
+    "hsk1-source-l10": 4,
+    "hsk1-source-l11": 0,
+    "hsk1-source-l12": 0,
+    "hsk1-source-l13": 0,
+    "hsk1-source-l14": 0,
+    "hsk1-source-l15": 0,
+    "hsk1-source-l2": 0,
+    "hsk1-source-l3": 2,
+    "hsk1-source-l4": 0,
+    "hsk1-source-l4-historical": 0,
+    "hsk1-source-l5": 2,
+    "hsk1-source-l6": 8,
+    "hsk1-source-l7": 6,
+    "hsk1-source-l8": 3,
+    "hsk1-source-l9": 4,
+    "hsk1-stage2": 0,
+    "hsk1-stage3": 0,
+    "hsk1-summary": 0,
+    "hsk1-textbook": 0,
+    "hsk1-textbook-effective": 0,
+    "hsk2-illustration-svg": 0,
+    "hsk2-lesson": 0,
+    "hsk2-lexicon": 0,
+    "hsk3-illustration-svg": 0,
+    "hsk3-lesson": 0,
+    "hsk3-lexicon": 0,
+    "legacy-hsk1-reviewed-practice": 0,
+    "legacy-hsk2-effective": 0,
+    "legacy-hsk2-reviewed-practice": 0,
+    "legacy-hsk3-effective": 0,
+    "legacy-hsk3-reviewed-practice": 0,
+    "legacy-ui": 2480,
+    "retained-hsk1-producer": 3027,
+    "shared-summary": 0
+  },
+  "countsByComponent": {
+    "active-ui": 1794,
+    "hsk1-homework30": 3026,
+    "hsk1-legacy-exercises": 1167,
+    "hsk1-source-l1": 142,
+    "hsk1-source-l10": 270,
+    "hsk1-source-l11": 257,
+    "hsk1-source-l12": 435,
+    "hsk1-source-l13": 313,
+    "hsk1-source-l14": 380,
+    "hsk1-source-l15": 389,
+    "hsk1-source-l2": 166,
+    "hsk1-source-l3": 384,
+    "hsk1-source-l4": 262,
+    "hsk1-source-l4-historical": 256,
+    "hsk1-source-l5": 501,
+    "hsk1-source-l6": 596,
+    "hsk1-source-l7": 561,
+    "hsk1-source-l8": 465,
+    "hsk1-source-l9": 366,
+    "hsk1-stage2": 1059,
+    "hsk1-stage3": 1340,
+    "hsk1-summary": 15,
+    "hsk1-textbook": 1177,
+    "hsk1-textbook-effective": 1186,
+    "hsk2-illustration-svg": 185,
+    "hsk2-lesson": 7302,
+    "hsk2-lexicon": 452,
+    "hsk3-illustration-svg": 227,
+    "hsk3-lesson": 12192,
+    "hsk3-lexicon": 1046,
+    "legacy-hsk1-reviewed-practice": 923,
+    "legacy-hsk2-effective": 1817,
+    "legacy-hsk2-reviewed-practice": 720,
+    "legacy-hsk3-effective": 1481,
+    "legacy-hsk3-reviewed-practice": 1335,
+    "legacy-ui": 2637,
+    "retained-hsk1-producer": 8573,
+    "shared-summary": 33
+  },
+  "countsByVisibility": {
+    "active": 17730,
+    "active-archive-catalogue": 1167,
+    "active-current-display": 1186,
+    "active-frozen-bank": 3901,
+    "active-legacy-bank": 819,
+    "active-versioned": 5458,
+    "active-via-validated-book-clone": 1160,
+    "historical-static-export-not-current-catalogue": 256,
+    "legacy-effective-content-only-replay": 6276,
+    "legacy-runtime-reachability-candidate": 2637,
+    "loaded-canonical-reference-not-visible": 1498,
+    "loaded-metadata-not-confirmed-visible": 2546,
+    "retained-legacy-bank-not-loaded-by-primary-engine": 1095,
+    "retained-route-runtime-candidate": 7478,
+    "runtime-source-static-candidate": 1794,
+    "source-accessibility/assetmetadata": 412,
+    "superseded-frozen-value": 17
+  },
+  "countsBySourceKind": {
+    "code-literal": 10605,
+    "dynamic-template": 703,
+    "explicit-language-field": 30266,
+    "html-attribute": 34,
+    "html-text": 567,
+    "schema-declared-vietnamese-array": 600,
+    "schema-declared-vietnamese-legacy-truth-choice": 186,
+    "svg-embedded": 412,
+    "unlabelled-vietnamese-string": 12057
+  },
+  "files": 840,
+  "parseOrDecodeFailures": 0,
+  "identityChecks": {
+    "duplicateIDs": 0,
+    "duplicateSemanticKeys": 0
+  },
+  "measuredContent": {
+    "hsk1": {
+      "lessons": 15,
+      "wordSenseRecords": 344,
+      "sourceActivities": 484
+    },
+    "hsk2": {
+      "lessons": 15,
+      "textUnits": 60,
+      "lineRecords": 311,
+      "wordRecords": 226,
+      "grammarUnits": 45
+    },
+    "hsk3": {
+      "lessons": 18,
+      "textUnits": 72,
+      "lineRecords": 427,
+      "wordRecords": 523,
+      "grammarUnits": 63
+    }
+  },
+  "legacyLayerErrors": [],
+  "legacyLessonCounts": {
+    "hsk2": 15,
+    "hsk3": 20
+  },
+  "displayOverlay": {
+    "revision": "hsk1-display-20261004-01",
+    "changes": 34,
+    "effectiveVietnameseRows": 1186,
+    "changedVietnameseRows": 26
+  },
+  "bindings": 4293,
+  "semanticIdentityCountsByKind": {
+    "approved-svg-asset": 438,
+    "retained-practice-question": 1360,
+    "source-activity": 918,
+    "source-activity-version": 484,
+    "word-sense": 1093
+  },
+  "legacyPracticeBanks": [
+    {
+      "course": "legacy-hsk1",
+      "component": "legacy-hsk1-reviewed-practice",
+      "virtualFile": "legacy-runtime://practice/hsk1/HSK1-V5.0-2026-08-15",
+      "version": "HSK1-V5.0-2026-08-15",
+      "lessons": 15,
+      "questions": 360,
+      "questionLeafOccurrences": 3836,
+      "questionKeys": {
+        "id": 360,
+        "tier": 360,
+        "type": 360,
+        "prompt_vi": 360,
+        "stem": 360,
+        "options": 360,
+        "answer": 360,
+        "explanation_vi": 360
+      },
+      "VietnameseOccurrences": 923,
+      "producer": "hsk1/app-practice.js",
+      "producerSHA256": "84a0cd6063facef50e06f92c1dbe2e4128d126495816565a0143827450f33b4d",
+      "decodedJSONSHA256": "3735fa14d26affc74024ecc3b2b6330768bc5d050f660176fa3ff69761a12d38",
+      "gzipSHA256": "45c6d482136a27bf5184b3bf3214666e2f7f9bdb4b6b89bdeab3fca0d927a790",
+      "metadataDisposition": "Payload-wide language extraction retained; QA/design/source metadata is separately marked. Unfetched alternate gzip/split chunks do not count as current practice.",
+      "mappedToUploadedBooks": false,
+      "fetchChunkCount": 4
+    },
+    {
+      "course": "legacy-hsk2",
+      "component": "legacy-hsk2-reviewed-practice",
+      "virtualFile": "legacy-runtime://practice/hsk2/HSK2-V5.8-2026-08-15",
+      "version": "HSK2-V5.8-2026-08-15",
+      "lessons": 15,
+      "questions": 360,
+      "questionLeafOccurrences": 4188,
+      "questionKeys": {
+        "id": 360,
+        "tier": 360,
+        "type": 360,
+        "prompt_vi": 360,
+        "stem": 360,
+        "options": 345,
+        "answer": 360,
+        "explanation_vi": 360,
+        "skill": 360,
+        "segments": 15
+      },
+      "VietnameseOccurrences": 720,
+      "producer": "assets/lesson-practice.js",
+      "producerSHA256": "afd3c2821eba75a839eca240c7b6926003509af66a69e5cd9887ba813dfef9a3",
+      "decodedJSONSHA256": "498659bc0c3a377f116460497a1c8de07fe28bf61239973875bf1f698f009cb0",
+      "gzipSHA256": "409aeb4b343533104673cf959fc30d7ea9b1dfac5f078b1edd2ee333325f7afe",
+      "metadataDisposition": "Payload-wide language extraction retained; QA/design/source metadata is separately marked. Unfetched alternate gzip/split chunks do not count as current practice.",
+      "mappedToUploadedBooks": false,
+      "fetchChunkCount": 5
+    },
+    {
+      "course": "legacy-hsk3",
+      "component": "legacy-hsk3-reviewed-practice",
+      "virtualFile": "legacy-runtime://practice/hsk3/V1.1",
+      "version": "V1.1",
+      "lessons": 20,
+      "questions": 640,
+      "questionLeafOccurrences": 7606,
+      "questionKeys": {
+        "id": 640,
+        "tier": 640,
+        "type": 640,
+        "prompt_vi": 640,
+        "stem": 540,
+        "options": 540,
+        "answer": 640,
+        "explanation_vi": 640,
+        "skill": 640,
+        "segments": 100
+      },
+      "VietnameseOccurrences": 1335,
+      "producer": "hsk3/app-practice.js",
+      "producerSHA256": "141b1c35ffba3ab9dde5f5bd3fce82ca84c5b645f5518b929626f67118300b67",
+      "decodedJSONSHA256": "ebd6a11f9d54f3ab1dd43ffad14658e7dfda6c7fafac8287c9d825a70afb222a",
+      "gzipSHA256": "c2510865329f9121b93d3bead025c29ef37418e0c487e8394aa9d7427b11edba",
+      "metadataDisposition": "Payload-wide language extraction retained; QA/design/source metadata is separately marked. Unfetched alternate gzip/split chunks do not count as current practice.",
+      "mappedToUploadedBooks": false,
+      "fetchChunkCount": 9
+    }
+  ],
+  "svg": {
+    "schemaVersion": 1,
+    "sourceHead": "c197ca63cef12f98755a30c9d6cce3a183b3c41d",
+    "sourceTree": "b83fd52aff2f547681cf9c126ee0b196377f0797",
+    "snapshotMode": "requested git revision; exact working-source SHA matches required",
+    "scannedSVGAssets": 452,
+    "activeApprovedSVGAssets": 438,
+    "activeManifestBindings": 438,
+    "historicalHSK1SVGAssets": 10,
+    "retainedIconSVGAssets": 4,
+    "allStringElementCounts": {
+      "title": 448,
+      "text": 380,
+      "desc": 412,
+      "attribute": 3
+    },
+    "stringLanguageClassifications": {
+      "Chinese": 442,
+      "other-language-or-graphic-label": 387,
+      "Vietnamese": 412,
+      "Chinese-pinyin": 2
+    },
+    "vietnameseSVGRecords": 412,
+    "activeVietnameseSVGRecords": 412,
+    "learningVietnameseSVGRecords": 0,
+    "accessibilityVietnameseSVGRecords": 412,
+    "bindings": 438,
+    "falsePositiveCandidates": [
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-1.svg",
+        "assetSHA256": "982bb62b22dd5a4a9053501b3ddf23a64a2b9d8138b213f1c2e823e90d9e086c",
+        "tag": "title",
+        "elementId": null,
+        "xpath": "/svg[1]/title[1]",
+        "value": "两个人在红灯笼下拱手问候，上方写着拼音Guònián hǎo。",
+        "classification": "Chinese-pinyin",
+        "reason": "Chinese title explicitly identifies Guònián hǎo as 拼音"
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-1.svg",
+        "assetSHA256": "982bb62b22dd5a4a9053501b3ddf23a64a2b9d8138b213f1c2e823e90d9e086c",
+        "tag": "text",
+        "elementId": null,
+        "xpath": "/svg[1]/text[1]",
+        "value": "Guònián hǎo",
+        "classification": "Chinese-pinyin",
+        "reason": "Chinese title explicitly identifies Guònián hǎo as 拼音"
+      }
+    ],
+    "parseFailures": [],
+    "inputSHA256": [
+      {
+        "file": "course-app/content/hsk2/lesson-01.json",
+        "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+        "bytes": 173130
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-02.json",
+        "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+        "bytes": 179840
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-03.json",
+        "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+        "bytes": 188281
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-04.json",
+        "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+        "bytes": 169778
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-05.json",
+        "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+        "bytes": 202034
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-06.json",
+        "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+        "bytes": 217562
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-07.json",
+        "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+        "bytes": 183965
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-08.json",
+        "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+        "bytes": 187506
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-09.json",
+        "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+        "bytes": 215664
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-10.json",
+        "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+        "bytes": 187727
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-11.json",
+        "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+        "bytes": 192945
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-12.json",
+        "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+        "bytes": 207573
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-13.json",
+        "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+        "bytes": 186234
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-14.json",
+        "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+        "bytes": 191389
+      },
+      {
+        "file": "course-app/content/hsk2/lesson-15.json",
+        "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+        "bytes": 204327
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-01.json",
+        "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+        "bytes": 228151
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-02.json",
+        "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+        "bytes": 265729
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-03.json",
+        "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+        "bytes": 293275
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-04.json",
+        "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+        "bytes": 264969
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-05.json",
+        "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+        "bytes": 286418
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-06.json",
+        "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+        "bytes": 302605
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-07.json",
+        "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+        "bytes": 299957
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-08.json",
+        "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+        "bytes": 263568
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-09.json",
+        "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+        "bytes": 283177
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-10.json",
+        "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+        "bytes": 268432
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-11.json",
+        "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+        "bytes": 265670
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-12.json",
+        "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+        "bytes": 280035
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-13.json",
+        "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+        "bytes": 235627
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-14.json",
+        "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+        "bytes": 233065
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-15.json",
+        "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+        "bytes": 282461
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-16.json",
+        "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+        "bytes": 232222
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-17.json",
+        "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+        "bytes": 246292
+      },
+      {
+        "file": "course-app/content/hsk3/lesson-18.json",
+        "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+        "bytes": 288224
+      },
+      {
+        "file": "hsk1-app/content/source-activities/lesson-04.json",
+        "sha256": "c59eec5284422b59896f0dbb36f7e0bd37d5d13c28a579bc3e3e6c85aa61af21",
+        "bytes": 78658
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-airport-welcome.svg",
+        "sha256": "b2a673a10fb792727698f1a71deb8c6bd95878c0bb55799ba6bb9bbaa431ba06",
+        "bytes": 8061
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-apology.svg",
+        "sha256": "dc70fb9a83c169914b425dfc808640a9eebfb2c49f0ebc334a3e2b5b50b6820d",
+        "bytes": 4625
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-boarding-plane.svg",
+        "sha256": "a762a5e1c94897efb9a89448f1a9eb250f9f001bb70b3147e7d8d2d8e4842876",
+        "bytes": 6895
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-car-conversation.svg",
+        "sha256": "0f3fdd53973bf745a0acbae056856c75c25805557bbcc7c0fa4b4b6348942509",
+        "bytes": 6100
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-carry-bags.svg",
+        "sha256": "5241e8ad15a7ce4fd0cebc9bb60bc26cdece9a60fc68b3b0efab16f4915da40e",
+        "bytes": 4570
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-duck-message.svg",
+        "sha256": "9aac4d5260a1cfa29f7ee96b2409d69df80d38541ea57ffe7e1602e84c422c4d",
+        "bytes": 2222
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-duck-serving.svg",
+        "sha256": "ab632e9d1aecf35fae3a3b52311f477576fcadcf0e2b68060d2a5d11723d24d3",
+        "bytes": 3286
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-family-meal.svg",
+        "sha256": "1be1a0b1ee0ca8b0f53ad4c4cbbf2f00628fbe7c9dbe7bd6ccc9c2fbe22e9bb0",
+        "bytes": 6780
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-family-road-trip.svg",
+        "sha256": "c9a5d6b6f9987ad47ded824ee8a47358ef7dbe70ac3378334f25212505002129",
+        "bytes": 7099
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-introducing.svg",
+        "sha256": "609fab5340dcabd1482e2029565795660223301a924daecf5bf6f1ddf80164a4",
+        "bytes": 5609
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-phone-in-car.svg",
+        "sha256": "39bb8accfb8fbce02c84afc4a2840647d8adebb3c6e13dcadc219593dd88ea97",
+        "bytes": 2503
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-sightseeing.svg",
+        "sha256": "b746d0918170f50be05127e4c78786d4d48823dfb95434092cb3f221d5b5e650",
+        "bytes": 6106
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l01-wake-seven.svg",
+        "sha256": "714ad2f3e3e6de08ce5656071bb4d30b494c248b40aa68cb320bca28048e727f",
+        "bytes": 3087
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-culture.svg",
+        "sha256": "f56fc21e35df93fab69f1fac70df84a91abd6f9c16c8cdb793665362104f5c17",
+        "bytes": 3515
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-practice-1.svg",
+        "sha256": "33726733a656ccd448b2986bb095574e29845bbd2d03c2c0d452335a518f8bd1",
+        "bytes": 1921
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-practice-2.svg",
+        "sha256": "07fadb63c283054e66d4638242bd2e0899849cabd76a10857d2a254af9e55ddb",
+        "bytes": 3371
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-practice-3.svg",
+        "sha256": "95d0b5f885a9924eff05b2eb9c787c33f0d97e6c96b60a12ec9c7b5cb840f5d1",
+        "bytes": 3391
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-practice-4.svg",
+        "sha256": "5538d49a8ffb8df2cd376e7f416b6c43d6e5ee9dbb54175ef11ab6f0a70f9fd2",
+        "bytes": 3014
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-text1.svg",
+        "sha256": "85fb0ad9899865c56d3194d72b7c1895ee6cc4686d41d33ab5b29acba5769b5c",
+        "bytes": 5187
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-text2.svg",
+        "sha256": "10639f4da3943585fb5a4bcc0242056d68a3038cb7b632065f5fd2159919e540",
+        "bytes": 3969
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-text3.svg",
+        "sha256": "1a6e10e39e074b07832fda8bad19d64de06fc408dbc21ea1c398b8738f4cd3a4",
+        "bytes": 2043
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-text4.svg",
+        "sha256": "c10ffadc85c437e2eb5f5c7868ea63e7f884cedfc5258225ef49e223b897b781",
+        "bytes": 2109
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-warmup-1.svg",
+        "sha256": "b8d274c51b955b0b171dfb17b0b0bcab711d9338fe7d1ea0b82ecb6f8c0de80e",
+        "bytes": 2913
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-warmup-2.svg",
+        "sha256": "1ba4fce391658ab32437874b3e9d88e91d3ea1b30124590bb03f6f3e904b2f78",
+        "bytes": 3429
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-warmup-3.svg",
+        "sha256": "618bbfd371d9f8106049bd7742b61445027f433a130f897c7d56b5ca4eac3d92",
+        "bytes": 5482
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l02-warmup-4.svg",
+        "sha256": "7210e44de23466cc3bf5fe75837c5d9bd4d2a97bce70513716465c85c4e65edc",
+        "bytes": 2145
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-culture.svg",
+        "sha256": "0cbce2b455a314bba00e1a977ea492096b56e49181fb85e51d5cbb637ce5eab5",
+        "bytes": 16298
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-practice-1.svg",
+        "sha256": "9a34b449eee25f8e0c327f477a9a882212c84d0affbd0d84ddc1cf4f697db2c6",
+        "bytes": 2308
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-practice-2.svg",
+        "sha256": "0777c39ce89973f10c82dd91eef887f106b4d094217acdbc66d2f6123a55ba0f",
+        "bytes": 2229
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-practice-3.svg",
+        "sha256": "88c9d3a9f67c225bb8d51b0bc1d4b6efb6f946f21a228c4fdb9b7c2083f48b8f",
+        "bytes": 3906
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-practice-4.svg",
+        "sha256": "37ac8e628377f98ed83843d701924536454a300110f1f40fd67c5bd67b8cdce3",
+        "bytes": 3583
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-text1.svg",
+        "sha256": "c3b2043fda5700a01456344a993b6444aef91da79190b41733346ed4b4f1ec07",
+        "bytes": 4074
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-text2.svg",
+        "sha256": "f2a2763824fd82e00f89cec939252acfd28c99c2c5d095f469ad4305d2197b2b",
+        "bytes": 4276
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-text3.svg",
+        "sha256": "93408366f159a35ac0e498e0c417c4c52908110ea61b963234ff4ddcec3f730b",
+        "bytes": 2460
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-warmup-1.svg",
+        "sha256": "f081f90edb43734f5638cf094036142d3031a37ae5f91041d4f511622517fa36",
+        "bytes": 2624
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-warmup-2.svg",
+        "sha256": "370a40fc312ca9be2921bdc37409616c311a30b390e8e904610680da73efe0af",
+        "bytes": 3859
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-warmup-3.svg",
+        "sha256": "3ae546c2c38f1f4ce1c9cf56d14b9675eae2431de1401b000530f9560f3725cd",
+        "bytes": 2900
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l03-warmup-4.svg",
+        "sha256": "648f80bec718e726d053cf61ab638316fc9ad9ca419f03aacfbf02b6de10dbca",
+        "bytes": 1610
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-practice-1.svg",
+        "sha256": "1117f785606e81b6a28a2ebdff3b647602b2cb75ce8597b77829b3b383f72eb2",
+        "bytes": 4494
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-practice-2.svg",
+        "sha256": "05f5e6813bdcfcd693ebbe0708cf2b86dcde55472f6c8d4d10b0965361868c8d",
+        "bytes": 2226
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-practice-3.svg",
+        "sha256": "6a9bd1c2cb329398a713bf94653be6f268a188d1e34400a657a1717831ef3944",
+        "bytes": 1981
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-practice-4.svg",
+        "sha256": "30923aab92263c91b672e9ee2ffb713f625ce8befbb02cc6835b2c8c8868df08",
+        "bytes": 4389
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-text1.svg",
+        "sha256": "68b2cc3bac8aafa01a7deff7aac8a8d029b1e5ddfb9367aac1aed582afec646d",
+        "bytes": 3954
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-text2.svg",
+        "sha256": "5e4569099478b47018bdba3603180a8663d06185ae58d2a27ed65c35b14485b0",
+        "bytes": 3693
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-text3.svg",
+        "sha256": "63928a7c6830738c4dfa842a8efd8eeaf63ce674035a9122eccc27bcfbe9e9a4",
+        "bytes": 3258
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-warmup-1.svg",
+        "sha256": "78aa292e33302c7bf97a3527a924f9d2ac1bc9e91cbd55434706009e53f163d3",
+        "bytes": 2669
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-warmup-2.svg",
+        "sha256": "e72a6f689454e18e673bea05c539187f0f2f7c93504ce0a03c8ea8cd60bdd340",
+        "bytes": 3797
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-warmup-3.svg",
+        "sha256": "ffcbff3d3e20548a3a0051ab34ee42f4400cfae1662f576691cee7b38f84d308",
+        "bytes": 1931
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l04-warmup-4.svg",
+        "sha256": "e77ef537bab555ea94394f348e4b801a42cb3e00b577094fbd2f640dd3f37870",
+        "bytes": 1556
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-culture.svg",
+        "sha256": "03ccf99ac2f268d0381e466eb464f567afd173647bb45eee2b7e5f184a061d7a",
+        "bytes": 6384
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-direction-1.svg",
+        "sha256": "4373d870305885bf2f7f2621bec6f75b5646784119ce83b37808b176b354857a",
+        "bytes": 4374
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-direction-2.svg",
+        "sha256": "4562c16f9187c27d51aa922ad7a49d8ab692f46ff0307db54562231cd5a77759",
+        "bytes": 4903
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-direction-3.svg",
+        "sha256": "899a6c387e887f168944fca7228125c2c50a283acf40f38abad554e39114f801",
+        "bytes": 4356
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-direction-4.svg",
+        "sha256": "7206bc2fe70e8bb0a8a2235339acab16e476941f5ba0c24b1fbd6bc019d04f52",
+        "bytes": 4321
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-direction-5.svg",
+        "sha256": "bf43633b3c79a98d46949b71ccbbf3193ca7e0fe2537c3d674e907a3e70deb62",
+        "bytes": 4893
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-direction-6.svg",
+        "sha256": "aa0d26f8a450914471baab6458e58cb688f43b6ab25b126c5fd27b205c3e3bd6",
+        "bytes": 4426
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-practice-1.svg",
+        "sha256": "f7f7169565c2d0f2b66329f8705332f2a98e582aab6ed3f7ec1766e1091f0c32",
+        "bytes": 2760
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-practice-2.svg",
+        "sha256": "78b27ab341f07d6b4a33c8d13cfcdfd3db0b4bf3dafe801dfeef5a476aa8971c",
+        "bytes": 4521
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-practice-3.svg",
+        "sha256": "4b9a75f2d36a1b92f468d82610d6ecc283194943fc8af9d177a1f60235fe32ad",
+        "bytes": 3918
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-practice-4.svg",
+        "sha256": "f3eac9bcc0e9ed62536dc13e0f28a3415631d78f843bd558ef09bbf761d35ec8",
+        "bytes": 3186
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-text1.svg",
+        "sha256": "010838bb124e95ff9b64ba71e8f2a9bcb7cbb052f491633cfb1b7eab87476631",
+        "bytes": 2516
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-text2.svg",
+        "sha256": "a31b22c2c07982f18e9929ffd449cd0e06ba2711041b6dd0a6665e2dcdc24dfd",
+        "bytes": 8017
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-text3.svg",
+        "sha256": "cc5ce4026ce31d8f675fa8b866e8825034b2b5dc9f86555e89ac534667324a86",
+        "bytes": 7351
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-warmup-1.svg",
+        "sha256": "11c277a3d415d419adf5cbb271e9c76face0d5d9631179adbff7f3f3faf4638f",
+        "bytes": 1329
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-warmup-2.svg",
+        "sha256": "144060567a9e52bf5dd61b3ac79b0395ee897550414c85fac632724845eac748",
+        "bytes": 2298
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-warmup-3.svg",
+        "sha256": "f2fc60edf9b5cecf32e34ef7ca79f90f651dfda1bf213c069be0bdc306de7eea",
+        "bytes": 1843
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l05-warmup-4.svg",
+        "sha256": "d8d6a29285d1b14a4111051b8e97b0499c96c38bebce656ba0b2167ba1eadc6c",
+        "bytes": 2162
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-culture.svg",
+        "sha256": "c07c056e7434eb0cdfeea55e3fe64ab3fad02c2710721a88b3a3694bffaf8db0",
+        "bytes": 3262
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-practice-1.svg",
+        "sha256": "ad35debf26ff3964166eebbe9af03a524d88a233dce5b8f347ea18fb4e716750",
+        "bytes": 6067
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-practice-2.svg",
+        "sha256": "5707236b74be69c8e0f9cfebd804202d5c57d318d0ceb0a64a1f4f242ce5a2f3",
+        "bytes": 2633
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-practice-3.svg",
+        "sha256": "f74e8afdc64b929fc544f703e7edd295901358f1f89df1ec655b900a3f8cd9b8",
+        "bytes": 4651
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-practice-4.svg",
+        "sha256": "c299bbb0344bb2db7e57623ef4bec1322971ebeb8310bc42c15b01965eee846b",
+        "bytes": 2618
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-text1.svg",
+        "sha256": "ab88466dca1aa678e09e38b1fcf96e67f070cd8fe0e83408b98112a3b427f7b8",
+        "bytes": 3496
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-text2.svg",
+        "sha256": "a7bdf7ac4b7f5285a5eb2f7caf4514f5a1c6cc4e1baca49ac3f40c5cfb633ac3",
+        "bytes": 8882
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-text3.svg",
+        "sha256": "bc2c32e87ee80156a1bfde00b20e482665a1b55f1d04669be61d581f2b2d9cf3",
+        "bytes": 7467
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-text4.svg",
+        "sha256": "e6b6e168fb025af0035306be3637ddf01991da3fff66b362a08a8e2d1f0e6fa5",
+        "bytes": 5920
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup1-1.svg",
+        "sha256": "0b9d80fd8ff2e4e481ca627bd4e93ff39a4e5fb6797db18facb9ef26add6d06d",
+        "bytes": 5189
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup1-2.svg",
+        "sha256": "bc121b9ad2627f162530987e21d7f1691c535dd6fb5384cc40a4227b0de32bd9",
+        "bytes": 3584
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup1-3.svg",
+        "sha256": "c15384550c848f52da5fd6d112db30e08583ac0e6e372e46b35611fe14d0e8fa",
+        "bytes": 1655
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup1-4.svg",
+        "sha256": "d61998778da41407bcfe16638f7e45e86ca29f37ec23d5f3b43dde018795b855",
+        "bytes": 1850
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup2-1.svg",
+        "sha256": "a1384cc99daccc05992e563ef86353e8c9306762d958596a3c880d8304e5a63d",
+        "bytes": 5378
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup2-2.svg",
+        "sha256": "58fa2f70c2e72c29ddad13f8e23a8db500044c0c8a3c991a1ee4c51f72af4de3",
+        "bytes": 4313
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup2-3.svg",
+        "sha256": "51e0126c862af16169904b849f6b8ea63a88e494ef3a9636b478716d7667fa12",
+        "bytes": 6063
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l06-warmup2-4.svg",
+        "sha256": "8cc432af635d797f3e7ac288dc264f09bf9a5dc993e7f1e8808afcda9e3421ad",
+        "bytes": 2619
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-practice-1.svg",
+        "sha256": "54f6ee10886709df41eb3882336c24709b9d4908915e1578a2585b0834d17868",
+        "bytes": 4313
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-practice-2.svg",
+        "sha256": "9b0ebdf6ac31a8346d9686f2662d67fcd25f3dd3790382903e7ce90382ad8896",
+        "bytes": 5156
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-practice-3.svg",
+        "sha256": "d86a4e01249bc8b0e9f6fd572944384959ccf77c106d0b36b1739a80dbc53f9d",
+        "bytes": 3313
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-practice-4.svg",
+        "sha256": "4095062db4662e12d7aa500d2624d909486bb450e645f55dce7966a809de1bf9",
+        "bytes": 3257
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-text1.svg",
+        "sha256": "a77f81f861956d3c07fea02faa8ad5f212e2f25268c43c6ff8b628829fb0d224",
+        "bytes": 3030
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-text2.svg",
+        "sha256": "9edaba505f99901090ec0e700313b264215a9a2469accc37522fce5d12a8a96c",
+        "bytes": 3585
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-warmup1-1.svg",
+        "sha256": "9e4a2eb2f86feb9fce42d7655ed81882f6c5c2197c662be4c2197ffd53e361ed",
+        "bytes": 1224
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-warmup1-2.svg",
+        "sha256": "6573ffe2fa737bf88c5219073eb16dff67b52d9c3234eaeb6afd20b535b90f17",
+        "bytes": 1912
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-warmup1-3.svg",
+        "sha256": "416aea82ae32eb3ddab1026336ab1b4a7d9c4d3085055dc9d1713af6e50fdf23",
+        "bytes": 5204
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l07-warmup1-4.svg",
+        "sha256": "fbb414ed1d1b5a59ece01c6d8cea992d287e917913e9f726e34e7d775fca9c9d",
+        "bytes": 3041
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-culture.svg",
+        "sha256": "10b683b899aca32ea3e3222eb73a576bec10055245e1941bf7cebfa59a1b5ff1",
+        "bytes": 957
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-practice-1.svg",
+        "sha256": "616a0bb72763bdb3d257d2668bc9a8ee5d5b9393526bb9ebdc40eb2686ba4539",
+        "bytes": 2838
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-practice-2.svg",
+        "sha256": "e06fc51cc853c23a1c8313e829970a83081b7d4d2ae073079a16a412f5337031",
+        "bytes": 4766
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-practice-3.svg",
+        "sha256": "e931d502777b51574bc168d06b9f30a7d14dba6d61b5fac676317b4d765f04f5",
+        "bytes": 4596
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-practice-4.svg",
+        "sha256": "1b78def293364140ff44aa3860b6bb6df73c0dd163d590cdda960ae7091b4062",
+        "bytes": 3891
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-text1.svg",
+        "sha256": "356f81b867f4929e0bd238dcb071e01c265abc6e68f5daf57d2180816e9e3808",
+        "bytes": 3916
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-text2.svg",
+        "sha256": "d2ce3e7e1db033a9de9531f086b41d232fb715f9e113d71841e327530d40f0db",
+        "bytes": 3818
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-text3.svg",
+        "sha256": "154842ea3628681145a95e4f859c39d4781e3fc77cd8aa71e60b6f09181df451",
+        "bytes": 4475
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-text4.svg",
+        "sha256": "9d5f2a04b67f3ac43811a701eb3874ac56b5169e8cc8715cab90198ebfae74d0",
+        "bytes": 5023
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-warmup1-1.svg",
+        "sha256": "c03b5fce60a744f2911a0f3dd554bb89b39f42c7fe4c50734efd347887df00c6",
+        "bytes": 2744
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-warmup1-2.svg",
+        "sha256": "fabb3a3e5f3b706e58f2364ed4af81a204a703c66acbb6109d0f32b8a30ab024",
+        "bytes": 1264
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-warmup1-3.svg",
+        "sha256": "630a8cab4d71619487e3a0f475da6117a6ec06f1e49568e25c71d26f84ce2004",
+        "bytes": 1311
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l08-warmup1-4.svg",
+        "sha256": "f0c6ce26340a26c1931fe0c97d45ec19045d0fa0e7b92fdcf7e478044b4b89df",
+        "bytes": 2878
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-culture.svg",
+        "sha256": "3455704df0e77708ee7145a77933291907d70bbb49d5181e0fb8304c957f6895",
+        "bytes": 2374
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-practice-1.svg",
+        "sha256": "2c21198b07e03a12d64a89ad4479ed209223791327378ab2ae359ce1aa1bf3c7",
+        "bytes": 7593
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-practice-2.svg",
+        "sha256": "a6d37bac918deafb284f919b6a2ea72e370665fb31600e88d9744749b8bd4fdf",
+        "bytes": 5082
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-practice-3.svg",
+        "sha256": "ec4fd6b8fd0fb2a2eabd6a503e49b26b97982ee1457786c72e7792431da162dd",
+        "bytes": 3049
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-practice-4.svg",
+        "sha256": "8d1d7bb273628604877dfcfdad035ea551215011d72d2c1dc8f46499132212c2",
+        "bytes": 4687
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-text1.svg",
+        "sha256": "32b673d4cc3a9bb1b74d122e5a657ac6c6ef1a8bbc43831fabddbd7aa6d237bf",
+        "bytes": 4005
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-text2.svg",
+        "sha256": "c812ebe9f8ec36108d88cb60d719685bc255e4101e812e986f1deeb36e793c3f",
+        "bytes": 1766
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-text3.svg",
+        "sha256": "a4a386ac65dca471d32350369a2c6586033f78da075e31acbba66c3980cf3d73",
+        "bytes": 3881
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-text4.svg",
+        "sha256": "45f5c337f4d8a8ab26caced911b7653bf403eb7106f4e12f9f396ff0b7d838cc",
+        "bytes": 3733
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-warmup1-1.svg",
+        "sha256": "aca15edfea3bfc9fc93cf5bdbbb600b8311d79fe84d17cff34880da046871f26",
+        "bytes": 1795
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-warmup1-2.svg",
+        "sha256": "7cc28b487cf81bf87a908d54ab04e565978e631ecf268b5d04c7e6dd1d7fb4ab",
+        "bytes": 2062
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-warmup1-3.svg",
+        "sha256": "4b89b96b3279896f7b8ee91085649699b9f3d5b3d547009e819d48841ec89b9e",
+        "bytes": 4797
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l09-warmup1-4.svg",
+        "sha256": "3778c0b947ccdd6a2143f5e21368c3762c5ffcf605cacf6a83a921775217f3b4",
+        "bytes": 1942
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-practice-1.svg",
+        "sha256": "fe1dfa1318318e032be38cd3df2e444b94b4f72a90fdbba76e57e86e04f5b18f",
+        "bytes": 4562
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-practice-2.svg",
+        "sha256": "156d7c09393c7ab01d941935a7f224225c12dffc3e1233df862d6bced500930a",
+        "bytes": 3500
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-practice-3.svg",
+        "sha256": "4492938cc89fcd0d98f7f25c34817650562443cfb1ad69e996a02d83e7f30407",
+        "bytes": 4995
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-practice-4.svg",
+        "sha256": "ac6d01b752a7d48c9e63569c9474d400cd4ac1cd793e30cd2e7e553e60081f63",
+        "bytes": 9984
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-text1.svg",
+        "sha256": "22dddeadfdfadac04384c51a41f8ec0872d841e2bc4e1c9faceb2ceccd159804",
+        "bytes": 6215
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-text2.svg",
+        "sha256": "14d4232568cff47638cd36aa176915847b35b3a6679f8a3984712d5d34eabfd1",
+        "bytes": 7774
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-text3.svg",
+        "sha256": "e97ff1a92cf900eda653e9de1b0543703639e14ed7c195e3a836ef79b22ea7f1",
+        "bytes": 6274
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-warmup1-1.svg",
+        "sha256": "b29b52ddde9acf748756d319fcfb710cbce954023d48ed3a17dc1f14cf98629f",
+        "bytes": 9655
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-warmup1-2.svg",
+        "sha256": "9ddd2348675a782be0248a17b30476fe9b475206a6ecbbd83e9550c0b2842f64",
+        "bytes": 1290
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-warmup1-3.svg",
+        "sha256": "352fb42bbd0b94b40ca1ebc75789ca1f56bf4eda024714876962ee344e6cba3f",
+        "bytes": 2220
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-warmup1-4.svg",
+        "sha256": "fe15ee9edc436c67d4c42d1b8a3306389f852dd30e169849cd84decc32f6d33a",
+        "bytes": 2882
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-warmup1-5.svg",
+        "sha256": "1ad568037f7c84d941c23fc61746e5f09187a1252c18cdb4df76b51d40a33386",
+        "bytes": 1607
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l10-warmup1-6.svg",
+        "sha256": "30ec0107bc7cf93ccef21903ce1adc44ac97b6871c843dc48200ff7b4b71933a",
+        "bytes": 5933
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-culture.svg",
+        "sha256": "cf43060ffc45d84fb6cfadbd1d4f3c322926dff4ac99de0be488a53ff992190c",
+        "bytes": 2352
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-practice-1.svg",
+        "sha256": "7d1d1d06777f0fa1a2b9d8a83bde9fd3088e26c7cb88a2937cd3347f3b286246",
+        "bytes": 6015
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-practice-2.svg",
+        "sha256": "0851fd2022440ad5a2198255db8fd7317f8f0b70ec59a03b9282554168bac3cd",
+        "bytes": 9995
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-practice-3.svg",
+        "sha256": "dace59a7fbe7b62b4c061806079bbface5ce008221d6bae00507fd4b5922bb74",
+        "bytes": 6844
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-practice-4.svg",
+        "sha256": "8e458644c934efedbb079b8b4c98af173cc5d0b3d7f9931917f3edcb091561cb",
+        "bytes": 6421
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-text1.svg",
+        "sha256": "e93291f2544dae5e13b2bb502f98d6a4e78d5584ecd135673cbca7df72caed50",
+        "bytes": 3330
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-text2.svg",
+        "sha256": "1861006f24d661f75ed6601ccdcbec50759efe1a606d6905f213f3cb81059780",
+        "bytes": 5706
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-text3.svg",
+        "sha256": "0f2de0f2ec97b6ec8f227912bb42b5e6b24de3d5745044dfeab3b51a6ab34237",
+        "bytes": 6950
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup1-1.svg",
+        "sha256": "5ab4f36bf342ef1bc842a124bf474e90a800a295ffc49e3b6e8ec2065e95bba6",
+        "bytes": 5526
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup1-2.svg",
+        "sha256": "64f693d3fead5802347a6d9c9850533e46260b5bb03201c2ff8c416e6ef4e4d0",
+        "bytes": 3706
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup1-3.svg",
+        "sha256": "720d3dc42e1b56d71fe18ee6e40e9f4a8a4e99df9e92c1166cd33549b6363e42",
+        "bytes": 4206
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup1-4.svg",
+        "sha256": "ac3ea74f2600d2173a8425b27d80806615c672a97b8acd8dbb3fb3c0db3e2b4e",
+        "bytes": 3237
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup2-1.svg",
+        "sha256": "3ebf7d7572054503d6a02a18ab4ec5b39f7c8529a3f455e6abecd26bd0b5311f",
+        "bytes": 6249
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup2-2.svg",
+        "sha256": "56e44205fbc8da068c2ade32c58a5e7a30ab19edc119a42a66c513ee2f478a0c",
+        "bytes": 3661
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup2-3.svg",
+        "sha256": "b3260ff85b4f4eef65a205c49b8f9559f7393363844708f9f62fa771a319fff0",
+        "bytes": 2610
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l11-warmup2-4.svg",
+        "sha256": "25a2a7e0dfeffe5e09a4a8bb9cae032f9fe3fadfae2c2517242b2ce83382bd97",
+        "bytes": 3369
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-practice-1.svg",
+        "sha256": "4625c1024b59a25836db21f5d22d52427d74ad0e82be70fff97b9c36da766613",
+        "bytes": 6437
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-practice-2.svg",
+        "sha256": "b9da29491cb2e3d835261b2f0de7c78aa212734f5932710a6670470dd7bacac3",
+        "bytes": 6799
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-practice-3.svg",
+        "sha256": "b5c464152d1dad6955447eb6259954ce451ed4526760986671fe75a4c4ff7b07",
+        "bytes": 5746
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-practice-4.svg",
+        "sha256": "704986799e9fb0b5501d384fd4863bc653c4eb0443bd8cd8f94a4b27ca19b129",
+        "bytes": 4276
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-text1.svg",
+        "sha256": "15c094ee79b92b80fae7644478abef007ee8e92f3f03b7dfbe69e505520acb6e",
+        "bytes": 4257
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-text2.svg",
+        "sha256": "171f00246bd88a564c23a926f47e82c2f0b56a48717b08bf5b125baeed572021",
+        "bytes": 6260
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-text3.svg",
+        "sha256": "a8cf4a1f3fef676c41ae2c6169f8762e929cf75597af90ff060607e5410564f2",
+        "bytes": 6053
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-text4.svg",
+        "sha256": "46ae2d65a58f06dcd5609fd2f03f725944fb03239ae78c80932808c7e23922f4",
+        "bytes": 6037
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-warmup1-1.svg",
+        "sha256": "f3e021c3cdda1eb6979f21013983d4a777f7dcaa1fc1a0da4d35c4a1d2ab6c92",
+        "bytes": 3945
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-warmup1-2.svg",
+        "sha256": "80d4f320274fb13f00512e089b10dab7391bcf0e5a124fb5a30bf32039038c84",
+        "bytes": 3902
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-warmup1-3.svg",
+        "sha256": "eb6d3539d27591cdaf8cf57bf1392f31c4a5a26cc75c888ed222ab9c343ff271",
+        "bytes": 8516
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l12-warmup1-4.svg",
+        "sha256": "c1cfb73000ea86294ae7c3a6bdafca9b2a672cc66d652fc4e32bff0215ee5f55",
+        "bytes": 9655
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-practice-1.svg",
+        "sha256": "ee343cd13a25ef3e63be67a0584dc132e78213bb7ab2cb0dfa0e39bcaa794567",
+        "bytes": 3490
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-practice-2.svg",
+        "sha256": "d352871f51bc86567be701bdbf7cca09435de7737d3b2e7b498e9b445448f0d7",
+        "bytes": 6520
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-practice-3.svg",
+        "sha256": "1526143021312dcca5ad541af14b8a1d5d3ce95d816266ee7e6c39e39ba8acb5",
+        "bytes": 11918
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-practice-4.svg",
+        "sha256": "ef096c4bbaf385c2b6f1b553dd8e72552cd69bfb8b0517e1f6d4bb49e4531dff",
+        "bytes": 12064
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-text3.svg",
+        "sha256": "8093269dfb3aba421df9b993bb8efbf0f22acbd02910ba65c656fc2eb7c22de7",
+        "bytes": 5350
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-warmup1-1.svg",
+        "sha256": "9b3b9710df3c93419e77ea195e2b569625168f523db4ecd74830368d308bda78",
+        "bytes": 6472
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-warmup1-2.svg",
+        "sha256": "10ff8dbd463c61a383a5204bde95b870e7d6960ebb5b0c93bd8988bbedbb320a",
+        "bytes": 3204
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-warmup1-3.svg",
+        "sha256": "dc62d3652e06e0aa8c3a793029db3842a521fc782899b859ce18a4114c4c2495",
+        "bytes": 5031
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-warmup1-4.svg",
+        "sha256": "46dfa0c6b22260cccdbd690f61b9a9614b6d0e688c45caac13df91a296a75a4d",
+        "bytes": 2343
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-warmup1-5.svg",
+        "sha256": "f565e10ad0ac8dc0337c65d7e399ebc79bc4995fe1dd22aaf6013e1f30132632",
+        "bytes": 13290
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l13-warmup1-6.svg",
+        "sha256": "b581554e3bb1973570eda3ae294efa2e9c32a4b6cc26e4b3bed0eecdcf78dc86",
+        "bytes": 5950
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-practice-1.svg",
+        "sha256": "41753f658003d0edabe60ad6b1786e65fec69bf584d6d7aa7cc3cff1c45085a7",
+        "bytes": 6037
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-practice-2.svg",
+        "sha256": "dba55f3a8270d781204e2ffc400fdeff7a15766c103b415f8f5eabeaa561892c",
+        "bytes": 9615
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-practice-3.svg",
+        "sha256": "d96bcd9987b6752c1e81fcce1e3b9dd51ebfcbb62633320149a6a68839b97998",
+        "bytes": 5070
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-practice-4.svg",
+        "sha256": "2d93fe489d0038ab973824d759aec8b58ff6120f0c8fd9da70d693f44bbb80bd",
+        "bytes": 11126
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-text1.svg",
+        "sha256": "8fae6096206225eea1d5970d30524c782821786489aee4ea09dfd9069589b620",
+        "bytes": 4249
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-text2.svg",
+        "sha256": "27f29741adf8baca5b9794e3cfa72fd5a6cbde18e1d6a4f4e4d4b899f49c4499",
+        "bytes": 7749
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-text3.svg",
+        "sha256": "77f4a66815f72c0a48d5b1f9ae2dbe19abd0a65caf129e32dc07e86732628bba",
+        "bytes": 6163
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup1-1.svg",
+        "sha256": "e532e01b0fd1bb7301847c6b9827db4b4cf4b80517918f6725901511b09c170a",
+        "bytes": 3623
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup1-2.svg",
+        "sha256": "9ed8661086cb7f396f7332890006655a7193f4582a14d4e3540de0d13403b074",
+        "bytes": 2474
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup1-3.svg",
+        "sha256": "bd1285298d1af15b7f782f81ac60323b0f111232a8baf0b718f0e9b27512e37a",
+        "bytes": 3580
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup1-4.svg",
+        "sha256": "f9b92b0de72c1969a73d7d4a957687b6b4175a31e2228996e3e899c0c782b532",
+        "bytes": 1624
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup2-1.svg",
+        "sha256": "68d87a7279e9f697c5eb4730b52b388e796961b5bc58028714092c614ca8b943",
+        "bytes": 8828
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup2-2.svg",
+        "sha256": "920a171d4bd1d06964739ca56217ae520c326de0d113e3183dc858734de8699a",
+        "bytes": 3642
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup2-3.svg",
+        "sha256": "e25c0c17ebaecd312d523e4e2c9af6546b050a10d05240bb4c603e1dc186589e",
+        "bytes": 4191
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l14-warmup2-4.svg",
+        "sha256": "178db0b91ec9a488df3cd44be0c1c04c0be0a87f70062c16583f701f8a50d21f",
+        "bytes": 3540
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-culture.svg",
+        "sha256": "d5cbd353c3df851d9ea1908feae0b96b51352456dfea81c6d347e211b0bfaeda",
+        "bytes": 4506
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-practice-1.svg",
+        "sha256": "812a582a765b903a777805c013950b35308b62a5d0f1445de9170694047d2cf9",
+        "bytes": 6658
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-practice-2.svg",
+        "sha256": "db9d9adfc0a0719d03f9682ff4c4b5a9f0eb1d03c386dc1dad323f4f65971c10",
+        "bytes": 15785
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-practice-3.svg",
+        "sha256": "efd37cc0c01eb2c52827d2c9f79aa8a8d951bc517c9e93fe8fc61dc14d9e0fbf",
+        "bytes": 2674
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-practice-4.svg",
+        "sha256": "63e8e4f7e18e4b4f6017647feb3ab9359a4b4b64d62d19c1d5286f2a6ac2eabf",
+        "bytes": 9274
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-text1.svg",
+        "sha256": "a69f9fcb5bf04c3908fca27fa96f959c4c7da5541e8d0f5d3f9e3a4af479a2ce",
+        "bytes": 9141
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-text3.svg",
+        "sha256": "797aa62aa0a188e8018b4579c683993145d26a1f8305a76993d1508b7f31bb57",
+        "bytes": 7678
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-warmup1-1.svg",
+        "sha256": "412f7203c7e4178993b27e35df4ce26a67d3919785c5913133f98e1da2222716",
+        "bytes": 3477
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-warmup1-2.svg",
+        "sha256": "0aa483f08ea2b3b98ba22fc7a2b211585171e6f47fd357243527b6f5eab85729",
+        "bytes": 1886
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-warmup1-3.svg",
+        "sha256": "b4a61a7cb609d0a19fd2f2d915ee36702a54a082e0425bbef9ba21a77fa721d4",
+        "bytes": 6196
+      },
+      {
+        "file": "course-app/public/illustrations/hsk2-l15-warmup1-4.svg",
+        "sha256": "4b00b34f4e7ac9c3c3e6a9f971242f5718bc61c7d803418f83be55774ed9f6fb",
+        "bytes": 3957
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-airport-at-night.svg",
+        "sha256": "bf5a3031390d9e5148816d2d3d6f0517d55742969d969a6f06f4d2718ccf77c9",
+        "bytes": 2302
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-airport-greeting.svg",
+        "sha256": "d9227a52a0bb2c1790efd18878c265b87348b9ca8749a9956b8c861159ee4bca",
+        "bytes": 6283
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-arrival-wave.svg",
+        "sha256": "1c65571389a70524ea58f15bcd25033409289c2e4448f122c3dec56dd1038404",
+        "bytes": 6277
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-baggage-carousel.svg",
+        "sha256": "1b14fb0b43a363721f4dd37a3ba04a3c9a489b6ed81f2810edb6f941664cf2a5",
+        "bytes": 5053
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-height-measure.svg",
+        "sha256": "c6e7c6e7b6d5ffb04462c19ed71cce3f6baa3aa5fd9c1e9ccd7cba6e49818844",
+        "bytes": 5794
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-identify-traveler.svg",
+        "sha256": "95867a96e8d0734785ff3216065da1bfe58d1851f1c5ba4590a8e252c99f4f22",
+        "bytes": 9781
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-long-hair.svg",
+        "sha256": "f0dd6576b6e0b813265591e845b3317f3b245bc66c026243e3655559107e0dbe",
+        "bytes": 1768
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-photo-wall.svg",
+        "sha256": "2b7807b2e27c8190b78345309ed448ce40e87cd40e4d2a3a9a89bfd736961c48",
+        "bytes": 6459
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-service-desk.svg",
+        "sha256": "5fb67149d5fa9c21f039c15200d3ce29e316d5e0bacce2cdc7ff6bb88762cc05",
+        "bytes": 7219
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-sofa-phone.svg",
+        "sha256": "adf62b15cfeb89a46c74f0a7720d8470c8f09e81feb99b56f0c0c540954a7429",
+        "bytes": 5413
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-suitcases.svg",
+        "sha256": "c708da3888fd47eebd5dd0f032897de7aa8e416d6b7824f05126243952e6a7b5",
+        "bytes": 2337
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-travel-document.svg",
+        "sha256": "e9bb037e64c5367eb20cbed964d70906f0a93fe25a709d8512c295cd0aae40b0",
+        "bytes": 2066
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l01-viewing-phone.svg",
+        "sha256": "8a811632488ca089f436d922548d90da09a7aebcd210f80036db9c882381542d",
+        "bytes": 5026
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-culture.svg",
+        "sha256": "58061c4be0d00b706f4c398070b63ec3e3a186f22dbc87628630c71e6e7670e3",
+        "bytes": 2022
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-group-1.svg",
+        "sha256": "e17277fd3506b425afe63f81d4c4883e4c0cb66f9624ce70412f6790ad96e5e8",
+        "bytes": 15583
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-group-2.svg",
+        "sha256": "0513dafb4a9998c3135e95f6fd48aeeefe1d9c7cde7f61939a04bbca19972b24",
+        "bytes": 5835
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-group-3.svg",
+        "sha256": "4cf4728ae29e678fea0b423c2cd03d2c332462fb148be3866cd6215c21f9d912",
+        "bytes": 5676
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-practice-1.svg",
+        "sha256": "82830ff3c3f37da9b3d46ae8bce188106c0084d834a49184131b495bff4df238",
+        "bytes": 8169
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-practice-2.svg",
+        "sha256": "6a960a0eeae86d65fd08faa96da12a91f2939595cfb6e203d9469d18e1748616",
+        "bytes": 8072
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-practice-3.svg",
+        "sha256": "5d7c256f23af1a77c79bd27997647c691d41d6dec2da984159a02ee87eaaaeab",
+        "bytes": 8237
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-text1.svg",
+        "sha256": "49c038825238ea22b27eb9d2e16f6f8d5bba81f904ee719f0b662cca2ae293ed",
+        "bytes": 13520
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-text2.svg",
+        "sha256": "e1ac4a5e8474b9dbc432ad4305d32c8e93fb6226b3d20345d9afcbb31465d02b",
+        "bytes": 16036
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l02-text4.svg",
+        "sha256": "1018ca738f707f2ed9c74170254d1d09470cad8b8b2b9fd07dc2b300e1f01ace",
+        "bytes": 6211
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-culture.svg",
+        "sha256": "ca769b770bdbe9f29c12fb7fddcfc61618a1f82fba7dd49cc5a7ab9767fc1657",
+        "bytes": 2287
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-practice-1.svg",
+        "sha256": "f265e783baa5cf75b653a11565819678ef73599d32601b1e7857a44f2ad908a3",
+        "bytes": 5734
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-practice-2.svg",
+        "sha256": "02aba75d8abd24ccb8d0b655f8cb952337e3553a9fa77dbd1dcc54e287db8192",
+        "bytes": 4671
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-practice-3.svg",
+        "sha256": "7a5e6c75346c006830a5752d3dd77ca40f2ed35bece5c2fcd4dee26564de5bc9",
+        "bytes": 6390
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-text1.svg",
+        "sha256": "2846d9ae9871c6f7a19040d5bf9d092b9ecaad5ef2d66cd672ed93b81536678a",
+        "bytes": 2812
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-text2.svg",
+        "sha256": "1a74348c56a857b17fca36fd6389f8bd39b68c912ba077fb1e93bcea5a0c5469",
+        "bytes": 7685
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-text3.svg",
+        "sha256": "8c42a69fe8dbd3c334270ec594dc1254ee39f8625e37fc8ff7cff3ebfca768e5",
+        "bytes": 3729
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-text4.svg",
+        "sha256": "5ebfe7f457078ac2794d0d24a67634f6e3a94160221b63e71f218f016472480d",
+        "bytes": 6593
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-warmup1-1.svg",
+        "sha256": "48e0b4ec826b3ab41e69e97e427f79217fab75ecdfc84fb6d9e69492a9d1d69e",
+        "bytes": 4489
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-warmup1-2.svg",
+        "sha256": "019191a62cd710c855024f579566751627a83170fc3b5c1dd4b54f576c6054cb",
+        "bytes": 2908
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-warmup1-3.svg",
+        "sha256": "c1f9706a6a7020a8d947cbe00da54fbdb55f5cb1f8fb07ca4513801dcb8a55f1",
+        "bytes": 1927
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-warmup1-4.svg",
+        "sha256": "0c05c1568c29c8f76b79d31e17db707944a4ca8a3b7d3b571a67dbf20fcbd81d",
+        "bytes": 9185
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-warmup1-5.svg",
+        "sha256": "0673adfbe3db656c24eb782244092517f641868520f45498f5c1f137d61f3a50",
+        "bytes": 4041
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l03-warmup1-6.svg",
+        "sha256": "4c1c995027a3d278eda39a354839162476f5385630be59f81669c4d1b8b9bd17",
+        "bytes": 2141
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-practice-1.svg",
+        "sha256": "ebb8dbb0a49e526942cf4d1e201768aec083ee13890a68b5c2f439a2a5cc8a06",
+        "bytes": 4774
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-practice-2.svg",
+        "sha256": "a9aabe0106fddccfabb13cf4f6c8b02c06912ede4f0b54ff42ccceaa9ada32e2",
+        "bytes": 8866
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-practice-3.svg",
+        "sha256": "413932b989d58e833d49339fe0cc024d4240904a8a1471c58769fb5bf70ccc30",
+        "bytes": 2767
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-text1.svg",
+        "sha256": "fa55eb3afbe3af22549749ba1b040573e97166db2fd62e698d72c304cd1aa7ff",
+        "bytes": 1468
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-text2.svg",
+        "sha256": "76e1c30f760ef93d1d390c47802a44ac690df99c946147eb9594d1fde7e4099d",
+        "bytes": 4818
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-text4.svg",
+        "sha256": "5a366f0113f49014f0823524079c71571b052a71366c08ce35903cb400f7838a",
+        "bytes": 3520
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-warmup1-1.svg",
+        "sha256": "5a10b38a24c04bf15be4cef395df5939ad39bdf5d3cd13116024508f1b286da3",
+        "bytes": 2949
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-warmup1-2.svg",
+        "sha256": "6536031d732d4c2a4d2f6500dc09aef946fd466733086141dfec23911dcd6c70",
+        "bytes": 5819
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-warmup1-3.svg",
+        "sha256": "2f4a9ce53552e7f52c0cc689a890294d10983f42e54f1c91a756da03f2798eb6",
+        "bytes": 1929
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-warmup1-4.svg",
+        "sha256": "5f9935ea9829800d415e693e5aff5e7c322c7adc061d4cc5968841adf4b44eec",
+        "bytes": 3031
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-warmup1-5.svg",
+        "sha256": "8fcfaeba61976ea8230610fb7388c980dc293467757058ee31ce416785a8fab6",
+        "bytes": 2050
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l04-warmup1-6.svg",
+        "sha256": "85b68b7884b040aabd97f2d6f38610e252f91f26876c71e2acc7323d67efc488",
+        "bytes": 4658
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-culture.svg",
+        "sha256": "183b86402cba31cae5ac3a1b7cb68f76557a0cc9aa4c4f632b4db42ec1dc0a44",
+        "bytes": 2367
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-practice-1.svg",
+        "sha256": "9eda7446edd26bb84f9935c413cdbfaf6ec8ec0bc4f29f032156b6f0ed9aff7d",
+        "bytes": 6191
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-practice-2.svg",
+        "sha256": "50e7eed7af0068f7d0daf05df0bfa8c5d57927becfcd4da76e426ca2b0f314ab",
+        "bytes": 4182
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-practice-3.svg",
+        "sha256": "58509777a8ef95a5cda763efa0302d42ce638f3e33cae327aed70d0f00642337",
+        "bytes": 6306
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-text1.svg",
+        "sha256": "4c1c75cbffea216627561f2b19bd2e7bad89bbf6393846bc92027fa3aeda662c",
+        "bytes": 13589
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-text2-1.svg",
+        "sha256": "0c52234ecbe52f4f6ed0465046a3390596ed779e5c70374ac9734edc4b1cd9ab",
+        "bytes": 6807
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-text2-2.svg",
+        "sha256": "852a300dd775540eae58190989f687dc0a7aa50344fc1e62aee555a366d3d3fe",
+        "bytes": 12061
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-text2-3.svg",
+        "sha256": "4b966357ec13b3e1fb4fe220128de35a4d10c305f85c9dae213226104c20ec9e",
+        "bytes": 3983
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-text3.svg",
+        "sha256": "34c5050eca96c22d1c355b1201a1bd242be994a25337cc15e933ee0852ddfcf7",
+        "bytes": 1892
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-text4.svg",
+        "sha256": "88d586aa1283ea4b93f171dd34356953217ccf10cfbb455d53848198295b0735",
+        "bytes": 6744
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-warmup1-1.svg",
+        "sha256": "3aabda52d2c9d094327fb52dd14c06923377960c9e9c70f0c4de1f714c4c181e",
+        "bytes": 4824
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-warmup1-2.svg",
+        "sha256": "563af7f517e0d6f23e4aebe1e579eba2d7f650eec3999e76a0264585bb65a942",
+        "bytes": 3443
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-warmup1-3.svg",
+        "sha256": "d44fefcd76d42efce9d4bda7188349cc964d806786bce53642139952e29c2190",
+        "bytes": 1593
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-warmup1-4.svg",
+        "sha256": "447b3f08bc33a0d8f9618887f0e6c4b06419e81491502d845f5c05471435eb88",
+        "bytes": 1393
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-warmup1-5.svg",
+        "sha256": "ac76ebcb6bd57ee55dbc52d40dd7787794c0ae7f31f5aca4fbb8b702a00a5ccb",
+        "bytes": 1982
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l05-warmup1-6.svg",
+        "sha256": "ee642331cf7cbbcbb3486244f0c74c790e59ee435b4459f12421487139379153",
+        "bytes": 3005
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-culture.svg",
+        "sha256": "d6930f0f6484434db3cbd0f67a069171eaf12bcbb3f16640d4581477019e314b",
+        "bytes": 5537
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-practice-1.svg",
+        "sha256": "73808eb438ca109db25b43b06db7d3171a9aa02e59f09cf9d8cc3a8a7ef2f152",
+        "bytes": 16918
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-practice-2.svg",
+        "sha256": "9cab60ec5a396308ea1c6b54b33ad67aef09c181f2d482cd6e2a3b395d79d1e7",
+        "bytes": 4817
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-practice-3.svg",
+        "sha256": "bd6a7e53461f78fcb88ed16068cf3adf5ba2314b773c6f6d9de0d46373fe2fe9",
+        "bytes": 6479
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-text1.svg",
+        "sha256": "ccb846d80c32465a6286af5ea970be231b073a4c7606ac8ab6fc6139432927aa",
+        "bytes": 4439
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-text2.svg",
+        "sha256": "e598644dd287b7934435c6c661b537ea7e32bb80ab0986a8be84827254702e2f",
+        "bytes": 5577
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-text4.svg",
+        "sha256": "b3652cad59182cc0092ef5db69a848104a4900e68a4714fefb130203662e85d8",
+        "bytes": 8897
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-warmup1-1.svg",
+        "sha256": "7106993d845e0280e8dffde222b6ad5e2c78bff48803e6c80a4a0b88eaa91ed8",
+        "bytes": 1539
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-warmup1-2.svg",
+        "sha256": "bf46f4a078bf33c3ff02a39f4693fdef02c76d235d61f3c763f9da0cb91e10da",
+        "bytes": 3600
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-warmup1-3.svg",
+        "sha256": "9fb73e05d0c20b83339327272623bbac9f26348faa6dd4b1329347b7a756356f",
+        "bytes": 1817
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-warmup1-4.svg",
+        "sha256": "e9f9e513e94c4a1ee63f576d1b13a8c656452f9f1e365087943e648bae544b4f",
+        "bytes": 1813
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-warmup1-5.svg",
+        "sha256": "516fc29be6abe3012172ddc0f3c093c81efb91b234ea0fa485cc534fd0dfdfbb",
+        "bytes": 6548
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l06-warmup1-6.svg",
+        "sha256": "dad65cf0e6566a615619ced362345057d365a61e687d421ee6632152fb07be3e",
+        "bytes": 3752
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-culture.svg",
+        "sha256": "14854aa5577f2d94bc82e091bc54c7ef92d8db134bd6ee2b08f3df6c3ed36e82",
+        "bytes": 3815
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-grammar1-1.svg",
+        "sha256": "53c13483528e7aeca6c91d9b3f788f94850805d42357e6d6d412ab20ab20d046",
+        "bytes": 4368
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-grammar1-2.svg",
+        "sha256": "686b300aaeedd37a966d2e5636f8e6ca3da06426e6258133a0517c075d3a7c41",
+        "bytes": 4414
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-grammar1-3.svg",
+        "sha256": "e97224a6d10f03fe4e41fc2a661065998a7ec2e2795bc73f9c0ecc4858604d89",
+        "bytes": 6916
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-group-1.svg",
+        "sha256": "fefac9a69e846385a6d977e334a39abc4de234c6e1f063db391840275550bc86",
+        "bytes": 10773
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-group-2.svg",
+        "sha256": "c545a7e3db9f7a1a272a1fc8a90fbcc4e07da606b1fe14b92f9eb75703113d16",
+        "bytes": 13045
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-practice-1.svg",
+        "sha256": "50e94e6ffedb80dcf41ff53e7f812ea33078deb47eef8b1b7dc85c9953a15add",
+        "bytes": 6186
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-practice-2.svg",
+        "sha256": "6272c0d9c7a2ee7a1b3a24d87c78d223f05bb4c27142a1ed5b9eb575543e0c99",
+        "bytes": 5164
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-practice-3.svg",
+        "sha256": "0189df27a8447e0dcb24277c1ea05b98f943a36c07b30ca5fd2ee002cde99b0b",
+        "bytes": 5684
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-text1.svg",
+        "sha256": "f67c0780548643300ab5a2dd8e0d151d13768c5208daa94430084fa76a401b81",
+        "bytes": 7491
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-text2.svg",
+        "sha256": "cdc1ab001e5ba374ca9eebca6d00663ea4a1854c72a7a3086a934ea65aa9731a",
+        "bytes": 3427
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-text3.svg",
+        "sha256": "c23eca2d471d6239dda5eb9cae2ef37cda5847de74eca3121e5059f512cf3dca",
+        "bytes": 10806
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-text4.svg",
+        "sha256": "78019b6b9e686a3d67bd022c5a7163451925bcd88ebb377ad2572a230ac1a894",
+        "bytes": 2619
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-warmup1-1.svg",
+        "sha256": "1e142372ad87fef0231797ffcd49b9325a6d8c57f544bf70d7d75d7ee3654bbf",
+        "bytes": 1926
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-warmup1-2.svg",
+        "sha256": "22858a45ff57911440d87de3addf48d6427e057f941dbf242d5af0b3449cf458",
+        "bytes": 3853
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-warmup1-3.svg",
+        "sha256": "6847b99b31dcc29039abc159a3feee056dd47032bb0e9161e65f726bfb0a3f68",
+        "bytes": 5600
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-warmup1-4.svg",
+        "sha256": "7a6a5410a2a3eb6d1ab13e5681087b613ada187fa61c29ad24f82a5cd992cfde",
+        "bytes": 2362
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-warmup1-5.svg",
+        "sha256": "a91f43f53f7d932767373a78b5621203f25899f4074f7732510f75be7992776b",
+        "bytes": 6773
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l07-warmup1-6.svg",
+        "sha256": "725f27baa8ed98440785d2026d32098d3d3df442ec45b7233ecd2d74301b3e5a",
+        "bytes": 2077
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-culture.svg",
+        "sha256": "35e407c70cb71c6952c50115b4ce10dd8ae01f08d679fcba4adf88258de14328",
+        "bytes": 1656
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-practice-1.svg",
+        "sha256": "014995672108cc6e2a4fe4cbb872da521bb958558cd2a1cd7cfcae4244f52c09",
+        "bytes": 2602
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-practice-2.svg",
+        "sha256": "73060330210b2bdc6d851e915584c1e2515aa4ef264c7ba420ea0538a08e2c64",
+        "bytes": 2418
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-practice-3.svg",
+        "sha256": "db803abd81e9d989311b79c3707feec0975bfc1cc5f9f811f4587dd6aa38efa9",
+        "bytes": 2939
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-text1.svg",
+        "sha256": "448641b4d776f5f018703147c5b2cfb51ddc19decfe77064ac7ed02dd15828f5",
+        "bytes": 3655
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-text2.svg",
+        "sha256": "844a6dd18bc014862eb4a827a5877f05f8feb7f339e42440992024d7827137a6",
+        "bytes": 3552
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-text4.svg",
+        "sha256": "65a8131dfa37af355c7020c5753d1bbf6132f57f9559bb5864e2a3ebdc43aa82",
+        "bytes": 2162
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-warmup1-1.svg",
+        "sha256": "47934df6c5e1c6ac32c4391564c2a36750564aa72705671330b2a0eec15b968b",
+        "bytes": 2917
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-warmup1-2.svg",
+        "sha256": "72d6418c1998086b6136b41523305a00b7927bff3cb8bda9ed0af083301da5b8",
+        "bytes": 2830
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-warmup1-3.svg",
+        "sha256": "91b3eef84915b6b070f0409b2a0017a80a8b51fe20430fde16303c77d06845bf",
+        "bytes": 3270
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-warmup1-4.svg",
+        "sha256": "e6ced90b2366bb98bc65c26eb4c5624c277e0bc685c033e3125cd37cd82d802b",
+        "bytes": 1350
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-warmup1-5.svg",
+        "sha256": "c8b09c786602b889536a33daf27b72cd5098d9b990286cf269c10433d8af5cba",
+        "bytes": 3650
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l08-warmup1-6.svg",
+        "sha256": "e0d94c0f1cdfd54b5e65b3841e42b5fddcb81ca0795e3f0a808183a7cd9de949",
+        "bytes": 2372
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-practice-1.svg",
+        "sha256": "924c4dab80775c4a1f90eb16df3aa098a6ae106e3d2fb6c504420dc7b875bb0c",
+        "bytes": 5484
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-practice-2.svg",
+        "sha256": "34404373e12c6d443c9e6ed8cd7d5bc7df715d190029dbfee0a2435661b0d43e",
+        "bytes": 7054
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-practice-3.svg",
+        "sha256": "39f8a3a5bde7b22bdf950162b1ed6ea09c42002763b1a9f00fcad0be2eeb44a8",
+        "bytes": 6644
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-text1.svg",
+        "sha256": "dd80490ee8853c263854035198aaa92a2406288edcaebaa2d53e1eaa31f7c1ee",
+        "bytes": 3889
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-text2.svg",
+        "sha256": "5c683a839274eb243a7f2be0f0a620cac819efb2c570bfb29f067f247710242b",
+        "bytes": 10047
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-text3.svg",
+        "sha256": "be7e05f119e90f2618ab8852663831105f2611bdcc73323f9a3fb02d886f1297",
+        "bytes": 5601
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-warmup1-1.svg",
+        "sha256": "62e19cf4a0465b575c13d388f0567cf5b756b3a2fc785f8ccfb7473e8739ab32",
+        "bytes": 1447
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-warmup1-2.svg",
+        "sha256": "34dbc42cc2631f3649e63769061b33220107a1cc75fc78a5c316631249c99243",
+        "bytes": 5232
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-warmup1-3.svg",
+        "sha256": "b38624f940bf775a9fad49ec2596bb3f40c7c0b75e66f07fd592be8605331995",
+        "bytes": 2349
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-warmup1-4.svg",
+        "sha256": "f2d8525c2923e3dd752fc3081a81ddced7be0667747ebed79f924ef94e663e07",
+        "bytes": 1286
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-warmup1-5.svg",
+        "sha256": "a895dde128185fa3606fde854be9dbfecb02acf753f0d2a190e805f0953e73c2",
+        "bytes": 2338
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l09-warmup1-6.svg",
+        "sha256": "f1dba337bc966c17bc89da39b0189d5be5a02c10a0e645d1e09ad924ea396810",
+        "bytes": 4833
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-culture.svg",
+        "sha256": "0b3c0ee54e13a7432332f55ff2e43f1c2cb84954b9be00055ab64827cf7a0ab4",
+        "bytes": 11375
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-picture1.svg",
+        "sha256": "b17c42b7b38cb329f80133f49e3288092b4da94c39356bf08c5224aa96843d64",
+        "bytes": 5624
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-picture2.svg",
+        "sha256": "14af3491b210bdff1665a3de000b7a0cf05845e1f0f6ae08937119ca49bc4488",
+        "bytes": 6345
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-picture3.svg",
+        "sha256": "f5925ca70a8d20fb1688a0beee7d97bcda6f4f8a16785f6f817038ce1bec8a16",
+        "bytes": 5602
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-text1.svg",
+        "sha256": "6164b9d8732088a14f563f00172c89aa31dacd56e085b6b8248d84650d44e5d2",
+        "bytes": 7429
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-text2.svg",
+        "sha256": "da67fd5d3d02f4e82765ab9b696eae614faf153f9368d5cb2caa61191e9ddbd2",
+        "bytes": 7251
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-text3.svg",
+        "sha256": "9f616f93214070e75c226fbdfbc5f479954b841a7b176cb3ab2ad90888b71778",
+        "bytes": 10264
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-text4.svg",
+        "sha256": "f83bf380d22b2b116578e3cb123a39f01d077403fd04984cb7cf775f6f1d1beb",
+        "bytes": 3603
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-warmup1-1.svg",
+        "sha256": "872f01ef067741acc165a7a193d238cde41f28e2c9628a024ad8f54b650601f9",
+        "bytes": 4468
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-warmup1-2.svg",
+        "sha256": "0b0dadf16d571c625614b300bb64518441ca9728227c3684527a92825ab18719",
+        "bytes": 3296
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-warmup1-3.svg",
+        "sha256": "8150c30e151cf0c64ad36bc4c0d3a4a287ea107b97a60cb4d111e9d9b7ab1649",
+        "bytes": 8046
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-warmup1-4.svg",
+        "sha256": "01a88b0a695d4bc80fb6ad8005e08b7773500663b21e6d7b34c6f67e97a32a7e",
+        "bytes": 11315
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-warmup1-5.svg",
+        "sha256": "76da2474600b7172a825adf265f2695948690f5b9b35b47d7e9c12a6097d0169",
+        "bytes": 3117
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l10-warmup1-6.svg",
+        "sha256": "11fda6630249314d319a74012bfa27f3dbcd17aa5e1f108b03806911f1803ad1",
+        "bytes": 2577
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-picture1.svg",
+        "sha256": "d6c886ced4268f40d71032480d07681ecafcde57dd0473a79115da673f82db65",
+        "bytes": 6245
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-picture2.svg",
+        "sha256": "c79c6842167c9f28a1028467813810011d45049a08fa7b38c5fbdb0c352afa6b",
+        "bytes": 6340
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-picture3.svg",
+        "sha256": "fd27610458e748534db36a4092a1552432fe5c33023baa189bf3d5bb2556fc4a",
+        "bytes": 7613
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-text1.svg",
+        "sha256": "809a6095d05cddb09d072578e232f9cf18b2666dff1b7022491e9b0fe1d3643c",
+        "bytes": 10220
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-text2.svg",
+        "sha256": "bf4010516ab53531c01e49fb3a7022df3e97fa72713abefc460af20ec3388ce0",
+        "bytes": 9050
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-text3.svg",
+        "sha256": "f6cda6ce24a614bd41ea8d52e9d23f92ad0ae5b1fbed210b35cc57fac7ce3122",
+        "bytes": 9711
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-text4.svg",
+        "sha256": "a4c16625b37b5fece8b431652126e230e0870fd9edb4dad273016b58eca4904e",
+        "bytes": 1742
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-warmup1-1.svg",
+        "sha256": "acda4cce8b395b9b7a700adab63547d68441907ba204cd363d9c5b473330a9cc",
+        "bytes": 2529
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-warmup1-2.svg",
+        "sha256": "742699a5ad2dba77f0952d329cd620942723e980bb2e95625231b7b22ec7633a",
+        "bytes": 3917
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-warmup1-3.svg",
+        "sha256": "6def0ac694b7fdb2efcad283302879bce7156b8f66c6008844d4d5e09c65dd2e",
+        "bytes": 6325
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-warmup1-4.svg",
+        "sha256": "706b3f871cc0b812c4486504cf7a5dcddae9c8f62a1de08ecdbbe4d139b4db20",
+        "bytes": 5617
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-warmup1-5.svg",
+        "sha256": "49d5890787df4fc636295e1ae88a6aecc4bfdc1d4bcb7128294944ec27909859",
+        "bytes": 13166
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l11-warmup1-6.svg",
+        "sha256": "fcb39c943081fe22e7f405efc402feb4896647d1a3a75b30554d2e1faca8f998",
+        "bytes": 6445
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-culture-1.svg",
+        "sha256": "023dcf1f7b815a9fbef800e0fe56dc15cc555e2da566636b6b0fca3ed195da6b",
+        "bytes": 8036
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-picture-1.svg",
+        "sha256": "42c6e1f93422d3e471ac52f152a352ae7b430e4f8f6100099bd3b1b55f3244ee",
+        "bytes": 4102
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-picture-2.svg",
+        "sha256": "ddfcfac193f6c69dd310c79d5987c6f6af8941a43d4d388a4509044eb2e7b194",
+        "bytes": 7246
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-picture-3.svg",
+        "sha256": "77006da2eb47ee18c621f47c9796d7d440ced5f55f62bd0f90339c5464734536",
+        "bytes": 26575
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-text1-1.svg",
+        "sha256": "edb4813de093a4fca056c537c96fe71d78035270536d85575816e96dd903229d",
+        "bytes": 16427
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-text2-1.svg",
+        "sha256": "8d4a4f323e7c20c217ac2fdff286da4081008fd7a0ed5e99a895f3ea01fa8252",
+        "bytes": 6824
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-text3-1.svg",
+        "sha256": "06c152cd0750c5cce5e631698cb45124a5cd7192169ad36dd561b5d810aff780",
+        "bytes": 3118
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-warmup1-1.svg",
+        "sha256": "c9380add877432fee9753dc22606ca38937288ce69c6c9c2d9155ec3d2dd461b",
+        "bytes": 5705
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-warmup1-2.svg",
+        "sha256": "35fa88e1e3258f574ac0f6c07824f54a35c6ed28442e4283f6e40838c47dcbdf",
+        "bytes": 2125
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-warmup1-3.svg",
+        "sha256": "0077a1367aec3aad71302da78252a52360d750284b6b40469015ee924975de98",
+        "bytes": 2384
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-warmup1-4.svg",
+        "sha256": "aa513774be23b4775e2ebc054baacd5720566fdc0d9507532ba43058705163a8",
+        "bytes": 7076
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-warmup1-5.svg",
+        "sha256": "fe4d132dbb505d8abe5478a6452d52f75ac227d7d36dcb9b39887f803a7b5a20",
+        "bytes": 3426
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l12-warmup1-6.svg",
+        "sha256": "8d71df9b5d3930fe20c1523693761f1985b431ab58274427f6f5da97eac59da3",
+        "bytes": 5142
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-picture-1.svg",
+        "sha256": "1899bc80aa75046ca8061f38fa6f3a3823686db83da6ceef219ce0ca9c7db873",
+        "bytes": 3983
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-picture-2.svg",
+        "sha256": "aa32ea4288ea4942a85c0c5acf6f478e11666a4800082792929f0544db3ebdd2",
+        "bytes": 4397
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-picture-3.svg",
+        "sha256": "2ef06e2ab3acf6c99fd9b1b19597a8e0b33df29cb21ba94f84f78da094e41de1",
+        "bytes": 2258
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-text1-1.svg",
+        "sha256": "3724509a22b10e456bab5873d6fe43b65f8f6b5834fc6826f2a3e71dd1c63bd5",
+        "bytes": 7126
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-text2-1.svg",
+        "sha256": "bd5d8c2fb644305c20eb2decde7f9b0df20dd120e3c3274e5377faa42c8342be",
+        "bytes": 3546
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-text3-1.svg",
+        "sha256": "3406a228ad209690064793a30def52da022e66c8c1778e9901c225cb9bcd8ec9",
+        "bytes": 3461
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-warmup1-1.svg",
+        "sha256": "8a0f29aece707bc407d1401378a2ac0b5c95aec8576424bc8e0ca2d0d7ce6a99",
+        "bytes": 4400
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-warmup1-2.svg",
+        "sha256": "3bda3ac7a13d1c6fe924e406b126295e260b6a30fad2da0d4bdcdffd3f7ae9a3",
+        "bytes": 3568
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-warmup1-3.svg",
+        "sha256": "6c5d3feb1d46f87218aa2c43b9178e363a35abe7588d0514d45f85e541be1c72",
+        "bytes": 4783
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-warmup1-4.svg",
+        "sha256": "9c300010410cb09b740719c98b2ceace5c4937ee0b49414c0a6929f821304385",
+        "bytes": 2475
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-warmup1-5.svg",
+        "sha256": "19fdf9570188ec76f2abbfa2a70f094f4c500ae15d6cc649bb6650138a3698ea",
+        "bytes": 3124
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l13-warmup1-6.svg",
+        "sha256": "5ccb3550a9d5883750baa27bc816dae6af69f226e284f03ef1f581e3625a8abe",
+        "bytes": 3351
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-picture-1.svg",
+        "sha256": "3c2fe2e28a9c02078ff515fbcedafe7b09e0f83d20e9314b34269c970dc538c7",
+        "bytes": 1748
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-picture-2.svg",
+        "sha256": "c40b1082c090e69e65636deaba00dd948f293bee4e54acf19762b5c506eb8d92",
+        "bytes": 7341
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-picture-3.svg",
+        "sha256": "03b0f0353b08c2b129bc3f6971c787e0eba049f4eb60c4e370ceb491e82f7815",
+        "bytes": 2761
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-text1-1.svg",
+        "sha256": "da00d11a8bd0ca2815d0c5e8699ff538c78e6c3f9fdabc3a0a2d7b660b0b1fa4",
+        "bytes": 5290
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-text2-1.svg",
+        "sha256": "ccab0b0b03b4be3f254452031c735449adbe2b7f6a641ac4415daede62061827",
+        "bytes": 4536
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-text3-1.svg",
+        "sha256": "fd0016e4c7915018ef52c770b4d3510d11358c67cc21b8ca2e98e83652fe9128",
+        "bytes": 2005
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-text4-1.svg",
+        "sha256": "f485c10da363c39fdfc7915234d37f9bacef4b3ab132b3dc8d4aff7b8d1c1c1f",
+        "bytes": 4313
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-warmup1-1.svg",
+        "sha256": "0ee3653bb6bb55cb0ba98bb016600d43ac0e10fb71c1ab3c10069bdcb0a04ef2",
+        "bytes": 3640
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-warmup1-2.svg",
+        "sha256": "040365fa91f77cda0e2e488e2bc2c852b79d0723432d9f783720f4eaa1c7975a",
+        "bytes": 2654
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-warmup1-3.svg",
+        "sha256": "9f72715eff52bcd13604eb7a5713e628e796c61867bbb080f5ddaa8edfee0170",
+        "bytes": 9428
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-warmup1-4.svg",
+        "sha256": "b086bd63e9954496079bb5cea71973b61fcfc72cada0293b11896abe4930e97c",
+        "bytes": 1394
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-warmup1-5.svg",
+        "sha256": "30d30e6193912e0b271dbaf03aaca53915a9708a6c80e4fbc9ae15a82f09adf8",
+        "bytes": 2384
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l14-warmup1-6.svg",
+        "sha256": "2e3b73ecc2e7a6cb2ce8743c7395cca79bec056660a7dd7803d8bb164756f331",
+        "bytes": 3244
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-city-beijing.svg",
+        "sha256": "c4922bbd3b5cc189494baaee9c96bd9aac502f15ea269aa592d57e654fa9ae8b",
+        "bytes": 1642
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-city-nanjing.svg",
+        "sha256": "cb1d0fd537c9d195bd7d23882c361f8cd5b36ad282ee79964987a3325c4ea3e6",
+        "bytes": 2036
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-city-shanghai.svg",
+        "sha256": "97c16a4565252343d8cd727670331a9d2bec8d75f8ee8e88e3dffd58b517f2f9",
+        "bytes": 4109
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-city-xian.svg",
+        "sha256": "491e0b58eaac76eefdd3d17dcbca11fc83feef5ba7d2add7ecadd88bf1ff8865",
+        "bytes": 1579
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-culture-1.svg",
+        "sha256": "cc09d3f3a3f9d453806697085b6a89ba3a697a86628ff659aad9ccd7863d3f18",
+        "bytes": 1097
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-picture-1.svg",
+        "sha256": "635ef13516e75a7bb667bef2481c9b9648a25cb98d22f443573a5f1895e49caa",
+        "bytes": 3041
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-picture-2.svg",
+        "sha256": "cde105734fd75335c3dd3f96e6ec0acdb8cddaf0d8987f866177e6b34b1639cc",
+        "bytes": 11174
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-picture-3.svg",
+        "sha256": "2a3f17319da87061dfe6aed2e2eca1a84f7c15a64f8595051cd77fc7d28f7fd2",
+        "bytes": 2884
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-text1-1.svg",
+        "sha256": "c5e1455ec03ae8d32206316f201558258689f4d1d1d1937310b26d2cdb7dcd91",
+        "bytes": 2774
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-text2-1.svg",
+        "sha256": "854373ae6983d59f263a51c893eb36c3a080d55572115b39d84ababec1ac7a03",
+        "bytes": 1984
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-text3-1.svg",
+        "sha256": "f0b4e6a5da154d16ab433bca53f34c47b16e0267fb140c8e2aa9740cf22a4b59",
+        "bytes": 1121
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-text4-1.svg",
+        "sha256": "53d8a574c13ff4b70c490b9e5c10c8add78ab1dbf9d8d700c689194184553c68",
+        "bytes": 4427
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-warmup1-1.svg",
+        "sha256": "98fb39e5e35812d98864fbda2e8b038c3d52ac62e267ee82790de293c311666d",
+        "bytes": 5152
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-warmup1-2.svg",
+        "sha256": "5d69727a28693684433061dc3a9dc3c0adf17eb4bc0f07934cc0082db5bf067e",
+        "bytes": 1986
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-warmup1-3.svg",
+        "sha256": "a17a0f23609b51f458fcb4643f448fc919f17ff7c7f8bb150ed2b9f7e652c73d",
+        "bytes": 4829
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-warmup1-4.svg",
+        "sha256": "e02f9c96d50e36793b7150f27a22292c3f2dd65339aaa090353888be817b6803",
+        "bytes": 1923
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-warmup1-5.svg",
+        "sha256": "e11f62d4251493c3c419ccc71eb7ae41192a71e4e8ccf2606ea6dafc6296e42a",
+        "bytes": 1512
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l15-warmup1-6.svg",
+        "sha256": "9089c5483c7def6aea45804423f60cb5595fa71c9d37b527e3f2457d1635a0c0",
+        "bytes": 12969
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-culture-1.svg",
+        "sha256": "6995528a2d830b448a4be940b725bc3d047b5229231cdb7feca1380899641d99",
+        "bytes": 2041
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-picture-1.svg",
+        "sha256": "d907bbf56638ee389334d7182c5bc54738907f5645f9e224666d776c61d1e8b5",
+        "bytes": 3511
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-picture-2.svg",
+        "sha256": "febad7f0a2a717991d971deb0795cf5fe12092cdbeec56c01a43d4fc39410221",
+        "bytes": 2627
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-picture-3.svg",
+        "sha256": "7dbfddbb7a08e59de0a83f6fc777e4993c3852fff9018a32fcc20726869c354d",
+        "bytes": 1495
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-text1-1.svg",
+        "sha256": "4bafa55ef15f55cb63e0d77680d832ffa25659a419d930388e21d64ff22a62c0",
+        "bytes": 2001
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-text3-1.svg",
+        "sha256": "4fa8c2e59ad0344188611a8dceda07c2f1c080ffa494e9439cb176b75c031894",
+        "bytes": 2929
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-text4-1.svg",
+        "sha256": "e549435f0a9ef31bbb793510f8b16d8ff79c6c9d9aa4f1fbb4ddbeab437a1b81",
+        "bytes": 1536
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l16-warmup1-1.svg",
+        "sha256": "2dbf02faa3df5a7985ad0c9cc4f58f0d5f3a5c3f9cdf5023a0ee6f2c188dd6c2",
+        "bytes": 4580
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-classroom-emotions.svg",
+        "sha256": "80f3a23c08ea5beeb7a4dd17a4bce16d630acf65132bd3349e2b618ff31a1e70",
+        "bytes": 6815
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-picture-1.svg",
+        "sha256": "3baf27d8fb04ebb96f7122389822fa3b38ea97a75cd74a99128110629b5ba27a",
+        "bytes": 4178
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-picture-2.svg",
+        "sha256": "2d5b66df2f6e0f6448bc221a26eacf17eee47b2f01483ea131be27a2b8f96b68",
+        "bytes": 2594
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-picture-3.svg",
+        "sha256": "81597b481ac662dcb9e29c7a6a9c17205ffa974d6773e29713c1f719200a784d",
+        "bytes": 2887
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-text1-1.svg",
+        "sha256": "b705d192925149210025debe904f19a187603e6678704409149328d0f64f9fd5",
+        "bytes": 3383
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-text2-1.svg",
+        "sha256": "a5b8d86244be1fca2234889ffdd7bdb21b9eb5a7111f0a74774106a778aeaa94",
+        "bytes": 5906
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-text3-1.svg",
+        "sha256": "2942cbb0bde085dbd52a50c960d691637f5ee70afbc6149d9282ad49dc04c73e",
+        "bytes": 3747
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-text4-1.svg",
+        "sha256": "8dae1912b12d52b7bbbe074dc6cf55e45c6dbc74ea0f4d2af54957155caf1b00",
+        "bytes": 2424
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-warmup1-1.svg",
+        "sha256": "62ecc223e660474f40e72086d7860a443f85014ad5c7d340eb60f2172709f32d",
+        "bytes": 2267
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-warmup1-2.svg",
+        "sha256": "85308d282ef7eff7cf7a96b826b1b9898f95cc513128beb7c3e362dca54ba10b",
+        "bytes": 2398
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-warmup1-3.svg",
+        "sha256": "d29b144a18668d66fc2e764768c00ad4d8481842c8f151a4320b043cc6d10258",
+        "bytes": 3054
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-warmup1-4.svg",
+        "sha256": "39b0235aafbc6179087e86ea93504218a801af7d975e3b268d04ad765d1ae7c8",
+        "bytes": 2300
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-warmup1-5.svg",
+        "sha256": "fcbc72d333ec70e2182478fdb23b55aff99dbbf88d0fb0b28f2eda2cba58d014",
+        "bytes": 2001
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l17-warmup1-6.svg",
+        "sha256": "0cb696290f5ad395bebd5730998603d0444de942790589c142bd032c27de1896",
+        "bytes": 1932
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-picture-1.svg",
+        "sha256": "b51065869eafc10765d147e0e0bf982705e76285a1419b9187f1a60f5eb2bd0e",
+        "bytes": 3318
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-picture-2.svg",
+        "sha256": "95a94571b4a89d1b07e5e63c03d15e72859e124e209d4f3ca1a1aa5651393cdd",
+        "bytes": 1573
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-picture-3.svg",
+        "sha256": "d4ce75aa5195c10f1a232615ef0259c60c7424b9de5217e15238683aeadad23c",
+        "bytes": 7703
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-text1-1.svg",
+        "sha256": "4e135098d94a6bff308b71035353784e6e6661fc002ea18078b7ffe35d3df257",
+        "bytes": 4125
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-text2-1.svg",
+        "sha256": "58ab8fd02bd7da260bd816cfea24849566c1258632132f22f6edc54ab752658c",
+        "bytes": 4991
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-text3-1.svg",
+        "sha256": "8321be2e270c4780f0310bcab9908e2c6f104a9b01f36513ec6a9646c4e428c8",
+        "bytes": 5442
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-text4-1.svg",
+        "sha256": "e00713ecca5d5b0d97e4a08b372033ac995886e297cb25b3fc7ac1e0acaede16",
+        "bytes": 6156
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-1.svg",
+        "sha256": "982bb62b22dd5a4a9053501b3ddf23a64a2b9d8138b213f1c2e823e90d9e086c",
+        "bytes": 4232
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-2.svg",
+        "sha256": "7c281b5b1a75530422a6c641e35362ee7815a61c13d7037afd546a9a2bf553c5",
+        "bytes": 3115
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-3.svg",
+        "sha256": "54276686e900a303f4845d07a787e4389b999d756d9b50c803fdfe258a2df00f",
+        "bytes": 6794
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-4.svg",
+        "sha256": "2dd8e067e9f3c298828e780bd9dd2a5897c5b483ac99ef311469e321323313ea",
+        "bytes": 2986
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-5.svg",
+        "sha256": "ce095abccae03d84df3d39c7e25d9d25e9edf2614db50fb8eb9cdfc20de3ff41",
+        "bytes": 3764
+      },
+      {
+        "file": "course-app/public/illustrations/hsk3-l18-warmup1-6.svg",
+        "sha256": "8d023f3167d11968cc07ee8b5990bbb76c304d4328dad9d7057b692b8fd275d9",
+        "bytes": 2369
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/picture-01.svg",
+        "sha256": "233ca90a60f2755392032b139d63ed483c8e328ec3206480e8d5fd5d622019c1",
+        "bytes": 3026
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/picture-02.svg",
+        "sha256": "411de86dc787638012f3eb0023dbf0ab8a4bc44dc9860fb68be3cfca1a291ac2",
+        "bytes": 1198
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/picture-03.svg",
+        "sha256": "cdaff6cad8f62f75028b5ae235c87dfa225c3ba80bbd2d327de7ec43d32b5fbe",
+        "bytes": 665
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/picture-04.svg",
+        "sha256": "ba40245e5a515240ce49378f4575b78555f43e773a3a68e7600ea983a4172867",
+        "bytes": 1124
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/warmup-01.svg",
+        "sha256": "ed2d54ba33599303fcadbd979bde85fa4eff24e586f405609fe4d7b24dc0fbb4",
+        "bytes": 763
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/warmup-02.svg",
+        "sha256": "b8928b1bb57395114a9fa1b83c8ce1fcdbdcc8f129cdd6368cb7a77302557515",
+        "bytes": 313
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/warmup-03.svg",
+        "sha256": "53b2ddbe1cb9ecd7be66329589b9b1856261041c43306a83c605cbb1e7b448b3",
+        "bytes": 1887
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/warmup-04.svg",
+        "sha256": "d4065b4b5c5ad802149751001168f316bc911e3c10d0853a322342d231e71ddf",
+        "bytes": 948
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/warmup-05.svg",
+        "sha256": "470ce8507e80529f4f3bf923164f2bbea58d8ae8f85f32cda73a28b5385182e3",
+        "bytes": 1053
+      },
+      {
+        "file": "hsk1-app/content/source-activities/figures/warmup-06.svg",
+        "sha256": "9b8050952eeeec6654656e67042283e952dba91fcc0f0ca0ba8d6b799d167f2e",
+        "bytes": 1255
+      },
+      {
+        "file": "new-hsk1/favicon.svg",
+        "sha256": "e6d2e59b7b5bbb0342e0fb496dfc262decbfe4426bbb7b047aec8d467d1dc6f7",
+        "bytes": 712
+      },
+      {
+        "file": "new-hsk1/file.svg",
+        "sha256": "1e0ae4d1a1ddfa36752988647b731e4abf150c414d069ec83c96fb0aaeff0307",
+        "bytes": 392
+      },
+      {
+        "file": "new-hsk1/globe.svg",
+        "sha256": "d051a8c47936990a9085693d307bb7cea1bc1b6d7ed956bcbaacf674f4ec96b9",
+        "bytes": 1036
+      },
+      {
+        "file": "new-hsk1/window.svg",
+        "sha256": "decf1cf7bb22b5c99c4857cfcd5718ce5465c4454166317589c83fc73df74b66",
+        "bytes": 386
+      }
+    ],
+    "officialVietnameseLanguageAuditPerformed": false
+  },
+  "limitations": [
+    "Runtime-source literals are a static superset; dead code branches and module usage are not automatically proven visible.",
+    "Language detection of unlabelled strings is candidate classification, not language certification. ASCII-only Vietnamese without known cues can be missed.",
+    "Template expressions record producers but do not enumerate arbitrary learner names, numbers, browser messages or all branch combinations.",
+    "HTML extracted text preserves source markup/entity representation; final DOM text should be checked in native browsers.",
+    "Legacy content replay is scoped to documented content layers; DOM-dependent display overrides are separately listed as code literals. The actual HSK3 vocabulary classification contract is replayed at its real location; remaining DOM-dependent UI overrides are static candidates.",
+    "SVG embedded desc strings are asset metadata candidates, not proven visible body text or native assistive technology execution.",
+    "1360 legacy practice question IDs and all question leaves are retained separately from Vietnamese appearances; same lesson ordinal does not map them to uploaded books.",
+    "Official source matches remain pending phase B; no full PDF VI review is claimed.",
+    "Uploaded HSK1/2/3 books do not cover HSK4 textbook content; shared HSK4 UI candidates are scope markers, not textbook alignment."
+  ],
+  "exactHEADInputChecks": {
+    "files": 840,
+    "allMatch": true
+  }
+}

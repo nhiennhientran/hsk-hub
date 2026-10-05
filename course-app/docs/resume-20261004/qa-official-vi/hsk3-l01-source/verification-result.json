@@ -1,0 +1,2575 @@
+{
+  "level": 3,
+  "lesson": 1,
+  "status": "pass",
+  "actualChecks": 513,
+  "failed": 0,
+  "scope": "Byte/ID/partition/actual page identity verification; manual visual source-fidelity judgments remain independent authored evidence, not machine semantic validation.",
+  "checks": [
+    {
+      "name": "source bytes frozen",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source author freeze immutable",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source recorded official PDF identity",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual uploaded official PDF SHA",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual uploaded PDF bytes",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual uploaded PDF pages",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact README.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact author-source.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact author-verification.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/boundary-pdf022-p010-next-l02.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/locator-pdf010-footerVIII.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/locator-pdf012-footerX.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf013-p001.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf014-p002.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf015-p003.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf016-p004.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf017-p005.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf018-p006.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf018-words17-22.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf019-p007.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf020-p008.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf021-p009.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf195-l01-texts1-2.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf195-l01-texts3-4.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact evidence/pdf195-p183.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact source-detail-crop-evidence.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact source-locator-evidence.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact source-page-evidence.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact source-transcription.json",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact source-transcription.tsv",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "author artifact verify-source-transcription.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "unique source IDs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual exact source ID coverage",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "total source count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:lesson-number-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:lesson-number-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:lesson-number-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:lesson-title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:lesson-title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:lesson-title",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:goals-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:goals-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:goals-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:goal1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:goal1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:goal1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:goal2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:goal2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:goal2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:goal3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:goal3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:goal3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:warmup-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:warmup-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:warmup-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:warmup-instruction1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:warmup-instruction1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:warmup-instruction1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:warmup-instruction2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:warmup-instruction2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:warmup-instruction2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:warmup-scenario1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:warmup-scenario1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:warmup-scenario1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p001:warmup-scenario2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p001:warmup-scenario2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p001:warmup-scenario2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:text1-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:text1-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:text1-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:text1-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:text1-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:text1-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:text1-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:text1-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:text1-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:words-heading1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:words-heading1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:words-heading1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:word-07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:word-07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:word-07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p002:text1-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p002:text1-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p002:text1-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:class-heading1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:class-heading1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:class-heading1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:grammar1-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:grammar1-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:grammar1-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:grammar1-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:grammar1-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:grammar1-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:grammar1-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:grammar1-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:grammar1-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:text2-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:text2-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:text2-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:text2-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:text2-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:text2-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p003:text2-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p003:text2-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p003:text2-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:words-heading2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:words-heading2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:words-heading2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-09",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-09",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-09",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:word-16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:word-16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:word-16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:text2-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:text2-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:text2-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:class-heading2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:class-heading2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:class-heading2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:grammar2-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:grammar2-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:grammar2-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p004:grammar2-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p004:grammar2-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p004:grammar2-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p005:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p005:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p005:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p005:grammar2-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p005:grammar2-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p005:grammar2-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p005:text3-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p005:text3-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p005:text3-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p005:text3-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p005:text3-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p005:text3-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p005:text3-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p005:text3-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p005:text3-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:words-heading3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:words-heading3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:words-heading3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:word-17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:word-17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:word-17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:word-18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:word-18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:word-18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:word-19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:word-19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:word-19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:word-20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:word-20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:word-20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:word-21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:word-21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:word-21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:word-22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:word-22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:word-22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:text3-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:text3-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:text3-role-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:class-heading3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:class-heading3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:class-heading3",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:grammar3-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:grammar3-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:grammar3-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p006:grammar3-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p006:grammar3-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p006:grammar3-rule",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p007:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p007:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p007:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p007:grammar3-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p007:grammar3-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p007:grammar3-complete-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p007:text4-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p007:text4-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p007:text4-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p007:text4-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p007:text4-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p007:text4-scene",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p007:text4-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p007:text4-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p007:text4-listen-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:series-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:words-heading4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:words-heading4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:words-heading4",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:word-23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:word-23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:word-23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:word-24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:word-24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:word-24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:word-25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:word-25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:word-25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:word-26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:word-26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:word-26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:word-27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:word-27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:word-27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:text4-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:text4-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:text4-read-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:comprehensive-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:comprehensive-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:comprehensive-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p008:cloze-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p008:cloze-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p008:cloze-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:lesson-running-header",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:picture-description-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:picture-description-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:picture-description-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:class-activity-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:class-activity-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:class-activity-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:pair-activity-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:pair-activity-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:pair-activity-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:pair-activity-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:pair-activity-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:pair-activity-instruction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:pair-scenario1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:pair-scenario1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:pair-scenario1",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p009:pair-scenario2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p009:pair-scenario2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p009:pair-scenario2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-global-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-global-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-global-heading",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-lesson-marker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-lesson-marker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-lesson-marker",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text1-role07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text1-role07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text1-role07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text2-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text2-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text2-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text2-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text2-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text2-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text2-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text2-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text2-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text2-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text2-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text2-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text2-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text2-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text2-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text2-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text2-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text2-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text3-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text3-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text3-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text3-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text3-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text3-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text3-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text3-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text3-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text3-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text3-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text3-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text3-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text3-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text3-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text3-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text3-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text3-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record literal hsk3-official-vi:l01:p183:appendix-text4-whole-paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "record page hsk3-official-vi:l01:p183:appendix-text4-whole-paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict hsk3-official-vi:l01:p183:appendix-text4-whole-paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict count accepted",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict count repair",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "verdict count held",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "numbered word count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "numbered word ordinals",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body VI loci count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix loci count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p002:word-07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-08",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-09",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-10",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-11",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-12",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p004:word-16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p006:word-17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p006:word-18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p006:word-19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p006:word-20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p006:word-21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p006:word-22",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p008:word-23",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p008:word-24",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p008:word-25",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p008:word-26",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "word original POS/PY hsk3-official-vi:l01:p008:word-27",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact body anchor IDs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text1:line07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text1:line07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text1-role07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text1-role07",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text2:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text2:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text2-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text2-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text2:line02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text2:line02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text2-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text2-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text2:line03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text2:line03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text2-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text2-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text2:line04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text2:line04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text2-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text2-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text2:line05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text2:line05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text2-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text2-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text2:line06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text2:line06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text2-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text2-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text3:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text3:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text3-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text3-role01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text3:line02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text3:line02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text3-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text3-role02",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text3:line03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text3:line03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text3-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text3-role03",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text3:line04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text3:line04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text3-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text3-role04",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text3:line05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text3:line05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text3-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text3-role05",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text3:line06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text3:line06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text3-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text3-role06",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body frozen whole record hsk3-official-body:l01:text4:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "body no VI hsk3-official-body:l01:text4:line01",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix exact actual body anchor hsk3-official-vi:l01:p183:appendix-text4-whole-paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "appendix role hsk3-official-vi:l01:p183:appendix-text4-whole-paragraph",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "role line count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "whole unlabelled paragraph count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "exact visually read source page set",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 13",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 14",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 15",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 16",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 17",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 18",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 19",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 20",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 21",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "source original full PNG 195",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "actual PDF CropBox/rotation 195",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "manual original page evidence 195",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fresh original crop pdf018-vocab-pos-detail-4x.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fresh original crop pdf195-l01-left-column-4x.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fresh original crop pdf195-l01-right-column-4x.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fresh original crop pdf195-l01-text2-ending-4x.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fresh original crop pdf195-l01-text3-ending-and-diary-4x.png",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "fresh crop count",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "website/source boundary",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

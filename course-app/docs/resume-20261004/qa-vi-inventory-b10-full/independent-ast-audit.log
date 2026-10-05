@@ -1,0 +1,37 @@
+{
+  "status": "passed-independent-full-AST-target-validation",
+  "ASTOccurrences": 11308,
+  "parsedCodeHTMLFiles": 256,
+  "virtualPrograms": 8,
+  "selectedFiles": [
+    {
+      "file": "course-app/src/dom.ts",
+      "oldRows": 0,
+      "newRows": 2,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/lesson-view.ts",
+      "oldRows": 85,
+      "newRows": 87,
+      "sourceBytesChanged": false
+    },
+    {
+      "file": "course-app/src/main.ts",
+      "oldRows": 157,
+      "newRows": 176,
+      "sourceBytesChanged": true
+    }
+  ],
+  "mainDelta": {
+    "oldReportedRows": 157,
+    "oldSourceFullASTRows": 175,
+    "newReportedRows": 176,
+    "historicalPropertyValueMisses": 18,
+    "actualB10NewRuntimeLiterals": 1,
+    "old157ShapesStillPresent": true,
+    "oldCodeRowsChangedRange": 157,
+    "rangeDriftIsNotNewMissingText": true,
+    "newRuntimeLiteral": "Tiêu đề bài theo nội dung hiện tại; câu hỏi chỉ lấy từ ảnh chụp đã lưu của lần nộp này."
+  }
+}

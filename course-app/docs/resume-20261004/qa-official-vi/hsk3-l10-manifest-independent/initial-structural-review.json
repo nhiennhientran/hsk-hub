@@ -1,0 +1,497 @@
+{
+  "schemaVersion": 1,
+  "status": "initial-independent-content-review-complete-with-held-source-span",
+  "reviewer": "qa_hsk1_05_08",
+  "reviewIndependence": "Neither original H3L10 comparison author nor root proposal/context author.",
+  "inputManifestFile": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-manifest-independent/input-copy/draft-manifest.initial.json",
+  "inputManifestSHA256": "ef319d3275655a6212d7a0f03fa34f6641f0a52d55e18f074fb919361eeb0d35",
+  "proposalSHA256": "fb744e2808f60f28d43830179ec2f164f66e293789628710bbe90ee153e0b7f1",
+  "officialPDF": {
+    "path": "/workspace/scratch/28b55072841a/upload/HSK3 (3.0).pdf",
+    "bytes": 96266563,
+    "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951"
+  },
+  "sourceOccurrenceCount": 119,
+  "reviewedChangeCount": 135,
+  "directOfficial": 98,
+  "terminologyDerived": 37,
+  "acceptedContentAndConstruction": 134,
+  "heldChangeIds": [
+    "hsk3-l10:3b1e30891a53e107018a001d"
+  ],
+  "trustedRuntimeProofGenerated": false,
+  "productionChanged": false,
+  "sourceCommitChecks": [
+    {
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-comparison/field-comparisons.json",
+      "sha256": "5514cd7e8b393a9e99cec0fb559e27f648cf846195693bf0e26a445deea5550a",
+      "committedSHA256": "5514cd7e8b393a9e99cec0fb559e27f648cf846195693bf0e26a445deea5550a",
+      "byteIdentical": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/body-vietnamese-transcription.json",
+      "sha256": "e5404cc8e0acd70af21997e0599edacab6eb290b22dc55ba91b25ee8d25d1b4e",
+      "committedSHA256": "e5404cc8e0acd70af21997e0599edacab6eb290b22dc55ba91b25ee8d25d1b4e",
+      "byteIdentical": true
+    },
+    {
+      "file": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l10/appendix-lesson10-vietnamese-transcription.json",
+      "sha256": "ff9d2f2ad097c4c46696dcf95f3e55e431c4f050c006ee3ff4073c6d4af00aa8",
+      "committedSHA256": "ff9d2f2ad097c4c46696dcf95f3e55e431c4f050c006ee3ff4073c6d4af00aa8",
+      "byteIdentical": true
+    }
+  ],
+  "baselineChecks": [
+    {
+      "file": "course-app/content/course-index.json",
+      "actualSHA256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "manifestSHA256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "committedSHA256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "byteIdentical": true
+    },
+    {
+      "file": "course-app/content/hsk3-lexicon.json",
+      "actualSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "manifestSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "committedSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "byteIdentical": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "actualSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "manifestSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "committedSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "byteIdentical": true
+    }
+  ],
+  "projectionChecks": [
+    {
+      "file": "course-app/content/course-index.json",
+      "changedVILeaves": 1,
+      "changedNonVILeaves": 0,
+      "structuralChanges": 0,
+      "sourceOrAnswerOrHistoryChanges": 0,
+      "rawFileSHA256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "rawFileWritten": false
+    },
+    {
+      "file": "course-app/content/hsk3-lexicon.json",
+      "changedVILeaves": 20,
+      "changedNonVILeaves": 0,
+      "structuralChanges": 0,
+      "sourceOrAnswerOrHistoryChanges": 0,
+      "rawFileSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "rawFileWritten": false
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "changedVILeaves": 114,
+      "changedNonVILeaves": 0,
+      "structuralChanges": 0,
+      "sourceOrAnswerOrHistoryChanges": 0,
+      "rawFileSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "rawFileWritten": false
+    }
+  ],
+  "canonicalPairs": [
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word01",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word01",
+      "Chinese": "数学",
+      "POS": "danh từ",
+      "newVI": "môn Toán, toán học",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word02",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word02",
+      "Chinese": "认真",
+      "POS": "tính từ",
+      "newVI": "chăm chỉ, nghiêm túc",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word03",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word03",
+      "Chinese": "笔记",
+      "POS": "danh từ",
+      "newVI": "ghi chép",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word04",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word04",
+      "Chinese": "清楚",
+      "POS": "tính từ",
+      "newVI": "rõ ràng",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word05",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word05",
+      "Chinese": "清楚",
+      "POS": "động từ",
+      "newVI": "hiểu rõ",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word06",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word06",
+      "Chinese": "黑板",
+      "POS": "danh từ",
+      "newVI": "bảng đen",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word07",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word07",
+      "Chinese": "把",
+      "POS": "giới từ",
+      "newVI": "dùng để đưa tân ngữ của động từ lên trước động từ",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word08",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word08",
+      "Chinese": "作业",
+      "POS": "danh từ",
+      "newVI": "bài tập về nhà",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word09",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word09",
+      "Chinese": "遍",
+      "POS": "lượng từ",
+      "newVI": "lượt",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word10",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word10",
+      "Chinese": "提高",
+      "POS": "động từ",
+      "newVI": "nâng cao",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word11",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word11",
+      "Chinese": "历史",
+      "POS": "danh từ",
+      "newVI": "môn Lịch sử, lịch sử",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word12",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word12",
+      "Chinese": "难",
+      "POS": "tính từ",
+      "newVI": "khó, khó khăn",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word13",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word13",
+      "Chinese": "要求",
+      "POS": "danh từ",
+      "newVI": "yêu cầu",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word14",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word14",
+      "Chinese": "要求",
+      "POS": "động từ",
+      "newVI": "đòi hỏi",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word15",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word15",
+      "Chinese": "差",
+      "POS": "tính từ",
+      "newVI": "kém",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word16",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word16",
+      "Chinese": "差",
+      "POS": "động từ",
+      "newVI": "thiếu",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word17",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word17",
+      "Chinese": "复习",
+      "POS": "động từ",
+      "newVI": "ôn tập",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word18",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word18",
+      "Chinese": "外语",
+      "POS": "danh từ",
+      "newVI": "ngoại ngữ",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word19",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word19",
+      "Chinese": "当然",
+      "POS": "phó từ",
+      "newVI": "đương nhiên, dĩ nhiên",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word20",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word20",
+      "Chinese": "遇到",
+      "POS": "động từ",
+      "newVI": "gặp, gặp phải",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word21",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word21",
+      "Chinese": "办公室",
+      "POS": "danh từ",
+      "newVI": "văn phòng, phòng làm việc",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word22",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word22",
+      "Chinese": "页",
+      "POS": "lượng từ",
+      "newVI": "trang (giấy, sách)",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word23",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word23",
+      "Chinese": "对话",
+      "POS": "động từ",
+      "newVI": "đối thoại, hội thoại, trò chuyện",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word24",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word24",
+      "Chinese": "明白",
+      "POS": "động từ",
+      "newVI": "hiểu",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word25",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word25",
+      "Chinese": "明白",
+      "POS": "tính từ",
+      "newVI": "rõ ràng",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word26",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word26",
+      "Chinese": "讲",
+      "POS": "động từ",
+      "newVI": "giảng, giải thích",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word27",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word27",
+      "Chinese": "句",
+      "POS": "lượng từ",
+      "newVI": "câu (nói, văn)",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word28",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word28",
+      "Chinese": "句子",
+      "POS": "danh từ",
+      "newVI": "câu",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word29",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word29",
+      "Chinese": "年级",
+      "POS": "danh từ",
+      "newVI": "khối lớp",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word30",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word30",
+      "Chinese": "后年",
+      "POS": "danh từ",
+      "newVI": "năm sau nữa",
+      "pairedProposal": false,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word31",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word31",
+      "Chinese": "一般",
+      "POS": "tính từ",
+      "newVI": "bình thường, phổ biến",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word32",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word32",
+      "Chinese": "努力",
+      "POS": "tính từ",
+      "newVI": "chăm chỉ",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    },
+    {
+      "localWordId": "hsk3-fltrp-2026:l10:word33",
+      "canonicalSenseId": "hsk3-fltrp-2026:sense:l10-word33",
+      "Chinese": "努力",
+      "POS": "động từ",
+      "newVI": "nỗ lực",
+      "pairedProposal": true,
+      "identicalAnchorsAndSelectedSpans": true
+    }
+  ],
+  "visualEvidence": [
+    {
+      "pdfPage": 98,
+      "printedPage": 86,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p098.png",
+      "sha256": "cb0721913ee376d25af533fcdaf3dc9096c7510058833dc440287599330599d0",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 99,
+      "printedPage": 87,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p099.png",
+      "sha256": "612c69b66443a1649b9370935475aadb96286c065a4a08f0de3f2d54c197659c",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 100,
+      "printedPage": 88,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p100.png",
+      "sha256": "282a9dbdcc949a4f7d6c248ada8aaab18335411a4c3e8edb68d1c44335ff7bf5",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 101,
+      "printedPage": 89,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p101.png",
+      "sha256": "69680289966ccf02af8655cd0c82416fd6875ad0d14836cc9dfbdc4e432ea462",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 102,
+      "printedPage": 90,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p102.png",
+      "sha256": "8f165e9099d4877632de2c9c8115cfb5b1569784f43eed9b33a07c761adfcae5",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 103,
+      "printedPage": 91,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p103.png",
+      "sha256": "a33a8c0384d039ab79c5dd8fbfcddf720d0630410ce649b7223c2845881c2b01",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 104,
+      "printedPage": 92,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p104.png",
+      "sha256": "ebdb3abe68e01fd0c3cf95a9b23027e11ad1d2bbe06c1bf532ccfbf393e93ed3",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 105,
+      "printedPage": 93,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p105.png",
+      "sha256": "129edc8a3d068ccbae4266f455bb78f58bf27f4bdc2446e4c6610dd204efb0cf",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 106,
+      "printedPage": 94,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p106.png",
+      "sha256": "1ad551ec7a2af6ba475f988e12862b72c01e5397ae3854ec92cda3a57d546835",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 201,
+      "printedPage": 189,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p201-3x.png",
+      "sha256": "270e77120760ff4c493332532969dba2f359799ef6755d18d9926d403b4a1da4",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    },
+    {
+      "pdfPage": 202,
+      "printedPage": 190,
+      "file": "course-app/docs/resume-20261004/qa-official-vi/hsk3-l10-source/page-evidence/independent-p202-3x.png",
+      "sha256": "58f46b4f8b25639330dddc7d187a1252a31bbd185e0c11992e24321ebd939872",
+      "actuallyVisuallyViewedByThisReviewer": true,
+      "reusedCommittedSourceRaster": true,
+      "newRasterRenderClaim": false
+    }
+  ],
+  "decisionFile": "change-decisions.initial.json"
+}
