@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted-source-transcription-only",
+  "createdAt": "2026-10-04T21:28:11.768022+00:00",
+  "reviewer": "remaining_media_audit",
+  "scope": "Initial independent source transcription review only; website comparison not performed",
+  "level": 2,
+  "lesson": 5,
+  "sourceTranscriptionSHA256": "5fbd63305d2027470848eef323ccce40fd08dba58d14a9be4b04ef6efc4db1e4",
+  "counts": {
+    "accepted": 104,
+    "repair": 0,
+    "held": 0,
+    "ordinaryNumberedWords": 17,
+    "printedRoleTranslationLines": 21,
+    "extraUnnumberedSubwords": 1,
+    "confirmedPublisherOmissionObservations": 1
+  },
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1501,
+      "sha256": "2f22bac9277c1db3b0bd9c3dadede9ab5087544fba32dc1f932595f4146f62b0"
+    },
+    {
+      "file": "author-frozen-input-verification.json",
+      "bytes": 4419,
+      "sha256": "b617077664af3ca4f06bf0a39b5e246b0e3fb5d5279c3623449e447f3268d958"
+    },
+    {
+      "file": "grammar2-detail-evidence.json",
+      "bytes": 350,
+      "sha256": "a8573a6b5c45df872b8ce3139ef60765a2e79763930a163dcbe7395c1962774c"
+    },
+    {
+      "file": "independent-boundary-review.json",
+      "bytes": 882,
+      "sha256": "f6572269bd4a1fd96b00c43dece9b69c88411cdc5326fc43de8cac8e894a448d"
+    },
+    {
+      "file": "independent-page-evidence.json",
+      "bytes": 8671,
+      "sha256": "931c2eb8b88578761c161513bbc210bb71d6b92986b7c398cacd42db4e3d2985"
+    },
+    {
+      "file": "independent-review.json",
+      "bytes": 11840,
+      "sha256": "2db2566516d7af97613551f65da52a894d86c36c433bfda233fcdf4a245669fc"
+    },
+    {
+      "file": "item-decisions.json",
+      "bytes": 119161,
+      "sha256": "0812ddeb46e11e6f8e74b4a6ad89012546f29ac08ada7e823cbb4b83bcf9146d"
+    },
+    {
+      "file": "pdf051-original-2x.png",
+      "bytes": 1784828,
+      "sha256": "ab07707fb3e48664d48fee5e556c42c911bc81f978507bcf73a6972e303a6083"
+    },
+    {
+      "file": "pdf052-original-2x.png",
+      "bytes": 1327847,
+      "sha256": "4ee6780f3ea178f9baeb953e62437ebef35445bba03650cf9c2b051062482b1e"
+    },
+    {
+      "file": "pdf053-original-2x.png",
+      "bytes": 1450511,
+      "sha256": "14a2de264409c227d46af88676f8a51ae6ab3bf29758d0264facb6c85f94e1ba"
+    },
+    {
+      "file": "pdf054-original-2x.png",
+      "bytes": 1021937,
+      "sha256": "c5f7746c59ffd653ae981606b8e16daf9101432f9190a976101c76770c7e309b"
+    },
+    {
+      "file": "pdf055-grammar2-detail-4x.png",
+      "bytes": 1727438,
+      "sha256": "ec33fbe19e9a9a7919d711910597a46aa35aa448116ba37fb46e8c0e25b18ec2"
+    },
+    {
+      "file": "pdf055-original-2x.png",
+      "bytes": 1335769,
+      "sha256": "056d66b05d8dff3e924c242903cc681f748988289cbc9f9df83cd580eece4e7b"
+    },
+    {
+      "file": "pdf056-original-2x.png",
+      "bytes": 1191518,
+      "sha256": "daac23d3a2f37a45d5ce7bf169b8c1b80887420ad985218dccbf3a13ac435fb0"
+    },
+    {
+      "file": "pdf057-original-2x.png",
+      "bytes": 1540477,
+      "sha256": "cc0599558a11bf8f7b6bd521797498ca8796da427ef736ccab778a65c32b406c"
+    },
+    {
+      "file": "pdf058-original-2x.png",
+      "bytes": 1067056,
+      "sha256": "668e9fa531b0cb190e3866d4cdc72f9153113b31f88e2288a35a813a48d0000c"
+    },
+    {
+      "file": "pdf059-original-2x.png",
+      "bytes": 1745443,
+      "sha256": "dc87a97c8c4347ce84a7a60803ae32e050e94d5b2b86da318b95116ebf3d8cc2"
+    },
+    {
+      "file": "repair-list.json",
+      "bytes": 80,
+      "sha256": "94bdb5a45fd3c3caf66fc7229b14eaec73f088ec8356d33567ea10b2c45994ba"
+    },
+    {
+      "file": "source-semantic-observations.json",
+      "bytes": 1315,
+      "sha256": "0da66b6478a01fe7c405fa6478ac7536d5dd7fed6124745287dfd35e3d3afe2c"
+    },
+    {
+      "file": "verification-result.json",
+      "bytes": 71115,
+      "sha256": "c9dcd245d2e200135859f65b158c5d427382e9d1812f971f559039c08826d2c8"
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/source-transcription.json",
+      "bytes": 53569,
+      "sha256": "5fbd63305d2027470848eef323ccce40fd08dba58d14a9be4b04ef6efc4db1e4"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/source-page-evidence.json",
+      "bytes": 5141,
+      "sha256": "f86f6dd27fd3d91c66c882125c0987a34c9df090ff00630236495047530614c8"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/source-detail-crop-evidence.json",
+      "bytes": 2173,
+      "sha256": "0bc942166bc17e9aa5219c2faff645d2ad71d28e0a891a8b7b00f7a61cee6aee"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/source-boundary-evidence.json",
+      "bytes": 625,
+      "sha256": "096e5b7d850db2f98712b0959b486a678fb0304c6ad19e3f741e3c9fc1d9d6c7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/source-erratum-candidates.json",
+      "bytes": 919,
+      "sha256": "544e3ddda34e9bdb3cf06b48834b644127c16b32eb1ee05be72689e04ae5f9c5"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/build-source-transcription.py",
+      "bytes": 13498,
+      "sha256": "11d3f8dcf29b023b0a829b1579dd2b39e5e3e86f90c89353baf21056c5e02265"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/source_writer.py",
+      "bytes": 7260,
+      "sha256": "cca8ea209326d50bc87d6ea7c4a24b9486ce567b26880e5e8fcbee795ab238d7"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/README.md",
+      "bytes": 1739,
+      "sha256": "043ce7645734b64a34421bf558f39b396167eb25c2c603ba919614164f915292"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l05/freeze-manifest.json",
+      "bytes": 1467,
+      "sha256": "422926e36721e4872504e17406c0e28ea21aefe9d679f4cbddffeeeee79ed828"
+    },
+    {
+      "path": "/workspace/scratch/28b55072841a/upload/HSK2 ( 3.0).pdf",
+      "bytes": 69855983,
+      "sha256": "6465777a77f8d9cb0d29b47f00b36a8e9e9ff627509f0f02a9909c7aaeaa231b"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/verify-source-review.py",
+      "bytes": 6367,
+      "sha256": "6ae3f608852e9505006e085d382185f769b35be69628666ba77a4655137fc924"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l04-source/pdf050-original-2x.png",
+      "bytes": 1290134,
+      "sha256": "32f514b83eb1c22a19bd48308f6b0d7c186b8842c1d079080e63bbed48f021a1"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf060-original-2x.png",
+      "bytes": 1267134,
+      "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+    }
+  ],
+  "authorFilesChanged": false,
+  "productionChanged": false,
+  "publicationApproved": false,
+  "deployed": false
+}

@@ -1,0 +1,3113 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "author": "root",
+  "scope": "Source-only v2 repair and reuse of frozen independent original-page acceptance, not website comparison",
+  "originalSourceSHA256": "bbe804e8bf0d2abb8caf7f44a67baa4da58935c8179c9d10ff4f907749aeff71",
+  "correctedSourceSHA256": "9df03d8b01446b998c1afe6e9fadb500106b525ad6c2d438388d0232641ba94d",
+  "initialIndependentQAFreezeSHA256": "0de5d0c6e4e394fc89ea820a9dd13bdce1e35a42133fa506d366d98b85bbfa2a",
+  "v2AuthorFreezeSHA256": "53db8c82b300b2f159a0db6921642926795758bc2946ed97573f87bbc395dcc9",
+  "checks": 389,
+  "failed": 0,
+  "accepted": 116,
+  "repair": 0,
+  "held": 0,
+  "actualRecordChanges": [
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:text4-whole-paragraph",
+      "recordIndex": 84,
+      "field": "viPrinted",
+      "oldValue": "Hôm nay là sinh nhật con gái. Chúng tôi đã mua một chiếc bánh ga tô, nấu mì sợi, còn làm các món như cá, thịt... Sau khi ăn tối xong, cả gia đình chúng tôi đã đi xem phim. Sau khi về nhà, bọn trẻ đi ngủ sớm. Ngày mai không phải đi học, chúng nói muốn ngủ một giấc thật thoải mái, bảo chúng tôi gọi chúng dậy muộn hơn một chút. Hôm nay là một ngày rất bận rộn và mệt, nhưng cũng là một ngày rất vui.",
+      "newValue": "Hôm nay là sinh nhật con gái. Chúng tôi đã mua một chiếc bánh ga tô, nấu mì sợi, còn làm các món như cá, thịt... Sau khi ăn tối xong, cả gia đình chúng tôi đã đi xem phim. Sau khi về nhà, bọn trẻ đi ngủ sớm. Ngày mai không phải đi học, chúng nói muốn ngủ một giấc thật thoải mái, bảo chúng tôi gọi chúng dậy muộn hơn một chút. Hôm nay là một ngày rất bận rộn và rất mệt, nhưng cũng là một ngày rất vui."
+    }
+  ],
+  "topLevelRevisionChanges": [
+    "author",
+    "revision",
+    "status"
+  ],
+  "evidencePathExists": true,
+  "evidencePathLayerErrorFound": false,
+  "evidenceSHA256": "1a834e9f520ea99a398a441411d63ffaa4f5b2df80c92744cfedb66258a58c9b",
+  "fullOriginalPageReadReused": true,
+  "freshFullPageRereadClaimed": false,
+  "originalAuthorFilesChangedByReviewer": false,
+  "initialIndependentQAFilesChanged": false,
+  "runtimeChanged": false,
+  "websiteComparisonPerformed": false,
+  "runtimeActivationApproved": false,
+  "publicationApproved": false,
+  "itemReviews": [
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:lesson-number-header",
+      "sourceRecordIndex": 0,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:lesson-title",
+      "sourceRecordIndex": 1,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:goals-header",
+      "sourceRecordIndex": 2,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:goal1",
+      "sourceRecordIndex": 3,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:goal2",
+      "sourceRecordIndex": 4,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:goal3",
+      "sourceRecordIndex": 5,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:goal4",
+      "sourceRecordIndex": 6,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:warmup-header",
+      "sourceRecordIndex": 7,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:warmup1-instruction",
+      "sourceRecordIndex": 8,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p046:warmup2-instruction",
+      "sourceRecordIndex": 9,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 60,
+          "file": "pdf060-original-2x.png",
+          "sha256": "2f8072ec50db18b283eeb0f42a597800a70f5dc7507bd17a67dbb039b9f8850f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:running-lesson-header",
+      "sourceRecordIndex": 10,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-header",
+      "sourceRecordIndex": 11,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-context",
+      "sourceRecordIndex": 12,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-listen-instruction",
+      "sourceRecordIndex": 13,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:words-header",
+      "sourceRecordIndex": 14,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:word01",
+      "sourceRecordIndex": 15,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:word02",
+      "sourceRecordIndex": 16,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:word03",
+      "sourceRecordIndex": 17,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:word04",
+      "sourceRecordIndex": 18,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:word05",
+      "sourceRecordIndex": 19,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-line01",
+      "sourceRecordIndex": 20,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-line02",
+      "sourceRecordIndex": 21,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-line03",
+      "sourceRecordIndex": 22,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-line04",
+      "sourceRecordIndex": 23,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-line05",
+      "sourceRecordIndex": 24,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p047:text1-line06",
+      "sourceRecordIndex": 25,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 61,
+          "file": "pdf061-original-2x.png",
+          "sha256": "089eddbd9bf74d06c2e5a21f892eba8faec634f68b1d0a4d5c797f530cfc9fe5"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:text1-role-read-instruction",
+      "sourceRecordIndex": 26,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:running-series-header",
+      "sourceRecordIndex": 27,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:grammar1-section-header",
+      "sourceRecordIndex": 28,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:grammar1-title",
+      "sourceRecordIndex": 29,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:grammar1-rule",
+      "sourceRecordIndex": 30,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:grammar1-complete-instruction",
+      "sourceRecordIndex": 31,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:text2-header",
+      "sourceRecordIndex": 32,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:text2-context",
+      "sourceRecordIndex": 33,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p048:text2-listen-instruction",
+      "sourceRecordIndex": 34,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 62,
+          "file": "pdf062-original-2x.png",
+          "sha256": "4e0f69712b019175c8d3ff0c9aa747ceadac0760e9bc6f36f13719846b56964f"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:running-lesson-header",
+      "sourceRecordIndex": 35,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:words-header",
+      "sourceRecordIndex": 36,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:word06",
+      "sourceRecordIndex": 37,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:word07",
+      "sourceRecordIndex": 38,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line01",
+      "sourceRecordIndex": 39,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line02",
+      "sourceRecordIndex": 40,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line03",
+      "sourceRecordIndex": 41,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line04",
+      "sourceRecordIndex": 42,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line05",
+      "sourceRecordIndex": 43,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line06",
+      "sourceRecordIndex": 44,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line07",
+      "sourceRecordIndex": 45,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-line08",
+      "sourceRecordIndex": 46,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p049:text2-role-read-instruction",
+      "sourceRecordIndex": 47,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 63,
+          "file": "pdf063-original-2x.png",
+          "sha256": "9d6047d26071a88f1f2a4797b9e19a53182569643b6705df7f35e6976b09a036"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:running-series-header",
+      "sourceRecordIndex": 48,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:grammar2-section-header",
+      "sourceRecordIndex": 49,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:grammar2-title",
+      "sourceRecordIndex": 50,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:grammar2-rule",
+      "sourceRecordIndex": 51,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:grammar2-complete-instruction",
+      "sourceRecordIndex": 52,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:text3-header",
+      "sourceRecordIndex": 53,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:text3-context",
+      "sourceRecordIndex": 54,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p050:text3-listen-instruction",
+      "sourceRecordIndex": 55,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 64,
+          "file": "pdf064-original-2x.png",
+          "sha256": "b1d412ce56759ca53a5f6aeba0b394bbed33f3e81c5dbf6db02444cfa9e05d23"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:running-lesson-header",
+      "sourceRecordIndex": 56,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:helper-header",
+      "sourceRecordIndex": 57,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:helper-body",
+      "sourceRecordIndex": 58,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:words-header",
+      "sourceRecordIndex": 59,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:word08",
+      "sourceRecordIndex": 60,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:word09",
+      "sourceRecordIndex": 61,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:word10",
+      "sourceRecordIndex": 62,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:word11",
+      "sourceRecordIndex": 63,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:word12",
+      "sourceRecordIndex": 64,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line01",
+      "sourceRecordIndex": 65,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line02",
+      "sourceRecordIndex": 66,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line03",
+      "sourceRecordIndex": 67,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line04",
+      "sourceRecordIndex": 68,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line05",
+      "sourceRecordIndex": 69,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line06",
+      "sourceRecordIndex": 70,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-line07",
+      "sourceRecordIndex": 71,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:text3-role-read-instruction",
+      "sourceRecordIndex": 72,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:grammar3-section-header",
+      "sourceRecordIndex": 73,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:grammar3-title",
+      "sourceRecordIndex": 74,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p051:grammar3-rule",
+      "sourceRecordIndex": 75,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 65,
+          "file": "pdf065-original-2x.png",
+          "sha256": "81f40e556e740ac96b6e51bbea9119f087a7171fdf72de216f97426dad0f9559"
+        },
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:running-series-header",
+      "sourceRecordIndex": 76,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:grammar3-complete-instruction",
+      "sourceRecordIndex": 77,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:text4-header",
+      "sourceRecordIndex": 78,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:text4-context",
+      "sourceRecordIndex": 79,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:text4-listen-instruction",
+      "sourceRecordIndex": 80,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:words-header",
+      "sourceRecordIndex": 81,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:word13",
+      "sourceRecordIndex": 82,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:word14",
+      "sourceRecordIndex": 83,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:text4-whole-paragraph",
+      "sourceRecordIndex": 84,
+      "decision": "accepted",
+      "reason": "Independent original PDF66/footer052 diary 4x detail confirms the second printed rất; full whole paragraph otherwise unchanged.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 66,
+          "file": "pdf066-original-2x.png",
+          "sha256": "f592c8b7ecb14313a94963b1afa24d6b9c09c5a5e61cc88de6269985f3952bcc"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p053:running-lesson-header",
+      "sourceRecordIndex": 85,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 67,
+          "file": "pdf067-original-2x.png",
+          "sha256": "cb935617210651c6dec116b87b56f6ab778291b976acac14d48532d5cb698a9c"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p053:text4-read-instruction",
+      "sourceRecordIndex": 86,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 67,
+          "file": "pdf067-original-2x.png",
+          "sha256": "cb935617210651c6dec116b87b56f6ab778291b976acac14d48532d5cb698a9c"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p053:integrated-header",
+      "sourceRecordIndex": 87,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 67,
+          "file": "pdf067-original-2x.png",
+          "sha256": "cb935617210651c6dec116b87b56f6ab778291b976acac14d48532d5cb698a9c"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p053:integrated1-instruction",
+      "sourceRecordIndex": 88,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 67,
+          "file": "pdf067-original-2x.png",
+          "sha256": "cb935617210651c6dec116b87b56f6ab778291b976acac14d48532d5cb698a9c"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p053:integrated2-instruction",
+      "sourceRecordIndex": 89,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 67,
+          "file": "pdf067-original-2x.png",
+          "sha256": "cb935617210651c6dec116b87b56f6ab778291b976acac14d48532d5cb698a9c"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:running-series-header",
+      "sourceRecordIndex": 90,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:classroom-header",
+      "sourceRecordIndex": 91,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:roleplay-header",
+      "sourceRecordIndex": 92,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:roleplay-instruction",
+      "sourceRecordIndex": 93,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:roleplay-example-header",
+      "sourceRecordIndex": 94,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:bonus-header",
+      "sourceRecordIndex": 95,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p054:bonus-video-caption",
+      "sourceRecordIndex": 96,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 68,
+          "file": "pdf068-original-2x.png",
+          "sha256": "cae425e54f14589cd2a4386b3260b470d8a81e2bdf9496dd1e61ecfdc46d53d6"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:running-lesson-header",
+      "sourceRecordIndex": 97,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-header",
+      "sourceRecordIndex": 98,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-scope",
+      "sourceRecordIndex": 99,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-words-header",
+      "sourceRecordIndex": 100,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-remembered",
+      "sourceRecordIndex": 101,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-unremembered",
+      "sourceRecordIndex": 102,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-understand-use",
+      "sourceRecordIndex": 103,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-column-understand",
+      "sourceRecordIndex": 104,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-column-use",
+      "sourceRecordIndex": 105,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-need-effort",
+      "sourceRecordIndex": 106,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row01",
+      "sourceRecordIndex": 107,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row02",
+      "sourceRecordIndex": 108,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row03",
+      "sourceRecordIndex": 109,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row04",
+      "sourceRecordIndex": 110,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row05",
+      "sourceRecordIndex": 111,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row06",
+      "sourceRecordIndex": 112,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row07",
+      "sourceRecordIndex": 113,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row08",
+      "sourceRecordIndex": 114,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    },
+    {
+      "sourceId": "hsk2-official-vi:l06:p055:learning-summary-grammar-row09",
+      "sourceRecordIndex": 115,
+      "decision": "accepted",
+      "reason": "Identical complete record to original source item independently compared to original PDF pages in initial frozen QA.",
+      "inheritedOriginalEvidence": [
+        {
+          "pdfPage": 69,
+          "file": "pdf069-original-2x.png",
+          "sha256": "61722f959f7cf66a77fa21a06418de54e51198a9ce167ef241c174e53fcc9713"
+        }
+      ]
+    }
+  ],
+  "structuralChecks": [
+    {
+      "name": "original source bytes remain frozen",
+      "passed": true
+    },
+    {
+      "name": "initial independent QA freeze unchanged",
+      "passed": true
+    },
+    {
+      "name": "actual corrected source bytes",
+      "passed": true
+    },
+    {
+      "name": "actual v2 author freeze bytes",
+      "passed": true
+    },
+    {
+      "name": "v2 frozen file bytes README.md",
+      "passed": true
+    },
+    {
+      "name": "v2 frozen file SHA README.md",
+      "passed": true
+    },
+    {
+      "name": "v2 frozen file bytes repair.json",
+      "passed": true
+    },
+    {
+      "name": "v2 frozen file SHA repair.json",
+      "passed": true
+    },
+    {
+      "name": "v2 frozen file bytes source-transcription.json",
+      "passed": true
+    },
+    {
+      "name": "v2 frozen file SHA source-transcription.json",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved source-transcription.json",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved source-boundary-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved source-erratum-candidates.json",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved build-source-transcription.py",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved source_writer.py",
+      "passed": true
+    },
+    {
+      "name": "original author frozen file preserved README.md",
+      "passed": true
+    },
+    {
+      "name": "v2 repaired author differs from independent reviewer",
+      "passed": true
+    },
+    {
+      "name": "exact allowed top-level changed keys",
+      "passed": true
+    },
+    {
+      "name": "original author clearly retained",
+      "passed": true
+    },
+    {
+      "name": "original source reference SHA",
+      "passed": true
+    },
+    {
+      "name": "original freeze reference SHA",
+      "passed": true
+    },
+    {
+      "name": "only one changed stable ID declared",
+      "passed": true
+    },
+    {
+      "name": "v2 source still no website comparison",
+      "passed": true
+    },
+    {
+      "name": "v2 source still no runtime activation",
+      "passed": true
+    },
+    {
+      "name": "exact116 source records",
+      "passed": true
+    },
+    {
+      "name": "ordered exact stable source IDs preserved",
+      "passed": true
+    },
+    {
+      "name": "source IDs unique",
+      "passed": true
+    },
+    {
+      "name": "0 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "0 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "0 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "1 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "1 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "1 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "2 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "2 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "2 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "3 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "3 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "3 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "4 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "4 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "4 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "5 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "5 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "5 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "6 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "6 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "6 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "7 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "7 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "7 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "8 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "8 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "8 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "9 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "9 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "9 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "10 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "10 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "10 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "11 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "11 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "11 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "12 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "12 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "12 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "13 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "13 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "13 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "14 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "14 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "14 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "15 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "15 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "15 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "16 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "16 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "16 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "17 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "17 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "17 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "18 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "18 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "18 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "19 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "19 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "19 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "20 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "20 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "20 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "21 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "21 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "21 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "22 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "22 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "22 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "23 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "23 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "23 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "24 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "24 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "24 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "25 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "25 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "25 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "26 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "26 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "26 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "27 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "27 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "27 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "28 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "28 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "28 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "29 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "29 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "29 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "30 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "30 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "30 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "31 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "31 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "31 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "32 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "32 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "32 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "33 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "33 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "33 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "34 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "34 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "34 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "35 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "35 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "35 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "36 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "36 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "36 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "37 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "37 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "37 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "38 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "38 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "38 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "39 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "39 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "39 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "40 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "40 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "40 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "41 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "41 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "41 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "42 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "42 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "42 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "43 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "43 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "43 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "44 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "44 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "44 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "45 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "45 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "45 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "46 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "46 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "46 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "47 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "47 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "47 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "48 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "48 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "48 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "49 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "49 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "49 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "50 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "50 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "50 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "51 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "51 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "51 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "52 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "52 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "52 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "53 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "53 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "53 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "54 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "54 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "54 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "55 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "55 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "55 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "56 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "56 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "56 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "57 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "57 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "57 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "58 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "58 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "58 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "59 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "59 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "59 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "60 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "60 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "60 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "61 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "61 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "61 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "62 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "62 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "62 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "63 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "63 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "63 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "64 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "64 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "64 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "65 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "65 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "65 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "66 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "66 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "66 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "67 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "67 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "67 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "68 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "68 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "68 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "69 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "69 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "69 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "70 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "70 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "70 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "71 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "71 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "71 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "72 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "72 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "72 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "73 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "73 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "73 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "74 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "74 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "74 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "75 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "75 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "75 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "76 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "76 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "76 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "77 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "77 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "77 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "78 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "78 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "78 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "79 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "79 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "79 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "80 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "80 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "80 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "81 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "81 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "81 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "82 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "82 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "82 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "83 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "83 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "83 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "84 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "exact corrected whole paragraph agrees with original-image finding",
+      "passed": true
+    },
+    {
+      "name": "original complete paragraph expected-value guard",
+      "passed": true
+    },
+    {
+      "name": "corrected complete paragraph repair declaration",
+      "passed": true
+    },
+    {
+      "name": "all target source fields except VI preserved",
+      "passed": true
+    },
+    {
+      "name": "one exact printed word insertion",
+      "passed": true
+    },
+    {
+      "name": "85 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "85 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "85 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "86 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "86 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "86 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "87 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "87 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "87 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "88 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "88 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "88 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "89 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "89 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "89 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "90 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "90 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "90 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "91 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "91 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "91 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "92 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "92 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "92 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "93 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "93 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "93 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "94 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "94 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "94 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "95 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "95 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "95 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "96 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "96 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "96 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "97 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "97 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "97 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "98 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "98 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "98 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "99 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "99 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "99 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "100 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "100 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "100 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "101 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "101 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "101 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "102 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "102 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "102 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "103 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "103 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "103 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "104 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "104 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "104 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "105 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "105 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "105 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "106 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "106 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "106 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "107 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "107 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "107 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "108 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "108 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "108 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "109 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "109 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "109 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "110 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "110 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "110 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "111 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "111 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "111 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "112 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "112 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "112 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "113 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "113 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "113 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "114 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "114 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "114 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "115 inherited decision exact source ID",
+      "passed": true
+    },
+    {
+      "name": "115 complete record unchanged",
+      "passed": true
+    },
+    {
+      "name": "115 inherited independent source acceptance",
+      "passed": true
+    },
+    {
+      "name": "exactly one source field differs",
+      "passed": true
+    },
+    {
+      "name": "exact corrected source field",
+      "passed": true
+    },
+    {
+      "name": "declared unchanged records115",
+      "passed": true
+    },
+    {
+      "name": "declared single source field change",
+      "passed": true
+    },
+    {
+      "name": "repair evidence is correct repository-relative path",
+      "passed": true
+    },
+    {
+      "name": "repair evidence exists as actual regular file",
+      "passed": true
+    },
+    {
+      "name": "actual repair evidence bytes",
+      "passed": true
+    },
+    {
+      "name": "own independent image equals cited repair SHA",
+      "passed": true
+    },
+    {
+      "name": "all116 decisions accepted",
+      "passed": true
+    }
+  ]
+}

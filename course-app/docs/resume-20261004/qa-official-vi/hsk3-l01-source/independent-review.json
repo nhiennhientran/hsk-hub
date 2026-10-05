@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "reviewUTC": "2026-10-04T21:41:36.646814+00:00",
+  "level": 3,
+  "lesson": 1,
+  "status": "independent-original-source-fidelity-accepted",
+  "author": "native_catalogue",
+  "authorSourcePath": "course-app/docs/resume-20261004/official-vi-source-prep/hsk3-l01/source-transcription.json",
+  "authorSourceSHA256": "a0b03d28557f71baf5db7f0e9bdc49e76458652f2f346ddbbebb576cd469039d",
+  "authorFreezeSHA256": "c08f1608b93886b237ded2fcecc369ff0c516453d5dc84b3b83db676795de26c",
+  "officialPDFSHA256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+  "officialPDFBytes": 96266563,
+  "actualPDFPageCount": 212,
+  "actualBodyPDFPages": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "actualAppendixPDFPages": [
+    195
+  ],
+  "bodyPrintedFooters": [
+    "001",
+    "002",
+    "003",
+    "004",
+    "005",
+    "006",
+    "007",
+    "008",
+    "009"
+  ],
+  "appendixPrintedFooters": [
+    "183"
+  ],
+  "counts": {
+    "sourceItems": 108,
+    "accepted": 108,
+    "repair": 0,
+    "hold": 0,
+    "bodyVietnameseLoci": 86,
+    "appendixContextAndTextLoci": 22,
+    "numberedWordEntries": 27,
+    "appendixRoleLines": 19,
+    "appendixWholeUnlabelledParagraphs": 1,
+    "bodyAppendixBindings": 20,
+    "visuallyReadFullSourcePages": 10,
+    "visuallyReadBoundaryPages": 1,
+    "freshOriginalDetailCrops": 5
+  },
+  "manualCoverage": [
+    "All108 sourceIDs individually checked against actual original page render.",
+    "Numbered27 words include Vietnamese/PY/POS; printed đtnn., lượng., bújiàn retained.",
+    "Body text1/2/3 Chinese-only7/6/6 role lines; text4 one unlabelled diary; exact20 actual Chinese-anchor links to appendix.",
+    "Appendix actual183 carries complete L1 four texts; L2 beginning at bottom excluded from L1 text loci.",
+    "Grammar3 explanation ends footer006; Chinese-only examples continue007, no invented VI page fragment.",
+    "No body VI omitted in nine-page range; Chinese-only exercise examples/options not promoted to official VI."
+  ],
+  "sharedPhysicalContextKeys": [
+    "hsk3-pdf195-p183-appendix-global-heading"
+  ],
+  "sourceObservations": [
+    {
+      "type": "printed-POS-literal",
+      "sourceId": "hsk3-official-vi:l01:p006:word-17",
+      "raw": "đtnn.",
+      "freshOriginalDetail": "pdf018-vocab-pos-detail-4x.png"
+    },
+    {
+      "type": "printed-PY-literal",
+      "sourceId": "hsk3-official-vi:l01:p008:word-24",
+      "raw": "bújiàn"
+    }
+  ],
+  "boundaries": {
+    "websiteRead": false,
+    "websiteComparison": false,
+    "runtimeChanged": false,
+    "registryChanged": false,
+    "deploymentApproved": false,
+    "sourceFidelityOnly": true,
+    "fullPageRendersReused": true,
+    "freshWholePageRendersClaimed": false,
+    "OCRUsed": false,
+    "textLayerUsedAsAuthority": false
+  }
+}

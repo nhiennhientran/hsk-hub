@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "remaining_media_audit",
+  "createdAt": "2026-10-04T21:31:31.778393+00:00",
+  "status": "accepted-source-correction-v2-only",
+  "sourceTranscriptionSHA256": "9df03d8b01446b998c1afe6e9fadb500106b525ad6c2d438388d0232641ba94d",
+  "initialQAFrozenUnchanged": true,
+  "sourceCounts": {
+    "accepted": 116,
+    "repair": 0,
+    "held": 0
+  },
+  "actualChecks": 389,
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1605,
+      "sha256": "ea2667d5c7a28df598d4591e3ee34891bcb7af981eac00ff2b7f7c585b51fb04"
+    },
+    {
+      "file": "v2-independent-review.json",
+      "bytes": 94566,
+      "sha256": "08c84d7c22e6b2f334aa21094f03a3b52b144691f74cf45dedc165d268af9e05"
+    },
+    {
+      "file": "verification.log",
+      "bytes": 1145,
+      "sha256": "ee52a88a1e3976fe411086051f8837c1d44f67280d4cbb8e6432545d01aa9644"
+    },
+    {
+      "file": "verify-v2-source.py",
+      "bytes": 7727,
+      "sha256": "797fc2b1fd0923b67dc4147f3fc5c0ddca7bb8f0204e3de6b82c7404d40d39cc"
+    }
+  ],
+  "sourceInputs": [
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-transcription.json",
+      "bytes": 56721,
+      "sha256": "bbe804e8bf0d2abb8caf7f44a67baa4da58935c8179c9d10ff4f907749aeff71"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/freeze-manifest.json",
+      "bytes": 1483,
+      "sha256": "7d2b6eee61cd0a96d4151c05efddfb79e27aabde80a91acfa1122b29a084bb9c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-correction-v2/source-transcription.json",
+      "bytes": 57287,
+      "sha256": "9df03d8b01446b998c1afe6e9fadb500106b525ad6c2d438388d0232641ba94d"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-correction-v2/repair.json",
+      "bytes": 1800,
+      "sha256": "f9c9708cf7e6caef26cee5e05e37d10edc402b1fcc790d7e408a5c90d6692f9d"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-correction-v2/freeze-manifest.json",
+      "bytes": 686,
+      "sha256": "53db8c82b300b2f159a0db6921642926795758bc2946ed97573f87bbc395dcc9"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/official-vi-source-prep/hsk2-l06/source-correction-v2/README.md",
+      "bytes": 312,
+      "sha256": "2152318fae382518ff35933025b621e5fb85e6d6e95c63656480fe46f0b15a95"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/independent-review.json",
+      "bytes": 11472,
+      "sha256": "174af2dd4f44f61281ae2fec8d88e2cf8262722e60ebaee244df785a059dc159"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/item-decisions.json",
+      "bytes": 131913,
+      "sha256": "172e2c3e4ffc855950a1a62b40646414af8bb9e6e4f0f079a5519d581cf347dc"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/repair-list.json",
+      "bytes": 2276,
+      "sha256": "d1a40dcc28d016fd0ed719989578eb075840ee8f33a35c1ade1f57697362160c"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/freeze-manifest.json",
+      "bytes": 7121,
+      "sha256": "0de5d0c6e4e394fc89ea820a9dd13bdce1e35a42133fa506d366d98b85bbfa2a"
+    },
+    {
+      "path": "course-app/docs/resume-20261004/qa-official-vi/hsk2-l06-source/pdf066-diary-detail-4x.png",
+      "bytes": 891756,
+      "sha256": "1a834e9f520ea99a398a441411d63ffaa4f5b2df80c92744cfedb66258a58c9b"
+    }
+  ],
+  "runtimeActivationApproved": false,
+  "publicationApproved": false,
+  "deployed": false
+}

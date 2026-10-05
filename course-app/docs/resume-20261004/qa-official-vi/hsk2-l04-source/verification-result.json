@@ -1,0 +1,2369 @@
+{
+  "schemaVersion": 1,
+  "lesson": 4,
+  "sourceTranscriptionSHA256": "b691d612a9ca3cb8b2421bd697c40afb99c7dca4ac0ae3fedd55e3ab81ad8ab5",
+  "checks": 587,
+  "failed": 0,
+  "counts": {
+    "accepted": 98,
+    "repair": 0,
+    "held": 0,
+    "ordinaryNumberedWords": 16,
+    "printedRoleTranslationLines": 18,
+    "extraUnnumberedSubwords": 0,
+    "confirmedPublisherOmissionObservations": 0
+  },
+  "structuralIdentityVerificationPassed": true,
+  "sourceSemanticAndVisualJudgmentNotAutomated": true,
+  "productionChanged": false,
+  "results": [
+    {
+      "name": "original uploaded PDF actual SHA",
+      "passed": true
+    },
+    {
+      "name": "original uploaded PDF page count",
+      "passed": true
+    },
+    {
+      "name": "frozen source actual SHA",
+      "passed": true
+    },
+    {
+      "name": "independent reviewed source exact identity",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-transcription.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-page-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-detail-crop-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-boundary-evidence.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source-erratum-candidates.json",
+      "passed": true
+    },
+    {
+      "name": "author frozen input build-source-transcription.py",
+      "passed": true
+    },
+    {
+      "name": "author frozen input source_writer.py",
+      "passed": true
+    },
+    {
+      "name": "author frozen input README.md",
+      "passed": true
+    },
+    {
+      "name": "source identity uniqueness",
+      "passed": true
+    },
+    {
+      "name": "source declared count",
+      "passed": true
+    },
+    {
+      "name": "reviewed exact stable IDs",
+      "passed": true
+    },
+    {
+      "name": "reviewed partition uniqueness",
+      "passed": true
+    },
+    {
+      "name": "reviewed partition exhaustive exact IDs",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-number-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-number-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-number-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-number-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-number-header independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-title identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-title actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-title exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-title decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:lesson-title independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goals-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goals-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goals-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goals-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goals-header independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal1 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal1 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal1 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal1 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal1 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal2 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal2 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal2 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal2 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal2 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal3 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal3 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal3 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal3 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:goal3 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup-header independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup1-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup1-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup1-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup1-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup1-instruction independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-instruction independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column0 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column0 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column0 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column0 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column0 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column1 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column1 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column1 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column1 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column1 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column2 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column2 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column2 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column2 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column2 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column3 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column3 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column3 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column3 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-table-column3 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell1 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell1 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell1 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell1 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell1 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell2 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell2 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell2 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell2 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell2 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell3 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell3 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell3 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell3 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p029:warmup2-tea-cell3 independent image 43",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:running-series-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:running-series-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:running-series-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:running-series-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:running-series-header independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-header independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-context identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-context actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-context exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-context decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-context independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-listen-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-listen-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-listen-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-listen-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-listen-instruction independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:words-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:words-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:words-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:words-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:words-header independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word01 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word01 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word01 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word01 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word01 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word02 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word02 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word02 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word02 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word02 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word03 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word03 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word03 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word03 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word03 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word04 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word04 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word04 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word04 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word04 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word05 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word05 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word05 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word05 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word05 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line01 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line01 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line01 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line01 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line01 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line02 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line02 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line02 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line02 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line02 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line03 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line03 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line03 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line03 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line03 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line04 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line04 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line04 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line04 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line04 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line05 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line05 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line05 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line05 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line05 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line06 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line06 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line06 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line06 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-line06 independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-role-read-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-role-read-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-role-read-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-role-read-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:text1-role-read-instruction independent image 44",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:running-lesson-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:running-lesson-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:running-lesson-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:running-lesson-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:running-lesson-header independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-section-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-section-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-section-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-section-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-section-header independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-title identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-title actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-title exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-title decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-title independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule1 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule1 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule1 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule1 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule1 independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule2 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule2 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule2 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule2 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-rule2 independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-complete-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-complete-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-complete-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-complete-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:grammar1-complete-instruction independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-header independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-context identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-context actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-context exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-context decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-context independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-listen-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-listen-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-listen-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-listen-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p031:text2-listen-instruction independent image 45",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:running-series-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:running-series-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:running-series-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:running-series-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:running-series-header independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:words-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:words-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:words-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:words-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:words-header independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word06 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word06 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word06 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word06 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word06 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word07 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word07 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word07 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word07 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word07 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word08 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word08 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word08 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word08 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word08 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word09 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word09 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word09 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word09 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word09 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word10 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word10 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word10 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word10 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word10 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line01 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line01 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line01 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line01 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line01 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line02 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line02 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line02 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line02 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line02 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line03 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line03 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line03 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line03 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line03 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line04 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line04 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line04 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line04 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line04 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line05 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line05 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line05 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line05 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line05 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line06 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line06 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line06 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line06 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-line06 independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-role-read-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-role-read-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-role-read-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-role-read-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:text2-role-read-instruction independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-section-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-section-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-section-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-section-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-section-header independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-title identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-title actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-title exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-title decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:grammar2-title independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:running-lesson-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:running-lesson-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:running-lesson-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:running-lesson-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:running-lesson-header independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-rule identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-rule actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-rule exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-rule decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-rule independent image 46",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-rule independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-complete-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-complete-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-complete-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-complete-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:grammar2-complete-instruction independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-header independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-context identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-context actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-context exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-context decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-context independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-listen-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-listen-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-listen-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-listen-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p033:text3-listen-instruction independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:running-series-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:running-series-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:running-series-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:running-series-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:running-series-header independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:words-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:words-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:words-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:words-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:words-header independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word11 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word11 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word11 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word11 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word11 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word12 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word12 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word12 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word12 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word12 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word13 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word13 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word13 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word13 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word13 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word14 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word14 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word14 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word14 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word14 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word15 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word15 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word15 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word15 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word15 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line01 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line01 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line01 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line01 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line01 independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line01 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line02 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line02 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line02 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line02 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line02 independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line02 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line03 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line03 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line03 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line03 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line03 independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line03 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line04 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line04 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line04 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line04 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line04 independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line04 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line05 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line05 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line05 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line05 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line05 independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line05 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line06 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line06 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line06 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line06 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line06 independent image 47",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-line06 independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-role-read-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-role-read-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-role-read-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-role-read-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:text3-role-read-instruction independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-section-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-section-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-section-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-section-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-section-header independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-title identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-title actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-title exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-title decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-title independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-rule identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-rule actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-rule exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-rule decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-rule independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-complete-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-complete-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-complete-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-complete-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:grammar3-complete-instruction independent image 48",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:running-lesson-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:running-lesson-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:running-lesson-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:running-lesson-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:running-lesson-header independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-header independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-context identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-context actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-context exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-context decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-context independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-listen-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-listen-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-listen-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-listen-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-listen-instruction independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:words-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:words-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:words-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:words-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:words-header independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:word16 identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:word16 actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:word16 exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:word16 decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:word16 independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-whole-paragraph identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-whole-paragraph actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-whole-paragraph exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-whole-paragraph decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-whole-paragraph independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-read-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-read-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-read-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-read-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:text4-read-instruction independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated-header independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated1-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated1-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated1-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated1-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:integrated1-instruction independent image 49",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:running-series-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:running-series-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:running-series-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:running-series-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:running-series-header independent image 50",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:integrated2-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:integrated2-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:integrated2-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:integrated2-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:integrated2-instruction independent image 50",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:classroom-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:classroom-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:classroom-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:classroom-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:classroom-header independent image 50",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-header independent image 50",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-instruction identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-instruction actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-instruction exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-instruction decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-instruction independent image 50",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-example-header identity structure",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-example-header actual printed-page offset",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-example-header exact reviewed record bytes",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-example-header decision partition",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p036:roleplay-example-header independent image 50",
+      "passed": true
+    },
+    {
+      "name": "actual scope pages",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 43",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 43",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 43",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 43",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 44",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 44",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 44",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 44",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 45",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 45",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 45",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 45",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 46",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 46",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 46",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 46",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 47",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 47",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 47",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 47",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 48",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 48",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 48",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 48",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 49",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 49",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 49",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 49",
+      "passed": true
+    },
+    {
+      "name": "actual page CropBox 50",
+      "passed": true
+    },
+    {
+      "name": "actual page rotation 50",
+      "passed": true
+    },
+    {
+      "name": "actual fresh page image 50",
+      "passed": true
+    },
+    {
+      "name": "visual-read declaration 50",
+      "passed": true
+    },
+    {
+      "name": "numbered vocabulary ordinals",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word01 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word02 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word03 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word04 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p030:word05 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word06 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word07 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word08 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word09 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p032:word10 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word11 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word12 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word13 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word14 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p034:word15 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "hsk2-official-vi:l04:p035:word16 actual POS field present",
+      "passed": true
+    },
+    {
+      "name": "printed role line count",
+      "passed": true
+    },
+    {
+      "name": "text1 printed role ordinals",
+      "passed": true
+    },
+    {
+      "name": "text2 printed role ordinals",
+      "passed": true
+    },
+    {
+      "name": "text3 printed role ordinals",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf043.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf044.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf045.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf046.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf047.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf048.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf049.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf050.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf043-warmup-table-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf044-words-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf045-grammar1-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf046-words-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf047-grammar2-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf048-grammar3-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf050-roleplay-original-5x.png",
+      "passed": true
+    },
+    {
+      "name": "author referenced image bytes /workspace/scratch/28b55072841a/official-vi-hsk2-l04-source-author/pdf051.png",
+      "passed": true
+    },
+    {
+      "name": "independent boundary bytes 42",
+      "passed": true
+    },
+    {
+      "name": "independent boundary bytes 51",
+      "passed": true
+    },
+    {
+      "name": "expected initial source repair count",
+      "passed": true
+    }
+  ]
+}

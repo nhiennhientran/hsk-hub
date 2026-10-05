@@ -1,0 +1,23 @@
+{
+  "lesson": 6,
+  "repairs": [
+    {
+      "sourceId": "hsk2-official-vi:l06:p052:text4-whole-paragraph",
+      "field": "/records/84/viPrinted",
+      "decision": "repair-transcription-omission",
+      "oldValue": "Hôm nay là sinh nhật con gái. Chúng tôi đã mua một chiếc bánh ga tô, nấu mì sợi, còn làm các món như cá, thịt... Sau khi ăn tối xong, cả gia đình chúng tôi đã đi xem phim. Sau khi về nhà, bọn trẻ đi ngủ sớm. Ngày mai không phải đi học, chúng nói muốn ngủ một giấc thật thoải mái, bảo chúng tôi gọi chúng dậy muộn hơn một chút. Hôm nay là một ngày rất bận rộn và mệt, nhưng cũng là một ngày rất vui.",
+      "expectedPrintedValue": "Hôm nay là sinh nhật con gái. Chúng tôi đã mua một chiếc bánh ga tô, nấu mì sợi, còn làm các món như cá, thịt... Sau khi ăn tối xong, cả gia đình chúng tôi đã đi xem phim. Sau khi về nhà, bọn trẻ đi ngủ sớm. Ngày mai không phải đi học, chúng nói muốn ngủ một giấc thật thoải mái, bảo chúng tôi gọi chúng dậy muộn hơn một chút. Hôm nay là một ngày rất bận rộn và rất mệt, nhưng cũng là một ngày rất vui.",
+      "newValue": "Hôm nay là sinh nhật con gái. Chúng tôi đã mua một chiếc bánh ga tô, nấu mì sợi, còn làm các món như cá, thịt... Sau khi ăn tối xong, cả gia đình chúng tôi đã đi xem phim. Sau khi về nhà, bọn trẻ đi ngủ sớm. Ngày mai không phải đi học, chúng nói muốn ngủ một giấc thật thoải mái, bảo chúng tôi gọi chúng dậy muộn hơn một chút. Hôm nay là một ngày rất bận rộn và rất mệt, nhưng cũng là một ngày rất vui.",
+      "specificDiff": "Insert the second printed rất immediately before mệt in the final sentence.",
+      "originalPDFPage": 66,
+      "actualPrintedFooter": 52,
+      "detailFile": "pdf066-diary-detail-4x.png",
+      "detailSHA256": "1a834e9f520ea99a398a441411d63ffaa4f5b2df80c92744cfedb66258a58c9b",
+      "publisherErratum": false,
+      "authorFileChanged": false,
+      "runtimeChanged": false
+    }
+  ],
+  "holds": [],
+  "newSourceIDsRequired": []
+}
