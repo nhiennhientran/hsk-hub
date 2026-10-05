@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "repository": "nhiennhientran/hsk-hub",
+  "targetBranch": "work/hsk-source-recovery-20261005",
+  "scope": "hsk2-l09-author-v2",
+  "qualification": "author-only-v2-correction",
+  "stage": "/workspace/scratch/28b55072841a/hsk-hub-resume-recovered/course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/STAGE-FILES.txt",
+  "stageSHA256": "e9a459c51fc892d95c915586f92d47c1f8b51172c3a41ba556b07f061c0d6775",
+  "stageDeclaredPathCount": 8,
+  "stageMetadataItselfIncluded": true,
+  "freezePath": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/FREEZE.json",
+  "freezeSHA256": "a3b62715e9604365609c4d9c95b3a6193388a00a557cdc236f1cbefa0dc070c7",
+  "freezeReferencesVerified": 7,
+  "immutableExternalReferences": [],
+  "expectedLocalParentCommit": "74fe6c5be9aaad10e508c5b147cdd5c5235d2c39",
+  "expectedLocalParentTree": "d910b9c92524d3a8251709418e1d9ed8a4b272fe",
+  "entries": [
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/FREEZE.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "1156d8902b7cf4415e31ee2850bfaaf3ee025c86",
+      "bytes": 1706,
+      "sha256": "a3b62715e9604365609c4d9c95b3a6193388a00a557cdc236f1cbefa0dc070c7",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "958d87bf00d0f7a7eec1293f56f2831de8da888e",
+      "bytes": 598,
+      "sha256": "4fa171f7b105fa53641035a326e3d047f6014c83a1a3abc15527118663b02615",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/STAGE-FILES.txt",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "3957f50ddd5bcb875273c6b115563b6a14178f83",
+      "bytes": 823,
+      "sha256": "e9a459c51fc892d95c915586f92d47c1f8b51172c3a41ba556b07f061c0d6775",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/author-verification.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "1b23260e10dda212e51235aa75bf6eabd76f1889",
+      "bytes": 489,
+      "sha256": "01560cc5bcca7b1e3aabb0921f7121fca73402f8766c573f9569c366d30a9f66",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/correct-lesson-source-v2.py",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "49d0bd5b7c5e7b815f8b3d97f51448d81b9b2363",
+      "bytes": 7940,
+      "sha256": "3a34c3154f67773807099b54ac4241005614a7c118b095ddf19842bed73f4bb1",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/independent-repair-input.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "9e0face935c0973e78f3c58300f4103d76fc2674",
+      "bytes": 922,
+      "sha256": "99908c16625f4676c6b2dd6ec919243f74740a9b3d37b854023669f07441a9d1",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/repair.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "1b91ffe394fed6767babac535979837f99f1b953",
+      "bytes": 4318,
+      "sha256": "89d5518350a2485d702003d4ef11652aeec1ca583fa8fcfe61c979281733ab2c",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    },
+    {
+      "path": "course-app/docs/recovery-20261005/official-vi-source/hsk2-l09/source-correction-v2/source-transcription.json",
+      "mode": "100644",
+      "type": "blob",
+      "gitBlobSHA": "1621c2a51b3e06cf8b00c6667ac9d1d4d63d8fcf",
+      "bytes": 197340,
+      "sha256": "7a938c2c334160691650b75ad74eaeda563994d7e07c83bc2a693c2ef1895aa3",
+      "alreadyMatchesLocalParent": false,
+      "alreadyInVerifiedRemoteBaseline": false
+    }
+  ],
+  "largeBlobBlockers": [],
+  "productionPublicationAuthorized": false
+}
