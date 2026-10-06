@@ -1,0 +1,159 @@
+name: HSK final single build and native verified staging
+on:
+  workflow_dispatch:
+  push:
+    branches: ['work/hsk-complete-quality-20261006']
+    paths: ['course-app/docs/final-quality-20261006/ci-freeze-request.json']
+permissions:
+  contents: read
+concurrency:
+  group: hsk-final-freeze-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    outputs:
+      inventory_sha: ${{ steps.freeze.outputs.inventory_sha }}
+      build_sha: ${{ steps.freeze.outputs.build_sha }}
+      source_sha: ${{ steps.freeze.outputs.source_sha }}
+      authority_sha: ${{ steps.freeze.outputs.authority_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Fail closed before installation unless final precision authority is accepted
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/freeze-preflight.mjs course-app/docs/final-quality-20261006/ci-freeze-request.json
+      - name: Install locked test dependencies
+        run: |
+          npm ci --prefix course-app
+          npm ci --prefix hsk1-app
+      - name: Verify units, accepted VI adoption and strict native fixtures
+        run: |
+          npm test --prefix course-app
+          node --experimental-strip-types --test course-app/tests/final-quality/access-and-abcd.test.mjs course-app/tests/final-quality/freeze-contract.test.mjs course-app/tests/final-quality/precision-authority-build.test.mjs course-app/tests/final-quality/live-contract.test.mjs
+          npm test --prefix hsk1-app
+          node --experimental-strip-types course-app/tools/verify-official-vi-adoption.mjs --require-complete-course-adoption
+          npm run check:browser-fixtures --prefix course-app
+          node course-app/node_modules/typescript/bin/tsc -p course-app/tests/final-quality/tsconfig.json
+      - name: Build clean final source exactly once and assemble both immutable baselines
+        id: freeze
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/freeze-final-site.mjs course-app/docs/final-quality-20261006/ci-freeze-request.json "$RUNNER_TEMP/hsk-final-frozen"
+      - name: Retain the exact single build and its complete inventory
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-single-build-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+          path: |
+            ${{ runner.temp }}/hsk-final-frozen/site
+            ${{ runner.temp }}/hsk-final-frozen/reports
+  native:
+    needs: build
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-single-build-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-frozen
+      - name: Install the locked driver and native browser with Chinese fonts
+        run: |
+          npm ci --prefix course-app
+          node course-app/node_modules/@playwright/test/cli.js install --with-deps ${{ matrix.browser }}
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Verify every frozen path and byte before native testing
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-freeze.mjs verify "$RUNNER_TEMP/hsk-final-frozen" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}'
+      - name: Collect all 127 cases for this native engine
+        working-directory: course-app
+        env:
+          HSK_FINAL_QA_DIST: ${{ runner.temp }}/hsk-final-frozen/site
+          HSK_FINAL_QA_REPORT: ${{ runner.temp }}/hsk-final-native-${{ matrix.browser }}/collection.json
+        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }} --list
+      - name: Run actual native learning, password, persistence, entry and precision controls on the same assembled bytes
+        working-directory: course-app
+        env:
+          HSK_FINAL_QA_DIST: ${{ runner.temp }}/hsk-final-frozen/site
+          HSK_FINAL_QA_REPORT: ${{ runner.temp }}/hsk-final-native-${{ matrix.browser }}/browser.json
+        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }}
+      - name: Require zero skips, retries or flakes and reverify the entire tested website
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-freeze.mjs native "$RUNNER_TEMP/hsk-final-frozen" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}' '${{ matrix.browser }}' "$RUNNER_TEMP/hsk-final-native-${{ matrix.browser }}/collection.json" "$RUNNER_TEMP/hsk-final-native-${{ matrix.browser }}/browser.json" "$RUNNER_TEMP/hsk-final-native-${{ matrix.browser }}/binding.json"
+      - name: Copy failure evidence into the native report bundle
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/hsk-final-native-${{ matrix.browser }}"
+          if [ -d course-app/docs/final-quality-20261006/qa/browser-output ]; then
+            cp -a course-app/docs/final-quality-20261006/qa/browser-output "$RUNNER_TEMP/hsk-final-native-${{ matrix.browser }}/browser-output"
+          fi
+      - name: Retain actual native reports and failure evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-native-${{ matrix.browser }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
+          path: ${{ runner.temp }}/hsk-final-native-${{ matrix.browser }}
+  staging:
+    needs: [build, native]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-single-build-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-frozen
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-native-chromium-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-frozen/reports/native/chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-native-webkit-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-frozen/reports/native/webkit
+      - name: Independently require both complete native reports on the exact single-build inventory
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-native-set.mjs "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-frozen/reports/native" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}' "$RUNNER_TEMP/hsk-final-frozen/reports/final-native-acceptance.json"
+      - name: Preserve the complete native accepted website and its reports before creating staging
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-native-accepted-site-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+          path: |
+            ${{ runner.temp }}/hsk-final-frozen/site
+            ${{ runner.temp }}/hsk-final-frozen/reports
+      - name: Create and push only a new staging branch after streamed Git blob verification
+        id: stage
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/stage-final-freeze.mjs "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-frozen/reports/native" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}' "$RUNNER_TEMP/hsk-final-staging-receipt.json"
+      - name: Retain staging identity for the separate root publication lease
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-staging-receipt-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: error
+          retention-days: 30
+          path: ${{ runner.temp }}/hsk-final-staging-receipt.json
