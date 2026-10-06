@@ -168,10 +168,13 @@ class AuditGraph:
             relative = Path('hsk1-app/public/source-activities') / path
         else:
             relative = path
-        if not relative.parts or '..' in relative.parts:
+        if not relative.parts:
             raise ValueError('audit path leaves recorded repository')
         value = (self.root / relative).resolve()
-        value.relative_to(self.root)
+        try:
+            value.relative_to(self.root)
+        except ValueError as error:
+            raise ValueError('audit path leaves recorded repository: ' + name) from error
         return value
 
     def read_policy(self, reference):

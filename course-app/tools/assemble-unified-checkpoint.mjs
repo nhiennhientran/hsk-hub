@@ -22,6 +22,7 @@ export function baselineExclusion(path){
   if(/^\.github\//.test(path))return 'CI workflow source, not a student runtime dependency';
   if(/^tools\//.test(path))return 'Build/audit/test code and test results, not a student runtime dependency';
   if(/^qa\//.test(path))return 'Audit/browser automation and source staging, not a student runtime dependency';
+  if(/^new-hsk1\/hsk1\/_audio-work\//.test(path))return 'Unserved original audio audit metadata, not a student runtime dependency';
   if(/\.(?:cjs|mjs|py|md)$/.test(path))return 'Developer test/report source, not a student runtime dependency';
   return undefined;
 }

@@ -131,6 +131,22 @@ class DurabilityFixtures(unittest.TestCase):
         self.write('report.json',self.report)
         r=self.graph();self.assertEqual(len(r['remoteModelMetadataReferences']),1)
 
+    def test_actual_internal_parent_path_positive(self):
+        ref=self.write('review/peer/raw.json',{'raw':'actual immutable original evidence'})
+        (self.root/'review/decisions').mkdir()
+        self.report['internalActualEvidence']={**ref,'file':'review/decisions/../peer/raw.json'}
+        self.write('report.json',self.report)
+        graph=AuditGraph(self.root,'report.json');r=graph.run()
+        retained=[x for x in graph.files.values() if x['recordedPath']=='review/decisions/../peer/raw.json']
+        self.assertEqual(len(retained),1)
+        self.assertEqual(retained[0]['file'],'review/peer/raw.json')
+        self.assertEqual(retained[0]['sha256'],ref['sha256'])
+
+    def test_parent_path_actual_repository_escape_rejected(self):
+        self.report['outsideEvidence']={'file':'../outside-actual-raw.json','sha256':'a'*64}
+        self.write('report.json',self.report)
+        with self.assertRaisesRegex(ValueError,'leaves recorded repository'):self.graph()
+
     def test_partial_pack_creates_no_output(self):
         spec=importlib.util.spec_from_file_location('pack_final_audit',Path(__file__).with_name('pack-final-audit.py'))
         m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)

@@ -89,7 +89,7 @@ test('actual current crop registry uses lesson 4 current version and rejects pat
 });
 test('production assembly anchors the actual 1446-file 2da tree and explicitly separates developer-only files',()=>{
   const repo=resolve(import.meta.dirname,'../..'),m=protectedBaselineManifest(repo);assert.equal(m.productionCommit,'2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4');assert.equal(m.productionTree,'34dc16aa1e042f5f6fc6ea6edb80b9b6926cb344');assert.equal(m.files.length,1446);
-  assert.ok(baselineExclusion('qa/source-canonical-audit.mjs'));assert.ok(baselineExclusion('tools/tests/results/legacy-gates.json'));assert.equal(baselineExclusion('hsk4/data.js'),undefined);assert.equal(baselineExclusion('practice/reviewed/hsk3-v1.1.part01.b64'),undefined);
+  assert.ok(baselineExclusion('qa/source-canonical-audit.mjs'));assert.ok(baselineExclusion('tools/tests/results/legacy-gates.json'));assert.ok(baselineExclusion('new-hsk1/hsk1/_audio-work/all-text-1-15-compact.json'));assert.equal(baselineExclusion('new-hsk1/hsk1/audio/1-1.mp3'),undefined);assert.equal(baselineExclusion('hsk4/data.js'),undefined);assert.equal(baselineExclusion('practice/reviewed/hsk3-v1.1.part01.b64'),undefined);
 });
 
 test('entry, build configuration and retained source assets are included in the clean build snapshot',()=>{

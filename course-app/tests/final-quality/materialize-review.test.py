@@ -102,6 +102,58 @@ class RecordedAuditRecovery(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'partial checkpoint'):
             module.restore(self.root, 'request.json')
 
+    def typed_inventory(self):
+        fields = ('historicalMetadataClassificationEvidence',
+                  'immutableReferenceVersionEvidence', 'freshSourceFrameReverificationEvidence')
+        policies = {}
+        for field in fields:
+            name = 'policies/' + field + '.json'
+            body = (json.dumps({'policy': field}) + '\n').encode()
+            self.write(name, body)
+            policies[field] = {'file': name, 'sha256': sha(body)}
+            self.report[field] = policies[field]
+        self.write('source.py', b'# exact source\n')
+        self.inventory.update(schemaVersion=2, typedAuditGraphPolicyReferences=policies,
+                              freshSourceFrameReverificationEvidence=policies[fields[2]],
+                              trackedSourceReferences=[*policies.values(), {'file': 'source.py', 'sha256': sha(b'# exact source\n')}],
+                              historicalMetadataExclusions=[], immutableVersionResolutions=[],
+                              remoteModelMetadataReferences=[], actualPinnedFileVersions=5,
+                              noOriginalReferenceEdited=True, noHistoricalBytesFabricated=True)
+        report_bytes = (json.dumps(self.report) + '\n').encode()
+        compressed = gzip.compress(report_bytes, mtime=0)
+        self.write('report.json.gz', compressed)
+        self.write('course-app/content/audio-precision-authority-20261006.json',
+                   json.dumps({'independentReportSHA256': sha(report_bytes)}).encode())
+        self.request['precisionIndependentReportCompressedSHA256'] = sha(compressed)
+        self.seal_request()
+
+    def test_packer_v2_restores_original_bytes_and_verifies_tracked_sources_and_policies(self):
+        self.typed_inventory()
+        result = module.restore(self.root, 'request.json')
+        self.assertEqual(result['auditFiles'], 1)
+        self.assertEqual((self.root / self.name).read_bytes(), self.raw)
+        self.assertEqual(module.restore(self.root, 'request.json'), result)
+
+    def test_v2_changed_tracked_source_is_rejected_before_report_is_written(self):
+        self.typed_inventory()
+        self.write('source.py', b'# changed source\n')
+        with self.assertRaisesRegex(ValueError, 'tracked final audit source bytes differ'):
+            module.restore(self.root, 'request.json')
+        self.assertFalse((self.root / 'report.json').exists())
+
+    def test_v2_cannot_replace_the_pinned_report_policy_with_another_policy(self):
+        self.typed_inventory()
+        self.inventory['typedAuditGraphPolicyReferences']['immutableReferenceVersionEvidence'] = {'file': 'other.json', 'sha256': '0' * 64}
+        self.seal_request()
+        with self.assertRaisesRegex(ValueError, 'policies differ'):
+            module.restore(self.root, 'request.json')
+
+    def test_unknown_future_inventory_version_is_rejected(self):
+        self.inventory['schemaVersion'] = 3
+        self.seal_request()
+        with self.assertRaisesRegex(ValueError, 'partial checkpoint'):
+            module.restore(self.root, 'request.json')
+
 
 if __name__ == '__main__':
     unittest.main()

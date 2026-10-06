@@ -13,15 +13,33 @@ import tempfile
 from pathlib import Path
 
 
-def restore_audit(root, request, inside, report_sha):
+def restore_audit(root, request, inside, report_sha, report):
     inventory_bytes = inside(request['precisionAuditInventoryFile']).read_bytes()
     if hashlib.sha256(inventory_bytes).hexdigest() != request['precisionAuditInventorySHA256']:
         raise ValueError('recorded final audit inventory differs')
     inventory = json.loads(inventory_bytes)
-    if inventory.get('schemaVersion') != 1 or inventory.get('status') != 'final-accepted-audit-bytes':
+    version = inventory.get('schemaVersion')
+    if type(version) is not int or version not in (1, 2) or inventory.get('status') != 'final-accepted-audit-bytes':
         raise ValueError('partial checkpoint cannot supply final audit identity')
     if inventory.get('independentReportSHA256') != report_sha:
         raise ValueError('audit inventory belongs to another independent report')
+    policy_fields = ('historicalMetadataClassificationEvidence',
+                     'immutableReferenceVersionEvidence', 'freshSourceFrameReverificationEvidence')
+    if version == 2:
+        policies = inventory.get('typedAuditGraphPolicyReferences')
+        if not isinstance(policies, dict) or set(policies) != set(policy_fields):
+            raise ValueError('typed final audit inventory lacks its exact policies')
+        if any(not isinstance(report.get(key), dict) or policies[key] != report[key] for key in policy_fields):
+            raise ValueError('typed audit policies differ from the pinned independent report')
+        if inventory.get('freshSourceFrameReverificationEvidence') != policies[policy_fields[2]]:
+            raise ValueError('typed audit fresh source identity differs')
+        for key in ('trackedSourceReferences', 'historicalMetadataExclusions',
+                    'immutableVersionResolutions', 'remoteModelMetadataReferences'):
+            if not isinstance(inventory.get(key), list):
+                raise ValueError('typed final audit inventory lacks recorded reference metadata')
+        count = inventory.get('actualPinnedFileVersions')
+        if type(count) is not int or count <= 0 or inventory.get('noOriginalReferenceEdited') is not True or inventory.get('noHistoricalBytesFabricated') is not True:
+            raise ValueError('typed final audit inventory cannot assert original byte preservation')
     restored = set()
     for archive in inventory['archives']:
         listed = {row['path']: row for row in archive['files']}
@@ -66,6 +84,19 @@ def restore_audit(root, request, inside, report_sha):
         restored.update(listed)
     if not restored:
         raise ValueError('final audit inventory is empty')
+    if version == 2:
+        seen = set()
+        for reference in inventory['trackedSourceReferences']:
+            destination = inside(reference['file'])
+            name = str(destination.relative_to(root))
+            if name in seen or name in restored:
+                raise ValueError('duplicate tracked final audit path')
+            seen.add(name)
+            if hashlib.sha256(destination.read_bytes()).hexdigest() != reference['sha256']:
+                raise ValueError('tracked final audit source bytes differ')
+        for reference in policies.values():
+            if hashlib.sha256(inside(reference['file']).read_bytes()).hexdigest() != reference['sha256']:
+                raise ValueError('restored typed audit policy bytes differ')
     return len(restored)
 
 
@@ -96,7 +127,7 @@ def restore(root, request_file):
         raise ValueError('final source-frame coverage differs')
     if destination.exists() and destination.read_bytes() != actual:
         raise ValueError('existing independent report has different actual bytes')
-    audit_files = restore_audit(root, request, inside, sha)
+    audit_files = restore_audit(root, request, inside, sha, report)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(actual)
     return {'status': 'materialized-pinned-independent-report', 'sha256': sha,
