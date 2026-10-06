@@ -641,6 +641,7 @@ export function mountLesson(
   } else if (section === "grammar") {
     for (const g of l.grammar) {
       const sec = el("section", undefined, "lesson-section grammar");
+      sec.dataset.grammarId=g.id;
       sec.append(
         el("h2", g.title),
         el("p", g.structure, "structure"),
