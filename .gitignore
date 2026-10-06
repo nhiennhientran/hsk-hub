@@ -10,3 +10,11 @@
 /course-app/playwright.resume.config.ts
 /course-app/docs/resume-20261004/qa/*.png
 /course-app/docs/resume-20261004/qa-content-09-11/*.png
+
+# Regenerable decoded audio and browser output from the final acceptance pass.
+/course-app/docs/final-quality-20261006/**/*.f32
+/course-app/docs/final-quality-20261006/**/__pycache__/
+/course-app/docs/final-quality-20261006/**/browser-output/
+/course-app/tools/final-quality-20261006/__pycache__/
+/tools/final-quality-20261006/__pycache__/
+/course-app/tests/final-quality/docs/

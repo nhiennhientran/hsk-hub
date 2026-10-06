@@ -11,7 +11,7 @@ const legacy=[read('audio-segments-pilot.json'),read('audio-segments-hsk2-lesson
 function loader(modules,register){
  const source=fs.readFileSync(new URL('../src/segments.ts',import.meta.url),'utf8').replace(/^import .*;$/gm,'').replace("const modules=import.meta.glob('../content/audio-segments-*.json');",'').replace('export function loadSegments','function loadSegments');
  const body=stripTypeScriptTypes(source)+'\nreturn loadSegments;';
- return new Function('modules','registerSegments','tracks','authority','reviewedSentenceAuthority','validateSegments','validateReviewedSentenceSubset','mergeSegmentData',body)(modules,register,tracks,authority,reviewedAuthority,validateSegments,validateReviewedSentenceSubset,mergeSegmentData);
+ return new Function('modules','registerSegments','tracks','authority','reviewedSentenceAuthority','validateSegments','validateReviewedSentenceSubset','mergeSegmentData','loadPrecisionSegments',body)(modules,register,tracks,authority,reviewedAuthority,validateSegments,validateReviewedSentenceSubset,mergeSegmentData,async()=>false);
 }
 function sourceModules(extra=subset){return Object.fromEntries([...legacy,extra].map((value,i)=>[['../content/audio-segments-pilot.json','../content/audio-segments-hsk2-lessons02-03.json','../content/audio-segments-hsk2-reviewed-sentences.json'][i],async()=>({default:structuredClone(value)})]))}
 function delayedDigest({reject=false}={}){

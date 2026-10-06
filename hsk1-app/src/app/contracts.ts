@@ -20,6 +20,8 @@ export interface Route {
 }
 
 export interface ModuleContext {
+  /** Supplied by the unified course shell; standalone modules retain their existing behavior. */
+  readonly lessonAccessible?: (lesson:number)=>boolean;
   readonly audio?: () => Promise<import('../services/audio/index.ts').AudioService>;
   readonly learning?: () => Promise<import('../services/learning/session.ts').LearningSession>;
   readonly route: Route;

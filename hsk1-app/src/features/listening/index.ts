@@ -44,6 +44,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const [content, session, audio] = await Promise.all([loadListening(lifetime.signal), context.learning(), context.audio()]);
     if (left || lifetime.signal.aborted) return;
     const listening = createListeningController({ session, catalog: content.catalog });
+    const accessible=context.lessonAccessible??(()=>true);
     flush = () => { void session.flush(); };
     listening.visit(context.route.lesson);
 
@@ -55,6 +56,7 @@ export const mount: FeatureModule['mount'] = (host, context) => {
     const lessonInputs = new Map<number, HTMLInputElement>();
     for (const lesson of content.lessons) {
       const label = element('label'); const input = element('input'); input.type = 'checkbox'; input.dataset.listeningLesson = String(lesson.id); input.id = `listening-lesson-${lesson.id}`;
+      input.disabled=!accessible(lesson.id);
       label.append(input, bilingualNode('span', copy.lesson(lesson.id))); lessonInputs.set(lesson.id, input); lessonGrid.append(label);
     }
     const selectAll = button('listening-all', copy.all); const selectNone = button('listening-none', copy.none);
@@ -125,17 +127,18 @@ export const mount: FeatureModule['mount'] = (host, context) => {
       handle(listening.setPreferences(patch)); update();
     }
     for (const input of lessonInputs.values()) input.addEventListener('change', () => {
-      changedPreferences({ lessons: [...lessonInputs].filter(([, field]) => field.checked).map(([id]) => id) });
+      changedPreferences({ lessons: [...lessonInputs].filter(([id, field]) => field.checked&&accessible(id)).map(([id]) => id) });
     }, { signal: lifetime.signal });
-    selectAll.addEventListener('click', () => changedPreferences({ lessons: content.lessons.map(lesson => lesson.id) }), { signal: lifetime.signal });
+    selectAll.addEventListener('click', () => changedPreferences({ lessons: content.lessons.map(lesson => lesson.id).filter(accessible) }), { signal: lifetime.signal });
     selectNone.addEventListener('click', () => changedPreferences({ lessons: [] }), { signal: lifetime.signal });
     selectCurrent.addEventListener('click', () => changedPreferences({ lessons: [context.route.lesson] }), { signal: lifetime.signal });
     mode.addEventListener('change', () => changedPreferences({ listeningMode: mode.value as 'all' | 'wrong' }), { signal: lifetime.signal });
     shuffle.addEventListener('change', () => changedPreferences({ shuffle: shuffle.checked }), { signal: lifetime.signal });
     rate.addEventListener('change', () => { const value = Number(rate.value); if (handle(listening.setPreferences({ rate: value }))) audio.setRate(value); update(); }, { signal: lifetime.signal });
     count.addEventListener('change', () => update(), { signal: lifetime.signal });
-    start.addEventListener('click', () => { stopPlayback(); if (handle(listening.start(requestedCount()))) { settings.open = false; summary.open = false; update(); focusQuestion(); } }, { signal: lifetime.signal });
-    redo.addEventListener('click', () => { stopPlayback(); if (handle(listening.redo(requestedCount()))) { settings.open = false; summary.open = false; update(); focusQuestion(); } }, { signal: lifetime.signal });
+    const restrictNewRound=()=>listening.setPreferences({lessons:listening.read().preferences.lessons.filter(accessible)});
+    start.addEventListener('click', () => { stopPlayback(); if (handle(restrictNewRound())&&handle(listening.start(requestedCount()))) { settings.open = false; summary.open = false; update(); focusQuestion(); } }, { signal: lifetime.signal });
+    redo.addEventListener('click', () => { stopPlayback(); if (handle(restrictNewRound())&&handle(listening.redo(requestedCount()))) { settings.open = false; summary.open = false; update(); focusQuestion(); } }, { signal: lifetime.signal });
     resume.addEventListener('click', () => { showMessage(''); settings.open = false; focusQuestion(); }, { signal: lifetime.signal });
     previous.addEventListener('click', () => { const model = listening.read(); if (model.session && handle(listening.move(model.session.position - 1))) { update(); focusQuestion(); } }, { signal: lifetime.signal });
     next.addEventListener('click', () => { if (handle(listening.next())) { update(); focusQuestion(); } }, { signal: lifetime.signal });

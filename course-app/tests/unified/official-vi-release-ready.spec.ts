@@ -3,9 +3,11 @@ import {readFileSync} from 'node:fs';
 import {currentViLesson} from './official-vi-expectations.ts';
 import {loadActiveHsk1ForTests} from '../../../hsk1-app/tests/browser/active-official-vi.ts';
 import type {Lesson} from '../../src/types.ts';
+import {allReadingCompletedFixture} from '../final-quality/unlocked-fixtures.ts';
+const unlocked=allReadingCompletedFixture();
 
 test.beforeEach(async ({page}) => {
-  await page.addInitScript(() => sessionStorage.setItem('hsk_portal_unlocked_v2', '1'));
+  await page.addInitScript(fixtures => {sessionStorage.setItem('hsk_portal_unlocked_v2', '1');for(const[k,v]of Object.entries(fixtures))if(localStorage.getItem(k)===null)localStorage.setItem(k,v);},unlocked);
   await page.setViewportSize({width: 390, height: 900});
 });
 for (const level of [2, 3] as const) for (let number = 1; number <= (level === 2 ? 15 : 18); number++) {

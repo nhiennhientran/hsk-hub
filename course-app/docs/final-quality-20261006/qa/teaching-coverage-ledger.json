@@ -1,0 +1,2305 @@
+{
+  "schemaVersion": 1,
+  "status": "passed-structural-and-current-byte-identity",
+  "generatedAt": "2026-10-06T01:27:59.356Z",
+  "acceptedSourceCommit": "003cbae9fe3a8f9f085522bb66ea108d451fa52a",
+  "scope": {
+    "all48LessonTeachingStructures": true,
+    "allRegisteredVIConsumersTraversed": true,
+    "allDisplayedAcceptedVIAliasesIdentityVerified": true,
+    "changedTeachingInputRequiresFreshReview": true,
+    "freshAllFieldSemanticCertification": false,
+    "humanOrNativeSpeakerCertification": false,
+    "semanticScope": "Existing source/language review applies only to the verified unchanged teaching bytes. This ledger is fresh structural and accepted-byte/projection verification, not a new reading/listening claim."
+  },
+  "newFourChoiceOverlay": {
+    "questions": 165,
+    "lessons": 33,
+    "originalABCAndAnswerPositionsUnchanged": true,
+    "independentReview": "accepted",
+    "manifestFile": "course-app/content/translation-choice-distractors-20261006.json",
+    "manifestSHA256": "4dbc382562014e5dd1283a3583ca16d3c89cebfab2a31e50d3c144b8d0d37569",
+    "reviewFile": "course-app/docs/final-quality-20261006/qa/abcd-distractor-independent-review.json",
+    "reviewSHA256": "664af33b3ed8e15734688218c187a6678226026798f9015b8777cad4e6058f2f",
+    "canonicalEntriesSHA256": "2abcb25eb30881b9d8631e7a9b36c541aa5ea6c938c640163d4ac7231baa1231"
+  },
+  "totals": {
+    "lessons": 48,
+    "homework": 1440,
+    "hsk23Homework": 990,
+    "registeredVIConsumerFields": 27735,
+    "uniqueNonemptyVIValueContexts": 18948,
+    "optionalEmptyFields": 99,
+    "verifiedInputFiles": 64
+  },
+  "lessons": [
+    {
+      "level": 1,
+      "lesson": 1,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 13,
+      "texts": 3,
+      "dialogueLines": 10,
+      "grammar": 0,
+      "phonetics": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 15,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 2,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 15,
+      "texts": 3,
+      "dialogueLines": 10,
+      "grammar": 1,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 18,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 3,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 22,
+      "texts": 3,
+      "dialogueLines": 12,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 32,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 4,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 35,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 4,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 36,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 5,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 22,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 40,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 6,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 23,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 41,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 7,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 27,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 4,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 43,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 8,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 24,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 36,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 9,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 23,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 40,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 10,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 23,
+      "texts": 3,
+      "dialogueLines": 16,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 30,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 11,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 25,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 34,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 12,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 23,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 31,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 13,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 20,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 26,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 14,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 27,
+      "texts": 3,
+      "dialogueLines": 15,
+      "grammar": 3,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 32,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 1,
+      "lesson": 15,
+      "file": "hsk1-app/content/textbook.json",
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "words": 20,
+      "texts": 3,
+      "dialogueLines": 14,
+      "grammar": 1,
+      "phonetics": 0,
+      "homework": 30,
+      "homeworkParts": {
+        "choice": 10,
+        "sort": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "translation": 5
+      },
+      "independentListening": 5,
+      "activities": 30,
+      "sourceReviewDisposition": "unchanged accepted HSK1 textbook/homework/source-activity input bytes; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 1,
+      "file": "course-app/content/hsk2/lesson-01.json",
+      "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+      "words": 15,
+      "texts": 4,
+      "dialogueLines": 19,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 16,
+        "endPdfPage": 24,
+        "startPrintedPage": 1,
+        "endPrintedPage": 9
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 2,
+      "file": "course-app/content/hsk2/lesson-02.json",
+      "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+      "words": 17,
+      "texts": 4,
+      "dialogueLines": 19,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 25,
+        "endPdfPage": 33,
+        "startPrintedPage": 10,
+        "endPrintedPage": 18
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 3,
+      "file": "course-app/content/hsk2/lesson-03.json",
+      "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+      "words": 15,
+      "texts": 4,
+      "dialogueLines": 17,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 34,
+        "endPdfPage": 43,
+        "startPrintedPage": 19,
+        "endPrintedPage": 28
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 4,
+      "file": "course-app/content/hsk2/lesson-04.json",
+      "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "words": 16,
+      "texts": 4,
+      "dialogueLines": 19,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 44,
+        "endPdfPage": 51,
+        "startPrintedPage": 29,
+        "endPrintedPage": 36
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 5,
+      "file": "course-app/content/hsk2/lesson-05.json",
+      "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "words": 20,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 52,
+        "endPdfPage": 60,
+        "startPrintedPage": 37,
+        "endPrintedPage": 45
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 6,
+      "file": "course-app/content/hsk2/lesson-06.json",
+      "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "words": 15,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 61,
+        "endPdfPage": 70,
+        "startPrintedPage": 46,
+        "endPrintedPage": 55
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 7,
+      "file": "course-app/content/hsk2/lesson-07.json",
+      "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+      "words": 20,
+      "texts": 4,
+      "dialogueLines": 18,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 71,
+        "endPdfPage": 78,
+        "startPrintedPage": 56,
+        "endPrintedPage": 63
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 8,
+      "file": "course-app/content/hsk2/lesson-08.json",
+      "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+      "words": 17,
+      "texts": 4,
+      "dialogueLines": 20,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 79,
+        "endPdfPage": 87,
+        "startPrintedPage": 64,
+        "endPrintedPage": 72
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 9,
+      "file": "course-app/content/hsk2/lesson-09.json",
+      "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+      "words": 13,
+      "texts": 4,
+      "dialogueLines": 20,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 88,
+        "endPdfPage": 98,
+        "startPrintedPage": 73,
+        "endPrintedPage": 83
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 10,
+      "file": "course-app/content/hsk2/lesson-10.json",
+      "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+      "words": 15,
+      "texts": 4,
+      "dialogueLines": 24,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 99,
+        "endPdfPage": 107,
+        "startPrintedPage": 84,
+        "endPrintedPage": 92
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 11,
+      "file": "course-app/content/hsk2/lesson-11.json",
+      "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+      "words": 13,
+      "texts": 4,
+      "dialogueLines": 23,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 108,
+        "endPdfPage": 116,
+        "startPrintedPage": 93,
+        "endPrintedPage": 101
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 12,
+      "file": "course-app/content/hsk2/lesson-12.json",
+      "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+      "words": 11,
+      "texts": 4,
+      "dialogueLines": 21,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 117,
+        "endPdfPage": 126,
+        "startPrintedPage": 102,
+        "endPrintedPage": 111
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 13,
+      "file": "course-app/content/hsk2/lesson-13.json",
+      "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+      "words": 13,
+      "texts": 4,
+      "dialogueLines": 23,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 27,
+      "sourcePageRange": {
+        "startPdfPage": 127,
+        "endPdfPage": 135,
+        "startPrintedPage": 112,
+        "endPrintedPage": 120
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 14,
+      "file": "course-app/content/hsk2/lesson-14.json",
+      "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+      "words": 14,
+      "texts": 4,
+      "dialogueLines": 20,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 136,
+        "endPdfPage": 144,
+        "startPrintedPage": 121,
+        "endPrintedPage": 129
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 2,
+      "lesson": 15,
+      "file": "course-app/content/hsk2/lesson-15.json",
+      "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+      "words": 12,
+      "texts": 4,
+      "dialogueLines": 24,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 145,
+        "endPdfPage": 155,
+        "startPrintedPage": 130,
+        "endPrintedPage": 140
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 1,
+      "file": "course-app/content/hsk3/lesson-01.json",
+      "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+      "words": 27,
+      "texts": 4,
+      "dialogueLines": 23,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 25,
+      "sourcePageRange": {
+        "startPdfPage": 13,
+        "endPdfPage": 21,
+        "startPrintedPage": 1,
+        "endPrintedPage": 9
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 2,
+      "file": "course-app/content/hsk3/lesson-02.json",
+      "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+      "words": 30,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 22,
+        "endPdfPage": 30,
+        "startPrintedPage": 10,
+        "endPrintedPage": 18
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 3,
+      "file": "course-app/content/hsk3/lesson-03.json",
+      "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+      "words": 27,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 31,
+        "endPdfPage": 40,
+        "startPrintedPage": 19,
+        "endPrintedPage": 28
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 4,
+      "file": "course-app/content/hsk3/lesson-04.json",
+      "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 25,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 41,
+        "endPdfPage": 49,
+        "startPrintedPage": 29,
+        "endPrintedPage": 37
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 5,
+      "file": "course-app/content/hsk3/lesson-05.json",
+      "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 24,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 50,
+        "endPdfPage": 58,
+        "startPrintedPage": 38,
+        "endPrintedPage": 46
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 6,
+      "file": "course-app/content/hsk3/lesson-06.json",
+      "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+      "words": 31,
+      "texts": 4,
+      "dialogueLines": 26,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 59,
+        "endPdfPage": 68,
+        "startPrintedPage": 47,
+        "endPrintedPage": 56
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 7,
+      "file": "course-app/content/hsk3/lesson-07.json",
+      "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+      "words": 30,
+      "texts": 4,
+      "dialogueLines": 24,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 69,
+        "endPdfPage": 78,
+        "startPrintedPage": 57,
+        "endPrintedPage": 66
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 8,
+      "file": "course-app/content/hsk3/lesson-08.json",
+      "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+      "words": 31,
+      "texts": 4,
+      "dialogueLines": 27,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 79,
+        "endPdfPage": 87,
+        "startPrintedPage": 67,
+        "endPrintedPage": 75
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 9,
+      "file": "course-app/content/hsk3/lesson-09.json",
+      "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+      "words": 33,
+      "texts": 4,
+      "dialogueLines": 24,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 88,
+        "endPdfPage": 97,
+        "startPrintedPage": 76,
+        "endPrintedPage": 85
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 10,
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "words": 33,
+      "texts": 4,
+      "dialogueLines": 26,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 98,
+        "endPdfPage": 106,
+        "startPrintedPage": 86,
+        "endPrintedPage": 94
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 11,
+      "file": "course-app/content/hsk3/lesson-11.json",
+      "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "words": 29,
+      "texts": 4,
+      "dialogueLines": 24,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 107,
+        "endPdfPage": 115,
+        "startPrintedPage": 95,
+        "endPrintedPage": 103
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 12,
+      "file": "course-app/content/hsk3/lesson-12.json",
+      "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 23,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 32,
+      "sourcePageRange": {
+        "startPdfPage": 116,
+        "endPdfPage": 126,
+        "startPrintedPage": 104,
+        "endPrintedPage": 114
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 13,
+      "file": "course-app/content/hsk3/lesson-13.json",
+      "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 127,
+        "endPdfPage": 135,
+        "startPrintedPage": 115,
+        "endPrintedPage": 123
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 14,
+      "file": "course-app/content/hsk3/lesson-14.json",
+      "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 21,
+      "grammar": 3,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 26,
+      "sourcePageRange": {
+        "startPdfPage": 136,
+        "endPdfPage": 144,
+        "startPrintedPage": 124,
+        "endPrintedPage": 132
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 15,
+      "file": "course-app/content/hsk3/lesson-15.json",
+      "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 32,
+      "sourcePageRange": {
+        "startPdfPage": 145,
+        "endPdfPage": 155,
+        "startPrintedPage": 133,
+        "endPrintedPage": 143
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 16,
+      "file": "course-app/content/hsk3/lesson-16.json",
+      "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+      "words": 26,
+      "texts": 4,
+      "dialogueLines": 25,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 156,
+        "endPdfPage": 165,
+        "startPrintedPage": 144,
+        "endPrintedPage": 153
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 17,
+      "file": "course-app/content/hsk3/lesson-17.json",
+      "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "words": 28,
+      "texts": 4,
+      "dialogueLines": 22,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 29,
+      "sourcePageRange": {
+        "startPdfPage": 166,
+        "endPdfPage": 174,
+        "startPrintedPage": 154,
+        "endPrintedPage": 162
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    },
+    {
+      "level": 3,
+      "lesson": 18,
+      "file": "course-app/content/hsk3/lesson-18.json",
+      "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+      "words": 30,
+      "texts": 4,
+      "dialogueLines": 25,
+      "grammar": 4,
+      "homework": 30,
+      "homeworkParts": {
+        "vocabGrammar": 10,
+        "ordering": 5,
+        "listening": 5,
+        "translationChoice": 5,
+        "writing": 5
+      },
+      "independentListening": 4,
+      "activities": 32,
+      "sourcePageRange": {
+        "startPdfPage": 175,
+        "endPdfPage": 185,
+        "startPrintedPage": 163,
+        "endPrintedPage": 173
+      },
+      "sourceReviewDisposition": "unchanged-source-and-editorial-content; exact accepted VI projection verified separately"
+    }
+  ],
+  "inputs": [
+    {
+      "file": "course-app/content/hsk2-official-vi-release-ready-20261005.json",
+      "bytes": 3255797,
+      "sha256": "aa9619a5e9037c4c5d04d36b30f5e4ccb590d55f6bf68406d555f438e0488cfa",
+      "acceptedBaselineSHA256": "aa9619a5e9037c4c5d04d36b30f5e4ccb590d55f6bf68406d555f438e0488cfa",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2-official-vi-release-ready-20261005.review.json",
+      "bytes": 1321978,
+      "sha256": "af954c6e077c90dc695fc49628325bb721a55a50ff2d8b7e48150cda39c08598",
+      "acceptedBaselineSHA256": "af954c6e077c90dc695fc49628325bb721a55a50ff2d8b7e48150cda39c08598",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/course-index.json",
+      "bytes": 10528,
+      "sha256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "acceptedBaselineSHA256": "a435fc635ef5604c7b4ef4c6eb51eb58272987f06e76db9d879cd9c54ddf429d",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2-lexicon.json",
+      "bytes": 134669,
+      "sha256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c",
+      "acceptedBaselineSHA256": "ef5bfd9d4b03fd83e0eb735afca091ff3daa09dd1c5439f1e4453d118bef014c",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-01.json",
+      "bytes": 173130,
+      "sha256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+      "acceptedBaselineSHA256": "f7923ab4d5fe5af0135aff04e701d0313a9edf5c3f3803b780a93bf5023e7523",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-02.json",
+      "bytes": 179840,
+      "sha256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+      "acceptedBaselineSHA256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-03.json",
+      "bytes": 188281,
+      "sha256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+      "acceptedBaselineSHA256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-04.json",
+      "bytes": 169778,
+      "sha256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "acceptedBaselineSHA256": "cc303bdf9b9498ad2745ab055b5a0b7b397723d92467c50a4ed26beb40c44e8c",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-05.json",
+      "bytes": 202034,
+      "sha256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "acceptedBaselineSHA256": "aa7a6e96568e2fbfd4c4894778eccbcc34dd894f73fe5f0c25a7bcd7f1ad1038",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-06.json",
+      "bytes": 217562,
+      "sha256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "acceptedBaselineSHA256": "c6302d84d74ea51a02c1afaaaff781b7513350d6516608d73e5edd084bb06b20",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-07.json",
+      "bytes": 183965,
+      "sha256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+      "acceptedBaselineSHA256": "15b9f36001307933da8120e66214e3b7a266640022f6953b67b174b2a9c78f4c",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-08.json",
+      "bytes": 187506,
+      "sha256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+      "acceptedBaselineSHA256": "90c7c19aac1d78ed62752356eefe09b6d3ee968c528c2008a53f0f2b1f96d00a",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-09.json",
+      "bytes": 215664,
+      "sha256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+      "acceptedBaselineSHA256": "55675df1ef69682537b7137e4f2ba19e2a311cf7738969ecd790dae62cc885aa",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-10.json",
+      "bytes": 187727,
+      "sha256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+      "acceptedBaselineSHA256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-11.json",
+      "bytes": 192945,
+      "sha256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+      "acceptedBaselineSHA256": "01ec965d7f18d41c5c91c053f93544b24c971303ed8b4ca6afd2ad2c03d48ff8",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-12.json",
+      "bytes": 207573,
+      "sha256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+      "acceptedBaselineSHA256": "c64d2e1bc3dac399f1737338e70474d8ea8559c2aa65207290a515804a97e702",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-13.json",
+      "bytes": 186234,
+      "sha256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+      "acceptedBaselineSHA256": "06d5d9e3f096ffe189f8d8214ba5582db9912e776e9ce3cee55d4fbd928057e1",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-14.json",
+      "bytes": 191389,
+      "sha256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+      "acceptedBaselineSHA256": "74d7a43cbed89ddf152a840d3c5bc06e8200c975fa1de5e9bf4223e227d52e0f",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk2/lesson-15.json",
+      "bytes": 204327,
+      "sha256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+      "acceptedBaselineSHA256": "299a8d8cf8f90e721d8a8c8b0ca24d7c33d759949166cab1edd2eeddf00ae907",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3-official-vi-release-ready-20261005.json",
+      "bytes": 4766419,
+      "sha256": "c8b9732e63638a0b579a4f8f0ca1fb97ef76faf8809632f0a14f0c9401253ae3",
+      "acceptedBaselineSHA256": "c8b9732e63638a0b579a4f8f0ca1fb97ef76faf8809632f0a14f0c9401253ae3",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3-official-vi-release-ready-20261005.review.json",
+      "bytes": 2153447,
+      "sha256": "cfa3cb005e6ff93b0e08f109e1e50c2956ff64093883dcdc0df28a6ed60151a7",
+      "acceptedBaselineSHA256": "cfa3cb005e6ff93b0e08f109e1e50c2956ff64093883dcdc0df28a6ed60151a7",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3-lexicon.json",
+      "bytes": 308891,
+      "sha256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "acceptedBaselineSHA256": "a3c72056adcde40201c46d5dd04aee5d0a633508b90acb09ec4d4dadd14eeef3",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-01.json",
+      "bytes": 228151,
+      "sha256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+      "acceptedBaselineSHA256": "764630f97d7ce5a229448ae32199215a61ed395dee69b480b2929538857171c1",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-02.json",
+      "bytes": 265729,
+      "sha256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+      "acceptedBaselineSHA256": "8557474924e3536b9487f514008b0c8f5b9ac65079d95c3db1b19d3d5e6705b1",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-03.json",
+      "bytes": 293275,
+      "sha256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+      "acceptedBaselineSHA256": "1dda336fa54416b00a222f692ed2429c868950517a68bd0664f84f9d1f98f5e6",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-04.json",
+      "bytes": 264969,
+      "sha256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+      "acceptedBaselineSHA256": "dd1dc183be33fdec24c5b614c648ab64828333728dd6857a43e82fa7b92baf30",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-05.json",
+      "bytes": 286418,
+      "sha256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+      "acceptedBaselineSHA256": "1330ba4fe33c7389921cc68a5b82fee147b9f4022911207e4b06be73235042d4",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-06.json",
+      "bytes": 302605,
+      "sha256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+      "acceptedBaselineSHA256": "335f48814ea644fd9f635279975cc74962b54a3b20263e7cb99ebf3e6a0a7346",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-07.json",
+      "bytes": 299957,
+      "sha256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+      "acceptedBaselineSHA256": "2fb4bac59590ec1121814ea7fbac4f5e8fb0923c2113f630dfcb0c822a1288c9",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-08.json",
+      "bytes": 263568,
+      "sha256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+      "acceptedBaselineSHA256": "060fe8ae8ac154b8b6cb9a64c9153b64d13b8d0e28b9a949b66651d00f3d0c24",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-09.json",
+      "bytes": 283177,
+      "sha256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+      "acceptedBaselineSHA256": "fecde40f8913de909cccf29f357ba27fa2dc9a92b0b6fe21e8f31348a764c937",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-10.json",
+      "bytes": 268432,
+      "sha256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "acceptedBaselineSHA256": "b7f106e2ece82f87921a16bf87b4dac345f9d5366c75fee0394da1b7597de828",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-11.json",
+      "bytes": 265670,
+      "sha256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "acceptedBaselineSHA256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-12.json",
+      "bytes": 280035,
+      "sha256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+      "acceptedBaselineSHA256": "deb3939089488474d986529d9b4c46615c3264d614cd246041d62d98cdee3b4d",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-13.json",
+      "bytes": 235627,
+      "sha256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+      "acceptedBaselineSHA256": "440776721226463550a6e0b45fd42dd178bd3fe57a62d9c643923d8d132c61cc",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-14.json",
+      "bytes": 233065,
+      "sha256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "acceptedBaselineSHA256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-15.json",
+      "bytes": 282461,
+      "sha256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+      "acceptedBaselineSHA256": "72fe01c3ec5cb1153815f78cc24962d5323f2f0d44d49197f4ad79160f388836",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-16.json",
+      "bytes": 232222,
+      "sha256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+      "acceptedBaselineSHA256": "06357423b8ea5eba948b8b7deb495d23779efa3cc8467f9c43554eb3f6769139",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-17.json",
+      "bytes": 246292,
+      "sha256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "acceptedBaselineSHA256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "course-app/content/hsk3/lesson-18.json",
+      "bytes": 288224,
+      "sha256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+      "acceptedBaselineSHA256": "939dcb25ee7cdd124e062a2810fea523a9193395fd56fa940d8c111a554c0f53",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/official-vi-registry.json",
+      "bytes": 422,
+      "sha256": "e800be4d9f12dcda47e6277f143e213e27ad489ec643c8d41c359e9e66339e51",
+      "acceptedBaselineSHA256": "e800be4d9f12dcda47e6277f143e213e27ad489ec643c8d41c359e9e66339e51",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/official-vi-revisions/hsk1-official-vi-release-ready-20261005.json",
+      "bytes": 4189667,
+      "sha256": "4b41c41fd5ef18e0c1b803195015dfccc352ef4f9b58dc80e6d7ea6fc68b8e7e",
+      "acceptedBaselineSHA256": "4b41c41fd5ef18e0c1b803195015dfccc352ef4f9b58dc80e6d7ea6fc68b8e7e",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/official-vi-revisions/hsk1-official-vi-release-ready-20261005.review.json",
+      "bytes": 1907186,
+      "sha256": "dc375a677399a4a99d54778a2b3439621cdd937a30a2c3ce05dd45bbd8b4caec",
+      "acceptedBaselineSHA256": "dc375a677399a4a99d54778a2b3439621cdd937a30a2c3ce05dd45bbd8b4caec",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/textbook.json",
+      "bytes": 741675,
+      "sha256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "acceptedBaselineSHA256": "5079b381a30d5d7785db5ee93d17b1ad71380a53633146001150c874f27558d7",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/textbook-display-revisions.json",
+      "bytes": 26130,
+      "sha256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55",
+      "acceptedBaselineSHA256": "3d3e325b587fd3b41fb11a908db6e74a37f2c9d95cac247a663112e71f8f9e55",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/stage2-bank.json",
+      "bytes": 269656,
+      "sha256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "acceptedBaselineSHA256": "bfd70d38b319362cd14e0da533c0c90a268a7f90b243cfffef23ef6549177ae3",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/stage3-catalog.json",
+      "bytes": 384024,
+      "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "acceptedBaselineSHA256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/homework30-bank.json",
+      "bytes": 854221,
+      "sha256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "acceptedBaselineSHA256": "efc0fd1c3bbbead479e8d610da9ea7c802d7cf3edb553942edc2d7dce54c9c5d",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/course-index.json",
+      "bytes": 4870,
+      "sha256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0",
+      "acceptedBaselineSHA256": "aeb5db3563e5d606a7b9fd045ae0f7f61994a9b03efd5a96f1b1e9099f482bb0",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-01.json",
+      "bytes": 36951,
+      "sha256": "63ee9b873770784634cf7b7cd865c61663f185a6c91e08b4d576da6386644ab4",
+      "acceptedBaselineSHA256": "63ee9b873770784634cf7b7cd865c61663f185a6c91e08b4d576da6386644ab4",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-02.json",
+      "bytes": 44028,
+      "sha256": "1f96a8e7924da5f755c7f656cac5887e90cfa9706a007ff00e00dadedee90853",
+      "acceptedBaselineSHA256": "1f96a8e7924da5f755c7f656cac5887e90cfa9706a007ff00e00dadedee90853",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-03.json",
+      "bytes": 102325,
+      "sha256": "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103",
+      "acceptedBaselineSHA256": "ccd76ad50a2dc66dcea0a5a97a72c67d76c6e36e20beeb543824d6dc2e161103",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-04-current.json",
+      "bytes": 82256,
+      "sha256": "dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e",
+      "acceptedBaselineSHA256": "dc89c47d7d5e141f628425017af88cd93ebd2f3dba81c8bcaea754f09f0e772e",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-05.json",
+      "bytes": 112613,
+      "sha256": "44bb1b7298b10528f2f9c83a1f88f438bc55d900a9edb067265d35c65cebec32",
+      "acceptedBaselineSHA256": "44bb1b7298b10528f2f9c83a1f88f438bc55d900a9edb067265d35c65cebec32",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-06.json",
+      "bytes": 139805,
+      "sha256": "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29",
+      "acceptedBaselineSHA256": "bb61cb1f0d6e3b6f19b7ddf17c08b47370d3c46c812cbf15bc4b56d9acb2fd29",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-07.json",
+      "bytes": 128466,
+      "sha256": "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4",
+      "acceptedBaselineSHA256": "1c4525238cfd7385e207211f36f57633a6440ccea7b69be58522bc0091bdddb4",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-08.json",
+      "bytes": 104144,
+      "sha256": "d577165a74d997bf20f49dbbe5528ece2b353c4e36e917f7e56f6ae5ac5b754b",
+      "acceptedBaselineSHA256": "d577165a74d997bf20f49dbbe5528ece2b353c4e36e917f7e56f6ae5ac5b754b",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-09.json",
+      "bytes": 109198,
+      "sha256": "f49fe969b4516b2d911723dc9c8cb51f696b307b93a1310a49eb8750c30d17de",
+      "acceptedBaselineSHA256": "f49fe969b4516b2d911723dc9c8cb51f696b307b93a1310a49eb8750c30d17de",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-10.json",
+      "bytes": 77393,
+      "sha256": "ad4f9cad282847041c7313b39dd179775ba883a1b9eff0dfd2343a34ada97f82",
+      "acceptedBaselineSHA256": "ad4f9cad282847041c7313b39dd179775ba883a1b9eff0dfd2343a34ada97f82",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-11.json",
+      "bytes": 79804,
+      "sha256": "614fe8a3dec09c7e77dd99bbaa5ccc82cfedd12cb7b9aeafbe26589f9ad7238e",
+      "acceptedBaselineSHA256": "614fe8a3dec09c7e77dd99bbaa5ccc82cfedd12cb7b9aeafbe26589f9ad7238e",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-12.json",
+      "bytes": 123544,
+      "sha256": "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c",
+      "acceptedBaselineSHA256": "59940d4585d7a14793455d54755fa0f54508be1266765aa8a7fa970000161d8c",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-13.json",
+      "bytes": 84039,
+      "sha256": "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b",
+      "acceptedBaselineSHA256": "18de1697c9b9f05646b5c5688989488895e6b48ae8ef9591d554d189565b5b7b",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-14.json",
+      "bytes": 102523,
+      "sha256": "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd",
+      "acceptedBaselineSHA256": "820e147f58196529e195aaf40352604bc8b3c6edf5adee51ab5122f0ae70bfdd",
+      "identicalToAcceptedBaseline": true
+    },
+    {
+      "file": "hsk1-app/content/source-activities/lesson-15.json",
+      "bytes": 110842,
+      "sha256": "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e",
+      "acceptedBaselineSHA256": "d23b2601ab51382ec8f775bb21cbdd2386b14dd0f649230b457e6b813cf32a9e",
+      "identicalToAcceptedBaseline": true
+    }
+  ],
+  "optionalEmpty": [
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/choice/0/meaning",
+      "ownerId": "hw30-v1-l08-choice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/choice/5/meaning",
+      "ownerId": "hw30-v1-l08-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/choice/6/meaning",
+      "ownerId": "hw30-v1-l08-choice-07",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/choice/7/meaning",
+      "ownerId": "hw30-v1-l08-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/choice/9/meaning",
+      "ownerId": "hw30-v1-l08-choice-10",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l08-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l08-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/translationChoice/2/meaning",
+      "ownerId": "hw30-v1-l08-translationChoice-03",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l08-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/7/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l08-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/choice/3/meaning",
+      "ownerId": "hw30-v1-l09-choice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/choice/5/meaning",
+      "ownerId": "hw30-v1-l09-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/choice/7/meaning",
+      "ownerId": "hw30-v1-l09-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/choice/9/meaning",
+      "ownerId": "hw30-v1-l09-choice-10",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l09-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l09-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/translationChoice/2/meaning",
+      "ownerId": "hw30-v1-l09-translationChoice-03",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l09-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/8/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l09-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/choice/5/meaning",
+      "ownerId": "hw30-v1-l10-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/choice/7/meaning",
+      "ownerId": "hw30-v1-l10-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/choice/8/meaning",
+      "ownerId": "hw30-v1-l10-choice-09",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/choice/9/meaning",
+      "ownerId": "hw30-v1-l10-choice-10",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l10-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l10-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/translationChoice/2/meaning",
+      "ownerId": "hw30-v1-l10-translationChoice-03",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l10-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/9/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l10-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/choice/7/meaning",
+      "ownerId": "hw30-v1-l11-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/choice/8/meaning",
+      "ownerId": "hw30-v1-l11-choice-09",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l11-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l11-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/translationChoice/2/meaning",
+      "ownerId": "hw30-v1-l11-translationChoice-03",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l11-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/10/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l11-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/choice/5/meaning",
+      "ownerId": "hw30-v1-l12-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/choice/6/meaning",
+      "ownerId": "hw30-v1-l12-choice-07",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/choice/7/meaning",
+      "ownerId": "hw30-v1-l12-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/choice/8/meaning",
+      "ownerId": "hw30-v1-l12-choice-09",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l12-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l12-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l12-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/11/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l12-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/choice/5/meaning",
+      "ownerId": "hw30-v1-l13-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/choice/6/meaning",
+      "ownerId": "hw30-v1-l13-choice-07",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/choice/7/meaning",
+      "ownerId": "hw30-v1-l13-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/choice/8/meaning",
+      "ownerId": "hw30-v1-l13-choice-09",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/choice/9/meaning",
+      "ownerId": "hw30-v1-l13-choice-10",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l13-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l13-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l13-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/12/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l13-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/choice/5/meaning",
+      "ownerId": "hw30-v1-l14-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/choice/8/meaning",
+      "ownerId": "hw30-v1-l14-choice-09",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/choice/9/meaning",
+      "ownerId": "hw30-v1-l14-choice-10",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l14-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l14-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/translationChoice/2/meaning",
+      "ownerId": "hw30-v1-l14-translationChoice-03",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l14-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/13/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l14-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/choice/5/meaning",
+      "ownerId": "hw30-v1-l15-choice-06",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/choice/6/meaning",
+      "ownerId": "hw30-v1-l15-choice-07",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/choice/7/meaning",
+      "ownerId": "hw30-v1-l15-choice-08",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/choice/9/meaning",
+      "ownerId": "hw30-v1-l15-choice-10",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/translationChoice/0/meaning",
+      "ownerId": "hw30-v1-l15-translationChoice-01",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/translationChoice/1/meaning",
+      "ownerId": "hw30-v1-l15-translationChoice-02",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/translationChoice/2/meaning",
+      "ownerId": "hw30-v1-l15-translationChoice-03",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/translationChoice/3/meaning",
+      "ownerId": "hw30-v1-l15-translationChoice-04",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/homework30-bank.json",
+      "field": "/lessons/14/translationChoice/4/meaning",
+      "ownerId": "hw30-v1-l15-translationChoice-05",
+      "reason": "Optional meaning supplement absent; complete Vietnamese prompt and explanation remain in the question."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/2/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p001-vocabulary-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/3/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p001-proper-nouns-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/6/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p002-vocabulary-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-01.json",
+      "field": "/activities/10/prompt/vi",
+      "ownerId": "hsk1-original-2026-l01-p003-vocabulary-03",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-02.json",
+      "field": "/activities/3/prompt/vi",
+      "ownerId": "hsk1-original-2026-l02-p006-vocabulary-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-02.json",
+      "field": "/activities/8/prompt/vi",
+      "ownerId": "hsk1-original-2026-l02-p007-vocabulary-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-02.json",
+      "field": "/activities/14/prompt/vi",
+      "ownerId": "hsk1-original-2026-l02-p009-vocabulary-03",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-03.json",
+      "field": "/activities/2/prompt/vi",
+      "ownerId": "hsk1-original-2026-l03-p011-vocabulary-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-03.json",
+      "field": "/activities/3/prompt/vi",
+      "ownerId": "hsk1-original-2026-l03-p011-proper-nouns-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-03.json",
+      "field": "/activities/13/prompt/vi",
+      "ownerId": "hsk1-original-2026-l03-p013-vocabulary-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-03.json",
+      "field": "/activities/14/prompt/vi",
+      "ownerId": "hsk1-original-2026-l03-p013-proper-nouns-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-03.json",
+      "field": "/activities/18/prompt/vi",
+      "ownerId": "hsk1-original-2026-l03-p014-vocabulary-03",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-03.json",
+      "field": "/activities/30/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l03-p017-summary-skills-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/14/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-months-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/14/table/columns/1/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-months-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/14/table/columns/2/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-months-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/14/table/columns/3/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-months-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/14/table/columns/4/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-months-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/14/table/columns/5/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-months-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/15/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/15/table/columns/1/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/15/table/columns/2/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/15/table/columns/3/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/16/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/16/table/columns/1/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-05.json",
+      "field": "/activities/16/table/columns/2/vi",
+      "ownerId": "hsk1-original-2026-l05-p029-weekdays-table-row-02",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-06.json",
+      "field": "/activities/36/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l06-p042-classroom-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-06.json",
+      "field": "/activities/37/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l06-p042-classroom-table-example-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-07.json",
+      "field": "/activities/40/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l07-p053-classroom-table-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    },
+    {
+      "baselineFile": "content/source-activities/lesson-07.json",
+      "field": "/activities/41/table/columns/0/vi",
+      "ownerId": "hsk1-original-2026-l07-p053-classroom-example-01",
+      "reason": "Source has an empty prompt/table header in both languages; retained as printed."
+    }
+  ],
+  "issues": []
+}

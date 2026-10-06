@@ -31,6 +31,7 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const [content, session, audio] = await Promise.all([loadVocabulary(lifetime.signal), context.learning(), context.audio()]);
     if (left || lifetime.signal.aborted) return;
     const controller = createMixedVocabularyController({ session, catalog: content.catalog });
+    const accessible=context.lessonAccessible??(()=>true);
     controller.visit(context.route.lesson, feature); flush = () => { void session.flush(); };
     const medium = window.matchMedia('(min-width: 700px)'), large = window.matchMedia('(min-width: 1050px)');
     const capacity = () => large.matches ? 6 : medium.matches ? 4 : 1;
@@ -44,6 +45,7 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const inputs = new Map<number, HTMLInputElement>();
     for (const lesson of content.lessons) {
       const label = node('label'), input = node('input'); input.type = 'checkbox'; input.dataset.vocabularyLesson = String(lesson.id); input.id = `vocabulary-lesson-${lesson.id}`;
+      input.disabled=!accessible(lesson.id);
       label.append(input, bi('span', copy.lesson(lesson.id))); lessonGrid.append(label); inputs.set(lesson.id, input);
     }
     const all = button('all', copy.all), none = button('none', copy.none);
@@ -77,9 +79,9 @@ export function mountVocabulary(host: HTMLElement, context: ModuleContext, featu
     const handle = (result: { ok: boolean; message?: string }) => { message.hidden = result.ok; if (!result.ok) setBilingual(message, vocabularyDynamic.actionIssue(result.message)); return result.ok; };
     const focusCard = () => grid.querySelector<HTMLButtonElement>('.mixed-card-toggle')?.focus();
     const resetFaces = () => { stop(); faces.clear(); renderedKey = ''; audioStatus.hidden = true; };
-    const apply = () => { resetFaces(); if (handle(controller.start())) { settings.open = false; update(); focusCard(); } };
-    for (const input of inputs.values()) on(input, 'change', () => { handle(controller.setLessons([...inputs].filter(([, box]) => box.checked).map(([id]) => id))); update(); });
-    on(all, 'click', () => { handle(controller.setLessons(content.lessons.map(lesson => lesson.id))); update(); });
+    const apply = () => { resetFaces(); controller.setLessons(controller.read().draftLessons.filter(accessible)); if (handle(controller.start())) { settings.open = false; update(); focusCard(); } };
+    for (const input of inputs.values()) on(input, 'change', () => { handle(controller.setLessons([...inputs].filter(([id, box]) => box.checked&&accessible(id)).map(([id]) => id))); update(); });
+    on(all, 'click', () => { handle(controller.setLessons(content.lessons.map(lesson => lesson.id).filter(accessible))); update(); });
     on(none, 'click', () => { handle(controller.setLessons([])); update(); });
     on(start, 'click', apply);
     on(cancel, 'click', () => { const round = controller.read().round; if (round) controller.setLessons(round.lessons); settings.open = false; update(); focusCard(); });

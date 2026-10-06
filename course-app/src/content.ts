@@ -1,5 +1,6 @@
 import type {Lexicon} from './lexicon.ts';
 import type {CourseConfig,Lesson,Track} from './types.ts';
+import {appendReviewedTranslationChoices,validateTranslationChoiceOverlay,type ReviewedDistractors} from './translation-choice-overlay.ts';
 import {baselineViDisplayRevision,projectCourseIndex,projectLesson,projectLexicon,validateTrustedViRegistry,viSHA256,
  type CourseSummary,type ValidatedViRevisionRegistry} from './official-vi-revisions.ts';
 
@@ -9,6 +10,10 @@ const revisionAssets=import.meta.glob(['../content/*official-vi*.json','!../cont
 const registryModules=import.meta.glob('../content/official-vi-registry.json',{query:'?raw',import:'default',eager:true});
 const indexModules=import.meta.glob('../content/course-index.json',{query:'?raw',import:'default'});
 const mediaModules=import.meta.glob('../content/audio-manifest.json',{eager:true,import:'default'});
+const distractorModules=import.meta.glob('../content/translation-choice-distractors-20261006.json',{query:'?raw',import:'default',eager:true});
+const distractorReviews=import.meta.glob('../docs/final-quality-20261006/qa/abcd-distractor-independent-review.json',{query:'?raw',import:'default',eager:true});
+let reviewedDistractors:Promise<ReviewedDistractors>|undefined;
+function loadReviewedDistractors(){return reviewedDistractors??=validateTranslationChoiceOverlay(String(Object.values(distractorModules)[0]),String(Object.values(distractorReviews)[0]));}
 export const tracks:readonly Track[]=(Object.values(mediaModules)[0] as {tracks:Track[]}|undefined)?.tracks??[];
 
 interface ActiveViEntry {manifestFile:string;manifestSHA256:string;reviewFile:string;reviewSHA256:string}
@@ -73,10 +78,10 @@ export async function loadViRevisions(config:CourseConfig):Promise<ValidatedViRe
 export function availableLessons(config:CourseConfig):number[]{return Array.from({length:config.count},(_,i)=>i+1).filter(n=>`../content/hsk${config.level}/lesson-${String(n).padStart(2,'0')}.json` in modules)}
 export async function loadLesson(config:CourseConfig,number:number):Promise<Lesson>{
  const file=`course-app/content/hsk${config.level}/lesson-${String(number).padStart(2,'0')}.json`;
- const [raw,registry]=await Promise.all([rawDocument(file),loadViRevisions(config)]),l=raw.value as Lesson;
+ const [raw,registry,overlay]=await Promise.all([rawDocument(file),loadViRevisions(config),loadReviewedDistractors()]),l=raw.value as Lesson;
  if(l.courseId!==config.id||l.version!==config.version||l.number!==number)throw Error('课程来源不匹配 · Nguồn bài học không khớp');
  const key=config.id+'|'+raw.sourceSHA256+'|'+(registry?registry.revisionId+'|'+registry.manifestSHA256:'baseline');
- let value=projectedLessons.get(key);if(!value){value=projectLesson(l,{baselineFile:file,sourceSHA256:raw.sourceSHA256},registry);projectedLessons.set(key,value)}
+ let value=projectedLessons.get(key);if(!value){value=appendReviewedTranslationChoices(projectLesson(l,{baselineFile:file,sourceSHA256:raw.sourceSHA256},registry),overlay);projectedLessons.set(key,value)}
  return structuredClone(value);
 }
 export function trackFor(config:CourseConfig,id:string):Track{const result=tracks.find(t=>t.level===config.level&&`${t.lesson}-${t.track}`===id);if(!result)throw Error('原音未找到 · Không tìm thấy âm thanh gốc');return result}

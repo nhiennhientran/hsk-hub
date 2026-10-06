@@ -8,6 +8,7 @@ import { normalizeRoute } from "../../hsk1-app/src/app/router.ts";
 import type { LearningSession } from "../../hsk1-app/src/services/learning/session.ts";
 import type { AudioService } from "../../hsk1-app/src/services/audio/index.ts";
 import type { Route } from "./router.ts";
+import {hsk1LessonAccessible} from './access-policy.ts';
 const loaders: Record<Feature, () => Promise<FeatureModule>> = {
   home: () => import("../../hsk1-app/src/features/home/index.ts"),
   textbook: () => import("../../hsk1-app/src/features/textbook/index.ts"),
@@ -119,7 +120,7 @@ export function createHSK1Bridge(options: {
           learning,
           audio: () => Promise.resolve(options.audio),
           navigate: (r) => options.navigate(fromHSK1(r)),
-          loadModule: (feature) => loaders[feature](),
+          loadModule: async(feature) => {const module=await loaders[feature]();return {mount:(host,context)=>module.mount(host,{...context,lessonAccessible:n=>current? hsk1LessonAccessible(current.store.snapshot().data,n):n===1})};},
           onState: (state) => {
             target.dataset.moduleState = state.state;
             if (state.state === "error") {

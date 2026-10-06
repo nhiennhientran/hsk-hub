@@ -58,6 +58,18 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
       const one = button(copy.playLine, () => { if (source.available) void audio.play({ ...source.request, label: bilingualText(copy.lineLabel(lesson.id, index + 1, lineIndex + 1)) }, { signal: sceneSignal }); }, sceneSignal); one.dataset.lineAudio = line.id; one.disabled = !source.available;
       if (!source.available) { setBilingual(one, copy.noLineAudio); one.title = bilingualText(textbookIssue(source.reason, copy.audioUnavailable)); }
       card.append(text, one); body.append(card);
+      const sentences=content.sentenceAudio?.(lesson.id,scene.id,line.id)??[];
+      if(sentences.length>1){
+        setBilingual(one,{zh:'本段原音',vi:'Nghe đoạn gốc'});
+        const actions=element('div');actions.className='textbook-actions';
+        for(const sentence of sentences){
+          const control=button({zh:`第${sentence.sentenceNumber}句原音`,vi:`Âm thanh câu ${sentence.sentenceNumber}`},()=>{
+            if(sentence.audio.available)void audio.play({...sentence.audio.request,label:bilingualText({zh:`第${sentence.sentenceNumber}句原音`,vi:`Âm thanh câu ${sentence.sentenceNumber}`})},{signal:sceneSignal});
+          },sceneSignal);
+          control.dataset.audioSegment=sentence.id;control.disabled=!sentence.audio.available;actions.append(control);
+        }
+        card.append(actions);
+      }
     }
     originalVisibility();
   }

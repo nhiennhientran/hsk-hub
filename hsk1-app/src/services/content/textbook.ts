@@ -2,6 +2,7 @@ import { defaultOfficialViRegistry, loadOfficialViRegistry, type OfficialViRegis
 import {courseAssetBase} from './asset-base.ts';
 import type { AudioRequest } from '../audio/index.ts';
 import { reviseTextbookDisplay, type TextbookDisplayRevisionInfo } from './textbook-display-revisions.ts';
+import {reviewedTextbookAudio,type ReviewedSentenceAudio} from './reviewed-audio.ts';
 
 export interface BookSource {
   readonly kind: string;
@@ -119,6 +120,7 @@ export interface TextbookContent {
   wordSenses(lessonId: number, wordId: string): readonly WordSense[];
   resolveScene(lessonId: number, sceneId: string): TextbookAudio;
   resolveLine(lessonId: number, sceneId: string, lineId: string): TextbookAudio;
+  sentenceAudio?(lessonId:number,sceneId:string,lineId:string):readonly ReviewedSentenceAudio[];
   vocabPlaylist(lessonId: number): readonly AudioRequest[];
   tongue(lessonId: number): TextbookAudio;
 }
@@ -285,7 +287,7 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
   const segment = (track: OriginalTrack, start: number, end: number, label: string): TextbookAudio => ({ available: true, track, request: { url: audioURL(track.id), start, end, label, sourceKind: 'segment' } });
   const findWord = (lessonId: number, wordId: string) => lessonMap.get(lessonId)?.vocab.find(word => word.id === wordId);
   const findScene = (lessonId: number, sceneId: string) => lessonMap.get(lessonId)?.scenes.find(scene => scene.id === sceneId);
-  const senseAudio = (sense: CatalogSense): TextbookAudio => sense.audio ? segment(tracks.get(sense.audio.track)!, sense.audio.start, sense.audio.end, `${sense.zh} · ${sense.senseZh}`) : noAudio();
+  const senseAudio = (sense: CatalogSense): TextbookAudio => reviewedTextbookAudio()?.word(sense.id) ?? (sense.audio ? segment(tracks.get(sense.audio.track)!, sense.audio.start, sense.audio.end, `${sense.zh} · ${sense.senseZh}`) : noAudio());
   return {
     lessons,
     ...(revised ? { displayRevisions: freeze(revised.info) } : {}),
@@ -308,9 +310,14 @@ export function createTextbookContent(bookValue: unknown, mediaValue: unknown, c
       const scene = findScene(lessonId, sceneId);
       const index = scene?.lines.findIndex(line => line.id === lineId) ?? -1;
       if (!scene || index < 0) return noAudio('Không tìm thấy câu hội thoại của bài học.');
+      const reviewed=reviewedTextbookAudio()?.line(lineId);if(reviewed)return reviewed;
       const track = tracks.get(String(scene.source.audioTrack))!;
       const range = media.textbookSegments.text[track.id][index];
       return segment(track, range[0], range[1], `${scene.lines[index].s}: ${scene.lines[index].zh}`);
+    },
+    sentenceAudio(lessonId,sceneId,lineId){
+      if(!findScene(lessonId,sceneId)?.lines.some(line=>line.id===lineId))return [];
+      return reviewedTextbookAudio()?.sentences(lineId)??[];
     },
     vocabPlaylist(lessonId) {
       if (!lessonMap.has(lessonId)) return [];

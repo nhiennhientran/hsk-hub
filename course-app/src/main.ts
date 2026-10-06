@@ -1,5 +1,6 @@
 import {commitCourseActivity} from './activity-commit.ts';
 import {commitCourseAttempt} from './attempt-commit.ts';
+import {sharedLessonAccessible,sharedLessonComplete,hsk1LessonAccessible} from './access-policy.ts';
 import {loadSegments} from "./segments.ts";
 import type {BackupProvider} from "./backup-view.ts";
 import { mountListening } from "./listening-view.ts";
@@ -123,8 +124,8 @@ const partNames: Record<Part, Copy> = {
   ordering: copy("排列句子 · 5题", "Sắp xếp câu · 5 câu"),
   listening: copy("听力选择 · 5题", "Nghe chọn đáp án · 5 câu"),
   translationChoice: copy(
-    "越译中选择 · 5题",
-    "Chọn bản dịch Việt–Trung · 5 câu",
+    "越译中选择 · ABCD · 5题",
+    "Chọn bản dịch Việt–Trung · ABCD · 5 câu",
   ),
   writing: copy("越译中手写 · 5题", "Viết bản dịch Việt–Trung · 5 câu"),
 };
@@ -326,7 +327,7 @@ function heading(title: Copy) {
   main.append(el("h1", title));
   document.title = `${title.zh} · HSK ${level} · Cô Nhiên`;
 }
-function lessonNav() {
+function lessonNav(accessible=(n:number)=>sharedLessonAccessible(store.snapshot().data,n,config.count)) {
   const row = el("div", undefined, "lesson-tools"),
     label = el("label", copy("选择课程", "Chọn bài học")),
     select = el("select");
@@ -335,6 +336,8 @@ function lessonNav() {
   for (const n of available) {
     const option = el("option", `第${n}课 · Bài ${n}`);
     option.value = String(n);
+    option.disabled=!accessible(n);
+    if(option.disabled)option.textContent+=` · 先完成第${n-1}课 / Hoàn thành bài ${n-1} trước`;
     select.append(option);
   }
   select.value = String(route.lesson);
@@ -349,6 +352,11 @@ function lessonNav() {
     link(copy("返回课程", "Về các bài học"), routeHref({ view: "courses" })),
   );
   main.append(row);
+}
+function renderLockedLesson(){
+  main.dataset.lessonState='locked';main.dataset.lockedLesson=String(route.lesson);
+  heading(copy(`第${route.lesson}课尚未解锁`,`Bài ${route.lesson} chưa mở khóa`));
+  main.append(el('p',copy(`请先完成第${route.lesson-1}课的教材学习，或提交该课全部五组作业。提交即可，不要求满分。`,`Hãy hoàn thành phần giáo trình bài ${route.lesson-1}, hoặc nộp đủ năm phần bài tập của bài đó. Chỉ cần nộp bài, không cần điểm tuyệt đối.`)),link(copy('返回课程','Về các bài học'),routeHref({view:'courses'})),link(copy(`继续第${route.lesson-1}课`,`Học tiếp bài ${route.lesson-1}`),routeHref({view:'homework',lesson:route.lesson-1,part:'vocabGrammar',homeworkVersion:'30-v1'})));
 }
 function audioControl(trackId: string, title?: Copy) {
   const track = trackFor(config, trackId),
@@ -446,6 +454,7 @@ async function render() {
   cleanup = () => {};
   audio.stop();
   main.replaceChildren();
+  delete main.dataset.lessonState;delete main.dataset.lockedLesson;delete main.dataset.moduleState;
   globalMessage.hidden = true;
   for (const a of nav.querySelectorAll("a")) {
     const active =
@@ -469,17 +478,19 @@ async function render() {
       return;
     }
     if (level === 1) {
-      await renderHSK1();
+      await renderHSK1(token);
       return;
     }
     const requestedConfig=config,requestedRoute=route;
     await prepareViCourse(requestedConfig);
     if(token!==generation||config!==requestedConfig)return;
+    const accessible=(n:number)=>sharedLessonAccessible(store.snapshot().data,n,config.count);
+    if(['lesson','homework','archive','listening'].includes(route.view)&&!accessible(route.lesson)){renderLockedLesson();return;}
     const wanted =
       route.view === "courses" || route.view === "progress"
         ? []
         : ["practice", "listening"].includes(route.view)
-          ? available
+          ? available.filter(accessible)
           : [route.lesson];
     const lessons = await Promise.all(
       wanted
@@ -496,7 +507,7 @@ async function render() {
     else if (route.view === "practice") renderPractice();
     else if (route.view === "progress") renderProgress();
     else if (route.view === "listening")
-      cleanup = mountListening(main, loaded, {
+      cleanup = mountListening(main, loaded.filter(l=>accessible(l.number)), {
         requireLegacyReview: hasActiveViDisplay(config),
         state: () => store.snapshot().data,
         edit,
@@ -552,7 +563,7 @@ async function render() {
 }
 function renderCourses() {
   heading(
-    copy(`新HSK ${level} · 自由选课`, `HSK ${level} mới · Chọn bài tự do`),
+    copy(`新HSK ${level} · 课程`, `HSK ${level} mới · Bài học`),
   );
   const hero = el("section", undefined, "course-hero");
   hero.append(
@@ -579,11 +590,13 @@ function renderCourses() {
     ),
   );
   main.append(hero);
+  main.append(el('p',copy('完成前一课教材学习或提交全部五组作业，即可解锁下一课；已解锁课程内可自由学习。','Hoàn thành giáo trình hoặc nộp đủ năm phần bài tập của bài trước để mở khóa bài tiếp theo; có thể học tự do trong bài đã mở.')));
   const searchLabel=el("label",copy("查找课程","Tìm bài học")),search=el("input");search.type="search";search.id="lesson-search";search.placeholder="课次 / 标题 / tiêu đề";searchLabel.htmlFor=search.id;main.append(searchLabel,search);
-  const grid = el("div", undefined, "course-grid"),
-    done = store.snapshot().data.completed;
+  const grid = el("div", undefined, "course-grid");
   for (const lesson of lessonSummaries(config)) {
     const card = el("article", undefined, "lesson-card");
+    const accessible=sharedLessonAccessible(store.snapshot().data,lesson.number,config.count);
+    card.dataset.lesson=String(lesson.number);card.dataset.lessonState=accessible?'unlocked':'locked';
     card.dataset.searchText=`${lesson.number} ${lesson.title.zh} ${lesson.title.vi} ${lesson.title.py}`;
     const reading=store.snapshot().data.reading[lesson.id];
     card.append(
@@ -599,8 +612,8 @@ function renderCourses() {
       ),
       link(
         copy(
-          done.includes(lesson.id) ? "继续学习" : "开始学习",
-          done.includes(lesson.id) ? "Học tiếp" : "Bắt đầu học",
+          accessible?(sharedLessonComplete(store.snapshot().data,lesson.number) ? "继续学习" : "开始学习"):`先完成第${lesson.number-1}课`,
+          accessible?(sharedLessonComplete(store.snapshot().data,lesson.number) ? "Học tiếp" : "Bắt đầu học"):`Hoàn thành bài ${lesson.number-1} trước`,
         ),
         routeHref({ view: "lesson", lesson: lesson.number,section:reading?.lastSection as Route["section"]??"overview",scene:reading?.scene }),
         "lesson-open",
@@ -609,6 +622,7 @@ function renderCourses() {
     card.append(el("p",copy(`教材分部 ${reading?.completed.length??0}/7 已学 · ${reading?.visited.length??0}/7 已访问`,`Mục SGK: ${reading?.completed.length??0}/7 đã học · ${reading?.visited.length??0}/7 đã xem`)));
     const actions=el('nav',undefined,'lesson-actions');for(const [section,title]of [['vocab',copy('词汇','Từ vựng')],['text',copy('课文','Bài khóa')],['grammar',copy('语言点','Ngữ pháp')]] as const)actions.append(link(title,routeHref({view:'lesson',lesson:lesson.number,section})));actions.append(link(copy('听力','Luyện nghe'),routeHref({view:'listening',lesson:lesson.number})));card.append(actions);
     grid.append(card);
+    if(!accessible)for(const a of card.querySelectorAll('a')){a.setAttribute('aria-disabled','true');a.removeAttribute('href');}
   }
   const normalize=(text:string)=>text.normalize('NFD').replace(/\p{M}/gu,'').replace(/đ/gi,'d').toLowerCase();search.oninput=()=>{for(const card of grid.querySelectorAll<HTMLElement>('.lesson-card'))card.hidden=!normalize(card.dataset.searchText??'').includes(normalize(search.value.trim()))};
   main.append(grid);
@@ -820,7 +834,7 @@ function renderHomework(l: Lesson, independent = false) {
         input.value = String(n);
         input.checked = answers[q.id] === n;
         input.onchange = () => saveAnswer(q.id, n);
-        label.append(input, el("span", opt));
+        label.append(input, el("span",q.part==='translationChoice'?`${String.fromCharCode(65+n)}. ${opt}`:opt));
         field.append(label);
       }
     }
@@ -1050,7 +1064,9 @@ function renderPractice() {
     ),
   );
   const data = store.snapshot().data,
-    selection = new Set(data.mixed?.selected ?? available),
+    accessibleLessons=available.filter(n=>sharedLessonAccessible(data,n,config.count)),
+    usableLessons=loaded.filter(l=>accessibleLessons.includes(l.number)),
+    selection = new Set((data.mixed?.selected ?? accessibleLessons).filter(n=>accessibleLessons.includes(n))),
     controls = el("details", undefined, "lesson-selection");
   controls.append(
     el("summary", copy(`已选${selection.size}课 · 调整范围`, `Đã chọn ${selection.size} bài · Đổi phạm vi`)),
@@ -1062,6 +1078,7 @@ function renderPractice() {
     input.type = "checkbox";
     input.value = String(n);
     input.checked = selection.has(n);
+    input.disabled=!accessibleLessons.includes(n);
     input.onchange = () =>
       input.checked ? selection.add(n) : selection.delete(n);
     label.append(input, el("span", `第${n}课 · Bài ${n}`));
@@ -1069,17 +1086,17 @@ function renderPractice() {
   }
   const selectAll = button(copy("全选", "Chọn tất cả"), () => {
     selection.clear();
-    available.forEach((n) => selection.add(n));
-    choices.querySelectorAll("input").forEach((i) => (i.checked = true));
+    accessibleLessons.forEach((n) => selection.add(n));
+    choices.querySelectorAll("input").forEach((i) => (i.checked = !i.disabled));
   });
   controls.append(selectAll, choices);
   main.append(controls);
   const allWords = new Map<string, Word>();
-  for (const l of loaded) for (const w of l.vocabulary) allWords.set(w.id, w);
+  for (const l of usableLessons) for (const w of l.vocabulary) allWords.set(w.id, w);
   const lexicon = lexiconFor(config),
     senses = senseMap(lexicon);
   function pool(): Word[] {
-    return canonicalWordPool(loaded, selection, lexicon);
+    return canonicalWordPool(usableLessons, selection, lexicon);
   }
   const setup = el("div", undefined, "practice-setup"),
     grid = el("div", undefined, "mixed-grid"),
@@ -1534,7 +1551,7 @@ async function disposeHSK1() {
   await hsk1?.dispose();
   hsk1 = undefined;
 }
-async function renderHSK1() {
+async function renderHSK1(token:number) {
   if (route.view === "portal") {
     renderPortal();
     return;
@@ -1547,13 +1564,34 @@ async function renderHSK1() {
       },
       error: message,
     });
+  const bridge=hsk1,requestedRoute=route;
+  const one=await bridge.store();if(token!==generation||hsk1!==bridge||level!==1)return;
+  const accessible=(n:number)=>hsk1LessonAccessible(one.snapshot().data,n);
+  if(['lesson','homework','archive','listening'].includes(route.view)&&!accessible(route.lesson)){renderLockedLesson();return;}
   if (["lesson", "homework", "archive"].includes(route.view)) {
     const prior = available;
     available = Array.from({ length: 15 }, (_, i) => i + 1);
-    lessonNav();
+    lessonNav(accessible);
     available = prior;
   }
-  await hsk1.render(main, route);
+  await loadSegments();
+  if(token!==generation||hsk1!==bridge||level!==1)return;
+  await bridge.render(main, requestedRoute);
+  if(token!==generation||hsk1!==bridge||level!==1)return;
+  main.dataset.moduleState=main.querySelector('#module-host')?.getAttribute('data-state')??'loading';
+  const decorate=()=>{
+    const status=main.querySelector('#home-course-status');if(status)status.replaceChildren(el('span',copy('完成前一课教材学习或提交全部五组作业，解锁下一课。','Hoàn thành giáo trình hoặc nộp đủ năm phần bài tập của bài trước để mở khóa bài tiếp theo.')));
+    for(const card of main.querySelectorAll<HTMLElement>('.lesson-card[data-lesson]')){
+      const n=Number(card.dataset.lesson),open=accessible(n);card.dataset.lessonState=open?'unlocked':'locked';
+      for(const a of card.querySelectorAll<HTMLAnchorElement>('a')){
+        if(!open){if(a.getAttribute('href'))a.dataset.lockedHref=a.getAttribute('href')!;a.removeAttribute('href');a.setAttribute('aria-disabled','true');}
+        else {if(a.dataset.lockedHref)a.setAttribute('href',a.dataset.lockedHref);delete a.dataset.lockedHref;a.removeAttribute('aria-disabled');}
+      }
+      let note=card.querySelector<HTMLElement>('[data-access-note]');if(!note){note=el('p');note.dataset.accessNote='';card.append(note);}note.hidden=open;
+      note.replaceChildren(el('span',copy(`先完成第${n-1}课`,`Hoàn thành bài ${n-1} trước`)));
+    }
+  };
+  decorate();cleanup=one.subscribe(decorate);
 }
 async function openUnifiedBackup(){
  if(composing||(level===1&&hsk1?.collectCurrentDraft())){message(copy('请先完成当前输入法输入','Hãy hoàn thành nhập liệu hiện tại trước'));return}

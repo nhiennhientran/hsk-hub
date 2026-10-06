@@ -1,0 +1,58 @@
+name: HSK frozen actual crop ASR
+on:
+  push:
+    branches: ['work/hsk-complete-quality-20261006']
+    paths: ['course-app/docs/final-quality-20261006/ci-audio-inputs.json']
+permissions:
+  contents: read
+concurrency:
+  group: hsk-final-audio-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  actual-crops:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        level: [1, 2, 3]
+        shard: [0, 1, 2]
+        model: [medium]
+        include:
+          - {level: 3, shard: 0, model: small}
+          - {level: 3, shard: 1, model: small}
+          - {level: 3, shard: 2, model: small}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned CPU ASR environment and original decoder
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --report /tmp/hsk-asr-pip-install.json -r course-app/tools/final-quality-20261006/asr-requirements.txt
+          python -m pip freeze > /tmp/hsk-asr-pip-freeze.txt
+          ffmpeg -version > /tmp/hsk-asr-ffmpeg-version.txt
+      - uses: actions/cache@v4
+        with:
+          path: course-app/.repro-output/asr-model-cache
+          key: hsk-asr-${{ matrix.model }}-pinned-20261006
+      - name: Check exact source frames and run unprompted medium model
+        run: python course-app/tools/final-quality-20261006/run-asr-ci.py --level ${{ matrix.level }} --shard ${{ matrix.shard }} --model ${{ matrix.model }}
+      - name: Record decoder and pinned dependency environment
+        if: always()
+        run: |
+          mkdir -p course-app/docs/final-quality-20261006/ci-asr/environment
+          cp /tmp/hsk-asr-* course-app/docs/final-quality-20261006/ci-asr/environment/
+      - name: Retain unchanged raw model and source-frame evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-actual-crops-${{ matrix.level }}-${{ matrix.shard }}-${{ matrix.model }}-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            course-app/docs/final-quality-20261006/ci-asr/
+            !course-app/docs/final-quality-20261006/ci-asr/**/*.f32

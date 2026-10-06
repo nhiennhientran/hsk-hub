@@ -1,13 +1,19 @@
 import {test,expect} from '@playwright/test';
 import {readFileSync} from 'node:fs';
 import legacy from '../../../../hsk1-app/src/domain/homework/engine.js';
+import {allReadingCompletedFixture} from '../../../tests/final-quality/unlocked-fixtures.ts';
+import {currentViLesson} from '../../../tests/unified/official-vi-expectations.ts';
+import {appendReviewedTranslationChoices,validateTranslationChoiceOverlay} from '../../../src/translation-choice-overlay.ts';
+const unlocked=allReadingCompletedFixture();
+const overlay=validateTranslationChoiceOverlay(readFileSync(new URL('../../../content/translation-choice-distractors-20261006.json',import.meta.url),'utf8'),readFileSync(new URL('../../final-quality-20261006/qa/abcd-distractor-independent-review.json',import.meta.url),'utf8'));
 const bank1=JSON.parse(readFileSync(new URL('../../../../hsk1-app/content/homework30-bank.json',import.meta.url),'utf8')).lessons;
 const mappedParts=[['vocabGrammar','choice'],['ordering','sort'],['listening','listening'],['translationChoice','translationChoice'],['writing','translation']] as const;
 const oldBytes={'hsk2_ranteacher_progress_v1':' {"15":{"score":7}} ','hsk3_ranteacher_progress_v1':' {"20":{"score":8}} ','hsk4_upper_ranteacher_progress_v1':' {"1":{"complete":true}} ','hsk4_lower_ranteacher_progress_v1':' {"20":{"complete":true}} '};
-test.beforeEach(async({page})=>page.addInitScript(old=>{
+test.beforeEach(async({page})=>page.addInitScript(({old,fixtures})=>{
  sessionStorage.setItem('hsk_portal_unlocked_v2','1');
  for(const [k,v]of Object.entries(old))if(localStorage.getItem(k)===null)localStorage.setItem(k,v);
-},oldBytes));
+ for(const [k,v]of Object.entries(fixtures))if(localStorage.getItem(k)===null)localStorage.setItem(k,v);
+},{old:oldBytes,fixtures:unlocked}));
 function ordered(q:any):number[]{
  const target=legacy.normal(q.answers[0]);
  const walk=(indices:number[],remaining:string):number[]|null=>{
@@ -19,7 +25,7 @@ function ordered(q:any):number[]{
  const result=walk([],target);if(!result)throw Error('Invalid sort fixture: '+q.id);return result;
 }
 for(const [level,number] of [...Array.from({length:15},(_,i)=>[1,i+1]),...Array.from({length:15},(_,i)=>[2,i+1]),...Array.from({length:18},(_,i)=>[3,i+1])])test(`actual unified HSK${level} lesson ${number} all five homework parts persist exact isolated receipts`,async({page})=>{
- const source=level===1?bank1.find((l:any)=>l.lesson===number):JSON.parse(readFileSync(new URL(`../../../content/hsk${level}/lesson-${String(number).padStart(2,'0')}.json`,import.meta.url),'utf8'));
+ const source=level===1?bank1.find((l:any)=>l.lesson===number):appendReviewedTranslationChoices(currentViLesson(JSON.parse(readFileSync(new URL(`../../../content/hsk${level}/lesson-${String(number).padStart(2,'0')}.json`,import.meta.url),'utf8'))),await overlay);
  for(const [part,hsk1part]of mappedParts){
   await page.goto(`/#view=homework&level=${level}&lesson=${number}&part=${part}&version=30-v1`);
   const questions=level===1?source[hsk1part]:source.homework.filter((q:any)=>q.part===part);
