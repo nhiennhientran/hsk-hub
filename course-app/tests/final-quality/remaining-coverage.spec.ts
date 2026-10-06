@@ -1,5 +1,6 @@
 import {test,expect,type Page,type BrowserContext} from '@playwright/test';
 import {readFileSync} from 'node:fs';
+import {getHomework30Bank} from '../../../hsk1-app/src/services/content/homework30.ts';
 import {allLessonsUnlockedFixture} from './unlocked-fixtures.ts';
 
 const lessons=[...Array.from({length:15},(_,i)=>[1,i+1]),...Array.from({length:15},(_,i)=>[2,i+1]),...Array.from({length:18},(_,i)=>[3,i+1])];
@@ -49,31 +50,46 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} all teaching sec
   await info.attach('all-section-deferred-assets.json',{body:JSON.stringify({level,lesson,width:390,sections,fixture:'Isolated validated historical five-part homework completion; not a production access bypass.',loaded:[...evidence.loaded].sort(),errors:evidence.errors}),contentType:'application/json'});
 });
 
-function workLocator(page:Page,level:number){return level===1?page.locator('textarea[data-answer-id]').first():page.locator('#assignment textarea').first();}
-async function saveDraft(page:Page,level:number,text:string){
-  await page.goto(`./#view=homework&level=${level}&lesson=1&part=writing&version=30-v1`);await ready(page,level);
+const firstChoice=getHomework30Bank()[0].choice[0];
+function workRoute(level:number){return `./#view=homework&level=${level}&lesson=1&part=${level===1?'vocabGrammar':'writing'}&version=30-v1`;}
+function workLocator(page:Page,level:number){return level===1?page.locator('#homework-name'):page.locator('#assignment textarea').first();}
+function studentDraft(level:number,student:'A'|'B'){return `Student ${student} / HSK${level}${level===1?' · ':'\n'}${student==='A'?'甲':'乙'}学生独立记录`;}
+function backupDraft(level:number){return `Exported student / HSK${level}${level===1?' · ':'\n'}保留首尾空格  `;}
+async function exposeProfile(page:Page,level:number){if(level===1&&!await page.locator('#homework-name').isVisible())await page.locator('#homework-submission-details-toggle').click();}
+async function expectH1Draft(page:Page,text:string,choice:number){
+  const question=page.locator(`[data-question-id="${firstChoice.id}"]`),options=question.locator('input[type=radio]');
+  await expect(options).toHaveCount(firstChoice.options.length);await expect(question.locator(`input[value="${choice}"]`)).toBeChecked();
+  await expect(question.locator('label').nth(choice)).toContainText(`${String.fromCharCode(65+choice)}. ${firstChoice.options[choice]}`);
+  const stored=await page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).data.homework30,keys[0]);
+  expect(stored.profile.name).toBe(text);expect(stored.lessons['1'].choice.draft[firstChoice.id]).toBe(choice);
+}
+async function saveDraft(page:Page,level:number,text:string,choice=0){
+  await page.goto(workRoute(level));await ready(page,level);await exposeProfile(page,level);
   await expect(workLocator(page,level)).toBeVisible();
   await workLocator(page,level).fill(text);
-  if(level===1)await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state','saved');
+  if(level===1){await page.locator(`[data-question-id="${firstChoice.id}"] input[value="${choice}"]`).check();await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state','saved');}
   else await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');
-  await page.reload();await ready(page,level);await expect(workLocator(page,level)).toHaveValue(text);
+  await page.reload();await ready(page,level);await exposeProfile(page,level);await expect(workLocator(page,level)).toHaveValue(text);
+  if(level===1)await expectH1Draft(page,text,choice);
 }
 for(const level of [1,2,3])test(`HSK${level} independent student contexts keep different saved work after reload`,async({browser,baseURL})=>{
   const first=await browser.newContext({baseURL}),second=await browser.newContext({baseURL});
   try{
     await authorize(first);await authorize(second);const a=await first.newPage(),b=await second.newPage();
-    await saveDraft(a,level,`Student A / HSK${level}\n甲学生独立记录`);
-    await b.goto(`./#view=homework&level=${level}&lesson=1&part=writing&version=30-v1`);await ready(b,level);
+    await saveDraft(a,level,studentDraft(level,'A'),0);
+    await b.goto(workRoute(level));await ready(b,level);await exposeProfile(b,level);
     await expect(workLocator(b,level)).toHaveValue('');
-    await saveDraft(b,level,`Student B / HSK${level}\n乙学生独立记录`);
-    await a.reload();await ready(a,level);await expect(workLocator(a,level)).toHaveValue(`Student A / HSK${level}\n甲学生独立记录`);
+    if(level===1)await expect(b.locator(`[data-question-id="${firstChoice.id}"] input:checked`)).toHaveCount(0);
+    await saveDraft(b,level,studentDraft(level,'B'),1);
+    await a.reload();await ready(a,level);await exposeProfile(a,level);await expect(workLocator(a,level)).toHaveValue(studentDraft(level,'A'));
+    if(level===1){await expectH1Draft(a,studentDraft(level,'A'),0);await expectH1Draft(b,studentDraft(level,'B'),1);}
     expect(await a.evaluate(k=>localStorage.getItem(k),keys[level-1])).not.toEqual(await b.evaluate(k=>localStorage.getItem(k),keys[level-1]));
   }finally{await first.close();await second.close();}
 });
 
 test('all three nonempty student drafts export and restore in a fresh context without cross-level replacement',async({browser,page,baseURL},info)=>{
   test.setTimeout(180000);
-  for(const level of [1,2,3])await saveDraft(page,level,`Exported student / HSK${level}\n保留首尾空格  `);
+  for(const level of [1,2,3])await saveDraft(page,level,backupDraft(level));
   await page.getByRole('button',{name:'统一备份与恢复'}).click();
   const panel=page.getByRole('dialog',{name:'学习记录备份'});await expect(panel).toBeVisible();
   const [download]=await Promise.all([page.waitForEvent('download'),panel.getByRole('button',{name:'下载全部三级备份',exact:false}).click()]);
@@ -90,12 +106,12 @@ test('all three nonempty student drafts export and restore in a fresh context wi
     await target.getByRole('button',{name:'确认恢复HSK 2',exact:false}).click();await expect(target).toContainText('HSK 2已恢复');
     const intermediate=await p.evaluate(ks=>ks.map(k=>localStorage.getItem(k)),keys);
     expect(intermediate[0]).toBe(initial[0]);expect(intermediate[2]).toBe(initial[2]);
-    for(const level of [1,3]){await target.getByRole('button',{name:`确认恢复HSK ${level}`,exact:false}).click();await expect(target).toContainText(`HSK ${level}已恢复`);}
+    for(const level of [1,3]){const beforeSelected=await p.evaluate(ks=>ks.map(k=>localStorage.getItem(k)),keys);await target.getByRole('button',{name:`确认恢复HSK ${level}`,exact:false}).click();await expect(target).toContainText(`HSK ${level}已恢复`);const afterSelected=await p.evaluate(ks=>ks.map(k=>localStorage.getItem(k)),keys);for(const other of [1,2,3].filter(n=>n!==level))expect(afterSelected[other-1]).toBe(beforeSelected[other-1]);}
     const restored=await p.evaluate(ks=>Object.fromEntries(ks.map(k=>[k,JSON.parse(localStorage.getItem(k)!)])),keys);
     for(const key of keys)expect(restored[key].data).toEqual(before[key].data);
     await target.getByRole('button',{name:'关闭',exact:false}).click();
-    for(const level of [1,2,3]){await p.goto(`./#view=homework&level=${level}&lesson=1&part=writing&version=30-v1`);await ready(p,level);await expect(workLocator(p,level)).toHaveValue(`Exported student / HSK${level}\n保留首尾空格  `);}
-    await info.attach('backup-coverage.json',{body:JSON.stringify({schema:2,levels:[1,2,3],freshContext:true,selectedLevelIsolation:true,nonemptyDrafts:true,exactDataRoundtrip:true,bytes:bytes.length}),contentType:'application/json'});
+    for(const level of [1,2,3]){await p.goto(workRoute(level));await ready(p,level);await exposeProfile(p,level);await expect(workLocator(p,level)).toHaveValue(backupDraft(level));if(level===1)await expectH1Draft(p,backupDraft(level),0);}
+    await info.attach('backup-coverage.json',{body:JSON.stringify({schema:2,levels:[1,2,3],freshContext:true,selectedLevelIsolation:true,nonemptyDrafts:true,HSK1ActualChoice:{id:firstChoice.id,value:0,option:firstChoice.options[0],singleLineProfile:true},HSK2And3ExactMultilineWriting:true,exactDataRoundtrip:true,bytes:bytes.length}),contentType:'application/json'});
   }finally{await fresh.close();}
 });
 
