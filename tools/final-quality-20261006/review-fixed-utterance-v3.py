@@ -21,8 +21,6 @@ SCOPE_REFERENCES = [
      'sha256': '6b1e5286b435fdce27d239799c88d27952617d04a8b0a2dc06553ab164360995'},
     {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-03.json',
      'sha256': '1a592b5b918b43c6f82f77a395031b93d48a88a655c05dc28131c55996acdccd'},
-    {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-04.json',
-     'sha256': '1fe836401e849a918ae9fbd85df24ae293ae19afe8d17598b39adcbb3c47da08'},
 ]
 NO_SPEECH = 'crop-ASR-hallucination-or-no-speech-warning'
 ZERO_WORD = 'crop-ASR-zero-inverted-or-out-of-bounds-word'
