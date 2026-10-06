@@ -1,26 +1,16 @@
 {
   "schemaVersion": 1,
-  "generation": 2,
-  "scope": "Only additional actual crops; generation1 input remains immutable at source f534b3caba062c06cee3c26173295d095a2dc532.",
+  "generation": 3,
+  "scope": "Additional second-read proposals for 107 lexical recognition mismatches only. No repeat of accepted main source frames.",
   "batches": {
-    "hsk3-word-repair-233": {
-      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk3-word-repair-233.json.gz",
-      "sha256": "cc55c289ff704efa92e1fc2675f118cee26c73d429e1f0ecd745760539ee4e81",
-      "expandedSHA256": "2e05bb9757f077459213b3fa53cf751651cade52219ac3aaa4d7da78522f6ade",
-      "candidateCount": 233,
+    "hsk1-second-reading-107": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk1-second-reading-107.json.gz",
+      "sha256": "f2e1843053ba8183fffa451ea307ef93b3bcfc8cfd15fa18af55e612742358a4",
+      "expandedSHA256": "138bea092da3f044375770fdd582da5b6f562ac9448535a2e77882982aafba83",
+      "candidateCount": 107,
       "shards": 3,
       "models": [
         "small",
-        "medium"
-      ]
-    },
-    "hsk2-vocab-context-35": {
-      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk2-vocab-context-35.json.gz",
-      "sha256": "841ad2292d0b04e1d1725332d2daf79fa7c521fad327a7048bc962df5922c1a8",
-      "expandedSHA256": "d55881747f36f9894ba2979b900195ff54d0e21d6056db49ba79e2acd951f275",
-      "candidateCount": 35,
-      "shards": 3,
-      "models": [
         "medium"
       ]
     }
