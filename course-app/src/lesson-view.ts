@@ -477,6 +477,7 @@ export function mountLesson(
             title,
             el("p", w.py, "pinyin-visible"),
             el("p", `${w.pos} · ${w.vi}`),
+            ...precisionRecordingNotes(w.id).map(note=>{const p=el('p',note,'recording-note');p.dataset.recordingNote=w.id;return p;}),
             sourceNote(w.source.printedPage),
                 ...(w.supplementarySyllabus?[el("p",copy("★ 教材拓展词（本级超纲）","★ Từ mở rộng trong giáo trình (ngoài phạm vi cấp này)"))]:[]),
             ...(originalSegment('words',w.id,c.assetBase)?[(()=>{const control=button(copy('播放单词原音','Nghe từ gốc'),async()=>{const request=originalSegment('words',w.id,c.assetBase)!;const result=await c.audio.play(request,{signal:events.signal});if(!result.ok&&result.code!=='cancelled')c.message(copy('原音未播放，请重试','Chưa phát được âm thanh gốc, hãy thử lại'))});control.dataset.audioSegment=w.id;return control;})()]:[el('p',copy('本词独立原音尚待核验，可听所在整组原音。','Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.'))]),

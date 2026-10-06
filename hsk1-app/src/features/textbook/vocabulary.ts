@@ -3,6 +3,7 @@ import '../../app/bilingual.css';
 import { vocabularyCopy as copy, vocabularyDynamic as dynamic } from '../../app/i18n/vocabulary.ts';
 import type { AudioService } from '../../services/audio/index.ts';
 import type { BookLesson, TextbookContent } from '../../services/content/textbook.ts';
+import { reviewedTextbookAudio } from '../../services/content/reviewed-audio.ts';
 import { mountWordStrokes } from './hanzi.ts';
 import { button as plainButton, element, searchKey } from './dom.ts';
 
@@ -39,6 +40,10 @@ export function mountVocabulary(host: HTMLElement, options: VocabularyOptions): 
   actions.append(flipAll, playAll); tools.append(searchLabel, actions, count);
   section.append(heading, tools, grid, detail); host.append(section);
   function visibleWords() { const query = searchKey(search.value); return lesson.vocab.filter(word => !query || searchKey(`${word.zh}${word.py}${word.vn}`).includes(query)); }
+  function recordingNotes(wordId:string):HTMLElement[]{
+    const notes=content.wordSenses(lesson.id,wordId).flatMap(sense=>reviewedTextbookAudio()?.recordingNotes?.(sense.catalogId)??[]);
+    return notes.filter((note,index)=>notes.findIndex(n=>n.zh===note.zh&&n.vi===note.vi)===index).map(note=>{const p=bi('p',note);p.className='textbook-recording-note';p.dataset.recordingNote=wordId;return p;});
+  }
   function audioButton(wordId: string, localSignal: AbortSignal): HTMLButtonElement {
     const resolved = content.resolveWord(lesson.id, wordId);
     const control = button(copy.playOriginal, () => { if (resolved.available) void audio.play(resolved.request, { signal: localSignal }); }, localSignal);
@@ -54,7 +59,7 @@ export function mountVocabulary(host: HTMLElement, options: VocabularyOptions): 
     const title = element('h3', word.zh); title.lang = 'zh'; title.tabIndex = -1;
     const close = button(copy.closeDetail, closeDetail, localSignal); close.id = 'word-close';
     const head = element('div'); head.className = 'textbook-detail-head'; head.append(title, close);
-    detail.append(head, element('p', word.py), element('p', word.vn), element('p', word.posLabel), audioButton(word.id, localSignal));
+    detail.append(head, element('p', word.py), element('p', word.vn), element('p', word.posLabel), audioButton(word.id, localSignal),...recordingNotes(word.id));
     const wordSenses = content.wordSenses(lesson.id, word.id);
     if (wordSenses.length > 1) {
       const senses = element('div'); senses.className = 'textbook-senses'; senses.append(bi('h4', copy.lessonSenses));
@@ -95,7 +100,7 @@ export function mountVocabulary(host: HTMLElement, options: VocabularyOptions): 
       const star = button(copy.star, () => { options.markMastered(word.zh, !options.getMastered()[`${lesson.id}-${word.zh}`]); update(); }, cardSignal); star.dataset.vocabStar = word.id;
       const open = button(copy.detail, () => { opener = open; openDetail(lesson.vocab.indexOf(word)); }, cardSignal); open.dataset.vocabDetail = word.id;
       actionRow.append(flip, audioButton(word.id, cardSignal), star, open);
-      card.append(front, back, bi('small', word.extension ? copy.extension : word.kind === 'proper' ? copy.proper : copy.textbookWord), actionRow); grid.append(card); updateFlip();
+      card.append(front, back, bi('small', word.extension ? copy.extension : word.kind === 'proper' ? copy.proper : copy.textbookWord), actionRow,...recordingNotes(word.id)); grid.append(card); updateFlip();
     }
     update();
   }

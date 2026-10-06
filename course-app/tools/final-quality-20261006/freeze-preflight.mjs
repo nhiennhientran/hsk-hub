@@ -42,7 +42,7 @@ export async function preflight(requestFile){
  assert.equal(hash(independentBytes),authority.independentReportSHA256,'Final independent source/frame report is absent or differs');
  const independent=JSON.parse(independentBytes);
  requireCompleteReview(independent,hash(Buffer.from(targetCatalogText)));
- const checkedAuditFiles=verifyReviewReferences(independent,repo);
+ const checkedAuditFiles=verifyReviewReferences(independent,repo,{reportFile:join(repo,independentFile)});
  const fields=Object.keys(authority.acceptedSourceFrameGates[0]);
  const selected=independent.acceptedSourceFrameGates.map(row=>Object.fromEntries(fields.map(key=>[key,row[key]??null]))).sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0);
  assert.equal(canonicalPrecisionJSON(selected),canonicalPrecisionJSON(authority.acceptedSourceFrameGates),'Final runtime rows differ from the independent final accepted decisions');
