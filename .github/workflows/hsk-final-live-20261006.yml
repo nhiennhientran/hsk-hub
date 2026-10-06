@@ -50,7 +50,38 @@ jobs:
         id: integrity
         env:
           HSK_LIVE_REQUEST_COMMIT: ${{ github.sha }}
-        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-live.mjs integrity "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-live-http/request.json" "$RUNNER_TEMP/hsk-final-live-http/integrity.json"
+        run: |
+          node --experimental-strip-types --input-type=module <<'NODE'
+          import assert from 'node:assert/strict';
+          import {readFileSync,writeFileSync,appendFileSync} from 'node:fs';
+          import {resolve,join} from 'node:path';
+          import {hash} from './course-app/tools/package-core.mjs';
+          import {verifyLiveBundle,verifyLiveIntegrity} from './course-app/tools/final-quality-20261006/verify-final-live.mjs';
+          import {verifyHTTPInventory} from './course-app/tools/final-quality-20261006/live-contract.mjs';
+          const directory=join(process.env.RUNNER_TEMP,'hsk-final-live-http');
+          const verified=await verifyLiveBundle(resolve(process.env.RUNNER_TEMP,'hsk-final-frozen'),join(directory,'request.json'));
+          const HTTP=await verifyHTTPInventory(verified.frozen.inventory,{concurrency:4,onProgress:progress=>console.log(JSON.stringify({status:'live-http-progress',...progress}))});
+          const {request,requestSHA256,live,frozen,publishedCommit}=verified;
+          const result={
+            schemaVersion:1,baseURL:request.baseURL,requestSHA256,requestCommit:live.requestCommit,
+            sourceCommit:request.sourceCommit,sourceTree:frozen.build.sourceTree,
+            buildReportSHA256:request.buildReportSHA256,siteInventorySHA256:request.siteInventorySHA256,
+            precisionAuthoritySHA256:frozen.build.precision.canonicalAuthoritySHA256,
+            singleBuildArtifactName:request.singleBuildArtifactName,
+            freezeRunId:String(request.freezeRunId),freezeRunAttempt:String(request.freezeRunAttempt),
+            publishedStagingCommit:publishedCommit,publishedStagingTree:request.publishedStagingTree,
+            runId:live.runId,runAttempt:live.runAttempt,rebuildPerformed:false,productionWritePerformed:false,
+            status:HTTP.failed?'failed-published-http-byte-verification':'passed-all-published-http-bytes',
+            ...HTTP,originalAudioTracks:357
+          };
+          const file=join(directory,'integrity.json');
+          writeFileSync(file,Buffer.from(JSON.stringify(result,null,2)+'\n'));
+          const integritySHA256=hash(readFileSync(file));
+          appendFileSync(process.env.GITHUB_OUTPUT,`integrity_sha=${integritySHA256}\n`);
+          assert.equal(HTTP.failed,0,'Published HTTP bytes differ; exact failed responses retained in integrity report');
+          verifyLiveIntegrity(result,verified);
+          console.log(JSON.stringify({status:result.status,integritySHA256,files:HTTP.filesChecked,bytes:HTTP.bytesChecked,concurrency:HTTP.concurrency}));
+          NODE
       - name: Retain real response status, URL, byte length and SHA including failures
         if: always()
         uses: actions/upload-artifact@v4
@@ -66,6 +97,7 @@ jobs:
     timeout-minutes: 45
     strategy:
       fail-fast: false
+      max-parallel: 1
       matrix:
         browser: [chromium, webkit]
     steps:
@@ -102,13 +134,13 @@ jobs:
         env:
           HSK_FINAL_QA_URL: https://nhiennhientran.github.io/hsk-hub/
           HSK_FINAL_QA_REPORT: ${{ runner.temp }}/hsk-final-live-native-${{ matrix.browser }}/collection.json
-        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }} --list
+        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }} --list --workers=1
       - name: Execute all native password, teaching, progress, backup, desktop and audio cases against the real published site
         working-directory: course-app
         env:
           HSK_FINAL_QA_URL: https://nhiennhientran.github.io/hsk-hub/
           HSK_FINAL_QA_REPORT: ${{ runner.temp }}/hsk-final-live-native-${{ matrix.browser }}/browser.json
-        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }}
+        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }} --workers=1
       - name: Require zero skips, retries or flakes and bind the new actual live workflow identity
         env:
           HSK_LIVE_REQUEST_COMMIT: ${{ github.sha }}
