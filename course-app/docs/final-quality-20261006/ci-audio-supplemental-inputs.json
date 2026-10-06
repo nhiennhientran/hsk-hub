@@ -1,14 +1,25 @@
 {
   "schemaVersion": 1,
-  "generation": 3,
-  "scope": "Additional second-read proposals for 107 lexical recognition mismatches only. No repeat of accepted main source frames.",
+  "generation": 4,
+  "scope": "Actual repaired HSK3 sentence crops and one complete original stage-annotation source. Earlier main and repaired word crops are not repeated.",
   "batches": {
-    "hsk1-second-reading-107": {
-      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk1-second-reading-107.json.gz",
-      "sha256": "f2e1843053ba8183fffa451ea307ef93b3bcfc8cfd15fa18af55e612742358a4",
-      "expandedSHA256": "138bea092da3f044375770fdd582da5b6f562ac9448535a2e77882982aafba83",
-      "candidateCount": 107,
+    "hsk3-sentence-repair-114": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk3-sentence-repair-114.json.gz",
+      "sha256": "00d450d0ad7141b55ddc4d1186f5a8e71b019cdcc01740232d2b2efcf4714b22",
+      "expandedSHA256": "c933334e84164df78bb5d6f79c84fc2592c15d65cdbe13c5caf3496d334e865d",
+      "candidateCount": 114,
       "shards": 3,
+      "models": [
+        "small",
+        "medium"
+      ]
+    },
+    "hsk3-stage-original-context": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk3-stage-original-context.json.gz",
+      "sha256": "a2bcf89cbc9b495f4a760b166d777592b15b60d8c5bc49404f3bb2a6fc38a74d",
+      "expandedSHA256": "1cbea02965be74edcaad481dd3631d3e5891d871bc6899d437f63fd7f86391d9",
+      "candidateCount": 1,
+      "shards": 1,
       "models": [
         "small",
         "medium"
