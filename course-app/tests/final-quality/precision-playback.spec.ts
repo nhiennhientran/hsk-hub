@@ -79,8 +79,13 @@ function picks(level:number,lesson:number){
 }
 async function openWord(page:Page,row:PrecisionRow,book:any):Promise<Locator>{
   await page.goto(`./#view=lesson&level=${row.level}&lesson=${row.lesson}&section=vocab`);await ready(page,row.level);
-  const word=book?.vocab.find((w:any)=>w.catalogIds[0]===row.id);
-  return row.level===1?page.locator(`[data-vocab-audio="${word.id}"]`).first():page.locator(`[data-audio-segment="${row.id}"]`);
+  if(row.level===1){
+    const word=book.vocab.find((w:any)=>w.catalogIds[0]===row.id);
+    return page.locator(`[data-vocab-audio="${word.id}"]`).first();
+  }
+  await page.locator(`.vocabulary-item[data-word-id="${row.id}"] .word-open`).click();
+  const dialog=page.locator('.word-dialog');await expect(dialog).toBeVisible();
+  return dialog.locator(`[data-audio-segment="${row.id}"]`);
 }
 async function openSentence(page:Page,row:PrecisionRow,rows:PrecisionRow[],book:any):Promise<{button:Locator;played:PrecisionRow}>{
   let scene:number;
@@ -107,7 +112,11 @@ async function playBound(page:Page,button:Locator,row:PrecisionRow){
 for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native word and sentence buttons use accepted precision frames`,async({page},info)=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   const {rows,book,word,sentence}=picks(level,lesson);
-  const wordButton=await openWord(page,word,book);const first=await playBound(page,wordButton,word);await first.stop.click();
+  const wordButton=await openWord(page,word,book);const first=await playBound(page,wordButton,word);
+  // The shared player is outside the native modal. Close the detail normally
+  // before using it, as a student must; closing detail preserves playback.
+  if(level!==1)await page.locator('.word-dialog').getByRole('button',{name:/^关闭/}).click();
+  await first.stop.click();
   await expect.poll(async()=>(await native(page)).every((a:any)=>a.paused&&!a.hasSource)).toBe(true);
   const next=await openSentence(page,sentence,rows,book);const second=await playBound(page,next.button,next.played);await second.stop.click();
   await expect.poll(async()=>(await native(page)).every((a:any)=>a.paused&&!a.hasSource)).toBe(true);

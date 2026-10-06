@@ -1,4 +1,4 @@
-import {test,expect,type Page,type BrowserContext,type TestInfo} from '@playwright/test';
+import {test,expect,type Page,type BrowserContext} from '@playwright/test';
 import {readFileSync} from 'node:fs';
 import {allLessonsUnlockedFixture} from './unlocked-fixtures.ts';
 
@@ -71,7 +71,7 @@ for(const level of [1,2,3])test(`HSK${level} independent student contexts keep d
   }finally{await first.close();await second.close();}
 });
 
-test('all three nonempty student drafts export and restore in a fresh context without cross-level replacement',async({browser,context,page,baseURL},info)=>{
+test('all three nonempty student drafts export and restore in a fresh context without cross-level replacement',async({browser,page,baseURL},info)=>{
   test.setTimeout(180000);
   for(const level of [1,2,3])await saveDraft(page,level,`Exported student / HSK${level}\n保留首尾空格  `);
   await page.getByRole('button',{name:'统一备份与恢复'}).click();

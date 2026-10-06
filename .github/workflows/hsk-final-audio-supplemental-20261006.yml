@@ -6,7 +6,7 @@ on:
 permissions:
   contents: read
 concurrency:
-  group: hsk-final-audio-supplemental-${{ github.ref }}
+  group: hsk-final-audio-supplemental-${{ github.ref }}-${{ github.sha }}
   cancel-in-progress: false
 jobs:
   plan:
