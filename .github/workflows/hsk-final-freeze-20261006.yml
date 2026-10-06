@@ -25,6 +25,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24.19.0'
+      - name: Restore only the exact independent review bytes pinned by final authority
+        run: python course-app/tools/final-quality-20261006/materialize-precision-review.py course-app/docs/final-quality-20261006/ci-freeze-request.json
       - name: Fail closed before installation unless final precision authority is accepted
         run: node --experimental-strip-types course-app/tools/final-quality-20261006/freeze-preflight.mjs course-app/docs/final-quality-20261006/ci-freeze-request.json
       - name: Install locked test dependencies
@@ -34,6 +36,7 @@ jobs:
       - name: Verify units, accepted VI adoption and strict native fixtures
         run: |
           npm test --prefix course-app
+          python course-app/tests/final-quality/materialize-review.test.py
           node --experimental-strip-types --test course-app/tests/final-quality/access-and-abcd.test.mjs course-app/tests/final-quality/freeze-contract.test.mjs course-app/tests/final-quality/precision-authority-build.test.mjs course-app/tests/final-quality/live-contract.test.mjs
           npm test --prefix hsk1-app
           node --experimental-strip-types course-app/tools/verify-official-vi-adoption.mjs --require-complete-course-adoption
@@ -78,7 +81,10 @@ jobs:
           node course-app/node_modules/@playwright/test/cli.js install --with-deps ${{ matrix.browser }}
           sudo apt-get install -y fonts-noto-cjk
       - name: Verify every frozen path and byte before native testing
-        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-freeze.mjs verify "$RUNNER_TEMP/hsk-final-frozen" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}'
+        # Rehydrate the source report from its recorded gzip, never infer review.
+        run: |
+          python course-app/tools/final-quality-20261006/materialize-precision-review.py course-app/docs/final-quality-20261006/ci-freeze-request.json
+          node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-freeze.mjs verify "$RUNNER_TEMP/hsk-final-frozen" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}'
       - name: Collect all 127 cases for this native engine
         working-directory: course-app
         env:
@@ -135,7 +141,9 @@ jobs:
           name: hsk-final-native-webkit-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
           path: ${{ runner.temp }}/hsk-final-frozen/reports/native/webkit
       - name: Independently require both complete native reports on the exact single-build inventory
-        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-native-set.mjs "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-frozen/reports/native" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}' "$RUNNER_TEMP/hsk-final-frozen/reports/final-native-acceptance.json"
+        run: |
+          python course-app/tools/final-quality-20261006/materialize-precision-review.py course-app/docs/final-quality-20261006/ci-freeze-request.json
+          node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-native-set.mjs "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-frozen/reports/native" '${{ needs.build.outputs.build_sha }}' '${{ needs.build.outputs.inventory_sha }}' "$RUNNER_TEMP/hsk-final-frozen/reports/final-native-acceptance.json"
       - name: Preserve the complete native accepted website and its reports before creating staging
         uses: actions/upload-artifact@v4
         with:

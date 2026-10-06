@@ -4,6 +4,7 @@ import fs from 'node:fs';
 import {createHash} from 'node:crypto';
 import {validateSegments,validateReviewedSentenceSubset,mergeSegmentData} from '../src/audio-segment-contract.ts';
 import {registerSegments,originalSegment,sentenceSegments} from '../src/segment-resolver.ts';
+import {registerPrecisionRows} from '../src/precision-resolver.ts';
 const read=file=>JSON.parse(fs.readFileSync(new URL('../'+file,import.meta.url)));
 const subset=read('content/audio-segments-hsk2-reviewed-sentences.json'),authority=read('content/audio-segment-reviewed-sentences-authority.json'),tracks=read('content/audio-manifest.json').tracks;
 const ids=['hsk2-fltrp-2026:l04:text2:line3','hsk2-fltrp-2026:l05:text2:line8:sentence2'];
@@ -42,4 +43,21 @@ test('partial child keeps original ordinal 2 without a precise parent, sibling o
  const chunks=sentenceSegments(parent,'./');assert.equal(chunks.length,1);assert.equal(chunks[0].sentenceNumber,2);assert.equal(chunks[0].id,ids[1]);assert.equal(chunks[0].request.start,35.78);assert.equal(chunks[0].request.end,38.39);
  assert.equal(originalSegment('lines',parent,'./'),undefined);assert.equal(originalSegment('lines',parent+':sentence1','./'),undefined);assert.equal(originalSegment('words','hsk2-fltrp-2026:l04:word16','./'),undefined);
  const oldParent=Object.entries(legacy[0].lines).find(([,s])=>s.subsegments?.length);const oldChunks=sentenceSegments(oldParent[0],'./');assert.deepEqual(oldChunks.map(s=>s.id),oldParent[1].subsegments);assert.deepEqual(oldChunks.map(s=>s.sentenceNumber),oldChunks.map((_,i)=>i+1));
+});
+test('accepted non-spoken annotation blocks legacy line and child fallback while spoken legacy audio remains available',async()=>{
+ const annotation='hsk3-fltrp-2026:l10:text3:line5',child=annotation+':sentence1';
+ const original=mergeSegmentData([...legacy.map(value=>validateSegments(value,tracks,legacyAuthority)),await validateReviewedSentenceSubset(subset,tracks,authority)]);
+ const historical=structuredClone(original),template=historical.lines[ids[0]];
+ historical.lines[annotation]={...structuredClone(template),sourceText:'（李老师给学生讲题。）',subsegments:[child]};
+ historical.subsegments[child]={...structuredClone(template),sourceText:'李老师给学生讲题。',parentLineId:annotation,sentenceNumber:1};
+ globalThis.location={href:'https://example.test/hsk/'};
+ registerSegments(historical);registerPrecisionRows([]);
+ assert.ok(originalSegment('lines',annotation,'./'));assert.equal(sentenceSegments(annotation,'./').length,1);
+ try{
+  registerPrecisionRows([],[annotation]);
+  assert.equal(originalSegment('lines',annotation,'./'),undefined);
+  assert.equal(originalSegment('lines',child,'./'),undefined);
+  assert.deepEqual(sentenceSegments(annotation,'./'),[]);
+  assert.ok(originalSegment('lines',ids[0],'./'));
+ }finally{registerPrecisionRows([]);registerSegments(original)}
 });

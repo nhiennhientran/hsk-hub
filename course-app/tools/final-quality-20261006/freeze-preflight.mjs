@@ -8,7 +8,7 @@ import {runtimeSourceDirty,runtimeSourceSnapshot,protectedProduction} from '../p
 import {productionCommit,productionTree} from './assemble-site.mjs';
 import {hash} from '../package-core.mjs';
 import {finalSpecFiles,finalBrowserCases} from './freeze-contract.mjs';
-import {requireCompleteReview} from './build-precision-manifest.mjs';
+import {requireCompleteReview,verifyReviewReferences} from './build-precision-manifest.mjs';
 export const repo=resolve(import.meta.dirname,'../../..');
 const read=file=>readFileSync(join(repo,file));
 const json=file=>JSON.parse(read(file));
@@ -42,12 +42,13 @@ export async function preflight(requestFile){
  assert.equal(hash(independentBytes),authority.independentReportSHA256,'Final independent source/frame report is absent or differs');
  const independent=JSON.parse(independentBytes);
  requireCompleteReview(independent,hash(Buffer.from(targetCatalogText)));
+ const checkedAuditFiles=verifyReviewReferences(independent,repo);
  const fields=Object.keys(authority.acceptedSourceFrameGates[0]);
  const selected=independent.acceptedSourceFrameGates.map(row=>Object.fromEntries(fields.map(key=>[key,row[key]??null]))).sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0);
  assert.equal(canonicalPrecisionJSON(selected),canonicalPrecisionJSON(authority.acceptedSourceFrameGates),'Final runtime rows differ from the independent final accepted decisions');
  assert.equal(await precisionSHA256(canonicalPrecisionJSON(authority)),pin);
  const specs=finalSpecFiles.map(file=>({file:'course-app/tests/final-quality/'+file,sha256:hash(read('course-app/tests/final-quality/'+file))}));
- return {schemaVersion:1,status:'passed-final-freeze-preflight',sourceCommit,sourceTree,productionCommit,productionTree,legacyProvenanceCommit:protectedProduction,sourceDirty:false,sourceSnapshot:runtimeSourceSnapshot(repo),browserCasesPerEngine:finalBrowserCases,lessons:48,originalAudioTracks:357,precision:{rows:2539,nonSpokenAnnotations:1,authorityFile,canonicalAuthoritySHA256:pin,authorityFileSHA256:hash(read(authorityFile)),manifestFile,manifestSHA256:hash(Buffer.from(manifestText)),targetFile,targetCatalogSHA256:hash(Buffer.from(targetCatalogText)),independentReportFile:independentFile,independentReportSHA256:hash(independentBytes)},requestFile,requestSHA256:hash(read(requestFile)),specs,nativeAccepted:false,published:false};
+ return {schemaVersion:1,status:'passed-final-freeze-preflight',sourceCommit,sourceTree,productionCommit,productionTree,legacyProvenanceCommit:protectedProduction,sourceDirty:false,sourceSnapshot:runtimeSourceSnapshot(repo),browserCasesPerEngine:finalBrowserCases,lessons:48,originalAudioTracks:357,precision:{rows:2539,nonSpokenAnnotations:1,checkedAuditFiles,authorityFile,canonicalAuthoritySHA256:pin,authorityFileSHA256:hash(read(authorityFile)),manifestFile,manifestSHA256:hash(Buffer.from(manifestText)),targetFile,targetCatalogSHA256:hash(Buffer.from(targetCatalogText)),independentReportFile:independentFile,independentReportSHA256:hash(independentBytes)},requestFile,requestSHA256:hash(read(requestFile)),specs,nativeAccepted:false,published:false};
 }
 if(process.argv[1]&&resolve(process.argv[1])===fileURLToPath(import.meta.url)){
  const [requestFile,report]=process.argv.slice(2);assert.ok(requestFile,'Freeze request source file required');const result=await preflight(requestFile);

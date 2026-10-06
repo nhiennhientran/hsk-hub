@@ -120,6 +120,12 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native wo
   await expect.poll(async()=>(await native(page)).every((a:any)=>a.paused&&!a.hasSource)).toBe(true);
   const next=await openSentence(page,sentence,rows,book);const second=await playBound(page,next.button,next.played);await second.stop.click();
   await expect.poll(async()=>(await native(page)).every((a:any)=>a.paused&&!a.hasSource)).toBe(true);
+  if(level===3&&lesson===10){
+    await page.goto('./#view=lesson&level=3&lesson=10&section=text&scene=3');await ready(page,3);
+    const annotation=page.locator('[data-audio-annotation="hsk3-fltrp-2026:l10:text3:line5"]');
+    await expect(annotation).toBeVisible();await expect(annotation.locator('..').getByRole('button')).toHaveCount(0);
+    await expect(page.getByRole('button',{name:/播放本篇原音/})).toBeEnabled();
+  }
   expect(errors).toEqual([]);
   await info.attach('native-precision-button-evidence.json',{body:JSON.stringify({level,lesson,word:{id:word.id,sourceSampleRange16k:word.sourceSampleRange16k},sentence:{id:next.played.id,sourceSampleRange16k:next.played.sourceSampleRange16k},nativeAudio:await native(page),errors,samplingBoundary:'One visible word and one sentence/line control per lesson; all row source/frame completeness is independently verified by the precision authority.'}),contentType:'application/json'});
 });

@@ -629,7 +629,7 @@ export function mountLesson(
       );
       const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
       if(precisionNonSpokenAnnotation(line.id)){const note=el('p',copy('场景说明（原录音中没有单独朗读）','Chỉ dẫn bối cảnh (không được đọc riêng trong bản ghi gốc)'));note.dataset.audioAnnotation=line.id;row.append(note);}
-      if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const play=button(copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
+      else if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const play=button(copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
       textBody.append(row);
     }
     body.append(

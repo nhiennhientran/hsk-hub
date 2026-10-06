@@ -1,0 +1,178 @@
+name: HSK final published HTTP bytes and full native revalidation
+on:
+  push:
+    branches: ['work/hsk-complete-quality-20261006']
+    paths: ['course-app/docs/final-quality-20261006/ci-live-request.json']
+permissions:
+  contents: read
+  actions: read
+concurrency:
+  group: hsk-final-live-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  integrity:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    outputs:
+      source_sha: ${{ steps.request.outputs.source_sha }}
+      freeze_run_id: ${{ steps.request.outputs.freeze_run_id }}
+      build_artifact: ${{ steps.request.outputs.build_artifact }}
+      request_sha: ${{ steps.request.outputs.request_sha }}
+      integrity_sha: ${{ steps.integrity.outputs.integrity_sha }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - name: Retain the explicit post-deployment request before switching source
+        run: |
+          mkdir -p "$RUNNER_TEMP/hsk-final-live-http"
+          cp course-app/docs/final-quality-20261006/ci-live-request.json "$RUNNER_TEMP/hsk-final-live-http/request.json"
+      - name: Fail closed on source, freeze identity, artifact name and publication pins
+        id: request
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-live.mjs request "$RUNNER_TEMP/hsk-final-live-http/request.json"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.request.outputs.source_sha }}
+          fetch-depth: 0
+      - name: Restore only the final authority's exact frozen independent report
+        run: python course-app/tools/final-quality-20261006/materialize-precision-review.py course-app/docs/final-quality-20261006/ci-freeze-request.json
+      - name: Download the original single build from its actual freeze workflow
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ steps.request.outputs.build_artifact }}
+          run-id: ${{ steps.request.outputs.freeze_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/hsk-final-frozen
+      - name: Verify actual published Git tree and stream every HTTP body against the frozen inventory
+        id: integrity
+        env:
+          HSK_LIVE_REQUEST_COMMIT: ${{ github.sha }}
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-live.mjs integrity "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-live-http/request.json" "$RUNNER_TEMP/hsk-final-live-http/integrity.json"
+      - name: Retain real response status, URL, byte length and SHA including failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-live-http-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+          path: ${{ runner.temp }}/hsk-final-live-http
+  native:
+    needs: integrity
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.integrity.outputs.source_sha }}
+          fetch-depth: 0
+      - name: Restore the same pinned review report without rebuilding or making decisions
+        run: python course-app/tools/final-quality-20261006/materialize-precision-review.py course-app/docs/final-quality-20261006/ci-freeze-request.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.integrity.outputs.build_artifact }}
+          run-id: ${{ needs.integrity.outputs.freeze_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/hsk-final-frozen
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-live-http-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-live-http
+      - name: Install locked native driver and Chinese fonts without rebuilding the website
+        run: |
+          npm ci --prefix course-app
+          node course-app/node_modules/@playwright/test/cli.js install --with-deps ${{ matrix.browser }}
+          sudo apt-get install -y fonts-noto-cjk
+      - name: Independently verify the HTTP report and original frozen source before native execution
+        env:
+          HSK_LIVE_REQUEST_COMMIT: ${{ github.sha }}
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-live.mjs verify "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-live-http/request.json" "$RUNNER_TEMP/hsk-final-live-http/integrity.json" '${{ needs.integrity.outputs.integrity_sha }}'
+      - name: Collect the complete 127 cases on the real HTTPS target
+        working-directory: course-app
+        env:
+          HSK_FINAL_QA_URL: https://nhiennhientran.github.io/hsk-hub/
+          HSK_FINAL_QA_REPORT: ${{ runner.temp }}/hsk-final-live-native-${{ matrix.browser }}/collection.json
+        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }} --list
+      - name: Execute all native password, teaching, progress, backup, desktop and audio cases against the real published site
+        working-directory: course-app
+        env:
+          HSK_FINAL_QA_URL: https://nhiennhientran.github.io/hsk-hub/
+          HSK_FINAL_QA_REPORT: ${{ runner.temp }}/hsk-final-live-native-${{ matrix.browser }}/browser.json
+        run: node tools/run-browser.mjs --config=tests/final-quality/freeze-playwright.config.ts --project=${{ matrix.browser }}
+      - name: Require zero skips, retries or flakes and bind the new actual live workflow identity
+        env:
+          HSK_LIVE_REQUEST_COMMIT: ${{ github.sha }}
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-live.mjs native "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-live-http/request.json" "$RUNNER_TEMP/hsk-final-live-http/integrity.json" '${{ needs.integrity.outputs.integrity_sha }}' '${{ matrix.browser }}' "$RUNNER_TEMP/hsk-final-live-native-${{ matrix.browser }}/collection.json" "$RUNNER_TEMP/hsk-final-live-native-${{ matrix.browser }}/browser.json" "$RUNNER_TEMP/hsk-final-live-native-${{ matrix.browser }}/binding.json"
+      - name: Retain any native failure evidence
+        if: always()
+        run: |
+          mkdir -p "$RUNNER_TEMP/hsk-final-live-native-${{ matrix.browser }}"
+          if [ -d course-app/docs/final-quality-20261006/qa/browser-output ]; then
+            cp -a course-app/docs/final-quality-20261006/qa/browser-output "$RUNNER_TEMP/hsk-final-live-native-${{ matrix.browser }}/browser-output"
+          fi
+      - name: Upload actual new live reports and native screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-live-native-${{ matrix.browser }}-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: warn
+          retention-days: 30
+          path: ${{ runner.temp }}/hsk-final-live-native-${{ matrix.browser }}
+  complete:
+    needs: [integrity, native]
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.integrity.outputs.source_sha }}
+          fetch-depth: 0
+      - name: Restore exact frozen review bytes for the independent final binding check
+        run: python course-app/tools/final-quality-20261006/materialize-precision-review.py course-app/docs/final-quality-20261006/ci-freeze-request.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24.19.0'
+      - uses: actions/download-artifact@v4
+        with:
+          name: ${{ needs.integrity.outputs.build_artifact }}
+          run-id: ${{ needs.integrity.outputs.freeze_run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path: ${{ runner.temp }}/hsk-final-frozen
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-live-http-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-live-http
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-live-native-chromium-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-live-native/chromium
+      - uses: actions/download-artifact@v4
+        with:
+          name: hsk-final-live-native-webkit-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: ${{ runner.temp }}/hsk-final-live-native/webkit
+      - name: Independently seal both complete native engines and actual published HTTP identity
+        env:
+          HSK_LIVE_REQUEST_COMMIT: ${{ github.sha }}
+        run: node --experimental-strip-types course-app/tools/final-quality-20261006/verify-final-live.mjs complete "$RUNNER_TEMP/hsk-final-frozen" "$RUNNER_TEMP/hsk-final-live-http/request.json" "$RUNNER_TEMP/hsk-final-live-http/integrity.json" '${{ needs.integrity.outputs.integrity_sha }}' "$RUNNER_TEMP/hsk-final-live-native" "$RUNNER_TEMP/hsk-final-live-acceptance.json"
+      - name: Retain the complete read-only published acceptance proof
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-final-published-native-acceptance-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            ${{ runner.temp }}/hsk-final-live-acceptance.json
+            ${{ runner.temp }}/hsk-final-live-http
+            ${{ runner.temp }}/hsk-final-live-native
