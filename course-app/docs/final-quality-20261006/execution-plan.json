@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "status": "user-approved-executing",
+  "approvedAt": "2026-10-06T08:55:20+08:00",
+  "instruction": "按这个范围连续推进到最终发布和线上复验完成",
+  "sourceCommit": "003cbae9fe3a8f9f085522bb66ea108d451fa52a",
+  "productionBaseline": "5d890eb59cdaf8ad3b134b3d141d2ef6fee2ecb7",
+  "productionTree": "702a23751e0eeaddfff5ba90da7d59bfc999875c",
+  "sourceSnapshotVerifiedFiles": 1478,
+  "branch": "work/hsk-complete-quality-20261006",
+  "scope": {
+    "lessons": 48,
+    "levels": [
+      15,
+      15,
+      18
+    ],
+    "audio": "full vocab/reading precision, existing cuts rechecked; full listening context retained",
+    "content": "full teaching-object coverage, valid unchanged proof reused",
+    "flows": "48 lessons, progress/backup/isolation, two engines, mobile widths and actual deployed paths",
+    "release": "one final tested artifact publication and live behavior/media recheck"
+  },
+  "policies": {
+    "maxConcurrentLanesIncludingCoordinator": 6,
+    "intermediateApprovalPauses": false,
+    "precisionUnverifiedMustNotCountAsComplete": true,
+    "missingOriginalSearchOtherTracksFirst": true,
+    "syntheticVoiceMayNotBeClaimedOriginal": true,
+    "preserveStudentData": true,
+    "protectBaseline": true
+  }
+}
