@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "scope": "Additional actual source-frame observations only; not precision approvals. Main frozen ASR remains unchanged.",
+  "batches": {
+    "hsk1-repair": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk1-repair.json.gz",
+      "sha256": "68d82221131607720e1c1d1c37860be668fee5ac117604e18e23959c1e46fbb2",
+      "expandedSHA256": "8d516dcda9f9be6e4d43d4338fa4fe67b2f521965f785b05400dbe5787dbbabd",
+      "candidateCount": 50,
+      "shards": 2,
+      "models": [
+        "small",
+        "medium"
+      ]
+    },
+    "hsk1-numeric-context": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk1-numeric-context.json.gz",
+      "sha256": "aef6715e7a1d10a7fb7361b9366187d172425b617e987fb1a4573be44d716e9b",
+      "expandedSHA256": "f526ac11be9e4bac14ecda0d2cd656edb2d1ea172d97a8c341e8d9b479fb4bf2",
+      "candidateCount": 105,
+      "shards": 3,
+      "models": [
+        "small",
+        "medium"
+      ]
+    },
+    "numeric-remaining-tracks": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/numeric-remaining-tracks.json.gz",
+      "sha256": "cd680528dd6c04bb362c1b78eac16569ea5e00694f532c712091a0b2fee51339",
+      "expandedSHA256": "7fd1e85a706e86f9aa6050350562c708344852ca18e737cb684a7455d73ad11a",
+      "candidateCount": 32,
+      "shards": 2,
+      "models": [
+        "small"
+      ]
+    },
+    "hsk3-context-remaining": {
+      "file": "course-app/docs/final-quality-20261006/ci-inputs/hsk3-context-remaining.json.gz",
+      "sha256": "98969c1431d288513005cc27652703b4c1abb950145c0f921d420c8fb3bdc1ac",
+      "expandedSHA256": "97835c5e8c022eb1f449a88f83e9e6975f061f9958faf64cf12c5c3df9fd9f06",
+      "candidateCount": 52,
+      "shards": 3,
+      "models": [
+        "medium"
+      ]
+    }
+  }
+}

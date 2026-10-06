@@ -118,6 +118,15 @@ test('segment boundaries stop before the next recording; changing speed reschedu
   service.dispose();
 });
 
+test('bounded playback preserves the final phoneme tail instead of stopping fifteen milliseconds early',async()=>{
+  const {audio,service,clock}=setup();
+  const pending=service.play(track());audio.metadata();audio.playing();await pending;
+  audio.time(2.986);assert.equal(service.snapshot().status,'playing');assert.equal(audio.paused,false);
+  service.setRate(1);assert.ok(clock.delays[0]>13&&clock.delays[0]<15);
+  audio.currentTime=2.999;clock.fire();assert.equal(service.snapshot().status,'playing');assert.deepEqual(clock.delays,[2]);
+  audio.time(3);assert.equal(service.snapshot().status,'ended');assert.equal(audio.paused,true);assert.equal(clock.count,0);service.dispose();
+});
+
 test('playlist advances once per range and stops on a real error instead of skipping or claiming success', async () => {
   const { audio, service } = setup();
   const pending = service.playSequence([track('Một'), { ...track('Hai'), start: 5, end: 8 }]);

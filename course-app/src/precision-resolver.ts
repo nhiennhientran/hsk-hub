@@ -1,7 +1,9 @@
 import type {AudioRequest} from '../../hsk1-app/src/services/audio/index.ts';
 import {canonicalPrecisionTrack,type PrecisionRow} from './precision-contract.ts';
 let rows:readonly PrecisionRow[]=[];
-export function registerPrecisionRows(value:readonly PrecisionRow[]):void{rows=value;}
+let annotations=new Set<string>();
+export function registerPrecisionRows(value:readonly PrecisionRow[],nonSpokenIds:readonly string[]=[]):void{rows=value;annotations=new Set(nonSpokenIds);}
+export function precisionNonSpokenAnnotation(id:string):boolean{return annotations.has(id);}
 export function precisionRequest(row:PrecisionRow,assetBase:string):AudioRequest{
  return {url:new URL(canonicalPrecisionTrack(row.sourceTrack),new URL(assetBase,location.href)).href,start:row.sourceSampleRange16k[0]/16000,end:row.sourceSampleRange16k[1]/16000,sourceKind:'segment',label:`原音 · Âm thanh gốc · ${row.sourceText}`};
 }

@@ -32,7 +32,7 @@ export function loadPrecisionSegments():Promise<boolean>{
   const authority=JSON.parse(authorityText as string) as PrecisionAuthority;
   if(await precisionSHA256(canonicalPrecisionJSON(authority))!==precisionAuthoritySHA256)throw Error('Independent precision authority changed');
   const accepted=await validatePrecisionManifest({manifestText:manifestText as string,targetCatalogText:targetCatalogText as string,authority,authoritySHA256:precisionAuthoritySHA256,sources:precisionSources});
-  rows=accepted;registerPrecisionRows(accepted);
+  rows=accepted;registerPrecisionRows(accepted,authority.nonSpokenAnnotations.map(r=>r.id));
   registerReviewedTextbookAudio({
    word(id){const row=rows.find(r=>r.level===1&&r.unit==='word'&&r.id===id);return row?textbookAudio(row):undefined;},
    line(id){const row=rows.find(r=>r.level===1&&r.unit==='line'&&r.id===id);return row?textbookAudio(row):undefined;},

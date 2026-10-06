@@ -4,7 +4,7 @@ import {canonicalPrecisionJSON,precisionSHA256,validatePrecisionManifest} from '
 const h=x=>x.repeat(64),source={file:'course-assets/hsk2/audio/1-2.mp3',sha256:h('a'),duration:5};
 async function fixture(){
  const target={id:'hsk2-fltrp-2026:l01:word01',level:2,lesson:1,unit:'word',sourceText:'就',sourceLessonFile:'course-app/content/hsk2/lesson-01.json',sourceLessonSHA256:h('b')};
- const annotation={...target,id:'stage-note',unit:'sentence',sourceText:'（老师来了。）'};
+ const annotation={...target,id:'hsk3-fltrp-2026:l10:text3:line5',level:3,lesson:10,unit:'sentence',sourceText:'（李老师给学生讲题。）',sourceLessonFile:'course-app/content/hsk3/lesson-10.json'};
  const row={...target,sourceTrack:source.file,sourceSHA256:source.sha256,sourcePCM_SHA256:h('c'),sourceSampleRange16k:[8000,24000],cropPCM_SHA256:h('d'),clipUnit:'single-original-pronunciation',readingCount:1,reviewDecisionId:'independent-actual-source-frame-decision'};
  const manifestText=JSON.stringify({schemaVersion:1,status:'accepted',sampleRate:16000,records:[row]}),targetCatalogText=JSON.stringify({schemaVersion:1,targets:[target,annotation]});
  const authority={schemaVersion:1,status:'accepted',manifestSHA256:await precisionSHA256(manifestText),targetCatalogSHA256:await precisionSHA256(targetCatalogText),independentReportSHA256:h('e'),acceptedSourceFrameGates:[row],nonSpokenAnnotations:[{id:annotation.id,sourceLessonSHA256:annotation.sourceLessonSHA256,reason:'Printed stage direction is absent from the original recording.',reviewDecisionId:'independent-source-context-annotation'}],certifications:{humanListening:false,pronunciationToneCertified:false,devicePlaybackCertified:false}};

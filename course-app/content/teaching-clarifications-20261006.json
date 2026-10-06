@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted",
+  "independentReviewer": "/root",
+  "proposalAuthors": [
+    "/root/acceptance_scope_plan",
+    "/root/audio_hsk3"
+  ],
+  "entries": [
+    {
+      "id": "hsk2-fltrp-2026:l02:hw03",
+      "kind": "homework",
+      "courseId": "hsk2-fltrp-2026",
+      "lesson": 2,
+      "sourceFile": "course-app/content/hsk2/lesson-02.json",
+      "sourceSHA256": "87190119ee1017b4316039e515be6690e419d369f59d4aba774263229ab11e2d",
+      "field": "prompt",
+      "expectedValue": {
+        "zh": "这所学校有两______名学生。",
+        "vi": "Trường này có hai ______ học sinh. Hãy điền số từ còn thiếu."
+      },
+      "newValue": {
+        "zh": "这所学校有两______名学生。人数为20,000，请填写缺少的数词。",
+        "vi": "Trường này có 20.000 học sinh. Hãy điền số từ còn thiếu trong câu tiếng Trung."
+      },
+      "originalOptions": [
+        "万",
+        "千",
+        "百"
+      ],
+      "originalAnswer": 0
+    },
+    {
+      "id": "hsk2-fltrp-2026:l03:hw06",
+      "kind": "homework",
+      "courseId": "hsk2-fltrp-2026",
+      "lesson": 3,
+      "sourceFile": "course-app/content/hsk2/lesson-03.json",
+      "sourceSHA256": "04c31d30fdae22f3fad0cbf22b6570875b3b546eddf8e538be7fe35981149506",
+      "field": "prompt",
+      "expectedValue": {
+        "zh": "我和妹妹想______出去玩。",
+        "vi": "Tôi và em gái muốn ______ ra ngoài chơi."
+      },
+      "newValue": {
+        "zh": "我和妹妹想______出去玩。请填表示两个人“共同”去的词。",
+        "vi": "Tôi và em gái muốn ______ ra ngoài chơi. Hãy điền từ diễn đạt ý hai người đi cùng nhau."
+      },
+      "originalOptions": [
+        "自己",
+        "每天",
+        "一起"
+      ],
+      "originalAnswer": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw09",
+      "kind": "homework",
+      "courseId": "hsk2-fltrp-2026",
+      "lesson": 10,
+      "sourceFile": "course-app/content/hsk2/lesson-10.json",
+      "sourceSHA256": "5e8b2f82916f6bce00f4d28d0b31f8caf347f813bee9e19408f0edf723130156",
+      "field": "prompt",
+      "expectedValue": {
+        "zh": "看见礼物后他高兴地______了。",
+        "vi": "Thấy món quà, anh ấy vui vẻ ______."
+      },
+      "newValue": {
+        "zh": "看见礼物后他高兴地______了，发出“哈哈”的声音。",
+        "vi": "Thấy món quà, anh ấy vui vẻ ______ và phát ra tiếng “ha ha”."
+      },
+      "originalOptions": [
+        "笑",
+        "哭",
+        "睡"
+      ],
+      "originalAnswer": 0
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:grammar1",
+      "kind": "grammar",
+      "courseId": "hsk3-fltrp-2026",
+      "lesson": 11,
+      "sourceFile": "course-app/content/hsk3/lesson-11.json",
+      "sourceSHA256": "e54b04f5fba66b2201d4ab9b963c7f8cf977fe3a52e0347e13186e9eb24ce4e2",
+      "field": "explanation",
+      "expectedValue": {
+        "zh": "“还是”一般用在疑问句中，提出两个或多个选项，希望对方从中做出选择。“或者”主要用在陈述句中，不能用在疑问句中。",
+        "vi": "Trong mẫu bài này, 还是 dùng hỏi lựa chọn giữa hai hoặc nhiều phương án; 或者 dùng nêu các lựa chọn trong câu trần thuật. Quy tắc trong sách là hướng dẫn cơ bản cho hai kiểu câu này."
+      },
+      "newValue": {
+        "zh": "“还是”用于选择问句，要求对方从两个或多个选项中选择。“或者”主要用于陈述句，列出可能的选项；一般疑问句也可以用“或者”询问某组可能性，例如“你明天或者后天能来吗？”。本课的对比针对选择问句与陈述句。",
+        "vi": "还是 dùng trong câu hỏi lựa chọn, yêu cầu chọn giữa hai hoặc nhiều phương án. 或者 chủ yếu liệt kê các khả năng trong câu trần thuật; câu hỏi có/không cũng có thể dùng 或者 để hỏi về một nhóm khả năng, như 你明天或者后天能来吗？. Bài này đối chiếu câu hỏi lựa chọn với câu trần thuật."
+      },
+      "originalOptions": null,
+      "originalAnswer": null
+    },
+    {
+      "id": "hsk3-fltrp-2026:l14:grammar1",
+      "kind": "grammar",
+      "courseId": "hsk3-fltrp-2026",
+      "lesson": 14,
+      "sourceFile": "course-app/content/hsk3/lesson-14.json",
+      "sourceSHA256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "field": "explanation",
+      "expectedValue": {
+        "zh": "带“被”字的句子表达被动意义，突出主语受到动作的影响，常带被动、无奈、负面等色彩。副词和能愿动词放在“被”前，后面的宾语可以省略。",
+        "vi": "Câu 被 nhấn mạnh chủ ngữ chịu tác động, thường mang sắc thái bị động hoặc bất lợi. Phó từ, động từ năng nguyện đứng trước 被; có thể lược người gây ra hành động."
+      },
+      "newValue": {
+        "zh": "“被”字句表达被动意义，突出主语受到动作的影响，常带无奈或负面色彩，但也可用于中性或积极的情境。副词和能愿动词放在“被”前；“被”后的施事（动作执行者）可以省略，例如“我们俩经常被叫错名字”。其它成分按语境表达。",
+        "vi": "Câu 被 nhấn mạnh chủ ngữ chịu tác động, thường mang sắc thái bất lợi nhưng cũng có thể dùng trong ngữ cảnh trung tính hoặc tích cực. Phó từ, động từ năng nguyện đứng trước 被; người thực hiện hành động sau 被 có thể được lược, như 我们俩经常被叫错名字. Các thành phần khác được diễn đạt theo ngữ cảnh."
+      },
+      "originalOptions": null,
+      "originalAnswer": null
+    },
+    {
+      "id": "hsk3-fltrp-2026:l14:hw21",
+      "kind": "homework",
+      "courseId": "hsk3-fltrp-2026",
+      "lesson": 14,
+      "sourceFile": "course-app/content/hsk3/lesson-14.json",
+      "sourceSHA256": "4243e1cafafd148020c1ffbf22cca4c9c9a2f1b2a361fdf778c26c95f678012a",
+      "field": "prompt",
+      "expectedValue": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Xe đạp của tôi bị bạn mượn đi rồi."
+      },
+      "newValue": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Xe đạp của tôi bị một người bạn mượn đi rồi."
+      },
+      "originalOptions": [
+        "我的自行车已经还给朋友了。",
+        "我把朋友的自行车借走了。",
+        "我的自行车被朋友借走了。",
+        "我的自行车被朋友卖了。"
+      ],
+      "originalAnswer": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:grammar4",
+      "kind": "grammar",
+      "courseId": "hsk3-fltrp-2026",
+      "lesson": 17,
+      "sourceFile": "course-app/content/hsk3/lesson-17.json",
+      "sourceSHA256": "244aa2c25d66d7168b4dff8c5431e200fed68d6c2d54af530e0781c7772bfe2a",
+      "field": "explanation",
+      "expectedValue": {
+        "zh": "“只有”后面是实现结果的唯一条件，没有这个条件就不会产生“才”后面的结果。",
+        "vi": "Vế 只有 nêu điều kiện cần: không có điều kiện này thì kết quả sau 才 không thể xảy ra. Đây không phải cách nói “chỉ cần… là…”."
+      },
+      "newValue": {
+        "zh": "“只有A，才B”强调A是B的必要条件：没有A就不能B。它不表示有A就一定B，也不排除B还有其它必要条件。“只要A，就B”则在句中把A作为充分条件。",
+        "vi": "只有A，才B nêu A là điều kiện cần: thiếu A thì không thể B. Có A chưa bảo đảm B và B có thể còn cần điều kiện khác. 只要A，就B nêu A là điều kiện đủ trong câu."
+      },
+      "originalOptions": null,
+      "originalAnswer": null
+    }
+  ]
+}

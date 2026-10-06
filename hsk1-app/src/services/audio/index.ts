@@ -222,13 +222,13 @@ export function createAudioService(options: {
     const end = state.request?.end;
     if (end === undefined) return;
     const remaining = end - audio.currentTime;
-    if (remaining <= 0.015) { finishTrack(request); return; }
+    if (remaining <= 0) { finishTrack(request); return; }
     boundaryTimer = setTimer(() => {
       boundaryTimer = undefined;
       if (!current(request) || state.status !== 'playing') return;
       publish({ currentTime: audio.currentTime });
       scheduleBoundary(request);
-    }, Math.max(20, remaining / state.rate * 1000));
+    }, Math.max(2, remaining / state.rate * 1000));
   }
   function nativePlay(request: Active): void {
     if (!current(request) || request.paused) return;
@@ -430,7 +430,7 @@ export function createAudioService(options: {
       }
       if (!current(request)) return;
       publish({ currentTime: audio.currentTime });
-      if (track.end !== undefined && audio.currentTime >= track.end - 0.015) finishTrack(request);
+      if (track.end !== undefined && audio.currentTime >= track.end) finishTrack(request);
     }, request.trackCleanups);
     listen(audio, 'ended', () => finishTrack(request), request.trackCleanups);
     listen(audio, 'error', () => fail(request, audio.error?.message

@@ -15,6 +15,7 @@ export interface PrecisionAuthority {
  certifications:{humanListening:boolean;pronunciationToneCertified:boolean;devicePlaybackCertified:boolean};
 }
 export interface PrecisionSource {file:string;sha256:string;duration:number;}
+export const nonSpokenStageDirection={id:'hsk3-fltrp-2026:l10:text3:line5',sourceText:'（李老师给学生讲题。）',sourceLessonFile:'course-app/content/hsk3/lesson-10.json'} as const;
 export function canonicalPrecisionTrack(path:string):string{
  if(/^course-app\/public\/course-assets\/(?:hsk[23]\/)?audio\/\d+-[1-8]\.mp3$/.test(path))path=path.slice('course-app/public/'.length);
  if(/^new-hsk1\/hsk1\/audio\/\d+-[1-7]\.mp3$/.test(path))path=path.replace('new-hsk1/hsk1/audio/','course-assets/audio/');
@@ -51,7 +52,7 @@ export async function validatePrecisionManifest(args:{manifestText:string;target
  for(const row of authority.acceptedSourceFrameGates){if(!row||approved.has(row.id))fail('duplicate accepted decision');approved.set(row.id,row);}
  for(const item of authority.nonSpokenAnnotations){
   const target=targets.get(item.id);
-  if(!target||target.unit==='word'||annotations.has(item.id)||approved.has(item.id)||target.sourceLessonSHA256!==item.sourceLessonSHA256||!item.reason?.trim()||!item.reviewDecisionId?.trim())fail('annotation exclusion');
+  if(!target||target.unit==='word'||target.id!==nonSpokenStageDirection.id||target.sourceText!==nonSpokenStageDirection.sourceText||target.sourceLessonFile!==nonSpokenStageDirection.sourceLessonFile||target.level!==3||target.lesson!==10||annotations.has(item.id)||approved.has(item.id)||target.sourceLessonSHA256!==item.sourceLessonSHA256||!item.reason?.trim()||!item.reviewDecisionId?.trim())fail('annotation exclusion');
   annotations.add(item.id);
  }
  if(approved.size+annotations.size!==targets.size||[...targets.keys()].some(id=>!approved.has(id)&&!annotations.has(id)))fail('complete target partition');

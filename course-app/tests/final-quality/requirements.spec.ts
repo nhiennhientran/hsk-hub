@@ -9,7 +9,10 @@ test.beforeEach(async({page})=>{
 });
 async function ready(page:Page,level:number){
   if(level===1)await expect(page.locator('main')).toHaveAttribute('data-module-state','ready');
-  else await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');
+  else {
+    await expect(page.locator('.save-status')).toHaveAttribute('data-status',/^(empty|saved)$/);
+    await expect(page.locator('.save-status')).toHaveAttribute('data-problem','false');
+  }
 }
 async function locked(page:Page){
   await expect(page.locator('main')).toHaveAttribute('data-lesson-state','locked');

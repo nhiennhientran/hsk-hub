@@ -10,7 +10,10 @@ test.beforeEach(async({context,page})=>{await authorize(context);await page.setV
 async function ready(page:Page,level:number){
   await expect(page.locator('main h1').first()).toBeVisible();
   if(level===1)await expect(page.locator('main')).toHaveAttribute('data-module-state','ready');
-  else await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');
+  else {
+    await expect(page.locator('.save-status')).toHaveAttribute('data-status',/^(empty|saved)$/);
+    await expect(page.locator('.save-status')).toHaveAttribute('data-problem','false');
+  }
   await expect(page.locator('main')).not.toContainText('暂时无法打开');
 }
 function network(page:Page){
@@ -46,25 +49,24 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} all teaching sec
   await info.attach('all-section-deferred-assets.json',{body:JSON.stringify({level,lesson,width:390,sections,fixture:'Isolated validated historical five-part homework completion; not a production access bypass.',loaded:[...evidence.loaded].sort(),errors:evidence.errors}),contentType:'application/json'});
 });
 
-function workLocator(page:Page,level:number){return level===1?page.locator('#homework-name'):page.locator('textarea').first();}
-function savedText(level:number,text:string){return level===1?text.replaceAll('\n',' '):text;}
+function workLocator(page:Page,level:number){return level===1?page.locator('textarea[data-answer-id]').first():page.locator('#assignment textarea').first();}
 async function saveDraft(page:Page,level:number,text:string){
-  await page.goto(`./#view=homework&level=${level}&lesson=1&part=${level===1?'vocabGrammar':'writing'}&version=30-v1`);await ready(page,level);
-  await workLocator(page,level).fill(savedText(level,text));
-  if(level===1)await page.locator('input[data-answer-id][value="0"]').first().check();
+  await page.goto(`./#view=homework&level=${level}&lesson=1&part=writing&version=30-v1`);await ready(page,level);
+  await expect(workLocator(page,level)).toBeVisible();
+  await workLocator(page,level).fill(text);
   if(level===1)await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state','saved');
   else await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');
-  await page.reload();await ready(page,level);await expect(workLocator(page,level)).toHaveValue(savedText(level,text));
+  await page.reload();await ready(page,level);await expect(workLocator(page,level)).toHaveValue(text);
 }
 for(const level of [1,2,3])test(`HSK${level} independent student contexts keep different saved work after reload`,async({browser,baseURL})=>{
   const first=await browser.newContext({baseURL}),second=await browser.newContext({baseURL});
   try{
     await authorize(first);await authorize(second);const a=await first.newPage(),b=await second.newPage();
     await saveDraft(a,level,`Student A / HSK${level}\n甲学生独立记录`);
-    await b.goto(`./#view=homework&level=${level}&lesson=1&part=${level===1?'vocabGrammar':'writing'}&version=30-v1`);await ready(b,level);
+    await b.goto(`./#view=homework&level=${level}&lesson=1&part=writing&version=30-v1`);await ready(b,level);
     await expect(workLocator(b,level)).toHaveValue('');
     await saveDraft(b,level,`Student B / HSK${level}\n乙学生独立记录`);
-    await a.reload();await ready(a,level);await expect(workLocator(a,level)).toHaveValue(savedText(level,`Student A / HSK${level}\n甲学生独立记录`));
+    await a.reload();await ready(a,level);await expect(workLocator(a,level)).toHaveValue(`Student A / HSK${level}\n甲学生独立记录`);
     expect(await a.evaluate(k=>localStorage.getItem(k),keys[level-1])).not.toEqual(await b.evaluate(k=>localStorage.getItem(k),keys[level-1]));
   }finally{await first.close();await second.close();}
 });
@@ -92,7 +94,7 @@ test('all three nonempty student drafts export and restore in a fresh context wi
     const restored=await p.evaluate(ks=>Object.fromEntries(ks.map(k=>[k,JSON.parse(localStorage.getItem(k)!)])),keys);
     for(const key of keys)expect(restored[key].data).toEqual(before[key].data);
     await target.getByRole('button',{name:'关闭',exact:false}).click();
-    for(const level of [1,2,3]){await p.goto(`./#view=homework&level=${level}&lesson=1&part=${level===1?'vocabGrammar':'writing'}&version=30-v1`);await ready(p,level);await expect(workLocator(p,level)).toHaveValue(savedText(level,`Exported student / HSK${level}\n保留首尾空格  `));}
+    for(const level of [1,2,3]){await p.goto(`./#view=homework&level=${level}&lesson=1&part=writing&version=30-v1`);await ready(p,level);await expect(workLocator(p,level)).toHaveValue(`Exported student / HSK${level}\n保留首尾空格  `);}
     await info.attach('backup-coverage.json',{body:JSON.stringify({schema:2,levels:[1,2,3],freshContext:true,selectedLevelIsolation:true,nonemptyDrafts:true,exactDataRoundtrip:true,bytes:bytes.length}),contentType:'application/json'});
   }finally{await fresh.close();}
 });

@@ -1,0 +1,67 @@
+name: HSK additional actual crop ASR
+on:
+  push:
+    branches: ['work/hsk-complete-quality-20261006']
+    paths: ['course-app/docs/final-quality-20261006/ci-audio-supplemental-inputs.json']
+permissions:
+  contents: read
+concurrency:
+  group: hsk-final-audio-supplemental-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    outputs:
+      matrix: ${{ steps.matrix.outputs.matrix }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: matrix
+        run: |
+          python - <<'PY'
+          import json,os
+          from pathlib import Path
+          r=json.loads(Path('course-app/docs/final-quality-20261006/ci-audio-supplemental-inputs.json').read_text())
+          jobs=[{'batch':name,'shard':s,'model':m} for name,item in r['batches'].items() for s in range(item['shards']) for m in item['models']]
+          with open(os.environ['GITHUB_OUTPUT'],'a') as f:f.write('matrix='+json.dumps({'include':jobs})+'\n')
+          PY
+  actual-crops:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.plan.outputs.matrix) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install pinned CPU ASR environment and original decoder
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          python -m pip install --report /tmp/hsk-asr-pip-install.json -r course-app/tools/final-quality-20261006/asr-requirements.txt
+          python -m pip freeze > /tmp/hsk-asr-pip-freeze.txt
+          ffmpeg -version > /tmp/hsk-asr-ffmpeg-version.txt
+      - uses: actions/cache@v4
+        with:
+          path: course-app/.repro-output/asr-model-cache
+          key: hsk-asr-${{ matrix.model }}-pinned-20261006
+      - name: Check exact source frames and run unprompted medium model
+        run: python course-app/tools/final-quality-20261006/run-asr-ci.py --batch ${{ matrix.batch }} --shard ${{ matrix.shard }} --model ${{ matrix.model }}
+      - name: Record decoder and pinned dependency environment
+        if: always()
+        run: |
+          mkdir -p course-app/docs/final-quality-20261006/ci-asr/environment
+          cp /tmp/hsk-asr-* course-app/docs/final-quality-20261006/ci-asr/environment/
+      - name: Retain unchanged raw model and source-frame evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: hsk-additional-crops-${{ matrix.batch }}-${{ matrix.shard }}-${{ matrix.model }}-${{ github.sha }}
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+          path: |
+            course-app/docs/final-quality-20261006/ci-asr/
+            !course-app/docs/final-quality-20261006/ci-asr/**/*.f32

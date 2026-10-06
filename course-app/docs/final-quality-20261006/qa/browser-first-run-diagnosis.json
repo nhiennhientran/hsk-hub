@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "/root/acceptance_scope_plan",
+  "status": "fixture-fixes-typechecked-awaiting-native-rerun",
+  "engines": [
+    {
+      "engine": "chromium",
+      "artifactFile": "/workspace/scratch/11a289909f3c/browser-artifacts/11385250939/course-app/.repro-output/final-quality/chromium-browser.json",
+      "artifactSHA256": "10b8ec3d519d9a05f14250f1b18788bf18a5ec61071426e30b4425926ab4c351",
+      "passed": 51,
+      "failed": 13,
+      "skipped": 0,
+      "flaky": 0,
+      "failures": [
+        {
+          "title": "HSK1 independent student contexts keep different saved work after reload",
+          "classification": "test-precondition-defect",
+          "cause": "collapsed-optional-hsk1-profile-input",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 independent student contexts keep different saved work after reload",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 independent student contexts keep different saved work after reload",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "all three nonempty student drafts export and restore in a fresh context without cross-level replacement",
+          "classification": "test-precondition-defect",
+          "cause": "collapsed-optional-hsk1-profile-input",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "shared browser profiles expose the local-only progress notice in both languages",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 lesson2 direct textbook and homework URLs stay locked for a new learner",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 an unsubmitted lesson1 draft cannot unlock lesson2",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 submitted lesson1 work including manual writing unlocks lesson2 without a perfection requirement",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 lesson2 direct textbook and homework URLs stay locked for a new learner",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 an unsubmitted lesson1 draft cannot unlock lesson2",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 submitted lesson1 work including manual writing unlocks lesson2 without a perfection requirement",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 designated five translation choices render real ABCD options with preserved original answer positions",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 designated five translation choices render real ABCD options with preserved original answer positions",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        }
+      ]
+    },
+    {
+      "engine": "webkit",
+      "artifactFile": "/workspace/scratch/11a289909f3c/browser-artifacts/11385121743/course-app/.repro-output/final-quality/webkit-browser.json",
+      "artifactSHA256": "46e4cbe6ea681d3bb31684b3e7e6e3adee4f853fc90b1fa175da535887b4ca19",
+      "passed": 51,
+      "failed": 13,
+      "skipped": 0,
+      "flaky": 0,
+      "failures": [
+        {
+          "title": "HSK1 independent student contexts keep different saved work after reload",
+          "classification": "test-precondition-defect",
+          "cause": "collapsed-optional-hsk1-profile-input",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 independent student contexts keep different saved work after reload",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 independent student contexts keep different saved work after reload",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "all three nonempty student drafts export and restore in a fresh context without cross-level replacement",
+          "classification": "test-precondition-defect",
+          "cause": "collapsed-optional-hsk1-profile-input",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "shared browser profiles expose the local-only progress notice in both languages",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 lesson2 direct textbook and homework URLs stay locked for a new learner",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 an unsubmitted lesson1 draft cannot unlock lesson2",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 submitted lesson1 work including manual writing unlocks lesson2 without a perfection requirement",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 lesson2 direct textbook and homework URLs stay locked for a new learner",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 an unsubmitted lesson1 draft cannot unlock lesson2",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 submitted lesson1 work including manual writing unlocks lesson2 without a perfection requirement",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK2 designated five translation choices render real ABCD options with preserved original answer positions",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        },
+        {
+          "title": "HSK3 designated five translation choices render real ABCD options with preserved original answer positions",
+          "classification": "test-precondition-defect",
+          "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+          "originalAssertionsRetained": true
+        }
+      ]
+    }
+  ],
+  "passedScope": [
+    "48 complete actual teaching-section lesson scans per engine at 390px",
+    "3 HSK1 unlock requirement cases per engine"
+  ],
+  "diagnosisBoundary": "All 13 failures in each engine occurred at incorrect test setup expectations. Paths after those preconditions were not executed, so their product correctness is not certified until the native rerun.",
+  "fixes": [
+    {
+      "cause": "ready-helper-demanded-saved-for-legitimate-empty-profile",
+      "fix": "Accept healthy settled empty or saved state for readiness, require data-problem=false; keep strict saved assertions immediately after actual editing/submission."
+    },
+    {
+      "cause": "collapsed-optional-hsk1-profile-input",
+      "fix": "Use the visible manual writing answer for saved student work in every level; preserve exact multiline text and trailing spaces, actual reload, isolation and selected backup restore assertions. No force fill or disclosure UI product change."
+    }
+  ],
+  "productRuntimeChangedForTheseFailures": false,
+  "changedTestFiles": [
+    {
+      "file": "course-app/tests/final-quality/remaining-coverage.spec.ts",
+      "sha256": "7c153579e574f543b75ecbd47ddd4c7832bb74661911cd73abbabb1be7183774"
+    },
+    {
+      "file": "course-app/tests/final-quality/requirements.spec.ts",
+      "sha256": "a618e48d94c5581d22eca25ee835fde41bf94f8d81910aa47b13e2825f342e7e"
+    }
+  ],
+  "verification": {
+    "typescript": "passed",
+    "nativeRerun": "pending",
+    "completeBrowserAcceptance": false
+  }
+}

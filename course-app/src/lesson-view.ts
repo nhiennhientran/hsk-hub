@@ -2,6 +2,7 @@ import {createActivityCard,createFeedbackEpoch} from '../../hsk1-app/src/shared/
 import {archivedActivities,archivedActivityContext} from './activity-history.ts';
 import {fieldSourcesNeedNotes,sharedRowSource} from './activity-provenance.ts';
 import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
+import {precisionNonSpokenAnnotation} from './precision-resolver.ts';
 import { el, button, link, copy, sourceNote } from "./dom.ts";
 import { routeHref, type Route, type Section } from "./router.ts";
 import type {
@@ -477,7 +478,7 @@ export function mountLesson(
             el("p", `${w.pos} · ${w.vi}`),
             sourceNote(w.source.printedPage),
                 ...(w.supplementarySyllabus?[el("p",copy("★ 教材拓展词（本级超纲）","★ Từ mở rộng trong giáo trình (ngoài phạm vi cấp này)"))]:[]),
-            ...(originalSegment('words',w.id,c.assetBase)?[button(copy('播放单词原音','Nghe từ gốc'),async()=>{const request=originalSegment('words',w.id,c.assetBase)!;const result=await c.audio.play(request,{signal:events.signal});if(!result.ok&&result.code!=='cancelled')c.message(copy('原音未播放，请重试','Chưa phát được âm thanh gốc, hãy thử lại'))})]:[el('p',copy('本词独立原音尚待核验，可听所在整组原音。','Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.'))]),
+            ...(originalSegment('words',w.id,c.assetBase)?[(()=>{const control=button(copy('播放单词原音','Nghe từ gốc'),async()=>{const request=originalSegment('words',w.id,c.assetBase)!;const result=await c.audio.play(request,{signal:events.signal});if(!result.ok&&result.code!=='cancelled')c.message(copy('原音未播放，请重试','Chưa phát được âm thanh gốc, hãy thử lại'))});control.dataset.audioSegment=w.id;return control;})()]:[el('p',copy('本词独立原音尚待核验，可听所在整组原音。','Âm thanh riêng của từ này đang chờ kiểm chứng; có thể nghe cả nhóm từ.'))]),
             c.audioControl(
               w.audioTrack,
               copy("听所在生词组原音", "Nghe nhóm từ gốc"),
@@ -627,6 +628,7 @@ export function mountLesson(
         el("p", line.vi, "vietnamese-line"),
       );
       const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
+      if(precisionNonSpokenAnnotation(line.id)){const note=el('p',copy('场景说明（原录音中没有单独朗读）','Chỉ dẫn bối cảnh (không được đọc riêng trong bản ghi gốc)'));note.dataset.audioAnnotation=line.id;row.append(note);}
       if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const play=button(copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
       textBody.append(row);
     }

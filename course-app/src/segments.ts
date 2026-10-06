@@ -7,7 +7,7 @@ import {validateSegments,validateReviewedSentenceSubset,mergeSegmentData,type Se
 const modules=import.meta.glob('../content/audio-segments-*.json');let data:SegmentData|undefined,loading:Promise<void>|undefined;
 export function loadSegments():Promise<void>{
  if(loading)return loading;
- if(data)return Promise.resolve();
+ if(data)return loadPrecisionSegments().then(()=>undefined);
  loading=(async()=>{
  const values:SegmentData[]=[],subsets:(()=>Promise<unknown>)[]=[];
  for(const [file,load]of Object.entries(modules)){if(file==='../content/audio-segments-hsk2-reviewed-sentences.json')subsets.push(load);else values.push(validateSegments((await load() as {default:SegmentData}).default,tracks,authority as SegmentAuthority))}

@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted",
+  "reviewer": "/root",
+  "method": "Independent comparison of each Chinese/Vietnamese proposal with the actual projected object, all original answer options and grammar meaning. Seven bounded presentation repairs; source files, IDs, grading keys and saved receipts stay exact.",
+  "canonicalEntriesSHA256": "321873b4f7a33784713026acb70fb3013e588051b1caef5c7fa1bfe05126b46c",
+  "acceptedIds": [
+    "hsk2-fltrp-2026:l02:hw03",
+    "hsk2-fltrp-2026:l03:hw06",
+    "hsk2-fltrp-2026:l10:hw09",
+    "hsk3-fltrp-2026:l11:grammar1",
+    "hsk3-fltrp-2026:l14:grammar1",
+    "hsk3-fltrp-2026:l14:hw21",
+    "hsk3-fltrp-2026:l17:grammar4"
+  ],
+  "sourceIssueFiles": [
+    {
+      "file": "course-app/docs/final-quality-20261006/qa/hsk2-question-issues.json",
+      "sha256": "1b8d1e27c46a182d474f3d0c5ffa75457571ddb2c29a237c673c88a35924ca59"
+    },
+    {
+      "file": "course-app/docs/final-quality-20261006/audio-hsk3/teaching-review/editorial-clarification-proposals.json",
+      "sha256": "cd2e541dbb79c380f18345028209dc5f8ef50f108441a3edac5e6200e996d9e3"
+    }
+  ],
+  "decisions": [
+    {
+      "id": "hsk2-fltrp-2026:l02:hw03",
+      "status": "accepted",
+      "repair": "prompt",
+      "reason": "Makes the intended quantity, shared action, laughing sound, or friend reference explicit without changing the correct choice."
+    },
+    {
+      "id": "hsk2-fltrp-2026:l03:hw06",
+      "status": "accepted",
+      "repair": "prompt",
+      "reason": "Makes the intended quantity, shared action, laughing sound, or friend reference explicit without changing the correct choice."
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw09",
+      "status": "accepted",
+      "repair": "prompt",
+      "reason": "Makes the intended quantity, shared action, laughing sound, or friend reference explicit without changing the correct choice."
+    },
+    {
+      "id": "hsk3-fltrp-2026:l11:grammar1",
+      "status": "accepted",
+      "repair": "explanation",
+      "reason": "Clarifies the precise scope and grammatical role in both languages."
+    },
+    {
+      "id": "hsk3-fltrp-2026:l14:grammar1",
+      "status": "accepted",
+      "repair": "explanation",
+      "reason": "Clarifies the precise scope and grammatical role in both languages."
+    },
+    {
+      "id": "hsk3-fltrp-2026:l14:hw21",
+      "status": "accepted",
+      "repair": "prompt",
+      "reason": "Makes the intended quantity, shared action, laughing sound, or friend reference explicit without changing the correct choice."
+    },
+    {
+      "id": "hsk3-fltrp-2026:l17:grammar4",
+      "status": "accepted",
+      "repair": "explanation",
+      "reason": "Clarifies the precise scope and grammatical role in both languages."
+    }
+  ],
+  "humanOrNativeSpeakerCertification": false
+}
