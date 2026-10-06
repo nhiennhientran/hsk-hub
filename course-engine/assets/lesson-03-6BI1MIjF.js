@@ -1,0 +1,8618 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk3-fltrp-2026",
+  "version": "2026.1",
+  "number": 3,
+  "id": "hsk3-fltrp-2026:l03",
+  "title": {
+    "zh": "这个小区挺好的",
+    "vi": "Khu dân cư này khá tốt",
+    "py": "Zhè ge xiǎoqū tǐng hǎo de"
+  },
+  "source": {
+    "startPdfPage": 31,
+    "endPdfPage": 40,
+    "startPrintedPage": 19,
+    "endPrintedPage": 28
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent AI source/language/pedagogy reviewer",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "HSK3 optional sentence/example pinyin is editorial. Polyphones checked: 空调 kōngtiáo; 银行 yínháng; 还钱 huán versus 还不远/还能 hái; 开着 kāizhe; 打扫 dǎsǎo; 层 céng.",
+      "Source26 numbered vocabulary headwords become27 POS-sense entries because 需要 has printed verb/noun senses.",
+      "Credit-card statements are quoted fictional textbook dialogue, not current financial product claims or recommendations.",
+      "Independent reviewer inspected all textbook PDF31–40 and answer PDF4–5 pixels, every JSON field and all8 ASR outputs; all8 MP3 hashes/full decodes passed. No human/native-speaker listening certification is claimed.",
+      "Corrected ordering12 subject placement, reduced near-repeated assessments, restored inline glosses, and separated editorial picture/banking notes from source text. All9 review rows, both vocabulary fields and separate understanding/use checks retained."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并谈论居住环境和居家情况。",
+      "vi": "Nghe hiểu và trao đổi về môi trường sống và tình hình sinh hoạt trong nhà.",
+      "id": "hsk3-fltrp-2026:l03:objective1",
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用“挺”“坏了”表达程度。",
+      "vi": "Nghe hiểu và dùng 挺, 坏了 để diễn đạt mức độ.",
+      "id": "hsk3-fltrp-2026:l03:objective2",
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握“就”和“才”的用法，能表达动作发生的早晚、快慢等信息。",
+      "vi": "Nắm cách dùng 就, 才 để diễn đạt sự việc xảy ra sớm/muộn, nhanh/chậm.",
+      "id": "hsk3-fltrp-2026:l03:objective3",
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk3-fltrp-2026:l03:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với hình tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 卫生间；B 空调；C 冰箱；D 洗衣机；E 灯；F 花园。",
+          "vi": "A phòng vệ sinh; B điều hòa; C tủ lạnh; D máy giặt; E đèn; F vườn."
+        },
+        {
+          "zh": "图片描述（编辑补充）：图片从左到右、从上到下：打开的冰箱；空调和遥控器；洗衣机；花园；卫生间；亮着的台灯。",
+          "vi": "Mô tả tranh (biên tập bổ sung): Hình từ trái sang phải, trên xuống dưới: tủ lạnh mở cửa; điều hòa và điều khiển; máy giặt; vườn; phòng vệ sinh; đèn bàn đang sáng.",
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:warmup2",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên tình huống thực tế."
+      },
+      "items": [
+        {
+          "zh": "你喜欢现在住的房子吗？为什么？",
+          "vi": "Bạn có thích nơi đang ở không? Vì sao?"
+        },
+        {
+          "zh": "你搬过家吗？你是怎么找到新房子的？",
+          "vi": "Bạn từng chuyển nhà chưa? Bạn đã tìm nhà mới như thế nào?"
+        }
+      ],
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk3-fltrp-2026:l03:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在家里，刘明和王一雪在聊天儿。",
+        "vi": "Ở nhà, Lưu Minh và Nhất Tuyết đang trò chuyện.",
+        "source": {
+          "pdfPage": 32,
+          "printedPage": 20,
+          "section": "课文1情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "3-1",
+      "lines": [
+        {
+          "zh": "小雪的初中离家有点儿远，咱们换一个近点儿的房子吧。",
+          "vi": "Trường cấp hai của Tiểu Tuyết hơi xa nhà, chúng ta chuyển sang căn nhà gần hơn nhé.",
+          "id": "hsk3-fltrp-2026:l03:text1:line1",
+          "speaker": "王一雪",
+          "py": "Xiǎoxuě de chūzhōng lí jiā yǒudiǎnr yuǎn, zánmen huàn yí ge jìn diǎnr de fángzi ba.",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好啊，我上网看看。你觉得这个小区怎么样？",
+          "vi": "Được đấy, anh lên mạng xem thử. Em thấy khu dân cư này thế nào?",
+          "id": "hsk3-fltrp-2026:l03:text1:line2",
+          "speaker": "刘明",
+          "py": "Hǎo a, wǒ shàngwǎng kànkan. Nǐ juéde zhè ge xiǎoqū zěnmeyàng?",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "环境挺好的，离地铁站还不远。",
+          "vi": "Môi trường khá tốt, lại không xa ga tàu điện ngầm.",
+          "id": "hsk3-fltrp-2026:l03:text1:line3",
+          "speaker": "王一雪",
+          "py": "Huánjìng tǐng hǎo de, lí dìtiězhàn hái bù yuǎn.",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "房子里面也不错，空调和洗衣机都是新的。",
+          "vi": "Bên trong nhà cũng ổn, điều hòa và máy giặt đều mới.",
+          "id": "hsk3-fltrp-2026:l03:text1:line4",
+          "speaker": "刘明",
+          "py": "Fángzi lǐmian yě búcuò, kōngtiáo hé xǐyījī dōu shì xīn de.",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是不错，但是我不喜欢住一层。",
+          "vi": "Đúng là ổn, nhưng em không thích ở tầng một.",
+          "id": "hsk3-fltrp-2026:l03:text1:line5",
+          "speaker": "王一雪",
+          "py": "Shì búcuò, dànshì wǒ bù xǐhuan zhù yì céng.",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个一层带一个小花园，我觉得咱们可以去看看。",
+          "vi": "Căn tầng một này có kèm một khu vườn nhỏ, anh nghĩ chúng ta có thể đến xem thử.",
+          "id": "hsk3-fltrp-2026:l03:text1:line6",
+          "speaker": "刘明",
+          "py": "Zhè ge yì céng dài yí ge xiǎo huāyuán, wǒ juéde zánmen kěyǐ qù kànkan.",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一雪和刘明想做什么？",
+          "vi": "Nhất Tuyết và Lưu Minh muốn làm gì?",
+          "id": "hsk3-fltrp-2026:l03:text1:question1",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "换房子",
+            "买空调",
+            "去女儿的初中"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "王一雪为什么不喜欢这个房子？",
+          "vi": "Vì sao Nhất Tuyết không thích căn nhà này?",
+          "id": "hsk3-fltrp-2026:l03:text1:question2",
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "房子太远",
+            "她不喜欢住一层",
+            "她不喜欢这个小区"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "他们为什么要换房子？",
+          "vi": "Vì sao họ muốn chuyển sang nhà khác?",
+          "id": "hsk3-fltrp-2026:l03:text1:question3",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一雪觉得新小区怎么样？",
+          "vi": "Nhất Tuyết thấy khu dân cư mới thế nào?",
+          "id": "hsk3-fltrp-2026:l03:text1:question4",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "刘明为什么喜欢这个房子？",
+          "vi": "Vì sao Lưu Minh thích căn nhà này?",
+          "id": "hsk3-fltrp-2026:l03:text1:question5",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在新家，王一雪在收拾房间，刘明进来了。",
+        "vi": "Ở nhà mới, Nhất Tuyết đang dọn phòng thì Lưu Minh bước vào.",
+        "source": {
+          "pdfPage": 33,
+          "printedPage": 21,
+          "section": "课文2情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "3-3",
+      "lines": [
+        {
+          "zh": "我今天早上来的时候，灯还开着。",
+          "vi": "Sáng nay khi em đến, đèn vẫn còn bật.",
+          "id": "hsk3-fltrp-2026:l03:text2:line1",
+          "speaker": "王一雪",
+          "py": "Wǒ jīntiān zǎoshang lái de shíhou, dēng hái kāizhe.",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我这几天忙坏了，可能走的时候忘关了。",
+          "vi": "Mấy hôm nay anh bận quá, có lẽ lúc đi đã quên tắt.",
+          "id": "hsk3-fltrp-2026:l03:text2:line2",
+          "speaker": "刘明",
+          "py": "Wǒ zhè jǐ tiān máng huài le, kěnéng zǒu de shíhou wàng guān le.",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "冰箱不能用，这些吃的东西放在哪儿？",
+          "vi": "Tủ lạnh không dùng được, những đồ ăn này để ở đâu?",
+          "id": "hsk3-fltrp-2026:l03:text2:line3",
+          "speaker": "王一雪",
+          "py": "Bīngxiāng bù néng yòng, zhèxiē chī de dōngxi fàng zài nǎr?",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不可能吧？冰箱是新买的，我来看看。",
+          "vi": "Không thể thế chứ? Tủ lạnh mới mua mà, để anh xem.",
+          "id": "hsk3-fltrp-2026:l03:text2:line4",
+          "speaker": "刘明",
+          "py": "Bù kěnéng ba? Bīngxiāng shì xīn mǎi de, wǒ lái kànkan.",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "洗衣机也坏了吗？",
+          "vi": "Máy giặt cũng hỏng rồi à?",
+          "id": "hsk3-fltrp-2026:l03:text2:line5",
+          "speaker": "王一雪",
+          "py": "Xǐyījī yě huài le ma?",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没坏，但是卫生间没打扫好，还不能洗衣服。",
+          "vi": "Không hỏng, nhưng phòng vệ sinh chưa dọn xong, vẫn chưa giặt quần áo được.",
+          "id": "hsk3-fltrp-2026:l03:text2:line6",
+          "speaker": "刘明",
+          "py": "Méi huài, dànshì wèishēngjiān méi dǎsǎo hǎo, hái bù néng xǐ yīfu.",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "星期天我们真的能搬家吗？",
+          "vi": "Chủ nhật chúng ta thật sự chuyển nhà được không?",
+          "id": "hsk3-fltrp-2026:l03:text2:line7",
+          "speaker": "王一雪",
+          "py": "Xīngqītiān wǒmen zhēn de néng bānjiā ma?",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "灯为什么开着？",
+          "vi": "Vì sao đèn đang bật?",
+          "id": "hsk3-fltrp-2026:l03:text2:question1",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "灯坏了",
+            "是王一雪打开的",
+            "刘明走的时候忘关了"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "现在新家是什么样的？",
+          "vi": "Hiện nhà mới đang thế nào?",
+          "id": "hsk3-fltrp-2026:l03:text2:question2",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "冰箱是旧的",
+            "洗衣机是坏的",
+            "卫生间没打扫好"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "他们家的冰箱怎么了？",
+          "vi": "Tủ lạnh nhà họ có vấn đề gì?",
+          "id": "hsk3-fltrp-2026:l03:text2:question3",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "为什么不能洗衣服？",
+          "vi": "Vì sao chưa thể giặt quần áo?",
+          "id": "hsk3-fltrp-2026:l03:text2:question4",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你觉得星期天他们能不能搬家？为什么？",
+          "vi": "Bạn nghĩ Chủ nhật họ chuyển nhà được không? Vì sao?",
+          "id": "hsk3-fltrp-2026:l03:text2:question5",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "课文2：情境",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "课文2音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在家里，刘明和王一雪在客厅聊天儿。",
+        "vi": "Ở nhà, Lưu Minh và Nhất Tuyết đang trò chuyện trong phòng khách.",
+        "source": {
+          "pdfPage": 35,
+          "printedPage": 23,
+          "section": "课文3情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "3-5",
+      "lines": [
+        {
+          "zh": "这个月花了不少钱。",
+          "vi": "Tháng này tiêu khá nhiều tiền.",
+          "id": "hsk3-fltrp-2026:l03:text3:line1",
+          "speaker": "王一雪",
+          "py": "Zhè ge yuè huā le bù shǎo qián.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是的，我们买了很多搬家时要用的东西。",
+          "vi": "Đúng vậy, chúng ta mua nhiều đồ cần dùng lúc chuyển nhà.",
+          "id": "hsk3-fltrp-2026:l03:text3:line2",
+          "speaker": "刘明",
+          "py": "Shì de, wǒmen mǎi le hěn duō bānjiā shí yào yòng de dōngxi.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "咱们办张信用卡吧，花的钱可以慢慢还。听说中国银行的服务不错，办了信用卡买东西还能便宜。",
+          "vi": "Chúng ta làm một thẻ tín dụng nhé, số tiền đã tiêu có thể trả dần. Nghe nói Ngân hàng Trung Quốc phục vụ tốt, có thẻ tín dụng mua đồ còn được rẻ hơn.",
+          "id": "hsk3-fltrp-2026:l03:text3:line3",
+          "speaker": "王一雪",
+          "py": "Zánmen bàn zhāng xìnyòngkǎ ba, huā de qián kěyǐ mànmàn huán. Tīngshuō Zhōngguó Yínháng de fúwù búcuò, bàn le xìnyòngkǎ mǎi dōngxi hái néng piányi.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好啊！中国银行很近，走路几分钟就能到。咱们什么时候去？",
+          "vi": "Được! Ngân hàng Trung Quốc ở gần, đi bộ vài phút là tới. Khi nào chúng ta đi?",
+          "id": "hsk3-fltrp-2026:l03:text3:line4",
+          "speaker": "刘明",
+          "py": "Hǎo a! Zhōngguó Yínháng hěn jìn, zǒulù jǐ fēnzhōng jiù néng dào. Zánmen shénme shíhou qù?",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "今天下午？",
+          "vi": "Chiều nay nhé?",
+          "id": "hsk3-fltrp-2026:l03:text3:line5",
+          "speaker": "王一雪",
+          "py": "Jīntiān xiàwǔ?",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我下午要去医院，很晚才能回来。",
+          "vi": "Chiều anh phải đến bệnh viện, muộn mới về được.",
+          "id": "hsk3-fltrp-2026:l03:text3:line6",
+          "speaker": "刘明",
+          "py": "Wǒ xiàwǔ yào qù yīyuàn, hěn wǎn cái néng huílái.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那我下午自己去吧。",
+          "vi": "Vậy chiều em tự đi nhé.",
+          "id": "hsk3-fltrp-2026:l03:text3:line7",
+          "speaker": "王一雪",
+          "py": "Nà wǒ xiàwǔ zìjǐ qù ba.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一雪和刘明为什么这个月花了不少钱？",
+          "vi": "Vì sao tháng này Nhất Tuyết và Lưu Minh tiêu nhiều tiền?",
+          "id": "hsk3-fltrp-2026:l03:text3:question1",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "买衣服了",
+            "去饭店吃饭了",
+            "买了很多搬家要用的东西"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一雪想去中国银行做什么？",
+          "vi": "Nhất Tuyết muốn đến Ngân hàng Trung Quốc làm gì?",
+          "id": "hsk3-fltrp-2026:l03:text3:question2",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "买东西",
+            "还信用卡",
+            "办信用卡"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一雪为什么想办信用卡？",
+          "vi": "Vì sao Nhất Tuyết muốn làm thẻ tín dụng?",
+          "id": "hsk3-fltrp-2026:l03:text3:question3",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一雪想什么时候去银行？",
+          "vi": "Nhất Tuyết muốn đến ngân hàng khi nào?",
+          "id": "hsk3-fltrp-2026:l03:text3:question4",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "刘明为什么今天不能去银行？",
+          "vi": "Vì sao hôm nay Lưu Minh không thể đến ngân hàng?",
+          "id": "hsk3-fltrp-2026:l03:text3:question5",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在家里，刘明和王一雪讨论搬家计划。",
+        "vi": "Ở nhà, Lưu Minh và Nhất Tuyết đang bàn kế hoạch chuyển nhà.",
+        "source": {
+          "pdfPage": 36,
+          "printedPage": 24,
+          "section": "课文4情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "3-7",
+      "lines": [
+        {
+          "zh": "我觉得这个星期就能搬家。我明天去买一些纸箱，很快就能准备好。搬家那天，我想请几位朋友来帮忙，最多一天就能搬完。",
+          "vi": "Anh nghĩ ngay tuần này là chuyển nhà được. Ngày mai anh mua ít thùng giấy, sẽ chuẩn bị xong nhanh thôi. Hôm chuyển nhà anh muốn nhờ vài người bạn giúp, nhiều nhất một ngày là chuyển xong.",
+          "id": "hsk3-fltrp-2026:l03:text4:line1",
+          "speaker": "刘明",
+          "py": "Wǒ juéde zhè ge xīngqī jiù néng bānjiā. Wǒ míngtiān qù mǎi yìxiē zhǐxiāng, hěn kuài jiù néng zhǔnbèi hǎo. Bānjiā nà tiān, wǒ xiǎng qǐng jǐ wèi péngyou lái bāngmáng, zuì duō yì tiān jiù néng bān wán.",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我觉得下个月才能搬家。这周开始准备，下周去打扫新家，这么多事情最少需要两个星期才能做完。搬家那天，我们应该找一家搬家公司。",
+          "vi": "Em nghĩ phải tháng sau mới chuyển được. Tuần này bắt đầu chuẩn bị, tuần sau dọn nhà mới, nhiều việc như vậy ít nhất phải hai tuần mới làm xong. Hôm chuyển nhà chúng ta nên thuê một công ty chuyển nhà.",
+          "id": "hsk3-fltrp-2026:l03:text4:line2",
+          "speaker": "王一雪",
+          "py": "Wǒ juéde xià ge yuè cái néng bānjiā. Zhè zhōu kāishǐ zhǔnbèi, xià zhōu qù dǎsǎo xīn jiā, zhème duō shìqing zuì shǎo xūyào liǎng ge xīngqī cái néng zuò wán. Bānjiā nà tiān, wǒmen yīnggāi zhǎo yì jiā bānjiā gōngsī.",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "刘明想什么时候搬家？",
+          "vi": "Lưu Minh muốn chuyển nhà khi nào?",
+          "id": "hsk3-fltrp-2026:l03:text4:question1",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "明天",
+            "这个星期",
+            "下个星期"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "王一雪想什么时候搬家？",
+          "vi": "Nhất Tuyết muốn chuyển nhà khi nào?",
+          "id": "hsk3-fltrp-2026:l03:text4:question2",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "这周",
+            "下周",
+            "下个月"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "刘明明天去买什么？",
+          "vi": "Ngày mai Lưu Minh đi mua gì?",
+          "id": "hsk3-fltrp-2026:l03:text4:question3",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一雪打算（dǎsuàn，plan）下周做什么？",
+          "vi": "Nhất Tuyết định (打算 dǎsuàn) làm gì tuần sau?",
+          "id": "hsk3-fltrp-2026:l03:text4:question4",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "刘明打算找谁搬家？王一雪呢？",
+          "vi": "Lưu Minh định nhờ ai chuyển nhà? Còn Nhất Tuyết?",
+          "id": "hsk3-fltrp-2026:l03:text4:question5",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "课文4：情境",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "课文4音频标记",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "初中",
+      "vi": "trường trung học cơ sở, cấp hai",
+      "id": "hsk3-fltrp-2026:l03:word01",
+      "py": "chūzhōng",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：初中",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "初中",
+            "printedPinyin": "chūzhōng",
+            "normalizedPinyin": "chūzhōng",
+            "printedNumber": 1,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "初中",
+            "printedPinyin": "chūzhōng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "咱们",
+      "vi": "chúng ta (gồm cả người nói và người nghe)",
+      "id": "hsk3-fltrp-2026:l03:word02",
+      "py": "zánmen",
+      "pos": "đại từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：咱们",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "pron.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "咱们",
+            "printedPinyin": "zánmen",
+            "normalizedPinyin": "zánmen",
+            "printedNumber": 2,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "代词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "咱们",
+            "printedPinyin": "zánmen",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "换",
+      "vi": "đổi, thay",
+      "id": "hsk3-fltrp-2026:l03:word03",
+      "py": "huàn",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：换",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "换",
+            "printedPinyin": "huàn",
+            "normalizedPinyin": "huàn",
+            "printedNumber": 3,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "换",
+            "printedPinyin": "huàn",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "房子",
+      "vi": "nhà, căn nhà",
+      "id": "hsk3-fltrp-2026:l03:word04",
+      "py": "fángzi",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：房子",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "房子",
+            "printedPinyin": "fángzi",
+            "normalizedPinyin": "fángzi",
+            "printedNumber": 4,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "房子",
+            "printedPinyin": "fángzi",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "小区",
+      "vi": "khu dân cư",
+      "id": "hsk3-fltrp-2026:l03:word05",
+      "py": "xiǎoqū",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：小区",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "小区",
+            "printedPinyin": "xiǎoqū",
+            "normalizedPinyin": "xiǎoqū",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "小区",
+            "printedPinyin": "xiǎoqū",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "环境",
+      "vi": "môi trường, quang cảnh xung quanh",
+      "id": "hsk3-fltrp-2026:l03:word06",
+      "py": "huánjìng",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：环境",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "环境",
+            "printedPinyin": "huánjìng",
+            "normalizedPinyin": "huánjìng",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "环境",
+            "printedPinyin": "huánjìng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "挺",
+      "vi": "khá, rất (khẩu ngữ)",
+      "id": "hsk3-fltrp-2026:l03:word07",
+      "py": "tǐng",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：挺",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "挺",
+            "printedPinyin": "tǐng",
+            "normalizedPinyin": "tǐng",
+            "printedNumber": 7,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "挺",
+            "printedPinyin": "tǐng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "空调",
+      "vi": "máy điều hòa",
+      "id": "hsk3-fltrp-2026:l03:word08",
+      "py": "kōngtiáo",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：空调",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "空调",
+            "printedPinyin": "kōngtiáo",
+            "normalizedPinyin": "kōngtiáo",
+            "printedNumber": 8,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "空调",
+            "printedPinyin": "kōngtiáo",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "洗衣机",
+      "vi": "máy giặt",
+      "id": "hsk3-fltrp-2026:l03:word09",
+      "py": "xǐyījī",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：洗衣机",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "洗衣机",
+            "printedPinyin": "xǐyījī",
+            "normalizedPinyin": "xǐyījī",
+            "printedNumber": 9,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "洗衣机",
+            "printedPinyin": "xǐyījī",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "层",
+      "vi": "tầng, lớp",
+      "id": "hsk3-fltrp-2026:l03:word10",
+      "py": "céng",
+      "pos": "lượng từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：层",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "m.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "层",
+            "printedPinyin": "céng",
+            "normalizedPinyin": "céng",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "lượng.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "量词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "层",
+            "printedPinyin": "céng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "花园",
+      "vi": "vườn hoa, khu vườn",
+      "id": "hsk3-fltrp-2026:l03:word11",
+      "py": "huāyuán",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "3-2",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：花园",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 32,
+              "printedPage": 20,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "花园",
+            "printedPinyin": "huāyuán",
+            "normalizedPinyin": "huāyuán",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "花园",
+            "printedPinyin": "huāyuán",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "灯",
+      "vi": "đèn",
+      "id": "hsk3-fltrp-2026:l03:word12",
+      "py": "dēng",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "3-4",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：灯",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 12,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 34,
+              "printedPage": 22,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "灯",
+            "printedPinyin": "dēng",
+            "normalizedPinyin": "dēng",
+            "printedNumber": 12,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "灯",
+            "printedPinyin": "dēng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "关",
+      "vi": "tắt; đóng",
+      "id": "hsk3-fltrp-2026:l03:word13",
+      "py": "guān",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "3-4",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：关",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 13,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 34,
+              "printedPage": 22,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "关",
+            "printedPinyin": "guān",
+            "normalizedPinyin": "guān",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "关",
+            "printedPinyin": "guān",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "冰箱",
+      "vi": "tủ lạnh",
+      "id": "hsk3-fltrp-2026:l03:word14",
+      "py": "bīngxiāng",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "3-4",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：冰箱",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 14,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 34,
+              "printedPage": 22,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "冰箱",
+            "printedPinyin": "bīngxiāng",
+            "normalizedPinyin": "bīngxiāng",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "冰箱",
+            "printedPinyin": "bīngxiāng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "卫生间",
+      "vi": "phòng vệ sinh, phòng tắm",
+      "id": "hsk3-fltrp-2026:l03:word15",
+      "py": "wèishēngjiān",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "3-4",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：卫生间",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 15,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 34,
+              "printedPage": 22,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "卫生间",
+            "printedPinyin": "wèishēng-\\njiān",
+            "normalizedPinyin": "wèishēngjiān",
+            "printedNumber": 15,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "卫生间",
+            "printedPinyin": "wèishēngjiān",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "打扫",
+      "vi": "quét dọn, làm vệ sinh",
+      "id": "hsk3-fltrp-2026:l03:word16",
+      "py": "dǎsǎo",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "3-4",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：打扫",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 16,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 34,
+              "printedPage": 22,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "打扫",
+            "printedPinyin": "dǎsǎo",
+            "normalizedPinyin": "dǎsǎo",
+            "printedNumber": 16,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "打扫",
+            "printedPinyin": "dǎsǎo",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "搬家",
+      "vi": "chuyển nhà",
+      "id": "hsk3-fltrp-2026:l03:word17",
+      "py": "bānjiā",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "3-4",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：搬家",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 17,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 34,
+              "printedPage": 22,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "搬家",
+            "printedPinyin": "bānjiā",
+            "normalizedPinyin": "bānjiā",
+            "printedNumber": 17,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "搬家",
+            "printedPinyin": "bānjiā",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "办",
+      "vi": "làm, xử lý (công việc/thủ tục)",
+      "id": "hsk3-fltrp-2026:l03:word18",
+      "py": "bàn",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "3-6",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：办",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 18,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 35,
+              "printedPage": 23,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "办",
+            "printedPinyin": "bàn",
+            "normalizedPinyin": "bàn",
+            "printedNumber": 18,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "办",
+            "printedPinyin": "bàn",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "信用卡",
+      "vi": "thẻ tín dụng",
+      "id": "hsk3-fltrp-2026:l03:word19",
+      "py": "xìnyòngkǎ",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "3-6",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：信用卡",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 19,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 35,
+              "printedPage": 23,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "信用卡",
+            "printedPinyin": "xìnyòngkǎ",
+            "normalizedPinyin": "xìnyòngkǎ",
+            "printedNumber": 19,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "信用卡",
+            "printedPinyin": "xìnyòngkǎ",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "还",
+      "vi": "trả lại, hoàn trả",
+      "id": "hsk3-fltrp-2026:l03:word20",
+      "py": "huán",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "3-6",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：还",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 20,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 35,
+              "printedPage": 23,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "还",
+            "printedPinyin": "huán",
+            "normalizedPinyin": "huán",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "还",
+            "printedPinyin": "huán",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "听说",
+      "vi": "nghe nói",
+      "id": "hsk3-fltrp-2026:l03:word21",
+      "py": "tīngshuō",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "3-6",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：听说",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 21,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 35,
+              "printedPage": 23,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "听说",
+            "printedPinyin": "tīngshuō",
+            "normalizedPinyin": "tīngshuō",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "听说",
+            "printedPinyin": "tīngshuō",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "银行",
+      "vi": "ngân hàng",
+      "id": "hsk3-fltrp-2026:l03:word22",
+      "py": "yínháng",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "3-6",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：银行",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 22,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 35,
+              "printedPage": 23,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "银行",
+            "printedPinyin": "yínháng",
+            "normalizedPinyin": "yínháng",
+            "printedNumber": 22,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "银行",
+            "printedPinyin": "yínháng",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "才",
+      "vi": "mãi…mới; chỉ đến lúc…mới",
+      "id": "hsk3-fltrp-2026:l03:word23",
+      "py": "cái",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "3-6",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：才",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 23,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 35,
+              "printedPage": 23,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "才",
+            "printedPinyin": "cái",
+            "normalizedPinyin": "cái",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "才",
+            "printedPinyin": "cái",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "纸",
+      "vi": "giấy",
+      "id": "hsk3-fltrp-2026:l03:word24",
+      "py": "zhǐ",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "3-8",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：纸",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 24,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 37,
+              "printedPage": 25,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "纸",
+            "printedPinyin": "zhǐ",
+            "normalizedPinyin": "zhǐ",
+            "printedNumber": 24,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "纸",
+            "printedPinyin": "zhǐ",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "搬",
+      "vi": "chuyển, di chuyển, khuân",
+      "id": "hsk3-fltrp-2026:l03:word25",
+      "py": "bān",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "3-8",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 186,
+        "printedPage": 174,
+        "section": "词语表：搬",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 25,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 37,
+              "printedPage": 25,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "搬",
+            "printedPinyin": "bān",
+            "normalizedPinyin": "bān",
+            "printedNumber": 25,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 186,
+              "printedPage": 174,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "搬",
+            "printedPinyin": "bān",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "需要",
+      "vi": "cần",
+      "id": "hsk3-fltrp-2026:l03:word26",
+      "py": "xūyào",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "3-8",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：需要",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 26,
+        "sourcePos": "v./n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l03:printed-word:26"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 37,
+              "printedPage": 25,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "需要",
+            "printedPinyin": "xūyào",
+            "normalizedPinyin": "xūyào",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "需要",
+            "printedPinyin": "xūyào",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "需要",
+      "vi": "nhu cầu",
+      "id": "hsk3-fltrp-2026:l03:word27",
+      "py": "xūyào",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "3-8",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：需要",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 26,
+        "sourcePos": "v./n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          3
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l03:printed-word:26"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 37,
+              "printedPage": 25,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "需要",
+            "printedPinyin": "xūyào",
+            "normalizedPinyin": "xūyào",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "需要",
+            "printedPinyin": "xūyào",
+            "lessonNumbers": [
+              3
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3-fltrp-2026:l03:grammar1",
+      "title": {
+        "zh": "程度副词“挺”",
+        "vi": "Phó từ chỉ mức độ 挺"
+      },
+      "structure": "挺 + tính từ/động từ tâm lý + 的",
+      "explanation": {
+        "zh": "“挺”用在形容词或心理动词前，表示程度较高，常用于口语中。",
+        "vi": "挺 đứng trước tính từ hoặc động từ tâm lý, chỉ mức độ khá cao, thường dùng trong khẩu ngữ. Cấu trúc thường là 挺……的, tương đương “khá/rất…”."
+      },
+      "examples": [
+        {
+          "zh": "这个小区环境挺好的。",
+          "vi": "Môi trường khu dân cư này khá tốt.",
+          "py": "Zhè ge xiǎoqū huánjìng tǐng hǎo de.",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这家饭馆的菜挺好吃的。",
+          "vi": "Món ăn của nhà hàng này khá ngon.",
+          "py": "Zhè jiā fànguǎn de cài tǐng hǎochī de.",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "买这个吧，我挺喜欢这个颜色的。",
+          "vi": "Mua cái này đi, tôi khá thích màu này.",
+          "py": "Mǎi zhè ge ba, wǒ tǐng xǐhuan zhè ge yánsè de.",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "用“挺……的”回答：你爱游泳吗？",
+          "vi": "Dùng 挺……的 trả lời: Bạn có thích bơi không?",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”：用“挺……的”回答问题",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“挺……的”回答：你的床舒服吗？",
+          "vi": "Dùng 挺……的 trả lời: Giường của bạn có thoải mái không?",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”：用“挺……的”回答问题",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“挺……的”回答：你觉得现在的天气怎么样？",
+          "vi": "Dùng 挺……的 trả lời: Bạn thấy thời tiết bây giờ thế nào?",
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”：用“挺……的”回答问题",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "程度副词“挺”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:grammar2",
+      "title": {
+        "zh": "程度补语（1）",
+        "vi": "Bổ ngữ mức độ (1)"
+      },
+      "structure": "Tính từ + 坏了",
+      "explanation": {
+        "zh": "程度补语“坏了”用在形容词后，表示程度非常高，带有夸张语气，常用在负面情况中。",
+        "vi": "坏了 sau tính từ diễn đạt mức độ cực cao, có sắc thái nhấn mạnh/phóng đại, thường nói về trạng thái tiêu cực. Khác với 坏了 trong 冰箱坏了 “tủ lạnh bị hỏng”, 忙坏了 không có nghĩa “bận đến mức đồ vật hỏng”."
+      },
+      "examples": [
+        {
+          "zh": "我这几天忙坏了。",
+          "vi": "Mấy hôm nay tôi bận quá trời.",
+          "py": "Wǒ zhè jǐ tiān máng huài le.",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "程度补语（1）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我渴坏了，哪里能买水？",
+          "vi": "Tôi khát quá, ở đâu mua được nước?",
+          "py": "Wǒ kě huài le, nǎlǐ néng mǎi shuǐ?",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "程度补语（1）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这几天非常忙，大家都累坏了。",
+          "vi": "Mấy hôm nay rất bận, mọi người đều mệt rã rời.",
+          "py": "Zhè jǐ tiān fēicháng máng, dàjiā dōu lèi huài le.",
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "程度补语（1）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "今天搬家，我和刘明都______。",
+          "vi": "Hôm nay chuyển nhà, tôi và Lưu Minh đều ______.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "程度补语（1）：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我今天没吃午饭和晚饭，______。",
+          "vi": "Hôm nay tôi chưa ăn trưa và tối, ______.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "程度补语（1）：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "房间里没有空调，我们都______。",
+          "vi": "Trong phòng không có điều hòa, chúng tôi đều ______.",
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "程度补语（1）：完成句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "程度补语（1）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:grammar3",
+      "title": {
+        "zh": "“就”和“才”",
+        "vi": "Phân biệt 就 và 才"
+      },
+      "structure": "Thời gian/số lượng + 就／才 + động từ",
+      "explanation": {
+        "zh": "“就”和“才”用在动词前作状语。“就”表示说话人认为动作发生得早、进行得快或顺利；“才”表示发生得晚、进行得慢或不顺利。",
+        "vi": "就 và 才 đứng trước động từ. 就 nhấn mạnh người nói thấy sự việc xảy ra sớm, nhanh hoặc thuận lợi; 才 nhấn mạnh muộn, chậm hoặc khó khăn. Phải xét kỳ vọng và ngữ cảnh, không chỉ dựa vào con số thời gian."
+      },
+      "examples": [
+        {
+          "zh": "中国银行很近，走路几分钟就能到。",
+          "vi": "Ngân hàng Trung Quốc rất gần, đi bộ vài phút là đến.",
+          "py": "Zhōngguó Yínháng hěn jìn, zǒulù jǐ fēnzhōng jiù néng dào.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我下午要去医院，很晚才能回来。",
+          "vi": "Chiều tôi phải đến bệnh viện, muộn mới về được.",
+          "py": "Wǒ xiàwǔ yào qù yīyuàn, hěn wǎn cái néng huílái.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我早上五点就起床了。",
+          "vi": "Sáng năm giờ tôi đã dậy rồi.",
+          "py": "Wǒ zǎoshang wǔ diǎn jiù qǐchuáng le.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "坐火车去北京，五个小时才能到。",
+          "vi": "Đi tàu hỏa đến Bắc Kinh, phải năm tiếng mới tới.",
+          "py": "Zuò huǒchē qù Běijīng, wǔ ge xiǎoshí cái néng dào.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你昨天几点回的家？ B：______。",
+          "vi": "A: Hôm qua mấy giờ bạn về nhà? B: ______.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：这本书你是什么时候看完的？ B：______。",
+          "vi": "A: Bạn đọc xong cuốn sách này khi nào? B: ______.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你觉得搬家要准备多长时间？ B：______。",
+          "vi": "A: Bạn thấy chuyển nhà cần chuẩn bị bao lâu? B: ______.",
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "“就”和“才”",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk3-fltrp-2026:l03:section1",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "blocks": [
+        {
+          "zh": "第一组：A 才；B 挺；C 办；D 关；E 还。",
+          "vi": "Nhóm 1: A mãi…mới; B khá/rất; C làm thủ tục; D tắt; E trả lại.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "1. 你走的时候要______灯。",
+          "vi": "1. Khi đi bạn phải ______ đèn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "2. 我要去银行______一张信用卡。",
+          "vi": "2. Tôi muốn đến ngân hàng ______ một thẻ tín dụng.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "3. 搬家要准备的东西______多的。",
+          "vi": "3. Đồ cần chuẩn bị để chuyển nhà ______ nhiều.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "4. 这本书不是我的，明天我要______给朋友。",
+          "vi": "4. Cuốn sách này không phải của tôi, ngày mai tôi phải ______ cho bạn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "5. 我太忙了，没时间打扫新家，可能下个月______搬家。",
+          "vi": "5. Tôi bận quá, không có thời gian dọn nhà mới, có lẽ tháng sau ______ chuyển nhà.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第二组：A 环境；B 需要；C 搬家；D 听说；E 打扫。",
+          "vi": "Nhóm 2: A môi trường; B cần; C chuyển nhà; D nghe nói; E quét dọn.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "6. A：你去哪儿了？怎么这么晚才回来？ B：我一直在______新家，今天真是累坏了。",
+          "vi": "6. A: Bạn đi đâu mà muộn thế này mới về? B: Tôi cứ ______ nhà mới suốt, hôm nay mệt quá.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "7. A：这个小区离学校有点儿远。 B：虽然有点儿远，但是我们很喜欢这个小区的______。",
+          "vi": "7. A: Khu này hơi xa trường. B: Tuy hơi xa nhưng chúng tôi rất thích ______ của khu này.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "8. A：你知道她为什么不喜欢这个房子吗？ B：我______她不喜欢住一层。",
+          "vi": "8. A: Bạn biết vì sao cô ấy không thích căn nhà này không? B: Tôi ______ cô ấy không thích tầng một.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "9. A：这个小区明天不能______，你知道吗？ B：我知道，我已经告诉搬家公司的人了，他们下周一再来。",
+          "vi": "9. A: Ngày mai không thể ______ trong khu này, bạn biết không? B: Tôi biết, đã báo công ty chuyển nhà, họ sẽ đến thứ Hai tuần sau.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "10. A：她家真大，还有个大花园。 B：因为她家人多，______一个大房子。",
+          "vi": "10. A: Nhà cô ấy rộng thật, còn có vườn lớn. B: Vì nhà đông người nên ______ một căn nhà lớn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: miêu tả hình"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp mới trong bài để miêu tả hình.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片描述（编辑补充）：图1，一排住宅前有绿化和小花园。图2，一人坐在电脑前，手拿银行卡。图3，两位女子站在门边交谈。",
+          "vi": "Mô tả tranh (biên tập bổ sung): Hình 1, một dãy nhà với cây xanh và vườn nhỏ phía trước. Hình 2, một người ngồi trước máy tính, cầm thẻ ngân hàng. Hình 3, hai người nữ đứng cạnh cửa trò chuyện.",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习图片描述",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "A：这个______很新，买东西方便吗？ B：______就有一个大超市。 A：那真的______。我也喜欢这里的环境，每家都有一个小花园。 B：是。后面的房子有两层，______再上去看看。",
+          "vi": "A: ______ này rất mới, mua sắm có tiện không? B: ______ là có một siêu thị lớn. A: Vậy thật ______. Tôi cũng thích môi trường ở đây, nhà nào cũng có vườn nhỏ. B: Đúng, nhà phía sau có hai tầng, ______ lên xem tiếp.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你知道______？ B：用护照就能办，你想在哪家银行办？ A：北京银行不错，今天下午我______。 B：我也听说______，咱们一起去吧。",
+          "vi": "A: Bạn có biết ______ không? B: Dùng hộ chiếu là làm được, bạn muốn làm ở ngân hàng nào? A: Ngân hàng Bắc Kinh khá tốt, chiều nay tôi ______. B: Tôi cũng nghe nói ______, chúng ta cùng đi nhé.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你们已经______？ B：还没有，我们______，也买了很多东西，每天都非常累。 A：我们什么时候去你的新家看看？ B：好啊，______就______，到时候来我家吃饭吧。",
+          "vi": "A: Các bạn đã ______ chưa? B: Chưa, chúng tôi ______, cũng mua nhiều đồ nên ngày nào cũng rất mệt. A: Khi nào chúng tôi đến xem nhà mới của bạn được? B: Được, ______ là ______, khi ấy đến nhà tôi ăn cơm nhé.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "学习说明（编辑补充）：本课涉及信用卡和办理材料的句子是教材人物对话，用于语言练习，不代表现行银行条件或金融建议。",
+          "vi": "Lưu ý học tập (biên tập bổ sung): các câu về thẻ tín dụng và giấy tờ trong bài là lời nhân vật để luyện ngôn ngữ, không phải điều kiện hiện hành của ngân hàng hay lời khuyên tài chính.",
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "教材银行对话说明",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:section3",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "blocks": [
+        {
+          "zh": "三人一组，参考以下内容，分享一次你最难忘的搬家经历。",
+          "vi": "Nhóm ba người, dựa vào các gợi ý sau để kể một lần chuyển nhà đáng nhớ nhất.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你为什么要搬家？",
+          "vi": "Vì sao bạn chuyển nhà?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "搬家前你准备了哪些东西？",
+          "vi": "Trước khi chuyển, bạn chuẩn bị những gì?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你有没有请搬家公司？为什么？",
+          "vi": "Bạn có thuê công ty chuyển nhà không? Vì sao?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "搬家的时候遇到（yùdào，encounter）了什么问题？",
+          "vi": "Khi chuyển nhà bạn gặp (遇到 yùdào) vấn đề gì?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "搬进新家后，你觉得怎么样？",
+          "vi": "Sau khi vào nhà mới bạn thấy thế nào?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:section4",
+      "kind": "culture",
+      "title": {
+        "zh": "小语的彩蛋：在中国租房",
+        "vi": "Góc văn hóa: thuê nhà ở Trung Quốc"
+      },
+      "blocks": [
+        {
+          "zh": "在中国租房。配套视频编号：3-1。",
+          "vi": "Thuê nhà ở Trung Quốc. Mã video đi kèm: 3-1.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "小语的彩蛋：在中国租房",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片描述（编辑补充）：一只手把带有小房子挂件的钥匙交给另一只手。",
+          "vi": "Mô tả tranh (biên tập bổ sung): một bàn tay trao chìa khóa có móc hình ngôi nhà nhỏ cho bàn tay khác.",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "小语的彩蛋图片描述",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "本次提供的资料没有文化视频文件。补充口语讨论：找房子时，你最关心交通、环境还是房间里的设备？请说明理由。",
+          "vi": "Tài liệu được cung cấp không có tệp video văn hóa. Thảo luận nói bổ trợ: Khi tìm nhà, bạn quan tâm nhất đến giao thông, môi trường hay thiết bị trong phòng? Hãy nêu lý do.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "小语的彩蛋：在中国租房",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "section": "小语的彩蛋：在中国租房",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:section5",
+      "kind": "review",
+      "title": {
+        "zh": "学习小结：1—3课我的学习情况",
+        "vi": "Tổng kết học tập: bài1–3"
+      },
+      "blocks": [
+        {
+          "zh": "词语学习：我已经记住并会使用的词语：______；我还没记住的词语：______。",
+          "vi": "Học từ vựng: Những từ tôi đã nhớ và biết dùng: ______; những từ tôi chưa nhớ: ______.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我理解并会用：每项分别检查“理解”和“会用”。",
+          "vi": "Tôi hiểu và biết dùng: tự kiểm tra riêng mức “đã hiểu” và “biết sử dụng” cho từng mục.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "固定短语“看上去／看起来”：他们看上去有点儿像。　理解□　会用□",
+          "vi": "Cụm 看上去／看起来: Trông họ hơi giống nhau.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "疑问代词的非疑问用法（1）：我好像在哪儿看到过这个箱子。　理解□　会用□",
+          "vi": "Đại từ nghi vấn không mang nghĩa hỏi (1): Hình như tôi từng thấy chiếc va-li này ở đâu đó.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "多项定语：李文是那个穿着黑衣服的短头发的年轻人吗？　理解□　会用□",
+          "vi": "Nhiều định ngữ: Lý Văn là người trẻ tóc ngắn mặc quần áo đen kia phải không?　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "并列复句“又……又……”：我现在还真是又饿又渴。　理解□　会用□",
+          "vi": "Cấu trúc 又……又……: Bây giờ tôi đúng là vừa đói vừa khát.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "疑问代词的非疑问用法（2）：哪个菜都好吃。　理解□　会用□",
+          "vi": "Đại từ nghi vấn không mang nghĩa hỏi (2): Món nào cũng ngon.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "疑问代词的非疑问用法（3）：你们想吃什么就点什么。　理解□　会用□",
+          "vi": "Đại từ nghi vấn không mang nghĩa hỏi (3): Các bạn muốn ăn gì thì gọi món đó.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "程度副词“挺”：这个小区环境挺好的。　理解□　会用□",
+          "vi": "Phó từ mức độ 挺: Môi trường khu dân cư này khá tốt.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "程度补语（1）：我这几天忙坏了。　理解□　会用□",
+          "vi": "Bổ ngữ mức độ (1): Mấy hôm nay tôi bận quá trời.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "“就”和“才”：中国银行很近，走路几分钟就能到。我下午要去医院，很晚才能回来。　理解□　会用□",
+          "vi": "就 và 才: Ngân hàng Trung Quốc ở gần, đi bộ vài phút là đến. Chiều tôi phải đến bệnh viện, muộn mới về được.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我需要努力的：______。",
+          "vi": "Những điểm tôi cần cố gắng thêm: ______.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "section": "学习小结：1—3课我的学习情况",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk3-fltrp-2026:l03:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "朋友问你喜欢新房子吗。你想用口语表示“khá thích”，哪句最合适？",
+        "vi": "Bạn hỏi có thích nhà mới không. Muốn nói “khá thích” bằng khẩu ngữ, chọn câu phù hợp nhất."
+      },
+      "options": [
+        "我刚开始喜欢新房子。",
+        "我挺喜欢新房子的。",
+        "我才发现新房子。"
+      ],
+      "answer": 1,
+      "focus": "挺＋心理动词＋的",
+      "explanation": {
+        "zh": "挺喜欢……的表示喜欢的程度较高。",
+        "vi": "挺喜欢……的 biểu thị mức độ thích khá cao."
+      },
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“这个小区离学校挺近的。”主要强调什么？",
+        "vi": "“Khu dân cư này khá gần trường.” Câu chủ yếu nhấn mạnh điều gì?"
+      },
+      "options": [
+        "搬家已经完成",
+        "学校明天开放",
+        "距离近的程度"
+      ],
+      "answer": 2,
+      "focus": "挺：程度",
+      "explanation": {
+        "zh": "挺修饰近，说明程度。",
+        "vi": "挺 bổ nghĩa cho 近, chỉ mức độ gần."
+      },
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "搬完十几个大箱子，小王说“我累坏了”。他的意思是什么？",
+        "vi": "Chuyển xong hơn mười thùng lớn, Tiểu Vương nói “Tôi mệt quá trời”. Ý là gì?"
+      },
+      "options": [
+        "他非常累",
+        "他的箱子坏了",
+        "他不想换房子"
+      ],
+      "answer": 0,
+      "focus": "坏了：程度补语",
+      "explanation": {
+        "zh": "累坏了表示极度疲累，不是物品损坏。",
+        "vi": "累坏了 chỉ rất mệt, không phải đồ vật bị hỏng."
+      },
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "哪句中的“坏了”表示东西不能正常使用？",
+        "vi": "Trong câu nào 坏了 có nghĩa đồ vật không hoạt động bình thường?"
+      },
+      "options": [
+        "我们今天忙坏了。",
+        "卧室里的空调坏了。",
+        "她搬完家累坏了。"
+      ],
+      "answer": 1,
+      "focus": "损坏与程度对比",
+      "explanation": {
+        "zh": "空调坏了说设备损坏；忙坏了、累坏了说程度。",
+        "vi": "空调坏了 là thiết bị hỏng; 忙坏了, 累坏了 chỉ mức độ."
+      },
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "大家约好八点见面，小李七点半已经到了，你觉得他来得很早。应该说哪句？",
+        "vi": "Hẹn tám giờ, Tiểu Lý đã đến lúc bảy rưỡi; bạn thấy anh ấy đến rất sớm. Chọn câu đúng ý."
+      },
+      "options": [
+        "小李八点半才来。",
+        "小李七点半才到。",
+        "小李七点半就到了。"
+      ],
+      "answer": 2,
+      "focus": "就：比预期早",
+      "explanation": {
+        "zh": "比约定时间早到，用就突出早。",
+        "vi": "Đến sớm hơn giờ hẹn nên dùng 就 để nhấn mạnh sớm."
+      },
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "本来以为半小时能打扫完，实际用了三个小时，你想强调太慢。哪句合适？",
+        "vi": "Tưởng nửa tiếng dọn xong nhưng thực tế mất ba tiếng; muốn nhấn mạnh lâu. Chọn câu phù hợp."
+      },
+      "options": [
+        "我打扫了三个小时才打扫完。",
+        "我三个小时前就打扫完了。",
+        "我只用了半个小时就打扫完了。"
+      ],
+      "answer": 0,
+      "focus": "才：比预期慢",
+      "explanation": {
+        "zh": "三个小时超过原来的预期，用才强调慢。",
+        "vi": "Ba tiếng vượt quá dự kiến nên dùng 才 nhấn mạnh chậm."
+      },
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“这本书是小林的，我下周还给他。”这里的“还”读音和意思是哪项？",
+        "vi": "Trong câu “Cuốn sách này của Tiểu Lâm, tuần sau tôi trả lại cho cậu ấy”, 还 đọc và nghĩa thế nào?"
+      },
+      "options": [
+        "hái：vẫn còn",
+        "huán：trả lại",
+        "hái：cũng có thể"
+      ],
+      "answer": 1,
+      "focus": "还：huán",
+      "explanation": {
+        "zh": "还给表示归还别人的东西。",
+        "vi": "还给 là trả lại đồ đã mượn."
+      },
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“听说新小区旁边有一家医院。”最准确的理解是什么？",
+        "vi": "“Nghe nói cạnh khu mới có một bệnh viện.” Hiểu thế nào chính xác nhất?"
+      },
+      "options": [
+        "说话人正在医院里",
+        "说话人亲眼检查过医院",
+        "说话人从别人那里得到这个消息"
+      ],
+      "answer": 2,
+      "focus": "听说：信息来源",
+      "explanation": {
+        "zh": "听说说明消息来自听到的信息，不表示亲自证实。",
+        "vi": "听说 cho biết thông tin nghe được, không có nghĩa đã tự xác minh."
+      },
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“搬家最少需要两天。”下面哪项符合这句话？",
+        "vi": "“Chuyển nhà cần ít nhất hai ngày.” Điều nào phù hợp?"
+      },
+      "options": [
+        "不能少于两天",
+        "最多只能用一天",
+        "一定只要半天"
+      ],
+      "answer": 0,
+      "focus": "最少；需要",
+      "explanation": {
+        "zh": "最少两天指两天是下限。",
+        "vi": "Ít nhất hai ngày nghĩa là hai ngày là giới hạn thấp nhất."
+      },
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "朋友说“咱们去看看那套房子吧”。“咱们”包括谁？",
+        "vi": "Bạn nói “Chúng ta đi xem căn nhà đó nhé”. 咱们 bao gồm ai?"
+      },
+      "options": [
+        "只有说话人，不包括听话人",
+        "说话人和正在听他说话的人",
+        "只有住在房子里的人"
+      ],
+      "answer": 1,
+      "focus": "咱们：包括听话人",
+      "explanation": {
+        "zh": "咱们通常把说话人和听话人都包括在内。",
+        "vi": "咱们 thường bao gồm cả người nói và người nghe."
+      },
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “我”: Tôi khá thích môi trường của khu dân cư mới này. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "这个新小区",
+        "的。",
+        "挺喜欢",
+        "我",
+        "的环境"
+      ],
+      "answer": [
+        3,
+        2,
+        0,
+        4,
+        1
+      ],
+      "focus": "挺＋心理动词＋的",
+      "explanation": {
+        "zh": "我挺喜欢这个新小区的环境的。",
+        "vi": "挺 nằm trước 喜欢; cụm sở hữu bổ nghĩa cho 环境; 的 cuối câu khép mẫu khẩu ngữ."
+      },
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “今天”: Hôm nay giúp bạn chuyển nhà xong, tôi mệt quá trời. Đặt 我 ngay sau dấu phẩy. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "搬完家，",
+        "今天",
+        "累坏了。",
+        "我",
+        "帮朋友"
+      ],
+      "answer": [
+        1,
+        4,
+        0,
+        3,
+        2
+      ],
+      "focus": "程度补语",
+      "explanation": {
+        "zh": "今天帮朋友搬完家，我累坏了。",
+        "vi": "Mệnh đề thời gian/hành động đi trước dấu phẩy, rồi nêu trạng thái mệt."
+      },
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “她”: Cô ấy hôm qua tám giờ đã đến nhà mới rồi (người nói cho là sớm). Giữ “hôm qua” sau chủ ngữ. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "就到",
+        "新家了。",
+        "她",
+        "昨天",
+        "八点"
+      ],
+      "answer": [
+        2,
+        3,
+        4,
+        0,
+        1
+      ],
+      "focus": "就：发生早",
+      "explanation": {
+        "zh": "她昨天八点就到新家了。",
+        "vi": "Theo trật tự được yêu cầu: chủ ngữ, ngày, giờ, 就, hành động."
+      },
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “我们”: Tưởng chỉ mất mười phút, nhưng chúng tôi đi bộ một tiếng mới tới ngân hàng. Chỉ xếp câu nêu kết quả thực tế. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "银行。",
+        "一个小时",
+        "我们",
+        "才到",
+        "走了"
+      ],
+      "answer": [
+        2,
+        4,
+        1,
+        3,
+        0
+      ],
+      "focus": "才：耗时长",
+      "explanation": {
+        "zh": "我们走了一个小时才到银行。",
+        "vi": "Mất lâu hơn mười phút dự kiến nên dùng 才 để nhấn mạnh đến muộn hơn mong đợi."
+      },
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “我”: Chiều mai tôi sẽ trả cuốn sách của anh trai. Giữ thời gian ngay sau chủ ngữ."
+      },
+      "tokens": [
+        "的书。",
+        "我",
+        "要还",
+        "明天下午",
+        "哥哥"
+      ],
+      "answer": [
+        1,
+        3,
+        2,
+        4,
+        0
+      ],
+      "focus": "还：归还",
+      "explanation": {
+        "zh": "我明天下午要还哥哥的书。",
+        "vi": "还 chỉ trả lại sách; cụm thời gian được cố định sau chủ ngữ, 哥哥的 bổ nghĩa cho 书."
+      },
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：刘明在网上看到的房子里，哪两件设备是新的？",
+        "vi": "Nghe bài khóa 1: Trong căn nhà Lưu Minh xem trên mạng, hai thiết bị nào mới?"
+      },
+      "options": [
+        "灯和冰箱",
+        "空调和洗衣机",
+        "冰箱和电视"
+      ],
+      "answer": 1,
+      "focus": "听懂并列设备",
+      "explanation": {
+        "zh": "刘明说空调和洗衣机都是新的。",
+        "vi": "Lưu Minh nói điều hòa và máy giặt đều mới."
+      },
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：刘明为什么对冰箱不能用感到意外？",
+        "vi": "Nghe bài khóa 2: Vì sao Lưu Minh ngạc nhiên khi tủ lạnh không dùng được?"
+      },
+      "options": [
+        "因为他昨天修好了",
+        "因为家里没有冰箱",
+        "因为冰箱是新买的"
+      ],
+      "answer": 2,
+      "focus": "听懂反应的依据",
+      "explanation": {
+        "zh": "刘明说不可能吧，冰箱是新买的。",
+        "vi": "Anh ấy nói không thể thế chứ, tủ lạnh mới mua mà."
+      },
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：王一雪最后决定怎么去银行？",
+        "vi": "Nghe bài khóa 3: Cuối cùng Nhất Tuyết quyết định đến ngân hàng như thế nào?"
+      },
+      "options": [
+        "下午自己去",
+        "等刘明晚上回来再一起去",
+        "请李文帮她去"
+      ],
+      "answer": 0,
+      "focus": "听懂最终计划",
+      "explanation": {
+        "zh": "最后她说那我下午自己去吧。",
+        "vi": "Cuối cùng cô ấy nói chiều sẽ tự đi."
+      },
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：刘明估计实际搬东西最多用多长时间？",
+        "vi": "Nghe bài khóa 4: Lưu Minh ước tính việc chuyển đồ tối đa mất bao lâu?"
+      },
+      "options": [
+        "两个星期",
+        "一天",
+        "一个月"
+      ],
+      "answer": 1,
+      "focus": "听懂上限",
+      "explanation": {
+        "zh": "刘明说最多一天就能搬完。",
+        "vi": "Lưu Minh nói nhiều nhất một ngày là chuyển xong."
+      },
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：王一雪为什么觉得不能很快搬家？",
+        "vi": "Nghe bài khóa 4: Vì sao Nhất Tuyết thấy không thể chuyển ngay?"
+      },
+      "options": [
+        "她不想再住新房子",
+        "她明天要离开北京",
+        "还有准备和打扫等很多事情"
+      ],
+      "answer": 2,
+      "focus": "听懂不同计划的理由",
+      "explanation": {
+        "zh": "她列出准备、打扫新家等工作，认为至少两周。",
+        "vi": "Cô ấy liệt kê chuẩn bị, dọn nhà mới và cho rằng cần ít nhất hai tuần."
+      },
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Điều hòa của căn nhà này khá mới."
+      },
+      "options": [
+        "这个房子的空调挺新的。",
+        "这个房子的空调刚才坏了。",
+        "这个房子的空调没有以前新。"
+      ],
+      "answer": 0,
+      "focus": "挺：程度",
+      "explanation": {
+        "zh": "挺新的表示相当新。",
+        "vi": "挺新的 nghĩa là khá mới."
+      },
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Hôm nay chúng tôi dọn nhà, mệt quá trời."
+      },
+      "options": [
+        "今天我们搬家，很快就到了。",
+        "今天我们打扫房子，都累坏了。",
+        "今天我们打扫房子，空调坏了。"
+      ],
+      "answer": 1,
+      "focus": "累坏了",
+      "explanation": {
+        "zh": "累坏了说人的疲劳程度，不是设备坏了。",
+        "vi": "累坏了 chỉ mức độ mệt của người, không phải thiết bị hỏng."
+      },
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Anh ấy sáu giờ đã dậy rồi (sớm hơn dự kiến)."
+      },
+      "options": [
+        "他六点才睡觉。",
+        "他六点才起床。",
+        "他六点就起床了。"
+      ],
+      "answer": 2,
+      "focus": "就：早",
+      "explanation": {
+        "zh": "就强调六点起床比预期早。",
+        "vi": "就 nhấn mạnh việc dậy lúc sáu giờ là sớm."
+      },
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Phải tuần sau tôi mới dọn xong nhà mới."
+      },
+      "options": [
+        "下个星期我才能打扫完新家。",
+        "上个星期我就打扫完新家了。",
+        "下个星期我不需要打扫新家。"
+      ],
+      "answer": 0,
+      "focus": "才：晚",
+      "explanation": {
+        "zh": "下个星期才能说明到下周才可能完成。",
+        "vi": "下个星期才能 nghĩa là đến tuần sau mới có thể xong."
+      },
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tôi nghe nói cạnh khu dân cư có một ngân hàng."
+      },
+      "options": [
+        "我听说银行明天才搬家。",
+        "我听说小区旁边有一家银行。",
+        "我发现小区里没有银行。"
+      ],
+      "answer": 1,
+      "focus": "听说；银行",
+      "explanation": {
+        "zh": "听说表信息来源，旁边表示邻近位置。",
+        "vi": "听说 chỉ nguồn tin nghe được; 旁边 là bên cạnh."
+      },
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Tôi khá thích khu vườn nhỏ của căn nhà mới."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Hôm nay vừa nóng vừa bận, chúng tôi mệt quá trời."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Tôi tưởng chín giờ anh ấy mới đến, nhưng tám giờ đã đến rồi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Hôm qua tôi đã trả lại chiếc điện thoại cho bạn."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Tôi cần vài chiếc thùng giấy để chuyển sách."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3-fltrp-2026:l03:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：刘明先用什么方法找房子的信息？",
+        "vi": "Nghe bài khóa 1: ban đầu Lưu Minh tìm thông tin nhà bằng cách nào?"
+      },
+      "options": [
+        "给女儿的老师打电话。",
+        "上网看看。",
+        "直接去银行问。"
+      ],
+      "answer": 1,
+      "focus": "听懂查找信息的方式",
+      "explanation": {
+        "zh": "他说“好啊，我上网看看”，然后问一雪觉得这个小区怎么样。",
+        "vi": "Anh ấy nói sẽ lên mạng xem, rồi hỏi Nhất Tuyết thấy khu dân cư này thế nào."
+      },
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：一雪说自己什么时候来到新家，发现灯还开着？",
+        "vi": "Nghe bài khóa 2: Nhất Tuyết nói mình đến nhà mới và thấy đèn vẫn bật vào lúc nào?"
+      },
+      "options": [
+        "今天早上。",
+        "昨天晚上。",
+        "星期天下午。"
+      ],
+      "answer": 0,
+      "focus": "听懂到达时间",
+      "explanation": {
+        "zh": "开头她说“我今天早上来的时候，灯还开着”。",
+        "vi": "Mở đầu, cô ấy nói sáng nay lúc đến thì đèn vẫn còn bật."
+      },
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：刘明觉得走到银行要多久？",
+        "vi": "Nghe bài khóa 3: Lưu Minh thấy đi bộ đến ngân hàng mất bao lâu?"
+      },
+      "options": [
+        "几个小时",
+        "几分钟",
+        "一个下午"
+      ],
+      "answer": 1,
+      "focus": "听懂短距离时间",
+      "explanation": {
+        "zh": "刘明说走路几分钟就能到。",
+        "vi": "Lưu Minh nói đi bộ vài phút là đến."
+      },
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：一雪认为这些准备工作最少需要多长时间？",
+        "vi": "Nghe bài khóa 4: Nhất Tuyết cho rằng các công việc chuẩn bị cần ít nhất bao lâu?"
+      },
+      "options": [
+        "一天。",
+        "一个星期。",
+        "两个星期。"
+      ],
+      "answer": 2,
+      "focus": "听懂准备时间的下限",
+      "explanation": {
+        "zh": "她说“这么多事情最少需要两个星期才能做完”。",
+        "vi": "Cô ấy nói nhiều việc như vậy cần ít nhất hai tuần mới làm xong."
+      },
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "3-7"
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:objective1",
+          "prompt": {
+            "zh": "能听懂并谈论居住环境和居家情况。",
+            "vi": "Nghe hiểu và trao đổi về môi trường sống và tình hình sinh hoạt trong nhà."
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用“挺”“坏了”表达程度。",
+            "vi": "Nghe hiểu và dùng 挺, 坏了 để diễn đạt mức độ."
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:objective3",
+          "prompt": {
+            "zh": "掌握“就”和“才”的用法，能表达动作发生的早晚、快慢等信息。",
+            "vi": "Nắm cách dùng 就, 才 để diễn đạt sự việc xảy ra sớm/muộn, nhanh/chậm."
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với hình tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:warmup1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1：选择对应词语",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "卫生间",
+              "vi": "phòng tắm, nhà vệ sinh"
+            },
+            {
+              "zh": "空调",
+              "vi": "điều hòa"
+            },
+            {
+              "zh": "冰箱",
+              "vi": "tủ lạnh"
+            },
+            {
+              "zh": "洗衣机",
+              "vi": "máy giặt"
+            },
+            {
+              "zh": "灯",
+              "vi": "đèn"
+            },
+            {
+              "zh": "花园",
+              "vi": "vườn"
+            }
+          ],
+          "answer": "冰箱",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P19 热身1 图1（C）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2：选择对应词语",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "卫生间",
+              "vi": "phòng tắm, nhà vệ sinh"
+            },
+            {
+              "zh": "空调",
+              "vi": "điều hòa"
+            },
+            {
+              "zh": "冰箱",
+              "vi": "tủ lạnh"
+            },
+            {
+              "zh": "洗衣机",
+              "vi": "máy giặt"
+            },
+            {
+              "zh": "灯",
+              "vi": "đèn"
+            },
+            {
+              "zh": "花园",
+              "vi": "vườn"
+            }
+          ],
+          "answer": "空调",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P19 热身1 图2（B）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3：选择对应词语",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "卫生间",
+              "vi": "phòng tắm, nhà vệ sinh"
+            },
+            {
+              "zh": "空调",
+              "vi": "điều hòa"
+            },
+            {
+              "zh": "冰箱",
+              "vi": "tủ lạnh"
+            },
+            {
+              "zh": "洗衣机",
+              "vi": "máy giặt"
+            },
+            {
+              "zh": "灯",
+              "vi": "đèn"
+            },
+            {
+              "zh": "花园",
+              "vi": "vườn"
+            }
+          ],
+          "answer": "洗衣机",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P19 热身1 图3（D）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4：选择对应词语",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "卫生间",
+              "vi": "phòng tắm, nhà vệ sinh"
+            },
+            {
+              "zh": "空调",
+              "vi": "điều hòa"
+            },
+            {
+              "zh": "冰箱",
+              "vi": "tủ lạnh"
+            },
+            {
+              "zh": "洗衣机",
+              "vi": "máy giặt"
+            },
+            {
+              "zh": "灯",
+              "vi": "đèn"
+            },
+            {
+              "zh": "花园",
+              "vi": "vườn"
+            }
+          ],
+          "answer": "花园",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P19 热身1 图4（F）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:warmup1-4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup1-picture5",
+          "prompt": {
+            "zh": "图5：选择对应词语",
+            "vi": "Hình 5: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "卫生间",
+              "vi": "phòng tắm, nhà vệ sinh"
+            },
+            {
+              "zh": "空调",
+              "vi": "điều hòa"
+            },
+            {
+              "zh": "冰箱",
+              "vi": "tủ lạnh"
+            },
+            {
+              "zh": "洗衣机",
+              "vi": "máy giặt"
+            },
+            {
+              "zh": "灯",
+              "vi": "đèn"
+            },
+            {
+              "zh": "花园",
+              "vi": "vườn"
+            }
+          ],
+          "answer": "卫生间",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P19 热身1 图5（A）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:warmup1-5"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup1-picture6",
+          "prompt": {
+            "zh": "图6：选择对应词语",
+            "vi": "Hình 6: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "卫生间",
+              "vi": "phòng tắm, nhà vệ sinh"
+            },
+            {
+              "zh": "空调",
+              "vi": "điều hòa"
+            },
+            {
+              "zh": "冰箱",
+              "vi": "tủ lạnh"
+            },
+            {
+              "zh": "洗衣机",
+              "vi": "máy giặt"
+            },
+            {
+              "zh": "灯",
+              "vi": "đèn"
+            },
+            {
+              "zh": "花园",
+              "vi": "vườn"
+            }
+          ],
+          "answer": "灯",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P19 热身1 图6（E）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:warmup1-6"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l03:illustration:warmup1-1",
+        "hsk3-fltrp-2026:l03:illustration:warmup1-2",
+        "hsk3-fltrp-2026:l03:illustration:warmup1-3",
+        "hsk3-fltrp-2026:l03:illustration:warmup1-4",
+        "hsk3-fltrp-2026:l03:illustration:warmup1-5",
+        "hsk3-fltrp-2026:l03:illustration:warmup1-6"
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按题号顺序作答。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo số câu."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:warmup2-discussion",
+      "kind": "open",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên tình huống thực tế."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:warmup2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup2-prompt1",
+          "prompt": {
+            "zh": "你喜欢现在住的房子吗？为什么？",
+            "vi": "Bạn có thích nơi đang ở không? Vì sao?"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:warmup2-prompt2",
+          "prompt": {
+            "zh": "你搬过家吗？你是怎么找到新房子的？",
+            "vi": "Bạn từng chuyển nhà chưa? Bạn đã tìm nhà mới như thế nào?"
+          },
+          "source": {
+            "pdfPage": 31,
+            "printedPage": 19,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境或化名，不必填写真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu hoặc tên giả, không cần ghi thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text1:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text1-question1",
+          "prompt": {
+            "zh": "王一雪和刘明想做什么？",
+            "vi": "Nhất Tuyết và Lưu Minh muốn làm gì?"
+          },
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "换房子",
+              "vi": "đổi nhà"
+            },
+            {
+              "zh": "买空调",
+              "vi": "mua điều hòa"
+            },
+            {
+              "zh": "去女儿的初中",
+              "vi": "đến trường cấp hai của con gái"
+            }
+          ],
+          "answer": "换房子",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P20 课文1 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text1:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text1-question2",
+          "prompt": {
+            "zh": "王一雪为什么不喜欢这个房子？",
+            "vi": "Vì sao Nhất Tuyết không thích căn nhà này?"
+          },
+          "source": {
+            "pdfPage": 32,
+            "printedPage": 20,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "房子太远",
+              "vi": "nhà xa quá"
+            },
+            {
+              "zh": "她不喜欢住一层",
+              "vi": "cô ấy không thích ở tầng một"
+            },
+            {
+              "zh": "她不喜欢这个小区",
+              "vi": "cô ấy không thích khu dân cư này"
+            }
+          ],
+          "answer": "她不喜欢住一层",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P20 课文1 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text1:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "3-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text1:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text1-question3",
+          "prompt": {
+            "zh": "他们为什么要换房子？",
+            "vi": "Vì sao họ muốn chuyển sang nhà khác?"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为小雪的初中离家有点儿远，他们想换一个近点儿的房子。",
+            "vi": "Vì trường cấp hai của Tiểu Tuyết hơi xa nhà, họ muốn đổi sang nhà gần hơn."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text1:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text1-question4",
+          "prompt": {
+            "zh": "王一雪觉得新小区怎么样？",
+            "vi": "Nhất Tuyết thấy khu dân cư mới thế nào?"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她觉得环境挺好的，离地铁站还不远。",
+            "vi": "Cô ấy thấy môi trường khá tốt và không xa ga tàu điện ngầm."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text1:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text1-question5",
+          "prompt": {
+            "zh": "刘明为什么喜欢这个房子？",
+            "vi": "Vì sao Lưu Minh thích căn nhà này?"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为房子里面不错，空调和洗衣机都是新的，一层还带一个小花园。",
+            "vi": "Vì bên trong nhà khá tốt, điều hòa và máy giặt đều mới, tầng một còn có vườn nhỏ."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text1:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text2:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text2-question1",
+          "prompt": {
+            "zh": "灯为什么开着？",
+            "vi": "Vì sao đèn đang bật?"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "灯坏了",
+              "vi": "đèn hỏng"
+            },
+            {
+              "zh": "是王一雪打开的",
+              "vi": "Vương Nhất Tuyết đã bật"
+            },
+            {
+              "zh": "刘明走的时候忘关了",
+              "vi": "Lưu Minh quên tắt khi đi"
+            }
+          ],
+          "answer": "刘明走的时候忘关了",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P21 课文2 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text2:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text2-question2",
+          "prompt": {
+            "zh": "现在新家是什么样的？",
+            "vi": "Hiện nhà mới đang thế nào?"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "冰箱是旧的",
+              "vi": "tủ lạnh là đồ cũ"
+            },
+            {
+              "zh": "洗衣机是坏的",
+              "vi": "máy giặt bị hỏng"
+            },
+            {
+              "zh": "卫生间没打扫好",
+              "vi": "phòng tắm chưa được dọn xong"
+            }
+          ],
+          "answer": "卫生间没打扫好",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P21 课文2 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text2:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "3-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text2:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text2-question3",
+          "prompt": {
+            "zh": "他们家的冰箱怎么了？",
+            "vi": "Tủ lạnh nhà họ có vấn đề gì?"
+          },
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "王一雪说冰箱不能用，刘明说是新买的，要看看；对话没有说明最后查出的原因。",
+            "vi": "Vương Nhất Tuyết nói tủ lạnh không dùng được, Lưu Minh nói mới mua và muốn kiểm tra; hội thoại không nêu nguyên nhân cuối cùng."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text2:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text2-question4",
+          "prompt": {
+            "zh": "为什么不能洗衣服？",
+            "vi": "Vì sao chưa thể giặt quần áo?"
+          },
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为卫生间还没打扫好。",
+            "vi": "Vì phòng tắm vẫn chưa dọn xong."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text2:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text2-question5",
+          "prompt": {
+            "zh": "你觉得星期天他们能不能搬家？为什么？",
+            "vi": "Bạn nghĩ Chủ nhật họ chuyển nhà được không? Vì sao?"
+          },
+          "source": {
+            "pdfPage": 34,
+            "printedPage": 22,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我觉得可能还不能，因为卫生间没打扫好，冰箱的问题也还没弄清楚。也可以提出其他有根据的看法。",
+            "vi": "Tôi nghĩ có thể chưa được vì phòng tắm chưa dọn xong và vấn đề tủ lạnh chưa rõ. Có thể đưa ra ý kiến khác có căn cứ."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text2:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text3:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text3-question1",
+          "prompt": {
+            "zh": "王一雪和刘明为什么这个月花了不少钱？",
+            "vi": "Vì sao tháng này Nhất Tuyết và Lưu Minh tiêu nhiều tiền?"
+          },
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "买衣服了",
+              "vi": "đã mua quần áo"
+            },
+            {
+              "zh": "去饭店吃饭了",
+              "vi": "đã đi ăn ở nhà hàng"
+            },
+            {
+              "zh": "买了很多搬家要用的东西",
+              "vi": "đã mua nhiều đồ cần khi chuyển nhà"
+            }
+          ],
+          "answer": "买了很多搬家要用的东西",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P23 课文3 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text3:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text3-question2",
+          "prompt": {
+            "zh": "王一雪想去中国银行做什么？",
+            "vi": "Nhất Tuyết muốn đến Ngân hàng Trung Quốc làm gì?"
+          },
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "买东西",
+              "vi": "mua đồ"
+            },
+            {
+              "zh": "还信用卡",
+              "vi": "trả tiền thẻ tín dụng"
+            },
+            {
+              "zh": "办信用卡",
+              "vi": "làm thẻ tín dụng"
+            }
+          ],
+          "answer": "办信用卡",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P23 课文3 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text3:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。 以下是教材人物的语言练习，不代表现行银行条件、办理材料要求或金融建议。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng. Đây là bài luyện ngôn ngữ của nhân vật trong sách, không phải điều kiện ngân hàng, yêu cầu giấy tờ hiện hành hay lời khuyên tài chính."
+      },
+      "audioTrack": "3-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text3:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text3-question3",
+          "prompt": {
+            "zh": "王一雪为什么想办信用卡？",
+            "vi": "Vì sao Nhất Tuyết muốn làm thẻ tín dụng?"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "按对话，她觉得花的钱可以慢慢还，还听说用信用卡买东西能便宜。",
+            "vi": "Theo hội thoại, cô ấy cho rằng tiền đã tiêu có thể trả dần và nghe nói mua bằng thẻ sẽ rẻ hơn."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text3:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text3-question4",
+          "prompt": {
+            "zh": "王一雪想什么时候去银行？",
+            "vi": "Nhất Tuyết muốn đến ngân hàng khi nào?"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她想今天下午去银行。",
+            "vi": "Cô ấy muốn đến ngân hàng chiều nay."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text3:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text3-question5",
+          "prompt": {
+            "zh": "刘明为什么今天不能去银行？",
+            "vi": "Vì sao hôm nay Lưu Minh không thể đến ngân hàng?"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为他下午要去医院，很晚才能回来。",
+            "vi": "Vì chiều anh ấy phải đến bệnh viện, muộn mới về được."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text3:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。 以下是教材人物的语言练习，不代表现行银行条件、办理材料要求或金融建议。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất. Đây là bài luyện ngôn ngữ của nhân vật trong sách, không phải điều kiện ngân hàng, yêu cầu giấy tờ hiện hành hay lời khuyên tài chính."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text4:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text4-question1",
+          "prompt": {
+            "zh": "刘明想什么时候搬家？",
+            "vi": "Lưu Minh muốn chuyển nhà khi nào?"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "明天",
+              "vi": "ngày mai"
+            },
+            {
+              "zh": "这个星期",
+              "vi": "tuần này"
+            },
+            {
+              "zh": "下个星期",
+              "vi": "tuần sau"
+            }
+          ],
+          "answer": "这个星期",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P24 课文4 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text4:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text4-question2",
+          "prompt": {
+            "zh": "王一雪想什么时候搬家？",
+            "vi": "Nhất Tuyết muốn chuyển nhà khi nào?"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "这周",
+              "vi": "tuần này"
+            },
+            {
+              "zh": "下周",
+              "vi": "tuần sau"
+            },
+            {
+              "zh": "下个月",
+              "vi": "tháng sau"
+            }
+          ],
+          "answer": "下个月",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P24 课文4 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text4:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍课文，选择正确答案。",
+        "vi": "Nghe bài khóa hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "3-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:text4-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:text4:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text4-question3",
+          "prompt": {
+            "zh": "刘明明天去买什么？",
+            "vi": "Ngày mai Lưu Minh đi mua gì?"
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他明天去买一些纸箱。",
+            "vi": "Ngày mai anh ấy đi mua ít thùng giấy."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text4:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text4-question4",
+          "prompt": {
+            "zh": "王一雪打算（dǎsuàn，plan）下周做什么？",
+            "vi": "Nhất Tuyết định (打算 dǎsuàn) làm gì tuần sau?"
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她打算下周去打扫新家。",
+            "vi": "Cô ấy định tuần sau đi dọn nhà mới."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text4:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:text4-question5",
+          "prompt": {
+            "zh": "刘明打算找谁搬家？王一雪呢？",
+            "vi": "Lưu Minh định nhờ ai chuyển nhà? Còn Nhất Tuyết?"
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "刘明想请几位朋友来帮忙，王一雪想找一家搬家公司。",
+            "vi": "Lưu Minh muốn nhờ vài người bạn giúp, còn Vương Nhất Tuyết muốn thuê công ty chuyển nhà."
+          },
+          "targetRef": "hsk3-fltrp-2026:l03:text4:question5"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc bài khóa rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar1-practice1",
+      "kind": "open",
+      "title": {
+        "zh": "用“挺……的”回答：你爱游泳吗？",
+        "vi": "Dùng 挺……的 trả lời: Bạn có thích bơi không?"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "程度副词“挺”：用“挺……的”回答问题",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar1-practice1",
+          "prompt": {
+            "zh": "回答问题",
+            "vi": "Trả lời câu hỏi"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”：用“挺……的”回答问题",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我挺爱游泳的。",
+            "vi": "Tôi khá thích bơi."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar1-practice2",
+      "kind": "open",
+      "title": {
+        "zh": "用“挺……的”回答：你的床舒服吗？",
+        "vi": "Dùng 挺……的 trả lời: Giường của bạn có thoải mái không?"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "程度副词“挺”：用“挺……的”回答问题",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar1-practice2",
+          "prompt": {
+            "zh": "回答问题",
+            "vi": "Trả lời câu hỏi"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”：用“挺……的”回答问题",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我的床挺舒服的。",
+            "vi": "Giường của tôi khá thoải mái."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar1-practice3",
+      "kind": "open",
+      "title": {
+        "zh": "用“挺……的”回答：你觉得现在的天气怎么样？",
+        "vi": "Dùng 挺……的 trả lời: Bạn thấy thời tiết bây giờ thế nào?"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 33,
+        "printedPage": 21,
+        "section": "程度副词“挺”：用“挺……的”回答问题",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar1-practice3",
+          "prompt": {
+            "zh": "回答问题",
+            "vi": "Trả lời câu hỏi"
+          },
+          "source": {
+            "pdfPage": 33,
+            "printedPage": 21,
+            "section": "程度副词“挺”：用“挺……的”回答问题",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我觉得现在的天气挺好的。",
+            "vi": "Tôi thấy thời tiết bây giờ khá đẹp."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "今天搬家，我和刘明都______。",
+        "vi": "Hôm nay chuyển nhà, tôi và Lưu Minh đều ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "程度补语（1）：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar2-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "程度补语（1）：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "累坏了",
+            "vi": "mệt rã rời"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "我今天没吃午饭和晚饭，______。",
+        "vi": "Hôm nay tôi chưa ăn trưa và tối, ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "程度补语（1）：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar2-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "程度补语（1）：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "饿坏了",
+            "vi": "đói quá trời"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "房间里没有空调，我们都______。",
+        "vi": "Trong phòng không có điều hòa, chúng tôi đều ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "程度补语（1）：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar2-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 35,
+            "printedPage": 23,
+            "section": "程度补语（1）：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "热坏了",
+            "vi": "nóng quá trời"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你昨天几点回的家？ B：______。",
+        "vi": "A: Hôm qua mấy giờ bạn về nhà? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "“就”和“才”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar3-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我昨天五点就回家了。",
+            "vi": "Hôm qua năm giờ tôi đã về nhà rồi."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：这本书你是什么时候看完的？ B：______。",
+        "vi": "A: Bạn đọc xong cuốn sách này khi nào? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "“就”和“才”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar3-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我昨天晚上才看完。",
+            "vi": "Tối qua tôi mới đọc xong."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你觉得搬家要准备多长时间？ B：______。",
+        "vi": "A: Bạn thấy chuyển nhà cần chuẩn bị bao lâu? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 36,
+        "printedPage": 24,
+        "section": "“就”和“才”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:grammar3-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 36,
+            "printedPage": 24,
+            "section": "“就”和“才”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我觉得一个星期就能准备好。",
+            "vi": "Tôi nghĩ một tuần là có thể chuẩn bị xong."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:comprehensive-words1",
+      "kind": "fill",
+      "title": {
+        "zh": "第一组：A 才；B 挺；C 办；D 关；E 还。",
+        "vi": "Nhóm 1: A mãi…mới; B khá/rất; C làm thủ tục; D tắt; E trả lại."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section1:bank:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice1",
+          "prompt": {
+            "zh": "1. 你走的时候要______灯。",
+            "vi": "1. Khi đi bạn phải ______ đèn."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "才",
+              "vi": "mãi…mới"
+            },
+            {
+              "zh": "挺",
+              "vi": "khá/rất"
+            },
+            {
+              "zh": "办",
+              "vi": "làm thủ tục"
+            },
+            {
+              "zh": "关",
+              "vi": "tắt"
+            },
+            {
+              "zh": "还",
+              "vi": "trả lại"
+            }
+          ],
+          "answer": "关",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P25 综合练习 选词填空 第1题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice2",
+          "prompt": {
+            "zh": "2. 我要去银行______一张信用卡。",
+            "vi": "2. Tôi muốn đến ngân hàng ______ một thẻ tín dụng."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "才",
+              "vi": "mãi…mới"
+            },
+            {
+              "zh": "挺",
+              "vi": "khá/rất"
+            },
+            {
+              "zh": "办",
+              "vi": "làm thủ tục"
+            },
+            {
+              "zh": "关",
+              "vi": "tắt"
+            },
+            {
+              "zh": "还",
+              "vi": "trả lại"
+            }
+          ],
+          "answer": "办",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P25 综合练习 选词填空 第2题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice3",
+          "prompt": {
+            "zh": "3. 搬家要准备的东西______多的。",
+            "vi": "3. Đồ cần chuẩn bị để chuyển nhà ______ nhiều."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "才",
+              "vi": "mãi…mới"
+            },
+            {
+              "zh": "挺",
+              "vi": "khá/rất"
+            },
+            {
+              "zh": "办",
+              "vi": "làm thủ tục"
+            },
+            {
+              "zh": "关",
+              "vi": "tắt"
+            },
+            {
+              "zh": "还",
+              "vi": "trả lại"
+            }
+          ],
+          "answer": "挺",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P25 综合练习 选词填空 第3题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice4",
+          "prompt": {
+            "zh": "4. 这本书不是我的，明天我要______给朋友。",
+            "vi": "4. Cuốn sách này không phải của tôi, ngày mai tôi phải ______ cho bạn."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "才",
+              "vi": "mãi…mới"
+            },
+            {
+              "zh": "挺",
+              "vi": "khá/rất"
+            },
+            {
+              "zh": "办",
+              "vi": "làm thủ tục"
+            },
+            {
+              "zh": "关",
+              "vi": "tắt"
+            },
+            {
+              "zh": "还",
+              "vi": "trả lại"
+            }
+          ],
+          "answer": "还",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 4,
+            "item": "第3课 P25 综合练习 选词填空 第4题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice5",
+          "prompt": {
+            "zh": "5. 我太忙了，没时间打扫新家，可能下个月______搬家。",
+            "vi": "5. Tôi bận quá, không có thời gian dọn nhà mới, có lẽ tháng sau ______ chuyển nhà."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "才",
+              "vi": "mãi…mới"
+            },
+            {
+              "zh": "挺",
+              "vi": "khá/rất"
+            },
+            {
+              "zh": "办",
+              "vi": "làm thủ tục"
+            },
+            {
+              "zh": "关",
+              "vi": "tắt"
+            },
+            {
+              "zh": "还",
+              "vi": "trả lại"
+            }
+          ],
+          "answer": "才",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第3课 P25 综合练习 选词填空 第5题（A）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:comprehensive-words2",
+      "kind": "fill",
+      "title": {
+        "zh": "第二组：A 环境；B 需要；C 搬家；D 听说；E 打扫。",
+        "vi": "Nhóm 2: A môi trường; B cần; C chuyển nhà; D nghe nói; E quét dọn."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section1:bank:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice6",
+          "prompt": {
+            "zh": "6. A：你去哪儿了？怎么这么晚才回来？ B：我一直在______新家，今天真是累坏了。",
+            "vi": "6. A: Bạn đi đâu mà muộn thế này mới về? B: Tôi cứ ______ nhà mới suốt, hôm nay mệt quá."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "环境",
+              "vi": "môi trường"
+            },
+            {
+              "zh": "需要",
+              "vi": "cần"
+            },
+            {
+              "zh": "搬家",
+              "vi": "chuyển nhà"
+            },
+            {
+              "zh": "听说",
+              "vi": "nghe nói"
+            },
+            {
+              "zh": "打扫",
+              "vi": "quét dọn"
+            }
+          ],
+          "answer": "打扫",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第3课 P25 综合练习 选词填空 第6题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice7",
+          "prompt": {
+            "zh": "7. A：这个小区离学校有点儿远。 B：虽然有点儿远，但是我们很喜欢这个小区的______。",
+            "vi": "7. A: Khu này hơi xa trường. B: Tuy hơi xa nhưng chúng tôi rất thích ______ của khu này."
+          },
+          "source": {
+            "pdfPage": 37,
+            "printedPage": 25,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "环境",
+              "vi": "môi trường"
+            },
+            {
+              "zh": "需要",
+              "vi": "cần"
+            },
+            {
+              "zh": "搬家",
+              "vi": "chuyển nhà"
+            },
+            {
+              "zh": "听说",
+              "vi": "nghe nói"
+            },
+            {
+              "zh": "打扫",
+              "vi": "quét dọn"
+            }
+          ],
+          "answer": "环境",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第3课 P25 综合练习 选词填空 第7题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice8",
+          "prompt": {
+            "zh": "8. A：你知道她为什么不喜欢这个房子吗？ B：我______她不喜欢住一层。",
+            "vi": "8. A: Bạn biết vì sao cô ấy không thích căn nhà này không? B: Tôi ______ cô ấy không thích tầng một."
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "环境",
+              "vi": "môi trường"
+            },
+            {
+              "zh": "需要",
+              "vi": "cần"
+            },
+            {
+              "zh": "搬家",
+              "vi": "chuyển nhà"
+            },
+            {
+              "zh": "听说",
+              "vi": "nghe nói"
+            },
+            {
+              "zh": "打扫",
+              "vi": "quét dọn"
+            }
+          ],
+          "answer": "听说",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第3课 P26 综合练习 选词填空 第8题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice9",
+          "prompt": {
+            "zh": "9. A：这个小区明天不能______，你知道吗？ B：我知道，我已经告诉搬家公司的人了，他们下周一再来。",
+            "vi": "9. A: Ngày mai không thể ______ trong khu này, bạn biết không? B: Tôi biết, đã báo công ty chuyển nhà, họ sẽ đến thứ Hai tuần sau."
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "环境",
+              "vi": "môi trường"
+            },
+            {
+              "zh": "需要",
+              "vi": "cần"
+            },
+            {
+              "zh": "搬家",
+              "vi": "chuyển nhà"
+            },
+            {
+              "zh": "听说",
+              "vi": "nghe nói"
+            },
+            {
+              "zh": "打扫",
+              "vi": "quét dọn"
+            }
+          ],
+          "answer": "搬家",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第3课 P26 综合练习 选词填空 第9题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:wordchoice10",
+          "prompt": {
+            "zh": "10. A：她家真大，还有个大花园。 B：因为她家人多，______一个大房子。",
+            "vi": "10. A: Nhà cô ấy rộng thật, còn có vườn lớn. B: Vì nhà đông người nên ______ một căn nhà lớn."
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "环境",
+              "vi": "môi trường"
+            },
+            {
+              "zh": "需要",
+              "vi": "cần"
+            },
+            {
+              "zh": "搬家",
+              "vi": "chuyển nhà"
+            },
+            {
+              "zh": "听说",
+              "vi": "nghe nói"
+            },
+            {
+              "zh": "打扫",
+              "vi": "quét dọn"
+            }
+          ],
+          "answer": "需要",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第3课 P26 综合练习 选词填空 第10题（B）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：这个______很新，买东西方便吗？ B：______就有一个大超市。 A：那真的______。我也喜欢这里的环境，每家都有一个小花园。 B：是。后面的房子有两层，______再上去看看。",
+        "vi": "A: ______ này rất mới, mua sắm có tiện không? B: ______ là có một siêu thị lớn. A: Vậy thật ______. Tôi cũng thích môi trường ở đây, nhà nào cũng có vườn nhỏ. B: Đúng, nhà phía sau có hai tầng, ______ lên xem tiếp."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section2:picture:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "小区",
+            "vi": "khu dân cư"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture1-blank2",
+          "prompt": {
+            "zh": "图1第2空",
+            "vi": "Hình 1, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "走路几分钟",
+            "vi": "đi bộ vài phút"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture1-blank3",
+          "prompt": {
+            "zh": "图1第3空",
+            "vi": "Hình 1, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "挺方便的",
+            "vi": "khá tiện"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture1-blank4",
+          "prompt": {
+            "zh": "图1第4空",
+            "vi": "Hình 1, chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我们一会儿",
+            "vi": "lát nữa chúng ta"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l03:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你知道______？ B：用护照就能办，你想在哪家银行办？ A：北京银行不错，今天下午我______。 B：我也听说______，咱们一起去吧。",
+        "vi": "A: Bạn có biết ______ không? B: Dùng hộ chiếu là làm được, bạn muốn làm ở ngân hàng nào? A: Ngân hàng Bắc Kinh khá tốt, chiều nay tôi ______. B: Tôi cũng nghe nói ______, chúng ta cùng đi nhé."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section2:picture:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "怎么办信用卡",
+            "vi": "làm thẻ tín dụng thế nào"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "就去办",
+            "vi": "sẽ đi làm ngay"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture2-blank3",
+          "prompt": {
+            "zh": "图2第3空",
+            "vi": "Hình 2, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "那家银行的服务不错",
+            "vi": "dịch vụ ngân hàng đó khá tốt"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l03:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。 以下是教材人物的语言练习，不代表现行银行条件、办理材料要求或金融建议。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất. Đây là bài luyện ngôn ngữ của nhân vật trong sách, không phải điều kiện ngân hàng, yêu cầu giấy tờ hiện hành hay lời khuyên tài chính."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你们已经______？ B：还没有，我们______，也买了很多东西，每天都非常累。 A：我们什么时候去你的新家看看？ B：好啊，______就______，到时候来我家吃饭吧。",
+        "vi": "A: Các bạn đã ______ chưa? B: Chưa, chúng tôi ______, cũng mua nhiều đồ nên ngày nào cũng rất mệt. A: Khi nào chúng tôi đến xem nhà mới của bạn được? B: Được, ______ là ______, khi ấy đến nhà tôi ăn cơm nhé."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section2:picture:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "搬家了",
+            "vi": "chuyển nhà rồi"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "这几天一直在打扫新家",
+            "vi": "mấy hôm nay đang dọn nhà mới suốt"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture3-blank3",
+          "prompt": {
+            "zh": "图3第3空",
+            "vi": "Hình 3, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你们想什么时候来",
+            "vi": "mọi người muốn đến lúc nào"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:picture3-blank4",
+          "prompt": {
+            "zh": "图3第4空",
+            "vi": "Hình 3, chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 38,
+            "printedPage": 26,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "什么时候来",
+            "vi": "đến lúc đó"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l03:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l03:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:classroom-group",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:classroom-prompt1",
+          "prompt": {
+            "zh": "你为什么要搬家？",
+            "vi": "Vì sao bạn chuyển nhà?"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:classroom-prompt2",
+          "prompt": {
+            "zh": "搬家前你准备了哪些东西？",
+            "vi": "Trước khi chuyển, bạn chuẩn bị những gì?"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:classroom-prompt3",
+          "prompt": {
+            "zh": "你有没有请搬家公司？为什么？",
+            "vi": "Bạn có thuê công ty chuyển nhà không? Vì sao?"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:classroom-prompt4",
+          "prompt": {
+            "zh": "搬家的时候遇到（yùdào，encounter）了什么问题？",
+            "vi": "Khi chuyển nhà bạn gặp (遇到 yùdào) vấn đề gì?"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:classroom-prompt5",
+          "prompt": {
+            "zh": "搬进新家后，你觉得怎么样？",
+            "vi": "Sau khi vào nhà mới bạn thấy thế nào?"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "三人一组，参考以下内容，分享一次你最难忘的搬家经历。 可使用虚构情境或化名，不必填写真实个人信息；不自动判分。",
+        "vi": "Nhóm ba người, dựa vào các gợi ý sau để kể một lần chuyển nhà đáng nhớ nhất. Có thể dùng tình huống hư cấu hoặc tên giả, không cần ghi thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:review-vocabulary",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "词语学习",
+        "vi": "Học từ vựng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "section": "学习小结：1—3课我的学习情况",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section5:vocabulary",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-vocabulary1",
+          "prompt": {
+            "zh": "我已经记住并会使用的词语",
+            "vi": "Những từ tôi đã nhớ và biết sử dụng"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-vocabulary2",
+          "prompt": {
+            "zh": "我还没记住的词语",
+            "vi": "Những từ tôi chưa nhớ"
+          },
+          "source": {
+            "pdfPage": 39,
+            "printedPage": 27,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "matrix": {
+        "mode": "responses",
+        "rowHeading": {
+          "zh": "学习情况",
+          "vi": "Tình hình học"
+        },
+        "columns": [
+          {
+            "zh": "词语",
+            "vi": "Từ vựng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "我已经记住并会使用的词语",
+              "vi": "Những từ tôi đã nhớ và biết sử dụng"
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-vocabulary1"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "我还没记住的词语",
+              "vi": "Những từ tôi chưa nhớ"
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-vocabulary2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:review-grammar",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我理解并会用",
+        "vi": "Tôi hiểu và biết dùng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 40,
+        "printedPage": 28,
+        "section": "学习小结：1—3课我的学习情况",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section5:grammar",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar1-1",
+          "prompt": {
+            "zh": "第1项：理解",
+            "vi": "Mục 1: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar1-2",
+          "prompt": {
+            "zh": "第1项：会用",
+            "vi": "Mục 1: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar2-1",
+          "prompt": {
+            "zh": "第2项：理解",
+            "vi": "Mục 2: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar2-2",
+          "prompt": {
+            "zh": "第2项：会用",
+            "vi": "Mục 2: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar3-1",
+          "prompt": {
+            "zh": "第3项：理解",
+            "vi": "Mục 3: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar3-2",
+          "prompt": {
+            "zh": "第3项：会用",
+            "vi": "Mục 3: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar4-1",
+          "prompt": {
+            "zh": "第4项：理解",
+            "vi": "Mục 4: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar4-2",
+          "prompt": {
+            "zh": "第4项：会用",
+            "vi": "Mục 4: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar5-1",
+          "prompt": {
+            "zh": "第5项：理解",
+            "vi": "Mục 5: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar5-2",
+          "prompt": {
+            "zh": "第5项：会用",
+            "vi": "Mục 5: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar6-1",
+          "prompt": {
+            "zh": "第6项：理解",
+            "vi": "Mục 6: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar6-2",
+          "prompt": {
+            "zh": "第6项：会用",
+            "vi": "Mục 6: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar7-1",
+          "prompt": {
+            "zh": "第7项：理解",
+            "vi": "Mục 7: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar7-2",
+          "prompt": {
+            "zh": "第7项：会用",
+            "vi": "Mục 7: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar8-1",
+          "prompt": {
+            "zh": "第8项：理解",
+            "vi": "Mục 8: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar8-2",
+          "prompt": {
+            "zh": "第8项：会用",
+            "vi": "Mục 8: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar9-1",
+          "prompt": {
+            "zh": "第9项：理解",
+            "vi": "Mục 9: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-grammar9-2",
+          "prompt": {
+            "zh": "第9项：会用",
+            "vi": "Mục 9: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "matrix": {
+        "mode": "checks",
+        "rowHeading": {
+          "zh": "语言点与原例句",
+          "vi": "Điểm ngữ pháp và ví dụ gốc"
+        },
+        "columns": [
+          {
+            "zh": "理解",
+            "vi": "Đã hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "固定短语“看上去／看起来”：他们看上去有点儿像。",
+              "vi": "Cụm 看上去／看起来: Trông họ hơi giống nhau."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar1-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar1-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "疑问代词的非疑问用法（1）：我好像在哪儿看到过这个箱子。",
+              "vi": "Đại từ nghi vấn không mang nghĩa hỏi (1): Hình như tôi từng thấy chiếc va-li này ở đâu đó."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar2-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar2-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "多项定语：李文是那个穿着黑衣服的短头发的年轻人吗？",
+              "vi": "Nhiều định ngữ: Lý Văn là người trẻ tóc ngắn mặc quần áo đen kia phải không?"
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar3-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar3-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "并列复句“又……又……”：我现在还真是又饿又渴。",
+              "vi": "Cấu trúc 又……又……: Bây giờ tôi đúng là vừa đói vừa khát."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar4-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar4-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "疑问代词的非疑问用法（2）：哪个菜都好吃。",
+              "vi": "Đại từ nghi vấn không mang nghĩa hỏi (2): Món nào cũng ngon."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar5-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar5-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "疑问代词的非疑问用法（3）：你们想吃什么就点什么。",
+              "vi": "Đại từ nghi vấn không mang nghĩa hỏi (3): Các bạn muốn ăn gì thì gọi món đó."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar6-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar6-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "程度副词“挺”：这个小区环境挺好的。",
+              "vi": "Phó từ mức độ 挺: Môi trường khu dân cư này khá tốt."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar7-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar7-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "程度补语（1）：我这几天忙坏了。",
+              "vi": "Bổ ngữ mức độ (1): Mấy hôm nay tôi bận quá trời."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar8-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar8-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "“就”和“才”：中国银行很近，走路几分钟就能到。我下午要去医院，很晚才能回来。",
+              "vi": "就 và 才: Ngân hàng Trung Quốc ở gần, đi bộ vài phút là đến. Chiều tôi phải đến bệnh viện, muộn mới về được."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l03:field:review-grammar9-1",
+              "hsk3-fltrp-2026:l03:field:review-grammar9-2"
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "理解与会用分别勾选；不强制评级，不算正确率。",
+        "vi": "Đánh dấu riêng mức hiểu và biết dùng; không bắt buộc xếp hạng, không tính tỉ lệ đúng."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:activity:review-effort",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Điều tôi cần cố gắng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 40,
+        "printedPage": 28,
+        "section": "学习小结：1—3课我的学习情况",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l03:section5:effort",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l03:field:review-effort",
+          "prompt": {
+            "zh": "我需要努力的：______。",
+            "vi": "Những điểm tôi cần cố gắng thêm: ______."
+          },
+          "source": {
+            "pdfPage": 40,
+            "printedPage": 28,
+            "section": "学习小结：1—3课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ]
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "owner": "hsk3-fltrp-2026:l03:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:warmup1-picture1"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "打开双门的冰箱，里面有分层摆放的食物。",
+        "vi": "Tủ lạnh hai cửa đang mở, bên trong có thức ăn xếp trên các ngăn."
+      },
+      "description": {
+        "zh": "打开双门的冰箱，里面有分层摆放的食物。",
+        "vi": "Tủ lạnh hai cửa đang mở, bên trong có thức ăn xếp trên các ngăn."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk3-l03-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "48e0b4ec826b3ab41e69e97e427f79217fab75ecdfc84fb6d9e69492a9d1d69e",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two open refrigerator doors, shelves and food; no lexical label."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "owner": "hsk3-fltrp-2026:l03:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:warmup1-picture2"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "墙上的空调下方，一只手拿着遥控器。",
+        "vi": "Dưới điều hòa trên tường, một bàn tay cầm điều khiển."
+      },
+      "description": {
+        "zh": "墙上的空调下方，一只手拿着遥控器。",
+        "vi": "Dưới điều hòa trên tường, một bàn tay cầm điều khiển."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk3-l03-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "019191a62cd710c855024f579566751627a83170fc3b5c1dd4b54f576c6054cb",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Wall unit and handheld remote; cooling lines distinguish appliance use."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "owner": "hsk3-fltrp-2026:l03:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:warmup1-picture3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一台有圆形前门和控制按钮的洗衣机。",
+        "vi": "Máy giặt có cửa tròn phía trước và nút điều khiển."
+      },
+      "description": {
+        "zh": "一台有圆形前门和控制按钮的洗衣机。",
+        "vi": "Máy giặt có cửa tròn phía trước và nút điều khiển."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk3-l03-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "c1f9706a6a7020a8d947cbe00da54fbdb55f5cb1f8fb07ca4513801dcb8a55f1",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Front-loading washer with round door and control dial."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "owner": "hsk3-fltrp-2026:l03:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:warmup1-picture4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "花园里有多色花丛、树木和弯曲的小路。",
+        "vi": "Trong vườn có các luống hoa nhiều màu, cây và lối đi uốn cong."
+      },
+      "description": {
+        "zh": "花园里有多色花丛、树木和弯曲的小路。",
+        "vi": "Trong vườn có các luống hoa nhiều màu, cây và lối đi uốn cong."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk3-l03-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "0c05c1568c29c8f76b79d31e17db707944a4ca8a3b7d3b571a67dbf20fcbd81d",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Flower beds, trees and path distinguish garden from bare outdoor ground."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:warmup1-5",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "辅助示意图：warmup1-5",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "owner": "hsk3-fltrp-2026:l03:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:warmup1",
+        "position": 5
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:warmup1-picture5"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "卫生间里有坐便器、洗手池、镜子和淋浴区。",
+        "vi": "Phòng tắm có bồn cầu, bồn rửa tay, gương và khu tắm vòi sen."
+      },
+      "description": {
+        "zh": "卫生间里有坐便器、洗手池、镜子和淋浴区。",
+        "vi": "Phòng tắm có bồn cầu, bồn rửa tay, gương và khu tắm vòi sen."
+      },
+      "sceneKey": "warmup1-5",
+      "file": "illustrations/hsk3-l03-warmup1-5.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "0673adfbe3db656c24eb782244092517f641868520f45498f5c1f137d61f3a50",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Toilet, sink, mirror and shower area make bathroom unmistakable."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:warmup1-6",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "section": "辅助示意图：warmup1-6",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 31,
+        "printedPage": 19,
+        "owner": "hsk3-fltrp-2026:l03:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:warmup1",
+        "position": 6
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:warmup1-picture6"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一盏亮着的台灯放在桌上，灯罩发出柔和的光。",
+        "vi": "Một đèn bàn đang bật đặt trên bàn, chụp đèn tỏa ánh sáng dịu."
+      },
+      "description": {
+        "zh": "一盏亮着的台灯放在桌上，灯罩发出柔和的光。",
+        "vi": "Một đèn bàn đang bật đặt trên bàn, chụp đèn tỏa ánh sáng dịu."
+      },
+      "sceneKey": "warmup1-6",
+      "file": "illustrations/hsk3-l03-warmup1-6.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "4c1c995027a3d278eda39a354839162476f5385630be59f81669c4d1b8b9bd17",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Illuminated shaded table lamp against darker background."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 32,
+        "printedPage": 20,
+        "owner": "hsk3-fltrp-2026:l03:text1",
+        "sourceOwner": "hsk3-fltrp-2026:l03:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "两只手横拿一部手机，屏幕上显示房子图片和详情示意。",
+        "vi": "Hai bàn tay cầm điện thoại nằm ngang; màn hình hiện hình căn nhà và phần mô tả minh họa."
+      },
+      "description": {
+        "zh": "两只手横拿一部手机，屏幕上显示房子图片和详情示意。",
+        "vi": "Hai bàn tay cầm điện thoại nằm ngang; màn hình hiện hình căn nhà và phần mô tả minh họa."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk3-l03-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "2846d9ae9871c6f7a19040d5bf9d092b9ecaad5ef2d66cd672ed93b81536678a",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Landscape phone with generic house and detail rows; no actual addresses."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 34,
+        "printedPage": 22,
+        "owner": "hsk3-fltrp-2026:l03:text2",
+        "sourceOwner": "hsk3-fltrp-2026:l03:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一男一女站在新家的厨房里，台面上放着刚买的食物。",
+        "vi": "Một nam và một nữ đứng trong bếp nhà mới; trên quầy có thực phẩm vừa mua."
+      },
+      "description": {
+        "zh": "一男一女站在新家的厨房里，台面上放着刚买的食物。",
+        "vi": "Một nam và một nữ đứng trong bếp nhà mới; trên quầy có thực phẩm vừa mua."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk3-l03-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "1a74348c56a857b17fca36fd6389f8bd39b68c912ba077fb1e93bcea5a0c5469",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two adults with groceries on kitchen counter."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 35,
+        "printedPage": 23,
+        "owner": "hsk3-fltrp-2026:l03:text3",
+        "sourceOwner": "hsk3-fltrp-2026:l03:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "几张没有真实号码、姓名或商标的通用卡片交叠摆放。",
+        "vi": "Vài thẻ chung xếp chồng, không có số thật, tên người hay nhãn hiệu."
+      },
+      "description": {
+        "zh": "几张没有真实号码、姓名或商标的通用卡片交叠摆放。",
+        "vi": "Vài thẻ chung xếp chồng, không có số thật, tên người hay nhãn hiệu."
+      },
+      "sceneKey": "text3",
+      "file": "illustrations/hsk3-l03-text3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "8c42a69fe8dbd3c334270ec594dc1254ee39f8625e37fc8ff7cff3ebfca768e5",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Original generic card shapes with chips; no real identifiers, numbers or brand marks."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:text4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "section": "辅助示意图：text4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 37,
+        "printedPage": 25,
+        "owner": "hsk3-fltrp-2026:l03:text4",
+        "sourceOwner": "hsk3-fltrp-2026:l03:text4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "房间里堆着大小不同的搬家纸箱，旁边有行李箱。",
+        "vi": "Trong phòng xếp các thùng giấy chuyển nhà nhiều kích thước, bên cạnh có vali."
+      },
+      "description": {
+        "zh": "房间里堆着大小不同的搬家纸箱，旁边有行李箱。",
+        "vi": "Trong phòng xếp các thùng giấy chuyển nhà nhiều kích thước, bên cạnh có vali."
+      },
+      "sceneKey": "text4",
+      "file": "illustrations/hsk3-l03-text4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "5ebfe7f457078ac2794d0d24a67634f6e3a94160221b63e71f218f016472480d",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Stacked paper boxes of different sizes with taped seams and a suitcase."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "owner": "hsk3-fltrp-2026:l03:section2",
+        "sourceOwner": "hsk3-fltrp-2026:l03:section2",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:picture1-blank1",
+        "hsk3-fltrp-2026:l03:field:picture1-blank2",
+        "hsk3-fltrp-2026:l03:field:picture1-blank3",
+        "hsk3-fltrp-2026:l03:field:picture1-blank4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:picture-dialogue1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一排两层住宅前有小花园、灌木和步行道。",
+        "vi": "Trước dãy nhà hai tầng có vườn nhỏ, bụi cây và lối đi bộ."
+      },
+      "description": {
+        "zh": "一排两层住宅前有小花园、灌木和步行道。",
+        "vi": "Trước dãy nhà hai tầng có vườn nhỏ, bụi cây và lối đi bộ."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk3-l03-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "f265e783baa5cf75b653a11565819678ef73599d32601b1e7857a44f2ad908a3",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Row of two-storey homes, shrubs and paths; generic neighborhood scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "owner": "hsk3-fltrp-2026:l03:section2",
+        "sourceOwner": "hsk3-fltrp-2026:l03:section2",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:picture2-blank1",
+        "hsk3-fltrp-2026:l03:field:picture2-blank2",
+        "hsk3-fltrp-2026:l03:field:picture2-blank3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:picture-dialogue2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一人坐在打开的电脑旁，手拿一张没有真实账户信息的通用卡。",
+        "vi": "Một người ngồi cạnh máy tính đang mở, cầm thẻ chung không có thông tin tài khoản thật."
+      },
+      "description": {
+        "zh": "一人坐在打开的电脑旁，手拿一张没有真实账户信息的通用卡。",
+        "vi": "Một người ngồi cạnh máy tính đang mở, cầm thẻ chung không có thông tin tài khoản thật."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk3-l03-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "02aba75d8abd24ccb8d0b655f8cb952337e3553a9fa77dbd1dcc54e287db8192",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Person holds generic card beside open laptop, hand contacts card."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 38,
+        "printedPage": 26,
+        "owner": "hsk3-fltrp-2026:l03:section2",
+        "sourceOwner": "hsk3-fltrp-2026:l03:section2",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l03:field:picture3-blank1",
+        "hsk3-fltrp-2026:l03:field:picture3-blank2",
+        "hsk3-fltrp-2026:l03:field:picture3-blank3",
+        "hsk3-fltrp-2026:l03:field:picture3-blank4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l03:activity:picture-dialogue3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "两名女子在敞开的门边交谈。",
+        "vi": "Hai phụ nữ trò chuyện bên cửa đang mở."
+      },
+      "description": {
+        "zh": "两名女子在敞开的门边交谈。",
+        "vi": "Hai phụ nữ trò chuyện bên cửa đang mở."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk3-l03-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "7a5e6c75346c006830a5752d3dd77ca40f2ed35bece5c2fcd4dee26564de5bc9",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two adult women talk beside open doors; no extra source group photograph."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l03:illustration:culture",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "section": "辅助示意图：culture",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 39,
+        "printedPage": 27,
+        "owner": "hsk3-fltrp-2026:l03:culture",
+        "sourceOwner": "hsk3-fltrp-2026:l03:section4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一只手把带房子形挂件的钥匙交向另一只张开的手。",
+        "vi": "Một bàn tay trao chìa khóa có móc hình ngôi nhà cho bàn tay đang mở."
+      },
+      "description": {
+        "zh": "一只手把带房子形挂件的钥匙交向另一只张开的手。",
+        "vi": "Một bàn tay trao chìa khóa có móc hình ngôi nhà cho bàn tay đang mở."
+      },
+      "sceneKey": "culture",
+      "file": "illustrations/hsk3-l03-culture.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "ca769b770bdbe9f29c12fb7fddcfc61618a1f82fba7dd49cc5a7ab9767fc1657",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Key ring and house-shaped fob passed between two hands; no legal advice or document details."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK3 lessons 2–3 additive draft author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40
+    ],
+    "answerPdfPages": [
+      4,
+      5
+    ],
+    "appendixPdfPages": [
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194
+    ],
+    "independentReview": "passed-source-content-and-real-renderer-state",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "1a4bfce63c8739d412f676ed5d1b080bc0beb642d98f95ba69f44941b664b3c8",
+    "method": "Actual source, answer and appendix pixels inspected before additive authoring. Baseline nested content unchanged; references bilingual and nonunique.",
+    "limitations": [
+      "Author preparation is not independent acceptance.",
+      "No browser/release acceptance or audio alignment/perceptual verification claimed.",
+      "Culture video absent from supplied resources; numbered dialogue audio is not a video substitute.",
+      "Culture is language-learning context, not current rental-law or housing advice.",
+      "Credit-card dialogue describes fictional textbook characters, not banking recommendations."
+    ],
+    "independentReviewReport": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md"
+  },
+  "additionalSourceRevisions": [
+    {
+      "id": "hsk3-official-vi-20261004",
+      "filename": "HSK3 (3.0).pdf",
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "bodyPrintedPageOffset": 12,
+      "language": "zh+vi",
+      "role": "additional-official-source; no replacement of original-source identity",
+      "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "sameBytesAsOriginalChineseSource": false,
+      "officialPOSAbbreviationLanguage": "Vietnamese",
+      "doesNotRevalidateOriginalEnglishAppendix": true,
+      "posLegend": {
+        "source": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表：词类缩写说明",
+          "provenance": "textbook"
+        },
+        "printedLanguage": "vi",
+        "rawLabelToChineseCategory": {
+          "dt.": "名词",
+          "đgt.": "动词",
+          "tt.": "形容词",
+          "đt.": "代词",
+          "phó.": "副词",
+          "giới.": "介词",
+          "liên.": "连词",
+          "trợ.": "助词",
+          "số.": "数词",
+          "lượng.": "量词",
+          "sl.": "数量词",
+          "ct.": "叹词",
+          "tượng.": "拟声词",
+          "đtnn.": "能愿动词",
+          "ttố.": "前缀",
+          "htố.": "后缀"
+        }
+      },
+      "sourceAudit": {
+        "authorStatus": "visual-reviewed",
+        "independentStatus": "accepted-source-evidence",
+        "scope": "Chinese, pinyin, printed number, POS, glossary page, lesson numbers and stars",
+        "vietnameseGlossAlignment": "deferred-to-Phase-B",
+        "independentEvidence": {
+          "status": "accepted-source-evidence",
+          "reviewer": "qa_hsk1_05_08",
+          "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+          "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+          "reviewedStableRows": 523,
+          "acceptedInputFiles": [
+            "official-vi-glossary.tsv",
+            "official-vi-l01-06.json",
+            "official-vi-l07-12.json",
+            "official-vi-l13-18.json"
+          ],
+          "acceptedStableIdCount": 523,
+          "acceptedInputManifest": [
+            {
+              "filename": "official-vi-glossary.tsv",
+              "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+              "status": "independently-accepted-source-evidence",
+              "glossaryRows": 487
+            },
+            {
+              "filename": "official-vi-l01-06.json",
+              "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 171,
+              "printedOccurrences": 162,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l07-12.json",
+              "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 184,
+              "printedOccurrences": 166,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l13-18.json",
+              "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 168,
+              "printedOccurrences": 163,
+              "vocabularyBoxes": 24
+            }
+          ],
+          "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+        }
+      }
+    }
+  ]
+}
+`;export{e as default};

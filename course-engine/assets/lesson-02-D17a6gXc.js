@@ -1,0 +1,7868 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk3-fltrp-2026",
+  "version": "2026.1",
+  "number": 2,
+  "id": "hsk3-fltrp-2026:l02",
+  "title": {
+    "zh": "你们想吃什么就点什么",
+    "vi": "Các bạn muốn ăn gì thì gọi món đó",
+    "py": "Nǐmen xiǎng chī shénme jiù diǎn shénme"
+  },
+  "source": {
+    "startPdfPage": 22,
+    "endPdfPage": 30,
+    "startPrintedPage": 10,
+    "endPrintedPage": 18
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent AI source/language/pedagogy reviewer",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "HSK3 sentence pinyin is editorial and optional; printed word-list pinyin retained. Polyphones: 只 zhǐ, 都 dōu, 便宜 piányi versus 方便 fāngbiàn, 好吃 hǎochī, 得 de.",
+      "客气 and 外卖 each carry two printed POS senses; represented separately with the same source word-list track, not as extra printed headwords.",
+      "Independent review inspected textbook PDF22–30 and answer PDF2–3 pixels, every JSON field, all8 ASR files and all8 MP3 SHA256/full-decode checks. This is not human/native listening certification.",
+      "Corrected scope ambiguity in 只, a valid alternative ordering, repeated manual/source questions, weak distractors and visual-description provenance. Restored printed inline glosses and added exact context/audio-label mapping."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并谈论餐厅的菜品、服务和个人的饮食习惯。",
+      "vi": "Nghe hiểu và trao đổi về món ăn, dịch vụ nhà hàng và thói quen ăn uống cá nhân.",
+      "id": "hsk3-fltrp-2026:l02:objective1",
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 10,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用疑问代词指代任何一个对象。",
+      "vi": "Nghe hiểu và dùng đại từ nghi vấn để chỉ bất kỳ người hoặc vật nào.",
+      "id": "hsk3-fltrp-2026:l02:objective2",
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 10,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "了解中国人就餐时使用的餐具。",
+      "vi": "Tìm hiểu dụng cụ ăn uống được người Trung Quốc sử dụng.",
+      "id": "hsk3-fltrp-2026:l02:objective3",
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 10,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk3-fltrp-2026:l02:warmup1",
+      "title": {
+        "zh": "将下列词语填到合适的位置。",
+        "vi": "Điền từ vào vị trí thích hợp."
+      },
+      "items": [
+        {
+          "zh": "选项：A 菜单；B 饮料；C 绿茶；D 蛋糕；E 鸡肉。",
+          "vi": "Lựa chọn: A thực đơn; B đồ uống; C trà xanh; D bánh ngọt; E thịt gà."
+        },
+        {
+          "zh": "菜单图：顶部标题______；肉：鱼肉、羊肉、______；主食：面条儿、包子、饺子；甜品：______、冰激凌；______：咖啡、奶茶、红茶、______。",
+          "vi": "Sơ đồ thực đơn: tiêu đề ______; thịt: cá, thịt cừu, ______; món chính: mì, bánh bao, sủi cảo; món ngọt: ______, kem; ______: cà phê, trà sữa, hồng trà, ______."
+        },
+        {
+          "zh": "书中注音：羊（yáng）；冰激凌（bīngjīlíng）。",
+          "vi": "Chú âm trong sách: 羊 yáng (cừu); 冰激凌 bīngjīlíng (kem).",
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "热身词语注释",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 10,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:warmup2",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên tình huống thực tế."
+      },
+      "items": [
+        {
+          "zh": "你经常点外卖吗？你什么时候一定会点外卖？",
+          "vi": "Bạn có thường gọi đồ ăn giao tận nơi không? Khi nào bạn nhất định sẽ gọi?"
+        },
+        {
+          "zh": "有外国朋友来中国，你想带他／她去吃什么？为什么？",
+          "vi": "Có bạn nước ngoài đến Trung Quốc, bạn muốn đưa họ đi ăn gì? Vì sao?"
+        }
+      ],
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk3-fltrp-2026:l02:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在饭馆，王一雪、刘明、白家月和李文在点菜。",
+        "vi": "Ở nhà hàng, Nhất Tuyết, Lưu Minh, Gia Nguyệt và Lý Văn đang gọi món.",
+        "source": {
+          "pdfPage": 23,
+          "printedPage": 11,
+          "section": "课文1情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "2-1",
+      "lines": [
+        {
+          "zh": "家月、李文，你们看看菜单，想吃点儿什么？",
+          "vi": "Gia Nguyệt, Lý Văn, các em xem thực đơn nhé, muốn ăn gì nào?",
+          "id": "hsk3-fltrp-2026:l02:text1:line1",
+          "speaker": "王一雪",
+          "py": "Jiāyuè, Lǐ Wén, nǐmen kànkan càidān, xiǎng chī diǎnr shénme?",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "谢谢一雪姐，我都可以，你们点吧。",
+          "vi": "Cảm ơn chị Nhất Tuyết, em ăn gì cũng được, mọi người gọi đi ạ.",
+          "id": "hsk3-fltrp-2026:l02:text1:line2",
+          "speaker": "李文",
+          "py": "Xièxie Yīxuě jiě, wǒ dōu kěyǐ, nǐmen diǎn ba.",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "飞了这么远，现在还真是又饿又渴。",
+          "vi": "Bay xa như vậy, bây giờ em đúng là vừa đói vừa khát.",
+          "id": "hsk3-fltrp-2026:l02:text1:line3",
+          "speaker": "白家月",
+          "py": "Fēi le zhème yuǎn, xiànzài hái zhēn shì yòu è yòu kě.",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那多点点儿，别客气。你们喝什么饮料？",
+          "vi": "Vậy gọi nhiều một chút, đừng khách sáo. Các em uống gì?",
+          "id": "hsk3-fltrp-2026:l02:text1:line4",
+          "speaker": "王一雪",
+          "py": "Nà duō diǎn diǎnr, bié kèqi. Nǐmen hē shénme yǐnliào?",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好久没喝中国茶，也好久没吃饺子了。我想喝绿茶、吃饺子，可以吗？",
+          "vi": "Lâu rồi em chưa uống trà Trung Quốc, cũng lâu rồi chưa ăn sủi cảo. Em muốn uống trà xanh, ăn sủi cảo, được không ạ?",
+          "id": "hsk3-fltrp-2026:l02:text1:line5",
+          "speaker": "白家月",
+          "py": "Hǎojiǔ méi hē Zhōngguó chá, yě hǎojiǔ méi chī jiǎozi le. Wǒ xiǎng hē lǜchá, chī jiǎozi, kěyǐ ma?",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没问题。你们看看还想吃什么。",
+          "vi": "Không vấn đề gì. Các em xem còn muốn ăn gì nữa nhé.",
+          "id": "hsk3-fltrp-2026:l02:text1:line6",
+          "speaker": "王一雪",
+          "py": "Méi wèntí. Nǐmen kànkan hái xiǎng chī shénme.",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "他们在做什么？",
+          "vi": "Họ đang làm gì?",
+          "id": "hsk3-fltrp-2026:l02:text1:question1",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "买东西",
+            "在家吃饭",
+            "在饭馆吃饭"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "白家月想吃什么中国菜？",
+          "vi": "Gia Nguyệt muốn ăn món Trung Quốc nào?",
+          "id": "hsk3-fltrp-2026:l02:text1:question2",
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "饺子",
+            "包子",
+            "面条儿"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "白家月现在觉得怎么样？",
+          "vi": "Bây giờ Gia Nguyệt cảm thấy thế nào?",
+          "id": "hsk3-fltrp-2026:l02:text1:question3",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月想喝什么？",
+          "vi": "Gia Nguyệt muốn uống gì?",
+          "id": "hsk3-fltrp-2026:l02:text1:question4",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一雪要点什么？",
+          "vi": "Nhất Tuyết định gọi món gì?",
+          "id": "hsk3-fltrp-2026:l02:text1:question5",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在饭馆，王一雪、刘明、白家月和李文一起吃饭。",
+        "vi": "Ở nhà hàng, Nhất Tuyết, Lưu Minh, Gia Nguyệt và Lý Văn đang cùng ăn.",
+        "source": {
+          "pdfPage": 24,
+          "printedPage": 12,
+          "section": "课文2情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "2-3",
+      "lines": [
+        {
+          "zh": "服务员，再给我们拿一双筷子、一个勺子和一个碗。",
+          "vi": "Nhân viên ơi, lấy thêm cho chúng tôi một đôi đũa, một chiếc thìa và một chiếc bát.",
+          "id": "hsk3-fltrp-2026:l02:text2:line1",
+          "speaker": "王一雪",
+          "py": "Fúwùyuán, zài gěi wǒmen ná yì shuāng kuàizi, yí ge sháozi hé yí ge wǎn.",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好的，请等一下，我马上去拿。",
+          "vi": "Vâng, xin chờ một chút, tôi đi lấy ngay.",
+          "id": "hsk3-fltrp-2026:l02:text2:line2",
+          "speaker": "服务员",
+          "py": "Hǎo de, qǐng děng yíxià, wǒ mǎshàng qù ná.",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这家饭馆的服务很热情，菜也都做得很好吃。你们尝尝，看喜不喜欢这些菜。",
+          "vi": "Nhà hàng này phục vụ rất nhiệt tình, các món cũng đều làm rất ngon. Các em nếm thử xem có thích những món này không.",
+          "id": "hsk3-fltrp-2026:l02:text2:line3",
+          "speaker": "王一雪",
+          "py": "Zhè jiā fànguǎn de fúwù hěn rèqíng, cài yě dōu zuò de hěn hǎochī. Nǐmen chángchang, kàn xǐ bu xǐhuan zhèxiē cài.",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "哪个菜都好吃。您点的这些菜真不错。",
+          "vi": "Món nào cũng ngon. Những món chị gọi thật tuyệt.",
+          "id": "hsk3-fltrp-2026:l02:text2:line4",
+          "speaker": "白家月",
+          "py": "Nǎ ge cài dōu hǎochī. Nín diǎn de zhèxiē cài zhēn búcuò.",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这里的饭菜又便宜又好吃，我们经常来，服务员都记住我们爱吃的菜了。",
+          "vi": "Đồ ăn ở đây vừa rẻ vừa ngon, bọn chị thường đến nên nhân viên đã nhớ cả những món bọn chị thích rồi.",
+          "id": "hsk3-fltrp-2026:l02:text2:line5",
+          "speaker": "王一雪",
+          "py": "Zhèlǐ de fàncài yòu piányi yòu hǎochī, wǒmen jīngcháng lái, fúwùyuán dōu jìzhù wǒmen ài chī de cài le.",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王姐，您经常来吃饭，今天送您一些水果，请慢用。",
+          "vi": "Chị Vương, chị thường đến dùng bữa nên hôm nay chúng tôi tặng chị ít trái cây, mời chị dùng ạ.",
+          "id": "hsk3-fltrp-2026:l02:text2:line6",
+          "speaker": "服务员",
+          "py": "Wáng jiě, nín jīngcháng lái chīfàn, jīntiān sòng nín yìxiē shuǐguǒ, qǐng màn yòng.",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一雪让服务员拿什么？",
+          "vi": "Nhất Tuyết nhờ nhân viên lấy gì?",
+          "id": "hsk3-fltrp-2026:l02:text2:question1",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "筷子和碗",
+            "勺子和筷子",
+            "勺子、筷子和碗"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "这家饭馆的服务怎么样？",
+          "vi": "Nhà hàng này phục vụ thế nào?",
+          "id": "hsk3-fltrp-2026:l02:text2:question2",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "很慢",
+            "很热情",
+            "不太好"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "王一雪觉得这家饭馆怎么样？",
+          "vi": "Nhất Tuyết thấy nhà hàng này thế nào?",
+          "id": "hsk3-fltrp-2026:l02:text2:question3",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月觉得这家饭馆的菜怎么样？",
+          "vi": "Gia Nguyệt thấy các món của nhà hàng thế nào?",
+          "id": "hsk3-fltrp-2026:l02:text2:question4",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "服务员为什么送了一些水果？",
+          "vi": "Vì sao nhân viên tặng ít trái cây?",
+          "id": "hsk3-fltrp-2026:l02:text2:question5",
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "课文2：情境",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "课文2音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在饭馆，王一雪、刘明、白家月和李文继续边吃边聊。",
+        "vi": "Ở nhà hàng, Nhất Tuyết, Lưu Minh, Gia Nguyệt và Lý Văn tiếp tục vừa ăn vừa trò chuyện.",
+        "source": {
+          "pdfPage": 26,
+          "printedPage": 14,
+          "section": "课文3情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "2-5",
+      "lines": [
+        {
+          "zh": "这个鸡肉饭太好吃了，我要再来吃一次。",
+          "vi": "Món cơm gà này ngon quá, em sẽ đến ăn thêm lần nữa.",
+          "id": "hsk3-fltrp-2026:l02:text3:line1",
+          "speaker": "白家月",
+          "py": "Zhè ge jīròufàn tài hǎochī le, wǒ yào zài lái chī yí cì.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你可以拿走这张菜单，看看下次还吃点儿什么。",
+          "vi": "Bạn có thể mang tờ thực đơn này về, xem lần sau còn muốn ăn gì.",
+          "id": "hsk3-fltrp-2026:l02:text3:line2",
+          "speaker": "李文",
+          "py": "Nǐ kěyǐ názǒu zhè zhāng càidān, kànkan xià cì hái chī diǎnr shénme.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不用拿菜单，在手机上就能看到，也可以选好了让他们给你送。",
+          "vi": "Không cần mang thực đơn đâu, có thể xem ngay trên điện thoại, chọn xong còn có thể nhờ họ giao cho em.",
+          "id": "hsk3-fltrp-2026:l02:text3:line3",
+          "speaker": "王一雪",
+          "py": "Búyòng ná càidān, zài shǒujī shang jiù néng kàndào, yě kěyǐ xuǎn hǎo le ràng tāmen gěi nǐ sòng.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他们家还能送外卖？",
+          "vi": "Nhà hàng này còn giao đồ ăn tận nơi nữa ạ?",
+          "id": "hsk3-fltrp-2026:l02:text3:line4",
+          "speaker": "白家月",
+          "py": "Tāmen jiā hái néng sòng wàimài?",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "对，现在很多饭馆都能送外卖，想吃什么就点什么。",
+          "vi": "Đúng, bây giờ nhiều nhà hàng đều giao đồ ăn, muốn ăn gì thì gọi món đó.",
+          "id": "hsk3-fltrp-2026:l02:text3:line5",
+          "speaker": "王一雪",
+          "py": "Duì, xiànzài hěn duō fànguǎn dōu néng sòng wàimài, xiǎng chī shénme jiù diǎn shénme.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那真是太方便了！",
+          "vi": "Vậy thì tiện quá!",
+          "id": "hsk3-fltrp-2026:l02:text3:line6",
+          "speaker": "白家月",
+          "py": "Nà zhēn shì tài fāngbiàn le!",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "在这家饭馆，白家月喜欢吃什么？",
+          "vi": "Ở nhà hàng này Gia Nguyệt thích ăn gì?",
+          "id": "hsk3-fltrp-2026:l02:text3:question1",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "包子",
+            "鸡肉饭",
+            "面条儿"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "王一雪为什么说“不用拿菜单”？",
+          "vi": "Vì sao Nhất Tuyết nói không cần lấy thực đơn?",
+          "id": "hsk3-fltrp-2026:l02:text3:question2",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "她有菜单",
+            "她不想再来",
+            "手机上可以看菜单"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "白家月为什么要再来吃一次？",
+          "vi": "Vì sao Gia Nguyệt muốn đến ăn lần nữa?",
+          "id": "hsk3-fltrp-2026:l02:text3:question3",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这家饭馆可以怎么点菜？",
+          "vi": "Có thể gọi món ở nhà hàng này bằng cách nào?",
+          "id": "hsk3-fltrp-2026:l02:text3:question4",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "听说（tīngshuō，hear about）很多饭馆都能送外卖，白家月觉得怎么样？",
+          "vi": "Nghe nói (听说 tīngshuō) nhiều nhà hàng đều giao đồ ăn, Gia Nguyệt thấy thế nào?",
+          "id": "hsk3-fltrp-2026:l02:text3:question5",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "课文3音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在李文家，李文在写日记。",
+        "vi": "Ở nhà, Lý Văn đang viết nhật ký.",
+        "source": {
+          "pdfPage": 28,
+          "printedPage": 16,
+          "section": "课文4情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "2-7",
+      "lines": [
+        {
+          "zh": "这些年在国外，我很少自己做饭。早饭我吃一个面包，有时候吃一块蛋糕，再喝一杯咖啡。午饭和晚饭也都在外面吃。",
+          "vi": "Những năm ở nước ngoài, tôi hiếm khi tự nấu ăn. Bữa sáng tôi ăn một chiếc bánh mì, đôi khi ăn một miếng bánh ngọt, rồi uống một cốc cà phê. Bữa trưa và bữa tối cũng đều ăn ở ngoài.",
+          "id": "hsk3-fltrp-2026:l02:text4:line1",
+          "speaker": "李文",
+          "py": "Zhèxiē nián zài guówài, wǒ hěn shǎo zìjǐ zuòfàn. Zǎofàn wǒ chī yí ge miànbāo, yǒu shíhou chī yí kuài dàngāo, zài hē yì bēi kāfēi. Wǔfàn hé wǎnfàn yě dōu zài wàimian chī.",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "快要考试的时候又忙又累，没时间出去吃饭，家里又什么吃的都没有，我可能好几天只吃方便面。",
+          "vi": "Lúc sắp thi, tôi vừa bận vừa mệt, không có thời gian ra ngoài ăn, trong nhà lại chẳng có gì ăn, có khi mấy ngày liền tôi chỉ ăn mì ăn liền.",
+          "id": "hsk3-fltrp-2026:l02:text4:line2",
+          "speaker": "李文",
+          "py": "Kuài yào kǎoshì de shíhou yòu máng yòu lèi, méi shíjiān chūqù chīfàn, jiā lǐ yòu shénme chī de dōu méiyǒu, wǒ kěnéng hǎo jǐ tiān zhǐ chī fāngbiànmiàn.",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "现在回到中国了，每天能吃到妈妈做的饭，我真是太高兴了！",
+          "vi": "Giờ về Trung Quốc rồi, ngày nào cũng được ăn cơm mẹ nấu, tôi vui quá!",
+          "id": "hsk3-fltrp-2026:l02:text4:line3",
+          "speaker": "李文",
+          "py": "Xiànzài huídào Zhōngguó le, měi tiān néng chī dào māma zuò de fàn, wǒ zhēn shì tài gāoxìng le!",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "有时候妈妈只做几个简单的菜，我也非常爱吃，因为什么都没有妈妈做的饭好吃。",
+          "vi": "Đôi khi mẹ chỉ làm vài món đơn giản nhưng tôi vẫn rất thích, vì không có gì ngon bằng cơm mẹ nấu.",
+          "id": "hsk3-fltrp-2026:l02:text4:line4",
+          "speaker": "李文",
+          "py": "Yǒu shíhou māma zhǐ zuò jǐ ge jiǎndān de cài, wǒ yě fēicháng ài chī, yīnwèi shénme dōu méiyǒu māma zuò de fàn hǎochī.",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "快要考试的时候，李文怎么吃饭？",
+          "vi": "Khi sắp thi, Lý Văn ăn uống thế nào?",
+          "id": "hsk3-fltrp-2026:l02:text4:question1",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "吃方便面",
+            "出去吃饭",
+            "回妈妈家吃"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "回到中国了，李文为什么很高兴？",
+          "vi": "Vì sao khi về Trung Quốc Lý Văn rất vui?",
+          "id": "hsk3-fltrp-2026:l02:text4:question2",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "妈妈每天做很多菜",
+            "可以经常去外面吃饭",
+            "每天能吃到妈妈做的饭"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文在国外经常做饭吗？",
+          "vi": "Lý Văn có thường nấu ăn khi ở nước ngoài không?",
+          "id": "hsk3-fltrp-2026:l02:text4:question3",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文为什么好几天只吃方便面？",
+          "vi": "Vì sao Lý Văn mấy ngày liền chỉ ăn mì ăn liền?",
+          "id": "hsk3-fltrp-2026:l02:text4:question4",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "回到中国后什么事让他非常高兴？",
+          "vi": "Điều gì khiến anh ấy rất vui sau khi về Trung Quốc?",
+          "id": "hsk3-fltrp-2026:l02:text4:question5",
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4音频标记",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "菜单",
+      "vi": "thực đơn",
+      "id": "hsk3-fltrp-2026:l02:word01",
+      "py": "càidān",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：菜单",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "菜单",
+            "printedPinyin": "càidān",
+            "normalizedPinyin": "càidān",
+            "printedNumber": 1,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "菜单",
+            "printedPinyin": "càidān",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "又",
+      "vi": "vừa…vừa…; lại",
+      "id": "hsk3-fltrp-2026:l02:word02",
+      "py": "yòu",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：又",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "又",
+            "printedPinyin": "yòu",
+            "normalizedPinyin": "yòu",
+            "printedNumber": 2,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "又",
+            "printedPinyin": "yòu",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "饿",
+      "vi": "đói",
+      "id": "hsk3-fltrp-2026:l02:word03",
+      "py": "è",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：饿",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "饿",
+            "printedPinyin": "è",
+            "normalizedPinyin": "è",
+            "printedNumber": 3,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "饿",
+            "printedPinyin": "è",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "渴",
+      "vi": "khát",
+      "id": "hsk3-fltrp-2026:l02:word04",
+      "py": "kě",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：渴",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "渴",
+            "printedPinyin": "kě",
+            "normalizedPinyin": "kě",
+            "printedNumber": 4,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "渴",
+            "printedPinyin": "kě",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "客气",
+      "vi": "khách sáo, tỏ ra khách sáo",
+      "id": "hsk3-fltrp-2026:l02:word05",
+      "py": "kèqi",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：客气",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "v./adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l02:printed-word:5"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "客气",
+            "printedPinyin": "kèqi",
+            "normalizedPinyin": "kèqi",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "客气",
+            "printedPinyin": "kèqi",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": true
+          },
+          "preservedCourseDifferences": [
+            {
+              "id": "hsk3-fltrp-2026:l02:word05",
+              "kind": "additional-source-star-difference",
+              "currentStarred": false,
+              "officialRawStarred": true,
+              "officialGlossaryPdfPage": 190,
+              "courseValueChanged": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zh": "客气",
+      "vi": "lịch sự, khách sáo",
+      "id": "hsk3-fltrp-2026:l02:word06",
+      "py": "kèqi",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：客气",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "v./adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l02:printed-word:5"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "客气",
+            "printedPinyin": "kèqi",
+            "normalizedPinyin": "kèqi",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "客气",
+            "printedPinyin": "kèqi",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": true
+          },
+          "preservedCourseDifferences": [
+            {
+              "id": "hsk3-fltrp-2026:l02:word06",
+              "kind": "additional-source-star-difference",
+              "currentStarred": false,
+              "officialRawStarred": true,
+              "officialGlossaryPdfPage": 190,
+              "courseValueChanged": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "zh": "饮料",
+      "vi": "đồ uống",
+      "id": "hsk3-fltrp-2026:l02:word07",
+      "py": "yǐnliào",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：饮料",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "饮料",
+            "printedPinyin": "yǐnliào",
+            "normalizedPinyin": "yǐnliào",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "饮料",
+            "printedPinyin": "yǐnliào",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "好久",
+      "vi": "rất lâu, lâu lắm",
+      "id": "hsk3-fltrp-2026:l02:word08",
+      "py": "hǎojiǔ",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "2-2",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：好久",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 23,
+              "printedPage": 11,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "好久",
+            "printedPinyin": "hǎojiǔ",
+            "normalizedPinyin": "hǎojiǔ",
+            "printedNumber": 7,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "好久",
+            "printedPinyin": "hǎojiǔ",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "服务",
+      "vi": "phục vụ",
+      "id": "hsk3-fltrp-2026:l02:word09",
+      "py": "fúwù",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：服务",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "服务",
+            "printedPinyin": "fúwù",
+            "normalizedPinyin": "fúwù",
+            "printedNumber": 8,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "服务",
+            "printedPinyin": "fúwù",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "员",
+      "vi": "hậu tố đặt sau danh từ hoặc động từ để chỉ người",
+      "id": "hsk3-fltrp-2026:l02:word10",
+      "py": "yuán",
+      "pos": "hậu tố",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：员",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "suf.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "员",
+            "printedPinyin": "yuán",
+            "normalizedPinyin": "yuán",
+            "printedNumber": 9,
+            "sourceList": "new-words",
+            "printedPOSRaw": "htố.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "后缀"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "员",
+            "printedPinyin": "yuán",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "双",
+      "vi": "đôi, cặp",
+      "id": "hsk3-fltrp-2026:l02:word11",
+      "py": "shuāng",
+      "pos": "lượng từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：双",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "m.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "双",
+            "printedPinyin": "shuāng",
+            "normalizedPinyin": "shuāng",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "lượng.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "量词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "双",
+            "printedPinyin": "shuāng",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "筷子",
+      "vi": "đũa",
+      "id": "hsk3-fltrp-2026:l02:word12",
+      "py": "kuàizi",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：筷子",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "筷子",
+            "printedPinyin": "kuàizi",
+            "normalizedPinyin": "kuàizi",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "筷子",
+            "printedPinyin": "kuàizi",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "勺子",
+      "vi": "thìa, muỗng",
+      "id": "hsk3-fltrp-2026:l02:word13",
+      "py": "sháozi",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：勺子",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 12,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "勺子",
+            "printedPinyin": "sháozi",
+            "normalizedPinyin": "sháozi",
+            "printedNumber": 12,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "勺子",
+            "printedPinyin": "sháozi",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "碗",
+      "vi": "bát, chén",
+      "id": "hsk3-fltrp-2026:l02:word14",
+      "py": "wǎn",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：碗",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 13,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "碗",
+            "printedPinyin": "wǎn",
+            "normalizedPinyin": "wǎn",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "碗",
+            "printedPinyin": "wǎn",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "马上",
+      "vi": "ngay, lập tức",
+      "id": "hsk3-fltrp-2026:l02:word15",
+      "py": "mǎshàng",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：马上",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 14,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "马上",
+            "printedPinyin": "mǎshàng",
+            "normalizedPinyin": "mǎshàng",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "马上",
+            "printedPinyin": "mǎshàng",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "热情",
+      "vi": "nhiệt tình, niềm nở",
+      "id": "hsk3-fltrp-2026:l02:word16",
+      "py": "rèqíng",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：热情",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 15,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "热情",
+            "printedPinyin": "rèqíng",
+            "normalizedPinyin": "rèqíng",
+            "printedNumber": 15,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "热情",
+            "printedPinyin": "rèqíng",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "尝",
+      "vi": "nếm, ăn thử",
+      "id": "hsk3-fltrp-2026:l02:word17",
+      "py": "cháng",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：尝",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 16,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "尝",
+            "printedPinyin": "cháng",
+            "normalizedPinyin": "cháng",
+            "printedNumber": 16,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "尝",
+            "printedPinyin": "cháng",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "记",
+      "vi": "nhớ, ghi nhớ",
+      "id": "hsk3-fltrp-2026:l02:word18",
+      "py": "jì",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：记",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 17,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "记",
+            "printedPinyin": "jì",
+            "normalizedPinyin": "jì",
+            "printedNumber": 17,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "记",
+            "printedPinyin": "jì",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "用",
+      "vi": "dùng, sử dụng; ăn/uống (lịch sự)",
+      "id": "hsk3-fltrp-2026:l02:word19",
+      "py": "yòng",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "2-4",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：用",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 18,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 25,
+              "printedPage": 13,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "用",
+            "printedPinyin": "yòng",
+            "normalizedPinyin": "yòng",
+            "printedNumber": 18,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "用",
+            "printedPinyin": "yòng",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "鸡",
+      "vi": "gà",
+      "id": "hsk3-fltrp-2026:l02:word20",
+      "py": "jī",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：鸡",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 19,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "鸡",
+            "printedPinyin": "jī",
+            "normalizedPinyin": "jī",
+            "printedNumber": 19,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "鸡",
+            "printedPinyin": "jī",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "张",
+      "vi": "tờ, bức (lượng từ cho giấy, tranh…)",
+      "id": "hsk3-fltrp-2026:l02:word21",
+      "py": "zhāng",
+      "pos": "lượng từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：张",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 20,
+        "sourcePos": "m.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2,
+          16
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "张",
+            "printedPinyin": "zhāng",
+            "normalizedPinyin": "zhāng",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "lượng.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "量词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "张",
+            "printedPinyin": "zhāng",
+            "lessonNumbers": [
+              2,
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "不用",
+      "vi": "không cần",
+      "id": "hsk3-fltrp-2026:l02:word22",
+      "py": "búyòng",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：不用",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 21,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "不用",
+            "printedPinyin": "búyòng",
+            "normalizedPinyin": "búyòng",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "不用",
+            "printedPinyin": "búyòng",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "选",
+      "vi": "chọn, lựa chọn",
+      "id": "hsk3-fltrp-2026:l02:word23",
+      "py": "xuǎn",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：选",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 22,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "选",
+            "printedPinyin": "xuǎn",
+            "normalizedPinyin": "xuǎn",
+            "printedNumber": 22,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "选",
+            "printedPinyin": "xuǎn",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "外卖",
+      "vi": "đồ ăn mang đi/giao tận nơi",
+      "id": "hsk3-fltrp-2026:l02:word24",
+      "py": "wàimài",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：外卖",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 23,
+        "sourcePos": "n./v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l02:printed-word:23"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "外卖",
+            "printedPinyin": "wàimài",
+            "normalizedPinyin": "wàimài",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt./đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词",
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "外卖",
+            "printedPinyin": "wàimài",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "外卖",
+      "vi": "bán đồ ăn mang đi",
+      "id": "hsk3-fltrp-2026:l02:word25",
+      "py": "wàimài",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：外卖",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 23,
+        "sourcePos": "n./v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l02:printed-word:23"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "外卖",
+            "printedPinyin": "wàimài",
+            "normalizedPinyin": "wàimài",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt./đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词",
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "外卖",
+            "printedPinyin": "wàimài",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "方便",
+      "vi": "thuận tiện",
+      "id": "hsk3-fltrp-2026:l02:word26",
+      "py": "fāngbiàn",
+      "pos": "tính từ",
+      "sourceText": 3,
+      "audioTrack": "2-6",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：方便",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 24,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 27,
+              "printedPage": 15,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "方便",
+            "printedPinyin": "fāngbiàn",
+            "normalizedPinyin": "fāngbiàn",
+            "printedNumber": 24,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "方便",
+            "printedPinyin": "fāngbiàn",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "蛋糕",
+      "vi": "bánh ngọt, bánh ga-tô",
+      "id": "hsk3-fltrp-2026:l02:word27",
+      "py": "dàngāo",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "2-8",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：蛋糕",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 25,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 16,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "蛋糕",
+            "printedPinyin": "dàngāo",
+            "normalizedPinyin": "dàngāo",
+            "printedNumber": 25,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "蛋糕",
+            "printedPinyin": "dàngāo",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "只",
+      "vi": "chỉ",
+      "id": "hsk3-fltrp-2026:l02:word28",
+      "py": "zhǐ",
+      "pos": "phó từ",
+      "sourceText": 4,
+      "audioTrack": "2-8",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：只",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 26,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 16,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "只",
+            "printedPinyin": "zhǐ",
+            "normalizedPinyin": "zhǐ",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "只",
+            "printedPinyin": "zhǐ",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "方便面",
+      "vi": "mì ăn liền",
+      "id": "hsk3-fltrp-2026:l02:word29",
+      "py": "fāngbiànmiàn",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "2-8",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：方便面",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 27,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 16,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "方便面",
+            "printedPinyin": "fāngbiànmiàn",
+            "normalizedPinyin": "fāngbiànmiàn",
+            "printedNumber": 27,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "方便面",
+            "printedPinyin": "fāngbiànmiàn",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "简单",
+      "vi": "đơn giản",
+      "id": "hsk3-fltrp-2026:l02:word30",
+      "py": "jiǎndān",
+      "pos": "tính từ",
+      "sourceText": 4,
+      "audioTrack": "2-8",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：简单",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 28,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          2
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 28,
+              "printedPage": 16,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "简单",
+            "printedPinyin": "jiǎndān",
+            "normalizedPinyin": "jiǎndān",
+            "printedNumber": 28,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "简单",
+            "printedPinyin": "jiǎndān",
+            "lessonNumbers": [
+              2
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3-fltrp-2026:l02:grammar1",
+      "title": {
+        "zh": "并列复句“又……又……”",
+        "vi": "Cấu trúc song song 又……又……"
+      },
+      "structure": "又 + tính từ1 + 又 + tính từ2",
+      "explanation": {
+        "zh": "“又……又……”与形容词搭配，表示人或事物同时具有两个特点。",
+        "vi": "又……又…… kết hợp với tính từ, diễn đạt hai đặc điểm đồng thời của người hay vật, tương đương “vừa…vừa…”."
+      },
+      "examples": [
+        {
+          "zh": "我现在还真是又饿又渴。",
+          "vi": "Bây giờ tôi đúng là vừa đói vừa khát.",
+          "py": "Wǒ xiànzài hái zhēn shì yòu è yòu kě.",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那个女孩儿又高又漂亮。",
+          "vi": "Cô gái đó vừa cao vừa xinh.",
+          "py": "Nà ge nǚháir yòu gāo yòu piàoliang.",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个饭馆的菜又便宜又好吃。",
+          "vi": "Món ăn ở nhà hàng này vừa rẻ vừa ngon.",
+          "py": "Zhè ge fànguǎn de cài yòu piányi yòu hǎochī.",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "改写：他的新家很大，也很干净（gānjìng，clean）。",
+          "vi": "Viết lại: Nhà mới của anh ấy rất rộng, cũng rất sạch (干净 gānjìng).",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”：改写句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "改写：他写汉字写得很快，也很漂亮。",
+          "vi": "Viết lại: Anh ấy viết chữ Hán rất nhanh, cũng rất đẹp.",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”：改写句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "改写：这个超市里的东西很多，也很便宜。",
+          "vi": "Viết lại: Siêu thị này có rất nhiều đồ, cũng rất rẻ.",
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”：改写句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "并列复句“又……又……”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:grammar2",
+      "title": {
+        "zh": "疑问代词的非疑问用法（2）",
+        "vi": "Cách dùng không mang nghĩa hỏi của đại từ nghi vấn (2)"
+      },
+      "structure": "哪／哪儿／什么／谁／怎么……都……",
+      "explanation": {
+        "zh": "疑问代词“哪、哪儿、什么、谁、怎么”等可以表示任指，如“谁”指任何一个人，“什么”指任何一件东西，句中常用“都”与之呼应。",
+        "vi": "Các đại từ nghi vấn có thể chỉ bất kỳ người, vật, nơi hay cách thức nào. 都 thường đi kèm để biểu thị “ai/cái gì/ở đâu/cách nào cũng…”. Trong câu phủ định, 什么都没有 là không có gì cả."
+      },
+      "examples": [
+        {
+          "zh": "哪个菜都好吃。",
+          "vi": "Món nào cũng ngon.",
+          "py": "Nǎ ge cài dōu hǎochī.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这次旅游，我去哪儿都可以。",
+          "vi": "Chuyến du lịch này tôi đi đâu cũng được.",
+          "py": "Zhè cì lǚyóu, wǒ qù nǎr dōu kěyǐ.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我下午有时间，你想什么时候来都没问题。",
+          "vi": "Chiều tôi rảnh, bạn muốn đến lúc nào cũng được.",
+          "py": "Wǒ xiàwǔ yǒu shíjiān, nǐ xiǎng shénme shíhou lái dōu méi wèntí.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "用“什么”改写：我喜欢吃中国菜，也喜欢吃外国菜。",
+          "vi": "Dùng 什么 viết lại: Tôi thích món Trung Quốc, cũng thích món nước ngoài.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）：改写句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“谁”改写：小李很会做饭，大家都喜欢吃他做的饭。",
+          "vi": "Dùng 谁 viết lại: Tiểu Lý nấu ăn rất giỏi, mọi người đều thích ăn cơm anh ấy nấu.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）：改写句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“怎么”改写：饭馆不太远，我们打车、坐公交车、走路去都可以。",
+          "vi": "Dùng 怎么 viết lại: Nhà hàng không xa, đi taxi, xe buýt hay đi bộ đều được.",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）：改写句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "疑问代词的非疑问用法（2）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:grammar3",
+      "title": {
+        "zh": "疑问代词的非疑问用法（3）",
+        "vi": "Cách dùng không mang nghĩa hỏi của đại từ nghi vấn (3)"
+      },
+      "structure": "……疑问代词……，（chủ ngữ2）就……同一疑问代词……",
+      "explanation": {
+        "zh": "两个相同的疑问代词前后呼应，指同一个人、事物、方式、时间或地点。前后主语相同时，后一个主语可以省略；主语不同时，第二个主语放在“就”前面。",
+        "vi": "Hai đại từ nghi vấn giống nhau đối ứng, cùng chỉ một người, vật, cách thức, thời gian hoặc địa điểm: “muốn gì thì…nấy”. Nếu hai vế cùng chủ ngữ, có thể lược chủ ngữ vế sau; nếu khác, chủ ngữ thứ hai đứng trước 就."
+      },
+      "examples": [
+        {
+          "zh": "你们想吃什么就点什么。",
+          "vi": "Các bạn muốn ăn gì thì gọi món đó.",
+          "py": "Nǐmen xiǎng chī shénme jiù diǎn shénme.",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你觉得哪个好看就买哪个。",
+          "vi": "Bạn thấy cái nào đẹp thì mua cái đó.",
+          "py": "Nǐ juéde nǎ ge hǎokàn jiù mǎi nǎ ge.",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你想去哪儿，我们就去哪儿。",
+          "vi": "Bạn muốn đi đâu thì chúng ta đi đó.",
+          "py": "Nǐ xiǎng qù nǎr, wǒmen jiù qù nǎr.",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：这是菜单，我们点什么？ B：______。",
+          "vi": "A: Đây là thực đơn, chúng ta gọi gì? B: ______.",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：我们怎么去电影院？ B：______。",
+          "vi": "A: Chúng ta đến rạp chiếu phim thế nào? B: ______.",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：我什么时候去找你？ B：______。",
+          "vi": "A: Khi nào tôi đến tìm bạn? B: ______.",
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "疑问代词的非疑问用法（3）",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk3-fltrp-2026:l02:section1",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：上／下＋量词",
+        "vi": "Mẹo học: 上／下 + lượng từ"
+      },
+      "blocks": [
+        {
+          "zh": "“上／下＋量词”主要用来表示时间顺序。“上”表示过去，“下”表示将来。例如：上次／下次、上周／下周、上个月／下个月。",
+          "vi": "上／下 + lượng từ chủ yếu chỉ thứ tự thời gian. 上 chỉ thời gian trước, 下 chỉ thời gian sau. Ví dụ: lần trước/lần sau, tuần trước/tuần sau, tháng trước/tháng sau.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "小语助力：上／下＋量词",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "小语助力：上／下＋量词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "blocks": [
+        {
+          "zh": "第一组：A 尝；B 只；C 菜单；D 记；E 用。",
+          "vi": "Nhóm 1: A nếm; B chỉ; C thực đơn; D nhớ; E dùng.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "1. 我觉得______筷子吃饭更方便。",
+          "vi": "1. Tôi thấy ______ đũa ăn cơm tiện hơn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "2. 你______住那个饭馆的名字了吗？",
+          "vi": "2. Bạn đã ______ tên nhà hàng đó chưa?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "3. 她现在很饿，早上______吃了一块蛋糕。",
+          "vi": "3. Bây giờ cô ấy rất đói, sáng ______ ăn một miếng bánh ngọt.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "4. ______上有好几个新菜，你看看我们吃哪个？",
+          "vi": "4. Trên ______ có mấy món mới, bạn xem chúng ta ăn món nào?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "5. 我妈妈会做中国菜，下次你们来我家______一下她做的菜。",
+          "vi": "5. Mẹ tôi biết nấu món Trung Quốc, lần sau đến nhà tôi các bạn hãy ______ món mẹ nấu.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第二组：A 饿；B 不用；C 简单；D 好久；E 马上。",
+          "vi": "Nhóm 2: A đói; B không cần; C đơn giản; D lâu lắm; E ngay.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "6. A：我还不太会用筷子，你们有勺子吗？ B：有，你等一下，我______给你拿。",
+          "vi": "6. A: Tôi chưa biết dùng đũa lắm, có thìa không? B: Có, chờ một chút, tôi lấy cho bạn ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "7. A：我找服务员要一下菜单，咱们点菜。 B：在手机上就可以点菜，______要菜单。",
+          "vi": "7. A: Tôi xin nhân viên thực đơn, chúng ta gọi món. B: Có thể gọi trên điện thoại, ______ xin thực đơn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "8. A：我太______了，不想做饭了，我们叫个外卖，怎么样？ B：没问题，你想吃什么，我们就点什么。",
+          "vi": "8. A: Tôi quá ______, không muốn nấu nữa, gọi đồ ăn giao đến nhé? B: Được, bạn muốn ăn gì chúng ta gọi đó.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "9. A：你想去哪个饭馆吃饭？ B：我______没吃饺子了，去楼下的饺子馆吧。",
+          "vi": "9. A: Bạn muốn đến nhà hàng nào? B: ______ tôi chưa ăn sủi cảo, đến quán sủi cảo dưới nhà nhé.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "10. A：你下班回家自己做饭吗？ B：不做饭，我就吃碗方便面。方便面是最______的晚饭。",
+          "vi": "10. A: Tan làm về bạn tự nấu không? B: Không, tôi ăn bát mì ăn liền. Mì ăn liền là bữa tối ______ nhất.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:section3",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: miêu tả hình"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và điểm ngữ pháp mới trong bài để miêu tả hình.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片描述（编辑补充）：图1，两位客人坐在桌边一起看菜单。图2，戴黄色头盔的外卖配送员骑车，身后有黄色配送箱。",
+          "vi": "Mô tả tranh (biên tập bổ sung): Hình 1, hai khách ngồi bên bàn cùng xem thực đơn. Hình 2, người giao đồ ăn đội mũ bảo hiểm vàng, đi xe với thùng giao hàng màu vàng phía sau.",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习图片描述",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "A：这是菜单，你看看，______就点什么。 B：谢谢，您点吧，我______都可以。 A：我发现有不少新菜，你想不想______？ B：好，这些菜看起来很好吃。",
+          "vi": "A: Đây là thực đơn, bạn xem, ______ thì gọi món đó. B: Cảm ơn, anh/chị gọi đi, tôi ______ cũng được. A: Có khá nhiều món mới, bạn có muốn ______ không? B: Được, trông ngon quá.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：今天我有点儿累，不想做饭，点个______吧。 B：好，我来点。______。 A：我吃什么都可以。我们现在点，什么时候能送到？ B：应该很快，我看看。______就能到。",
+          "vi": "A: Hôm nay hơi mệt, tôi không muốn nấu, gọi ______ nhé. B: Được, tôi gọi. ______. A: Tôi ăn gì cũng được. Gọi bây giờ thì lúc nào giao đến? B: Chắc nhanh thôi, để tôi xem. ______ là đến.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片描述（编辑补充）：图3，一男一女坐在桌边看菜单，女子用手托着头，男子指着菜单。",
+          "vi": "Mô tả tranh (biên tập bổ sung): Hình 3, một nam một nữ ngồi bên bàn xem thực đơn; người nữ chống tay lên đầu, người nam chỉ vào thực đơn.",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "综合练习图片描述",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "A：你想喝什么______？ B：我______没喝茶了，来一杯吧。你看看想吃什么？ A：______上有这么多菜，我不知道点什么，还是你来吧。 B：那就点第一个，小王说那个菜______。",
+          "vi": "A: Bạn muốn uống ______ gì? B: ______ tôi chưa uống trà, gọi một cốc nhé. Bạn xem muốn ăn gì? A: Trên ______ nhiều món quá, tôi không biết gọi gì, bạn gọi đi. B: Vậy gọi món đầu tiên, Tiểu Vương nói món đó ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:section4",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: thảo luận nhóm"
+      },
+      "blocks": [
+        {
+          "zh": "3～4人一组，讨论在饭馆吃饭、点外卖和自己做饭这几种方式中，你们更喜欢哪种？为什么？回答时使用本课所学的词语和语言点。讨论过程中边听边做记录，讨论结束后向全班同学汇报本小组的情况。",
+          "vi": "Theo nhóm 3–4 người, thảo luận thích ăn ở nhà hàng, gọi đồ ăn giao tận nơi hay tự nấu hơn, và vì sao. Dùng từ và ngữ pháp của bài. Vừa nghe vừa ghi chép, sau đó trình bày kết quả của nhóm trước lớp.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片描述（编辑补充）：一群人在饭馆一起吃饭；一人用手机点外卖；一人在厨房做饭。",
+          "vi": "Mô tả tranh (biên tập bổ sung): một nhóm ăn cùng nhau ở nhà hàng; một người dùng điện thoại gọi đồ ăn giao đến; một người nấu ăn trong bếp.",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "课堂活动图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:section5",
+      "kind": "culture",
+      "title": {
+        "zh": "小语的彩蛋：筷子",
+        "vi": "Góc văn hóa: đũa"
+      },
+      "blocks": [
+        {
+          "zh": "筷子。配套视频编号：2-1。",
+          "vi": "Đũa. Mã video đi kèm: 2-1.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "小语的彩蛋：筷子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片描述（编辑补充）：一双深色筷子放在筷架上。",
+          "vi": "Mô tả tranh (biên tập bổ sung): một đôi đũa màu sẫm đặt trên gác đũa.",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "小语的彩蛋图片描述",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "本次提供的资料没有文化视频文件。可进行补充口语活动：你会用筷子吗？你家里通常用哪些餐具？",
+          "vi": "Tài liệu được cung cấp không có tệp video văn hóa. Hoạt động nói bổ trợ: Bạn biết dùng đũa không? Gia đình bạn thường dùng những dụng cụ ăn uống nào?",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "小语的彩蛋：筷子",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "小语的彩蛋：筷子",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk3-fltrp-2026:l02:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "小林说新宿舍很大，也很安静。哪句能合并这两个特点？",
+        "vi": "Tiểu Lâm nói ký túc xá mới rộng và yên tĩnh. Câu nào gộp đúng hai đặc điểm?"
+      },
+      "options": [
+        "新宿舍又大又安静。",
+        "新宿舍很大，但是不安静。",
+        "新宿舍很安静，但是不大。"
+      ],
+      "answer": 0,
+      "focus": "又……又……：并列特点",
+      "explanation": {
+        "zh": "两个又分别放在两个形容词前面。",
+        "vi": "Mỗi 又 đứng trước một tính từ để nối hai đặc điểm."
+      },
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "走了很久，我想喝水，因为我很______。",
+        "vi": "Đi bộ lâu rồi tôi muốn uống nước, vì tôi rất ______."
+      },
+      "options": [
+        "饿",
+        "渴",
+        "累"
+      ],
+      "answer": 1,
+      "focus": "渴与饿区分",
+      "explanation": {
+        "zh": "渴表示想喝水，饿表示想吃东西。",
+        "vi": "渴 là khát muốn uống; 饿 là đói muốn ăn."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "服务员说“请慢用”，最合适的理解是什么？",
+        "vi": "Nhân viên nói 请慢用. Hiểu thế nào phù hợp nhất?"
+      },
+      "options": [
+        "请客人不要再点菜",
+        "告诉客人动作太慢",
+        "礼貌地请客人享用饭菜"
+      ],
+      "answer": 2,
+      "focus": "用：礼貌用餐表达",
+      "explanation": {
+        "zh": "请慢用是请客人享用食物的礼貌说法。",
+        "vi": "请慢用 là cách lịch sự mời khách dùng món."
+      },
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“这一桌菜哪个都好吃。”说话人怎样评价这些菜？",
+        "vi": "“Các món trên bàn này món nào cũng ngon.” Người nói đánh giá thế nào?"
+      },
+      "options": [
+        "每个菜都好吃",
+        "只有一个菜好吃",
+        "不知道哪个菜好吃"
+      ],
+      "answer": 0,
+      "focus": "哪个……都：任指",
+      "explanation": {
+        "zh": "哪个与都呼应，范围内的每个菜都包含在内。",
+        "vi": "哪个 kết hợp 都 bao gồm mọi món trong phạm vi đang nói."
+      },
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "你问朋友怎么去公园，他说“我怎么去都可以”。他的意思是什么？",
+        "vi": "Hỏi bạn đi công viên bằng cách nào, bạn đáp “Đi cách nào tôi cũng được”. Ý là gì?"
+      },
+      "options": [
+        "他只愿意坐出租车",
+        "他对交通方式没有特别要求",
+        "他不知道公园在哪儿"
+      ],
+      "answer": 1,
+      "focus": "怎么……都：方式任指",
+      "explanation": {
+        "zh": "怎么去都可以表示各种合适的出行方式都能接受。",
+        "vi": "怎么去都可以 là chấp nhận các cách di chuyển phù hợp khác nhau."
+      },
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想表达“Bạn muốn uống gì thì tôi gọi thứ đó”，哪句正确？",
+        "vi": "Muốn nói “Bạn muốn uống gì thì tôi gọi thứ đó”, chọn câu đúng."
+      },
+      "options": [
+        "你想喝什么，就我点什么。",
+        "我想喝什么，你就点什么。",
+        "你想喝什么，我就点什么。"
+      ],
+      "answer": 2,
+      "focus": "不同主语：主语在就之前",
+      "explanation": {
+        "zh": "两个什么指同一种饮料，第二个主语我在就前面。",
+        "vi": "Hai 什么 chỉ cùng loại đồ uống; chủ ngữ thứ hai 我 đứng trước 就."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“谁做的面条儿好吃，我就吃谁做的。”两个“谁”有什么关系？",
+        "vi": "Trong câu “Ai nấu mì ngon thì tôi ăn mì người ấy nấu”, hai từ 谁 có quan hệ gì?"
+      },
+      "options": [
+        "指同一个做饭的人",
+        "必须指两个不同的人",
+        "都只表示不知道名字"
+      ],
+      "answer": 0,
+      "focus": "相同疑问代词呼应",
+      "explanation": {
+        "zh": "两处谁前后呼应，指同一个人。",
+        "vi": "Hai 谁 đối ứng, cùng chỉ một người."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "今天是星期三。“下周”指什么时间？",
+        "vi": "Hôm nay là thứ Tư. 下周 chỉ thời gian nào?"
+      },
+      "options": [
+        "刚过去的一周",
+        "这一周后面的一周",
+        "上一年的这个星期"
+      ],
+      "answer": 1,
+      "focus": "上／下：时间顺序",
+      "explanation": {
+        "zh": "下周是当前这一周之后的一周。",
+        "vi": "下周 là tuần liền sau tuần hiện tại."
+      },
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我今天只喝了一杯茶，没有喝第二杯。”根据这句话，今天喝了多少茶？",
+        "vi": "“Hôm nay tôi chỉ uống một cốc trà, không uống cốc thứ hai.” Theo câu này, hôm nay đã uống bao nhiêu trà?"
+      },
+      "options": [
+        "喝了两杯茶。",
+        "一杯茶也没喝。",
+        "只喝了一杯茶。"
+      ],
+      "answer": 2,
+      "focus": "只：限定茶的数量",
+      "explanation": {
+        "zh": "这里用“只”和“没有喝第二杯”把茶的数量限定为一杯；不能据此判断是否喝过别的饮料。",
+        "vi": "Ở đây 只 và “không uống cốc thứ hai” giới hạn lượng trà ở một cốc; không đủ căn cứ để kết luận có uống loại khác hay không."
+      },
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "家里已有足够的筷子，朋友还想再买。你想说明没有必要再买，应该怎么说？",
+        "vi": "Ở nhà đã có đủ đũa, bạn mình vẫn muốn mua thêm. Muốn nói không cần mua nữa, nên nói thế nào?"
+      },
+      "options": [
+        "不用买了，家里已经有很多了。",
+        "不能用了，家里没有筷子。",
+        "还要再买，家里的筷子不够。"
+      ],
+      "answer": 0,
+      "focus": "不用：没有必要",
+      "explanation": {
+        "zh": "不用说明没有必要，不是禁止别人。",
+        "vi": "不用 diễn đạt không cần thiết, không phải cấm đoán."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “这家饭馆”: Nhà hàng này làm món ăn vừa nhanh vừa ngon. Giữ thứ tự “nhanh” trước “ngon”. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "又快",
+        "这家饭馆",
+        "好吃。",
+        "又",
+        "的菜",
+        "做得"
+      ],
+      "answer": [
+        1,
+        4,
+        5,
+        0,
+        3,
+        2
+      ],
+      "focus": "又……又……；得",
+      "explanation": {
+        "zh": "这家饭馆的菜做得又快又好吃。",
+        "vi": "Cụm vị ngữ 做得 theo sau chủ ngữ; đề đã cố định thứ tự hai đặc điểm."
+      },
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “今天你想”: Hôm nay bạn muốn đến nhà tôi vào lúc nào cũng được. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "来我家",
+        "今天",
+        "都可以。",
+        "想",
+        "什么时候",
+        "你"
+      ],
+      "answer": [
+        1,
+        5,
+        3,
+        4,
+        0,
+        2
+      ],
+      "focus": "什么时候……都",
+      "explanation": {
+        "zh": "今天你想什么时候来我家都可以。",
+        "vi": "Đã cố định trạng ngữ thời gian; 什么时候 nằm trong phạm vi được 都 bao quát."
+      },
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “你”: Bạn thích ăn món nào thì tôi nấu món đó. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "就做",
+        "喜欢",
+        "我",
+        "哪个菜。",
+        "你",
+        "哪个菜，",
+        "吃"
+      ],
+      "answer": [
+        4,
+        1,
+        6,
+        5,
+        2,
+        0,
+        3
+      ],
+      "focus": "相同疑问词；主语位置",
+      "explanation": {
+        "zh": "你喜欢吃哪个菜，我就做哪个菜。",
+        "vi": "Chủ ngữ thứ hai 我 đứng trước 就; hai 哪个菜 cùng chỉ một món."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “你”: Bạn thấy món nào rẻ thì gọi món đó. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "就点",
+        "哪个菜。",
+        "你",
+        "便宜",
+        "觉得",
+        "哪个菜"
+      ],
+      "answer": [
+        2,
+        4,
+        5,
+        3,
+        0,
+        1
+      ],
+      "focus": "哪个……就哪个",
+      "explanation": {
+        "zh": "你觉得哪个菜便宜就点哪个菜。",
+        "vi": "Hai 哪个菜 đối ứng; chủ ngữ vế sau được lược vì cùng là 你."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “我”: Tôi chỉ ăn một miếng bánh ngọt, không uống cà phê. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "一块",
+        "我",
+        "没喝",
+        "只吃了",
+        "咖啡。",
+        "蛋糕，"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        5,
+        2,
+        4
+      ],
+      "focus": "只；数量表达",
+      "explanation": {
+        "zh": "我只吃了一块蛋糕，没喝咖啡。",
+        "vi": "只 đứng trước động từ; 一块 đi cùng 蛋糕; dấu phẩy phân định hai vế."
+      },
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：李文对点菜有什么要求？",
+        "vi": "Nghe bài khóa 1: Lý Văn yêu cầu gì khi gọi món?"
+      },
+      "options": [
+        "一定要吃面条儿",
+        "让大家点，他都可以",
+        "只点他自己喜欢的菜"
+      ],
+      "answer": 1,
+      "focus": "听懂个人偏好",
+      "explanation": {
+        "zh": "李文说我都可以，你们点吧。",
+        "vi": "Lý Văn nói mình ăn gì cũng được, để mọi người gọi."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：王一雪为什么说服务员记住他们爱吃的菜了？",
+        "vi": "Nghe bài khóa 2: Vì sao nhân viên đã nhớ món Nhất Tuyết và mọi người thích?"
+      },
+      "options": [
+        "因为她把菜单带回了家",
+        "因为他们只吃一种菜",
+        "因为他们经常来"
+      ],
+      "answer": 2,
+      "focus": "听懂原因",
+      "explanation": {
+        "zh": "王一雪说我们经常来，所以服务员记住了。",
+        "vi": "Nhất Tuyết nói họ thường đến nên nhân viên đã nhớ."
+      },
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：李文建议带走菜单，是为了什么？",
+        "vi": "Nghe bài khóa 3: Lý Văn đề nghị mang thực đơn về để làm gì?"
+      },
+      "options": [
+        "看看下次还吃什么",
+        "回家学习菜单上的汉字",
+        "把菜单上的菜全都点一遍"
+      ],
+      "answer": 0,
+      "focus": "听懂建议目的",
+      "explanation": {
+        "zh": "他说拿走菜单，看看下次还吃点儿什么。",
+        "vi": "Anh ấy gợi ý mang về để xem lần sau muốn ăn gì."
+      },
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：李文提到，早饭有时候还会吃什么？",
+        "vi": "Nghe bài khóa 4: Lý Văn nhắc đến món nào thỉnh thoảng ăn vào bữa sáng?"
+      },
+      "options": [
+        "一碗饺子",
+        "一块蛋糕",
+        "一盘鸡肉饭"
+      ],
+      "answer": 1,
+      "focus": "听懂偶尔吃的早餐",
+      "explanation": {
+        "zh": "他说有时候吃一块蛋糕，再喝咖啡。",
+        "vi": "Anh ấy nói đôi khi ăn một miếng bánh ngọt rồi uống cà phê."
+      },
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：妈妈只做几个简单的菜时，李文的态度怎样？",
+        "vi": "Nghe bài khóa 4: Khi mẹ chỉ làm vài món đơn giản, Lý Văn thấy thế nào?"
+      },
+      "options": [
+        "觉得没有外卖好吃",
+        "不想在家里吃",
+        "仍然非常爱吃"
+      ],
+      "answer": 2,
+      "focus": "听懂转折与感情",
+      "explanation": {
+        "zh": "他说我也非常爱吃，什么都没有妈妈做的饭好吃。",
+        "vi": "Anh ấy vẫn rất thích, vì không gì ngon bằng cơm mẹ nấu."
+      },
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Chiếc bát này vừa đẹp vừa rẻ."
+      },
+      "options": [
+        "这个碗又漂亮又便宜。",
+        "这个碗虽然漂亮，但是太贵。",
+        "这个碗又便宜又难看。"
+      ],
+      "answer": 0,
+      "focus": "又……又……",
+      "explanation": {
+        "zh": "又连接两个同时成立的形容词特点。",
+        "vi": "又 nối hai đặc điểm đồng thời."
+      },
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Ở đây ai cũng biết dùng đũa."
+      },
+      "options": [
+        "这里只有我会用筷子。",
+        "这里谁都不会用筷子。",
+        "这里谁都会用筷子。"
+      ],
+      "answer": 2,
+      "focus": "谁……都",
+      "explanation": {
+        "zh": "谁都表示这里的每个人。",
+        "vi": "谁都 chỉ mọi người ở đây."
+      },
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Bạn muốn ăn ở đâu thì chúng ta ăn ở đó."
+      },
+      "options": [
+        "你想在哪儿吃，我在哪儿都不吃。",
+        "你想在哪儿吃，我们就在哪儿吃。",
+        "我们想在哪儿吃，你就在哪儿吃。"
+      ],
+      "answer": 1,
+      "focus": "疑问词呼应；不同主语",
+      "explanation": {
+        "zh": "两个在哪儿指同一地点，我们放在就前面。",
+        "vi": "Hai 在哪儿 chỉ cùng một nơi; 我们 đứng trước 就."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Không cần gọi đồ ăn giao đến, ở nhà có cơm rồi."
+      },
+      "options": [
+        "不用点外卖了，家里有饭了。",
+        "家里没有饭，还是点外卖吧。",
+        "不用在家做饭了，我已经点了外卖。"
+      ],
+      "answer": 0,
+      "focus": "不用；外卖",
+      "explanation": {
+        "zh": "不用点外卖表示没有点外卖的必要。",
+        "vi": "不用点外卖 nghĩa là không cần gọi đồ ăn giao đến."
+      },
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Hôm nay tôi chỉ uống trà, không uống cà phê."
+      },
+      "options": [
+        "今天我只喝咖啡，不喝茶。",
+        "今天我又喝茶又喝咖啡。",
+        "今天我只喝茶，不喝咖啡。"
+      ],
+      "answer": 2,
+      "focus": "只：范围限定",
+      "explanation": {
+        "zh": "只喝茶限定饮料种类，不喝咖啡说明排除项。",
+        "vi": "只喝茶 giới hạn loại đồ uống; 不喝咖啡 nêu loại bị loại trừ."
+      },
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Cô giáo mới vừa trẻ vừa nhiệt tình."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Thứ Bảy tôi ở nhà, bạn gọi điện lúc nào cũng được."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Bạn muốn ngồi ở đâu thì tôi ngồi ở đó."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Không cần mua cà phê, trong văn phòng vẫn còn."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Buổi tối tôi chỉ muốn ăn một bát mì, không muốn gọi thêm món khác."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3-fltrp-2026:l02:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：家月说又饿又渴后，一雪怎样回应？",
+        "vi": "Nghe bài khóa 1: sau khi Gia Nguyệt nói vừa đói vừa khát, Nhất Tuyết đáp lại thế nào?"
+      },
+      "options": [
+        "让她先回去休息。",
+        "让她多点点儿，别客气。",
+        "让她等到明天再吃。"
+      ],
+      "answer": 1,
+      "focus": "听懂主人的回应",
+      "explanation": {
+        "zh": "一雪接着说“那多点点儿，别客气”。",
+        "vi": "Ngay sau đó, Nhất Tuyết nói gọi nhiều một chút, đừng khách sáo."
+      },
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：一雪提出要餐具后，服务员怎么回答？",
+        "vi": "Nghe bài khóa 2: sau khi Nhất Tuyết yêu cầu thêm dụng cụ ăn, nhân viên trả lời thế nào?"
+      },
+      "options": [
+        "请等一下，我马上去拿。",
+        "请您自己过去拿。",
+        "吃完饭以后再给您拿。"
+      ],
+      "answer": 0,
+      "focus": "听懂服务员的回应",
+      "explanation": {
+        "zh": "服务员说请等一下，自己马上去拿。",
+        "vi": "Nhân viên xin chờ một chút rồi sẽ đi lấy ngay."
+      },
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：选好菜后，不去饭馆也能怎么办？",
+        "vi": "Nghe bài khóa 3: Chọn món xong, dù không đến nhà hàng vẫn có thể làm gì?"
+      },
+      "options": [
+        "只能亲自去饭馆取菜",
+        "让饭馆把菜送来",
+        "让服务员取消所选的菜"
+      ],
+      "answer": 1,
+      "focus": "听懂外卖服务",
+      "explanation": {
+        "zh": "王一雪说选好了让他们给你送。",
+        "vi": "Nhất Tuyết nói chọn xong có thể nhờ họ giao đến."
+      },
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：李文在国外平时的午饭和晚饭主要在哪里吃？",
+        "vi": "Nghe bài khóa 4: Khi ở nước ngoài, Lý Văn thường ăn trưa và tối ở đâu?"
+      },
+      "options": [
+        "在妈妈家",
+        "在自己的厨房",
+        "在外面"
+      ],
+      "answer": 2,
+      "focus": "听懂日常地点",
+      "explanation": {
+        "zh": "日记说午饭和晚饭也都在外面吃。",
+        "vi": "Nhật ký nói bữa trưa và tối cũng đều ăn ở ngoài."
+      },
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "2-7"
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 10,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:objective1",
+          "prompt": {
+            "zh": "能听懂并谈论餐厅的菜品、服务和个人的饮食习惯。",
+            "vi": "Nghe hiểu và trao đổi về món ăn, dịch vụ nhà hàng và thói quen ăn uống cá nhân."
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用疑问代词指代任何一个对象。",
+            "vi": "Nghe hiểu và dùng đại từ nghi vấn để chỉ bất kỳ người hoặc vật nào."
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:objective3",
+          "prompt": {
+            "zh": "了解中国人就餐时使用的餐具。",
+            "vi": "Tìm hiểu dụng cụ ăn uống được người Trung Quốc sử dụng."
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:warmup1-menu",
+      "kind": "fill",
+      "title": {
+        "zh": "将下列词语填到合适的位置。",
+        "vi": "Điền từ vào vị trí thích hợp."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 22,
+        "printedPage": 10,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:warmup1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:menu-title",
+          "prompt": {
+            "zh": "菜单图：顶部标题",
+            "vi": "Sơ đồ thực đơn: tiêu đề trên cùng"
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "饮料",
+              "vi": "đồ uống"
+            },
+            {
+              "zh": "绿茶",
+              "vi": "trà xanh"
+            },
+            {
+              "zh": "蛋糕",
+              "vi": "bánh ngọt"
+            },
+            {
+              "zh": "鸡肉",
+              "vi": "thịt gà"
+            }
+          ],
+          "answer": "菜单",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P10 热身1 menu-title（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:menu-meat",
+          "prompt": {
+            "zh": "左上角肉类：第三项",
+            "vi": "Nhóm thịt, góc trên trái: mục thứ ba"
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "饮料",
+              "vi": "đồ uống"
+            },
+            {
+              "zh": "绿茶",
+              "vi": "trà xanh"
+            },
+            {
+              "zh": "蛋糕",
+              "vi": "bánh ngọt"
+            },
+            {
+              "zh": "鸡肉",
+              "vi": "thịt gà"
+            }
+          ],
+          "answer": "鸡肉",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P10 热身1 menu-meat（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:menu-dessert",
+          "prompt": {
+            "zh": "右上角甜品：第一项",
+            "vi": "Nhóm món ngọt, góc trên phải: mục đầu tiên"
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "饮料",
+              "vi": "đồ uống"
+            },
+            {
+              "zh": "绿茶",
+              "vi": "trà xanh"
+            },
+            {
+              "zh": "蛋糕",
+              "vi": "bánh ngọt"
+            },
+            {
+              "zh": "鸡肉",
+              "vi": "thịt gà"
+            }
+          ],
+          "answer": "蛋糕",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P10 热身1 menu-dessert（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:menu-drinks-heading",
+          "prompt": {
+            "zh": "右下角：类别标题",
+            "vi": "Góc dưới phải: tiêu đề nhóm"
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "饮料",
+              "vi": "đồ uống"
+            },
+            {
+              "zh": "绿茶",
+              "vi": "trà xanh"
+            },
+            {
+              "zh": "蛋糕",
+              "vi": "bánh ngọt"
+            },
+            {
+              "zh": "鸡肉",
+              "vi": "thịt gà"
+            }
+          ],
+          "answer": "饮料",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P10 热身1 menu-drinks-heading（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:menu-final-drink",
+          "prompt": {
+            "zh": "右下角：最后一种饮品",
+            "vi": "Góc dưới phải: đồ uống cuối cùng"
+          },
+          "source": {
+            "pdfPage": 22,
+            "printedPage": 10,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "饮料",
+              "vi": "đồ uống"
+            },
+            {
+              "zh": "绿茶",
+              "vi": "trà xanh"
+            },
+            {
+              "zh": "蛋糕",
+              "vi": "bánh ngọt"
+            },
+            {
+              "zh": "鸡肉",
+              "vi": "thịt gà"
+            }
+          ],
+          "answer": "绿茶",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P10 热身1 menu-final-drink（C）"
+          }
+        }
+      ],
+      "menu": {
+        "titleFieldId": "hsk3-fltrp-2026:l02:field:menu-title",
+        "columns": 2,
+        "sections": [
+          {
+            "heading": {
+              "zh": "肉",
+              "vi": "Thịt"
+            },
+            "items": [
+              {
+                "text": {
+                  "zh": "鱼肉",
+                  "vi": "Thịt cá"
+                }
+              },
+              {
+                "text": {
+                  "zh": "羊（yáng）肉",
+                  "vi": "Thịt cừu (羊 yáng)"
+                }
+              },
+              {
+                "fieldId": "hsk3-fltrp-2026:l02:field:menu-meat"
+              }
+            ]
+          },
+          {
+            "heading": {
+              "zh": "甜品",
+              "vi": "Món ngọt"
+            },
+            "items": [
+              {
+                "fieldId": "hsk3-fltrp-2026:l02:field:menu-dessert"
+              },
+              {
+                "text": {
+                  "zh": "冰激凌（bīngjīlíng）",
+                  "vi": "Kem (冰激凌 bīngjīlíng)"
+                }
+              }
+            ]
+          },
+          {
+            "heading": {
+              "zh": "主食",
+              "vi": "Món chính"
+            },
+            "items": [
+              {
+                "text": {
+                  "zh": "面条儿",
+                  "vi": "Mì"
+                }
+              },
+              {
+                "text": {
+                  "zh": "包子",
+                  "vi": "Bánh bao"
+                }
+              },
+              {
+                "text": {
+                  "zh": "饺子",
+                  "vi": "Sủi cảo"
+                }
+              }
+            ]
+          },
+          {
+            "headingFieldId": "hsk3-fltrp-2026:l02:field:menu-drinks-heading",
+            "items": [
+              {
+                "text": {
+                  "zh": "咖啡　奶茶",
+                  "vi": "Cà phê　Trà sữa"
+                }
+              },
+              {
+                "text": {
+                  "zh": "红茶",
+                  "vi": "Hồng trà"
+                }
+              },
+              {
+                "fieldId": "hsk3-fltrp-2026:l02:field:menu-final-drink"
+              }
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "保留教材菜单的上下左右结构；共五处独立空格。",
+        "vi": "Giữ bố cục trên/dưới, trái/phải của thực đơn trong sách; có năm chỗ trống độc lập."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:warmup2-discussion",
+      "kind": "open",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên tình huống thực tế."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:warmup2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:warmup2-prompt1",
+          "prompt": {
+            "zh": "你经常点外卖吗？你什么时候一定会点外卖？",
+            "vi": "Bạn có thường gọi đồ ăn giao tận nơi không? Khi nào bạn nhất định sẽ gọi?"
+          },
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:warmup2-prompt2",
+          "prompt": {
+            "zh": "有外国朋友来中国，你想带他／她去吃什么？为什么？",
+            "vi": "Có bạn nước ngoài đến Trung Quốc, bạn muốn đưa họ đi ăn gì? Vì sao?"
+          },
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境或化名，不必填写真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu hoặc tên giả, không cần ghi thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text1:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text1-question1",
+          "prompt": {
+            "zh": "他们在做什么？",
+            "vi": "Họ đang làm gì?"
+          },
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "买东西",
+              "vi": "mua đồ"
+            },
+            {
+              "zh": "在家吃饭",
+              "vi": "ăn cơm ở nhà"
+            },
+            {
+              "zh": "在饭馆吃饭",
+              "vi": "ăn ở nhà hàng"
+            }
+          ],
+          "answer": "在饭馆吃饭",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P11 课文1 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text1:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text1-question2",
+          "prompt": {
+            "zh": "白家月想吃什么中国菜？",
+            "vi": "Gia Nguyệt muốn ăn món Trung Quốc nào?"
+          },
+          "source": {
+            "pdfPage": 23,
+            "printedPage": 11,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饺子",
+              "vi": "sủi cảo"
+            },
+            {
+              "zh": "包子",
+              "vi": "bánh bao"
+            },
+            {
+              "zh": "面条儿",
+              "vi": "mì"
+            }
+          ],
+          "answer": "饺子",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 2,
+            "item": "第2课 P11 课文1 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text1:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "2-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text1:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text1-question3",
+          "prompt": {
+            "zh": "白家月现在觉得怎么样？",
+            "vi": "Bây giờ Gia Nguyệt cảm thấy thế nào?"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她现在又饿又渴。",
+            "vi": "Bây giờ cô ấy vừa đói vừa khát."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text1:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text1-question4",
+          "prompt": {
+            "zh": "白家月想喝什么？",
+            "vi": "Gia Nguyệt muốn uống gì?"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她想喝绿茶。",
+            "vi": "Cô ấy muốn uống trà xanh."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text1:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text1-question5",
+          "prompt": {
+            "zh": "王一雪要点什么？",
+            "vi": "Nhất Tuyết định gọi món gì?"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "对话没有说王一雪自己要点什么；她让大家看看还想吃什么。",
+            "vi": "Hội thoại không nói rõ Vương Nhất Tuyết muốn gọi gì cho mình; cô bảo mọi người xem còn muốn ăn gì."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text1:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text2:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text2-question1",
+          "prompt": {
+            "zh": "王一雪让服务员拿什么？",
+            "vi": "Nhất Tuyết nhờ nhân viên lấy gì?"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "筷子和碗",
+              "vi": "đũa và bát"
+            },
+            {
+              "zh": "勺子和筷子",
+              "vi": "thìa và đũa"
+            },
+            {
+              "zh": "勺子、筷子和碗",
+              "vi": "thìa, đũa và bát"
+            }
+          ],
+          "answer": "勺子、筷子和碗",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P12 课文2 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text2:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text2-question2",
+          "prompt": {
+            "zh": "这家饭馆的服务怎么样？",
+            "vi": "Nhà hàng này phục vụ thế nào?"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "很慢",
+              "vi": "rất chậm"
+            },
+            {
+              "zh": "很热情",
+              "vi": "rất nhiệt tình"
+            },
+            {
+              "zh": "不太好",
+              "vi": "không tốt lắm"
+            }
+          ],
+          "answer": "很热情",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P12 课文2 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text2:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "2-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text2:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text2-question3",
+          "prompt": {
+            "zh": "王一雪觉得这家饭馆怎么样？",
+            "vi": "Nhất Tuyết thấy nhà hàng này thế nào?"
+          },
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她觉得服务很热情，饭菜又便宜又好吃。",
+            "vi": "Cô ấy thấy phục vụ rất nhiệt tình, đồ ăn vừa rẻ vừa ngon."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text2:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text2-question4",
+          "prompt": {
+            "zh": "白家月觉得这家饭馆的菜怎么样？",
+            "vi": "Gia Nguyệt thấy các món của nhà hàng thế nào?"
+          },
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她觉得哪个菜都好吃，王一雪点的菜真不错。",
+            "vi": "Cô ấy thấy món nào cũng ngon, các món Vương Nhất Tuyết gọi rất tốt."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text2:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text2-question5",
+          "prompt": {
+            "zh": "服务员为什么送了一些水果？",
+            "vi": "Vì sao nhân viên tặng ít trái cây?"
+          },
+          "source": {
+            "pdfPage": 25,
+            "printedPage": 13,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为王一雪经常来吃饭，是老顾客。",
+            "vi": "Vì Vương Nhất Tuyết thường đến ăn, là khách quen."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text2:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text3:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text3-question1",
+          "prompt": {
+            "zh": "在这家饭馆，白家月喜欢吃什么？",
+            "vi": "Ở nhà hàng này Gia Nguyệt thích ăn gì?"
+          },
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "包子",
+              "vi": "bánh bao"
+            },
+            {
+              "zh": "鸡肉饭",
+              "vi": "cơm gà"
+            },
+            {
+              "zh": "面条儿",
+              "vi": "mì"
+            }
+          ],
+          "answer": "鸡肉饭",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P14 课文3 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text3:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text3-question2",
+          "prompt": {
+            "zh": "王一雪为什么说“不用拿菜单”？",
+            "vi": "Vì sao Nhất Tuyết nói không cần lấy thực đơn?"
+          },
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "她有菜单",
+              "vi": "cô ấy có thực đơn"
+            },
+            {
+              "zh": "她不想再来",
+              "vi": "cô ấy không muốn đến nữa"
+            },
+            {
+              "zh": "手机上可以看菜单",
+              "vi": "có thể xem thực đơn trên điện thoại"
+            }
+          ],
+          "answer": "手机上可以看菜单",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P14 课文3 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text3:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "2-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text3:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text3-question3",
+          "prompt": {
+            "zh": "白家月为什么要再来吃一次？",
+            "vi": "Vì sao Gia Nguyệt muốn đến ăn lần nữa?"
+          },
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为她觉得鸡肉饭太好吃了。",
+            "vi": "Vì cô ấy thấy cơm gà ngon quá."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text3:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text3-question4",
+          "prompt": {
+            "zh": "这家饭馆可以怎么点菜？",
+            "vi": "Có thể gọi món ở nhà hàng này bằng cách nào?"
+          },
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "可以看菜单点菜，也可以在手机上选好菜让他们送。",
+            "vi": "Có thể xem thực đơn để gọi món, hoặc chọn trên điện thoại và nhờ nhà hàng giao đến."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text3:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text3-question5",
+          "prompt": {
+            "zh": "听说（tīngshuō，hear about）很多饭馆都能送外卖，白家月觉得怎么样？",
+            "vi": "Nghe nói (听说 tīngshuō) nhiều nhà hàng đều giao đồ ăn, Gia Nguyệt thấy thế nào?"
+          },
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她觉得太方便了。",
+            "vi": "Cô ấy thấy rất tiện."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text3:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text4:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text4-question1",
+          "prompt": {
+            "zh": "快要考试的时候，李文怎么吃饭？",
+            "vi": "Khi sắp thi, Lý Văn ăn uống thế nào?"
+          },
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "吃方便面",
+              "vi": "ăn mì ăn liền"
+            },
+            {
+              "zh": "出去吃饭",
+              "vi": "ra ngoài ăn"
+            },
+            {
+              "zh": "回妈妈家吃",
+              "vi": "về nhà mẹ ăn"
+            }
+          ],
+          "answer": "吃方便面",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P16 课文4 听两遍 第1题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text4:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text4-question2",
+          "prompt": {
+            "zh": "回到中国了，李文为什么很高兴？",
+            "vi": "Vì sao khi về Trung Quốc Lý Văn rất vui?"
+          },
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "妈妈每天做很多菜",
+              "vi": "mẹ nấu nhiều món mỗi ngày"
+            },
+            {
+              "zh": "可以经常去外面吃饭",
+              "vi": "có thể thường ra ngoài ăn"
+            },
+            {
+              "zh": "每天能吃到妈妈做的饭",
+              "vi": "mỗi ngày được ăn cơm mẹ nấu"
+            }
+          ],
+          "answer": "每天能吃到妈妈做的饭",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P16 课文4 听两遍 第2题"
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text4:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍课文，选择正确答案。",
+        "vi": "Nghe bài khóa hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "2-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:text4-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:text4:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text4-question3",
+          "prompt": {
+            "zh": "李文在国外经常做饭吗？",
+            "vi": "Lý Văn có thường nấu ăn khi ở nước ngoài không?"
+          },
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "不经常，他很少自己做饭。",
+            "vi": "Không thường xuyên, anh ấy rất ít tự nấu."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text4:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text4-question4",
+          "prompt": {
+            "zh": "李文为什么好几天只吃方便面？",
+            "vi": "Vì sao Lý Văn mấy ngày liền chỉ ăn mì ăn liền?"
+          },
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为快要考试了，他又忙又累，没时间出去吃饭，家里又没有吃的。",
+            "vi": "Vì sắp thi, anh ấy vừa bận vừa mệt, không có thời gian ra ngoài ăn mà ở nhà cũng không có đồ ăn."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text4:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:text4-question5",
+          "prompt": {
+            "zh": "回到中国后什么事让他非常高兴？",
+            "vi": "Điều gì khiến anh ấy rất vui sau khi về Trung Quốc?"
+          },
+          "source": {
+            "pdfPage": 28,
+            "printedPage": 16,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "每天能吃到妈妈做的饭让他非常高兴。",
+            "vi": "Việc được ăn cơm mẹ nấu mỗi ngày khiến anh ấy rất vui."
+          },
+          "targetRef": "hsk3-fltrp-2026:l02:text4:question5"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc bài khóa rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar1-practice1",
+      "kind": "open",
+      "title": {
+        "zh": "改写：他的新家很大，也很干净（gānjìng，clean）。",
+        "vi": "Viết lại: Nhà mới của anh ấy rất rộng, cũng rất sạch (干净 gānjìng)."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "并列复句“又……又……”：改写句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar1-practice1",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”：改写句子",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他的新家又大又干净。",
+            "vi": "Nhà mới của anh ấy vừa rộng vừa sạch."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar1-practice2",
+      "kind": "open",
+      "title": {
+        "zh": "改写：他写汉字写得很快，也很漂亮。",
+        "vi": "Viết lại: Anh ấy viết chữ Hán rất nhanh, cũng rất đẹp."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "并列复句“又……又……”：改写句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar1-practice2",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”：改写句子",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他写汉字写得又快又漂亮。",
+            "vi": "Anh ấy viết chữ Hán vừa nhanh vừa đẹp."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar1-practice3",
+      "kind": "open",
+      "title": {
+        "zh": "改写：这个超市里的东西很多，也很便宜。",
+        "vi": "Viết lại: Siêu thị này có rất nhiều đồ, cũng rất rẻ."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 24,
+        "printedPage": 12,
+        "section": "并列复句“又……又……”：改写句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar1-practice3",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 24,
+            "printedPage": 12,
+            "section": "并列复句“又……又……”：改写句子",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "这个超市里的东西又多又便宜。",
+            "vi": "Đồ ở siêu thị này vừa nhiều vừa rẻ."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar2-practice1",
+      "kind": "open",
+      "title": {
+        "zh": "用“什么”改写：我喜欢吃中国菜，也喜欢吃外国菜。",
+        "vi": "Dùng 什么 viết lại: Tôi thích món Trung Quốc, cũng thích món nước ngoài."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "疑问代词的非疑问用法（2）：改写句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar2-practice1",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）：改写句子",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我什么菜都喜欢吃。",
+            "vi": "Tôi thích ăn món gì cũng được."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar2-practice2",
+      "kind": "open",
+      "title": {
+        "zh": "用“谁”改写：小李很会做饭，大家都喜欢吃他做的饭。",
+        "vi": "Dùng 谁 viết lại: Tiểu Lý nấu ăn rất giỏi, mọi người đều thích ăn cơm anh ấy nấu."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "疑问代词的非疑问用法（2）：改写句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar2-practice2",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）：改写句子",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "小李很会做饭，谁都喜欢吃他做的饭。",
+            "vi": "Tiểu Lý nấu ăn rất giỏi, ai cũng thích cơm anh ấy nấu."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar2-practice3",
+      "kind": "open",
+      "title": {
+        "zh": "用“怎么”改写：饭馆不太远，我们打车、坐公交车、走路去都可以。",
+        "vi": "Dùng 怎么 viết lại: Nhà hàng không xa, đi taxi, xe buýt hay đi bộ đều được."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 26,
+        "printedPage": 14,
+        "section": "疑问代词的非疑问用法（2）：改写句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar2-practice3",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 26,
+            "printedPage": 14,
+            "section": "疑问代词的非疑问用法（2）：改写句子",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "饭馆不太远，我们怎么去都可以。",
+            "vi": "Nhà hàng không xa lắm, chúng ta đi bằng cách nào cũng được."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：这是菜单，我们点什么？ B：______。",
+        "vi": "A: Đây là thực đơn, chúng ta gọi gì? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "疑问代词的非疑问用法（3）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar3-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你想吃什么，我们就点什么。",
+            "vi": "Bạn muốn ăn gì thì chúng ta gọi món đó."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：我们怎么去电影院？ B：______。",
+        "vi": "A: Chúng ta đến rạp chiếu phim thế nào? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "疑问代词的非疑问用法（3）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar3-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你想怎么去，我们就怎么去。",
+            "vi": "Bạn muốn đi bằng cách nào thì chúng ta đi cách đó."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：我什么时候去找你？ B：______。",
+        "vi": "A: Khi nào tôi đến tìm bạn? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 27,
+        "printedPage": 15,
+        "section": "疑问代词的非疑问用法（3）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:grammar3-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 27,
+            "printedPage": 15,
+            "section": "疑问代词的非疑问用法（3）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你什么时候有时间，就什么时候来找我。",
+            "vi": "Bạn rảnh khi nào thì đến tìm tôi lúc đó."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:comprehensive-words1",
+      "kind": "fill",
+      "title": {
+        "zh": "第一组：A 尝；B 只；C 菜单；D 记；E 用。",
+        "vi": "Nhóm 1: A nếm; B chỉ; C thực đơn; D nhớ; E dùng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:section2:bank:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice1",
+          "prompt": {
+            "zh": "1. 我觉得______筷子吃饭更方便。",
+            "vi": "1. Tôi thấy ______ đũa ăn cơm tiện hơn."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "尝",
+              "vi": "nếm thử"
+            },
+            {
+              "zh": "只",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "记",
+              "vi": "nhớ"
+            },
+            {
+              "zh": "用",
+              "vi": "dùng"
+            }
+          ],
+          "answer": "用",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第1题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice2",
+          "prompt": {
+            "zh": "2. 你______住那个饭馆的名字了吗？",
+            "vi": "2. Bạn đã ______ tên nhà hàng đó chưa?"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "尝",
+              "vi": "nếm thử"
+            },
+            {
+              "zh": "只",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "记",
+              "vi": "nhớ"
+            },
+            {
+              "zh": "用",
+              "vi": "dùng"
+            }
+          ],
+          "answer": "记",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第2题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice3",
+          "prompt": {
+            "zh": "3. 她现在很饿，早上______吃了一块蛋糕。",
+            "vi": "3. Bây giờ cô ấy rất đói, sáng ______ ăn một miếng bánh ngọt."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "尝",
+              "vi": "nếm thử"
+            },
+            {
+              "zh": "只",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "记",
+              "vi": "nhớ"
+            },
+            {
+              "zh": "用",
+              "vi": "dùng"
+            }
+          ],
+          "answer": "只",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第3题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice4",
+          "prompt": {
+            "zh": "4. ______上有好几个新菜，你看看我们吃哪个？",
+            "vi": "4. Trên ______ có mấy món mới, bạn xem chúng ta ăn món nào?"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "尝",
+              "vi": "nếm thử"
+            },
+            {
+              "zh": "只",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "记",
+              "vi": "nhớ"
+            },
+            {
+              "zh": "用",
+              "vi": "dùng"
+            }
+          ],
+          "answer": "菜单",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第4题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice5",
+          "prompt": {
+            "zh": "5. 我妈妈会做中国菜，下次你们来我家______一下她做的菜。",
+            "vi": "5. Mẹ tôi biết nấu món Trung Quốc, lần sau đến nhà tôi các bạn hãy ______ món mẹ nấu."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "尝",
+              "vi": "nếm thử"
+            },
+            {
+              "zh": "只",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "菜单",
+              "vi": "thực đơn"
+            },
+            {
+              "zh": "记",
+              "vi": "nhớ"
+            },
+            {
+              "zh": "用",
+              "vi": "dùng"
+            }
+          ],
+          "answer": "尝",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第5题（A）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:comprehensive-words2",
+      "kind": "fill",
+      "title": {
+        "zh": "第二组：A 饿；B 不用；C 简单；D 好久；E 马上。",
+        "vi": "Nhóm 2: A đói; B không cần; C đơn giản; D lâu lắm; E ngay."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:section2:bank:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice6",
+          "prompt": {
+            "zh": "6. A：我还不太会用筷子，你们有勺子吗？ B：有，你等一下，我______给你拿。",
+            "vi": "6. A: Tôi chưa biết dùng đũa lắm, có thìa không? B: Có, chờ một chút, tôi lấy cho bạn ______."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饿",
+              "vi": "đói"
+            },
+            {
+              "zh": "不用",
+              "vi": "không cần"
+            },
+            {
+              "zh": "简单",
+              "vi": "đơn giản"
+            },
+            {
+              "zh": "好久",
+              "vi": "lâu lắm"
+            },
+            {
+              "zh": "马上",
+              "vi": "ngay"
+            }
+          ],
+          "answer": "马上",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第6题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice7",
+          "prompt": {
+            "zh": "7. A：我找服务员要一下菜单，咱们点菜。 B：在手机上就可以点菜，______要菜单。",
+            "vi": "7. A: Tôi xin nhân viên thực đơn, chúng ta gọi món. B: Có thể gọi trên điện thoại, ______ xin thực đơn."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饿",
+              "vi": "đói"
+            },
+            {
+              "zh": "不用",
+              "vi": "không cần"
+            },
+            {
+              "zh": "简单",
+              "vi": "đơn giản"
+            },
+            {
+              "zh": "好久",
+              "vi": "lâu lắm"
+            },
+            {
+              "zh": "马上",
+              "vi": "ngay"
+            }
+          ],
+          "answer": "不用",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第7题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice8",
+          "prompt": {
+            "zh": "8. A：我太______了，不想做饭了，我们叫个外卖，怎么样？ B：没问题，你想吃什么，我们就点什么。",
+            "vi": "8. A: Tôi quá ______, không muốn nấu nữa, gọi đồ ăn giao đến nhé? B: Được, bạn muốn ăn gì chúng ta gọi đó."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饿",
+              "vi": "đói"
+            },
+            {
+              "zh": "不用",
+              "vi": "không cần"
+            },
+            {
+              "zh": "简单",
+              "vi": "đơn giản"
+            },
+            {
+              "zh": "好久",
+              "vi": "lâu lắm"
+            },
+            {
+              "zh": "马上",
+              "vi": "ngay"
+            }
+          ],
+          "answer": "饿",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第8题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice9",
+          "prompt": {
+            "zh": "9. A：你想去哪个饭馆吃饭？ B：我______没吃饺子了，去楼下的饺子馆吧。",
+            "vi": "9. A: Bạn muốn đến nhà hàng nào? B: ______ tôi chưa ăn sủi cảo, đến quán sủi cảo dưới nhà nhé."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饿",
+              "vi": "đói"
+            },
+            {
+              "zh": "不用",
+              "vi": "không cần"
+            },
+            {
+              "zh": "简单",
+              "vi": "đơn giản"
+            },
+            {
+              "zh": "好久",
+              "vi": "lâu lắm"
+            },
+            {
+              "zh": "马上",
+              "vi": "ngay"
+            }
+          ],
+          "answer": "好久",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第9题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:wordchoice10",
+          "prompt": {
+            "zh": "10. A：你下班回家自己做饭吗？ B：不做饭，我就吃碗方便面。方便面是最______的晚饭。",
+            "vi": "10. A: Tan làm về bạn tự nấu không? B: Không, tôi ăn bát mì ăn liền. Mì ăn liền là bữa tối ______ nhất."
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饿",
+              "vi": "đói"
+            },
+            {
+              "zh": "不用",
+              "vi": "không cần"
+            },
+            {
+              "zh": "简单",
+              "vi": "đơn giản"
+            },
+            {
+              "zh": "好久",
+              "vi": "lâu lắm"
+            },
+            {
+              "zh": "马上",
+              "vi": "ngay"
+            }
+          ],
+          "answer": "简单",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 3,
+            "item": "第2课 P17 综合练习 选词填空 第10题（C）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：这是菜单，你看看，______就点什么。 B：谢谢，您点吧，我______都可以。 A：我发现有不少新菜，你想不想______？ B：好，这些菜看起来很好吃。",
+        "vi": "A: Đây là thực đơn, bạn xem, ______ thì gọi món đó. B: Cảm ơn, anh/chị gọi đi, tôi ______ cũng được. A: Có khá nhiều món mới, bạn có muốn ______ không? B: Được, trông ngon quá."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:section3:picture:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "想吃什么",
+            "vi": "muốn ăn gì"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture1-blank2",
+          "prompt": {
+            "zh": "图1第2空",
+            "vi": "Hình 1, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "吃什么",
+            "vi": "ăn gì"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture1-blank3",
+          "prompt": {
+            "zh": "图1第3空",
+            "vi": "Hình 1, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "尝尝",
+            "vi": "nếm thử"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l02:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：今天我有点儿累，不想做饭，点个______吧。 B：好，我来点。______。 A：我吃什么都可以。我们现在点，什么时候能送到？ B：应该很快，我看看。______就能到。",
+        "vi": "A: Hôm nay hơi mệt, tôi không muốn nấu, gọi ______ nhé. B: Được, tôi gọi. ______. A: Tôi ăn gì cũng được. Gọi bây giờ thì lúc nào giao đến? B: Chắc nhanh thôi, để tôi xem. ______ là đến."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:section3:picture:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "外卖",
+            "vi": "đồ ăn giao tận nơi"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "你想吃什么",
+            "vi": "bạn muốn ăn gì"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture2-blank3",
+          "prompt": {
+            "zh": "图2第3空",
+            "vi": "Hình 2, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 29,
+            "printedPage": 17,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "马上",
+            "vi": "ngay"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l02:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你想喝什么______？ B：我______没喝茶了，来一杯吧。你看看想吃什么？ A：______上有这么多菜，我不知道点什么，还是你来吧。 B：那就点第一个，小王说那个菜______。",
+        "vi": "A: Bạn muốn uống ______ gì? B: ______ tôi chưa uống trà, gọi một cốc nhé. Bạn xem muốn ăn gì? A: Trên ______ nhiều món quá, tôi không biết gọi gì, bạn gọi đi. B: Vậy gọi món đầu tiên, Tiểu Vương nói món đó ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:section3:picture:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "饮料",
+            "vi": "đồ uống"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "好久",
+            "vi": "lâu lắm"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture3-blank3",
+          "prompt": {
+            "zh": "图3第3空",
+            "vi": "Hình 3, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "菜单",
+            "vi": "thực đơn"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l02:field:picture3-blank4",
+          "prompt": {
+            "zh": "图3第4空",
+            "vi": "Hình 3, chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "又便宜又好吃",
+            "vi": "vừa rẻ vừa ngon"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l02:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l02:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:activity:classroom-group",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: thảo luận nhóm"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l02:section4",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l02:field:classroom-notes-report",
+          "prompt": {
+            "zh": "3～4人一组，讨论在饭馆吃饭、点外卖和自己做饭这几种方式中，你们更喜欢哪种？为什么？回答时使用本课所学的词语和语言点。讨论过程中边听边做记录，讨论结束后向全班同学汇报本小组的情况。",
+            "vi": "Theo nhóm 3–4 người, thảo luận thích ăn ở nhà hàng, gọi đồ ăn giao tận nơi hay tự nấu hơn, và vì sao. Dùng từ và ngữ pháp của bài. Vừa nghe vừa ghi chép, sau đó trình bày kết quả của nhóm trước lớp."
+          },
+          "source": {
+            "pdfPage": 30,
+            "printedPage": 18,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l02:illustration:group-1",
+        "hsk3-fltrp-2026:l02:illustration:group-2",
+        "hsk3-fltrp-2026:l02:illustration:group-3"
+      ],
+      "note": {
+        "zh": "在同一处记录讨论理由和小组汇报要点。可使用虚构情境或化名，不必填写真实个人信息；不自动判分。",
+        "vi": "Ghi lý do thảo luận và ý chính báo cáo nhóm ở cùng một ô. Có thể dùng tình huống hư cấu hoặc tên giả, không cần ghi thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 23,
+        "printedPage": 11,
+        "owner": "hsk3-fltrp-2026:l02:text1",
+        "sourceOwner": "hsk3-fltrp-2026:l02:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "四名成人围坐在饭馆的餐桌旁，正在点菜。",
+        "vi": "Bốn người lớn ngồi quanh bàn trong nhà hàng, đang gọi món."
+      },
+      "description": {
+        "zh": "四名成人围坐在饭馆的餐桌旁，正在点菜。",
+        "vi": "Bốn người lớn ngồi quanh bàn trong nhà hàng, đang gọi món."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk3-l02-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "49c038825238ea22b27eb9d2e16f6f8d5bba81f904ee719f0b662cca2ae293ed",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Four diners seated around restaurant table; source group relation retained."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 25,
+        "printedPage": 13,
+        "owner": "hsk3-fltrp-2026:l02:text2",
+        "sourceOwner": "hsk3-fltrp-2026:l02:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "四名客人在饭馆用餐，服务员站在桌边提供餐具。",
+        "vi": "Bốn khách dùng bữa trong nhà hàng, nhân viên đứng bên bàn đưa dụng cụ ăn uống."
+      },
+      "description": {
+        "zh": "四名客人在饭馆用餐，服务员站在桌边提供餐具。",
+        "vi": "Bốn khách dùng bữa trong nhà hàng, nhân viên đứng bên bàn đưa dụng cụ ăn uống."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk3-l02-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "e1ac4a5e8474b9dbc432ad4305d32c8e93fb6226b3d20345d9afcbb31465d02b",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Four diners plus standing server reaching the table; no extra source question invented."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:text4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "section": "辅助示意图：text4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 28,
+        "printedPage": 16,
+        "owner": "hsk3-fltrp-2026:l02:text4",
+        "sourceOwner": "hsk3-fltrp-2026:l02:text4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "餐桌上摆着几盘家常菜、碗和筷子。",
+        "vi": "Trên bàn bày vài đĩa món ăn gia đình, bát và đũa."
+      },
+      "description": {
+        "zh": "餐桌上摆着几盘家常菜、碗和筷子。",
+        "vi": "Trên bàn bày vài đĩa món ăn gia đình, bát và đũa."
+      },
+      "sceneKey": "text4",
+      "file": "illustrations/hsk3-l02-text4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "1018ca738f707f2ed9c74170254d1d09470cad8b8b2b9fd07dc2b300e1f01ace",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Family-style meal, shared plates, bowls and chopsticks; no diet claims."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "owner": "hsk3-fltrp-2026:l02:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section3",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l02:field:picture1-blank1",
+        "hsk3-fltrp-2026:l02:field:picture1-blank2",
+        "hsk3-fltrp-2026:l02:field:picture1-blank3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l02:activity:picture-dialogue1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一男一女坐在桌边，一起看打开的菜单。",
+        "vi": "Một nam và một nữ ngồi bên bàn, cùng xem thực đơn đang mở."
+      },
+      "description": {
+        "zh": "一男一女坐在桌边，一起看打开的菜单。",
+        "vi": "Một nam và một nữ ngồi bên bàn, cùng xem thực đơn đang mở."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk3-l02-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "82830ff3c3f37da9b3d46ae8bce188106c0084d834a49184131b495bff4df238",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Pair looking at same open menu, hands touch menu area."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 29,
+        "printedPage": 17,
+        "owner": "hsk3-fltrp-2026:l02:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section3",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l02:field:picture2-blank1",
+        "hsk3-fltrp-2026:l02:field:picture2-blank2",
+        "hsk3-fltrp-2026:l02:field:picture2-blank3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l02:activity:picture-dialogue2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "戴黄色头盔的配送员骑车送餐，身后有黄色配送箱。",
+        "vi": "Người giao đồ ăn đội mũ bảo hiểm vàng, đi xe có thùng giao hàng màu vàng phía sau."
+      },
+      "description": {
+        "zh": "戴黄色头盔的配送员骑车送餐，身后有黄色配送箱。",
+        "vi": "Người giao đồ ăn đội mũ bảo hiểm vàng, đi xe có thùng giao hàng màu vàng phía sau."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk3-l02-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "6a960a0eeae86d65fd08faa96da12a91f2939595cfb6e203d9469d18e1748616",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Yellow helmet, yellow delivery box and two-wheel vehicle make delivery action clear."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "owner": "hsk3-fltrp-2026:l02:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section3",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l02:field:picture3-blank1",
+        "hsk3-fltrp-2026:l02:field:picture3-blank2",
+        "hsk3-fltrp-2026:l02:field:picture3-blank3",
+        "hsk3-fltrp-2026:l02:field:picture3-blank4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l02:activity:picture-dialogue3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "女子用手托着头，男子指着桌上的菜单，两人商量点菜。",
+        "vi": "Người nữ chống tay lên đầu, người nam chỉ vào thực đơn trên bàn; hai người bàn chuyện gọi món."
+      },
+      "description": {
+        "zh": "女子用手托着头，男子指着桌上的菜单，两人商量点菜。",
+        "vi": "Người nữ chống tay lên đầu, người nam chỉ vào thực đơn trên bàn; hai người bàn chuyện gọi món."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk3-l02-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "5d7c256f23af1a77c79bd27997647c691d41d6dec2da984159a02ee87eaaaeab",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Woman supporting head and man reaching toward shared menu preserve source distinguishing pose."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:group-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "辅助示意图：group-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "owner": "hsk3-fltrp-2026:l02:section4",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l02:activity:classroom-group"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一群朋友围坐在饭馆的餐桌旁一起吃饭。",
+        "vi": "Một nhóm bạn ngồi quanh bàn nhà hàng cùng ăn."
+      },
+      "description": {
+        "zh": "一群朋友围坐在饭馆的餐桌旁一起吃饭。",
+        "vi": "Một nhóm bạn ngồi quanh bàn nhà hàng cùng ăn."
+      },
+      "sceneKey": "group-1",
+      "file": "illustrations/hsk3-l02-group-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "e17277fd3506b425afe63f81d4c4883e4c0cb66f9624ce70412f6790ad96e5e8",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Group dining around shared table; contextual support figure with no response of its own."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:group-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "辅助示意图：group-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "owner": "hsk3-fltrp-2026:l02:section4",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section4",
+        "position": 2
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l02:activity:classroom-group"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一双手拿着显示菜品列表的手机点餐，旁边有餐盘。",
+        "vi": "Hai bàn tay cầm điện thoại hiện danh sách món ăn để đặt món; bên cạnh có đĩa thức ăn."
+      },
+      "description": {
+        "zh": "一双手拿着显示菜品列表的手机点餐，旁边有餐盘。",
+        "vi": "Hai bàn tay cầm điện thoại hiện danh sách món ăn để đặt món; bên cạnh có đĩa thức ăn."
+      },
+      "sceneKey": "group-2",
+      "file": "illustrations/hsk3-l02-group-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "0513dafb4a9998c3135e95f6fd48aeeefe1d9c7cde7f61939a04bbca19972b24",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Close-up phone menu with original generic dish thumbnails; contextual ordering support scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:group-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "辅助示意图：group-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "owner": "hsk3-fltrp-2026:l02:section4",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section4",
+        "position": 3
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l02:activity:classroom-group"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一名成人在家里厨房的锅前做饭，台面上有蔬菜。",
+        "vi": "Một người lớn nấu ăn trước nồi trong bếp ở nhà; trên quầy có rau."
+      },
+      "description": {
+        "zh": "一名成人在家里厨房的锅前做饭，台面上有蔬菜。",
+        "vi": "Một người lớn nấu ăn trước nồi trong bếp ở nhà; trên quầy có rau."
+      },
+      "sceneKey": "group-3",
+      "file": "illustrations/hsk3-l02-group-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "4cf4728ae29e678fea0b423c2cd03d2c332462fb148be3866cd6215c21f9d912",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Adult stirring pot in home kitchen; contextual home-cooking support scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l02:illustration:culture",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "section": "辅助示意图：culture",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 30,
+        "printedPage": 18,
+        "owner": "hsk3-fltrp-2026:l02:culture",
+        "sourceOwner": "hsk3-fltrp-2026:l02:section5",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一双深色筷子斜放在小筷架上。",
+        "vi": "Một đôi đũa sẫm màu đặt chéo trên gác đũa nhỏ."
+      },
+      "description": {
+        "zh": "一双深色筷子斜放在小筷架上。",
+        "vi": "Một đôi đũa sẫm màu đặt chéo trên gác đũa nhỏ."
+      },
+      "sceneKey": "culture",
+      "file": "illustrations/hsk3-l02-culture.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "58061c4be0d00b706f4c398070b63ec3e3a186f22dbc87628630c71e6e7670e3",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, card numbers or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of24 rasterized SVGs at full cell resolution across seven contact sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Exactly two chopsticks on a separate rest; no copied video UI."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK3 lessons 2–3 additive draft author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "answerPdfPages": [
+      2,
+      3
+    ],
+    "appendixPdfPages": [
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194
+    ],
+    "independentReview": "passed-source-content-and-real-renderer-state",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "1b9837df972fb34c314ca0c11a8a8e7f1c0f5d83e376a9a1f36e4337c1fecd4f",
+    "method": "Actual source, answer and appendix pixels inspected before additive authoring. Baseline nested content unchanged; references bilingual and nonunique.",
+    "limitations": [
+      "Author preparation is not independent acceptance.",
+      "No browser/release acceptance or audio alignment/perceptual verification claimed.",
+      "Culture video absent from supplied resources; numbered dialogue audio is not a video substitute.",
+      "Menu needs new source-faithful renderer; group support figures must visibly render."
+    ],
+    "independentReviewReport": "independent-hsk3-lessons-02-03-review/candidate-review/acceptance-report.md"
+  },
+  "additionalSourceRevisions": [
+    {
+      "id": "hsk3-official-vi-20261004",
+      "filename": "HSK3 (3.0).pdf",
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "bodyPrintedPageOffset": 12,
+      "language": "zh+vi",
+      "role": "additional-official-source; no replacement of original-source identity",
+      "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "sameBytesAsOriginalChineseSource": false,
+      "officialPOSAbbreviationLanguage": "Vietnamese",
+      "doesNotRevalidateOriginalEnglishAppendix": true,
+      "posLegend": {
+        "source": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表：词类缩写说明",
+          "provenance": "textbook"
+        },
+        "printedLanguage": "vi",
+        "rawLabelToChineseCategory": {
+          "dt.": "名词",
+          "đgt.": "动词",
+          "tt.": "形容词",
+          "đt.": "代词",
+          "phó.": "副词",
+          "giới.": "介词",
+          "liên.": "连词",
+          "trợ.": "助词",
+          "số.": "数词",
+          "lượng.": "量词",
+          "sl.": "数量词",
+          "ct.": "叹词",
+          "tượng.": "拟声词",
+          "đtnn.": "能愿动词",
+          "ttố.": "前缀",
+          "htố.": "后缀"
+        }
+      },
+      "sourceAudit": {
+        "authorStatus": "visual-reviewed",
+        "independentStatus": "accepted-source-evidence",
+        "scope": "Chinese, pinyin, printed number, POS, glossary page, lesson numbers and stars",
+        "vietnameseGlossAlignment": "deferred-to-Phase-B",
+        "independentEvidence": {
+          "status": "accepted-source-evidence",
+          "reviewer": "qa_hsk1_05_08",
+          "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+          "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+          "reviewedStableRows": 523,
+          "acceptedInputFiles": [
+            "official-vi-glossary.tsv",
+            "official-vi-l01-06.json",
+            "official-vi-l07-12.json",
+            "official-vi-l13-18.json"
+          ],
+          "acceptedStableIdCount": 523,
+          "acceptedInputManifest": [
+            {
+              "filename": "official-vi-glossary.tsv",
+              "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+              "status": "independently-accepted-source-evidence",
+              "glossaryRows": 487
+            },
+            {
+              "filename": "official-vi-l01-06.json",
+              "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 171,
+              "printedOccurrences": 162,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l07-12.json",
+              "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 184,
+              "printedOccurrences": 166,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l13-18.json",
+              "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 168,
+              "printedOccurrences": 163,
+              "vocabularyBoxes": 24
+            }
+          ],
+          "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+        }
+      }
+    }
+  ]
+}
+`;export{e as default};

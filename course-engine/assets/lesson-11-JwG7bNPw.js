@@ -1,0 +1,5656 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk2-fltrp-2026",
+  "version": "2026.1",
+  "number": 11,
+  "id": "hsk2-fltrp-2026:l11",
+  "title": {
+    "zh": "我最喜欢吃中国菜",
+    "vi": "Tôi thích ăn món Trung Quốc nhất",
+    "py": "Wǒ zuì xǐhuan chī Zhōngguó cài"
+  },
+  "source": {
+    "startPdfPage": 108,
+    "endPdfPage": 116,
+    "startPrintedPage": 93,
+    "endPrintedPage": 101
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent AI source/language/pedagogy reviewer",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "All textbook PDF108–116 and answer PDF14–15 visually inspected;13 numbered headwords/13 lexical records.",
+      "All8 original-track ASR outputs and all segments checked as auxiliary mapping evidence, not human listening certification; homophones 腾/经肠/尽/食/醉 and names are kept as printed 疼/经常/进/时/最/家月.",
+      "Printed gè and hǎohǎo preserved in text3. Culture video11-1 is absent from supplied media; source topic/image only retained.",
+      "Independent reviewer inspected all lesson/answer page pixels, every JSON field and all8 ASR segment outputs;16/16 combined lesson11–12 MP3 hashes and full decodes rechecked. This is not human/native-speaker audio certification.",
+      "Supplemental listening near-repeats replaced with distinct comprehension targets; ordering prompts now constrain plausible alternative chunk placements. See independent audit."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并描述身体状况和病情。",
+      "vi": "Nghe hiểu và miêu tả tình trạng sức khỏe, bệnh tình.",
+      "id": "hsk2-fltrp-2026:l11:objective1",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用动态助词“着”表达动作或状态的持续。",
+      "vi": "Nghe hiểu và dùng trợ từ động thái 着 để diễn đạt hành động hoặc trạng thái đang được duy trì.",
+      "id": "hsk2-fltrp-2026:l11:objective2",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握程度副词“最”的用法，能表达某种属性超过所有同类的人或事物。",
+      "vi": "Nắm cách dùng phó từ mức độ 最 để nói một đặc điểm vượt tất cả người hoặc vật cùng loại.",
+      "id": "hsk2-fltrp-2026:l11:objective3",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk2-fltrp-2026:l11:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 疼；B 药；C 药店；D 路上",
+          "vi": "A đau; B thuốc; C hiệu thuốc; D trên đường"
+        },
+        {
+          "zh": "图片描述（编辑补充）：药店柜台；路上行驶的汽车；药片和胶囊；捂着脸表示疼痛的人。",
+          "vi": "Mô tả tranh (biên tập bổ sung): quầy hiệu thuốc; ô tô chạy trên đường; viên thuốc; người ôm má vì đau.",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:warmup2",
+      "title": {
+        "zh": "用一个动词或动词短语描述下面的图片。",
+        "vi": "Dùng một động từ hoặc cụm động từ để miêu tả tranh."
+      },
+      "items": [
+        {
+          "zh": "①______；②______；③______；④______",
+          "vi": "①______；②______；③______；④______"
+        },
+        {
+          "zh": "图片描述（编辑补充）：夜晚街道上正在下雪；女孩戴耳机听音乐；一只手握门把手开门；一只手拿着水瓶。",
+          "vi": "Mô tả tranh (biên tập bổ sung): tuyết rơi trên phố ban đêm; bé gái đeo tai nghe nghe nhạc; bàn tay mở cửa; bàn tay cầm chai nước.",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk2-fltrp-2026:l11:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在教室，王一飞和白家月在聊天儿。",
+        "vi": "Trong lớp học, Vương Nhất Phi và Bạch Gia Nguyệt trò chuyện.",
+        "source": {
+          "pdfPage": 109,
+          "printedPage": 94,
+          "section": "课文1情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "11-1",
+      "lines": [
+        {
+          "zh": "家月，都下课了，你怎么还不回家？",
+          "vi": "Gia Nguyệt, đã tan học rồi, sao em vẫn chưa về nhà?",
+          "id": "hsk2-fltrp-2026:l11:text1:line1",
+          "speaker": "王一飞",
+          "py": "Jiāyuè, dōu xiàkè le, nǐ zěnme hái bù huí jiā?",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我头疼，不太舒服。",
+          "vi": "Em đau đầu, không được khỏe lắm.",
+          "id": "hsk2-fltrp-2026:l11:text1:line2",
+          "speaker": "白家月",
+          "py": "Wǒ tóu téng, bú tài shūfu.",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你这几天经常头疼，去医院看看吧。",
+          "vi": "Mấy hôm nay em hay đau đầu, đến bệnh viện khám nhé.",
+          "id": "hsk2-fltrp-2026:l11:text1:line3",
+          "speaker": "王一飞",
+          "py": "Nǐ zhè jǐ tiān jīngcháng tóu téng, qù yīyuàn kànkan ba.",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我想休息一下，现在不能动，一动就疼。",
+          "vi": "Em muốn nghỉ một chút. Bây giờ em không cử động được, cứ cử động là đau.",
+          "id": "hsk2-fltrp-2026:l11:text1:line4",
+          "speaker": "白家月",
+          "py": "Wǒ xiǎng xiūxi yíxià, xiànzài bù néng dòng, yí dòng jiù téng.",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那你在这儿坐着，我去开车，一会儿送你去医院。",
+          "vi": "Vậy em cứ ngồi đây, cô đi lấy xe, lát nữa đưa em đến bệnh viện.",
+          "id": "hsk2-fltrp-2026:l11:text1:line5",
+          "speaker": "王一飞",
+          "py": "Nà nǐ zài zhèr zuòzhe, wǒ qù kāichē, yíhuìr sòng nǐ qù yīyuàn.",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "谢谢王老师。",
+          "vi": "Em cảm ơn cô Vương.",
+          "id": "hsk2-fltrp-2026:l11:text1:line6",
+          "speaker": "白家月",
+          "py": "Xièxie Wáng lǎoshī.",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月现在在哪儿？",
+          "vi": "Bây giờ Gia Nguyệt ở đâu?",
+          "id": "hsk2-fltrp-2026:l11:text1:question1",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "医院",
+            "家里",
+            "教室"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一飞现在去做什么？",
+          "vi": "Nhất Phi đi làm gì bây giờ?",
+          "id": "hsk2-fltrp-2026:l11:text1:question2",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "开车",
+            "回家",
+            "找医生"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "白家月为什么不回家？",
+          "vi": "Vì sao Gia Nguyệt chưa về nhà?",
+          "id": "hsk2-fltrp-2026:l11:text1:question3",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月现在能不能动？为什么？",
+          "vi": "Bây giờ Gia Nguyệt có cử động được không? Vì sao?",
+          "id": "hsk2-fltrp-2026:l11:text1:question4",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在王一飞车里，王一飞和白家月在聊天儿，李文打来一个电话。",
+        "vi": "Trong xe của Nhất Phi, cô và Gia Nguyệt đang trò chuyện thì Lý Văn gọi đến.",
+        "source": {
+          "pdfPage": 110,
+          "printedPage": 95,
+          "section": "课文2情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "11-3",
+      "lines": [
+        {
+          "zh": "现在路上车多，还下着雪，我开慢一点儿。",
+          "vi": "Bây giờ trên đường đông xe, lại đang có tuyết rơi, cô sẽ lái chậm một chút.",
+          "id": "hsk2-fltrp-2026:l11:text2:line1",
+          "speaker": "王一飞",
+          "py": "Xiànzài lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn yìdiǎnr.",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没问题，现在头没那么疼了。",
+          "vi": "Không sao ạ, giờ đầu em không đau như lúc nãy nữa.",
+          "id": "hsk2-fltrp-2026:l11:text2:line2",
+          "speaker": "白家月",
+          "py": "Méi wèntí, xiànzài tóu méi nàme téng le.",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好。李文来电话了，你帮我接一下。",
+          "vi": "Được. Lý Văn gọi đến, em nghe giúp cô một chút.",
+          "id": "hsk2-fltrp-2026:l11:text2:line3",
+          "speaker": "王一飞",
+          "py": "Hǎo. Lǐ Wén lái diànhuà le, nǐ bāng wǒ jiē yíxià.",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "喂，李文，王老师开着车呢，你找她有事吗？",
+          "vi": "A lô, Lý Văn, cô Vương đang lái xe, bạn tìm cô có việc gì không?",
+          "id": "hsk2-fltrp-2026:l11:text2:line4",
+          "speaker": "白家月",
+          "py": "Wèi, Lǐ Wén, Wáng lǎoshī kāizhe chē ne, nǐ zhǎo tā yǒu shì ma?",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没什么事。今天雪这么大，你们开车去哪儿啊？",
+          "vi": "Không có việc gì quan trọng. Hôm nay tuyết lớn thế này, hai người lái xe đi đâu vậy?",
+          "id": "hsk2-fltrp-2026:l11:text2:line5",
+          "speaker": "李文",
+          "py": "Méi shénme shì. Jīntiān xuě zhème dà, nǐmen kāichē qù nǎr a?",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "去医院，我头有点儿疼。",
+          "vi": "Đi bệnh viện, tôi hơi đau đầu.",
+          "id": "hsk2-fltrp-2026:l11:text2:line6",
+          "speaker": "白家月",
+          "py": "Qù yīyuàn, wǒ tóu yǒudiǎnr téng.",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那我一会儿去看看你。",
+          "vi": "Vậy lát nữa tôi đến thăm bạn.",
+          "id": "hsk2-fltrp-2026:l11:text2:line7",
+          "speaker": "李文",
+          "py": "Nà wǒ yíhuìr qù kànkan nǐ.",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一飞在做什么？",
+          "vi": "Nhất Phi đang làm gì?",
+          "id": "hsk2-fltrp-2026:l11:text2:question1",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "开车",
+            "看病",
+            "接电话"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "今天天气怎么样？",
+          "vi": "Hôm nay thời tiết thế nào?",
+          "id": "hsk2-fltrp-2026:l11:text2:question2",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "很好",
+            "下雨",
+            "下雪"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一飞为什么要开慢一点儿？",
+          "vi": "Vì sao Nhất Phi muốn lái chậm một chút?",
+          "id": "hsk2-fltrp-2026:l11:text2:question3",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文一会儿要做什么？",
+          "vi": "Lát nữa Lý Văn sẽ làm gì?",
+          "id": "hsk2-fltrp-2026:l11:text2:question4",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "课文2音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在房间，李文来看望白家月。",
+        "vi": "Trong phòng, Lý Văn đến thăm Gia Nguyệt.",
+        "source": {
+          "pdfPage": 112,
+          "printedPage": 97,
+          "section": "课文3情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "11-5",
+      "lines": [
+        {
+          "zh": "李文，快请进！",
+          "vi": "Lý Văn, mau vào đi!",
+          "id": "hsk2-fltrp-2026:l11:text3:line1",
+          "speaker": "白家月",
+          "py": "Lǐ Wén, kuài qǐng jìn!",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "家月，你怎么样了？头还疼吗？",
+          "vi": "Gia Nguyệt, bạn thế nào rồi? Đầu còn đau không?",
+          "id": "hsk2-fltrp-2026:l11:text3:line2",
+          "speaker": "李文",
+          "py": "Jiāyuè, nǐ zěnmeyàng le? Tóu hái téng ma?",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不那么疼了。医生开了一些药，吃完就好多了。",
+          "vi": "Không đau như trước nữa. Bác sĩ kê một ít thuốc, uống xong thì đỡ nhiều rồi.",
+          "id": "hsk2-fltrp-2026:l11:text3:line3",
+          "speaker": "白家月",
+          "py": "Bú nàme téng le. Yīshēng kāile yìxiē yào, chīwán jiù hǎoduō le.",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那就好！",
+          "vi": "Vậy thì tốt!",
+          "id": "hsk2-fltrp-2026:l11:text3:line4",
+          "speaker": "李文",
+          "py": "Nà jiù hǎo!",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "家月，你想不想吃点儿东西？",
+          "vi": "Gia Nguyệt, em có muốn ăn gì một chút không?",
+          "id": "hsk2-fltrp-2026:l11:text3:line5",
+          "speaker": "王一飞",
+          "py": "Jiāyuè, nǐ xiǎng bu xiǎng chī diǎnr dōngxi?",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "吃点儿吧，身体不舒服时更要好好吃饭。",
+          "vi": "Ăn một chút đi, lúc không khỏe lại càng phải ăn uống cho tử tế.",
+          "id": "hsk2-fltrp-2026:l11:text3:line6",
+          "speaker": "李文",
+          "py": "Chī diǎnr ba, shēntǐ bù shūfu shí gèng yào hǎohǎo chī fàn.",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "吃点儿什么呢？",
+          "vi": "Ăn gì một chút nhỉ?",
+          "id": "hsk2-fltrp-2026:l11:text3:line7",
+          "speaker": "白家月",
+          "py": "Chī diǎnr shénme ne?",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你最喜欢吃中国菜，我做几个中国菜吧。",
+          "vi": "Em thích món Trung Quốc nhất, để cô nấu vài món Trung Quốc nhé.",
+          "id": "hsk2-fltrp-2026:l11:text3:line8",
+          "speaker": "王一飞",
+          "py": "Nǐ zuì xǐhuan chī Zhōngguó cài, wǒ zuò jǐ gè Zhōngguó cài ba.",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好的，谢谢王老师。",
+          "vi": "Vâng, em cảm ơn cô Vương.",
+          "id": "hsk2-fltrp-2026:l11:text3:line9",
+          "speaker": "白家月",
+          "py": "Hǎo de, xièxie Wáng lǎoshī.",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月现在怎么样了？",
+          "vi": "Bây giờ Gia Nguyệt thế nào?",
+          "id": "hsk2-fltrp-2026:l11:text3:question1",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "不想吃饭",
+            "身体不舒服",
+            "头不那么疼了"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一飞现在要做什么？",
+          "vi": "Bây giờ Nhất Phi định làm gì?",
+          "id": "hsk2-fltrp-2026:l11:text3:question2",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "去买药",
+            "找医生",
+            "去做菜"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "白家月为什么头不那么疼了？",
+          "vi": "Vì sao đầu Gia Nguyệt đỡ đau?",
+          "id": "hsk2-fltrp-2026:l11:text3:question3",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文让白家月做什么？",
+          "vi": "Lý Văn khuyên Gia Nguyệt làm gì?",
+          "id": "hsk2-fltrp-2026:l11:text3:question4",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "课文3音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在房间，白家月在写日记。",
+        "vi": "Trong phòng, Gia Nguyệt viết nhật ký.",
+        "source": {
+          "pdfPage": 114,
+          "printedPage": 99,
+          "section": "课文4情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "11-7",
+      "lines": [
+        {
+          "zh": "我这几天经常头疼，从药店买了点儿药，没去医院。今天下课后，王老师看我不舒服，就送我去医院了。从医院回来，李文也来看我了。现在他们都回去了，我也要睡觉了。",
+          "vi": "Mấy hôm nay tôi thường đau đầu, đã mua ít thuốc ở hiệu thuốc mà chưa đến bệnh viện. Hôm nay tan học, cô Vương thấy tôi không khỏe nên đưa tôi đến bệnh viện. Khi về từ bệnh viện, Lý Văn cũng đến thăm tôi. Giờ mọi người đã về rồi, tôi cũng chuẩn bị ngủ.",
+          "id": "hsk2-fltrp-2026:l11:text4:line1",
+          "speaker": "白家月",
+          "py": "Wǒ zhè jǐ tiān jīngcháng tóu téng, cóng yàodiàn mǎile diǎnr yào, méi qù yīyuàn. Jīntiān xiàkè hòu, Wáng lǎoshī kàn wǒ bù shūfu, jiù sòng wǒ qù yīyuàn le. Cóng yīyuàn huílái, Lǐ Wén yě lái kàn wǒ le. Xiànzài tāmen dōu huíqù le, wǒ yě yào shuìjiào le.",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "这几天天气不好，所以白家月生病了。",
+          "vi": "Mấy hôm nay thời tiết xấu nên Gia Nguyệt bị ốm.",
+          "id": "hsk2-fltrp-2026:l11:text4:question1",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "因为头疼，所以白家月自己去了医院。",
+          "vi": "Vì đau đầu nên Gia Nguyệt tự đến bệnh viện.",
+          "id": "hsk2-fltrp-2026:l11:text4:question2",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "白家月是在哪儿买的药？",
+          "vi": "Gia Nguyệt đã mua thuốc ở đâu?",
+          "id": "hsk2-fltrp-2026:l11:text4:question3",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "医院",
+            "药店",
+            "商店"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "现在白家月要做什么？",
+          "vi": "Bây giờ Gia Nguyệt định làm gì?",
+          "id": "hsk2-fltrp-2026:l11:text4:question4",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "睡觉",
+            "去看李文",
+            "送王老师"
+          ],
+          "answer": 0
+        }
+      ],
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "课文4音频标记",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "头",
+      "vi": "đầu",
+      "id": "hsk2-fltrp-2026:l11:word01",
+      "py": "tóu",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "11-2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：头",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "疼",
+      "vi": "đau",
+      "id": "hsk2-fltrp-2026:l11:word02",
+      "py": "téng",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "11-2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：疼",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "adj.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "经常",
+      "vi": "thường xuyên",
+      "id": "hsk2-fltrp-2026:l11:word03",
+      "py": "jīngcháng",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "11-2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：经常",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "adv.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "动",
+      "vi": "cử động, di chuyển",
+      "id": "hsk2-fltrp-2026:l11:word04",
+      "py": "dòng",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "11-2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：动",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "v.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "着",
+      "vi": "trợ từ chỉ sự tiếp diễn của hành động hoặc trạng thái",
+      "id": "hsk2-fltrp-2026:l11:word05",
+      "py": "zhe",
+      "pos": "trợ từ",
+      "sourceText": 1,
+      "audioTrack": "11-2",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：着",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "part.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "路上",
+      "vi": "trên đường, dọc đường",
+      "id": "hsk2-fltrp-2026:l11:word06",
+      "py": "lùshang",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "11-4",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：路上",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "慢",
+      "vi": "chậm",
+      "id": "hsk2-fltrp-2026:l11:word07",
+      "py": "màn",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "11-4",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：慢",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "adj.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "进",
+      "vi": "vào, đi vào",
+      "id": "hsk2-fltrp-2026:l11:word08",
+      "py": "jìn",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "11-6",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：进",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "v.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "药",
+      "vi": "thuốc",
+      "id": "hsk2-fltrp-2026:l11:word09",
+      "py": "yào",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "11-6",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：药",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "身体",
+      "vi": "cơ thể, sức khỏe",
+      "id": "hsk2-fltrp-2026:l11:word10",
+      "py": "shēntǐ",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "11-6",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：身体",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "时",
+      "vi": "lúc, khi",
+      "id": "hsk2-fltrp-2026:l11:word11",
+      "py": "shí",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "11-6",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：时",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "最",
+      "vi": "nhất",
+      "id": "hsk2-fltrp-2026:l11:word12",
+      "py": "zuì",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "11-6",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 161,
+        "printedPage": 146,
+        "section": "词语表：最",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 12,
+        "sourcePos": "adv.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "药店",
+      "vi": "hiệu thuốc",
+      "id": "hsk2-fltrp-2026:l11:word13",
+      "py": "yàodiàn",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "11-8",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：药店",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 13,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          11
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk2-fltrp-2026:l11:grammar1",
+      "title": {
+        "zh": "动态助词“着”（1）",
+        "vi": "Trợ từ động thái 着 (1)"
+      },
+      "structure": "动词 + 着；没（有）+ 动词 + 着",
+      "explanation": {
+        "zh": "动态助词“着”用在动词后面，表示动作或状态的持续，否定形式是在动词前面加“没（有）”。",
+        "vi": "着 đứng sau động từ, diễn đạt hành động hoặc trạng thái tiếp tục được duy trì. Phủ định đặt 没 hoặc 没有 trước động từ."
+      },
+      "examples": [
+        {
+          "zh": "那你在这儿坐着。",
+          "vi": "Vậy em cứ ngồi ở đây.",
+          "py": "Nà nǐ zài zhèr zuòzhe.",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "教室的门开着。",
+          "vi": "Cửa lớp đang mở.",
+          "py": "Jiàoshì de mén kāizhe.",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "教室的门没开着。",
+          "vi": "Cửa lớp không mở.",
+          "py": "Jiàoshì de mén méi kāizhe.",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你看见我的手机了吗？B：别找了，我______呢。",
+          "vi": "A: Bạn có thấy điện thoại của tôi không? B: Đừng tìm nữa, tôi ______ đây.",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：小雪回来了吗？B：回来了，在她的房间______呢。",
+          "vi": "A: Tiểu Tuyết về chưa? B: Về rồi, đang ______ trong phòng cô bé.",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：房间的门______，但是刘爷爷没在里边。B：他出去了吧？我给他打个电话。",
+          "vi": "A: Cửa phòng ______, nhưng ông Lưu không ở trong đó. B: Chắc ông ra ngoài rồi nhỉ? Tôi gọi cho ông một cuộc.",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "动态助词“着”（1）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:grammar2",
+      "title": {
+        "zh": "动态助词“着”（2）",
+        "vi": "Trợ từ động thái 着 (2)"
+      },
+      "structure": "动词 + 着 + 宾语；……着吗？／……着没有？／动词 + 没 + 动词 + 着？",
+      "explanation": {
+        "zh": "表示动作或状态持续的句子中，宾语要在动态助词“着”的后面。疑问形式有三种：（1）在句尾加“吗”；（2）在句尾加“没有”；（3）动词+没+动词+着。",
+        "vi": "Trong câu diễn đạt hành động hoặc trạng thái tiếp diễn, tân ngữ đứng sau 着. Ba dạng hỏi trong bài: thêm 吗 ở cuối; thêm 没有 ở cuối; hoặc dùng động từ + 没 + động từ + 着."
+      },
+      "examples": [
+        {
+          "zh": "现在路上车多，还下着雪，我开慢一点儿。",
+          "vi": "Bây giờ đông xe, lại đang có tuyết rơi, tôi lái chậm một chút.",
+          "py": "Xiànzài lùshang chē duō, hái xiàzhe xuě, wǒ kāi màn yìdiǎnr.",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "她穿着白色的裤子。",
+          "vi": "Cô ấy đang mặc quần trắng.",
+          "py": "Tā chuānzhe báisè de kùzi.",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "陈天中没拿着咖啡。",
+          "vi": "Trần Thiên Trung không cầm cà phê.",
+          "py": "Chén Tiānzhōng méi názhe kāfēi.",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "教室的门开着吗？",
+          "vi": "Cửa lớp có đang mở không?",
+          "py": "Jiàoshì de mén kāizhe ma?",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月坐着没有？",
+          "vi": "Gia Nguyệt có đang ngồi không?",
+          "py": "Bái Jiāyuè zuòzhe méiyǒu?",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "她拿没拿着手机？",
+          "vi": "Cô ấy có đang cầm điện thoại không?",
+          "py": "Tā ná méi názhe shǒujī?",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：安妮，你看见我了吗？我穿着______。B：看见了，你快过来吧。",
+          "vi": "A: Annie, bạn thấy tôi chưa? Tôi đang mặc ______. B: Thấy rồi, bạn qua đây đi.",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：外边______，你别出去跑步了。B：好吧，那就在家运动运动。",
+          "vi": "A: Bên ngoài ______, bạn đừng ra chạy bộ nữa. B: Được, vậy tập thể dục một chút ở nhà.",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：小明，电视______？B：没有，我们都没看电视。",
+          "vi": "A: Tiểu Minh, ti vi ______? B: Không ạ, chúng con đều không xem ti vi.",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "动态助词“着”（2）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:grammar3",
+      "title": {
+        "zh": "程度副词“最”",
+        "vi": "Phó từ mức độ 最"
+      },
+      "structure": "最 + 形容词／心理动词",
+      "explanation": {
+        "zh": "程度副词“最”用在形容词或心理动词前面，表示某种属性超过所有同类的人或事物。",
+        "vi": "最 đứng trước tính từ hoặc động từ tâm lý, thể hiện mức cao nhất của một đặc điểm trong nhóm người/vật cùng loại đang so sánh."
+      },
+      "examples": [
+        {
+          "zh": "你最喜欢吃中国菜。",
+          "vi": "Bạn thích ăn món Trung Quốc nhất.",
+          "py": "Nǐ zuì xǐhuan chī Zhōngguó cài.",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "在我们家，爸爸最高。",
+          "vi": "Trong nhà tôi, bố cao nhất.",
+          "py": "Zài wǒmen jiā, bàba zuì gāo.",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你们班谁说中文说得最好？",
+          "vi": "Trong lớp các bạn, ai nói tiếng Trung giỏi nhất?",
+          "py": "Nǐmen bān shéi shuō Zhōngwén shuō de zuì hǎo?",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你来过这家饭馆吗？B：来过，这里的鱼做得______。",
+          "vi": "A: Bạn từng đến nhà hàng này chưa? B: Rồi, cá ở đây nấu ______.",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你最想去哪儿旅游？B：我______。",
+          "vi": "A: Bạn muốn đi du lịch đâu nhất? B: Tôi ______.",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你最喜欢什么颜色？B：我______。",
+          "vi": "A: Bạn thích màu nào nhất? B: Tôi ______.",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "程度副词“最”",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk2-fltrp-2026:l11:section1",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：“没什么事”",
+        "vi": "Gợi ý: 没什么事"
+      },
+      "blocks": [
+        {
+          "zh": "“没什么事”的意思是“没有重要的事”。",
+          "vi": "没什么事 nghĩa là “không có việc gì quan trọng”.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "小语助力：“没什么事”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "小语助力：“没什么事”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:section2",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：“开”",
+        "vi": "Gợi ý: 开"
+      },
+      "blocks": [
+        {
+          "zh": "这里的“开”表示写出（药方）。",
+          "vi": "Ở đây 开 nghĩa là viết/kê đơn thuốc.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "小语助力：“开”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "小语助力：“开”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:section3",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: điền từ"
+      },
+      "blocks": [
+        {
+          "zh": "A 经常；B 慢；C 时；D 身体；E 路上",
+          "vi": "A thường xuyên; B chậm; C lúc; D cơ thể/sức khỏe; E trên đường",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）______车多人多，你慢点儿开。\\n（2）他今天______不舒服，所以没来上课。\\n（3）我游泳游得很______，但我跑步跑得很快。\\n（4）A：星期天我______跟朋友去踢球。B：我也喜欢踢球，下次叫我一起去吧。\\n（5）A：昨天雪太大，公交车开得很慢。B：是啊，我到家______都快9点了。",
+          "vi": "(1) ______ đông xe đông người, bạn lái chậm một chút.\\n(2) Hôm nay ______ anh ấy không khỏe nên không đến lớp.\\n(3) Tôi bơi rất ______, nhưng chạy rất nhanh.\\n(4) A: Chủ nhật tôi ______ đi đá bóng với bạn. B: Tôi cũng thích đá bóng, lần sau gọi tôi đi cùng nhé.\\n(5) A: Hôm qua tuyết lớn quá, xe buýt chạy rất chậm. B: Đúng vậy, ______ tôi về đến nhà đã gần 9 giờ rồi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:section4",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: mô tả tranh"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp mới học để miêu tả tranh.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）他是我的老师，也是我______好的朋友。\\n（2）这是离我家最近的______，我不舒服时就来这儿买药。\\n（3）他生病了，______。\\n（4）看完电影，她还在那里______。",
+          "vi": "(1) Thầy ấy là giáo viên của tôi, cũng là người bạn tốt ______ của tôi.\\n(2) Đây là ______ gần nhà tôi nhất; khi không khỏe tôi đến đây mua thuốc.\\n(3) Anh ấy ốm rồi, ______.\\n(4) Xem phim xong, cô bé vẫn ______ ở đó.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片描述（编辑补充）：老师和学生击掌；顾客在药店买药；男子捂头就诊；女孩坐在电影院座位上。",
+          "vi": "Mô tả tranh (biên tập bổ sung): thầy và trò đập tay; khách mua thuốc ở hiệu thuốc; người đàn ông ôm đầu khi khám bệnh; bé gái ngồi trên ghế rạp phim.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:section5",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：角色扮演",
+        "vi": "Hoạt động trên lớp: đóng vai"
+      },
+      "blocks": [
+        {
+          "zh": "两人一组，一人扮演医生，一人扮演病人。病人头疼，所以来医院看病，医生询问什么时候开始疼的、吃过药没有、最近做过什么，等等。尽可能使用本课所学生词和语法。",
+          "vi": "Theo cặp, một người đóng vai bác sĩ, một người đóng vai bệnh nhân. Bệnh nhân đau đầu nên đến khám. Bác sĩ hỏi bắt đầu đau khi nào, đã uống thuốc chưa, gần đây làm gì… Cố gắng dùng từ và ngữ pháp của bài.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 116,
+            "printedPage": 101,
+            "section": "课堂活动：角色扮演",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你哪里不舒服？\\nB：头疼，不能动，一动就疼。\\n……",
+          "vi": "A: Bạn khó chịu ở đâu?\\nB: Đau đầu, không cử động được, cứ cử động là đau.\\n…",
+          "kind": "example",
+          "source": {
+            "pdfPage": 116,
+            "printedPage": 101,
+            "section": "课堂活动：角色扮演",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 116,
+        "printedPage": 101,
+        "section": "课堂活动：角色扮演",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:section6",
+      "kind": "culture",
+      "title": {
+        "zh": "小语的彩蛋：中国人喝热水的习惯",
+        "vi": "Tìm hiểu thêm: thói quen uống nước ấm của người Trung Quốc"
+      },
+      "blocks": [
+        {
+          "zh": "中国人喝热水的习惯。视频编号11-1。",
+          "vi": "Thói quen uống nước ấm của người Trung Quốc. Mã video 11-1.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 116,
+            "printedPage": 101,
+            "section": "小语的彩蛋：中国人喝热水的习惯",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片描述及资源说明（编辑补充）：水壶向杯子里倒热水。所提供的素材包没有这个视频；此处只保留书上标题和图片信息，不用同号课文音频代替。",
+          "vi": "Mô tả tranh và tài nguyên (biên tập bổ sung): ấm rót nước nóng vào cốc. Gói tài liệu được cung cấp không có video này; chỉ lưu chủ đề và thông tin từ tranh, không thay bằng bản ghi bài khóa cùng số.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 116,
+            "printedPage": 101,
+            "section": "小语的彩蛋：中国人喝热水的习惯",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 116,
+        "printedPage": 101,
+        "section": "小语的彩蛋：中国人喝热水的习惯",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk2-fltrp-2026:l11:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“爷爷经常去公园”说明他去公园的次数怎么样？",
+        "vi": "Ông thường xuyên đi công viên: số lần đi thế nào?"
+      },
+      "options": [
+        "只去过一次",
+        "去得很多、很频繁",
+        "从来没有去"
+      ],
+      "answer": 1,
+      "focus": "frequency",
+      "explanation": {
+        "zh": "经常表示行为发生得频繁。",
+        "vi": "经常 diễn đạt tần suất thường xuyên."
+      },
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想说头部不舒服，哪句合适？",
+        "vi": "Muốn nói bị đau ở đầu, chọn câu nào?"
+      },
+      "options": [
+        "我头疼。",
+        "我手疼。",
+        "我脚疼。"
+      ],
+      "answer": 0,
+      "focus": "body-word",
+      "explanation": {
+        "zh": "头是身体的头部。",
+        "vi": "头 là đầu."
+      },
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "房门现在保持打开的状态，应说哪句？",
+        "vi": "Cửa phòng hiện đang ở trạng thái mở. Nói thế nào?"
+      },
+      "options": [
+        "门开过。",
+        "门要开了。",
+        "门开着。"
+      ],
+      "answer": 2,
+      "focus": "ongoing-state",
+      "explanation": {
+        "zh": "着表示状态持续。",
+        "vi": "着 diễn đạt trạng thái được duy trì."
+      },
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "按本课格式，把“窗户开着”改为否定。",
+        "vi": "Theo mẫu trong bài, chuyển câu cửa sổ đang mở sang phủ định."
+      },
+      "options": [
+        "窗户不开着了。",
+        "窗户没开着。",
+        "窗户没开过。"
+      ],
+      "answer": 1,
+      "focus": "negative-zhe",
+      "explanation": {
+        "zh": "没放在动词前；过表示经历，不是持续。",
+        "vi": "没 đứng trước động từ; 过 nói trải nghiệm, không phải trạng thái tiếp diễn."
+      },
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "照片里妹妹手里有一杯水。哪句正确描述照片？",
+        "vi": "Trong ảnh, em gái cầm một cốc nước. Câu nào miêu tả đúng?"
+      },
+      "options": [
+        "妹妹拿着一杯水。",
+        "妹妹喝完了一杯水。",
+        "妹妹要买一杯水。"
+      ],
+      "answer": 0,
+      "focus": "object-after-zhe",
+      "explanation": {
+        "zh": "拿着说明手里持续拿有某物。",
+        "vi": "拿着 cho biết đang cầm vật trong tay."
+      },
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "要用本课的正反问形式问他是否拿着书，应选哪句？",
+        "vi": "Hỏi anh ấy có cầm sách không bằng dạng chính phản trong bài."
+      },
+      "options": [
+        "他拿不拿书？",
+        "他拿着书吗？",
+        "他拿没拿着书？"
+      ],
+      "answer": 2,
+      "focus": "zhe-a-not-a",
+      "explanation": {
+        "zh": "动词+没+动词+着是本课的正反问。",
+        "vi": "Dạng chính phản này là động từ + 没 + động từ + 着."
+      },
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "与“快”意思相反的是哪个词？",
+        "vi": "Từ nào trái nghĩa với nhanh?"
+      },
+      "options": [
+        "高",
+        "慢",
+        "多"
+      ],
+      "answer": 1,
+      "focus": "speed-opposite",
+      "explanation": {
+        "zh": "快和慢表示相反的速度。",
+        "vi": "快 và 慢 chỉ tốc độ trái ngược."
+      },
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我到家时，妈妈在做饭”中的“时”是什么意思？",
+        "vi": "时 trong câu lúc tôi về nhà, mẹ đang nấu cơm nghĩa là gì?"
+      },
+      "options": [
+        "地方",
+        "次数",
+        "时候"
+      ],
+      "answer": 2,
+      "focus": "time-noun",
+      "explanation": {
+        "zh": "时在这里表示时候。",
+        "vi": "时 ở đây nghĩa là lúc/khi."
+      },
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "三个同学中，小林比其他两个人都高。应说哪句？",
+        "vi": "Trong ba bạn, Tiểu Lâm cao hơn cả hai bạn còn lại."
+      },
+      "options": [
+        "小林最高。",
+        "小林很矮。",
+        "小林和他们一样高。"
+      ],
+      "answer": 0,
+      "focus": "superlative",
+      "explanation": {
+        "zh": "最表示在该范围内程度最高。",
+        "vi": "最 chỉ mức cao nhất trong nhóm."
+      },
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“她最想去北京”表示什么？",
+        "vi": "Cô ấy muốn đi Bắc Kinh nhất nghĩa là gì?"
+      },
+      "options": [
+        "她已经到北京了。",
+        "她去北京的愿望最强。",
+        "她不想去北京。"
+      ],
+      "answer": 1,
+      "focus": "mental-verb-superlative",
+      "explanation": {
+        "zh": "最放在心理动词想前，表达最强的愿望。",
+        "vi": "最 đứng trước 想 để nói mong muốn nhất."
+      },
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 姐姐: Chị gái đang mặc một chiếc áo màu xanh. Đặt 一件 trước 蓝色的. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "一件",
+        "姐姐",
+        "蓝色的",
+        "穿",
+        "着",
+        "衣服。"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2,
+        5
+      ],
+      "focus": "wear-state",
+      "explanation": {
+        "zh": "姐姐穿着一件蓝色的衣服。",
+        "vi": "着 đứng sau 穿 và trước tân ngữ."
+      },
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 在我们班，: Trong lớp chúng tôi, Tiểu Mai nói tiếng Trung giỏi nhất. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "说中文",
+        "小美",
+        "最好。",
+        "在我们班，",
+        "说得"
+      ],
+      "answer": [
+        3,
+        1,
+        0,
+        4,
+        2
+      ],
+      "focus": "superlative-skill",
+      "explanation": {
+        "zh": "在我们班，小美说中文说得最好。",
+        "vi": "Nêu phạm vi trước; 最好 đứng sau 得."
+      },
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 你: Bạn cứ ngồi trên chiếc ghế này nhé. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "这把",
+        "吧。",
+        "你",
+        "坐",
+        "在",
+        "椅子上",
+        "着"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        5,
+        3,
+        6,
+        1
+      ],
+      "focus": "posture-state",
+      "explanation": {
+        "zh": "你在这把椅子上坐着吧。",
+        "vi": "在 + địa điểm đứng trước 坐着; 吧 đặt cuối câu."
+      },
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 路上: Trên đường đông xe quá, anh ấy lái chậm một chút. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "他",
+        "慢一点儿。",
+        "路上",
+        "开",
+        "车太多，"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "focus": "slow-request",
+      "explanation": {
+        "zh": "路上车太多，他开慢一点儿。",
+        "vi": "Vế đầu nêu tình hình trên đường, vế sau nói cách lái xe."
+      },
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 你: Bây giờ bạn có đang cầm điện thoại của tôi không? Dùng dạng hỏi kết thúc bằng 没有. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我的手机",
+        "现在",
+        "你",
+        "没有？",
+        "拿着"
+      ],
+      "answer": [
+        2,
+        1,
+        4,
+        0,
+        3
+      ],
+      "focus": "state-question",
+      "explanation": {
+        "zh": "你现在拿着我的手机没有？",
+        "vi": "Tân ngữ đứng sau 拿着; 没有 ở cuối để hỏi."
+      },
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-1：这段对话发生在什么时候？",
+        "vi": "Nghe 11-1: cuộc trò chuyện này diễn ra vào lúc nào?"
+      },
+      "options": [
+        "下课以后。",
+        "上课以前。",
+        "正在上课的时候。"
+      ],
+      "answer": 0,
+      "focus": "listen-class-finished",
+      "explanation": {
+        "zh": "王老师开头说“都下课了”，说明课已经结束。",
+        "vi": "Cô Vương mở đầu bằng “đã tan học rồi”, cho biết buổi học đã kết thúc."
+      },
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-3：谁接了李文的电话？",
+        "vi": "Nghe 11-3: ai nghe cuộc gọi của Lý Văn?"
+      },
+      "options": [
+        "王老师",
+        "白家月",
+        "医生"
+      ],
+      "answer": 1,
+      "focus": "listen-phone",
+      "explanation": {
+        "zh": "老师请家月帮忙接电话，家月接着和李文说话。",
+        "vi": "Cô giáo nhờ Gia Nguyệt nghe giúp, sau đó Gia Nguyệt nói chuyện với Lý Văn."
+      },
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-5：家月在对话开始时怎么招呼李文？",
+        "vi": "Nghe 11-5: đầu cuộc trò chuyện, Gia Nguyệt chào đón Lý Văn thế nào?"
+      },
+      "options": [
+        "请他先回家。",
+        "请他在门外等。",
+        "请他快进来。"
+      ],
+      "answer": 2,
+      "focus": "listen-welcome",
+      "explanation": {
+        "zh": "家月一开始说“李文，快请进！”",
+        "vi": "Mở đầu, Gia Nguyệt nói “Lý Văn, mau vào đi!”"
+      },
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-5：家月最后怎样回应王老师的提议？",
+        "vi": "Nghe 11-5: cuối cùng Gia Nguyệt đáp lại đề nghị của cô Vương thế nào?"
+      },
+      "options": [
+        "同意，并谢谢老师。",
+        "说自己已经吃过了。",
+        "请老师改天再做。"
+      ],
+      "answer": 0,
+      "focus": "listen-final-response",
+      "explanation": {
+        "zh": "她最后说“好的，谢谢王老师”。",
+        "vi": "Cuối cùng, cô ấy nói “Vâng, em cảm ơn cô Vương”."
+      },
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-7：今天是谁把家月送到医院的？",
+        "vi": "Nghe 11-7: hôm nay ai đưa Gia Nguyệt đến bệnh viện?"
+      },
+      "options": [
+        "李文",
+        "王老师",
+        "药店的人"
+      ],
+      "answer": 1,
+      "focus": "listen-helper",
+      "explanation": {
+        "zh": "日记说王老师看她不舒服，就送她去医院。",
+        "vi": "Nhật ký nói cô Vương thấy cô ấy không khỏe nên đưa đi bệnh viện."
+      },
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-7"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Em trai đang cầm một quyển sách."
+      },
+      "options": [
+        "弟弟看完了一本书。",
+        "弟弟拿过一本书。",
+        "弟弟拿着一本书。"
+      ],
+      "answer": 2,
+      "focus": "translation-lesson11",
+      "explanation": {
+        "zh": "拿着表示正在拿着，数量是一本。",
+        "vi": "拿着 nói đang cầm, số lượng là một quyển."
+      },
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Trong nhà tôi, chị gái bơi giỏi nhất."
+      },
+      "options": [
+        "在我家，姐姐游泳游得最好。",
+        "在我家，姐姐最不喜欢游泳。",
+        "在我家，姐姐游泳游得最慢。"
+      ],
+      "answer": 0,
+      "focus": "translation-lesson11",
+      "explanation": {
+        "zh": "最好评价游泳水平最高。",
+        "vi": "最好 đánh giá trình độ bơi cao nhất."
+      },
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Gần đây tôi thường xuyên đau đầu."
+      },
+      "options": [
+        "我最近从来不头疼。",
+        "我最近经常头疼。",
+        "我以前头疼，现在好了。"
+      ],
+      "answer": 1,
+      "focus": "translation-lesson11",
+      "explanation": {
+        "zh": "最近说明时间，经常说明频率。",
+        "vi": "最近 nêu thời gian, 经常 nêu tần suất."
+      },
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Đèn trong văn phòng không bật. (Diễn đạt trạng thái hiện tại.)"
+      },
+      "options": [
+        "办公室的灯没开过。",
+        "办公室的灯快开了。",
+        "办公室的灯没开着。"
+      ],
+      "answer": 2,
+      "focus": "translation-lesson11",
+      "explanation": {
+        "zh": "没开着否定当前持续状态。",
+        "vi": "没开着 phủ định trạng thái đang duy trì."
+      },
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Hôm nay bạn lái chậm một chút nhé."
+      },
+      "options": [
+        "今天你开慢一点儿吧。",
+        "今天你开快一点儿吧。",
+        "今天你别开车了。"
+      ],
+      "answer": 0,
+      "focus": "translation-lesson11",
+      "explanation": {
+        "zh": "慢一点儿要求降低速度，不是停止开车。",
+        "vi": "慢一点儿 yêu cầu giảm tốc, không phải ngừng lái xe."
+      },
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Bố đang cầm một cốc cà phê."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Trong các mùa, tôi thích mùa thu nhất."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Khi không khỏe, tôi thường ở nhà nghỉ ngơi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Cửa phòng ông nội vẫn đang mở."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Trên đường đang có tuyết rơi, mẹ lái xe rất chậm."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk2-fltrp-2026:l11:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-1：王老师建议家月去哪儿？",
+        "vi": "Nghe 11-1: cô Vương khuyên Gia Nguyệt đi đâu?"
+      },
+      "options": [
+        "药店",
+        "学校",
+        "医院"
+      ],
+      "answer": 2,
+      "focus": "independent-destination",
+      "explanation": {
+        "zh": "老师让她去医院看看。",
+        "vi": "Cô giáo khuyên đi bệnh viện khám."
+      },
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-3：李文说自己有没有重要的事找王老师？",
+        "vi": "Nghe 11-3: Lý Văn nói có việc quan trọng cần gặp cô Vương không?"
+      },
+      "options": [
+        "没有什么重要的事。",
+        "有考试的事情。",
+        "要请老师给医生打电话。"
+      ],
+      "answer": 0,
+      "focus": "independent-call-importance",
+      "explanation": {
+        "zh": "他说“没什么事”，表示没有重要的事。",
+        "vi": "Bạn ấy nói 没什么事, nghĩa là không có việc gì quan trọng."
+      },
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-5：家月最喜欢吃什么？",
+        "vi": "Nghe 11-5: Gia Nguyệt thích ăn gì nhất?"
+      },
+      "options": [
+        "面包",
+        "中国菜",
+        "水果"
+      ],
+      "answer": 1,
+      "focus": "independent-food",
+      "explanation": {
+        "zh": "王老师说家月最喜欢吃中国菜。",
+        "vi": "Cô Vương nói Gia Nguyệt thích món Trung Quốc nhất."
+      },
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听11-7：家月写日记时，来看她的人还在吗？",
+        "vi": "Nghe 11-7: lúc Gia Nguyệt viết nhật ký, người đến thăm còn ở đó không?"
+      },
+      "options": [
+        "还在吃饭。",
+        "李文刚到。",
+        "他们都回去了。"
+      ],
+      "answer": 2,
+      "focus": "independent-departure",
+      "explanation": {
+        "zh": "最后说现在他们都回去了。",
+        "vi": "Cuối bài nói mọi người đã về hết."
+      },
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "11-7"
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:objective1",
+          "prompt": {
+            "zh": "能听懂并描述身体状况和病情。",
+            "vi": "Nghe hiểu và miêu tả tình trạng sức khỏe, bệnh tình."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用动态助词“着”表达动作或状态的持续。",
+            "vi": "Nghe hiểu và dùng trợ từ động thái 着 để diễn đạt hành động hoặc trạng thái đang được duy trì."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:objective3",
+          "prompt": {
+            "zh": "掌握程度副词“最”的用法，能表达某种属性超过所有同类的人或事物。",
+            "vi": "Nắm cách dùng phó từ mức độ 最 để nói một đặc điểm vượt tất cả người hoặc vật cùng loại."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:warmup1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1：给下面的词语选择对应的图片。",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "疼",
+              "vi": "đau"
+            },
+            {
+              "zh": "药",
+              "vi": "thuốc"
+            },
+            {
+              "zh": "药店",
+              "vi": "hiệu thuốc"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "药店",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第11课 warmup1-picture1"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2：给下面的词语选择对应的图片。",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "疼",
+              "vi": "đau"
+            },
+            {
+              "zh": "药",
+              "vi": "thuốc"
+            },
+            {
+              "zh": "药店",
+              "vi": "hiệu thuốc"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "路上",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第11课 warmup1-picture2"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3：给下面的词语选择对应的图片。",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "疼",
+              "vi": "đau"
+            },
+            {
+              "zh": "药",
+              "vi": "thuốc"
+            },
+            {
+              "zh": "药店",
+              "vi": "hiệu thuốc"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "药",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第11课 warmup1-picture3"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4：给下面的词语选择对应的图片。",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "疼",
+              "vi": "đau"
+            },
+            {
+              "zh": "药",
+              "vi": "thuốc"
+            },
+            {
+              "zh": "药店",
+              "vi": "hiệu thuốc"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "疼",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第11课 warmup1-picture4"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup1-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l11:illustration:warmup1-1",
+        "hsk2-fltrp-2026:l11:illustration:warmup1-2",
+        "hsk2-fltrp-2026:l11:illustration:warmup1-3",
+        "hsk2-fltrp-2026:l11:illustration:warmup1-4"
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按题号顺序作答。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo thứ tự số câu."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:warmup2-pictures",
+      "kind": "fill",
+      "title": {
+        "zh": "用一个动词或动词短语描述下面的图片。",
+        "vi": "Dùng một động từ hoặc cụm động từ để miêu tả tranh."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:warmup2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup2-picture1",
+          "prompt": {
+            "zh": "①______",
+            "vi": "Hình 1: ______"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "下雪",
+            "vi": "tuyết rơi"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup2-1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup2-picture2",
+          "prompt": {
+            "zh": "②______",
+            "vi": "Hình 2: ______"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "听音乐",
+            "vi": "nghe nhạc"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup2-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup2-picture3",
+          "prompt": {
+            "zh": "③______",
+            "vi": "Hình 3: ______"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "开门",
+            "vi": "mở cửa"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup2-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:warmup2-picture4",
+          "prompt": {
+            "zh": "④______",
+            "vi": "Hình 4: ______"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 108,
+            "printedPage": 93,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "拿水瓶",
+            "vi": "cầm chai nước"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:warmup2-4"
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      },
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l11:illustration:warmup2-1",
+        "hsk2-fltrp-2026:l11:illustration:warmup2-2",
+        "hsk2-fltrp-2026:l11:illustration:warmup2-3",
+        "hsk2-fltrp-2026:l11:illustration:warmup2-4"
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text1:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text1-question1",
+          "prompt": {
+            "zh": "白家月现在在哪儿？",
+            "vi": "Bây giờ Gia Nguyệt ở đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "医院",
+              "vi": "bệnh viện"
+            },
+            {
+              "zh": "家里",
+              "vi": "ở nhà"
+            },
+            {
+              "zh": "教室",
+              "vi": "phòng học"
+            }
+          ],
+          "answer": "教室",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第11课 text1-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text1:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text1-question2",
+          "prompt": {
+            "zh": "王一飞现在去做什么？",
+            "vi": "Nhất Phi đi làm gì bây giờ?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 109,
+            "printedPage": 94,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "开车",
+              "vi": "lái xe"
+            },
+            {
+              "zh": "回家",
+              "vi": "về nhà"
+            },
+            {
+              "zh": "找医生",
+              "vi": "tìm bác sĩ"
+            }
+          ],
+          "answer": "开车",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第11课 text1-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text1:question2"
+        }
+      ],
+      "audioTrack": "11-1",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text1:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text1-question3",
+          "prompt": {
+            "zh": "白家月为什么不回家？",
+            "vi": "Vì sao Gia Nguyệt chưa về nhà?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "因为她头疼，不太舒服。",
+            "vi": "Vì cô ấy đau đầu, không được khỏe."
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text1:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text1-question4",
+          "prompt": {
+            "zh": "白家月现在能不能动？为什么？",
+            "vi": "Bây giờ Gia Nguyệt có cử động được không? Vì sao?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "不能动，因为一动就疼。",
+            "vi": "Không thể cử động, vì cứ cử động là đau."
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text1:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text2:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text2-question1",
+          "prompt": {
+            "zh": "王一飞在做什么？",
+            "vi": "Nhất Phi đang làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "开车",
+              "vi": "lái xe"
+            },
+            {
+              "zh": "看病",
+              "vi": "khám bệnh"
+            },
+            {
+              "zh": "接电话",
+              "vi": "nghe điện thoại"
+            }
+          ],
+          "answer": "开车",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text2-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text2:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text2-question2",
+          "prompt": {
+            "zh": "今天天气怎么样？",
+            "vi": "Hôm nay thời tiết thế nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "很好",
+              "vi": "rất tốt"
+            },
+            {
+              "zh": "下雨",
+              "vi": "mưa"
+            },
+            {
+              "zh": "下雪",
+              "vi": "tuyết rơi"
+            }
+          ],
+          "answer": "下雪",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text2-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text2:question2"
+        }
+      ],
+      "audioTrack": "11-3",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text2:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text2-question3",
+          "prompt": {
+            "zh": "王一飞为什么要开慢一点儿？",
+            "vi": "Vì sao Nhất Phi muốn lái chậm một chút?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "因为现在路上车多，还下着雪。",
+            "vi": "Vì trên đường hiện có nhiều xe và tuyết vẫn đang rơi."
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text2:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text2-question4",
+          "prompt": {
+            "zh": "李文一会儿要做什么？",
+            "vi": "Lát nữa Lý Văn sẽ làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 111,
+            "printedPage": 96,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "他一会儿要去看白家月。",
+            "vi": "Lát nữa anh ấy sẽ đến thăm Bạch Gia Nguyệt."
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text2:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text3:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text3-question1",
+          "prompt": {
+            "zh": "白家月现在怎么样了？",
+            "vi": "Bây giờ Gia Nguyệt thế nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "不想吃饭",
+              "vi": "không muốn ăn"
+            },
+            {
+              "zh": "身体不舒服",
+              "vi": "người không khỏe"
+            },
+            {
+              "zh": "头不那么疼了",
+              "vi": "đầu không còn đau như trước"
+            }
+          ],
+          "answer": "头不那么疼了",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text3-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text3:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text3-question2",
+          "prompt": {
+            "zh": "王一飞现在要做什么？",
+            "vi": "Bây giờ Nhất Phi định làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "去买药",
+              "vi": "đi mua thuốc"
+            },
+            {
+              "zh": "找医生",
+              "vi": "tìm bác sĩ"
+            },
+            {
+              "zh": "去做菜",
+              "vi": "đi nấu ăn"
+            }
+          ],
+          "answer": "去做菜",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text3-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text3:question2"
+        }
+      ],
+      "audioTrack": "11-5",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text3:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text3-question3",
+          "prompt": {
+            "zh": "白家月为什么头不那么疼了？",
+            "vi": "Vì sao đầu Gia Nguyệt đỡ đau?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "因为医生开了一些药，她吃完就好多了。",
+            "vi": "Vì bác sĩ đã kê một ít thuốc; sau khi uống cô ấy thấy đỡ nhiều."
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text3:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text3-question4",
+          "prompt": {
+            "zh": "李文让白家月做什么？",
+            "vi": "Lý Văn khuyên Gia Nguyệt làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 113,
+            "printedPage": 98,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "他让她好好吃饭。",
+            "vi": "Anh ấy bảo cô ấy ăn uống cho tốt."
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text3:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text4:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text4-question1",
+          "prompt": {
+            "zh": "这几天天气不好，所以白家月生病了。",
+            "vi": "Mấy hôm nay thời tiết xấu nên Gia Nguyệt bị ốm."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text4-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text4:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text4-question2",
+          "prompt": {
+            "zh": "因为头疼，所以白家月自己去了医院。",
+            "vi": "Vì đau đầu nên Gia Nguyệt tự đến bệnh viện."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text4-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text4:question2"
+        }
+      ],
+      "audioTrack": "11-7",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍课文，判断正误。",
+        "vi": "Nghe bài khóa hai lần rồi xác định đúng hay sai."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:text4-reading",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:text4:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text4-question3",
+          "prompt": {
+            "zh": "白家月是在哪儿买的药？",
+            "vi": "Gia Nguyệt đã mua thuốc ở đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "医院",
+              "vi": "bệnh viện"
+            },
+            {
+              "zh": "药店",
+              "vi": "hiệu thuốc"
+            },
+            {
+              "zh": "商店",
+              "vi": "cửa hàng"
+            }
+          ],
+          "answer": "药店",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text4-question3"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text4:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:text4-question4",
+          "prompt": {
+            "zh": "现在白家月要做什么？",
+            "vi": "Bây giờ Gia Nguyệt định làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "睡觉",
+              "vi": "ngủ"
+            },
+            {
+              "zh": "去看李文",
+              "vi": "đi thăm Lý Văn"
+            },
+            {
+              "zh": "送王老师",
+              "vi": "đưa cô Vương đi"
+            }
+          ],
+          "answer": "睡觉",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 text4-question4"
+          },
+          "targetRef": "hsk2-fltrp-2026:l11:text4:question4"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后选择正确答案。",
+        "vi": "Đọc bài khóa rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你看见我的手机了吗？B：别找了，我______呢。",
+        "vi": "A: Bạn có thấy điện thoại của tôi không? B: Đừng tìm nữa, tôi ______ đây."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "动态助词“着”（1）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar1-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "拿着",
+            "vi": "đang cầm"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：小雪回来了吗？B：回来了，在她的房间______呢。",
+        "vi": "A: Tiểu Tuyết về chưa? B: Về rồi, đang ______ trong phòng cô bé."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "动态助词“着”（1）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar1-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "坐着",
+            "vi": "đang ngồi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：房间的门______，但是刘爷爷没在里边。B：他出去了吧？我给他打个电话。",
+        "vi": "A: Cửa phòng ______, nhưng ông Lưu không ở trong đó. B: Chắc ông ra ngoài rồi nhỉ? Tôi gọi cho ông một cuộc."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 110,
+        "printedPage": 95,
+        "section": "动态助词“着”（1）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar1-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 110,
+            "printedPage": 95,
+            "section": "动态助词“着”（1）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "开着",
+            "vi": "đang mở"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：安妮，你看见我了吗？我穿着______。B：看见了，你快过来吧。",
+        "vi": "A: Annie, bạn thấy tôi chưa? Tôi đang mặc ______. B: Thấy rồi, bạn qua đây đi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "动态助词“着”（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar2-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "白色的裤子",
+            "vi": "quần màu trắng"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：外边______，你别出去跑步了。B：好吧，那就在家运动运动。",
+        "vi": "A: Bên ngoài ______, bạn đừng ra chạy bộ nữa. B: Được, vậy tập thể dục một chút ở nhà."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "动态助词“着”（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar2-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "下着雪",
+            "vi": "đang có tuyết rơi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：小明，电视______？B：没有，我们都没看电视。",
+        "vi": "A: Tiểu Minh, ti vi ______? B: Không ạ, chúng con đều không xem ti vi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 112,
+        "printedPage": 97,
+        "section": "动态助词“着”（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar2-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 112,
+            "printedPage": 97,
+            "section": "动态助词“着”（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "开着没有",
+            "vi": "có đang bật không"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你来过这家饭馆吗？B：来过，这里的鱼做得______。",
+        "vi": "A: Bạn từng đến nhà hàng này chưa? B: Rồi, cá ở đây nấu ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "程度副词“最”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar3-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "最好吃",
+            "vi": "ngon nhất"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你最想去哪儿旅游？B：我______。",
+        "vi": "A: Bạn muốn đi du lịch đâu nhất? B: Tôi ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "程度副词“最”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar3-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "最想去中国旅游",
+            "vi": "muốn đi du lịch Trung Quốc nhất"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你最喜欢什么颜色？B：我______。",
+        "vi": "A: Bạn thích màu nào nhất? B: Tôi ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 114,
+        "printedPage": 99,
+        "section": "程度副词“最”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:grammar3-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 114,
+            "printedPage": 99,
+            "section": "程度副词“最”：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "最喜欢白色",
+            "vi": "thích màu trắng nhất"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:comprehensive-words",
+      "kind": "fill",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: điền từ"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:section3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:wordchoice1",
+          "prompt": {
+            "zh": "（1）______车多人多，你慢点儿开。",
+            "vi": "(1) ______ đông xe đông người, bạn lái chậm một chút."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "经常",
+              "vi": "thường xuyên"
+            },
+            {
+              "zh": "慢",
+              "vi": "chậm"
+            },
+            {
+              "zh": "时",
+              "vi": "khi"
+            },
+            {
+              "zh": "身体",
+              "vi": "cơ thể, sức khỏe"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "路上",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 wordchoice1"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:wordchoice2",
+          "prompt": {
+            "zh": "（2）他今天______不舒服，所以没来上课。",
+            "vi": "(2) Hôm nay ______ anh ấy không khỏe nên không đến lớp."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "经常",
+              "vi": "thường xuyên"
+            },
+            {
+              "zh": "慢",
+              "vi": "chậm"
+            },
+            {
+              "zh": "时",
+              "vi": "khi"
+            },
+            {
+              "zh": "身体",
+              "vi": "cơ thể, sức khỏe"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "身体",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 wordchoice2"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:wordchoice3",
+          "prompt": {
+            "zh": "（3）我游泳游得很______，但我跑步跑得很快。",
+            "vi": "(3) Tôi bơi rất ______, nhưng chạy rất nhanh."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "经常",
+              "vi": "thường xuyên"
+            },
+            {
+              "zh": "慢",
+              "vi": "chậm"
+            },
+            {
+              "zh": "时",
+              "vi": "khi"
+            },
+            {
+              "zh": "身体",
+              "vi": "cơ thể, sức khỏe"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "慢",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 wordchoice3"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:wordchoice4",
+          "prompt": {
+            "zh": "（4）A：星期天我______跟朋友去踢球。B：我也喜欢踢球，下次叫我一起去吧。",
+            "vi": "(4) A: Chủ nhật tôi ______ đi đá bóng với bạn. B: Tôi cũng thích đá bóng, lần sau gọi tôi đi cùng nhé."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "经常",
+              "vi": "thường xuyên"
+            },
+            {
+              "zh": "慢",
+              "vi": "chậm"
+            },
+            {
+              "zh": "时",
+              "vi": "khi"
+            },
+            {
+              "zh": "身体",
+              "vi": "cơ thể, sức khỏe"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "经常",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 wordchoice4"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l11:field:wordchoice5",
+          "prompt": {
+            "zh": "（5）A：昨天雪太大，公交车开得很慢。B：是啊，我到家______都快9点了。",
+            "vi": "(5) A: Hôm qua tuyết lớn quá, xe buýt chạy rất chậm. B: Đúng vậy, ______ tôi về đến nhà đã gần 9 giờ rồi."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "经常",
+              "vi": "thường xuyên"
+            },
+            {
+              "zh": "慢",
+              "vi": "chậm"
+            },
+            {
+              "zh": "时",
+              "vi": "khi"
+            },
+            {
+              "zh": "身体",
+              "vi": "cơ thể, sức khỏe"
+            },
+            {
+              "zh": "路上",
+              "vi": "trên đường"
+            }
+          ],
+          "answer": "时",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 15,
+            "item": "第11课 wordchoice5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "（1）他是我的老师，也是我______好的朋友。",
+        "vi": "(1) Thầy ấy là giáo viên của tôi, cũng là người bạn tốt ______ của tôi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:section4:picture:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "最",
+            "vi": "nhất"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l11:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "（2）这是离我家最近的______，我不舒服时就来这儿买药。",
+        "vi": "(2) Đây là ______ gần nhà tôi nhất; khi không khỏe tôi đến đây mua thuốc."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:section4:picture:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "药店",
+            "vi": "hiệu thuốc"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l11:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "（3）他生病了，______。",
+        "vi": "(3) Anh ấy ốm rồi, ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:section4:picture:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "头疼",
+            "vi": "đau đầu"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l11:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:picture-dialogue4",
+      "kind": "fill",
+      "title": {
+        "zh": "（4）看完电影，她还在那里______。",
+        "vi": "(4) Xem phim xong, cô bé vẫn ______ ở đó."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:section4:picture:4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:picture4-blank1",
+          "prompt": {
+            "zh": "图4第1空",
+            "vi": "Hình 4, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 115,
+            "printedPage": 100,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "坐着",
+            "vi": "đang ngồi"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l11:illustration:practice-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l11:illustration:practice-4"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:activity:roleplay",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：角色扮演",
+        "vi": "Hoạt động trên lớp: đóng vai"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 116,
+        "printedPage": 101,
+        "section": "课堂活动：角色扮演",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l11:section5",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l11:field:classroom-roleplay",
+          "prompt": {
+            "zh": "两人一组，一人扮演医生，一人扮演病人。病人头疼，所以来医院看病，医生询问什么时候开始疼的、吃过药没有、最近做过什么，等等。尽可能使用本课所学生词和语法。",
+            "vi": "Theo cặp, một người đóng vai bác sĩ, một người đóng vai bệnh nhân. Bệnh nhân đau đầu nên đến khám. Bác sĩ hỏi bắt đầu đau khi nào, đã uống thuốc chưa, gần đây làm gì… Cố gắng dùng từ và ngữ pháp của bài."
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 116,
+            "printedPage": 101,
+            "section": "课堂活动：角色扮演",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "这是虚构情境中的语言角色扮演；不用填写自己的真实健康信息，不作诊断或用药建议。",
+        "vi": "Đây là bài đóng vai ngôn ngữ trong tình huống hư cấu; không cần khai thông tin sức khỏe thật, không dùng để chẩn đoán hay hướng dẫn dùng thuốc."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup1-picture1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "室内陈列架上摆着小盒子，前面的服务柜台有白色十字图形。",
+        "vi": "Trong phòng, kệ bày những hộp nhỏ; quầy phục vụ phía trước có hình chữ thập trắng."
+      },
+      "description": {
+        "zh": "室内陈列架上摆着小盒子，前面的服务柜台有白色十字图形。",
+        "vi": "Trong phòng, kệ bày những hộp nhỏ; quầy phục vụ phía trước có hình chữ thập trắng."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk2-l11-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "5ab4f36bf342ef1bc842a124bf474e90a800a295ffc49e3b6e8ec2065e95bba6",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup1-picture2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一辆车在有车道标线的道路上行驶，两侧有秋色树木。",
+        "vi": "Một chiếc xe chạy trên đường có vạch làn; hai bên là cây màu thu."
+      },
+      "description": {
+        "zh": "一辆车在有车道标线的道路上行驶，两侧有秋色树木。",
+        "vi": "Một chiếc xe chạy trên đường có vạch làn; hai bên là cây màu thu."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk2-l11-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "64f693d3fead5802347a6d9c9850533e46260b5bb03201c2ff8c416e6ef4e4d0",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup1-picture3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "浅色表面上散放着圆片、胶囊形物体和透明小格包装。",
+        "vi": "Trên bề mặt sáng có các viên tròn, vật hình con nhộng và bao bì chia ô trong suốt."
+      },
+      "description": {
+        "zh": "浅色表面上散放着圆片、胶囊形物体和透明小格包装。",
+        "vi": "Trên bề mặt sáng có các viên tròn, vật hình con nhộng và bao bì chia ô trong suốt."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk2-l11-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "720d3dc42e1b56d71fe18ee6e40e9f4a8a4e99df9e92c1166cd33549b6363e42",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup1-picture4"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "男子坐在椅子上，一只手贴着脸颊，眉头和嘴角显得紧绷。",
+        "vi": "Người đàn ông ngồi trên ghế, một tay áp má, nét mày và khóe miệng căng lại."
+      },
+      "description": {
+        "zh": "男子坐在椅子上，一只手贴着脸颊，眉头和嘴角显得紧绷。",
+        "vi": "Người đàn ông ngồi trên ghế, một tay áp má, nét mày và khóe miệng căng lại."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk2-l11-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "ac3ea74f2600d2173a8425b27d80806615c672a97b8acd8dbb3fb3c0db3e2b4e",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup2-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup2-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup2",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup2",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup2-picture1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "夜晚街道有亮着的路灯和窗户，白色小片从空中落下，地面有白色覆盖。",
+        "vi": "Đường phố ban đêm có đèn đường và cửa sổ sáng; những hạt trắng rơi từ trên không, mặt đất phủ trắng."
+      },
+      "description": {
+        "zh": "夜晚街道有亮着的路灯和窗户，白色小片从空中落下，地面有白色覆盖。",
+        "vi": "Đường phố ban đêm có đèn đường và cửa sổ sáng; những hạt trắng rơi từ trên không, mặt đất phủ trắng."
+      },
+      "sceneKey": "warmup2-1",
+      "file": "illustrations/hsk2-l11-warmup2-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "3ebf7d7572054503d6a02a18ab4ec5b39f7c8529a3f455e6abecd26bd0b5311f",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup2-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup2-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup2",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup2",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup2-picture2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "女孩闭着眼睛，戴着头戴式耳机，双手靠近耳罩。",
+        "vi": "Cô bé nhắm mắt, đeo tai nghe chụp đầu, hai tay đặt gần phần chụp tai."
+      },
+      "description": {
+        "zh": "女孩闭着眼睛，戴着头戴式耳机，双手靠近耳罩。",
+        "vi": "Cô bé nhắm mắt, đeo tai nghe chụp đầu, hai tay đặt gần phần chụp tai."
+      },
+      "sceneKey": "warmup2-2",
+      "file": "illustrations/hsk2-l11-warmup2-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "56e44205fbc8da068c2ade32c58a5e7a30ab19edc119a42a66c513ee2f478a0c",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Added chair support behind the seated headphone listener; both hands remain at the ear cups."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup2-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup2-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup2",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup2",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup2-picture3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一只手握着门把手，门板稍稍转开，下方挂着钥匙。",
+        "vi": "Một bàn tay nắm tay cửa, cánh cửa hơi xoay mở; chìa khóa treo bên dưới."
+      },
+      "description": {
+        "zh": "一只手握着门把手，门板稍稍转开，下方挂着钥匙。",
+        "vi": "Một bàn tay nắm tay cửa, cánh cửa hơi xoay mở; chìa khóa treo bên dưới."
+      },
+      "sceneKey": "warmup2-3",
+      "file": "illustrations/hsk2-l11-warmup2-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "b3260ff85b4f4eef65a205c49b8f9559f7393363844708f9f62fa771a319fff0",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Exposed the door handle end below the gripping fingers; keys and slightly turned door remain visible."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:warmup2-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "section": "辅助示意图：warmup2-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 108,
+        "printedPage": 93,
+        "owner": "hsk2-fltrp-2026:l11:warmup2",
+        "sourceOwner": "hsk2-fltrp-2026:l11:warmup2",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:warmup2-picture4"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "户外，一只手的手指环抱着透明水瓶的瓶身，瓶口没有靠近嘴。",
+        "vi": "Ngoài trời, các ngón tay ôm quanh thân chai nước trong; miệng chai không đưa lên miệng người."
+      },
+      "description": {
+        "zh": "户外，一只手的手指环抱着透明水瓶的瓶身，瓶口没有靠近嘴。",
+        "vi": "Ngoài trời, các ngón tay ôm quanh thân chai nước trong; miệng chai không đưa lên miệng người."
+      },
+      "sceneKey": "warmup2-4",
+      "file": "illustrations/hsk2-l11-warmup2-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "25a2a7e0dfeffe5e09a4a8bb9cae032f9fe3fadfae2c2517242b2ce83382bd97",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Redrew the hand with a thumb and four curled fingers visibly gripping the bottle; not a drinking pose."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "owner": "hsk2-fltrp-2026:l11:section4",
+        "sourceOwner": "hsk2-fltrp-2026:l11:section4",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:picture1-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "蓝色座椅旁，一位成人和年轻人面带微笑，举起的手掌相碰。",
+        "vi": "Bên các ghế xanh, một người lớn và một người trẻ mỉm cười, hai bàn tay giơ lên chạm nhau."
+      },
+      "description": {
+        "zh": "蓝色座椅旁，一位成人和年轻人面带微笑，举起的手掌相碰。",
+        "vi": "Bên các ghế xanh, một người lớn và một người trẻ mỉm cười, hai bàn tay giơ lên chạm nhau."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk2-l11-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "7d1d1d06777f0fa1a2b9d8a83bde9fd3088e26c7cb88a2937cd3347f3b286246",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Raised teacher/student palms meet at the same coordinates; source relationship is retained schematically."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "owner": "hsk2-fltrp-2026:l11:section4",
+        "sourceOwner": "hsk2-fltrp-2026:l11:section4",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:picture2-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "摆满小盒子的货架前，穿白外衣的工作人员隔着柜台把一小盒物品递给顾客。",
+        "vi": "Trước kệ đầy hộp nhỏ, nhân viên áo trắng đưa một hộp nhỏ qua quầy cho khách."
+      },
+      "description": {
+        "zh": "摆满小盒子的货架前，穿白外衣的工作人员隔着柜台把一小盒物品递给顾客。",
+        "vi": "Trước kệ đầy hộp nhỏ, nhân viên áo trắng đưa một hộp nhỏ qua quầy cho khách."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk2-l11-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "0851fd2022440ad5a2198255db8fd7317f8f0b70ec59a03b9282554168bac3cd",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Exposed the staff member hand at the medicine-package edge and customer contact at the opposite edge."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "owner": "hsk2-fltrp-2026:l11:section4",
+        "sourceOwner": "hsk2-fltrp-2026:l11:section4",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:picture3-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "戴领带的男子坐着扶住额头，对面穿白外衣的人在写记录。",
+        "vi": "Người đàn ông đeo cà vạt ngồi ôm trán; người mặc áo trắng đối diện đang ghi chép."
+      },
+      "description": {
+        "zh": "戴领带的男子坐着扶住额头，对面穿白外衣的人在写记录。",
+        "vi": "Người đàn ông đeo cà vạt ngồi ôm trán; người mặc áo trắng đối diện đang ghi chép."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk2-l11-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "dace59a7fbe7b62b4c061806079bbface5ce008221d6bae00507fd4b5922bb74",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Exposed the writing hand at the pen; removed an isolated palm from the clipboard page. Patient holds forehead; no diagnosis or treatment is added."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:practice-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "section": "辅助示意图：practice-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 115,
+        "printedPage": 100,
+        "owner": "hsk2-fltrp-2026:l11:section4",
+        "sourceOwner": "hsk2-fltrp-2026:l11:section4",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l11:field:picture4-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一名女孩留在一排红色座椅中，身体坐在椅子上，身后有投影光。",
+        "vi": "Một cô bé còn ngồi giữa hàng ghế đỏ; sau lưng có ánh sáng máy chiếu."
+      },
+      "description": {
+        "zh": "一名女孩留在一排红色座椅中，身体坐在椅子上，身后有投影光。",
+        "vi": "Một cô bé còn ngồi giữa hàng ghế đỏ; sau lưng có ánh sáng máy chiếu."
+      },
+      "sceneKey": "practice-4",
+      "file": "illustrations/hsk2-l11-practice-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "8e458644c934efedbb079b8b4c98af173cc5d0b3d7f9931917f3edcb091561cb",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Changed projector beam to explicit low opacity after raster checking; girl remains seated among mostly empty red seats."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 109,
+        "printedPage": 94,
+        "owner": "hsk2-fltrp-2026:l11:text1",
+        "sourceOwner": "hsk2-fltrp-2026:l11:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一位女子坐着，双手贴在太阳穴，表情不适；画面没有医生。",
+        "vi": "Một phụ nữ ngồi, hai tay áp thái dương, vẻ mặt khó chịu; hình không có bác sĩ."
+      },
+      "description": {
+        "zh": "一位女子坐着，双手贴在太阳穴，表情不适；画面没有医生。",
+        "vi": "Một phụ nữ ngồi, hai tay áp thái dương, vẻ mặt khó chịu; hình không có bác sĩ."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk2-l11-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "e93291f2544dae5e13b2bb502f98d6a4e78d5584ecd135673cbca7df72caed50",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 111,
+        "printedPage": 96,
+        "owner": "hsk2-fltrp-2026:l11:text2",
+        "sourceOwner": "hsk2-fltrp-2026:l11:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "汽车乘客座位上的女子把手机放在耳边，车窗外的树和地面覆着雪。",
+        "vi": "Người phụ nữ ở ghế hành khách đưa điện thoại lên tai; cây và mặt đất ngoài cửa xe phủ tuyết."
+      },
+      "description": {
+        "zh": "汽车乘客座位上的女子把手机放在耳边，车窗外的树和地面覆着雪。",
+        "vi": "Người phụ nữ ở ghế hành khách đưa điện thoại lên tai; cây và mặt đất ngoài cửa xe phủ tuyết."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk2-l11-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "1861006f24d661f75ed6601ccdcbec50759efe1a606d6905f213f3cb81059780",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Phone belongs to belted passenger; no steering wheel or driver phone-use pose. Snow-covered trees visible through the window."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 113,
+        "printedPage": 98,
+        "owner": "hsk2-fltrp-2026:l11:text3",
+        "sourceOwner": "hsk2-fltrp-2026:l11:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "男女两人坐在沙发上交谈，面前的桌子上有杯子和水果。",
+        "vi": "Hai người ngồi trò chuyện trên sofa; bàn phía trước có cốc và trái cây."
+      },
+      "description": {
+        "zh": "男女两人坐在沙发上交谈，面前的桌子上有杯子和水果。",
+        "vi": "Hai người ngồi trò chuyện trên sofa; bàn phía trước có cốc và trái cây."
+      },
+      "sceneKey": "text3",
+      "file": "illustrations/hsk2-l11-text3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "0f2de0f2ec97b6ec8f227912bb42b5e6b24de3d5745044dfeab3b51a6ab34237",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l11:illustration:culture",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 116,
+        "printedPage": 101,
+        "section": "辅助示意图：culture",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 116,
+        "printedPage": 101,
+        "owner": "hsk2-fltrp-2026:l11:culture",
+        "sourceOwner": "hsk2-fltrp-2026:l11:section6",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "壶嘴流出的水落入桌上的陶瓷杯中。",
+        "vi": "Nước từ vòi ấm chảy vào cốc sứ trên bàn."
+      },
+      "description": {
+        "zh": "壶嘴流出的水落入桌上的陶瓷杯中。",
+        "vi": "Nước từ vòi ấm chảy vào cốc sứ trên bàn."
+      },
+      "sceneKey": "culture",
+      "file": "illustrations/hsk2-l11-culture.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "cf43060ffc45d84fb6cfadbd1d4f3c322926dff4ac99de0be488a53ff992190c",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Water stream lands inside the ceramic cup; auxiliary topic image does not reconstruct the unavailable video."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK2 lessons 10–11 additive source-inventory author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116
+    ],
+    "answerPdfPages": [
+      14,
+      15
+    ],
+    "appendixPdfPages": [
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "independentReview": "passed-source-content-and-template-structure-recheck",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "00649e169416b6c6601388582e7a8ba74753f6a83118041aebff4c65e59b73c4",
+    "method": "Every independent inventory field mapped once; all baseline content preserved. Chinese/Vietnamese editorial references are nonunique and not official exact-string keys.",
+    "limitations": [
+      "Culture video 11-1 is unavailable; dialogue audio 11-1 is not the video.",
+      "No new audio alignment authored.",
+      "Independent review of completed drafts and real-browser/release checks remain pending."
+    ],
+    "independentReviewReport": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md"
+  }
+}
+`;export{e as default};

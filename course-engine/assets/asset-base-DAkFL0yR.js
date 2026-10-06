@@ -1,0 +1,1 @@
+function e(){return typeof document>`u`?`https://hsk.invalid/`:document.querySelector(`meta[name="hsk1-asset-base"]`)?.content??document.baseURI}export{e as t};

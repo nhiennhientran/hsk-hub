@@ -1,0 +1,3590 @@
+var e=`{
+  "schema": 1,
+  "edition": "hsk1-print-2026-01",
+  "lesson": 8,
+  "version": "source-resume-20261004-candidate-1",
+  "scope": "lesson-8-candidate",
+  "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "answerBookSHA256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+  "editorialStatus": "candidate-awaiting-independent-review",
+  "activities": [
+    {
+      "id": "hsk1-original-2026-l08-p054-objectives-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "objectives",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "本课目标",
+        "vi": "Mục tiêu bài học"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "（1）能听懂并描述处所、位置等信息。\\n（2）掌握介词“在”表示方位的用法。\\n（3）掌握能愿动词“能”的用法。",
+        "vi": "(1) Hiểu khi nghe và mô tả nơi chốn, vị trí, v.v.\\n(2) Nắm cách dùng giới từ “在” chỉ vị trí.\\n(3) Nắm cách dùng động từ năng nguyện “能”."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l08-p054-warmup-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "warmup",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片1",
+        "vi": "Hình 1"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "小猫",
+              "py": "xiǎo māo",
+              "vi": "mèo con"
+            },
+            {
+              "id": "B",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            },
+            {
+              "id": "C",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "D",
+              "zh": "医生",
+              "py": "yīshēng",
+              "vi": "bác sĩ"
+            },
+            {
+              "id": "E",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "F",
+              "zh": "房间",
+              "py": "fángjiān",
+              "vi": "phòng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P54，热身",
+            "ordinal": 1
+          }
+        }
+      ],
+      "figure": "l08-warmup-01",
+      "figureSHA256": "2757dff05f762b9204e2b7e3b7e2c67caa5692804334bd547e9af0c7b02af511"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p054-warmup-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "warmup",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片2",
+        "vi": "Hình 2"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "小猫",
+              "py": "xiǎo māo",
+              "vi": "mèo con"
+            },
+            {
+              "id": "B",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            },
+            {
+              "id": "C",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "D",
+              "zh": "医生",
+              "py": "yīshēng",
+              "vi": "bác sĩ"
+            },
+            {
+              "id": "E",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "F",
+              "zh": "房间",
+              "py": "fángjiān",
+              "vi": "phòng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "F",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P54，热身",
+            "ordinal": 2
+          }
+        }
+      ],
+      "figure": "l08-warmup-02",
+      "figureSHA256": "1b6ad350010034d11dcf8eff518d795f1580c9ed1236c838ec49e701e84b6be0"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p054-warmup-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "warmup",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片3",
+        "vi": "Hình 3"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "小猫",
+              "py": "xiǎo māo",
+              "vi": "mèo con"
+            },
+            {
+              "id": "B",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            },
+            {
+              "id": "C",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "D",
+              "zh": "医生",
+              "py": "yīshēng",
+              "vi": "bác sĩ"
+            },
+            {
+              "id": "E",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "F",
+              "zh": "房间",
+              "py": "fángjiān",
+              "vi": "phòng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P54，热身",
+            "ordinal": 3
+          }
+        }
+      ],
+      "figure": "l08-warmup-03",
+      "figureSHA256": "dad607b26932cd2e3bb0c235664ad5387e130d476bae800ecd7f909bd2a8dcf1"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p054-warmup-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "warmup",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片4",
+        "vi": "Hình 4"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "小猫",
+              "py": "xiǎo māo",
+              "vi": "mèo con"
+            },
+            {
+              "id": "B",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            },
+            {
+              "id": "C",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "D",
+              "zh": "医生",
+              "py": "yīshēng",
+              "vi": "bác sĩ"
+            },
+            {
+              "id": "E",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "F",
+              "zh": "房间",
+              "py": "fángjiān",
+              "vi": "phòng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P54，热身",
+            "ordinal": 4
+          }
+        }
+      ],
+      "figure": "l08-warmup-04",
+      "figureSHA256": "d80de1cd52dc8d71a75e7bfccdcc0114d390d2732dde4f2fc7e9accb9760fa6f"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p054-warmup-05",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "warmup",
+        "ordinal": 5
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片5",
+        "vi": "Hình 5"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "小猫",
+              "py": "xiǎo māo",
+              "vi": "mèo con"
+            },
+            {
+              "id": "B",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            },
+            {
+              "id": "C",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "D",
+              "zh": "医生",
+              "py": "yīshēng",
+              "vi": "bác sĩ"
+            },
+            {
+              "id": "E",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "F",
+              "zh": "房间",
+              "py": "fángjiān",
+              "vi": "phòng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P54，热身",
+            "ordinal": 5
+          }
+        }
+      ],
+      "figure": "l08-warmup-05",
+      "figureSHA256": "d23185eed28b359a75c73705a94c1b535b6d70a7d88aac7f281541a6d653030b"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p054-warmup-06",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "section": "warmup",
+        "ordinal": 6
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片6",
+        "vi": "Hình 6"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "小猫",
+              "py": "xiǎo māo",
+              "vi": "mèo con"
+            },
+            {
+              "id": "B",
+              "zh": "学校",
+              "py": "xuéxiào",
+              "vi": "trường học"
+            },
+            {
+              "id": "C",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "D",
+              "zh": "医生",
+              "py": "yīshēng",
+              "vi": "bác sĩ"
+            },
+            {
+              "id": "E",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "F",
+              "zh": "房间",
+              "py": "fángjiān",
+              "vi": "phòng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P54，热身",
+            "ordinal": 6
+          }
+        }
+      ],
+      "figure": "l08-warmup-06",
+      "figureSHA256": "b391dfb773583f3f20287c972ba23d6451e95b0d0529ab0ce1aa9d5743e090d5"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p055-vocabulary-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 55,
+        "pdfPage": 70,
+        "section": "vocabulary",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "1",
+                  "vi": "1"
+                }
+              },
+              {
+                "text": {
+                  "zh": "房间",
+                  "vi": "phòng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "fángjiān",
+                  "vi": "fángjiān"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "room",
+                  "vi": "room"
+                }
+              },
+              {
+                "text": {
+                  "zh": "phòng",
+                  "vi": "phòng"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "2",
+                  "vi": "2"
+                }
+              },
+              {
+                "text": {
+                  "zh": "外",
+                  "vi": "ngoài; bên ngoài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "wài",
+                  "vi": "wài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "outside",
+                  "vi": "outside"
+                }
+              },
+              {
+                "text": {
+                  "zh": "ngoài; bên ngoài",
+                  "vi": "ngoài; bên ngoài"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3",
+                  "vi": "3"
+                }
+              },
+              {
+                "text": {
+                  "zh": "只",
+                  "vi": "con (lượng từ cho một số động vật)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zhī",
+                  "vi": "zhī"
+                }
+              },
+              {
+                "text": {
+                  "zh": "m.",
+                  "vi": "m."
+                }
+              },
+              {
+                "text": {
+                  "zh": "for certain animals",
+                  "vi": "for certain animals"
+                }
+              },
+              {
+                "text": {
+                  "zh": "con (lượng từ cho một số động vật)",
+                  "vi": "con (lượng từ cho một số động vật)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-4",
+            "cells": [
+              {
+                "text": {
+                  "zh": "4",
+                  "vi": "4"
+                }
+              },
+              {
+                "text": {
+                  "zh": "小",
+                  "vi": "nhỏ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xiǎo",
+                  "vi": "xiǎo"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "adj."
+                }
+              },
+              {
+                "text": {
+                  "zh": "small; little",
+                  "vi": "small; little"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nhỏ",
+                  "vi": "nhỏ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-5",
+            "cells": [
+              {
+                "text": {
+                  "zh": "5",
+                  "vi": "5"
+                }
+              },
+              {
+                "text": {
+                  "zh": "猫",
+                  "vi": "mèo"
+                }
+              },
+              {
+                "text": {
+                  "zh": "māo",
+                  "vi": "māo"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "cat",
+                  "vi": "cat"
+                }
+              },
+              {
+                "text": {
+                  "zh": "mèo",
+                  "vi": "mèo"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-6",
+            "cells": [
+              {
+                "text": {
+                  "zh": "6",
+                  "vi": "6"
+                }
+              },
+              {
+                "text": {
+                  "zh": "没",
+                  "vi": "chưa; không (với việc chưa xảy ra hoặc chưa đạt được)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "méi",
+                  "vi": "méi"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adv.",
+                  "vi": "adv."
+                }
+              },
+              {
+                "text": {
+                  "zh": "not; not yet",
+                  "vi": "not; not yet"
+                }
+              },
+              {
+                "text": {
+                  "zh": "chưa; không (với việc chưa xảy ra hoặc chưa đạt được)",
+                  "vi": "chưa; không (với việc chưa xảy ra hoặc chưa đạt được)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-7",
+            "cells": [
+              {
+                "text": {
+                  "zh": "7",
+                  "vi": "7"
+                }
+              },
+              {
+                "text": {
+                  "zh": "看见",
+                  "vi": "nhìn thấy"
+                }
+              },
+              {
+                "text": {
+                  "zh": "kànjiàn",
+                  "vi": "kànjiàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "see; catch sight of",
+                  "vi": "see; catch sight of"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nhìn thấy",
+                  "vi": "nhìn thấy"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-8",
+            "cells": [
+              {
+                "text": {
+                  "zh": "8",
+                  "vi": "8"
+                }
+              },
+              {
+                "text": {
+                  "zh": "桌子",
+                  "vi": "cái bàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zhuōzi",
+                  "vi": "zhuōzi"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "table; desk",
+                  "vi": "table; desk"
+                }
+              },
+              {
+                "text": {
+                  "zh": "cái bàn",
+                  "vi": "cái bàn"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-9",
+            "cells": [
+              {
+                "text": {
+                  "zh": "9",
+                  "vi": "9"
+                }
+              },
+              {
+                "text": {
+                  "zh": "下",
+                  "vi": "dưới; phía dưới"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xià",
+                  "vi": "xià"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "low position or rank",
+                  "vi": "low position or rank"
+                }
+              },
+              {
+                "text": {
+                  "zh": "dưới; phía dưới",
+                  "vi": "dưới; phía dưới"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-10",
+            "cells": [
+              {
+                "text": {
+                  "zh": "10",
+                  "vi": "10"
+                }
+              },
+              {
+                "text": {
+                  "zh": "漂亮",
+                  "vi": "đẹp; xinh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "piàoliang",
+                  "vi": "piàoliang"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "adj."
+                }
+              },
+              {
+                "text": {
+                  "zh": "pretty; beautiful",
+                  "vi": "pretty; beautiful"
+                }
+              },
+              {
+                "text": {
+                  "zh": "đẹp; xinh",
+                  "vi": "đẹp; xinh"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "8-2"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p055-original-tip-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 55,
+        "pdfPage": 70,
+        "section": "original-tip",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Gợi ý của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "量词可以和指示代词直接组合。",
+        "vi": "Lượng từ có thể kết hợp trực tiếp với đại từ chỉ định."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l08-p055-role-text1-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 55,
+        "pdfPage": 70,
+        "section": "role-text1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "白家月：房间外有一只小猫。\\n陈天中：我没看见，它在哪儿呢？\\n白家月：它在桌子下呢。\\n陈天中：这只小猫真漂亮！",
+        "vi": "Bên ngoài phòng có một chú mèo con.\\nTôi không nhìn thấy, nó ở đâu vậy?\\nNó ở dưới bàn.\\nChú mèo này đẹp thật!"
+      },
+      "audio": {
+        "sceneId": "textbook-l08-text-1",
+        "track": "8-1",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l08-text-1",
+      "figure": "l08-scene-01",
+      "figureSHA256": "6b10588846f6262e564eeafdab9a38ddeea52c41ccb7946d16800a0498d407f0"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p055-pair-text1-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 55,
+        "pdfPage": 70,
+        "section": "pair-text1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，选择一个物品，问答物品的方位。",
+        "vi": "Làm việc theo cặp, chọn một đồ vật rồi hỏi đáp về vị trí của nó."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l08-p056-grammar-position-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 56,
+        "pdfPage": 71,
+        "section": "grammar-position",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "方位词",
+        "vi": "Từ chỉ phương vị"
+      },
+      "instruction": {
+        "zh": "本册学习的表达方向、位置的方位词有：上、下、里、外、前、后、外边。\\n大声朗读。",
+        "vi": "Các từ chỉ phương hướng, vị trí trong tập này gồm: 上、下、里、外、前、后、外边.\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）房间里有一只小猫。\\n（2）我们去书店外吧。\\n（3）小雪的手机在桌子上呢。",
+        "vi": "(1) Trong phòng có một con mèo con.\\n(2) Chúng ta ra ngoài hiệu sách nhé.\\n(3) Điện thoại của Tiểu Tuyết ở trên bàn."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l08-p056-listen-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 56,
+        "pdfPage": 71,
+        "section": "listen-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "白家月和李文在（　）见。",
+        "vi": "Chọn nơi Bạch Gia Nguyệt và Lý Văn gặp nhau."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "家里",
+              "py": "jiā li",
+              "vi": "ở nhà"
+            },
+            {
+              "id": "B",
+              "zh": "书店里",
+              "py": "shūdiàn li",
+              "vi": "trong hiệu sách"
+            },
+            {
+              "id": "C",
+              "zh": "书店前",
+              "py": "shūdiàn qián",
+              "vi": "trước hiệu sách"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "课文2，听两遍对话，选择正确答案",
+            "ordinal": 1
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l08-text-2",
+        "track": "8-3",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l08-p056-listen-text2-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 56,
+        "pdfPage": 71,
+        "section": "listen-text2",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "李文下午（　）能到。",
+        "vi": "Chọn giờ Lý Văn có thể đến vào buổi chiều."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "两点",
+              "py": "liǎng diǎn",
+              "vi": "hai giờ"
+            },
+            {
+              "id": "B",
+              "zh": "两点半",
+              "py": "liǎng diǎn bàn",
+              "vi": "hai giờ rưỡi"
+            },
+            {
+              "id": "C",
+              "zh": "三点后",
+              "py": "sān diǎn hòu",
+              "vi": "sau ba giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "课文2，听两遍对话，选择正确答案",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l08-text-2",
+        "track": "8-3",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l08-p057-vocabulary-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 57,
+        "pdfPage": 72,
+        "section": "vocabulary",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-11",
+            "cells": [
+              {
+                "text": {
+                  "zh": "11",
+                  "vi": "11"
+                }
+              },
+              {
+                "text": {
+                  "zh": "在",
+                  "vi": "ở; tại (nơi diễn ra hành động)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zài",
+                  "vi": "zài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "prep.",
+                  "vi": "prep."
+                }
+              },
+              {
+                "text": {
+                  "zh": "at/in",
+                  "vi": "at/in"
+                }
+              },
+              {
+                "text": {
+                  "zh": "ở; tại (nơi diễn ra hành động)",
+                  "vi": "ở; tại (nơi diễn ra hành động)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-12",
+            "cells": [
+              {
+                "text": {
+                  "zh": "12",
+                  "vi": "12"
+                }
+              },
+              {
+                "text": {
+                  "zh": "学校",
+                  "vi": "trường học"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xuéxiào",
+                  "vi": "xuéxiào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "school",
+                  "vi": "school"
+                }
+              },
+              {
+                "text": {
+                  "zh": "trường học",
+                  "vi": "trường học"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-13",
+            "cells": [
+              {
+                "text": {
+                  "zh": "13",
+                  "vi": "13"
+                }
+              },
+              {
+                "text": {
+                  "zh": "书店",
+                  "vi": "hiệu sách"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shūdiàn",
+                  "vi": "shūdiàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "bookstore",
+                  "vi": "bookstore"
+                }
+              },
+              {
+                "text": {
+                  "zh": "hiệu sách",
+                  "vi": "hiệu sách"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-14",
+            "cells": [
+              {
+                "text": {
+                  "zh": "14",
+                  "vi": "14"
+                }
+              },
+              {
+                "text": {
+                  "zh": "前",
+                  "vi": "trước; phía trước"
+                }
+              },
+              {
+                "text": {
+                  "zh": "qián",
+                  "vi": "qián"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "front",
+                  "vi": "front"
+                }
+              },
+              {
+                "text": {
+                  "zh": "trước; phía trước",
+                  "vi": "trước; phía trước"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-15",
+            "cells": [
+              {
+                "text": {
+                  "zh": "15",
+                  "vi": "15"
+                }
+              },
+              {
+                "text": {
+                  "zh": "能",
+                  "vi": "có thể; có khả năng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "néng",
+                  "vi": "néng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "mod.",
+                  "vi": "mod."
+                }
+              },
+              {
+                "text": {
+                  "zh": "can; be able to",
+                  "vi": "can; be able to"
+                }
+              },
+              {
+                "text": {
+                  "zh": "có thể; có khả năng",
+                  "vi": "có thể; có khả năng"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-16",
+            "cells": [
+              {
+                "text": {
+                  "zh": "16",
+                  "vi": "16"
+                }
+              },
+              {
+                "text": {
+                  "zh": "到",
+                  "vi": "đến; tới"
+                }
+              },
+              {
+                "text": {
+                  "zh": "dào",
+                  "vi": "dào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "arrive; reach",
+                  "vi": "arrive; reach"
+                }
+              },
+              {
+                "text": {
+                  "zh": "đến; tới",
+                  "vi": "đến; tới"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-17",
+            "cells": [
+              {
+                "text": {
+                  "zh": "17",
+                  "vi": "17"
+                }
+              },
+              {
+                "text": {
+                  "zh": "午饭",
+                  "vi": "bữa trưa"
+                }
+              },
+              {
+                "text": {
+                  "zh": "wǔfàn",
+                  "vi": "wǔfàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "lunch",
+                  "vi": "lunch"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bữa trưa",
+                  "vi": "bữa trưa"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "8-4"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p057-role-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 57,
+        "pdfPage": 72,
+        "section": "role-text2",
+        "ordinal": 1,
+        "printedPages": [
+          56,
+          57
+        ],
+        "pdfPages": [
+          71,
+          72
+        ]
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "白家月：我们在哪儿见呢？\\n李文：在学校书店前见吧。\\n白家月：好的。下午两点你能到吗？\\n李文：我能到。我在学校吃午饭。",
+        "vi": "Chúng ta gặp nhau ở đâu?\\nGặp nhau trước hiệu sách của trường nhé.\\nĐược. Hai giờ chiều bạn đến được không?\\nTôi đến được. Tôi ăn trưa ở trường."
+      },
+      "audio": {
+        "sceneId": "textbook-l08-text-2",
+        "track": "8-3",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l08-text-2",
+      "figure": "l08-scene-02",
+      "figureSHA256": "52c3b0a0a1b99fda08ba449fa00b17288025a7d31e29aab2061437d14a808e02"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p057-pair-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 57,
+        "pdfPage": 72,
+        "section": "pair-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Làm việc theo cặp, hội thoại theo tình huống thực tế."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l08-p057-grammar-zai-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 57,
+        "pdfPage": 72,
+        "section": "grammar-zai",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "介词“在”",
+        "vi": "Giới từ “在”"
+      },
+      "instruction": {
+        "zh": "介词“在”和表示位置、处所的词语组合，在动词前，表示在什么位置、处所做什么。\\n大声朗读。",
+        "vi": "Giới từ “在” kết hợp với từ chỉ vị trí, nơi chốn, đứng trước động từ để nói làm gì ở đâu.\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）我在学校吃午饭。\\n（2）他爸爸在医院工作。\\n（3）你在哪儿买菜？",
+        "vi": "(1) Tôi ăn trưa ở trường.\\n(2) Bố anh ấy làm việc ở bệnh viện.\\n(3) Bạn mua rau ở đâu?"
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l08-p058-grammar-neng-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 58,
+        "pdfPage": 73,
+        "section": "grammar-neng",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "能愿动词“能”",
+        "vi": "Động từ năng nguyện “能”"
+      },
+      "instruction": {
+        "zh": "能愿动词“能”位于动词前，表示有能力、有条件或可能做某事。\\n大声朗读。",
+        "vi": "“能” đứng trước động từ, biểu thị có khả năng, điều kiện hoặc có thể làm một việc.\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）下午两点你能到吗？\\n（2）爸爸能去。\\n（3）我不能去学校吃午饭。",
+        "vi": "(1) Hai giờ chiều bạn có thể đến không?\\n(2) Bố có thể đi.\\n(3) Tôi không thể đến trường ăn trưa."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l08-p058-listen-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 58,
+        "pdfPage": 73,
+        "section": "listen-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "大医院里（　）。",
+        "vi": "Chọn tình trạng được nói đến trong bệnh viện lớn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "人很少",
+              "py": "rén hěn shǎo",
+              "vi": "rất ít người"
+            },
+            {
+              "id": "B",
+              "zh": "病人多",
+              "py": "bìngrén duō",
+              "vi": "nhiều bệnh nhân"
+            },
+            {
+              "id": "C",
+              "zh": "医生不忙",
+              "py": "yīshēng bù máng",
+              "vi": "bác sĩ không bận"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "课文3，听两遍对话，选择正确答案",
+            "ordinal": 1
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l08-text-3",
+        "track": "8-5",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l08-p058-listen-text3-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 58,
+        "pdfPage": 73,
+        "section": "listen-text3",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "胡医生家有（　）医生。",
+        "vi": "Chọn số bác sĩ trong gia đình bác sĩ Hồ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "一个",
+              "py": "yí gè",
+              "vi": "một người"
+            },
+            {
+              "id": "B",
+              "zh": "两个",
+              "py": "liǎng gè",
+              "vi": "hai người"
+            },
+            {
+              "id": "C",
+              "zh": "三个",
+              "py": "sān gè",
+              "vi": "ba người"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "课文3，听两遍对话，选择正确答案",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l08-text-3",
+        "track": "8-5",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-original-tip-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "original-tip",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Gợi ý của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "“小+姓氏”是对年纪比自己小的人的亲切称呼。",
+        "vi": "“小 + họ” là cách gọi thân mật người ít tuổi hơn mình."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-vocabulary-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "vocabulary",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-18",
+            "cells": [
+              {
+                "text": {
+                  "zh": "18",
+                  "vi": "18"
+                }
+              },
+              {
+                "text": {
+                  "zh": "饭",
+                  "vi": "bữa ăn; cơm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "fàn",
+                  "vi": "fàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "meal",
+                  "vi": "meal"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bữa ăn; cơm",
+                  "vi": "bữa ăn; cơm"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-19",
+            "cells": [
+              {
+                "text": {
+                  "zh": "19",
+                  "vi": "19"
+                }
+              },
+              {
+                "text": {
+                  "zh": "大",
+                  "vi": "to; lớn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "dà",
+                  "vi": "dà"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "adj."
+                }
+              },
+              {
+                "text": {
+                  "zh": "big; large",
+                  "vi": "big; large"
+                }
+              },
+              {
+                "text": {
+                  "zh": "to; lớn",
+                  "vi": "to; lớn"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-20",
+            "cells": [
+              {
+                "text": {
+                  "zh": "20",
+                  "vi": "20"
+                }
+              },
+              {
+                "text": {
+                  "zh": "病人",
+                  "vi": "bệnh nhân"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bìngrén",
+                  "vi": "bìngrén"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "patient",
+                  "vi": "patient"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bệnh nhân",
+                  "vi": "bệnh nhân"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-21",
+            "cells": [
+              {
+                "text": {
+                  "zh": "21",
+                  "vi": "21"
+                }
+              },
+              {
+                "text": {
+                  "zh": "多",
+                  "vi": "nhiều"
+                }
+              },
+              {
+                "text": {
+                  "zh": "duō",
+                  "vi": "duō"
+                }
+              },
+              {
+                "text": {
+                  "zh": "adj.",
+                  "vi": "adj."
+                }
+              },
+              {
+                "text": {
+                  "zh": "many; much",
+                  "vi": "many; much"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nhiều",
+                  "vi": "nhiều"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-22",
+            "cells": [
+              {
+                "text": {
+                  "zh": "22",
+                  "vi": "22"
+                }
+              },
+              {
+                "text": {
+                  "zh": "医生",
+                  "vi": "bác sĩ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yīshēng",
+                  "vi": "yīshēng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "doctor",
+                  "vi": "doctor"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bác sĩ",
+                  "vi": "bác sĩ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-23",
+            "cells": [
+              {
+                "text": {
+                  "zh": "23",
+                  "vi": "23"
+                }
+              },
+              {
+                "text": {
+                  "zh": "工作",
+                  "vi": "làm việc"
+                }
+              },
+              {
+                "text": {
+                  "zh": "gōngzuò",
+                  "vi": "gōngzuò"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "work",
+                  "vi": "work"
+                }
+              },
+              {
+                "text": {
+                  "zh": "làm việc",
+                  "vi": "làm việc"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "8-6"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-proper-nouns-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "proper-nouns",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "专有名词",
+        "vi": "Danh từ riêng"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "1",
+                  "vi": "1"
+                }
+              },
+              {
+                "text": {
+                  "zh": "胡医生",
+                  "vi": "bác sĩ Hồ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "Hú yīshēng",
+                  "vi": "Hú yīshēng"
+                }
+              },
+              {},
+              {
+                "text": {
+                  "zh": "Dr. Hu",
+                  "vi": "Dr. Hu"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bác sĩ Hồ",
+                  "vi": "bác sĩ Hồ"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "8-6"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-role-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "role-text3",
+        "ordinal": 1,
+        "printedPages": [
+          58,
+          59
+        ],
+        "pdfPages": [
+          73,
+          74
+        ]
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "刘明：小胡，还没吃饭呢？\\n胡医生：没吃呢。\\n刘明：大医院病人多，医生非常忙。\\n胡医生：是的。我爸爸也在医院工作，他也非常忙。\\n刘明：你家有两个医生？\\n胡医生：对。",
+        "vi": "Tiểu Hồ, cậu vẫn chưa ăn à?\\nTôi chưa ăn.\\nBệnh viện lớn có nhiều bệnh nhân, bác sĩ rất bận.\\nĐúng vậy. Bố tôi cũng làm việc ở bệnh viện, ông ấy cũng rất bận.\\nNhà cậu có hai bác sĩ à?\\nĐúng vậy."
+      },
+      "audio": {
+        "sceneId": "textbook-l08-text-3",
+        "track": "8-5",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l08-text-3",
+      "figure": "l08-scene-03",
+      "figureSHA256": "efd8d3798aae78cb1e814ae1f6e5c42b9ee9c32556aa3c4de3c8850d0c14f07c"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-comprehension-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reading-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "comprehension-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "根据课文内容回答问题",
+        "vi": "Trả lời câu hỏi theo bài đọc"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "胡医生的爸爸在哪儿工作？",
+        "vi": "Bố của bác sĩ Hồ làm việc ở đâu?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "他在医院工作。",
+            "vi": "Ông ấy làm việc ở bệnh viện."
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "sourceSceneId": "textbook-l08-text-3"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-comprehension-text3-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "reading-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "comprehension-text3",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "根据课文内容回答问题",
+        "vi": "Trả lời câu hỏi theo bài đọc"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "胡医生的爸爸工作忙吗？",
+        "vi": "Công việc của bố bác sĩ Hồ có bận không?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "他非常忙。",
+            "vi": "Ông ấy rất bận."
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "sourceSceneId": "textbook-l08-text-3"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p059-cloze-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 59,
+        "pdfPage": 74,
+        "section": "cloze",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "胡医生的爸爸＿＿医院工作。",
+        "vi": "Nói nơi làm việc của bố bác sĩ Hồ; chọn từ nối nơi chốn với hành động làm việc."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "哪儿",
+              "py": "nǎr",
+              "vi": "đâu"
+            },
+            {
+              "id": "B",
+              "zh": "在",
+              "py": "zài",
+              "vi": "ở"
+            },
+            {
+              "id": "C",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "D",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "E",
+              "zh": "能",
+              "py": "néng",
+              "vi": "có thể"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 6,
+            "section": "P59，选词填空",
+            "ordinal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-cloze-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "cloze",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "我下午两点＿＿到学校。",
+        "vi": "Nói khả năng đến trường lúc hai giờ chiều."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "哪儿",
+              "py": "nǎr",
+              "vi": "đâu"
+            },
+            {
+              "id": "B",
+              "zh": "在",
+              "py": "zài",
+              "vi": "ở"
+            },
+            {
+              "id": "C",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "D",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "E",
+              "zh": "能",
+              "py": "néng",
+              "vi": "có thể"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 6,
+            "section": "P59，选词填空",
+            "ordinal": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-cloze-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "cloze",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "陈天中：小猫在＿＿呢？\\n白家月：小猫在＿＿下。",
+        "vi": "Trần Thiên Trung hỏi vị trí của mèo con; Bạch Gia Nguyệt trả lời nó ở dưới một đồ vật."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "哪儿",
+              "py": "nǎr",
+              "vi": "đâu"
+            },
+            {
+              "id": "B",
+              "zh": "在",
+              "py": "zài",
+              "vi": "ở"
+            },
+            {
+              "id": "C",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "D",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "E",
+              "zh": "能",
+              "py": "néng",
+              "vi": "có thể"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 6,
+            "section": "P59，选词填空",
+            "ordinal": 3
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "哪儿",
+              "py": "nǎr",
+              "vi": "đâu"
+            },
+            {
+              "id": "B",
+              "zh": "在",
+              "py": "zài",
+              "vi": "ở"
+            },
+            {
+              "id": "C",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "D",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "E",
+              "zh": "能",
+              "py": "néng",
+              "vi": "có thể"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 6,
+            "section": "P59，选词填空",
+            "ordinal": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-cloze-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "cloze",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "白家月：我们去＿＿，你去吗？\\n李文：我现在有事，不能去。",
+        "vi": "Bạch Gia Nguyệt hỏi Lý Văn có cùng đi đến địa điểm đó không; anh ấy từ chối vì đang có việc."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "哪儿",
+              "py": "nǎr",
+              "vi": "đâu"
+            },
+            {
+              "id": "B",
+              "zh": "在",
+              "py": "zài",
+              "vi": "ở"
+            },
+            {
+              "id": "C",
+              "zh": "桌子",
+              "py": "zhuōzi",
+              "vi": "bàn"
+            },
+            {
+              "id": "D",
+              "zh": "书店",
+              "py": "shūdiàn",
+              "vi": "hiệu sách"
+            },
+            {
+              "id": "E",
+              "zh": "能",
+              "py": "néng",
+              "vi": "có thể"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 6,
+            "section": "P59，选词填空",
+            "ordinal": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-picture-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "picture",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "医生＿＿。",
+        "vi": "Dùng câu tiếng Trung miêu tả bác sĩ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "在医院工作",
+            "vi": "làm việc ở bệnh viện"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l08-picture-01",
+      "figureSHA256": "d0839e60b4e90dc96a27a7912618a2393f249fc0e0aa66cd9d80b0f4cf0d0f1f"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-picture-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "picture",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "我们在＿＿见吧。",
+        "vi": "Hoàn thành lời hẹn gặp dựa trên hình."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "书店里",
+            "vi": "trong hiệu sách"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l08-picture-02",
+      "figureSHA256": "ee774ac4f7da327d321ca06c5a962005a4b3e0ad275b52b8f3fc640ab35a543c"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-picture-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "picture",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "你＿＿去＿＿吗？",
+        "vi": "Hỏi đối phương có thể đi đâu để mua đồ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "能",
+            "vi": "có thể"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "超市",
+            "vi": "siêu thị"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l08-picture-03",
+      "figureSHA256": "e8af0e5906a78cc575fe51a2bc295a8abbf57de34dd89d546008468bb7bdfcb3"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-picture-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "picture",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "桌子上＿＿。",
+        "vi": "Miêu tả thứ có trên bàn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "有一只小猫",
+            "vi": "có một con mèo con"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l08-picture-04",
+      "figureSHA256": "395a8497bffd5c46a3a53825430dea5b1698d7d667927a476eb4f8ef5e82031d"
+    },
+    {
+      "id": "hsk1-original-2026-l08-p060-classroom-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 8,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "section": "classroom",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，使用以下词语对话。\\n哪儿　东西　呢　下　小猫　吃　在",
+        "vi": "Làm việc theo cặp, dùng các từ sau để hội thoại.\\n哪儿 (đâu); 东西 (đồ vật); 呢 (trợ từ); 下 (dưới); 小猫 (mèo con); 吃 (ăn); 在 (ở)."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "A：你的手机在哪儿？\\nB：我的手机在桌子上。你的手机呢？\\nA：我的手机在家里。\\n……",
+        "vi": "A: Điện thoại của bạn ở đâu?\\nB: Điện thoại của tôi ở trên bàn. Còn điện thoại của bạn?\\nA: Điện thoại của tôi ở nhà.\\n…"
+      },
+      "participants": 2
+    }
+  ],
+  "figures": [
+    {
+      "id": "l08-warmup-01",
+      "file": "figures/l08-warmup-01.png",
+      "alt": {
+        "zh": "室内有多排摆满书的书架。",
+        "vi": "Trong nhà có nhiều kệ đầy sách."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "cell": 1,
+        "cropPdfPoints": [
+          57.333333333333336,
+          422.6666666666667,
+          190.66666666666666,
+          513.3333333333334
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "2757dff05f762b9204e2b7e3b7e2c67caa5692804334bd547e9af0c7b02af511",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-warmup-02",
+      "file": "figures/l08-warmup-02.png",
+      "alt": {
+        "zh": "一间带婴儿床的房间。",
+        "vi": "Một phòng có cũi trẻ em."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "cell": 2,
+        "cropPdfPoints": [
+          210.0,
+          422.6666666666667,
+          344.0,
+          513.3333333333334
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "1b6ad350010034d11dcf8eff518d795f1580c9ed1236c838ec49e701e84b6be0",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-warmup-03",
+      "file": "figures/l08-warmup-03.png",
+      "alt": {
+        "zh": "操场后面有教学楼。",
+        "vi": "Sau sân trường có tòa nhà học."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "cell": 3,
+        "cropPdfPoints": [
+          362.6666666666667,
+          422.6666666666667,
+          496.0,
+          513.3333333333334
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "dad607b26932cd2e3bb0c235664ad5387e130d476bae800ecd7f909bd2a8dcf1",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-warmup-04",
+      "file": "figures/l08-warmup-04.png",
+      "alt": {
+        "zh": "一只小猫躺着。",
+        "vi": "Một con mèo con đang nằm."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "cell": 4,
+        "cropPdfPoints": [
+          57.333333333333336,
+          531.3333333333334,
+          190.66666666666666,
+          622.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "d80de1cd52dc8d71a75e7bfccdcc0114d390d2732dde4f2fc7e9accb9760fa6f",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-warmup-05",
+      "file": "figures/l08-warmup-05.png",
+      "alt": {
+        "zh": "两人穿白大褂、戴听诊器。",
+        "vi": "Hai người mặc áo blouse trắng, đeo ống nghe."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "cell": 5,
+        "cropPdfPoints": [
+          210.0,
+          531.3333333333334,
+          344.0,
+          622.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "d23185eed28b359a75c73705a94c1b535b6d70a7d88aac7f281541a6d653030b",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-warmup-06",
+      "file": "figures/l08-warmup-06.png",
+      "alt": {
+        "zh": "一件有圆形台面和支腿的家具。",
+        "vi": "Một món đồ nội thất có mặt tròn và các chân."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 54,
+        "pdfPage": 69,
+        "cell": 6,
+        "cropPdfPoints": [
+          362.6666666666667,
+          531.3333333333334,
+          496.0,
+          622.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "b391dfb773583f3f20287c972ba23d6451e95b0d0529ab0ce1aa9d5743e090d5",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-scene-01",
+      "file": "figures/l08-scene-01.png",
+      "alt": {
+        "zh": "一只猫在桌子下休息。",
+        "vi": "Một con mèo nghỉ dưới bàn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 55,
+        "pdfPage": 70,
+        "cell": 1,
+        "cropPdfPoints": [
+          313.3333333333333,
+          191.33333333333334,
+          530.0,
+          338.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "6b10588846f6262e564eeafdab9a38ddeea52c41ccb7946d16800a0498d407f0",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-scene-02",
+      "file": "figures/l08-scene-02.png",
+      "alt": {
+        "zh": "白家月在教室打电话，旁边小图是通话中的李文。",
+        "vi": "Bạch Gia Nguyệt gọi điện trong lớp; hình nhỏ là Lý Văn đang nói điện thoại."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 56,
+        "pdfPage": 71,
+        "cell": 2,
+        "cropPdfPoints": [
+          127.33333333333333,
+          576.0,
+          431.3333333333333,
+          748.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "52c3b0a0a1b99fda08ba449fa00b17288025a7d31e29aab2061437d14a808e02",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-scene-03",
+      "file": "figures/l08-scene-03.png",
+      "alt": {
+        "zh": "两名医生在医疗设备旁交谈。",
+        "vi": "Hai bác sĩ nói chuyện bên thiết bị y tế."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 58,
+        "pdfPage": 73,
+        "cell": 3,
+        "cropPdfPoints": [
+          105.33333333333333,
+          516.0,
+          444.6666666666667,
+          742.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "efd8d3798aae78cb1e814ae1f6e5c42b9ee9c32556aa3c4de3c8850d0c14f07c",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-picture-01",
+      "file": "figures/l08-picture-01.png",
+      "alt": {
+        "zh": "两名穿白大褂的人。",
+        "vi": "Hai người mặc áo blouse trắng."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "cell": 1,
+        "cropPdfPoints": [
+          81.33333333333333,
+          238.0,
+          274.6666666666667,
+          318.6666666666667
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "d0839e60b4e90dc96a27a7912618a2393f249fc0e0aa66cd9d80b0f4cf0d0f1f",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-picture-02",
+      "file": "figures/l08-picture-02.png",
+      "alt": {
+        "zh": "书店内有多排书架。",
+        "vi": "Trong hiệu sách có nhiều dãy kệ."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "cell": 2,
+        "cropPdfPoints": [
+          296.6666666666667,
+          238.0,
+          490.0,
+          318.6666666666667
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "ee774ac4f7da327d321ca06c5a962005a4b3e0ad275b52b8f3fc640ab35a543c",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-picture-03",
+      "file": "figures/l08-picture-03.png",
+      "alt": {
+        "zh": "一个人在超市里选购水果。",
+        "vi": "Một người lựa trái cây trong siêu thị."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "cell": 3,
+        "cropPdfPoints": [
+          81.33333333333333,
+          368.0,
+          274.6666666666667,
+          449.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "e8af0e5906a78cc575fe51a2bc295a8abbf57de34dd89d546008468bb7bdfcb3",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l08-picture-04",
+      "file": "figures/l08-picture-04.png",
+      "alt": {
+        "zh": "猫坐在桌子上，旁边有花瓶。",
+        "vi": "Mèo ngồi trên bàn, bên cạnh có bình hoa."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 60,
+        "pdfPage": 75,
+        "cell": 4,
+        "cropPdfPoints": [
+          296.6666666666667,
+          368.0,
+          490.0,
+          449.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "395a8497bffd5c46a3a53825430dea5b1698d7d667927a476eb4f8ef5e82031d",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "printedPage": 54,
+      "pdfPage": 69,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p054-objectives-01",
+        "hsk1-original-2026-l08-p054-warmup-01",
+        "hsk1-original-2026-l08-p054-warmup-02",
+        "hsk1-original-2026-l08-p054-warmup-03",
+        "hsk1-original-2026-l08-p054-warmup-04",
+        "hsk1-original-2026-l08-p054-warmup-05",
+        "hsk1-original-2026-l08-p054-warmup-06"
+      ]
+    },
+    {
+      "printedPage": 55,
+      "pdfPage": 70,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p055-vocabulary-01",
+        "hsk1-original-2026-l08-p055-original-tip-01",
+        "hsk1-original-2026-l08-p055-role-text1-01",
+        "hsk1-original-2026-l08-p055-pair-text1-01"
+      ]
+    },
+    {
+      "printedPage": 56,
+      "pdfPage": 71,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p056-grammar-position-01",
+        "hsk1-original-2026-l08-p056-listen-text2-01",
+        "hsk1-original-2026-l08-p056-listen-text2-02"
+      ]
+    },
+    {
+      "printedPage": 57,
+      "pdfPage": 72,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p057-vocabulary-02",
+        "hsk1-original-2026-l08-p057-role-text2-01",
+        "hsk1-original-2026-l08-p057-pair-text2-01",
+        "hsk1-original-2026-l08-p057-grammar-zai-01"
+      ]
+    },
+    {
+      "printedPage": 58,
+      "pdfPage": 73,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p058-grammar-neng-01",
+        "hsk1-original-2026-l08-p058-listen-text3-01",
+        "hsk1-original-2026-l08-p058-listen-text3-02"
+      ]
+    },
+    {
+      "printedPage": 59,
+      "pdfPage": 74,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p059-original-tip-01",
+        "hsk1-original-2026-l08-p059-vocabulary-03",
+        "hsk1-original-2026-l08-p059-proper-nouns-03",
+        "hsk1-original-2026-l08-p059-role-text3-01",
+        "hsk1-original-2026-l08-p059-comprehension-text3-01",
+        "hsk1-original-2026-l08-p059-comprehension-text3-02",
+        "hsk1-original-2026-l08-p059-cloze-01"
+      ]
+    },
+    {
+      "printedPage": 60,
+      "pdfPage": 75,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l08-p060-cloze-02",
+        "hsk1-original-2026-l08-p060-cloze-03",
+        "hsk1-original-2026-l08-p060-cloze-04",
+        "hsk1-original-2026-l08-p060-picture-01",
+        "hsk1-original-2026-l08-p060-picture-02",
+        "hsk1-original-2026-l08-p060-picture-03",
+        "hsk1-original-2026-l08-p060-picture-04",
+        "hsk1-original-2026-l08-p060-classroom-01"
+      ]
+    }
+  ],
+  "textbookCorrections": [
+    {
+      "target": "textbook-l08-grammar-01",
+      "field": "examples",
+      "printedPage": 56,
+      "issue": "原版我们去书店外吧缺失，末例句小雪的手机在桌子上呢被删去呢。"
+    },
+    {
+      "target": "textbook-l08-grammar-02",
+      "field": "examples",
+      "printedPage": 57,
+      "issue": "原版第三例句你在哪儿买菜缺失。"
+    },
+    {
+      "target": "textbook-l08-grammar-03",
+      "field": "examples",
+      "printedPage": 58,
+      "issue": "原版第二例句爸爸能去缺失。"
+    },
+    {
+      "target": "textbook-l08-text-1-line-02",
+      "field": "py",
+      "printedPage": 55,
+      "suggested": "Wǒ méi kànjiàn, tā zài nǎr ne?",
+      "issue": "按源页课文拼音纠正轻声、儿化或喂的第二声；仅展示修订，不改冻结历史题库。"
+    },
+    {
+      "target": "textbook-l08-text-2-line-01",
+      "field": "py",
+      "printedPage": 57,
+      "suggested": "Wǒmen zài nǎr jiàn ne?",
+      "issue": "按源页课文拼音纠正轻声、儿化或喂的第二声；仅展示修订，不改冻结历史题库。"
+    },
+    {
+      "target": "textbook-l08-title",
+      "field": "title_py",
+      "printedPage": 54,
+      "suggested": "Wǒ bàba yě zài yīyuàn gōngzuò",
+      "issue": "按原书标题拼音恢复轻声音节；仅展示修订，不改冻结历史题库。"
+    }
+  ],
+  "integrationNotes": [
+    "Candidate pending independent source review and browser acceptance.",
+    "All images are exact source crops with recorded PDF coordinates.",
+    "Open references are editorial, non-unique and ungraded.",
+    "Original vocabulary keeps sequence, pronunciation, POS and English gloss alongside Vietnamese.",
+    "printAudioTrack records only the printed vocabulary audio number; no invented scene resolver ID.",
+    "All listening/audio flags remain false pending human listening."
+  ]
+}
+`;export{e as default};

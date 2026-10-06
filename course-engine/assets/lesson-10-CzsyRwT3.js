@@ -1,0 +1,5623 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk2-fltrp-2026",
+  "version": "2026.1",
+  "number": 10,
+  "id": "hsk2-fltrp-2026:l10",
+  "title": {
+    "zh": "就要考试了",
+    "vi": "Sắp thi rồi",
+    "py": "Jiù yào kǎoshì le"
+  },
+  "source": {
+    "startPdfPage": 99,
+    "endPdfPage": 107,
+    "startPrintedPage": 84,
+    "endPrintedPage": 92
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "Independent Codex AI content-review worker; separate from lesson10 author",
+    "notes": [
+      "Independently opened textbook PDF99–107 (printed84–92) and answer PDF13–14; checked complete source, Vietnamese, pinyin and assessments.",
+      "Printed 好好 on PDF102 reads hǎohǎo; corrected the second syllable from hāo to hǎo. Grammar-example pinyin and all Vietnamese remain editorial supplements.",
+      "Source has14 numbered headwords and15 POS-sense records, with separate noun/verb 考试. All printed tasks and the 呢 tip are preserved; no culture panel is printed.",
+      "All8 original audio SHA256 matches and full ffmpeg decodes independently passed. All8 ASR transcripts/segments support source-track mappings and listening answers.",
+      "Machine-assisted audio evidence is not human/native listening or pronunciation certification; qualified-teacher/native-speaker certification remains outside this review.",
+      "Ordering context and distinct meaning-based distractors were reviewed; all5 manual-writing tasks remain answer-free."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并使用主谓谓语句对人、事物或情况进行说明。",
+      "vi": "Nghe hiểu và dùng câu có cụm chủ–vị làm vị ngữ để nói về người, sự vật hoặc tình huống.",
+      "id": "hsk2-fltrp-2026:l10:objective1",
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用选择问句表示疑问。",
+      "vi": "Nghe hiểu và dùng câu hỏi lựa chọn.",
+      "id": "hsk2-fltrp-2026:l10:objective2",
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握固定格式“要/快/快要/就要……了”的用法，能表达某事即将发生。",
+      "vi": "Nắm mẫu 要/快/快要/就要……了 để diễn đạt một việc sắp xảy ra.",
+      "id": "hsk2-fltrp-2026:l10:objective3",
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk2-fltrp-2026:l10:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 门；B 题；C 笑；D 错；E 考试；F 本子",
+          "vi": "A cửa; B câu hỏi/bài toán; C cười; D sai; E thi; F vở"
+        },
+        {
+          "zh": "图片描述（编辑补充）：学生在考场答题；红色叉号；数学题；几本笔记本；房间的门；两个人坐在沙发上笑。",
+          "vi": "Mô tả tranh (biên tập bổ sung): học sinh làm bài thi; dấu chéo đỏ; các bài toán; vài quyển vở; cửa phòng; hai người ngồi cười trên ghế sofa.",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:warmup2",
+      "title": {
+        "zh": "根据实际情况互相问答。",
+        "vi": "Hỏi đáp theo tình hình thực tế."
+      },
+      "items": [
+        {
+          "zh": "（1）爷爷买了奶茶、咖啡和牛奶，你想喝什么？",
+          "vi": "(1) Ông mua trà sữa, cà phê và sữa, bạn muốn uống gì?"
+        },
+        {
+          "zh": "（2）商场有白色的裤子，也有黑色的裤子，你买哪条？",
+          "vi": "(2) Trung tâm thương mại có quần trắng và quần đen, bạn mua chiếc nào?"
+        },
+        {
+          "zh": "（3）明天星期六，可以在家看电视，也可以去看电影，你想做什么？",
+          "vi": "(3) Mai là thứ bảy, có thể ở nhà xem ti vi hoặc đi xem phim, bạn muốn làm gì?"
+        }
+      ],
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk2-fltrp-2026:l10:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在房间，刘明在帮刘小明准备东西。",
+        "vi": "Trong phòng, Lưu Minh đang giúp Lưu Tiểu Minh chuẩn bị đồ.",
+        "source": {
+          "pdfPage": 100,
+          "printedPage": 85,
+          "section": "课文1情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "10-1",
+      "lines": [
+        {
+          "zh": "小明，你们明天开学，你准备好了吗？",
+          "vi": "Tiểu Minh, mai các con bắt đầu học, con chuẩn bị xong chưa?",
+          "id": "hsk2-fltrp-2026:l10:text1:line1",
+          "speaker": "刘明",
+          "py": "Xiǎomíng, nǐmen míngtiān kāixué, nǐ zhǔnbèi hǎo le ma?",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "明天就开学啊？爸爸，我的书包你看见了吗？",
+          "vi": "Mai đã bắt đầu học rồi ạ? Bố ơi, cặp sách của con bố có thấy không?",
+          "id": "hsk2-fltrp-2026:l10:text1:line2",
+          "speaker": "刘小明",
+          "py": "Míngtiān jiù kāixué a? Bàba, wǒ de shūbāo nǐ kànjiànle ma?",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "书包在门后面。",
+          "vi": "Cặp ở sau cửa.",
+          "id": "hsk2-fltrp-2026:l10:text1:line3",
+          "speaker": "刘明",
+          "py": "Shūbāo zài mén hòumiàn.",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "书在哪儿呢？笔呢？",
+          "vi": "Sách ở đâu ạ? Còn bút thì sao?",
+          "id": "hsk2-fltrp-2026:l10:text1:line4",
+          "speaker": "刘小明",
+          "py": "Shū zài nǎr ne? Bǐ ne?",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "书在床上，笔在桌子上。",
+          "vi": "Sách ở trên giường, bút ở trên bàn.",
+          "id": "hsk2-fltrp-2026:l10:text1:line5",
+          "speaker": "刘明",
+          "py": "Shū zài chuáng shang, bǐ zài zhuōzi shang.",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "太好了！现在都准备好了。",
+          "vi": "Tốt quá! Bây giờ đều chuẩn bị xong rồi.",
+          "id": "hsk2-fltrp-2026:l10:text1:line6",
+          "speaker": "刘小明",
+          "py": "Tài hǎo le! Xiànzài dōu zhǔnbèi hǎo le.",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这次爸爸帮你，下次你自己准备，好不好？",
+          "vi": "Lần này bố giúp con; lần sau con tự chuẩn bị nhé, được không?",
+          "id": "hsk2-fltrp-2026:l10:text1:line7",
+          "speaker": "刘明",
+          "py": "Zhè cì bàba bāng nǐ, xià cì nǐ zìjǐ zhǔnbèi, hǎo bu hǎo?",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好！",
+          "vi": "Vâng ạ!",
+          "id": "hsk2-fltrp-2026:l10:text1:line8",
+          "speaker": "刘小明",
+          "py": "Hǎo!",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "书包在哪儿？",
+          "vi": "Cặp sách ở đâu?",
+          "id": "hsk2-fltrp-2026:l10:text1:question1",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "床上",
+            "桌子上",
+            "门后面"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "笔在哪儿？",
+          "vi": "Bút ở đâu?",
+          "id": "hsk2-fltrp-2026:l10:text1:question2",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "床上",
+            "桌子上",
+            "门后面"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "刘小明什么时候开学？",
+          "vi": "Khi nào Tiểu Minh bắt đầu học?",
+          "id": "hsk2-fltrp-2026:l10:text1:question3",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "刘小明准备好了吗？为什么？",
+          "vi": "Tiểu Minh đã chuẩn bị xong chưa? Vì sao?",
+          "id": "hsk2-fltrp-2026:l10:text1:question4",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在房间，王一雪和刘小雪在聊学习。",
+        "vi": "Trong phòng, Vương Nhất Tuyết và Lưu Tiểu Tuyết nói chuyện học hành.",
+        "source": {
+          "pdfPage": 102,
+          "printedPage": 87,
+          "section": "课文2情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "10-3",
+      "lines": [
+        {
+          "zh": "小雪，你在做什么呢？",
+          "vi": "Tiểu Tuyết, con đang làm gì vậy?",
+          "id": "hsk2-fltrp-2026:l10:text2:line1",
+          "speaker": "王一雪",
+          "py": "Xiǎoxuě, nǐ zài zuò shénme ne?",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "明天考试，我在看书呢。",
+          "vi": "Mai thi, con đang đọc sách ạ.",
+          "id": "hsk2-fltrp-2026:l10:text2:line2",
+          "speaker": "刘小雪",
+          "py": "Míngtiān kǎoshì, wǒ zài kàn shū ne.",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这些词要好好看看。",
+          "vi": "Những từ này cần xem kỹ nhé.",
+          "id": "hsk2-fltrp-2026:l10:text2:line3",
+          "speaker": "王一雪",
+          "py": "Zhèxiē cí yào hǎohǎo kànkan.",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我看过了，意思也都懂了。",
+          "vi": "Con xem rồi, ý nghĩa cũng hiểu hết rồi.",
+          "id": "hsk2-fltrp-2026:l10:text2:line4",
+          "speaker": "刘小雪",
+          "py": "Wǒ kànguo le, yìsi yě dōu dǒng le.",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你的本子呢？本子上做错的题也要看一看。",
+          "vi": "Vở của con đâu? Những câu làm sai trong vở cũng cần xem lại.",
+          "id": "hsk2-fltrp-2026:l10:text2:line5",
+          "speaker": "王一雪",
+          "py": "Nǐ de běnzi ne? Běnzi shang zuòcuò de tí yě yào kàn yi kàn.",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "妈妈，是您准备考试还是我准备考试？",
+          "vi": "Mẹ ơi, mẹ chuẩn bị thi hay con chuẩn bị thi ạ?",
+          "id": "hsk2-fltrp-2026:l10:text2:line6",
+          "speaker": "刘小雪",
+          "py": "Māma, shì nín zhǔnbèi kǎoshì háishi wǒ zhǔnbèi kǎoshì?",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "刘小雪在做什么？",
+          "vi": "Tiểu Tuyết đang làm gì?",
+          "id": "hsk2-fltrp-2026:l10:text2:question1",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "看书",
+            "考试",
+            "找本子"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "做错的题在哪儿？",
+          "vi": "Những câu làm sai ở đâu?",
+          "id": "hsk2-fltrp-2026:l10:text2:question2",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "书上",
+            "本子上",
+            "书包里"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "刘小雪明天要做什么？",
+          "vi": "Ngày mai Tiểu Tuyết sẽ làm gì?",
+          "id": "hsk2-fltrp-2026:l10:text2:question3",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这些词的意思刘小雪都懂了吗？",
+          "vi": "Tiểu Tuyết đã hiểu hết nghĩa của các từ này chưa?",
+          "id": "hsk2-fltrp-2026:l10:text2:question4",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在客厅，王一雪和孩子们在聊天儿。",
+        "vi": "Trong phòng khách, Nhất Tuyết trò chuyện với các con.",
+        "source": {
+          "pdfPage": 103,
+          "printedPage": 88,
+          "section": "课文3情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "10-5",
+      "lines": [
+        {
+          "zh": "妈妈，我回来了！",
+          "vi": "Mẹ ơi, con về rồi!",
+          "id": "hsk2-fltrp-2026:l10:text3:line1",
+          "speaker": "刘小雪",
+          "py": "Māma, wǒ huílái le!",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我买了奶茶，就在桌子上，自己去拿吧。",
+          "vi": "Mẹ mua trà sữa rồi, ở ngay trên bàn, con tự lấy đi.",
+          "id": "hsk2-fltrp-2026:l10:text3:line2",
+          "speaker": "王一雪",
+          "py": "Wǒ mǎile nǎichá, jiù zài zhuōzi shang, zìjǐ qù ná ba.",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "谢谢妈妈！",
+          "vi": "Con cảm ơn mẹ!",
+          "id": "hsk2-fltrp-2026:l10:text3:line3",
+          "speaker": "刘小雪",
+          "py": "Xièxie māma!",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "今天考试考得怎么样？",
+          "vi": "Hôm nay con thi thế nào?",
+          "id": "hsk2-fltrp-2026:l10:text3:line4",
+          "speaker": "王一雪",
+          "py": "Jīntiān kǎoshì kǎo de zěnmeyàng?",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我觉得比上次好。",
+          "vi": "Con thấy tốt hơn lần trước.",
+          "id": "hsk2-fltrp-2026:l10:text3:line5",
+          "speaker": "刘小雪",
+          "py": "Wǒ juéde bǐ shàng cì hǎo.",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "真不错！饭菜快要做好了，你叫弟弟一起去洗手吧。",
+          "vi": "Tốt thật! Cơm và thức ăn sắp xong rồi, con gọi em cùng đi rửa tay đi.",
+          "id": "hsk2-fltrp-2026:l10:text3:line6",
+          "speaker": "王一雪",
+          "py": "Zhēn búcuò! Fàncài kuàiyào zuòhǎo le, nǐ jiào dìdi yìqǐ qù xǐshǒu ba.",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "……",
+          "vi": "…",
+          "id": "hsk2-fltrp-2026:l10:text3:line7",
+          "speaker": "（情景转换）",
+          "py": "…",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "妈妈，我是第一名，姐姐还没洗完呢。",
+          "vi": "Mẹ ơi, con về nhất, chị vẫn chưa rửa xong!",
+          "id": "hsk2-fltrp-2026:l10:text3:line8",
+          "speaker": "刘小明",
+          "py": "Māma, wǒ shì dì-yī míng, jiějie hái méi xǐwán ne.",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你洗得真快啊！",
+          "vi": "Con rửa nhanh thật!",
+          "id": "hsk2-fltrp-2026:l10:text3:line9",
+          "speaker": "王一雪",
+          "py": "Nǐ xǐ de zhēn kuài a!",
+          "source": {
+            "pdfPage": 104,
+            "printedPage": 89,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "刘小雪考试考得怎么样？",
+          "vi": "Tiểu Tuyết thi thế nào?",
+          "id": "hsk2-fltrp-2026:l10:text3:question1",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "很不好",
+            "没上次好",
+            "比上次好"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一雪正在做什么？",
+          "vi": "Nhất Tuyết đang làm gì?",
+          "id": "hsk2-fltrp-2026:l10:text3:question2",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "考试",
+            "做菜",
+            "洗手"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "王一雪叫刘小雪做什么？",
+          "vi": "Nhất Tuyết bảo Tiểu Tuyết làm gì?",
+          "id": "hsk2-fltrp-2026:l10:text3:question3",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "孩子们洗完手了吗？",
+          "vi": "Các con đã rửa tay xong chưa?",
+          "id": "hsk2-fltrp-2026:l10:text3:question4",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "课文3音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在房间，刘小雪在写日记。",
+        "vi": "Trong phòng, Tiểu Tuyết viết nhật ký.",
+        "source": {
+          "pdfPage": 105,
+          "printedPage": 90,
+          "section": "课文4情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "10-7",
+      "lines": [
+        {
+          "zh": "快要开学了，爸爸帮弟弟准备书包、本子和笔。我就要考试了，妈妈让我看书、看做错的题。我们上学，爸爸、妈妈比我们还忙。我问他们：“是我和弟弟上学还是你们上学？”我问完，他们都笑了。",
+          "vi": "Sắp vào học rồi, bố giúp em chuẩn bị cặp sách, vở và bút. Tôi sắp thi nên mẹ bảo tôi đọc sách, xem lại những câu làm sai. Chúng tôi đi học mà bố mẹ còn bận hơn chúng tôi. Tôi hỏi bố mẹ: “Con và em đi học hay bố mẹ đi học vậy?” Tôi hỏi xong thì bố mẹ đều cười.",
+          "id": "hsk2-fltrp-2026:l10:text4:line1",
+          "speaker": "刘小雪",
+          "py": "Kuàiyào kāixué le, bàba bāng dìdi zhǔnbèi shūbāo, běnzi hé bǐ. Wǒ jiù yào kǎoshì le, māma ràng wǒ kàn shū, kàn zuòcuò de tí. Wǒmen shàngxué, bàba, māma bǐ wǒmen hái máng. Wǒ wèn tāmen: “Shì wǒ hé dìdi shàngxué háishi nǐmen shàngxué?” Wǒ wènwán, tāmen dōu xiào le.",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "刘小雪考试前，爸爸帮她准备考试。",
+          "vi": "Trước khi Tiểu Tuyết thi, bố giúp cô bé chuẩn bị.",
+          "id": "hsk2-fltrp-2026:l10:text4:question1",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "刘小雪和弟弟上学，爸爸、妈妈比他们还忙。",
+          "vi": "Tiểu Tuyết và em đi học, bố mẹ còn bận hơn các con.",
+          "id": "hsk2-fltrp-2026:l10:text4:question2",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "爸爸为什么帮弟弟准备书包、本子和笔？",
+          "vi": "Vì sao bố giúp em chuẩn bị cặp, vở và bút?",
+          "id": "hsk2-fltrp-2026:l10:text4:question3",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "快要上课了",
+            "快要开学了",
+            "快要考试了"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "爸爸、妈妈为什么笑了？",
+          "vi": "Vì sao bố mẹ cười?",
+          "id": "hsk2-fltrp-2026:l10:text4:question4",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "孩子们去上学了",
+            "孩子们考试考得很好",
+            "孩子上学，他们比孩子还忙"
+          ],
+          "answer": 2
+        }
+      ],
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "课文4音频标记",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "开学",
+      "vi": "bắt đầu năm/kỳ học, khai giảng",
+      "id": "hsk2-fltrp-2026:l10:word01",
+      "py": "kāixué",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "10-2",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：开学",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "v.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "门",
+      "vi": "cửa",
+      "id": "hsk2-fltrp-2026:l10:word02",
+      "py": "mén",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "10-2",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：门",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "后面",
+      "vi": "phía sau, đằng sau",
+      "id": "hsk2-fltrp-2026:l10:word03",
+      "py": "hòumiàn",
+      "pos": "danh từ chỉ phương vị",
+      "sourceText": 1,
+      "audioTrack": "10-2",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：后面",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "笔",
+      "vi": "bút",
+      "id": "hsk2-fltrp-2026:l10:word04",
+      "py": "bǐ",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "10-2",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：笔",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          10,
+          13
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "帮",
+      "vi": "giúp",
+      "id": "hsk2-fltrp-2026:l10:word05",
+      "py": "bāng",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "10-2",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：帮",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "v.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "考试",
+      "vi": "thi, làm bài thi",
+      "id": "hsk2-fltrp-2026:l10:word06",
+      "py": "kǎoshì",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：考试",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "v./n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "考试",
+      "vi": "kỳ thi, bài thi",
+      "id": "hsk2-fltrp-2026:l10:word07",
+      "py": "kǎoshì",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：考试",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "v./n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "词",
+      "vi": "từ, từ ngữ",
+      "id": "hsk2-fltrp-2026:l10:word08",
+      "py": "cí",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：词",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "本子",
+      "vi": "vở, quyển ghi chép",
+      "id": "hsk2-fltrp-2026:l10:word09",
+      "py": "běnzi",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：本子",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "错",
+      "vi": "sai",
+      "id": "hsk2-fltrp-2026:l10:word10",
+      "py": "cuò",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：错",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "adj.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "题",
+      "vi": "câu hỏi, bài toán, đề bài",
+      "id": "hsk2-fltrp-2026:l10:word11",
+      "py": "tí",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：题",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "还是",
+      "vi": "hay, hoặc (trong câu hỏi lựa chọn)",
+      "id": "hsk2-fltrp-2026:l10:word12",
+      "py": "háishi",
+      "pos": "liên từ",
+      "sourceText": 2,
+      "audioTrack": "10-4",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：还是",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "conj.",
+        "lessonNumbers": [
+          2,
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "考",
+      "vi": "thi, dự thi",
+      "id": "hsk2-fltrp-2026:l10:word13",
+      "py": "kǎo",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "10-6",
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：考",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 12,
+        "sourcePos": "v.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "快要",
+      "vi": "sắp, sắp sửa",
+      "id": "hsk2-fltrp-2026:l10:word14",
+      "py": "kuàiyào",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "10-6",
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：快要",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 13,
+        "sourcePos": "adv.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "笑",
+      "vi": "cười, mỉm cười",
+      "id": "hsk2-fltrp-2026:l10:word15",
+      "py": "xiào",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "10-8",
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：笑",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 14,
+        "sourcePos": "v.",
+        "lessonNumbers": [
+          10
+        ],
+        "sourceStarred": false,
+        "starMeaning": "beyond syllabus for this level",
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表注释",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk2-fltrp-2026:l10:grammar1",
+      "title": {
+        "zh": "主谓谓语句",
+        "vi": "Câu có cụm chủ–vị làm vị ngữ"
+      },
+      "structure": "主语 + 主谓短语",
+      "explanation": {
+        "zh": "主谓短语可以作谓语，对主语加以说明或描写，构成主谓谓语句。一般来说，主谓短语中的主语是全句主语的一部分或跟它相关。基本结构：主语+主谓短语。",
+        "vi": "Một cụm chủ–vị có thể làm vị ngữ để giải thích hoặc miêu tả chủ ngữ chính. Chủ ngữ trong cụm thường là một bộ phận của chủ ngữ chính hoặc có liên quan đến nó. Ví dụ 弟弟手很小: nói về em trai, rồi miêu tả tay của em nhỏ."
+      },
+      "examples": [
+        {
+          "zh": "我的书包你看见了吗？",
+          "vi": "Cặp sách của tôi, bạn có thấy không?",
+          "py": "Wǒ de shūbāo nǐ kànjiàn le ma?",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "弟弟手很小。",
+          "vi": "Tay em trai rất nhỏ.",
+          "py": "Dìdi shǒu hěn xiǎo.",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这件事他知道。",
+          "vi": "Chuyện này anh ấy biết.",
+          "py": "Zhè jiàn shì tā zhīdào.",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：刘明工作忙吗？B：______。",
+          "vi": "A: Lưu Minh có bận việc không? B: ______.",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你知道哪个电影好看吗？B：这个电影______，很好看。",
+          "vi": "A: Bạn biết phim nào hay không? B: Phim này ______, rất hay.",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：陈天中学习怎么样？B：______。",
+          "vi": "A: Trần Thiên Trung học hành thế nào? B: ______.",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "主谓谓语句",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:grammar2",
+      "title": {
+        "zh": "选择问句",
+        "vi": "Câu hỏi lựa chọn"
+      },
+      "structure": "（是）A 还是 B？",
+      "explanation": {
+        "zh": "连词“还是”用在疑问句中，表示选择。基本结构：（是）A还是B。",
+        "vi": "还是 dùng trong câu hỏi để yêu cầu chọn giữa hai hoặc nhiều khả năng. Các phương án có thể là đồ vật, hành động, thời gian… Câu hỏi lựa chọn trực tiếp trong các ví dụ không thêm 吗."
+      },
+      "examples": [
+        {
+          "zh": "妈妈，是您准备考试还是我准备考试？",
+          "vi": "Mẹ ơi, mẹ chuẩn bị thi hay con chuẩn bị thi ạ?",
+          "py": "Māma, shì nín zhǔnbèi kǎoshì háishi wǒ zhǔnbèi kǎoshì?",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你更喜欢打篮球、踢足球还是游泳？",
+          "vi": "Bạn thích chơi bóng rổ, đá bóng hay bơi hơn?",
+          "py": "Nǐ gèng xǐhuan dǎ lánqiú, tī zúqiú háishi yóuyǒng?",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们什么时候去看电影？今天还是明天？",
+          "vi": "Khi nào chúng ta đi xem phim? Hôm nay hay ngày mai?",
+          "py": "Wǒmen shénme shíhou qù kàn diànyǐng? Jīntiān háishi míngtiān?",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你吃______？B：饺子，我觉得饺子比包子更好吃。",
+          "vi": "A: Bạn ăn ______? B: Sủi cảo, tôi thấy sủi cảo ngon hơn bánh bao.",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你想______？B：打车吧，坐公交车没有打车快。",
+          "vi": "A: Bạn muốn ______? B: Đi taxi nhé, xe buýt không nhanh bằng taxi.",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你喝______？B：奶茶吧，我觉得奶茶比茶和咖啡好喝。",
+          "vi": "A: Bạn uống ______? B: Trà sữa nhé, tôi thấy trà sữa ngon hơn trà và cà phê.",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "选择问句",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:grammar3",
+      "title": {
+        "zh": "固定格式“要/快/快要/就要……了”",
+        "vi": "Mẫu 要/快/快要/就要……了"
+      },
+      "structure": "要／快／快要／就要 + 事情 + 了；时间状语 + 就要……了",
+      "explanation": {
+        "zh": "固定格式“要/快/快要/就要……了”表示某事将要发生。如果句子中有时间状语，一般用“就要……了”。",
+        "vi": "Các mẫu này diễn đạt việc sắp xảy ra. Khi có trạng ngữ thời gian cụ thể, bài học dùng 就要……了, chẳng hạn 下星期就要考试了. 了 ở đây báo hiệu một sự thay đổi/sự việc sắp đến, không phải đánh dấu đã làm xong."
+      },
+      "examples": [
+        {
+          "zh": "饭菜快要做好了。",
+          "vi": "Cơm và thức ăn sắp làm xong rồi.",
+          "py": "Fàncài kuàiyào zuòhǎo le.",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "火车快开了。",
+          "vi": "Tàu sắp chạy rồi.",
+          "py": "Huǒchē kuài kāi le.",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们下星期就要考试了。",
+          "vi": "Tuần sau chúng tôi sắp thi rồi.",
+          "py": "Wǒmen xià xīngqī jiù yào kǎoshì le.",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：______，你别出去吃了。B：那不好，小王还在饭馆等我呢。",
+          "vi": "A: ______, bạn đừng ra ngoài ăn nữa. B: Không được, Tiểu Vương còn đang đợi tôi ở nhà hàng.",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：______，陈天中怎么还没来？B：他说今天不舒服，不来上课了。",
+          "vi": "A: ______, sao Thiên Trung vẫn chưa đến? B: Bạn ấy nói hôm nay không khỏe, không đến lớp.",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：儿子10号过生日，今天都7号了。B：是啊，______。（3天）",
+          "vi": "A: Con trai sinh nhật ngày 10, hôm nay đã ngày 7 rồi. B: Đúng vậy, ______. (Dùng 3 ngày)",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "固定格式“要/快/快要/就要……了”",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk2-fltrp-2026:l10:section1",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：“呢”",
+        "vi": "Gợi ý: 呢"
+      },
+      "blocks": [
+        {
+          "zh": "这里“呢”表示提醒或深究的语气。",
+          "vi": "Ở đây 呢 thể hiện ngữ khí nhắc hỏi hoặc hỏi sâu thêm.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "小语助力：“呢”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "小语助力：“呢”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "blocks": [
+        {
+          "zh": "A 后面；B 错；C 帮；D 考试；E 笑",
+          "vi": "A phía sau; B sai; C giúp; D thi; E cười",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）看到生日礼物，儿子高兴地______了。\\n（2）小雪，你们什么时候______？你准备好了吗？\\n（3）我们公司______有一个商店，下班后我就去那儿买东西。\\n（4）A：不好意思，你能______我叫一下白家月吗？B：没问题，你等一下。\\n（5）A：这个字写______了，左边是“口”，不是“日”。B：好的，我知道了。",
+          "vi": "(1) Thấy quà sinh nhật, con trai vui vẻ ______.\\n(2) Tiểu Tuyết, khi nào các con ______? Con chuẩn bị xong chưa?\\n(3) ______ công ty chúng tôi có một cửa hàng, tan làm tôi đến đó mua đồ.\\n(4) A: Xin lỗi, bạn có thể ______ tôi gọi Gia Nguyệt một chút không? B: Được, bạn đợi một lát.\\n(5) A: Chữ này viết ______ rồi, bên trái là 口, không phải 日. B: Vâng, tôi biết rồi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:section3",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: mô tả tranh"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp mới học để mô tả tranh.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）往左边走______往右边走？\\n（2）______我都______了。\\n（3）______下雨______，别玩了，我们回家吧。\\n（4）电影______开始______，你到哪儿了？",
+          "vi": "(1) Đi bên trái ______ đi bên phải?\\n(2) ______ tôi đều ______ rồi.\\n(3) ______ mưa ______, đừng chơi nữa, về nhà thôi.\\n(4) Phim ______ bắt đầu ______, bạn đến đâu rồi?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片描述（编辑补充）：一个人站在林间岔路口；一双手在水龙头下洗水果；阴天下两个孩子在户外玩沙；电影院里有人拿着手机通话，旁边的观众在提醒她。",
+          "vi": "Mô tả tranh (biên tập bổ sung): một người đứng trước ngã rẽ trong rừng; hai tay rửa trái cây dưới vòi nước; hai trẻ chơi cát ngoài trời âm u; trong rạp chiếu phim, một người cầm điện thoại nói chuyện, người bên cạnh nhắc cô ấy.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:section4",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：双人活动",
+        "vi": "Hoạt động trên lớp: luyện theo cặp"
+      },
+      "blocks": [
+        {
+          "zh": "两人一组，讨论学习情况，互相询问学会了什么，学得怎么样，有没有做错的题，等等。尽可能使用本课所学生词和语法。",
+          "vi": "Làm việc theo cặp, trao đổi tình hình học: đã học được gì, học thế nào, có câu nào làm sai không… Cố gắng dùng từ và ngữ pháp của bài.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：开学快一个月了，你学会什么了？\\nB：学会了60多个词，还写了20多个汉字。\\n……",
+          "vi": "A: Bắt đầu học gần một tháng rồi, bạn đã học được gì?\\nB: Tôi đã học được hơn 60 từ và viết hơn 20 chữ Hán.\\n…",
+          "kind": "example",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "课堂活动：双人活动",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk2-fltrp-2026:l10:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“书包在门后面”说明什么？",
+        "vi": "Câu 书包在门后面 cho biết điều gì?"
+      },
+      "options": [
+        "书包的颜色",
+        "门的大小",
+        "书包的位置"
+      ],
+      "answer": 2,
+      "focus": "location-reading",
+      "explanation": {
+        "zh": "“在门后面”说明书包的位置。",
+        "vi": "在门后面 cho biết vị trí của cặp."
+      },
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "在“弟弟手很小”中，对弟弟的哪一部分作了说明？",
+        "vi": "Trong 弟弟手很小, bộ phận nào của em trai được miêu tả?"
+      },
+      "options": [
+        "手",
+        "眼睛",
+        "头发"
+      ],
+      "answer": 0,
+      "focus": "subject-predicate-body",
+      "explanation": {
+        "zh": "“手很小”说明弟弟的手。",
+        "vi": "手很小 miêu tả bàn tay của em."
+      },
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“考试”在“这次考试很难”中是什么用法？",
+        "vi": "Trong 这次考试很难, 考试 được dùng như thế nào?"
+      },
+      "options": [
+        "正在做的动作",
+        "名词，指一次考试",
+        "表示地点的词"
+      ],
+      "answer": 1,
+      "focus": "exam-noun-sense",
+      "explanation": {
+        "zh": "这里“考试”是名词，指这次考试。",
+        "vi": "Ở đây 考试 là danh từ, chỉ kỳ thi này."
+      },
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想请同学帮助自己，应选哪句？",
+        "vi": "Muốn nhờ bạn học giúp mình, chọn câu nào?"
+      },
+      "options": [
+        "我能帮你找本子吗？",
+        "你找错了我的本子。",
+        "你能帮我找一下本子吗？"
+      ],
+      "answer": 2,
+      "focus": "request-help",
+      "explanation": {
+        "zh": "“你能帮我……”向对方提出帮助请求。",
+        "vi": "你能帮我… là lời nhờ người nghe giúp."
+      },
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "让朋友在两种饮料中选一种，哪句最合适？",
+        "vi": "Muốn bạn chọn một trong hai đồ uống, câu nào phù hợp nhất?"
+      },
+      "options": [
+        "你喝茶和咖啡。",
+        "你喝茶还是咖啡？",
+        "你喝茶还是咖啡吗？"
+      ],
+      "answer": 1,
+      "focus": "alternative-question",
+      "explanation": {
+        "zh": "选择问句用“还是”，直接问对方选哪一个。",
+        "vi": "Câu hỏi lựa chọn dùng 还是 để hỏi chọn loại nào."
+      },
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "A：你坐公交车还是打车？哪一项直接回答这个问题？",
+        "vi": "Câu trả lời nào trực tiếp đáp lại câu hỏi chọn xe buýt hay taxi?"
+      },
+      "options": [
+        "打车吧。",
+        "八点出发。",
+        "车站很远。"
+      ],
+      "answer": 0,
+      "focus": "alternative-answer",
+      "explanation": {
+        "zh": "“打车吧”选出了交通方式。",
+        "vi": "打车吧 chọn phương tiện đi lại."
+      },
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "根据通知，考试在下星期。按本课格式，哪句正确？",
+        "vi": "Theo thông báo, tuần sau thi. Theo mẫu trong bài, câu nào đúng?"
+      },
+      "options": [
+        "我们下星期已经考试了。",
+        "我们下星期正在考试呢。",
+        "我们下星期就要考试了。"
+      ],
+      "answer": 2,
+      "focus": "imminent-with-time",
+      "explanation": {
+        "zh": "明确时间“下星期”与“就要……了”搭配。",
+        "vi": "Thời gian cụ thể 下星期 kết hợp với 就要……了."
+      },
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“饭菜快要做好了”表示什么？",
+        "vi": "饭菜快要做好了 có nghĩa gì?"
+      },
+      "options": [
+        "已经吃完饭了。",
+        "再过不久饭菜就做好。",
+        "还没开始准备做饭。"
+      ],
+      "answer": 1,
+      "focus": "imminent-meaning",
+      "explanation": {
+        "zh": "快要做好表示很快完成，并非已经吃完。",
+        "vi": "快要做好 nói sắp hoàn thành, không phải đã ăn xong."
+      },
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "看见礼物后他高兴地______了。",
+        "vi": "Thấy quà, anh ấy vui vẻ cười."
+      },
+      "options": [
+        "笑",
+        "哭",
+        "睡"
+      ],
+      "answer": 0,
+      "focus": "smile-action",
+      "explanation": {
+        "zh": "“高兴地笑”表示开心时的表情和动作。",
+        "vi": "高兴地笑 diễn đạt nụ cười vui vẻ."
+      },
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "用主谓谓语句表达“他知道这件事”，并以“这件事”开头，应选哪句？",
+        "vi": "Diễn đạt “anh ấy biết chuyện này” bằng câu có cụm chủ–vị làm vị ngữ, mở đầu với 这件事. Chọn câu phù hợp."
+      },
+      "options": [
+        "他知道这件事。",
+        "这件事他知道。",
+        "这件事他不知道。"
+      ],
+      "answer": 1,
+      "focus": "topic-predicate",
+      "explanation": {
+        "zh": "全句主语是“这件事”，主谓短语是“他知道”。",
+        "vi": "Chủ ngữ chính là 这件事; cụm chủ–vị là 他知道."
+      },
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “这个字”: Chữ này tôi viết sai rồi. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我",
+        "了。",
+        "这个字",
+        "写",
+        "错"
+      ],
+      "answer": [
+        2,
+        0,
+        3,
+        4,
+        1
+      ],
+      "focus": "topic-result",
+      "explanation": {
+        "zh": "这个字我写错了。",
+        "vi": "这个字 là chủ đề, 我写错了 là phần nói về chủ đề đó."
+      },
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “你”: Bạn muốn uống trà sữa hay cà phê? (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "还是",
+        "你",
+        "喝",
+        "咖啡？",
+        "想",
+        "奶茶"
+      ],
+      "answer": [
+        1,
+        4,
+        2,
+        5,
+        0,
+        3
+      ],
+      "focus": "alternative-drink",
+      "explanation": {
+        "zh": "你想喝奶茶还是咖啡？",
+        "vi": "还是 nối hai đồ uống cần lựa chọn."
+      },
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思，以“哥哥”开头排列词块；带句号的词块放在句末。",
+        "vi": "Bắt đầu bằng 哥哥: Tháng sau anh trai sắp đi Bắc Kinh rồi. (Khối có dấu chấm đặt cuối câu.)"
+      },
+      "tokens": [
+        "下个月",
+        "哥哥",
+        "就要",
+        "去北京",
+        "了。"
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        3,
+        4
+      ],
+      "focus": "imminent-time",
+      "explanation": {
+        "zh": "哥哥下个月就要去北京了。",
+        "vi": "Sau chủ ngữ là thời gian 下个月, rồi 就要 + hành động + 了."
+      },
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “爸爸”: Bố giúp tôi chuẩn bị cho kỳ thi ngày mai. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我",
+        "爸爸",
+        "帮",
+        "准备",
+        "明天的",
+        "考试。"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        3,
+        4,
+        5
+      ],
+      "focus": "help-prepare",
+      "explanation": {
+        "zh": "爸爸帮我准备明天的考试。",
+        "vi": "帮 + người được giúp + việc cần làm."
+      },
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “这些词”: Nghĩa của những từ này tôi đều hiểu rồi. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "懂",
+        "的",
+        "这些词",
+        "都",
+        "意思",
+        "我",
+        "了。"
+      ],
+      "answer": [
+        2,
+        1,
+        4,
+        5,
+        3,
+        0,
+        6
+      ],
+      "focus": "topic-comprehension",
+      "explanation": {
+        "zh": "这些词的意思我都懂了。",
+        "vi": "这些词的意思 là chủ đề, 我都懂了 là phần nói về nó."
+      },
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-1：刘小明认为自己现在准备好了吗？",
+        "vi": "Nghe 10-1: Tiểu Minh nghĩ bây giờ mình đã chuẩn bị xong chưa?"
+      },
+      "options": [
+        "还没有，他找不到笔。",
+        "准备好了，因为爸爸帮他找到了东西。",
+        "准备好了，因为明天不用上学。"
+      ],
+      "answer": 1,
+      "focus": "listen-readiness",
+      "explanation": {
+        "zh": "爸爸指出东西的位置后，小明说都准备好了。",
+        "vi": "Sau khi bố chỉ vị trí đồ vật, Tiểu Minh nói đã chuẩn bị xong."
+      },
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-3：妈妈提醒小雪还要看什么？",
+        "vi": "Nghe 10-3: mẹ nhắc Tiểu Tuyết còn cần xem gì?"
+      },
+      "options": [
+        "新买的电影票。",
+        "明天的天气。",
+        "本子上做错的题。"
+      ],
+      "answer": 2,
+      "focus": "listen-study-task",
+      "explanation": {
+        "zh": "妈妈让她看本子上做错的题。",
+        "vi": "Mẹ nhắc xem các câu làm sai trong vở."
+      },
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-5：小雪觉得这次考试比上次怎么样？",
+        "vi": "Nghe 10-5: Tiểu Tuyết thấy lần thi này so với lần trước thế nào?"
+      },
+      "options": [
+        "更好。",
+        "更不好。",
+        "一样，没有变化。"
+      ],
+      "answer": 0,
+      "focus": "listen-comparison",
+      "explanation": {
+        "zh": "她说“我觉得比上次好”。",
+        "vi": "Cô bé nói thấy tốt hơn lần trước."
+      },
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-5：弟弟说“我是第一名”是指什么？",
+        "vi": "Nghe 10-5: em trai nói “con về nhất” là nói về việc gì?"
+      },
+      "options": [
+        "考试得了第一。",
+        "最先写完作业。",
+        "比姐姐先洗完手。"
+      ],
+      "answer": 2,
+      "focus": "listen-context-inference",
+      "explanation": {
+        "zh": "他说姐姐还没洗完，指先洗完手，不是考试排名。",
+        "vi": "Em nói chị còn chưa rửa xong, nghĩa là em rửa tay xong trước, không phải đứng nhất kỳ thi."
+      },
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-7：谁帮刘小雪准备考试？",
+        "vi": "Nghe 10-7: ai giúp Tiểu Tuyết chuẩn bị thi?"
+      },
+      "options": [
+        "弟弟。",
+        "妈妈。",
+        "爸爸。"
+      ],
+      "answer": 1,
+      "focus": "listen-family-roles",
+      "explanation": {
+        "zh": "妈妈让她看书和做错的题；爸爸帮弟弟准备东西。",
+        "vi": "Mẹ nhắc cô bé đọc sách và xem câu sai; bố giúp em chuẩn bị đồ."
+      },
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-7"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Bút ở sau cửa."
+      },
+      "options": [
+        "笔在门后面。",
+        "门在笔后面。",
+        "笔在门前面。"
+      ],
+      "answer": 0,
+      "focus": "translation-context",
+      "explanation": {
+        "zh": "主语是“笔”，位置是“门后面”。",
+        "vi": "Chủ ngữ là bút, vị trí là phía sau cửa."
+      },
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Bạn muốn xem phim hôm nay hay ngày mai?"
+      },
+      "options": [
+        "你今天和明天想看电影。",
+        "你想今天看电影还是明天看电影？",
+        "你想今天看电影还是昨天看电影？"
+      ],
+      "answer": 1,
+      "focus": "translation-context",
+      "explanation": {
+        "zh": "用“还是”提出今天/明天的选择。",
+        "vi": "Dùng 还是 để hỏi chọn hôm nay hay ngày mai."
+      },
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Chúng tôi sắp bước vào kỳ học mới rồi."
+      },
+      "options": [
+        "我们已经放学了。",
+        "我们正在考试呢。",
+        "我们快要开学了。"
+      ],
+      "answer": 2,
+      "focus": "translation-context",
+      "explanation": {
+        "zh": "快要开学了表示开始学习的日子将到。",
+        "vi": "快要开学了 nói ngày bắt đầu năm hoặc kỳ học sắp đến."
+      },
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Chuyện này bố tôi biết."
+      },
+      "options": [
+        "这件事我爸爸知道。",
+        "我知道这件事的爸爸。",
+        "我爸爸不知道这件事。"
+      ],
+      "answer": 0,
+      "focus": "translation-context",
+      "explanation": {
+        "zh": "“这件事”后面接“我爸爸知道”。",
+        "vi": "Sau chủ đề 这件事 là cụm 我爸爸知道."
+      },
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Xin bạn giúp tôi xem câu làm sai này."
+      },
+      "options": [
+        "请你让我做错这道题。",
+        "请你帮我看看这道做错的题。",
+        "请你帮我找明天的考试。"
+      ],
+      "answer": 1,
+      "focus": "translation-context",
+      "explanation": {
+        "zh": "帮我看看请求对方帮助检查，而不是让对方做错。",
+        "vi": "帮我看看 nhờ người nghe giúp xem lại, không phải bảo làm sai."
+      },
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Nghĩa của từ này tôi hiểu rồi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Bạn muốn đi taxi hay đi xe buýt?"
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Ngày mai chúng tôi sắp thi rồi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Mẹ ơi, mẹ có thể giúp con tìm quyển vở không?"
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Nhìn thấy món quà, em trai vui vẻ cười."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk2-fltrp-2026:l10:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-1：爸爸希望小明下次怎样做？",
+        "vi": "Nghe 10-1: bố mong Tiểu Minh lần sau làm thế nào?"
+      },
+      "options": [
+        "请姐姐帮忙。",
+        "再让爸爸找。",
+        "自己准备。"
+      ],
+      "answer": 2,
+      "focus": "independent-next-time",
+      "explanation": {
+        "zh": "爸爸说下次你自己准备。",
+        "vi": "Bố nói lần sau con tự chuẩn bị."
+      },
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-3：小雪理解这些词的意思吗？",
+        "vi": "Nghe 10-3: Tiểu Tuyết có hiểu nghĩa các từ này không?"
+      },
+      "options": [
+        "她说都懂了。",
+        "只懂一个词。",
+        "她还没有看过。"
+      ],
+      "answer": 0,
+      "focus": "independent-word-understanding",
+      "explanation": {
+        "zh": "她说看过了，意思也都懂了。",
+        "vi": "Cô bé nói đã xem và hiểu hết nghĩa."
+      },
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-5：妈妈买的奶茶放在哪儿？",
+        "vi": "Nghe 10-5: trà sữa mẹ mua để ở đâu?"
+      },
+      "options": [
+        "床上。",
+        "桌子上。",
+        "门后面。"
+      ],
+      "answer": 1,
+      "focus": "independent-drink-location",
+      "explanation": {
+        "zh": "妈妈说就在桌子上。",
+        "vi": "Mẹ nói ở ngay trên bàn."
+      },
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听10-7：听到小雪最后的问题，爸爸妈妈怎样了？",
+        "vi": "Nghe 10-7: nghe câu hỏi cuối của Tiểu Tuyết, bố mẹ thế nào?"
+      },
+      "options": [
+        "马上去学校了。",
+        "开始考试了。",
+        "都笑了。"
+      ],
+      "answer": 2,
+      "focus": "independent-reaction",
+      "explanation": {
+        "zh": "她问完后，爸爸妈妈都笑了。",
+        "vi": "Cô bé hỏi xong thì bố mẹ đều cười."
+      },
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "10-7"
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:objective1",
+          "prompt": {
+            "zh": "能听懂并使用主谓谓语句对人、事物或情况进行说明。",
+            "vi": "Nghe hiểu và dùng câu có cụm chủ–vị làm vị ngữ để nói về người, sự vật hoặc tình huống."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用选择问句表示疑问。",
+            "vi": "Nghe hiểu và dùng câu hỏi lựa chọn."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:objective3",
+          "prompt": {
+            "zh": "掌握固定格式“要/快/快要/就要……了”的用法，能表达某事即将发生。",
+            "vi": "Nắm mẫu 要/快/快要/就要……了 để diễn đạt một việc sắp xảy ra."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:warmup1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1：给下面的词语选择对应的图片。",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "门",
+              "vi": "cửa"
+            },
+            {
+              "zh": "题",
+              "vi": "câu hỏi, bài toán"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "本子",
+              "vi": "vở"
+            }
+          ],
+          "answer": "考试",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 warmup1-picture1"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2：给下面的词语选择对应的图片。",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "门",
+              "vi": "cửa"
+            },
+            {
+              "zh": "题",
+              "vi": "câu hỏi, bài toán"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "本子",
+              "vi": "vở"
+            }
+          ],
+          "answer": "错",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 warmup1-picture2"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3：给下面的词语选择对应的图片。",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "门",
+              "vi": "cửa"
+            },
+            {
+              "zh": "题",
+              "vi": "câu hỏi, bài toán"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "本子",
+              "vi": "vở"
+            }
+          ],
+          "answer": "题",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 warmup1-picture3"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4：给下面的词语选择对应的图片。",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "门",
+              "vi": "cửa"
+            },
+            {
+              "zh": "题",
+              "vi": "câu hỏi, bài toán"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "本子",
+              "vi": "vở"
+            }
+          ],
+          "answer": "本子",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 warmup1-picture4"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:warmup1-4"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup1-picture5",
+          "prompt": {
+            "zh": "图5：给下面的词语选择对应的图片。",
+            "vi": "Hình 5: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "门",
+              "vi": "cửa"
+            },
+            {
+              "zh": "题",
+              "vi": "câu hỏi, bài toán"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "本子",
+              "vi": "vở"
+            }
+          ],
+          "answer": "门",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 warmup1-picture5"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:warmup1-5"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup1-picture6",
+          "prompt": {
+            "zh": "图6：给下面的词语选择对应的图片。",
+            "vi": "Hình 6: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "门",
+              "vi": "cửa"
+            },
+            {
+              "zh": "题",
+              "vi": "câu hỏi, bài toán"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "本子",
+              "vi": "vở"
+            }
+          ],
+          "answer": "笑",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 warmup1-picture6"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:warmup1-6"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l10:illustration:warmup1-1",
+        "hsk2-fltrp-2026:l10:illustration:warmup1-2",
+        "hsk2-fltrp-2026:l10:illustration:warmup1-3",
+        "hsk2-fltrp-2026:l10:illustration:warmup1-4",
+        "hsk2-fltrp-2026:l10:illustration:warmup1-5",
+        "hsk2-fltrp-2026:l10:illustration:warmup1-6"
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按题号顺序作答。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo thứ tự số câu."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:warmup2-personal",
+      "kind": "open",
+      "title": {
+        "zh": "根据实际情况互相问答。",
+        "vi": "Hỏi đáp theo tình hình thực tế."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:warmup2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup2-question1",
+          "prompt": {
+            "zh": "（1）爷爷买了奶茶、咖啡和牛奶，你想喝什么？",
+            "vi": "(1) Ông mua trà sữa, cà phê và sữa, bạn muốn uống gì?"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup2-question2",
+          "prompt": {
+            "zh": "（2）商场有白色的裤子，也有黑色的裤子，你买哪条？",
+            "vi": "(2) Trung tâm thương mại có quần trắng và quần đen, bạn mua chiếc nào?"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:warmup2-question3",
+          "prompt": {
+            "zh": "（3）明天星期六，可以在家看电视，也可以去看电影，你想做什么？",
+            "vi": "(3) Mai là thứ bảy, có thể ở nhà xem ti vi hoặc đi xem phim, bạn muốn làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 99,
+            "printedPage": 84,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "按自己的实际情况回答，不设标准答案。",
+        "vi": "Trả lời theo tình hình thực tế của bạn; không có đáp án cố định."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text1:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text1-question1",
+          "prompt": {
+            "zh": "书包在哪儿？",
+            "vi": "Cặp sách ở đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "床上",
+              "vi": "trên giường"
+            },
+            {
+              "zh": "桌子上",
+              "vi": "trên bàn"
+            },
+            {
+              "zh": "门后面",
+              "vi": "phía sau cửa"
+            }
+          ],
+          "answer": "门后面",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 text1-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text1:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text1-question2",
+          "prompt": {
+            "zh": "笔在哪儿？",
+            "vi": "Bút ở đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 100,
+            "printedPage": 85,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "床上",
+              "vi": "trên giường"
+            },
+            {
+              "zh": "桌子上",
+              "vi": "trên bàn"
+            },
+            {
+              "zh": "门后面",
+              "vi": "phía sau cửa"
+            }
+          ],
+          "answer": "桌子上",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 text1-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text1:question2"
+        }
+      ],
+      "audioTrack": "10-1",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text1:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text1-question3",
+          "prompt": {
+            "zh": "刘小明什么时候开学？",
+            "vi": "Khi nào Tiểu Minh bắt đầu học?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "刘小明明天开学。",
+            "vi": "Ngày mai Lưu Tiểu Minh bắt đầu đi học."
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text1:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text1-question4",
+          "prompt": {
+            "zh": "刘小明准备好了吗？为什么？",
+            "vi": "Tiểu Minh đã chuẩn bị xong chưa? Vì sao?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "准备好了，因为爸爸帮他准备了东西。",
+            "vi": "Đã chuẩn bị xong, vì bố đã giúp cậu chuẩn bị đồ."
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text1:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text2:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text2-question1",
+          "prompt": {
+            "zh": "刘小雪在做什么？",
+            "vi": "Tiểu Tuyết đang làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "看书",
+              "vi": "đọc sách"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "找本子",
+              "vi": "tìm vở"
+            }
+          ],
+          "answer": "看书",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 text2-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text2:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text2-question2",
+          "prompt": {
+            "zh": "做错的题在哪儿？",
+            "vi": "Những câu làm sai ở đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 102,
+            "printedPage": 87,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "书上",
+              "vi": "trong sách"
+            },
+            {
+              "zh": "本子上",
+              "vi": "trong vở"
+            },
+            {
+              "zh": "书包里",
+              "vi": "trong cặp sách"
+            }
+          ],
+          "answer": "本子上",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 text2-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text2:question2"
+        }
+      ],
+      "audioTrack": "10-3",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text2:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text2-question3",
+          "prompt": {
+            "zh": "刘小雪明天要做什么？",
+            "vi": "Ngày mai Tiểu Tuyết sẽ làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "刘小雪明天要考试。",
+            "vi": "Ngày mai Lưu Tiểu Tuyết sẽ thi."
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text2:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text2-question4",
+          "prompt": {
+            "zh": "这些词的意思刘小雪都懂了吗？",
+            "vi": "Tiểu Tuyết đã hiểu hết nghĩa của các từ này chưa?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "都懂了，她已经看过这些词了。",
+            "vi": "Cô bé hiểu hết rồi; cô bé đã xem những từ này."
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text2:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text3:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text3-question1",
+          "prompt": {
+            "zh": "刘小雪考试考得怎么样？",
+            "vi": "Tiểu Tuyết thi thế nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "很不好",
+              "vi": "rất không tốt"
+            },
+            {
+              "zh": "没上次好",
+              "vi": "không tốt bằng lần trước"
+            },
+            {
+              "zh": "比上次好",
+              "vi": "tốt hơn lần trước"
+            }
+          ],
+          "answer": "比上次好",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 13,
+            "item": "第10课 text3-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text3:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text3-question2",
+          "prompt": {
+            "zh": "王一雪正在做什么？",
+            "vi": "Nhất Tuyết đang làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "做菜",
+              "vi": "nấu ăn"
+            },
+            {
+              "zh": "洗手",
+              "vi": "rửa tay"
+            }
+          ],
+          "answer": "做菜",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 text3-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text3:question2"
+        }
+      ],
+      "audioTrack": "10-5",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text3:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text3-question3",
+          "prompt": {
+            "zh": "王一雪叫刘小雪做什么？",
+            "vi": "Nhất Tuyết bảo Tiểu Tuyết làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "她叫刘小雪叫弟弟一起去洗手。",
+            "vi": "Bà bảo Lưu Tiểu Tuyết gọi em trai cùng đi rửa tay."
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text3:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text3-question4",
+          "prompt": {
+            "zh": "孩子们洗完手了吗？",
+            "vi": "Các con đã rửa tay xong chưa?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "刘小明洗完了，刘小雪还没有洗完。",
+            "vi": "Lưu Tiểu Minh đã rửa xong; Lưu Tiểu Tuyết vẫn chưa rửa xong."
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text3:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text4:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text4-question1",
+          "prompt": {
+            "zh": "刘小雪考试前，爸爸帮她准备考试。",
+            "vi": "Trước khi Tiểu Tuyết thi, bố giúp cô bé chuẩn bị."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 text4-question1"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text4:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text4-question2",
+          "prompt": {
+            "zh": "刘小雪和弟弟上学，爸爸、妈妈比他们还忙。",
+            "vi": "Tiểu Tuyết và em đi học, bố mẹ còn bận hơn các con."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "正确",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 text4-question2"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text4:question2"
+        }
+      ],
+      "audioTrack": "10-7",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍课文，判断正误。",
+        "vi": "Nghe bài khóa hai lần rồi xác định đúng hay sai."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:text4-reading",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:text4:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text4-question3",
+          "prompt": {
+            "zh": "爸爸为什么帮弟弟准备书包、本子和笔？",
+            "vi": "Vì sao bố giúp em chuẩn bị cặp, vở và bút?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "快要上课了",
+              "vi": "sắp vào học"
+            },
+            {
+              "zh": "快要开学了",
+              "vi": "sắp khai giảng"
+            },
+            {
+              "zh": "快要考试了",
+              "vi": "sắp thi"
+            }
+          ],
+          "answer": "快要开学了",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 text4-question3"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text4:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:text4-question4",
+          "prompt": {
+            "zh": "爸爸、妈妈为什么笑了？",
+            "vi": "Vì sao bố mẹ cười?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "孩子们去上学了",
+              "vi": "các con đã đi học"
+            },
+            {
+              "zh": "孩子们考试考得很好",
+              "vi": "các con thi rất tốt"
+            },
+            {
+              "zh": "孩子上学，他们比孩子还忙",
+              "vi": "các con đi học, họ còn bận hơn cả các con"
+            }
+          ],
+          "answer": "孩子上学，他们比孩子还忙",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 text4-question4"
+          },
+          "targetRef": "hsk2-fltrp-2026:l10:text4:question4"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后选择正确答案。",
+        "vi": "Đọc bài khóa rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：刘明工作忙吗？B：______。",
+        "vi": "A: Lưu Minh có bận việc không? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "主谓谓语句：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar1-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "刘明工作很忙",
+            "vi": "Lưu Minh rất bận việc"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你知道哪个电影好看吗？B：这个电影______，很好看。",
+        "vi": "A: Bạn biết phim nào hay không? B: Phim này ______, rất hay."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "主谓谓语句：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar1-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "我看过",
+            "vi": "tôi đã xem"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：陈天中学习怎么样？B：______。",
+        "vi": "A: Trần Thiên Trung học hành thế nào? B: ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 101,
+        "printedPage": 86,
+        "section": "主谓谓语句：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar1-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 101,
+            "printedPage": 86,
+            "section": "主谓谓语句：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "陈天中学习很好",
+            "vi": "Trần Thiên Trung học rất tốt"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你吃______？B：饺子，我觉得饺子比包子更好吃。",
+        "vi": "A: Bạn ăn ______? B: Sủi cảo, tôi thấy sủi cảo ngon hơn bánh bao."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "选择问句：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar2-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "饺子还是包子",
+            "vi": "sủi cảo hay bánh bao"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你想______？B：打车吧，坐公交车没有打车快。",
+        "vi": "A: Bạn muốn ______? B: Đi taxi nhé, xe buýt không nhanh bằng taxi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "选择问句：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar2-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "坐公交车还是打车",
+            "vi": "đi xe buýt hay đi taxi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你喝______？B：奶茶吧，我觉得奶茶比茶和咖啡好喝。",
+        "vi": "A: Bạn uống ______? B: Trà sữa nhé, tôi thấy trà sữa ngon hơn trà và cà phê."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 103,
+        "printedPage": 88,
+        "section": "选择问句：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar2-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 103,
+            "printedPage": 88,
+            "section": "选择问句：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "奶茶、茶还是咖啡",
+            "vi": "trà sữa, trà hay cà phê"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：______，你别出去吃了。B：那不好，小王还在饭馆等我呢。",
+        "vi": "A: ______, bạn đừng ra ngoài ăn nữa. B: Không được, Tiểu Vương còn đang đợi tôi ở nhà hàng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "固定格式“要/快/快要/就要……了”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar3-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "饭菜快要做好了",
+            "vi": "cơm và thức ăn sắp làm xong"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：______，陈天中怎么还没来？B：他说今天不舒服，不来上课了。",
+        "vi": "A: ______, sao Thiên Trung vẫn chưa đến? B: Bạn ấy nói hôm nay không khỏe, không đến lớp."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "固定格式“要/快/快要/就要……了”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar3-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "就要上课了",
+            "vi": "sắp vào học rồi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：儿子10号过生日，今天都7号了。B：是啊，______。（3天）",
+        "vi": "A: Con trai sinh nhật ngày 10, hôm nay đã ngày 7 rồi. B: Đúng vậy, ______. (Dùng 3 ngày)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 105,
+        "printedPage": 90,
+        "section": "固定格式“要/快/快要/就要……了”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:grammar3-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 105,
+            "printedPage": 90,
+            "section": "固定格式“要/快/快要/就要……了”：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "再过三天儿子就要过生日了",
+            "vi": "ba ngày nữa là đến sinh nhật con trai"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:comprehensive-words",
+      "kind": "fill",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 106,
+        "printedPage": 91,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:section2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:wordchoice1",
+          "prompt": {
+            "zh": "（1）看到生日礼物，儿子高兴地______了。",
+            "vi": "(1) Thấy quà sinh nhật, con trai vui vẻ ______."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "后面",
+              "vi": "phía sau"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "帮",
+              "vi": "giúp"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            }
+          ],
+          "answer": "笑",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 wordchoice1"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:wordchoice2",
+          "prompt": {
+            "zh": "（2）小雪，你们什么时候______？你准备好了吗？",
+            "vi": "(2) Tiểu Tuyết, khi nào các con ______? Con chuẩn bị xong chưa?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "后面",
+              "vi": "phía sau"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "帮",
+              "vi": "giúp"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            }
+          ],
+          "answer": "考试",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 wordchoice2"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:wordchoice3",
+          "prompt": {
+            "zh": "（3）我们公司______有一个商店，下班后我就去那儿买东西。",
+            "vi": "(3) ______ công ty chúng tôi có một cửa hàng, tan làm tôi đến đó mua đồ."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "后面",
+              "vi": "phía sau"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "帮",
+              "vi": "giúp"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            }
+          ],
+          "answer": "后面",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 wordchoice3"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:wordchoice4",
+          "prompt": {
+            "zh": "（4）A：不好意思，你能______我叫一下白家月吗？B：没问题，你等一下。",
+            "vi": "(4) A: Xin lỗi, bạn có thể ______ tôi gọi Gia Nguyệt một chút không? B: Được, bạn đợi một lát."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "后面",
+              "vi": "phía sau"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "帮",
+              "vi": "giúp"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            }
+          ],
+          "answer": "帮",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 wordchoice4"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:wordchoice5",
+          "prompt": {
+            "zh": "（5）A：这个字写______了，左边是“口”，不是“日”。B：好的，我知道了。",
+            "vi": "(5) A: Chữ này viết ______ rồi, bên trái là 口, không phải 日. B: Vâng, tôi biết rồi."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 106,
+            "printedPage": 91,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "后面",
+              "vi": "phía sau"
+            },
+            {
+              "zh": "错",
+              "vi": "sai"
+            },
+            {
+              "zh": "帮",
+              "vi": "giúp"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "笑",
+              "vi": "cười"
+            }
+          ],
+          "answer": "错",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 14,
+            "item": "第10课 wordchoice5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "（1）往左边走______往右边走？",
+        "vi": "(1) Đi bên trái ______ đi bên phải?"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:section3:picture:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "还是",
+            "vi": "hay"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l10:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "（2）______我都______了。",
+        "vi": "(2) ______ tôi đều ______ rồi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:section3:picture:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "水果",
+            "vi": "trái cây"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "洗完",
+            "vi": "rửa xong"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l10:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "（3）______下雨______，别玩了，我们回家吧。",
+        "vi": "(3) ______ mưa ______, đừng chơi nữa, về nhà thôi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:section3:picture:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "快要",
+            "vi": "sắp"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "了",
+            "vi": "rồi (trợ từ báo hiệu thay đổi)"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l10:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:picture-dialogue4",
+      "kind": "fill",
+      "title": {
+        "zh": "（4）电影______开始______，你到哪儿了？",
+        "vi": "(4) Phim ______ bắt đầu ______, bạn đến đâu rồi?"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:section3:picture:4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture4-blank1",
+          "prompt": {
+            "zh": "图4第1空",
+            "vi": "Hình 4, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "就要",
+            "vi": "sắp"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-4"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l10:field:picture4-blank2",
+          "prompt": {
+            "zh": "图4第2空",
+            "vi": "Hình 4, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "了",
+            "vi": "rồi (trợ từ báo hiệu thay đổi)"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l10:illustration:practice-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l10:illustration:practice-4"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:activity:roleplay",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：双人活动",
+        "vi": "Hoạt động trên lớp: luyện theo cặp"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "课堂活动：双人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l10:section4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l10:field:classroom-pairwork",
+          "prompt": {
+            "zh": "两人一组，讨论学习情况，互相询问学会了什么，学得怎么样，有没有做错的题，等等。尽可能使用本课所学生词和语法。",
+            "vi": "Làm việc theo cặp, trao đổi tình hình học: đã học được gì, học thế nào, có câu nào làm sai không… Cố gắng dùng từ và ngữ pháp của bài."
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 107,
+            "printedPage": 92,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "保留原示例，记录提示后分角色练习；不自动判分。示例中的数量不是学习者的实际数据。",
+        "vi": "Giữ ví dụ gốc, ghi gợi ý rồi đóng vai; không chấm điểm tự động. Các con số trong ví dụ không phải dữ liệu thực tế của người học."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "owner": "hsk2-fltrp-2026:l10:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:warmup1-picture1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "学生分别坐在几张课桌前，在纸上书写。",
+        "vi": "Các học sinh ngồi ở những bàn riêng và viết trên giấy."
+      },
+      "description": {
+        "zh": "学生分别坐在几张课桌前，在纸上书写。",
+        "vi": "Các học sinh ngồi ở những bàn riêng và viết trên giấy."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk2-l10-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "b29b52ddde9acf748756d319fcfb710cbce954023d48ed3a17dc1f14cf98629f",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Added visibly contacting writing hands and pencils above each desk after first render; separate desks remain distinct from the arithmetic close-up."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "owner": "hsk2-fltrp-2026:l10:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:warmup1-picture2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "浅色背景上有一个红色圆圈，圈内是红色叉号。",
+        "vi": "Trên nền sáng có vòng tròn đỏ, bên trong là dấu chéo đỏ."
+      },
+      "description": {
+        "zh": "浅色背景上有一个红色圆圈，圈内是红色叉号。",
+        "vi": "Trên nền sáng có vòng tròn đỏ, bên trong là dấu chéo đỏ."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk2-l10-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "9ddd2348675a782be0248a17b30476fe9b475206a6ecbbd83e9550c0b2842f64",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "owner": "hsk2-fltrp-2026:l10:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:warmup1-picture3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一张纸上印着几行简单算式，旁边放着铅笔。",
+        "vi": "Trên tờ giấy có vài phép tính đơn giản, bên cạnh đặt bút chì."
+      },
+      "description": {
+        "zh": "一张纸上印着几行简单算式，旁边放着铅笔。",
+        "vi": "Trên tờ giấy có vài phép tính đơn giản, bên cạnh đặt bút chì."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk2-l10-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "352fb42bbd0b94b40ca1ebc75789ca1f56bf4eda024714876962ee344e6cba3f",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "owner": "hsk2-fltrp-2026:l10:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:warmup1-picture4"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "几册粉色封面的书写用品叠放在一本摊开的空白册子旁。",
+        "vi": "Vài tập giấy bìa hồng xếp chồng bên một tập mở ra với các trang trống."
+      },
+      "description": {
+        "zh": "几册粉色封面的书写用品叠放在一本摊开的空白册子旁。",
+        "vi": "Vài tập giấy bìa hồng xếp chồng bên một tập mở ra với các trang trống."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk2-l10-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "fe15ee9edc436c67d4c42d1b8a3306389f852dd30e169849cd84decc32f6d33a",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:warmup1-5",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "辅助示意图：warmup1-5",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "owner": "hsk2-fltrp-2026:l10:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:warmup1",
+        "position": 5
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:warmup1-picture5"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "蓝色墙面中有带把手的白色长方形门板，下方是地面。",
+        "vi": "Trong tường xanh có tấm cửa trắng hình chữ nhật với tay nắm, bên dưới là sàn."
+      },
+      "description": {
+        "zh": "蓝色墙面中有带把手的白色长方形门板，下方是地面。",
+        "vi": "Trong tường xanh có tấm cửa trắng hình chữ nhật với tay nắm, bên dưới là sàn."
+      },
+      "sceneKey": "warmup1-5",
+      "file": "illustrations/hsk2-l10-warmup1-5.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "1ad568037f7c84d941c23fc61746e5f09187a1252c18cdb4df76b51d40a33386",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:warmup1-6",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "section": "辅助示意图：warmup1-6",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 99,
+        "printedPage": 84,
+        "owner": "hsk2-fltrp-2026:l10:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:warmup1",
+        "position": 6
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:warmup1-picture6"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "沙发上的两位成人一起看手机，眼睛眯起，嘴角上扬。",
+        "vi": "Hai người lớn trên ghế sofa cùng nhìn điện thoại, mắt nheo và khóe miệng nhếch lên."
+      },
+      "description": {
+        "zh": "沙发上的两位成人一起看手机，眼睛眯起，嘴角上扬。",
+        "vi": "Hai người lớn trên ghế sofa cùng nhìn điện thoại, mắt nheo và khóe miệng nhếch lên."
+      },
+      "sceneKey": "warmup1-6",
+      "file": "illustrations/hsk2-l10-warmup1-6.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "30ec0107bc7cf93ccef21903ce1adc44ac97b6871c843dc48200ff7b4b71933a",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "owner": "hsk2-fltrp-2026:l10:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l10:section3",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:picture1-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一个人背对画面，站在树林中向左右分开的两条小路前。",
+        "vi": "Một người quay lưng lại, đứng trước hai lối mòn tách sang trái và phải trong rừng."
+      },
+      "description": {
+        "zh": "一个人背对画面，站在树林中向左右分开的两条小路前。",
+        "vi": "Một người quay lưng lại, đứng trước hai lối mòn tách sang trái và phải trong rừng."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk2-l10-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "fe1dfa1318318e032be38cd3df2e444b94b4f72a90fdbba76e57e86e04f5b18f",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "owner": "hsk2-fltrp-2026:l10:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l10:section3",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:picture2-blank1",
+        "hsk2-fltrp-2026:l10:field:picture2-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "水流从水龙头落到两只手托着的圆形果实上，下方有水槽。",
+        "vi": "Nước từ vòi chảy lên quả tròn được hai bàn tay đỡ, phía dưới là bồn."
+      },
+      "description": {
+        "zh": "水流从水龙头落到两只手托着的圆形果实上，下方有水槽。",
+        "vi": "Nước từ vòi chảy lên quả tròn được hai bàn tay đỡ, phía dưới là bồn."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk2-l10-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "156d7c09393c7ab01d941935a7f224225c12dffc3e1233df862d6bced500930a",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Refined the upper hand/thumb around the fruit; lower hand cups it, with faucet water falling onto the fruit above the sink."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "owner": "hsk2-fltrp-2026:l10:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l10:section3",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:picture3-blank1",
+        "hsk2-fltrp-2026:l10:field:picture3-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "灰色云层下，两名孩子在沙地上玩，一人站着，一人蹲着；没有画雨滴。",
+        "vi": "Dưới mây xám, hai trẻ chơi trên cát, một bé đứng và một bé ngồi xổm; không vẽ hạt mưa."
+      },
+      "description": {
+        "zh": "灰色云层下，两名孩子在沙地上玩，一人站着，一人蹲着；没有画雨滴。",
+        "vi": "Dưới mây xám, hai trẻ chơi trên cát, một bé đứng và một bé ngồi xổm; không vẽ hạt mưa."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk2-l10-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "4492938cc89fcd0d98f7f25c34817650562443cfb1ad69e996a02d83e7f30407",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Added the crouching child neck and mouth; one standing and one crouching child under gray clouds, with no rain already falling."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:practice-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "section": "辅助示意图：practice-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 107,
+        "printedPage": 92,
+        "owner": "hsk2-fltrp-2026:l10:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l10:section3",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l10:field:picture4-blank1",
+        "hsk2-fltrp-2026:l10:field:picture4-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "红色座椅间，一位女子把手机放在耳边，附近两位观众看向她并示意。",
+        "vi": "Giữa các ghế đỏ, một phụ nữ đưa điện thoại lên tai; hai khán giả gần đó nhìn và ra hiệu cho cô."
+      },
+      "description": {
+        "zh": "红色座椅间，一位女子把手机放在耳边，附近两位观众看向她并示意。",
+        "vi": "Giữa các ghế đỏ, một phụ nữ đưa điện thoại lên tai; hai khán giả gần đó nhìn và ra hiệu cho cô."
+      },
+      "sceneKey": "practice-4",
+      "file": "illustrations/hsk2-l10-practice-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "ac6d01b752a7d48c9e63569c9474d400cd4ac1cd793e30cd2e7e553e60081f63",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 100,
+        "printedPage": 85,
+        "owner": "hsk2-fltrp-2026:l10:text1",
+        "sourceOwner": "hsk2-fltrp-2026:l10:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "卧室里，父亲和小男孩一起整理打开的书包，父亲拿着一本书。",
+        "vi": "Trong phòng ngủ, bố và cậu con trai cùng chuẩn bị cặp sách mở; bố cầm một quyển sách."
+      },
+      "description": {
+        "zh": "卧室里，父亲和小男孩一起整理打开的书包，父亲拿着一本书。",
+        "vi": "Trong phòng ngủ, bố và cậu con trai cùng chuẩn bị cặp sách mở; bố cầm một quyển sách."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk2-l10-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "22dddeadfdfadac04384c51a41f8ec0872d841e2bc4e1c9faceb2ceccd159804",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Exposed father fingertips at the book and open bag rim; packing context does not establish the listening-answer bag location."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 102,
+        "printedPage": 87,
+        "owner": "hsk2-fltrp-2026:l10:text2",
+        "sourceOwner": "hsk2-fltrp-2026:l10:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "母亲站在女儿身旁，女儿在书桌前书写；桌上有打开的本子和台灯。",
+        "vi": "Mẹ đứng cạnh con gái đang viết ở bàn; trên bàn có vở mở và đèn."
+      },
+      "description": {
+        "zh": "母亲站在女儿身旁，女儿在书桌前书写；桌上有打开的本子和台灯。",
+        "vi": "Mẹ đứng cạnh con gái đang viết ở bàn; trên bàn có vở mở và đèn."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk2-l10-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "14d4232568cff47638cd36aa176915847b35b3a6679f8a3984712d5d34eabfd1",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Exposed daughter forearms and writing hand over the workbook, with pen contacting the page."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l10:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 104,
+        "printedPage": 89,
+        "owner": "hsk2-fltrp-2026:l10:text3",
+        "sourceOwner": "hsk2-fltrp-2026:l10:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "母亲和刚回来的女儿站在门边，两人扶着书包和背带。",
+        "vi": "Mẹ và con gái vừa về đứng bên cửa; hai người giữ cặp sách và quai đeo."
+      },
+      "description": {
+        "zh": "母亲和刚回来的女儿站在门边，两人扶着书包和背带。",
+        "vi": "Mẹ và con gái vừa về đứng bên cửa; hai người giữ cặp sách và quai đeo."
+      },
+      "sceneKey": "text3",
+      "file": "illustrations/hsk2-l10-text3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "e97ff1a92cf900eda653e9de1b0543703639e14ed7c195e3a836ef79b22ea7f1",
+      "rights": "Original vectors; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica.",
+        "Unavailable videos remain unavailable."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every SVG raster in contact sheets at full cell size; reopened changed sheets and the final doctor scene after repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Source scene, neutral bilingual description, task label, anatomy and object relationships checked in the rendered original SVG."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK2 lessons 10–11 additive source-inventory author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107
+    ],
+    "answerPdfPages": [
+      13,
+      14
+    ],
+    "appendixPdfPages": [
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "independentReview": "passed-source-content-and-template-structure-recheck",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "82c8c636d874a65ab2a7d8a827e94a39cbc9550e91cedc903587f6287fd2160c",
+    "method": "Every independent inventory field mapped once; all baseline content preserved. Chinese/Vietnamese editorial references are nonunique and not official exact-string keys.",
+    "limitations": [
+      "No culture panel is printed in lesson 10.",
+      "No new audio alignment authored.",
+      "Independent review of completed drafts and real-browser/release checks remain pending."
+    ],
+    "independentReviewReport": "independent-hsk2-lessons-10-11-review/candidate-review/independent-candidate-review.md"
+  }
+}
+`;export{e as default};

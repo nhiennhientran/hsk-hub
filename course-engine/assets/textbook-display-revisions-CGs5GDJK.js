@@ -1,0 +1,1 @@
+var e=new URL(`textbook-display-revisions-DWScioD2.json`,import.meta.url).href;export{e as default};

@@ -1,0 +1,7874 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk3-fltrp-2026",
+  "version": "2026.1",
+  "number": 4,
+  "id": "hsk3-fltrp-2026:l04",
+  "title": {
+    "zh": "这家宾馆跟别的都不一样",
+    "vi": "Khách sạn này khác hẳn những nơi khác",
+    "py": "Zhè jiā bīnguǎn gēn biéde dōu bù yíyàng"
+  },
+  "source": {
+    "startPdfPage": 41,
+    "endPdfPage": 49,
+    "startPrintedPage": 29,
+    "endPrintedPage": 37
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent implementation lead review; separate from content author; not native-speaker certification",
+    "notes": [
+      "Every textbook PDF41–49 and answer pages5–6 inspected as images; all source fields and30 homework plus4 independent listening reviewed.",
+      "Restored exact source context (removed unprinted 走), clarified Vietnamese clothing/animal wording, made exclusion premise explicit and replaced unnatural clock distractor.",
+      "Picture description provenance split across the actual printed pages36–37. Manual writing adapted away from near-verbatim narrative answer.",
+      "All8 original audio SHA/full decodes verified again; all8 complete ASR text outputs compared with source, with homophones ignored. This is not full human listening.",
+      "Optional sentence/example pinyin and Vietnamese are editorial; source word-list pinyin/POS remain intact."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并谈论假期计划，能表达旅游过程中的感受。",
+      "vi": "Nghe hiểu và trao đổi về kế hoạch kỳ nghỉ, diễn đạt cảm nhận trong chuyến du lịch.",
+      "id": "hsk3-fltrp-2026:l04:objective1",
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并表达完全否定的意义。",
+      "vi": "Nghe hiểu và diễn đạt ý phủ định hoàn toàn.",
+      "id": "hsk3-fltrp-2026:l04:objective2",
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握“除了”的用法，能表达排除或补充的意义。",
+      "vi": "Nắm cách dùng 除了 để diễn đạt sự loại trừ hoặc bổ sung.",
+      "id": "hsk3-fltrp-2026:l04:objective3",
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk3-fltrp-2026:l04:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với hình tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 相机；B 羊；C 月亮；D 宾馆；E 骑马；F 海。",
+          "vi": "A máy ảnh; B dê/cừu; C mặt trăng; D khách sạn; E cưỡi ngựa; F biển."
+        },
+        {
+          "zh": "图片说明（编辑补充）：从左到右、从上到下为客房、骑马、月亮、羊、相机、海。",
+          "vi": "Mô tả hình do biên soạn bổ sung: từ trái sang phải, trên xuống dưới là phòng khách sạn, cưỡi ngựa, mặt trăng, dê, máy ảnh và biển.",
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身图片：编辑描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:warmup2",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên thực tế."
+      },
+      "items": [
+        {
+          "zh": "你喜欢旅游吗？为什么？",
+          "vi": "Bạn có thích du lịch không? Vì sao?"
+        },
+        {
+          "zh": "下一个假期，你打算去哪儿旅游？",
+          "vi": "Kỳ nghỉ tới bạn định đi du lịch ở đâu?"
+        }
+      ],
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk3-fltrp-2026:l04:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在王一飞家客厅，杨同乐和王一飞在聊天儿。",
+        "vi": "Trong phòng khách nhà Vương Nhất Phi, Dương Đồng Lạc và Nhất Phi đang trò chuyện."
+      },
+      "audioTrack": "4-1",
+      "lines": [
+        {
+          "zh": "这个假期咱们去哪儿玩玩吧。",
+          "vi": "Kỳ nghỉ này chúng ta đi đâu đó chơi nhé.",
+          "id": "hsk3-fltrp-2026:l04:text1:line1",
+          "speaker": "杨同乐",
+          "py": "Zhè ge jiàqī zánmen qù nǎr wánwan ba.",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好啊，你想去哪儿，咱们就去哪儿。",
+          "vi": "Được đấy, anh muốn đi đâu thì chúng ta đi đó.",
+          "id": "hsk3-fltrp-2026:l04:text1:line2",
+          "speaker": "王一飞",
+          "py": "Hǎo a, nǐ xiǎng qù nǎr, zánmen jiù qù nǎr.",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你喜欢海，找个海边住几天，怎么样？",
+          "vi": "Em thích biển, mình tìm một nơi ven biển ở vài ngày nhé?",
+          "id": "hsk3-fltrp-2026:l04:text1:line3",
+          "speaker": "杨同乐",
+          "py": "Nǐ xǐhuan hǎi, zhǎo ge hǎibiān zhù jǐ tiān, zěnmeyàng?",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "现在去海边有点儿冷。",
+          "vi": "Giờ ra biển hơi lạnh.",
+          "id": "hsk3-fltrp-2026:l04:text1:line4",
+          "speaker": "王一飞",
+          "py": "Xiànzài qù hǎibiān yǒudiǎnr lěng.",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那去草原吧？草原一点儿也不冷。",
+          "vi": "Vậy đi thảo nguyên nhé? Thảo nguyên chẳng lạnh chút nào.",
+          "id": "hsk3-fltrp-2026:l04:text1:line5",
+          "speaker": "杨同乐",
+          "py": "Nà qù cǎoyuán ba? Cǎoyuán yìdiǎnr yě bù lěng.",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个主意好！我好久没骑马了。",
+          "vi": "Ý này hay đấy! Lâu lắm rồi em chưa cưỡi ngựa.",
+          "id": "hsk3-fltrp-2026:l04:text1:line6",
+          "speaker": "王一飞",
+          "py": "Zhè ge zhǔyi hǎo! Wǒ hǎo jiǔ méi qí mǎ le.",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "对，在草原上骑马、吃羊肉、看月亮，一定很有意思。",
+          "vi": "Đúng, cưỡi ngựa, ăn thịt cừu, ngắm trăng trên thảo nguyên chắc chắn sẽ rất thú vị.",
+          "id": "hsk3-fltrp-2026:l04:text1:line7",
+          "speaker": "杨同乐",
+          "py": "Duì, zài cǎoyuán shàng qí mǎ, chī yángròu, kàn yuèliang, yídìng hěn yǒu yìsi.",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一飞和杨同乐在说什么？",
+          "vi": "Nhất Phi và Đồng Lạc đang nói chuyện gì?",
+          "id": "hsk3-fltrp-2026:l04:text1:question1",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "明天的天气",
+            "喜欢吃什么",
+            "假期做什么"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "杨同乐觉得草原怎么样？",
+          "vi": "Đồng Lạc thấy thảo nguyên thế nào?",
+          "id": "hsk3-fltrp-2026:l04:text1:question2",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "草原天气不好",
+            "草原比海边冷",
+            "草原很有意思"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一飞为什么不想去海边？",
+          "vi": "Vì sao Nhất Phi không muốn ra biển?",
+          "id": "hsk3-fltrp-2026:l04:text1:question3",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一飞为什么觉得去草原好？",
+          "vi": "Vì sao Nhất Phi thấy đi thảo nguyên là ý hay?",
+          "id": "hsk3-fltrp-2026:l04:text1:question4",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他们在草原上可以做什么？",
+          "vi": "Họ có thể làm gì trên thảo nguyên?",
+          "id": "hsk3-fltrp-2026:l04:text1:question5",
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在王一飞家客厅，杨同乐和王一飞在聊天儿。",
+        "vi": "Trong phòng khách nhà Nhất Phi, Đồng Lạc và Nhất Phi đang trò chuyện."
+      },
+      "audioTrack": "4-3",
+      "lines": [
+        {
+          "zh": "出去玩的机票买好了吗？",
+          "vi": "Vé máy bay đi chơi đã mua xong chưa?",
+          "id": "hsk3-fltrp-2026:l04:text2:line1",
+          "speaker": "杨同乐",
+          "py": "Chūqu wán de jīpiào mǎi hǎo le ma?",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "买好了。星期六上午十点一刻起飞。",
+          "vi": "Mua rồi. Sáng thứ Bảy cất cánh lúc mười giờ mười lăm.",
+          "id": "hsk3-fltrp-2026:l04:text2:line2",
+          "speaker": "王一飞",
+          "py": "Mǎi hǎo le. Xīngqīliù shàngwǔ shí diǎn yí kè qǐfēi.",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "宾馆也选好了吗？",
+          "vi": "Khách sạn cũng chọn xong rồi à?",
+          "id": "hsk3-fltrp-2026:l04:text2:line3",
+          "speaker": "杨同乐",
+          "py": "Bīnguǎn yě xuǎn hǎo le ma?",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是的，这家宾馆很特别，跟别的都不一样，一出门就能看见牛和羊！",
+          "vi": "Đúng, khách sạn này rất đặc biệt, khác hẳn những nơi khác, vừa ra cửa là thấy bò và dê/cừu!",
+          "id": "hsk3-fltrp-2026:l04:text2:line4",
+          "speaker": "王一飞",
+          "py": "Shì de, zhè jiā bīnguǎn hěn tèbié, gēn biéde dōu bù yíyàng, yì chū mén jiù néng kànjiàn niú hé yáng!",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "太好了！你看看要带什么东西？",
+          "vi": "Tuyệt quá! Em xem cần mang gì theo?",
+          "id": "hsk3-fltrp-2026:l04:text2:line5",
+          "speaker": "杨同乐",
+          "py": "Tài hǎo le! Nǐ kànkan yào dài shénme dōngxi?",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们不用带太多东西，别忘了拿上新买的相机。",
+          "vi": "Mình không cần mang nhiều đồ, đừng quên mang theo máy ảnh mới mua.",
+          "id": "hsk3-fltrp-2026:l04:text2:line6",
+          "speaker": "王一飞",
+          "py": "Wǒmen búyòng dài tài duō dōngxi, bié wàng le ná shàng xīn mǎi de xiàngjī.",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "一定不会忘带的。我现在就去准备行李。",
+          "vi": "Chắc chắn không quên đâu. Giờ anh đi chuẩn bị hành lý ngay.",
+          "id": "hsk3-fltrp-2026:l04:text2:line7",
+          "speaker": "杨同乐",
+          "py": "Yídìng bú huì wàng dài de. Wǒ xiànzài jiù qù zhǔnbèi xíngli.",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一飞觉得这次出去玩要带什么东西？",
+          "vi": "Nhất Phi thấy chuyến đi này cần mang gì?",
+          "id": "hsk3-fltrp-2026:l04:text2:question1",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "什么都不用带",
+            "带新买的相机",
+            "要带很多东西"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "杨同乐现在去做什么？",
+          "vi": "Bây giờ Đồng Lạc đi làm gì?",
+          "id": "hsk3-fltrp-2026:l04:text2:question2",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "买机票",
+            "选宾馆",
+            "准备行李"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "他们什么时候坐飞机出去玩？",
+          "vi": "Khi nào họ đi máy bay để đi chơi?",
+          "id": "hsk3-fltrp-2026:l04:text2:question3",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一飞选的宾馆怎么样？",
+          "vi": "Khách sạn Nhất Phi chọn thế nào?",
+          "id": "hsk3-fltrp-2026:l04:text2:question4",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "杨同乐说一定不会忘带什么？",
+          "vi": "Đồng Lạc nói nhất định không quên mang gì?",
+          "id": "hsk3-fltrp-2026:l04:text2:question5",
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "课文2：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在机场，杨同乐和王一飞出来，跟他们预约的司机兼导游见面。",
+        "vi": "Tại sân bay, Đồng Lạc và Nhất Phi bước ra gặp tài xế kiêm hướng dẫn viên đã đặt trước."
+      },
+      "audioTrack": "4-5",
+      "lines": [
+        {
+          "zh": "欢迎你们！我是你们的司机，我姓李，叫我小李就可以。",
+          "vi": "Chào mừng anh chị! Tôi là tài xế của anh chị, tôi họ Lý, cứ gọi tôi Tiểu Lý là được.",
+          "id": "hsk3-fltrp-2026:l04:text3:line1",
+          "speaker": "小李",
+          "py": "Huānyíng nǐmen! Wǒ shì nǐmen de sījī, wǒ xìng Lǐ, jiào wǒ Xiǎo Lǐ jiù kěyǐ.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "您好！不好意思，飞机晚点了，让您久等了。",
+          "vi": "Chào anh! Ngại quá, máy bay bị trễ, để anh đợi lâu rồi.",
+          "id": "hsk3-fltrp-2026:l04:text3:line2",
+          "speaker": "杨同乐",
+          "py": "Nín hǎo! Bù hǎoyìsi, fēijī wǎndiǎn le, ràng nín jiǔ děng le.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没关系。除了这个行李箱以外，还有别的东西吗？",
+          "vi": "Không sao. Ngoài va-li này ra, còn đồ gì khác không?",
+          "id": "hsk3-fltrp-2026:l04:text3:line3",
+          "speaker": "小李",
+          "py": "Méi guānxi. Chúle zhè ge xínglixiāng yǐwài, hái yǒu biéde dōngxi ma?",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "还有一个包，我自己拿就可以。",
+          "vi": "Còn một túi nữa, tôi tự cầm là được.",
+          "id": "hsk3-fltrp-2026:l04:text3:line4",
+          "speaker": "杨同乐",
+          "py": "Hái yǒu yí ge bāo, wǒ zìjǐ ná jiù kěyǐ.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "车在一层，请跟我来。",
+          "vi": "Xe ở tầng một, mời đi theo tôi.",
+          "id": "hsk3-fltrp-2026:l04:text3:line5",
+          "speaker": "小李",
+          "py": "Chē zài yì céng, qǐng gēn wǒ lái.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们住的宾馆离机场远吗？",
+          "vi": "Khách sạn chúng tôi ở cách sân bay xa không?",
+          "id": "hsk3-fltrp-2026:l04:text3:line6",
+          "speaker": "杨同乐",
+          "py": "Wǒmen zhù de bīnguǎn lí jīchǎng yuǎn ma?",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不远，三十分钟就能到。两位到了可以先休息休息，晚饭的时候我叫你们。",
+          "vi": "Không xa, ba mươi phút là đến. Đến nơi anh chị có thể nghỉ trước, đến giờ ăn tối tôi sẽ gọi.",
+          "id": "hsk3-fltrp-2026:l04:text3:line7",
+          "speaker": "小李",
+          "py": "Bù yuǎn, sānshí fēnzhōng jiù néng dào. Liǎng wèi dào le kěyǐ xiān xiūxi xiūxi, wǎnfàn de shíhou wǒ jiào nǐmen.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "小李是谁？",
+          "vi": "Tiểu Lý là ai?",
+          "id": "hsk3-fltrp-2026:l04:text3:question1",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "同乐的朋友",
+            "同乐的司机",
+            "宾馆的服务员"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "他们到宾馆后先做什么？",
+          "vi": "Đến khách sạn, họ làm gì trước?",
+          "id": "hsk3-fltrp-2026:l04:text3:question2",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "休息",
+            "吃晚饭",
+            "等朋友"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "他们为什么到晚了？",
+          "vi": "Vì sao họ đến muộn?",
+          "id": "hsk3-fltrp-2026:l04:text3:question3",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他们有几个行李箱？",
+          "vi": "Họ có mấy va-li?",
+          "id": "hsk3-fltrp-2026:l04:text3:question4",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "宾馆离机场远吗？",
+          "vi": "Khách sạn có xa sân bay không?",
+          "id": "hsk3-fltrp-2026:l04:text3:question5",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在宾馆房间，王一飞在写日记。",
+        "vi": "Trong phòng khách sạn, Nhất Phi đang viết nhật ký."
+      },
+      "audioTrack": "4-7",
+      "lines": [
+        {
+          "zh": "今天是我们旅游的第一天。我们很早就起床去机场了，没想到飞机晚点了。",
+          "vi": "Hôm nay là ngày đầu tiên của chuyến du lịch. Chúng tôi dậy rất sớm để ra sân bay, không ngờ máy bay lại bị trễ.",
+          "id": "hsk3-fltrp-2026:l04:text4:line1",
+          "speaker": "王一飞（日记）",
+          "py": "Jīntiān shì wǒmen lǚyóu de dì yī tiān. Wǒmen hěn zǎo jiù qǐchuáng qù jīchǎng le, méi xiǎngdào fēijī wǎndiǎn le.",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们到的时候，天已经黑了，但是司机小李一直在机场等我们，一点儿也没着急。",
+          "vi": "Lúc chúng tôi đến, trời đã tối, nhưng tài xế Tiểu Lý vẫn đợi ở sân bay suốt, chẳng hề sốt ruột.",
+          "id": "hsk3-fltrp-2026:l04:text4:line2",
+          "speaker": "王一飞（日记）",
+          "py": "Wǒmen dào de shíhou, tiān yǐjīng hēi le, dànshì sījī Xiǎo Lǐ yìzhí zài jīchǎng děng wǒmen, yìdiǎnr yě méi zháojí.",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他特别热情，路上给我们介绍了很多东西，还准备了水果。",
+          "vi": "Anh ấy rất nhiệt tình, trên đường giới thiệu nhiều điều cho chúng tôi, còn chuẩn bị trái cây nữa.",
+          "id": "hsk3-fltrp-2026:l04:text4:line3",
+          "speaker": "王一飞（日记）",
+          "py": "Tā tèbié rèqíng, lùshang gěi wǒmen jièshào le hěn duō dōngxi, hái zhǔnbèi le shuǐguǒ.",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "宾馆的房间跟我想的一样漂亮，又大又干净，我非常满意。",
+          "vi": "Phòng khách sạn đẹp đúng như tôi hình dung, vừa rộng vừa sạch, tôi rất hài lòng.",
+          "id": "hsk3-fltrp-2026:l04:text4:line4",
+          "speaker": "王一飞（日记）",
+          "py": "Bīnguǎn de fángjiān gēn wǒ xiǎng de yíyàng piàoliang, yòu dà yòu gānjìng, wǒ fēicháng mǎnyì.",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "飞机晚点后，司机做什么了？",
+          "vi": "Sau khi máy bay bị trễ, tài xế đã làm gì?",
+          "id": "hsk3-fltrp-2026:l04:text4:question1",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "去宾馆了",
+            "去买水果了",
+            "一直在机场等"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "他们是什么时候到的？",
+          "vi": "Họ đến vào lúc nào?",
+          "id": "hsk3-fltrp-2026:l04:text4:question2",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "上午",
+            "中午",
+            "晚上"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "他们是怎么去宾馆的？",
+          "vi": "Họ đến khách sạn bằng cách nào?",
+          "id": "hsk3-fltrp-2026:l04:text4:question3",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一飞为什么觉得小李很热情？",
+          "vi": "Vì sao Nhất Phi thấy Tiểu Lý rất nhiệt tình?",
+          "id": "hsk3-fltrp-2026:l04:text4:question4",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "宾馆的房间怎么样？",
+          "vi": "Phòng khách sạn thế nào?",
+          "id": "hsk3-fltrp-2026:l04:text4:question5",
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "课文4",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "假期",
+      "vi": "kỳ nghỉ",
+      "id": "hsk3-fltrp-2026:l04:word01",
+      "py": "jiàqī",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：假期",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "假期",
+            "printedPinyin": "jiàqī",
+            "normalizedPinyin": "jiàqī",
+            "printedNumber": 1,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "假期",
+            "printedPinyin": "jiàqī",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "海",
+      "vi": "biển",
+      "id": "hsk3-fltrp-2026:l04:word02",
+      "py": "hǎi",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：海",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "海",
+            "printedPinyin": "hǎi",
+            "normalizedPinyin": "hǎi",
+            "printedNumber": 2,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "海",
+            "printedPinyin": "hǎi",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "草原",
+      "vi": "thảo nguyên",
+      "id": "hsk3-fltrp-2026:l04:word03",
+      "py": "cǎoyuán",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：草原",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": true,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "草原",
+            "printedPinyin": "cǎoyuán",
+            "normalizedPinyin": "cǎoyuán",
+            "printedNumber": 3,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "草原",
+            "printedPinyin": "cǎoyuán",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "主意",
+      "vi": "ý kiến, ý tưởng",
+      "id": "hsk3-fltrp-2026:l04:word04",
+      "py": "zhǔyi",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 194,
+        "printedPage": 182,
+        "section": "词语表：主意",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": true,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "主意",
+            "printedPinyin": "zhǔyi",
+            "normalizedPinyin": "zhǔyi",
+            "printedNumber": 4,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "主意",
+            "printedPinyin": "zhǔyi",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "骑",
+      "vi": "cưỡi; đi (xe đạp, xe máy)",
+      "id": "hsk3-fltrp-2026:l04:word05",
+      "py": "qí",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：骑",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "骑",
+            "printedPinyin": "qí",
+            "normalizedPinyin": "qí",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "骑",
+            "printedPinyin": "qí",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "马",
+      "vi": "ngựa",
+      "id": "hsk3-fltrp-2026:l04:word06",
+      "py": "mǎ",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：马",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "马",
+            "printedPinyin": "mǎ",
+            "normalizedPinyin": "mǎ",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "马",
+            "printedPinyin": "mǎ",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "羊",
+      "vi": "dê; cừu",
+      "id": "hsk3-fltrp-2026:l04:word07",
+      "py": "yáng",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：羊",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "羊",
+            "printedPinyin": "yáng",
+            "normalizedPinyin": "yáng",
+            "printedNumber": 7,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "羊",
+            "printedPinyin": "yáng",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "月亮",
+      "vi": "mặt trăng",
+      "id": "hsk3-fltrp-2026:l04:word08",
+      "py": "yuèliang",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：月亮",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "月亮",
+            "printedPinyin": "yuèliang",
+            "normalizedPinyin": "yuèliang",
+            "printedNumber": 8,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "月亮",
+            "printedPinyin": "yuèliang",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "一定",
+      "vi": "nhất định, chắc chắn",
+      "id": "hsk3-fltrp-2026:l04:word09",
+      "py": "yídìng",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "4-2",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：一定",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 42,
+              "printedPage": 30,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "一定",
+            "printedPinyin": "yídìng",
+            "normalizedPinyin": "yídìng",
+            "printedNumber": 9,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "一定",
+            "printedPinyin": "yídìng",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "刻",
+      "vi": "khắc, mười lăm phút",
+      "id": "hsk3-fltrp-2026:l04:word10",
+      "py": "kè",
+      "pos": "lượng từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：刻",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "m.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "刻",
+            "printedPinyin": "kè",
+            "normalizedPinyin": "kè",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "lượng.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "量词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "刻",
+            "printedPinyin": "kè",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "起飞",
+      "vi": "cất cánh",
+      "id": "hsk3-fltrp-2026:l04:word11",
+      "py": "qǐfēi",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：起飞",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "起飞",
+            "printedPinyin": "qǐfēi",
+            "normalizedPinyin": "qǐfēi",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "起飞",
+            "printedPinyin": "qǐfēi",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "宾馆",
+      "vi": "khách sạn",
+      "id": "hsk3-fltrp-2026:l04:word12",
+      "py": "bīnguǎn",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：宾馆",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 12,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "宾馆",
+            "printedPinyin": "bīnguǎn",
+            "normalizedPinyin": "bīnguǎn",
+            "printedNumber": 12,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "宾馆",
+            "printedPinyin": "bīnguǎn",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "特别",
+      "vi": "đặc biệt",
+      "id": "hsk3-fltrp-2026:l04:word13",
+      "py": "tèbié",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：特别",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 13,
+        "sourcePos": "adj./adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l04:printed-word:13"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "特别",
+            "printedPinyin": "tèbié",
+            "normalizedPinyin": "tèbié",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt./phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词",
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "特别",
+            "printedPinyin": "tèbié",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "特别",
+      "vi": "đặc biệt, rất",
+      "id": "hsk3-fltrp-2026:l04:word14",
+      "py": "tèbié",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：特别",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 13,
+        "sourcePos": "adj./adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sharedPrintedEntry": "hsk3-fltrp-2026:l04:printed-word:13"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "特别",
+            "printedPinyin": "tèbié",
+            "normalizedPinyin": "tèbié",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt./phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词",
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "特别",
+            "printedPinyin": "tèbié",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "别的",
+      "vi": "khác",
+      "id": "hsk3-fltrp-2026:l04:word15",
+      "py": "biéde",
+      "pos": "đại từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：别的",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 14,
+        "sourcePos": "pron.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "别的",
+            "printedPinyin": "biéde",
+            "normalizedPinyin": "biéde",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "代词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "别的",
+            "printedPinyin": "biéde",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "一样",
+      "vi": "giống nhau",
+      "id": "hsk3-fltrp-2026:l04:word16",
+      "py": "yíyàng",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：一样",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 15,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "一样",
+            "printedPinyin": "yíyàng",
+            "normalizedPinyin": "yíyàng",
+            "printedNumber": 15,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "一样",
+            "printedPinyin": "yíyàng",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "牛",
+      "vi": "bò",
+      "id": "hsk3-fltrp-2026:l04:word17",
+      "py": "niú",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：牛",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 16,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "牛",
+            "printedPinyin": "niú",
+            "normalizedPinyin": "niú",
+            "printedNumber": 16,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "牛",
+            "printedPinyin": "niú",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "相机",
+      "vi": "máy ảnh",
+      "id": "hsk3-fltrp-2026:l04:word18",
+      "py": "xiàngjī",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "4-4",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：相机",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 17,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 44,
+              "printedPage": 32,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "相机",
+            "printedPinyin": "xiàngjī",
+            "normalizedPinyin": "xiàngjī",
+            "printedNumber": 17,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "相机",
+            "printedPinyin": "xiàngjī",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "欢迎",
+      "vi": "chào mừng, hoan nghênh",
+      "id": "hsk3-fltrp-2026:l04:word19",
+      "py": "huānyíng",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：欢迎",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 18,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "欢迎",
+            "printedPinyin": "huānyíng",
+            "normalizedPinyin": "huānyíng",
+            "printedNumber": 18,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "欢迎",
+            "printedPinyin": "huānyíng",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "司机",
+      "vi": "tài xế",
+      "id": "hsk3-fltrp-2026:l04:word20",
+      "py": "sījī",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：司机",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 19,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "司机",
+            "printedPinyin": "sījī",
+            "normalizedPinyin": "sījī",
+            "printedNumber": 19,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "司机",
+            "printedPinyin": "sījī",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "晚点",
+      "vi": "trễ giờ (tàu, máy bay…)",
+      "id": "hsk3-fltrp-2026:l04:word21",
+      "py": "wǎndiǎn",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：晚点",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 20,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "晚点",
+            "printedPinyin": "wǎndiǎn",
+            "normalizedPinyin": "wǎndiǎn",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "晚点",
+            "printedPinyin": "wǎndiǎn",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "久",
+      "vi": "lâu",
+      "id": "hsk3-fltrp-2026:l04:word22",
+      "py": "jiǔ",
+      "pos": "tính từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：久",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 21,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "久",
+            "printedPinyin": "jiǔ",
+            "normalizedPinyin": "jiǔ",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "久",
+            "printedPinyin": "jiǔ",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "除了",
+      "vi": "ngoài, trừ",
+      "id": "hsk3-fltrp-2026:l04:word23",
+      "py": "chúle",
+      "pos": "giới từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：除了",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 22,
+        "sourcePos": "prep.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "除了",
+            "printedPinyin": "chúle",
+            "normalizedPinyin": "chúle",
+            "printedNumber": 22,
+            "sourceList": "new-words",
+            "printedPOSRaw": "giới.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "介词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "除了",
+            "printedPinyin": "chúle",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "以外",
+      "vi": "bên ngoài, ngoài ra",
+      "id": "hsk3-fltrp-2026:l04:word24",
+      "py": "yǐwài",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：以外",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 23,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "以外",
+            "printedPinyin": "yǐwài",
+            "normalizedPinyin": "yǐwài",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "以外",
+            "printedPinyin": "yǐwài",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "先",
+      "vi": "trước",
+      "id": "hsk3-fltrp-2026:l04:word25",
+      "py": "xiān",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "4-6",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 192,
+        "printedPage": 180,
+        "section": "词语表：先",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 24,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 45,
+              "printedPage": 33,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "先",
+            "printedPinyin": "xiān",
+            "normalizedPinyin": "xiān",
+            "printedNumber": 24,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "先",
+            "printedPinyin": "xiān",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "一直",
+      "vi": "suốt, liên tục",
+      "id": "hsk3-fltrp-2026:l04:word26",
+      "py": "yìzhí",
+      "pos": "phó từ",
+      "sourceText": 4,
+      "audioTrack": "4-8",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：一直",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 25,
+        "sourcePos": "adv.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 47,
+              "printedPage": 35,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "一直",
+            "printedPinyin": "yìzhí",
+            "normalizedPinyin": "yìzhí",
+            "printedNumber": 25,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "一直",
+            "printedPinyin": "yìzhí",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "干净",
+      "vi": "sạch sẽ",
+      "id": "hsk3-fltrp-2026:l04:word27",
+      "py": "gānjìng",
+      "pos": "tính từ",
+      "sourceText": 4,
+      "audioTrack": "4-8",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 188,
+        "printedPage": 176,
+        "section": "词语表：干净",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 26,
+        "sourcePos": "adj.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 47,
+              "printedPage": 35,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "干净",
+            "printedPinyin": "gānjìng",
+            "normalizedPinyin": "gānjìng",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "干净",
+            "printedPinyin": "gānjìng",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "满意",
+      "vi": "hài lòng",
+      "id": "hsk3-fltrp-2026:l04:word28",
+      "py": "mǎnyì",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "4-8",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：满意",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 27,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          4
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“*”的是本级超纲词。",
+          "vi": "Từ có dấu * nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 47,
+              "printedPage": 35,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "满意",
+            "printedPinyin": "mǎnyì",
+            "normalizedPinyin": "mǎnyì",
+            "printedNumber": 27,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "满意",
+            "printedPinyin": "mǎnyì",
+            "lessonNumbers": [
+              4
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3-fltrp-2026:l04:grammar1",
+      "title": {
+        "zh": "固定格式“一……也/都＋不/没……”",
+        "vi": "Mẫu phủ định hoàn toàn 一……也/都＋不/没……"
+      },
+      "structure": "一 + lượng từ + danh từ + 也/都 + 不/没; 一点儿 + 也/都 + 不/没 + tính từ",
+      "explanation": {
+        "zh": "这个格式表示完全否定。“一＋量词”也可以换成“一点儿”；谓语是形容词时，常用“一点儿也/都＋不/没＋形容词”。",
+        "vi": "Mẫu này diễn đạt phủ định hoàn toàn: “không một…nào”, “chẳng…chút nào”. Có thể dùng 一点儿 thay 一＋lượng từ. Với tính từ, thường dùng 一点儿也/都不/没…; chọn 不 hay 没 theo ý nghĩa và ngữ cảnh."
+      },
+      "examples": [
+        {
+          "zh": "她一件衣服都不想买。",
+          "vi": "Cô ấy không muốn mua quần áo nào cả.",
+          "py": "Tā yí jiàn yīfu dōu bù xiǎng mǎi.",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我一个中国电影也没看过。",
+          "vi": "Tôi chưa từng xem một bộ phim Trung Quốc nào.",
+          "py": "Wǒ yí ge Zhōngguó diànyǐng yě méi kàn guo.",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我一点儿东西也不想吃。",
+          "vi": "Tôi chẳng muốn ăn gì cả.",
+          "py": "Wǒ yìdiǎnr dōngxi yě bù xiǎng chī.",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他对打球一点儿兴趣都没有。",
+          "vi": "Anh ấy chẳng có chút hứng thú nào với việc chơi bóng. (兴趣 xìngqù: hứng thú, chú giải trong sách.)",
+          "py": "Tā duì dǎ qiú yìdiǎnr xìngqù dōu méiyǒu.",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "草原一点儿也不冷。",
+          "vi": "Thảo nguyên chẳng lạnh chút nào.",
+          "py": "Cǎoyuán yìdiǎnr yě bù lěng.",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他们一点儿也没着急。",
+          "vi": "Họ chẳng hề sốt ruột.",
+          "py": "Tāmen yìdiǎnr yě méi zháojí.",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "这件衣服______，你买吧。（贵）",
+          "vi": "Bộ quần áo này ______, bạn mua đi. (dùng 贵)",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们上个月搬家了，______。（认识）",
+          "vi": "Tháng trước chúng tôi chuyển nhà rồi, ______. (dùng 认识)",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个星期我太忙了，______。（时间）",
+          "vi": "Tuần này tôi bận quá, ______. (dùng 时间)",
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "固定格式“一……也/都＋不/没……”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:grammar2",
+      "title": {
+        "zh": "比较句（9）",
+        "vi": "Câu so sánh (9)"
+      },
+      "structure": "A + 跟 + B + 一样 (+ tính từ); A + 跟 + B + 不一样",
+      "explanation": {
+        "zh": "“A跟B一样”表示比较结果相同，可在“一样”后加形容词说明比较的方面。否定形式是在“一样”前加“不”。",
+        "vi": "A跟B一样 cho biết A và B giống nhau. Thêm tính từ sau 一样 để nêu phương diện giống nhau. Thêm 不 trước 一样 để diễn đạt khác nhau."
+      },
+      "examples": [
+        {
+          "zh": "这家宾馆跟别的都不一样。",
+          "vi": "Khách sạn này khác hẳn những nơi khác.",
+          "py": "Zhè jiā bīnguǎn gēn biéde dōu bù yíyàng.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他买的新手机跟我的一样。",
+          "vi": "Điện thoại mới anh ấy mua giống của tôi.",
+          "py": "Tā mǎi de xīn shǒujī gēn wǒ de yíyàng.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个房间跟那个房间一样大。",
+          "vi": "Phòng này rộng bằng phòng kia.",
+          "py": "Zhè ge fángjiān gēn nà ge fángjiān yíyàng dà.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "我的杯子______。",
+          "vi": "Cốc của tôi ______.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "今天学习的词______。",
+          "vi": "Những từ học hôm nay ______.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "______一样高。",
+          "vi": "______ cao bằng nhau.",
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "比较句（9）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:grammar3",
+      "title": {
+        "zh": "固定格式“除了……（以外），……都/还/也……”",
+        "vi": "Mẫu 除了……（以外），……都/还/也……"
+      },
+      "structure": "除了 + phần loại trừ/bổ sung + (以外)，… 都/还/也 …",
+      "explanation": {
+        "zh": "“除了……（以外），……都……”排除一部分，说明其余部分有相同情况；“除了……（以外），……还/也……”补充另一项。以外可以省略。后一种格式的主语可在句首或还/也前。",
+        "vi": "Với 都, mẫu này loại trừ một phần rồi nói phần còn lại đều có chung đặc điểm. Với 还/也, mẫu này bổ sung một điều nữa bên cạnh điều đã nêu. Có thể lược bỏ 以外. Trong mẫu bổ sung, chủ ngữ có thể ở đầu câu hoặc trước 还/也."
+      },
+      "examples": [
+        {
+          "zh": "除了我以外，大家都在玩手机。",
+          "vi": "Ngoài tôi ra, mọi người đều đang dùng điện thoại để giải trí.",
+          "py": "Chúle wǒ yǐwài, dàjiā dōu zài wán shǒujī.",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "除了这个汉字，别的汉字我都会写。",
+          "vi": "Trừ chữ Hán này, các chữ khác tôi đều biết viết.",
+          "py": "Chúle zhè ge Hànzì, biéde Hànzì wǒ dōu huì xiě.",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "除了这个行李箱以外，还有别的东西吗？",
+          "vi": "Ngoài va-li này, còn đồ gì khác không?",
+          "py": "Chúle zhè ge xínglixiāng yǐwài, hái yǒu biéde dōngxi ma?",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "除了唱歌以外，他也喜欢跳舞。",
+          "vi": "Ngoài ca hát, anh ấy còn thích khiêu vũ.",
+          "py": "Chúle chàng gē yǐwài, tā yě xǐhuan tiào wǔ.",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "改写：妈妈喜欢喝咖啡，也喜欢喝茶。",
+          "vi": "Viết lại: Mẹ thích uống cà phê, cũng thích uống trà.",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "改写：王老师是中国人，别的老师都是外国人。",
+          "vi": "Viết lại: Thầy/cô Vương là người Trung Quốc, các thầy cô khác đều là người nước ngoài.",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "改写：我只想吃水果，别的东西都不想吃。",
+          "vi": "Viết lại: Tôi chỉ muốn ăn trái cây, những thứ khác đều không muốn ăn.",
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "固定格式“除了……（以外），……都/还/也……”",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk3-fltrp-2026:l04:section1",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "blocks": [
+        {
+          "zh": "第一组：A 先；B 久；C 刻；D 满意；E 特别。",
+          "vi": "Nhóm 1: A trước; B lâu; C khắc (15 phút); D hài lòng; E đặc biệt.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "1. 已经八点一______了，快起床吧。",
+          "vi": "1. Đã tám giờ một ______ rồi, mau dậy đi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "2. 飞机晚点了，小李在机场等了很______。",
+          "vi": "2. Máy bay trễ, Tiểu Lý đợi ở sân bay rất ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "3. 我______打车过去，你们可以慢慢走过去。",
+          "vi": "3. Tôi đi taxi qua đó ______, các bạn có thể thong thả đi bộ qua.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "4. 我对这里的服务非常______，下次还会再来。",
+          "vi": "4. Tôi rất ______ với dịch vụ ở đây, lần sau sẽ lại đến.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "5. 我们这次在草原上住的宾馆很______，跟别的都不一样。",
+          "vi": "5. Khách sạn chúng tôi ở trên thảo nguyên lần này rất ______, khác hẳn các nơi khác.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第二组：A 一直；B 一样；C 一定；D 欢迎；E 别的。",
+          "vi": "Nhóm 2: A suốt; B giống nhau; C nhất định; D chào mừng; E khác.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "6. A：草原真是太漂亮了，跟我想的______。 B：我觉得草原比我想的更漂亮。",
+          "vi": "6. A: Thảo nguyên đẹp quá, ______ với tôi hình dung. B: Tôi thấy còn đẹp hơn tưởng tượng.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "7. A：我们搬家了，______你来我们的新家玩。 B：好啊，有时间我一定去。",
+          "vi": "7. A: Chúng tôi chuyển nhà rồi, ______ bạn đến nhà mới chơi. B: Được, rảnh tôi nhất định đến.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "8. A：除了要买几个纸箱，还买______东西吗？ B：没有了，谢谢你帮我买。",
+          "vi": "8. A: Ngoài mấy thùng giấy, còn mua đồ ______ không? B: Hết rồi, cảm ơn bạn mua giúp.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "9. A：喂，小李，这边天气不好，我们还没起飞呢。 B：没关系，我会______在机场等您。",
+          "vi": "9. A: A-lô, Tiểu Lý, thời tiết ở đây xấu, chúng tôi chưa cất cánh. B: Không sao, tôi sẽ ______ đợi anh chị ở sân bay.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "10. A：行李准备好了，你看看还需要带什么东西？ B：______别忘了带护照。",
+          "vi": "10. A: Hành lý xong rồi, xem còn cần mang gì? B: ______ đừng quên mang hộ chiếu.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: miêu tả hình"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp mới của bài để miêu tả hình.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片说明（编辑补充）：图1是在电脑前疲倦工作的人。",
+          "vi": "Mô tả hình do biên soạn bổ sung: hình1 là người làm việc mệt mỏi trước máy tính.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "图1：A：这几个月累坏了，每天除了工作，______。 B：______马上就要到了，你想去哪儿玩？ A：我______，都听你的吧。 B：好吧，我上网看看，咱们去哪儿休息休息。",
+          "vi": "Hình 1: A: Mấy tháng nay mệt quá, ngày nào ngoài công việc thì ______. B: ______ sắp đến rồi, bạn muốn đi đâu chơi? A: Tôi ______, tùy bạn thôi. B: Được, tôi lên mạng xem, mình đi đâu đó nghỉ ngơi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片说明（编辑补充）：图2是两位女性交谈；图3是能看到海的客房。",
+          "vi": "Mô tả hình do biên soạn bổ sung: hình2 là hai phụ nữ trò chuyện; hình3 là phòng khách sạn nhìn ra biển.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "图2：A：你觉得咱们去海边怎么样？找一个______，多住几天。 B：每次旅游都去海边，能不能看看______？ A：除了______，还______，但是要坐飞机去。 B：这个主意好，我早就想去了。",
+          "vi": "Hình 2: A: Đi biển thì sao? Tìm một ______, ở thêm vài ngày. B: Lần nào cũng đi biển, có thể xem ______ không? A: Ngoài ______, còn ______, nhưng phải đi máy bay. B: Ý hay, tôi muốn đi từ lâu rồi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图3：A：你们怎么这么晚才到宾馆？______，别的人都到了。 B：我们的飞机______三个多小时。 A：你们一定累坏了吧，来，看看房间喜欢不喜欢？ B：太漂亮了，这个房间______。我觉得______。",
+          "vi": "Hình 3: A: Sao giờ các bạn mới đến khách sạn? ______, mọi người khác đều đến rồi. B: Máy bay của chúng tôi ______ hơn ba tiếng. A: Chắc các bạn mệt lắm, xem có thích phòng không? B: Đẹp quá, phòng này ______. Tôi thấy ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:section3",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "blocks": [
+        {
+          "zh": "四人一组，设计一个假期旅游计划。计划内容包括旅游的地点、交通方式、住宿安排、每日活动等，并说明这样设计的原因。说明时，使用本课所学的词语和语言点。计划设计完成后，每组推选一人向全班介绍本组的旅游计划。介绍结束后，进行投票：每位同学可以投两票，投给自己喜欢的两个小组。通过统计票数，比一比哪组的旅游计划最好玩儿。",
+          "vi": "Nhóm bốn người lập kế hoạch du lịch kỳ nghỉ, gồm địa điểm, phương tiện, chỗ ở và hoạt động từng ngày; giải thích lý do bằng từ và ngữ pháp trong bài. Mỗi nhóm cử một người trình bày trước lớp. Sau đó mỗi bạn bỏ hai phiếu cho hai nhóm mình thích. Đếm phiếu để chọn kế hoạch thú vị nhất.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk3-fltrp-2026:l04:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "她不想买任何东西。哪句话意思相同？",
+        "vi": "Cô ấy không muốn mua gì cả. Câu nào cùng nghĩa?"
+      },
+      "options": [
+        "她一点儿东西也不想买。",
+        "她只想买一点儿东西。",
+        "她还想买别的东西。"
+      ],
+      "answer": 0,
+      "focus": "完全否定",
+      "explanation": {
+        "zh": "一点儿……也不表示完全否定。",
+        "vi": "一点儿……也不 diễn đạt phủ định hoàn toàn."
+      },
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“这次旅行我一张照片也没拍。”说明什么？",
+        "vi": "“Chuyến đi này tôi không chụp một tấm ảnh nào.” Cho biết gì?"
+      },
+      "options": [
+        "只拍了一张照片",
+        "没有拍任何照片",
+        "照片都不太满意"
+      ],
+      "answer": 1,
+      "focus": "数量的完全否定",
+      "explanation": {
+        "zh": "一张也没拍，数量为零。",
+        "vi": "一张也没拍 nghĩa là số ảnh bằng không."
+      },
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "天很暖和，我一点儿也不______。",
+        "vi": "Trời ấm, tôi chẳng ______ chút nào."
+      },
+      "options": [
+        "干净",
+        "特别",
+        "冷"
+      ],
+      "answer": 2,
+      "focus": "一点儿也不＋形容词",
+      "explanation": {
+        "zh": "暖和与不冷相应。",
+        "vi": "Trời ấm phù hợp với không lạnh."
+      },
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我的房间跟你的房间一样大。”哪项正确？",
+        "vi": "“Phòng tôi rộng bằng phòng bạn.” Điều nào đúng?"
+      },
+      "options": [
+        "两间房面积相同",
+        "我的房间更大",
+        "你的房间更大"
+      ],
+      "answer": 0,
+      "focus": "跟……一样",
+      "explanation": {
+        "zh": "一样大比较大小相同。",
+        "vi": "一样大 so sánh kích thước bằng nhau."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "两件衣服颜色不同，应该怎么说？",
+        "vi": "Hai chiếc áo khác màu, nói thế nào?"
+      },
+      "options": [
+        "这两件衣服一样便宜。",
+        "这件衣服跟那件颜色不一样。",
+        "这件衣服跟那件一样新。"
+      ],
+      "answer": 1,
+      "focus": "不一样",
+      "explanation": {
+        "zh": "不一样明确表达颜色不同。",
+        "vi": "不一样 diễn đạt rõ sự khác màu."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "小林没去过草原，其他同学都去过。哪句准确表达这个情况？",
+        "vi": "Tiểu Lâm chưa từng đi thảo nguyên, các bạn khác đều đã đi. Câu nào diễn đạt đúng tình huống?"
+      },
+      "options": [
+        "除了小林以外，大家都没去过草原。",
+        "除了其他同学以外，小林也去过草原。",
+        "除了小林以外，其他同学都去过草原。"
+      ],
+      "answer": 2,
+      "focus": "除了……都：排除",
+      "explanation": {
+        "zh": "明确给出小林没去过，再用除了……都概括其他人的共同经历。",
+        "vi": "Đề đã nêu rõ Tiểu Lâm chưa đi; 除了……都 tóm tắt trải nghiệm chung của các bạn còn lại."
+      },
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "她会骑马，也会游泳。哪句保留了两个本领？",
+        "vi": "Cô ấy biết cưỡi ngựa và bơi. Câu nào giữ đủ hai kỹ năng?"
+      },
+      "options": [
+        "除了骑马，她还会游泳。",
+        "除了骑马，她什么都不会。",
+        "她会骑马，但是不会游泳。"
+      ],
+      "answer": 0,
+      "focus": "除了……还：补充",
+      "explanation": {
+        "zh": "还会游泳补充第二种本领。",
+        "vi": "还会游泳 bổ sung kỹ năng thứ hai."
+      },
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "朋友问你的旅行想法。你说“我有一个好______”。",
+        "vi": "Bạn hỏi ý tưởng du lịch. Bạn nói “Tôi có một ______ hay”."
+      },
+      "options": [
+        "假期",
+        "主意",
+        "司机"
+      ],
+      "answer": 1,
+      "focus": "主意",
+      "explanation": {
+        "zh": "有一个好主意表示有好想法。",
+        "vi": "有一个好主意 nghĩa là có ý tưởng hay."
+      },
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "飞机应该十二点到，实际两点才到。这是______。",
+        "vi": "Máy bay lẽ ra đến lúc 12 giờ nhưng 2 giờ mới đến. Đây là ______."
+      },
+      "options": [
+        "起飞",
+        "欢迎",
+        "晚点"
+      ],
+      "answer": 2,
+      "focus": "晚点",
+      "explanation": {
+        "zh": "晚点指交通工具比规定时间迟。",
+        "vi": "晚点 chỉ phương tiện đến/đi trễ lịch."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我对这里的服务很满意。”最合适的后续是什么？",
+        "vi": "“Tôi rất hài lòng với dịch vụ ở đây.” Câu tiếp phù hợp nhất là gì?"
+      },
+      "options": [
+        "下次我还想住这里。",
+        "所以我一点儿也不喜欢这里。",
+        "所以我还没听说过这里。"
+      ],
+      "answer": 0,
+      "focus": "满意",
+      "explanation": {
+        "zh": "满意是肯定评价，与愿意再来相符。",
+        "vi": "满意 là đánh giá tích cực, phù hợp với muốn quay lại."
+      },
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “这次旅行”: Chuyến du lịch này tôi không mua một món quà nào. Giữ chủ ngữ ngay sau cụm thời gian. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "一件礼物",
+        "这次旅行",
+        "也没",
+        "我",
+        "买。"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "focus": "完全否定",
+      "explanation": {
+        "zh": "这次旅行我一件礼物也没买。",
+        "vi": "一件礼物 ở trước 也没; vị trí thời gian và chủ ngữ đã cố định."
+      },
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “这个宾馆”: Khách sạn này sạch như khách sạn chúng ta ở lần trước. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我们上次住的",
+        "一样",
+        "这个宾馆",
+        "干净。",
+        "跟",
+        "宾馆"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      "focus": "相同比较",
+      "explanation": {
+        "zh": "这个宾馆跟我们上次住的宾馆一样干净。",
+        "vi": "Đặt đối tượng so sánh sau 跟 và trước 一样干净."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “除了”: Ngoài máy ảnh này, tôi còn mang theo một điện thoại mới. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我还",
+        "除了",
+        "一个新手机。",
+        "这个相机以外，",
+        "带了"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "focus": "补充",
+      "explanation": {
+        "zh": "除了这个相机以外，我还带了一个新手机。",
+        "vi": "Mệnh đề 除了 kết thúc ở dấu phẩy; 还 bổ sung đồ mang theo."
+      },
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “除了我”: Ngoài tôi ra, những người bạn khác đều muốn đi biển. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "都想",
+        "除了我",
+        "别的朋友",
+        "去海边。",
+        "以外，"
+      ],
+      "answer": [
+        1,
+        4,
+        2,
+        0,
+        3
+      ],
+      "focus": "排除",
+      "explanation": {
+        "zh": "除了我以外，别的朋友都想去海边。",
+        "vi": "都 đứng trước vị ngữ; cụm loại trừ đứng đầu."
+      },
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “司机”: Tài xế vẫn luôn đợi chúng tôi ở cửa khách sạn. Giữ 一直 trước cụm nơi chốn. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "在宾馆门口",
+        "司机",
+        "我们。",
+        "一直",
+        "等"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        4,
+        2
+      ],
+      "focus": "一直；地点状语",
+      "explanation": {
+        "zh": "司机一直在宾馆门口等我们。",
+        "vi": "一直 trước 在宾馆门口, rồi động từ 等 và tân ngữ."
+      },
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：谁先提议去海边住几天？",
+        "vi": "Nghe bài khóa 1: Ai đề nghị ở ven biển vài ngày trước?"
+      },
+      "options": [
+        "王一飞",
+        "杨同乐",
+        "小李"
+      ],
+      "answer": 1,
+      "focus": "听懂提议者",
+      "explanation": {
+        "zh": "杨同乐提议找个海边住几天。",
+        "vi": "Đồng Lạc đề nghị tìm nơi ven biển ở vài ngày."
+      },
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：他们原定几点起飞？",
+        "vi": "Nghe bài khóa 2: Họ dự định cất cánh lúc mấy giờ?"
+      },
+      "options": [
+        "上午十点半",
+        "上午十点三刻",
+        "上午十点一刻"
+      ],
+      "answer": 2,
+      "focus": "听懂刻",
+      "explanation": {
+        "zh": "星期六上午十点一刻起飞。",
+        "vi": "Chuyến bay cất cánh sáng thứ Bảy lúc 10 giờ 15."
+      },
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：杨同乐打算自己拿什么？",
+        "vi": "Nghe bài khóa 3: Đồng Lạc định tự cầm gì?"
+      },
+      "options": [
+        "一个包",
+        "所有行李箱",
+        "司机的水果"
+      ],
+      "answer": 0,
+      "focus": "听懂物品归属",
+      "explanation": {
+        "zh": "他说还有一个包，我自己拿就可以。",
+        "vi": "Anh ấy nói còn một túi và sẽ tự cầm."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：小李在路上为他们做了什么？",
+        "vi": "Nghe bài khóa 4: Trên đường Tiểu Lý đã làm gì cho họ?"
+      },
+      "options": [
+        "选了机票",
+        "介绍了很多东西",
+        "教他们骑马"
+      ],
+      "answer": 1,
+      "focus": "听懂服务细节",
+      "explanation": {
+        "zh": "日记说路上给他们介绍了很多东西。",
+        "vi": "Nhật ký nói anh ấy giới thiệu nhiều điều trên đường."
+      },
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：宾馆房间与王一飞的想象相比怎么样？",
+        "vi": "Nghe bài khóa 4: Phòng khách sạn so với hình dung của Nhất Phi thế nào?"
+      },
+      "options": [
+        "没有想象中干净",
+        "比想象中小",
+        "跟想象的一样漂亮"
+      ],
+      "answer": 2,
+      "focus": "听懂比较",
+      "explanation": {
+        "zh": "房间跟她想的一样漂亮。",
+        "vi": "Phòng đẹp đúng như cô ấy hình dung."
+      },
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tôi chẳng thấy mệt chút nào."
+      },
+      "options": [
+        "我一点儿也不累。",
+        "我有点儿累。",
+        "我比以前更累。"
+      ],
+      "answer": 0,
+      "focus": "完全否定",
+      "explanation": {
+        "zh": "一点儿也不累是完全否定。",
+        "vi": "一点儿也不累 là hoàn toàn không mệt."
+      },
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Máy ảnh của tôi giống máy ảnh của anh ấy."
+      },
+      "options": [
+        "我的相机没有他的好。",
+        "我的相机跟他的一样。",
+        "我的相机跟他的不一样。"
+      ],
+      "answer": 1,
+      "focus": "相同比较",
+      "explanation": {
+        "zh": "跟他的一样表示相同。",
+        "vi": "跟他的一样 nghĩa là giống của anh ấy."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Ngoài bơi ra, tôi còn thích cưỡi ngựa."
+      },
+      "options": [
+        "除了游泳，我什么都不喜欢。",
+        "除了我，大家都喜欢骑马。",
+        "除了游泳，我还喜欢骑马。"
+      ],
+      "answer": 2,
+      "focus": "补充",
+      "explanation": {
+        "zh": "还引出另一种爱好。",
+        "vi": "还 đưa thêm một sở thích khác."
+      },
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Trừ thứ Hai ra, ngày nào tôi cũng có thời gian."
+      },
+      "options": [
+        "除了星期一，我每天都有时间。",
+        "除了星期一，我每天都没有时间。",
+        "星期一我也有时间。"
+      ],
+      "answer": 0,
+      "focus": "排除",
+      "explanation": {
+        "zh": "星期一是例外，其余每天都有时间。",
+        "vi": "Thứ Hai là ngoại lệ, các ngày còn lại đều rảnh."
+      },
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tài xế rất nhiệt tình, tôi rất hài lòng."
+      },
+      "options": [
+        "司机一点儿也不热情，我不满意。",
+        "司机特别热情，我很满意。",
+        "司机很满意，我还没见过他。"
+      ],
+      "answer": 1,
+      "focus": "特别；满意",
+      "explanation": {
+        "zh": "特别修饰热情，满意说评价。",
+        "vi": "特别 bổ nghĩa 热情; 满意 diễn đạt sự hài lòng."
+      },
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Tôi chưa từng đến thảo nguyên lần nào."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Phòng mới của chúng tôi rộng bằng phòng cũ."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Ngoài va-li, cô ấy còn mang hai chiếc túi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Trừ anh trai tôi ra, cả nhà đều thích ngắm trăng."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Máy bay trễ nửa tiếng, nhưng tôi chẳng hề sốt ruột."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3-fltrp-2026:l04:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：王一飞说自己好久没做什么了？",
+        "vi": "Nghe bài khóa 1: Nhất Phi nói đã lâu chưa làm gì?"
+      },
+      "options": [
+        "看月亮",
+        "骑马",
+        "吃羊肉"
+      ],
+      "answer": 1,
+      "focus": "听懂经历",
+      "explanation": {
+        "zh": "她说我好久没骑马了。",
+        "vi": "Cô ấy nói lâu rồi chưa cưỡi ngựa."
+      },
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：宾馆外面能看到哪两种动物？",
+        "vi": "Nghe bài khóa 2: Ngoài khách sạn có thể thấy hai loài vật nào?"
+      },
+      "options": [
+        "牛和羊",
+        "马和狗",
+        "牛和猫"
+      ],
+      "answer": 0,
+      "focus": "听懂并列名词",
+      "explanation": {
+        "zh": "一出门就能看见牛和羊。",
+        "vi": "Vừa ra cửa là thấy bò và dê/cừu."
+      },
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：小李打算什么时候再叫他们？",
+        "vi": "Nghe bài khóa 3: Khi nào Tiểu Lý định gọi họ?"
+      },
+      "options": [
+        "飞机起飞前",
+        "晚饭的时候",
+        "明天早上"
+      ],
+      "answer": 1,
+      "focus": "听懂时间安排",
+      "explanation": {
+        "zh": "小李说晚饭的时候叫他们。",
+        "vi": "Tiểu Lý nói sẽ gọi lúc ăn tối."
+      },
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：哪一项最符合小李的态度？",
+        "vi": "Nghe bài khóa 4: Điều nào đúng nhất về thái độ Tiểu Lý?"
+      },
+      "options": [
+        "等久了很生气",
+        "只想马上回家",
+        "耐心等待而且热情"
+      ],
+      "answer": 2,
+      "focus": "理解人物态度",
+      "explanation": {
+        "zh": "他一直等，一点儿也没着急，而且热情。",
+        "vi": "Anh ấy đợi suốt, không sốt ruột và rất nhiệt tình."
+      },
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "4-7"
+    }
+  ],
+  "grammarPresentations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l04:grammar1",
+      "groups": [
+        {
+          "title": {
+            "zh": "一＋量词",
+            "vi": "一 + lượng từ"
+          },
+          "explanation": {
+            "zh": "固定格式“一……也/都+不/没……”表示完全否定。",
+            "vi": "Mẫu cố định 一……也/都+不/没…… diễn đạt phủ định hoàn toàn."
+          },
+          "exampleIndices": [
+            0,
+            1
+          ],
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "小语讲堂：一＋量词",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "title": {
+            "zh": "一点儿",
+            "vi": "一点儿 thay cho 一 + lượng từ"
+          },
+          "explanation": {
+            "zh": "有时候，上面的“一+量词”还可以用“一点儿”来表示。",
+            "vi": "Đôi khi có thể thay 一 + lượng từ ở trên bằng 一点儿."
+          },
+          "exampleIndices": [
+            2,
+            3
+          ],
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "小语讲堂：一点儿",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "title": {
+            "zh": "形容词谓语",
+            "vi": "Vị ngữ là tính từ"
+          },
+          "explanation": {
+            "zh": "当谓语是形容词时，通常用“一点儿也/都+不/没+形容词”表示完全否定。",
+            "vi": "Khi vị ngữ là tính từ, thường dùng 一点儿也/都+不/没+tính từ để diễn đạt phủ định hoàn toàn."
+          },
+          "exampleIndices": [
+            4,
+            5
+          ],
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "小语讲堂：形容词谓语",
+            "provenance": "textbook"
+          }
+        }
+      ]
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l04:grammar3",
+      "groups": [
+        {
+          "title": {
+            "zh": "排除：除了……都……",
+            "vi": "Loại trừ: 除了……都……"
+          },
+          "explanation": {
+            "zh": "“除了……（以外），……都……”表示在一个范围内，排除一部分，其他的都存在相同的情况，其中“以外”可以省略。",
+            "vi": "Trong một phạm vi, 除了……（以外），……都…… loại trừ một phần và cho biết phần còn lại đều có cùng tình huống; có thể bỏ 以外."
+          },
+          "exampleIndices": [
+            0,
+            1
+          ],
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "小语讲堂：排除：除了……都……",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "title": {
+            "zh": "补充：除了……还/也……",
+            "vi": "Bổ sung: 除了……还/也……"
+          },
+          "explanation": {
+            "zh": "“除了……（以外），……还/也……”表示排除一部分，补充其他的。句子的主语放在句首，或者放在“还/也”的前面。",
+            "vi": "除了……（以外），……还/也…… tách một phần ra để bổ sung điều khác. Chủ ngữ đặt ở đầu câu hoặc trước 还/也."
+          },
+          "exampleIndices": [
+            2,
+            3
+          ],
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "小语讲堂：补充：除了……还/也……",
+            "provenance": "textbook"
+          }
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:objective1",
+          "prompt": {
+            "zh": "能听懂并谈论假期计划，能表达旅游过程中的感受。",
+            "vi": "Nghe hiểu và trao đổi về kế hoạch kỳ nghỉ, diễn đạt cảm nhận trong chuyến du lịch."
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:objective2",
+          "prompt": {
+            "zh": "能听懂并表达完全否定的意义。",
+            "vi": "Nghe hiểu và diễn đạt ý phủ định hoàn toàn."
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:objective3",
+          "prompt": {
+            "zh": "掌握“除了”的用法，能表达排除或补充的意义。",
+            "vi": "Nắm cách dùng 除了 để diễn đạt sự loại trừ hoặc bổ sung."
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với hình tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:warmup1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1：选择对应词语",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "相机",
+              "vi": "máy ảnh"
+            },
+            {
+              "zh": "羊",
+              "vi": "dê/cừu"
+            },
+            {
+              "zh": "月亮",
+              "vi": "mặt trăng"
+            },
+            {
+              "zh": "宾馆",
+              "vi": "khách sạn"
+            },
+            {
+              "zh": "骑马",
+              "vi": "cưỡi ngựa"
+            },
+            {
+              "zh": "海",
+              "vi": "biển"
+            }
+          ],
+          "answer": "宾馆",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P29 热身1 图1（D）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2：选择对应词语",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "相机",
+              "vi": "máy ảnh"
+            },
+            {
+              "zh": "羊",
+              "vi": "dê/cừu"
+            },
+            {
+              "zh": "月亮",
+              "vi": "mặt trăng"
+            },
+            {
+              "zh": "宾馆",
+              "vi": "khách sạn"
+            },
+            {
+              "zh": "骑马",
+              "vi": "cưỡi ngựa"
+            },
+            {
+              "zh": "海",
+              "vi": "biển"
+            }
+          ],
+          "answer": "骑马",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P29 热身1 图2（E）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3：选择对应词语",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "相机",
+              "vi": "máy ảnh"
+            },
+            {
+              "zh": "羊",
+              "vi": "dê/cừu"
+            },
+            {
+              "zh": "月亮",
+              "vi": "mặt trăng"
+            },
+            {
+              "zh": "宾馆",
+              "vi": "khách sạn"
+            },
+            {
+              "zh": "骑马",
+              "vi": "cưỡi ngựa"
+            },
+            {
+              "zh": "海",
+              "vi": "biển"
+            }
+          ],
+          "answer": "月亮",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P29 热身1 图3（C）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4：选择对应词语",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "相机",
+              "vi": "máy ảnh"
+            },
+            {
+              "zh": "羊",
+              "vi": "dê/cừu"
+            },
+            {
+              "zh": "月亮",
+              "vi": "mặt trăng"
+            },
+            {
+              "zh": "宾馆",
+              "vi": "khách sạn"
+            },
+            {
+              "zh": "骑马",
+              "vi": "cưỡi ngựa"
+            },
+            {
+              "zh": "海",
+              "vi": "biển"
+            }
+          ],
+          "answer": "羊",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P29 热身1 图4（B）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:warmup1-4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup1-picture5",
+          "prompt": {
+            "zh": "图5：选择对应词语",
+            "vi": "Hình 5: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "相机",
+              "vi": "máy ảnh"
+            },
+            {
+              "zh": "羊",
+              "vi": "dê/cừu"
+            },
+            {
+              "zh": "月亮",
+              "vi": "mặt trăng"
+            },
+            {
+              "zh": "宾馆",
+              "vi": "khách sạn"
+            },
+            {
+              "zh": "骑马",
+              "vi": "cưỡi ngựa"
+            },
+            {
+              "zh": "海",
+              "vi": "biển"
+            }
+          ],
+          "answer": "相机",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P29 热身1 图5（A）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:warmup1-5"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup1-picture6",
+          "prompt": {
+            "zh": "图6：选择对应词语",
+            "vi": "Hình 6: chọn từ tương ứng"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "相机",
+              "vi": "máy ảnh"
+            },
+            {
+              "zh": "羊",
+              "vi": "dê/cừu"
+            },
+            {
+              "zh": "月亮",
+              "vi": "mặt trăng"
+            },
+            {
+              "zh": "宾馆",
+              "vi": "khách sạn"
+            },
+            {
+              "zh": "骑马",
+              "vi": "cưỡi ngựa"
+            },
+            {
+              "zh": "海",
+              "vi": "biển"
+            }
+          ],
+          "answer": "海",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P29 热身1 图6（F）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:warmup1-6"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l04:illustration:warmup1-1",
+        "hsk3-fltrp-2026:l04:illustration:warmup1-2",
+        "hsk3-fltrp-2026:l04:illustration:warmup1-3",
+        "hsk3-fltrp-2026:l04:illustration:warmup1-4",
+        "hsk3-fltrp-2026:l04:illustration:warmup1-5",
+        "hsk3-fltrp-2026:l04:illustration:warmup1-6"
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按题号顺序作答。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo số câu."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:warmup2-discussion",
+      "kind": "open",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên thực tế."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:warmup2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup2-prompt1",
+          "prompt": {
+            "zh": "你喜欢旅游吗？为什么？",
+            "vi": "Bạn có thích du lịch không? Vì sao?"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:warmup2-prompt2",
+          "prompt": {
+            "zh": "下一个假期，你打算去哪儿旅游？",
+            "vi": "Kỳ nghỉ tới bạn định đi du lịch ở đâu?"
+          },
+          "source": {
+            "pdfPage": 41,
+            "printedPage": 29,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境或化名，不必填写真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu hoặc tên giả, không cần ghi thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text1:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text1-question1",
+          "prompt": {
+            "zh": "王一飞和杨同乐在说什么？",
+            "vi": "Nhất Phi và Đồng Lạc đang nói chuyện gì?"
+          },
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "明天的天气",
+              "vi": "thời tiết ngày mai"
+            },
+            {
+              "zh": "喜欢吃什么",
+              "vi": "thích ăn gì"
+            },
+            {
+              "zh": "假期做什么",
+              "vi": "làm gì trong kỳ nghỉ"
+            }
+          ],
+          "answer": "假期做什么",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P30 课文1 听两遍 第1题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text1:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text1-question2",
+          "prompt": {
+            "zh": "杨同乐觉得草原怎么样？",
+            "vi": "Đồng Lạc thấy thảo nguyên thế nào?"
+          },
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "草原天气不好",
+              "vi": "thời tiết thảo nguyên không tốt"
+            },
+            {
+              "zh": "草原比海边冷",
+              "vi": "thảo nguyên lạnh hơn bờ biển"
+            },
+            {
+              "zh": "草原很有意思",
+              "vi": "thảo nguyên rất thú vị"
+            }
+          ],
+          "answer": "草原很有意思",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P30 课文1 听两遍 第2题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text1:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "4-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text1:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text1-question3",
+          "prompt": {
+            "zh": "王一飞为什么不想去海边？",
+            "vi": "Vì sao Nhất Phi không muốn ra biển?"
+          },
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为她觉得现在去海边有点儿冷。",
+            "vi": "Vì cô ấy thấy bây giờ ra biển hơi lạnh."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text1:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text1-question4",
+          "prompt": {
+            "zh": "王一飞为什么觉得去草原好？",
+            "vi": "Vì sao Nhất Phi thấy đi thảo nguyên là ý hay?"
+          },
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为她好久没骑马了，也觉得这个主意好。",
+            "vi": "Vì lâu rồi cô ấy chưa cưỡi ngựa và thấy ý này hay."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text1:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text1-question5",
+          "prompt": {
+            "zh": "他们在草原上可以做什么？",
+            "vi": "Họ có thể làm gì trên thảo nguyên?"
+          },
+          "source": {
+            "pdfPage": 42,
+            "printedPage": 30,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们可以骑马、吃羊肉、看月亮。",
+            "vi": "Họ có thể cưỡi ngựa, ăn thịt cừu và ngắm trăng."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text1:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text2:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text2-question1",
+          "prompt": {
+            "zh": "王一飞觉得这次出去玩要带什么东西？",
+            "vi": "Nhất Phi thấy chuyến đi này cần mang gì?"
+          },
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "什么都不用带",
+              "vi": "không cần mang gì cả"
+            },
+            {
+              "zh": "带新买的相机",
+              "vi": "mang máy ảnh mới mua"
+            },
+            {
+              "zh": "要带很多东西",
+              "vi": "cần mang nhiều đồ"
+            }
+          ],
+          "answer": "带新买的相机",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P31 课文2 听两遍 第1题（B）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text2:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text2-question2",
+          "prompt": {
+            "zh": "杨同乐现在去做什么？",
+            "vi": "Bây giờ Đồng Lạc đi làm gì?"
+          },
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "买机票",
+              "vi": "mua vé máy bay"
+            },
+            {
+              "zh": "选宾馆",
+              "vi": "chọn khách sạn"
+            },
+            {
+              "zh": "准备行李",
+              "vi": "chuẩn bị hành lý"
+            }
+          ],
+          "answer": "准备行李",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P31 课文2 听两遍 第2题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text2:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "4-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text2:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text2-question3",
+          "prompt": {
+            "zh": "他们什么时候坐飞机出去玩？",
+            "vi": "Khi nào họ đi máy bay để đi chơi?"
+          },
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们星期六上午十点一刻坐飞机出去玩。",
+            "vi": "Họ đi máy bay lúc 10 giờ 15 sáng thứ Bảy để đi chơi."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text2:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text2-question4",
+          "prompt": {
+            "zh": "王一飞选的宾馆怎么样？",
+            "vi": "Khách sạn Nhất Phi chọn thế nào?"
+          },
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "那家宾馆很特别，跟别的都不一样，一出门就能看见牛和羊。",
+            "vi": "Khách sạn đó rất đặc biệt, khác các nơi khác; vừa ra cửa đã thấy bò và dê/cừu."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text2:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text2-question5",
+          "prompt": {
+            "zh": "杨同乐说一定不会忘带什么？",
+            "vi": "Đồng Lạc nói nhất định không quên mang gì?"
+          },
+          "source": {
+            "pdfPage": 44,
+            "printedPage": 32,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他说一定不会忘带新买的相机。",
+            "vi": "Anh ấy nói nhất định không quên mang máy ảnh mới mua."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text2:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text3:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text3-question1",
+          "prompt": {
+            "zh": "小李是谁？",
+            "vi": "Tiểu Lý là ai?"
+          },
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "同乐的朋友",
+              "vi": "bạn của Đồng Lạc"
+            },
+            {
+              "zh": "同乐的司机",
+              "vi": "tài xế của Đồng Lạc"
+            },
+            {
+              "zh": "宾馆的服务员",
+              "vi": "nhân viên khách sạn"
+            }
+          ],
+          "answer": "同乐的司机",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 5,
+            "item": "第4课 P33 课文3 听两遍 第1题（B）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text3:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text3-question2",
+          "prompt": {
+            "zh": "他们到宾馆后先做什么？",
+            "vi": "Đến khách sạn, họ làm gì trước?"
+          },
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "休息",
+              "vi": "nghỉ ngơi"
+            },
+            {
+              "zh": "吃晚饭",
+              "vi": "ăn tối"
+            },
+            {
+              "zh": "等朋友",
+              "vi": "đợi bạn"
+            }
+          ],
+          "answer": "休息",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P33 课文3 听两遍 第2题（A）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text3:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "4-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text3:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text3-question3",
+          "prompt": {
+            "zh": "他们为什么到晚了？",
+            "vi": "Vì sao họ đến muộn?"
+          },
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为飞机晚点了。",
+            "vi": "Vì máy bay bị trễ."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text3:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text3-question4",
+          "prompt": {
+            "zh": "他们有几个行李箱？",
+            "vi": "Họ có mấy va-li?"
+          },
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们有一个行李箱，还有一个包。",
+            "vi": "Họ có một vali, ngoài ra còn một chiếc túi."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text3:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text3-question5",
+          "prompt": {
+            "zh": "宾馆离机场远吗？",
+            "vi": "Khách sạn có xa sân bay không?"
+          },
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "不远，三十分钟就能到。",
+            "vi": "Không xa, ba mươi phút là đến."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text3:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text4:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text4-question1",
+          "prompt": {
+            "zh": "飞机晚点后，司机做什么了？",
+            "vi": "Sau khi máy bay bị trễ, tài xế đã làm gì?"
+          },
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "去宾馆了",
+              "vi": "đã đến khách sạn"
+            },
+            {
+              "zh": "去买水果了",
+              "vi": "đã đi mua trái cây"
+            },
+            {
+              "zh": "一直在机场等",
+              "vi": "đợi suốt ở sân bay"
+            }
+          ],
+          "answer": "一直在机场等",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P35 课文4 听两遍 第1题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text4:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text4-question2",
+          "prompt": {
+            "zh": "他们是什么时候到的？",
+            "vi": "Họ đến vào lúc nào?"
+          },
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "上午",
+              "vi": "buổi sáng"
+            },
+            {
+              "zh": "中午",
+              "vi": "buổi trưa"
+            },
+            {
+              "zh": "晚上",
+              "vi": "buổi tối"
+            }
+          ],
+          "answer": "晚上",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P35 课文4 听两遍 第2题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text4:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍课文，选择正确答案。",
+        "vi": "Nghe bài khóa hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "4-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:text4-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:text4:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text4-question3",
+          "prompt": {
+            "zh": "他们是怎么去宾馆的？",
+            "vi": "Họ đến khách sạn bằng cách nào?"
+          },
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们坐司机小李的车去宾馆。",
+            "vi": "Họ đi xe của tài xế Tiểu Lý đến khách sạn."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text4:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text4-question4",
+          "prompt": {
+            "zh": "王一飞为什么觉得小李很热情？",
+            "vi": "Vì sao Nhất Phi thấy Tiểu Lý rất nhiệt tình?"
+          },
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为他一直在机场等他们，一点儿也没着急，路上介绍了很多东西，还准备了水果。",
+            "vi": "Vì anh ấy đợi họ suốt ở sân bay, không sốt ruột, giới thiệu nhiều thứ trên đường và còn chuẩn bị trái cây."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text4:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:text4-question5",
+          "prompt": {
+            "zh": "宾馆的房间怎么样？",
+            "vi": "Phòng khách sạn thế nào?"
+          },
+          "source": {
+            "pdfPage": 47,
+            "printedPage": 35,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "房间跟她想的一样漂亮，又大又干净，她非常满意。",
+            "vi": "Phòng đẹp như cô ấy hình dung, vừa rộng vừa sạch, cô ấy rất hài lòng."
+          },
+          "targetRef": "hsk3-fltrp-2026:l04:text4:question5"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后回答问题。参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Đọc bài khóa rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "这件衣服______，你买吧。（贵）",
+        "vi": "Bộ quần áo này ______, bạn mua đi. (dùng 贵)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "固定格式“一……也/都＋不/没……”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar1-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一点儿也不贵",
+            "vi": "chẳng đắt chút nào"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "我们上个月搬家了，______。（认识）",
+        "vi": "Tháng trước chúng tôi chuyển nhà rồi, ______. (dùng 认识)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "固定格式“一……也/都＋不/没……”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar1-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一个邻居也不认识",
+            "vi": "không quen người hàng xóm nào"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "这个星期我太忙了，______。（时间）",
+        "vi": "Tuần này tôi bận quá, ______. (dùng 时间)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 43,
+        "printedPage": 31,
+        "section": "固定格式“一……也/都＋不/没……”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar1-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 43,
+            "printedPage": 31,
+            "section": "固定格式“一……也/都＋不/没……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一点儿时间也没有",
+            "vi": "chẳng có chút thời gian nào"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "我的杯子______。",
+        "vi": "Cốc của tôi ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "比较句（9）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar2-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "跟你的一样",
+            "vi": "giống cốc của bạn"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "今天学习的词______。",
+        "vi": "Những từ học hôm nay ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "比较句（9）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar2-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "跟昨天的一样多",
+            "vi": "nhiều bằng những từ học hôm qua"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "______一样高。",
+        "vi": "______ cao bằng nhau."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 45,
+        "printedPage": 33,
+        "section": "比较句（9）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar2-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 45,
+            "printedPage": 33,
+            "section": "比较句（9）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我跟哥哥",
+            "vi": "tôi và anh trai"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar3-practice1",
+      "kind": "open",
+      "title": {
+        "zh": "改写：妈妈喜欢喝咖啡，也喜欢喝茶。",
+        "vi": "Viết lại: Mẹ thích uống cà phê, cũng thích uống trà."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar3-practice1",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "除了咖啡以外，妈妈也喜欢喝茶。",
+            "vi": "Ngoài cà phê ra, mẹ còn thích uống trà."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar3-practice2",
+      "kind": "open",
+      "title": {
+        "zh": "改写：王老师是中国人，别的老师都是外国人。",
+        "vi": "Viết lại: Thầy/cô Vương là người Trung Quốc, các thầy cô khác đều là người nước ngoài."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar3-practice2",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "除了王老师以外，别的老师都是外国人。",
+            "vi": "Ngoài thầy/cô Vương ra, các thầy cô khác đều là người nước ngoài."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:grammar3-practice3",
+      "kind": "open",
+      "title": {
+        "zh": "改写：我只想吃水果，别的东西都不想吃。",
+        "vi": "Viết lại: Tôi chỉ muốn ăn trái cây, những thứ khác đều không muốn ăn."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 46,
+        "printedPage": 34,
+        "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:grammar3-practice3",
+          "prompt": {
+            "zh": "改写后的句子",
+            "vi": "Câu viết lại"
+          },
+          "source": {
+            "pdfPage": 46,
+            "printedPage": 34,
+            "section": "固定格式“除了……（以外），……都/还/也……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "除了水果以外，别的东西我都不想吃。",
+            "vi": "Ngoài trái cây ra, tôi không muốn ăn gì khác."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:comprehensive-words1",
+      "kind": "fill",
+      "title": {
+        "zh": "第一组：A 先；B 久；C 刻；D 满意；E 特别。",
+        "vi": "Nhóm 1: A trước; B lâu; C khắc (15 phút); D hài lòng; E đặc biệt."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:section1:bank:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice1",
+          "prompt": {
+            "zh": "1. 已经八点一______了，快起床吧。",
+            "vi": "1. Đã tám giờ một ______ rồi, mau dậy đi."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "先",
+              "vi": "trước"
+            },
+            {
+              "zh": "久",
+              "vi": "lâu"
+            },
+            {
+              "zh": "刻",
+              "vi": "khắc (15 phút)"
+            },
+            {
+              "zh": "满意",
+              "vi": "hài lòng"
+            },
+            {
+              "zh": "特别",
+              "vi": "đặc biệt"
+            }
+          ],
+          "answer": "刻",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice2",
+          "prompt": {
+            "zh": "2. 飞机晚点了，小李在机场等了很______。",
+            "vi": "2. Máy bay trễ, Tiểu Lý đợi ở sân bay rất ______."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "先",
+              "vi": "trước"
+            },
+            {
+              "zh": "久",
+              "vi": "lâu"
+            },
+            {
+              "zh": "刻",
+              "vi": "khắc (15 phút)"
+            },
+            {
+              "zh": "满意",
+              "vi": "hài lòng"
+            },
+            {
+              "zh": "特别",
+              "vi": "đặc biệt"
+            }
+          ],
+          "answer": "久",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第2题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice3",
+          "prompt": {
+            "zh": "3. 我______打车过去，你们可以慢慢走过去。",
+            "vi": "3. Tôi đi taxi qua đó ______, các bạn có thể thong thả đi bộ qua."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "先",
+              "vi": "trước"
+            },
+            {
+              "zh": "久",
+              "vi": "lâu"
+            },
+            {
+              "zh": "刻",
+              "vi": "khắc (15 phút)"
+            },
+            {
+              "zh": "满意",
+              "vi": "hài lòng"
+            },
+            {
+              "zh": "特别",
+              "vi": "đặc biệt"
+            }
+          ],
+          "answer": "先",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第3题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice4",
+          "prompt": {
+            "zh": "4. 我对这里的服务非常______，下次还会再来。",
+            "vi": "4. Tôi rất ______ với dịch vụ ở đây, lần sau sẽ lại đến."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "先",
+              "vi": "trước"
+            },
+            {
+              "zh": "久",
+              "vi": "lâu"
+            },
+            {
+              "zh": "刻",
+              "vi": "khắc (15 phút)"
+            },
+            {
+              "zh": "满意",
+              "vi": "hài lòng"
+            },
+            {
+              "zh": "特别",
+              "vi": "đặc biệt"
+            }
+          ],
+          "answer": "满意",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第4题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice5",
+          "prompt": {
+            "zh": "5. 我们这次在草原上住的宾馆很______，跟别的都不一样。",
+            "vi": "5. Khách sạn chúng tôi ở trên thảo nguyên lần này rất ______, khác hẳn các nơi khác."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "先",
+              "vi": "trước"
+            },
+            {
+              "zh": "久",
+              "vi": "lâu"
+            },
+            {
+              "zh": "刻",
+              "vi": "khắc (15 phút)"
+            },
+            {
+              "zh": "满意",
+              "vi": "hài lòng"
+            },
+            {
+              "zh": "特别",
+              "vi": "đặc biệt"
+            }
+          ],
+          "answer": "特别",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第5题（E）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:comprehensive-words2",
+      "kind": "fill",
+      "title": {
+        "zh": "第二组：A 一直；B 一样；C 一定；D 欢迎；E 别的。",
+        "vi": "Nhóm 2: A suốt; B giống nhau; C nhất định; D chào mừng; E khác."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:section1:bank:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice6",
+          "prompt": {
+            "zh": "6. A：草原真是太漂亮了，跟我想的______。 B：我觉得草原比我想的更漂亮。",
+            "vi": "6. A: Thảo nguyên đẹp quá, ______ với tôi hình dung. B: Tôi thấy còn đẹp hơn tưởng tượng."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一直",
+              "vi": "suốt"
+            },
+            {
+              "zh": "一样",
+              "vi": "giống nhau"
+            },
+            {
+              "zh": "一定",
+              "vi": "nhất định"
+            },
+            {
+              "zh": "欢迎",
+              "vi": "chào mừng"
+            },
+            {
+              "zh": "别的",
+              "vi": "khác"
+            }
+          ],
+          "answer": "一样",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第6题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice7",
+          "prompt": {
+            "zh": "7. A：我们搬家了，______你来我们的新家玩。 B：好啊，有时间我一定去。",
+            "vi": "7. A: Chúng tôi chuyển nhà rồi, ______ bạn đến nhà mới chơi. B: Được, rảnh tôi nhất định đến."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一直",
+              "vi": "suốt"
+            },
+            {
+              "zh": "一样",
+              "vi": "giống nhau"
+            },
+            {
+              "zh": "一定",
+              "vi": "nhất định"
+            },
+            {
+              "zh": "欢迎",
+              "vi": "chào mừng"
+            },
+            {
+              "zh": "别的",
+              "vi": "khác"
+            }
+          ],
+          "answer": "欢迎",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第7题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice8",
+          "prompt": {
+            "zh": "8. A：除了要买几个纸箱，还买______东西吗？ B：没有了，谢谢你帮我买。",
+            "vi": "8. A: Ngoài mấy thùng giấy, còn mua đồ ______ không? B: Hết rồi, cảm ơn bạn mua giúp."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一直",
+              "vi": "suốt"
+            },
+            {
+              "zh": "一样",
+              "vi": "giống nhau"
+            },
+            {
+              "zh": "一定",
+              "vi": "nhất định"
+            },
+            {
+              "zh": "欢迎",
+              "vi": "chào mừng"
+            },
+            {
+              "zh": "别的",
+              "vi": "khác"
+            }
+          ],
+          "answer": "别的",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第8题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice9",
+          "prompt": {
+            "zh": "9. A：喂，小李，这边天气不好，我们还没起飞呢。 B：没关系，我会______在机场等您。",
+            "vi": "9. A: A-lô, Tiểu Lý, thời tiết ở đây xấu, chúng tôi chưa cất cánh. B: Không sao, tôi sẽ ______ đợi anh chị ở sân bay."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一直",
+              "vi": "suốt"
+            },
+            {
+              "zh": "一样",
+              "vi": "giống nhau"
+            },
+            {
+              "zh": "一定",
+              "vi": "nhất định"
+            },
+            {
+              "zh": "欢迎",
+              "vi": "chào mừng"
+            },
+            {
+              "zh": "别的",
+              "vi": "khác"
+            }
+          ],
+          "answer": "一直",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第9题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:wordchoice10",
+          "prompt": {
+            "zh": "10. A：行李准备好了，你看看还需要带什么东西？ B：______别忘了带护照。",
+            "vi": "10. A: Hành lý xong rồi, xem còn cần mang gì? B: ______ đừng quên mang hộ chiếu."
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一直",
+              "vi": "suốt"
+            },
+            {
+              "zh": "一样",
+              "vi": "giống nhau"
+            },
+            {
+              "zh": "一定",
+              "vi": "nhất định"
+            },
+            {
+              "zh": "欢迎",
+              "vi": "chào mừng"
+            },
+            {
+              "zh": "别的",
+              "vi": "khác"
+            }
+          ],
+          "answer": "一定",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 6,
+            "item": "第4课 P36 综合练习 选词填空 第10题（C）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "图1：A：这几个月累坏了，每天除了工作，______。 B：______马上就要到了，你想去哪儿玩？ A：我______，都听你的吧。 B：好吧，我上网看看，咱们去哪儿休息休息。",
+        "vi": "Hình 1: A: Mấy tháng nay mệt quá, ngày nào ngoài công việc thì ______. B: ______ sắp đến rồi, bạn muốn đi đâu chơi? A: Tôi ______, tùy bạn thôi. B: Được, tôi lên mạng xem, mình đi đâu đó nghỉ ngơi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:section2:picture:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "什么也不想干",
+            "vi": "chẳng muốn làm gì"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture1-blank2",
+          "prompt": {
+            "zh": "图1第2空",
+            "vi": "Hình 1, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "假期",
+            "vi": "kỳ nghỉ"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture1-blank3",
+          "prompt": {
+            "zh": "图1第3空",
+            "vi": "Hình 1, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 48,
+            "printedPage": 36,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一点儿主意也没有",
+            "vi": "chẳng có ý tưởng nào"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l04:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "图2：A：你觉得咱们去海边怎么样？找一个______，多住几天。 B：每次旅游都去海边，能不能看看______？ A：除了______，还______，但是要坐飞机去。 B：这个主意好，我早就想去了。",
+        "vi": "Hình 2: A: Đi biển thì sao? Tìm một ______, ở thêm vài ngày. B: Lần nào cũng đi biển, có thể xem ______ không? A: Ngoài ______, còn ______, nhưng phải đi máy bay. B: Ý hay, tôi muốn đi từ lâu rồi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:section2:picture:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "宾馆",
+            "vi": "khách sạn"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "别的地方",
+            "vi": "nơi khác"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture2-blank3",
+          "prompt": {
+            "zh": "图2第3空",
+            "vi": "Hình 2, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "海边以外",
+            "vi": "bờ biển ra"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture2-blank4",
+          "prompt": {
+            "zh": "图2第4空",
+            "vi": "Hình 2, chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "可以去草原",
+            "vi": "có thể đi thảo nguyên"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l04:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "图3：A：你们怎么这么晚才到宾馆？______，别的人都到了。 B：我们的飞机______三个多小时。 A：你们一定累坏了吧，来，看看房间喜欢不喜欢？ B：太漂亮了，这个房间______。我觉得______。",
+        "vi": "Hình 3: A: Sao giờ các bạn mới đến khách sạn? ______, mọi người khác đều đến rồi. B: Máy bay của chúng tôi ______ hơn ba tiếng. A: Chắc các bạn mệt lắm, xem có thích phòng không? B: Đẹp quá, phòng này ______. Tôi thấy ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:section2:picture:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "除了你们以外",
+            "vi": "ngoài các bạn ra"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "晚点了",
+            "vi": "đã bị trễ"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture3-blank3",
+          "prompt": {
+            "zh": "图3第3空",
+            "vi": "Hình 3, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "又大又干净",
+            "vi": "vừa rộng vừa sạch"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l04:field:picture3-blank4",
+          "prompt": {
+            "zh": "图3第4空",
+            "vi": "Hình 3, chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "非常满意",
+            "vi": "rất hài lòng"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l04:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l04:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:activity:classroom-group",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l04:section3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l04:field:classroom-plan",
+          "prompt": {
+            "zh": "四人一组，设计一个假期旅游计划。计划内容包括旅游的地点、交通方式、住宿安排、每日活动等，并说明这样设计的原因。说明时，使用本课所学的词语和语言点。计划设计完成后，每组推选一人向全班介绍本组的旅游计划。介绍结束后，进行投票：每位同学可以投两票，投给自己喜欢的两个小组。通过统计票数，比一比哪组的旅游计划最好玩儿。",
+            "vi": "Nhóm bốn người lập kế hoạch du lịch kỳ nghỉ, gồm địa điểm, phương tiện, chỗ ở và hoạt động từng ngày; giải thích lý do bằng từ và ngữ pháp trong bài. Mỗi nhóm cử một người trình bày trước lớp. Sau đó mỗi bạn bỏ hai phiếu cho hai nhóm mình thích. Đếm phiếu để chọn kế hoạch thú vị nhất."
+          },
+          "source": {
+            "pdfPage": 49,
+            "printedPage": 37,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "在同一处记录计划、理由和汇报要点；按教材组织自愿课堂投票，不把个人喜好自动判分。可使用虚构情境或化名，不必填写真实个人信息；不自动判分。",
+        "vi": "Ghi kế hoạch, lý do và ý chính trình bày ở cùng một ô; có thể tổ chức bỏ phiếu trong lớp theo sách, không tự động chấm sở thích cá nhân. Có thể dùng tình huống hư cấu hoặc tên giả, không cần ghi thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "owner": "hsk3-fltrp-2026:l04:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:warmup1-picture1"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "客房里有两张床、床头灯和窗帘。",
+        "vi": "Trong phòng khách sạn có hai giường, đèn đầu giường và rèm cửa."
+      },
+      "description": {
+        "zh": "客房里有两张床、床头灯和窗帘。",
+        "vi": "Trong phòng khách sạn có hai giường, đèn đầu giường và rèm cửa."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk3-l04-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "5a10b38a24c04bf15be4cef395df5939ad39bdf5d3cd13116024508f1b286da3",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two hotel beds with separate headboards/pillows, lamp and curtains, no answer text."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "owner": "hsk3-fltrp-2026:l04:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:warmup1-picture2"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一名戴头盔的人骑着马，旁边有围栏和草地。",
+        "vi": "Một người đội mũ bảo hiểm cưỡi ngựa cạnh hàng rào và bãi cỏ."
+      },
+      "description": {
+        "zh": "一名戴头盔的人骑着马，旁边有围栏和草地。",
+        "vi": "Một người đội mũ bảo hiểm cưỡi ngựa cạnh hàng rào và bãi cỏ."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk3-l04-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "6536031d732d4c2a4d2f6500dc09aef946fd466733086141dfec23911dcd6c70",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Rider visibly seated on saddle with reins, four-legged horse, tail, ears and fence."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "owner": "hsk3-fltrp-2026:l04:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:warmup1-picture3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "深色夜空中有圆圆的月亮，月面有明暗斑块。",
+        "vi": "Trong bầu trời đêm sẫm màu có mặt trăng tròn với các mảng sáng tối."
+      },
+      "description": {
+        "zh": "深色夜空中有圆圆的月亮，月面有明暗斑块。",
+        "vi": "Trong bầu trời đêm sẫm màu có mặt trăng tròn với các mảng sáng tối."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk3-l04-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "2f4a9ce53552e7f52c0cc689a890294d10983f42e54f1c91a756da03f2798eb6",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Round cratered moon contrasts with dark sky."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "owner": "hsk3-fltrp-2026:l04:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:warmup1-picture4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "两只浅色、有角的羊卧在草地上。",
+        "vi": "Hai con dê/cừu màu nhạt có sừng nằm trên bãi cỏ."
+      },
+      "description": {
+        "zh": "两只浅色、有角的羊卧在草地上。",
+        "vi": "Hai con dê/cừu màu nhạt có sừng nằm trên bãi cỏ."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk3-l04-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "5f9935ea9829800d415e693e5aff5e7c322c7adc061d4cc5968841adf4b44eec",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two reclining pale horned goats/sheep on grass; source 羊 remains broader than one species."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:warmup1-5",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "辅助示意图：warmup1-5",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "owner": "hsk3-fltrp-2026:l04:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:warmup1",
+        "position": 5
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:warmup1-picture5"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一台带圆形镜头、快门按钮和背带的相机。",
+        "vi": "Một máy ảnh có ống kính tròn, nút chụp và dây đeo."
+      },
+      "description": {
+        "zh": "一台带圆形镜头、快门按钮和背带的相机。",
+        "vi": "Một máy ảnh có ống kính tròn, nút chụp và dây đeo."
+      },
+      "sceneKey": "warmup1-5",
+      "file": "illustrations/hsk3-l04-warmup1-5.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "8fcfaeba61976ea8230610fb7388c980dc293467757058ee31ce416785a8fab6",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Distinct camera body, large circular lens, shutter and strap."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:warmup1-6",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "section": "辅助示意图：warmup1-6",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 41,
+        "printedPage": 29,
+        "owner": "hsk3-fltrp-2026:l04:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:warmup1",
+        "position": 6
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:warmup1-picture6"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "海面有一层层波浪，远处有清晰的地平线。",
+        "vi": "Mặt biển có từng lớp sóng và đường chân trời rõ ở phía xa."
+      },
+      "description": {
+        "zh": "海面有一层层波浪，远处有清晰的地平线。",
+        "vi": "Mặt biển có từng lớp sóng và đường chân trời rõ ở phía xa."
+      },
+      "sceneKey": "warmup1-6",
+      "file": "illustrations/hsk3-l04-warmup1-6.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "85b68b7884b040aabd97f2d6f38610e252f91f26876c71e2acc7323d67efc488",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Horizontal sea horizon and wave rows; repaired right wave overrun and reopened final pixels."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 42,
+        "printedPage": 30,
+        "owner": "hsk3-fltrp-2026:l04:text1",
+        "sourceOwner": "hsk3-fltrp-2026:l04:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "绿色草原上有一条弯弯曲曲的河流。",
+        "vi": "Trên thảo nguyên xanh có dòng sông uốn khúc."
+      },
+      "description": {
+        "zh": "绿色草原上有一条弯弯曲曲的河流。",
+        "vi": "Trên thảo nguyên xanh có dòng sông uốn khúc."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk3-l04-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "fa55eb3afbe3af22549749ba1b040573e97166db2fd62e698d72c304cd1aa7ff",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Meandering river across layered green grassland, source landscape retained."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 44,
+        "printedPage": 32,
+        "owner": "hsk3-fltrp-2026:l04:text2",
+        "sourceOwner": "hsk3-fltrp-2026:l04:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一名成人把衣物放进打开的行李箱。",
+        "vi": "Một người lớn xếp quần áo vào vali đang mở."
+      },
+      "description": {
+        "zh": "一名成人把衣物放进打开的行李箱。",
+        "vi": "Một người lớn xếp quần áo vào vali đang mở."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk3-l04-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "76e1c30f760ef93d1d390c47802a44ac690df99c946147eb9594d1fde7e4099d",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Open suitcase with visibly separated hinged lid and clothing; hands contact packing area."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:text4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "section": "辅助示意图：text4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 47,
+        "printedPage": 35,
+        "owner": "hsk3-fltrp-2026:l04:text4",
+        "sourceOwner": "hsk3-fltrp-2026:l04:text4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "司机坐在汽车里，手臂放在打开的车窗边。",
+        "vi": "Tài xế ngồi trong xe, đặt tay bên cửa sổ đang mở."
+      },
+      "description": {
+        "zh": "司机坐在汽车里，手臂放在打开的车窗边。",
+        "vi": "Tài xế ngồi trong xe, đặt tay bên cửa sổ đang mở."
+      },
+      "sceneKey": "text4",
+      "file": "illustrations/hsk3-l04-text4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "5a366f0113f49014f0823524079c71571b052a71366c08ce35903cb400f7838a",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Driver visible through car window; lower body properly occluded by door after repair, no duplicated hands."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 48,
+        "printedPage": 36,
+        "owner": "hsk3-fltrp-2026:l04:section2",
+        "sourceOwner": "hsk3-fltrp-2026:l04:section2",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:picture1-blank1",
+        "hsk3-fltrp-2026:l04:field:picture1-blank2",
+        "hsk3-fltrp-2026:l04:field:picture1-blank3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:picture-dialogue1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一名疲倦的工作人员坐在电脑前，用手扶着额头。",
+        "vi": "Một người làm việc mệt mỏi ngồi trước máy tính, tay đỡ trán."
+      },
+      "description": {
+        "zh": "一名疲倦的工作人员坐在电脑前，用手扶着额头。",
+        "vi": "Một người làm việc mệt mỏi ngồi trước máy tính, tay đỡ trán."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk3-l04-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "ebb8dbb0a49e526942cf4d1e201768aec083ee13890a68b5c2f439a2a5cc8a06",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Tired seated worker touches forehead beside desktop monitor; repaired hand placement and reopened."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "owner": "hsk3-fltrp-2026:l04:section2",
+        "sourceOwner": "hsk3-fltrp-2026:l04:section2",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:picture2-blank1",
+        "hsk3-fltrp-2026:l04:field:picture2-blank2",
+        "hsk3-fltrp-2026:l04:field:picture2-blank3",
+        "hsk3-fltrp-2026:l04:field:picture2-blank4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:picture-dialogue2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "两名女子在机场边走边交谈，身边有拉杆行李箱。",
+        "vi": "Hai phụ nữ vừa đi vừa nói chuyện ở sân bay, bên cạnh có vali kéo."
+      },
+      "description": {
+        "zh": "两名女子在机场边走边交谈，身边有拉杆行李箱。",
+        "vi": "Hai phụ nữ vừa đi vừa nói chuyện ở sân bay, bên cạnh có vali kéo."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk3-l04-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "a9aabe0106fddccfabb13cf4f6c8b02c06912ede4f0b54ff42ccceaa9ada32e2",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two women gesture separately with roller luggage beside airport departure-board shapes."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l04:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 49,
+        "printedPage": 37,
+        "owner": "hsk3-fltrp-2026:l04:section2",
+        "sourceOwner": "hsk3-fltrp-2026:l04:section2",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l04:field:picture3-blank1",
+        "hsk3-fltrp-2026:l04:field:picture3-blank2",
+        "hsk3-fltrp-2026:l04:field:picture3-blank3",
+        "hsk3-fltrp-2026:l04:field:picture3-blank4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l04:activity:picture-dialogue3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "客房的窗帘拉开，窗外可以看见海和海滩。",
+        "vi": "Rèm phòng khách sạn được kéo sang hai bên, ngoài cửa sổ nhìn thấy biển và bãi cát."
+      },
+      "description": {
+        "zh": "客房的窗帘拉开，窗外可以看见海和海滩。",
+        "vi": "Rèm phòng khách sạn được kéo sang hai bên, ngoài cửa sổ nhìn thấy biển và bãi cát."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk3-l04-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "413932b989d58e833d49339fe0cc024d4240904a8a1471c58769fb5bf70ccc30",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images, copied video UI or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened every one of28 rasterized SVGs at full cell resolution across seven contact sheets; reopened repaired sheets.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Open hotel curtains and sea/horizon outside window; no invented bedroom exercise."
+      },
+      "independentReview": {
+        "report": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md",
+        "status": "passed-original-source-related-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK3 lessons 4–5 additive draft author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "answerPdfPages": [
+      5,
+      6
+    ],
+    "appendixPdfPages": [
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194
+    ],
+    "independentReview": "passed-source-content-and-real-renderer-state",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "46d69e3855dacfae167a9280d3f740af1ae9700c8f1531f811b0c9fccb2ad295",
+    "method": "Actual source, answer and appendix pixels opened; all baseline nested values retained. Source activities added with official, nonunique reference and open answers separated.",
+    "limitations": [
+      "Author data/pixel checks are not independent acceptance, browser or native-device certification.",
+      "No human-listening, tone-quality or audio-timing certification claimed.",
+      "No source PDFs/scans in public assets.",
+      "Source has no separate culture/video/review block."
+    ],
+    "grammarPresentationProvenance": "Additive source explanations transcribed from PDF43/P31 and PDF46/P34, with editorial bilingual navigation titles and Vietnamese translations. Baseline full explanations/examples remain untouched and every original example appears once in original order.",
+    "independentReviewReport": "independent-hsk3-lessons-04-05-review/candidate-review/acceptance-report.md"
+  },
+  "additionalSourceRevisions": [
+    {
+      "id": "hsk3-official-vi-20261004",
+      "filename": "HSK3 (3.0).pdf",
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "bodyPrintedPageOffset": 12,
+      "language": "zh+vi",
+      "role": "additional-official-source; no replacement of original-source identity",
+      "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "sameBytesAsOriginalChineseSource": false,
+      "officialPOSAbbreviationLanguage": "Vietnamese",
+      "doesNotRevalidateOriginalEnglishAppendix": true,
+      "posLegend": {
+        "source": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表：词类缩写说明",
+          "provenance": "textbook"
+        },
+        "printedLanguage": "vi",
+        "rawLabelToChineseCategory": {
+          "dt.": "名词",
+          "đgt.": "动词",
+          "tt.": "形容词",
+          "đt.": "代词",
+          "phó.": "副词",
+          "giới.": "介词",
+          "liên.": "连词",
+          "trợ.": "助词",
+          "số.": "数词",
+          "lượng.": "量词",
+          "sl.": "数量词",
+          "ct.": "叹词",
+          "tượng.": "拟声词",
+          "đtnn.": "能愿动词",
+          "ttố.": "前缀",
+          "htố.": "后缀"
+        }
+      },
+      "sourceAudit": {
+        "authorStatus": "visual-reviewed",
+        "independentStatus": "accepted-source-evidence",
+        "scope": "Chinese, pinyin, printed number, POS, glossary page, lesson numbers and stars",
+        "vietnameseGlossAlignment": "deferred-to-Phase-B",
+        "independentEvidence": {
+          "status": "accepted-source-evidence",
+          "reviewer": "qa_hsk1_05_08",
+          "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+          "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+          "reviewedStableRows": 523,
+          "acceptedInputFiles": [
+            "official-vi-glossary.tsv",
+            "official-vi-l01-06.json",
+            "official-vi-l07-12.json",
+            "official-vi-l13-18.json"
+          ],
+          "acceptedStableIdCount": 523,
+          "acceptedInputManifest": [
+            {
+              "filename": "official-vi-glossary.tsv",
+              "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+              "status": "independently-accepted-source-evidence",
+              "glossaryRows": 487
+            },
+            {
+              "filename": "official-vi-l01-06.json",
+              "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 171,
+              "printedOccurrences": 162,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l07-12.json",
+              "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 184,
+              "printedOccurrences": 166,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l13-18.json",
+              "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 168,
+              "printedOccurrences": 163,
+              "vocabularyBoxes": 24
+            }
+          ],
+          "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+        }
+      }
+    }
+  ]
+}
+`;export{e as default};

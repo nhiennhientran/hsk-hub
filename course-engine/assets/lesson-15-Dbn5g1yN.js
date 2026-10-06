@@ -1,0 +1,6003 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk2-fltrp-2026",
+  "version": "2026.1",
+  "number": 15,
+  "id": "hsk2-fltrp-2026:l15",
+  "title": {
+    "zh": "我想再去一次中国",
+    "vi": "Tôi muốn đến Trung Quốc thêm một lần nữa",
+    "py": "Wǒ xiǎng zài qù yí cì Zhōngguó"
+  },
+  "source": {
+    "startPdfPage": 145,
+    "endPdfPage": 155,
+    "startPrintedPage": 130,
+    "endPrintedPage": 140
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent AI content reviewer",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "All textbook PDF145–155 and answer PDF19–21 visually inspected.11 numbered new words plus the separately printed proper noun 颐和园 give12 lexical records.",
+      "Full nine-row lessons13–15 review spans PDF154–155; both word fields and understanding/use checks preserved.",
+      "Text1 preserves the printed scene-transition ellipsis and later spoken-turn leading ellipsis. ASR auxiliary evidence covers all8 tracks; homophonous 颐和园, names and pronouns retained from source.",
+      "Culture video15-1 is absent. Only its printed historical textbook topic/image is retained with an editorial current-policy caveat, not a present-day immigration-eligibility claim.",
+      "Printed hǎohǎo in text2, gè in 多个朋友 and distinct Hái shì / háishi in text3 preserved. Audio mapping/ASR evidence is not human/native listening certification.",
+      "Independent reviewer inspected the entire lesson JSON, all textbook PDF145–155 and answer PDF19–21 image pixels, including all nine review rows and both vocabulary fields.",
+      "Independently read all8 ASR JSON files, rehashed all8 original MP3s against the manifest and fully decoded all8 with ffmpeg; automated auxiliary evidence is not human/native listening certification.",
+      "Independent edits correct the ticket departure-time Vietnamese translation, prevent valid alternate ordering with 有 and frequency complements, and replace copied source-assessment targets with distinct original tasks."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并谈论旅游的计划。",
+      "vi": "Nghe hiểu và trao đổi kế hoạch du lịch.",
+      "id": "hsk2-fltrp-2026:l15:objective1",
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用动量补语表达动作或事情发生的次数。",
+      "vi": "Nghe hiểu và dùng bổ ngữ số lần để diễn đạt số lần hành động hoặc sự việc xảy ra.",
+      "id": "hsk2-fltrp-2026:l15:objective2",
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握“有”字句（2）的用法，能说明达到了一定的数量。",
+      "vi": "Nắm cách dùng câu 有 (2) để diễn đạt đạt tới một số lượng nhất định.",
+      "id": "hsk2-fltrp-2026:l15:objective3",
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk2-fltrp-2026:l15:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 路；B 鸟；C 机场；D 出门",
+          "vi": "A đường; B chim; C sân bay; D ra khỏi nhà"
+        },
+        {
+          "zh": "图片描述（编辑补充）：树枝上的两只鸟；公路；大人和孩子走出家门；机场候机区和窗外的飞机。",
+          "vi": "Mô tả tranh (biên tập bổ sung): hai con chim trên cành; đường lớn; người lớn và trẻ ra khỏi nhà; khu chờ sân bay và máy bay ngoài cửa kính.",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:warmup2",
+      "title": {
+        "zh": "根据自己的实际情况，说说下列行为发生的频率。",
+        "vi": "Theo thực tế bản thân, nói tần suất các hoạt động sau."
+      },
+      "items": [
+        {
+          "zh": "左栏列出行为（无标题）；表头：时间；次数",
+          "vi": "Cột trái liệt kê hoạt động (không có tiêu đề); hai tiêu đề in sẵn: thời gian; số lần"
+        },
+        {
+          "zh": "运动：一个星期；______次",
+          "vi": "Tập thể dục: một tuần; ______ lần"
+        },
+        {
+          "zh": "看电影：一个月；______次",
+          "vi": "Xem phim: một tháng; ______ lần"
+        },
+        {
+          "zh": "去旅游：一年；______次",
+          "vi": "Đi du lịch: một năm; ______ lần"
+        }
+      ],
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk2-fltrp-2026:l15:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在教室，同学们在考试。",
+        "vi": "Trong lớp, các bạn đang thi.",
+        "source": {
+          "pdfPage": 146,
+          "printedPage": 131,
+          "section": "课文1情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "15-1",
+      "lines": [
+        {
+          "zh": "考试就要开始了，请大家写上姓名，写好后就可以做题了。",
+          "vi": "Kỳ thi sắp bắt đầu, mời các em viết họ tên; viết xong có thể làm bài.",
+          "id": "hsk2-fltrp-2026:l15:text1:line1",
+          "speaker": "王一飞",
+          "py": "Kǎoshì jiù yào kāishǐ le, qǐng dàjiā xiě shàng xìngmíng, xiěhǎo hòu jiù kěyǐ zuò tí le.",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "……",
+          "vi": "…",
+          "id": "hsk2-fltrp-2026:l15:text1:line2",
+          "speaker": "（情景转换）",
+          "py": "…",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "老师，我做完了。",
+          "vi": "Thưa cô, em làm xong rồi.",
+          "id": "hsk2-fltrp-2026:l15:text1:line3",
+          "speaker": "白家月",
+          "py": "Lǎoshī, wǒ zuòwán le.",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "老师，我也做完了。",
+          "vi": "Thưa cô, em cũng làm xong rồi.",
+          "id": "hsk2-fltrp-2026:l15:text1:line4",
+          "speaker": "陈天中",
+          "py": "Lǎoshī, wǒ yě zuòwán le.",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "……对了，你们考完试想做什么？",
+          "vi": "… À đúng rồi, thi xong các em muốn làm gì?",
+          "id": "hsk2-fltrp-2026:l15:text1:line5",
+          "speaker": "王一飞",
+          "py": "… Duìle, nǐmen kǎowán shì xiǎng zuò shénme?",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我很想去中国，虽然去过一次，但是很想再去一次。",
+          "vi": "Em rất muốn đến Trung Quốc. Tuy đã đi một lần nhưng em rất muốn đi thêm lần nữa.",
+          "id": "hsk2-fltrp-2026:l15:text1:line6",
+          "speaker": "白家月",
+          "py": "Wǒ hěn xiǎng qù Zhōngguó, suīrán qùguo yí cì, dànshì hěn xiǎng zài qù yí cì.",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不错，到中国后你就可以经常说中文了。",
+          "vi": "Tốt đấy, đến Trung Quốc em có thể thường xuyên nói tiếng Trung.",
+          "id": "hsk2-fltrp-2026:l15:text1:line7",
+          "speaker": "王一飞",
+          "py": "Búcuò, dào Zhōngguó hòu nǐ jiù kěyǐ jīngcháng shuō Zhōngwén le.",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "同学们要开始做什么？",
+          "vi": "Các bạn sắp bắt đầu làm gì?",
+          "id": "hsk2-fltrp-2026:l15:text1:question1",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "学习",
+            "考试",
+            "跑步"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "白家月去过几次中国？",
+          "vi": "Gia Nguyệt đã đến Trung Quốc mấy lần?",
+          "id": "hsk2-fltrp-2026:l15:text1:question2",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "一次",
+            "两次",
+            "七次"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "考试开始前，王一飞让同学们做什么？",
+          "vi": "Trước khi thi, Nhất Phi bảo các bạn làm gì?",
+          "id": "hsk2-fltrp-2026:l15:text1:question3",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一飞说到中国后可以经常做什么？",
+          "vi": "Nhất Phi nói đến Trung Quốc có thể thường xuyên làm gì?",
+          "id": "hsk2-fltrp-2026:l15:text1:question4",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "课文1音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在咖啡店，李文和白家月在聊天儿。",
+        "vi": "Tại quán cà phê, Lý Văn và Gia Nguyệt trò chuyện.",
+        "source": {
+          "pdfPage": 147,
+          "printedPage": 132,
+          "section": "课文2情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "15-3",
+      "lines": [
+        {
+          "zh": "考完试了，我现在可以出国旅游了。",
+          "vi": "Thi xong rồi, bây giờ tôi có thể đi du lịch nước ngoài.",
+          "id": "hsk2-fltrp-2026:l15:text2:line1",
+          "speaker": "白家月",
+          "py": "Kǎowán shì le, wǒ xiànzài kěyǐ chūguó lǚyóu le.",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你要去哪儿？",
+          "vi": "Bạn định đi đâu?",
+          "id": "hsk2-fltrp-2026:l15:text2:line2",
+          "speaker": "李文",
+          "py": "Nǐ yào qù nǎr?",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我要再去一次北京。",
+          "vi": "Tôi định đến Bắc Kinh thêm một lần nữa.",
+          "id": "hsk2-fltrp-2026:l15:text2:line3",
+          "speaker": "白家月",
+          "py": "Wǒ yào zài qù yí cì Běijīng.",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "为什么还去北京？",
+          "vi": "Vì sao lại đi Bắc Kinh nữa?",
+          "id": "hsk2-fltrp-2026:l15:text2:line4",
+          "speaker": "李文",
+          "py": "Wèi shénme hái qù Běijīng?",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "因为我想再吃一次烤鸭，再喝一次奶茶，再去北京大学看一次电影……",
+          "vi": "Vì tôi muốn ăn vịt quay thêm một lần, uống trà sữa thêm một lần, và lại đến Đại học Bắc Kinh xem phim…",
+          "id": "hsk2-fltrp-2026:l15:text2:line5",
+          "speaker": "白家月",
+          "py": "Yīnwèi wǒ xiǎng zài chī yí cì kǎoyā, zài hē yí cì nǎichá, zài qù Běijīng Dàxué kàn yí cì diànyǐng…",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你想做的事情很多啊！",
+          "vi": "Bạn muốn làm nhiều việc thật!",
+          "id": "hsk2-fltrp-2026:l15:text2:line6",
+          "speaker": "李文",
+          "py": "Nǐ xiǎng zuò de shìqing hěn duō a!",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是啊，你看，我还在网上买好颐和园的门票了呢。",
+          "vi": "Đúng vậy, bạn xem, tôi còn mua xong vé vào Di Hòa Viên trên mạng rồi.",
+          "id": "hsk2-fltrp-2026:l15:text2:line7",
+          "speaker": "白家月",
+          "py": "Shì a, nǐ kàn, wǒ hái zài wǎngshang mǎihǎo Yíhé Yuán de ménpiào le ne.",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我的高中同学就在颐和园上班，可以让他给你好好介绍介绍。",
+          "vi": "Bạn học cấp ba của tôi làm việc ngay ở Di Hòa Viên, có thể nhờ bạn ấy giới thiệu kỹ cho bạn.",
+          "id": "hsk2-fltrp-2026:l15:text2:line8",
+          "speaker": "李文",
+          "py": "Wǒ de gāozhōng tóngxué jiù zài Yíhé Yuán shàngbān, kěyǐ ràng tā gěi nǐ hǎohǎo jièshao jièshao.",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "太好了！出门旅游，多个朋友多条路。",
+          "vi": "Tốt quá! Ra ngoài du lịch, thêm một người bạn là thêm một con đường.",
+          "id": "hsk2-fltrp-2026:l15:text2:line9",
+          "speaker": "白家月",
+          "py": "Tài hǎo le! Chūmén lǚyóu, duō gè péngyou duō tiáo lù.",
+          "source": {
+            "pdfPage": 148,
+            "printedPage": 133,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月要去哪儿？",
+          "vi": "Gia Nguyệt định đi đâu?",
+          "id": "hsk2-fltrp-2026:l15:text2:question1",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "北京",
+            "学校",
+            "同学家"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "李文的高中同学在哪儿工作？",
+          "vi": "Bạn học cấp ba của Lý Văn làm việc ở đâu?",
+          "id": "hsk2-fltrp-2026:l15:text2:question2",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "饭店",
+            "电影院",
+            "颐和园"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "白家月为什么还要去北京？",
+          "vi": "Vì sao Gia Nguyệt còn muốn đi Bắc Kinh nữa?",
+          "id": "hsk2-fltrp-2026:l15:text2:question3",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月在哪儿买的门票？",
+          "vi": "Gia Nguyệt mua vé vào cửa ở đâu?",
+          "id": "hsk2-fltrp-2026:l15:text2:question4",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "课文2音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在咖啡店，李文和白家月在聊天儿。",
+        "vi": "Tại quán cà phê, Lý Văn và Gia Nguyệt trò chuyện.",
+        "source": {
+          "pdfPage": 149,
+          "printedPage": 134,
+          "section": "课文3情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "15-5",
+      "lines": [
+        {
+          "zh": "李文，你有一年没回国了吧？",
+          "vi": "Lý Văn, chắc bạn đã một năm chưa về nước rồi nhỉ?",
+          "id": "hsk2-fltrp-2026:l15:text3:line1",
+          "speaker": "白家月",
+          "py": "Lǐ Wén, nǐ yǒu yì nián méi huí guó le ba?",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不到一年。我六月的时候回去了一次。",
+          "vi": "Chưa đến một năm. Tôi đã về một lần vào tháng sáu.",
+          "id": "hsk2-fltrp-2026:l15:text3:line2",
+          "speaker": "李文",
+          "py": "Bú dào yì nián. Wǒ Liùyuè de shíhou huíqùle yí cì.",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我怎么忘了？还是我送你去的机场呢。",
+          "vi": "Sao tôi lại quên nhỉ? Chính tôi đã đưa bạn ra sân bay mà.",
+          "id": "hsk2-fltrp-2026:l15:text3:line3",
+          "speaker": "白家月",
+          "py": "Wǒ zěnme wàng le? Hái shì wǒ sòng nǐ qù de jīchǎng ne.",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是啊。",
+          "vi": "Đúng vậy.",
+          "id": "hsk2-fltrp-2026:l15:text3:line4",
+          "speaker": "李文",
+          "py": "Shì a.",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我记得你那次的机票很便宜。",
+          "vi": "Tôi nhớ vé máy bay lần đó của bạn rất rẻ.",
+          "id": "hsk2-fltrp-2026:l15:text3:line5",
+          "speaker": "白家月",
+          "py": "Wǒ jìde nǐ nà cì de jīpiào hěn piányi.",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没错，可能因为那个时候去北京的人不多吧。",
+          "vi": "Đúng, có lẽ vì lúc đó ít người đi Bắc Kinh.",
+          "id": "hsk2-fltrp-2026:l15:text3:line6",
+          "speaker": "李文",
+          "py": "Méi cuò, kěnéng yīnwèi nàge shíhou qù Běijīng de rén bù duō ba.",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这次的机票虽然有点儿贵，但想到就要飞北京了，我还是很高兴的。",
+          "vi": "Vé máy bay lần này tuy hơi đắt, nhưng nghĩ đến việc sắp bay đến Bắc Kinh, tôi vẫn rất vui.",
+          "id": "hsk2-fltrp-2026:l15:text3:line7",
+          "speaker": "白家月",
+          "py": "Zhè cì de jīpiào suīrán yǒudiǎnr guì, dàn xiǎngdào jiù yào fēi Běijīng le, wǒ háishi hěn gāoxìng de.",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "李文多长时间没回国了？",
+          "vi": "Lý Văn đã bao lâu chưa về nước?",
+          "id": "hsk2-fltrp-2026:l15:text3:question1",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "一年",
+            "六个月",
+            "不到一年"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "白家月这次买的机票怎么样？",
+          "vi": "Vé máy bay Gia Nguyệt mua lần này thế nào?",
+          "id": "hsk2-fltrp-2026:l15:text3:question2",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "很贵",
+            "很便宜",
+            "有点儿贵"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "上次回国，是谁送李文去机场的？",
+          "vi": "Lần trước về nước, ai đưa Lý Văn ra sân bay?",
+          "id": "hsk2-fltrp-2026:l15:text3:question3",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月为什么很高兴？",
+          "vi": "Vì sao Gia Nguyệt rất vui?",
+          "id": "hsk2-fltrp-2026:l15:text3:question4",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "课文3音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在房间，李文在写日记。",
+        "vi": "Trong phòng, Lý Văn viết nhật ký.",
+        "source": {
+          "pdfPage": 151,
+          "printedPage": 136,
+          "section": "课文4情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "15-7",
+      "lines": [
+        {
+          "zh": "我六月的时候回过一次北京，现在有半年多没回去了，我有点儿想家。就要过年了，我要回家过年。家月这次也要去北京，我们都是星期五的飞机。家月说我们好像小鸟，一起飞到北京，再一起飞回这里。",
+          "vi": "Tôi từng về Bắc Kinh một lần vào tháng sáu; giờ đã hơn nửa năm chưa về, tôi hơi nhớ nhà. Sắp Tết rồi, tôi sẽ về nhà ăn Tết. Lần này Gia Nguyệt cũng đến Bắc Kinh, chúng tôi đều bay ngày thứ sáu. Gia Nguyệt nói chúng tôi như những chú chim nhỏ, cùng bay đến Bắc Kinh rồi lại cùng bay về đây.",
+          "id": "hsk2-fltrp-2026:l15:text4:line1",
+          "speaker": "李文",
+          "py": "Wǒ Liùyuè de shíhou huíguo yí cì Běijīng, xiànzài yǒu bàn nián duō méi huíqù le, wǒ yǒudiǎnr xiǎng jiā. Jiù yào guònián le, wǒ yào huí jiā guònián. Jiāyuè zhè cì yě yào qù Běijīng, wǒmen dōu shì Xīngqīwǔ de fēijī. Jiāyuè shuō wǒmen hǎoxiàng xiǎoniǎo, yìqǐ fēidào Běijīng, zài yìqǐ fēihuí zhèlǐ.",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "李文经常回北京，所以不想家。",
+          "vi": "Lý Văn thường về Bắc Kinh nên không nhớ nhà.",
+          "id": "hsk2-fltrp-2026:l15:text4:question1",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "李文、白家月跟鸟一起回北京。",
+          "vi": "Lý Văn và Gia Nguyệt cùng chim bay về Bắc Kinh.",
+          "id": "hsk2-fltrp-2026:l15:text4:question2",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "李文坐什么时候的飞机？",
+          "vi": "Lý Văn đi chuyến bay ngày nào?",
+          "id": "hsk2-fltrp-2026:l15:text4:question3",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "星期五",
+            "星期六",
+            "星期天"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "白家月要做什么？",
+          "vi": "Gia Nguyệt định làm gì?",
+          "id": "hsk2-fltrp-2026:l15:text4:question4",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "回国",
+            "去北京",
+            "去朋友家"
+          ],
+          "answer": 1
+        }
+      ],
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "课文4音频标记",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "姓名",
+      "vi": "họ và tên",
+      "id": "hsk2-fltrp-2026:l15:word01",
+      "py": "xìngmíng",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "15-2",
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：姓名",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "出国",
+      "vi": "ra nước ngoài",
+      "id": "hsk2-fltrp-2026:l15:word02",
+      "py": "chūguó",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "15-4",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：出国",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "门票",
+      "vi": "vé vào cửa",
+      "id": "hsk2-fltrp-2026:l15:word03",
+      "py": "ménpiào",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "15-4",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：门票",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "高中",
+      "vi": "trung học phổ thông, cấp ba",
+      "id": "hsk2-fltrp-2026:l15:word04",
+      "py": "gāozhōng",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "15-4",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：高中",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "出门",
+      "vi": "ra khỏi nhà, đi ra ngoài",
+      "id": "hsk2-fltrp-2026:l15:word05",
+      "py": "chūmén",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "15-4",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：出门",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "路",
+      "vi": "đường, lối",
+      "id": "hsk2-fltrp-2026:l15:word06",
+      "py": "lù",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "15-4",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：路",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "颐和园",
+      "vi": "Di Hòa Viên (Bắc Kinh)",
+      "id": "hsk2-fltrp-2026:l15:word07",
+      "py": "Yíhé Yuán",
+      "pos": "danh từ riêng",
+      "sourceText": 2,
+      "audioTrack": "15-4",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 161,
+        "printedPage": 146,
+        "section": "专有名词：颐和园",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "",
+        "sourceList": "proper-nouns",
+        "sourcePosPrinted": false,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "机场",
+      "vi": "sân bay",
+      "id": "hsk2-fltrp-2026:l15:word08",
+      "py": "jīchǎng",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "15-6",
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：机场",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "机票",
+      "vi": "vé máy bay",
+      "id": "hsk2-fltrp-2026:l15:word09",
+      "py": "jīpiào",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "15-6",
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：机票",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "飞",
+      "vi": "bay",
+      "id": "hsk2-fltrp-2026:l15:word10",
+      "py": "fēi",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "15-6",
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：飞",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "好像",
+      "vi": "giống như",
+      "id": "hsk2-fltrp-2026:l15:word11",
+      "py": "hǎoxiàng",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "15-8",
+      "source": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：好像",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "v.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": true,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "鸟",
+      "vi": "chim",
+      "id": "hsk2-fltrp-2026:l15:word12",
+      "py": "niǎo",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "15-8",
+      "source": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：鸟",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "n.",
+        "sourceList": "new-words",
+        "sourcePosPrinted": true,
+        "lessonNumbers": [
+          15
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        }
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk2-fltrp-2026:l15:grammar1",
+      "title": {
+        "zh": "动量补语（1）",
+        "vi": "Bổ ngữ số lần (1)"
+      },
+      "structure": "动词 + 数词 + 次；人名／地名宾语可在动量补语前或后",
+      "explanation": {
+        "zh": "“数词+次”用在动词后面，构成动量补语，表示动作发生的次数。动词同时带宾语时，如果宾语是人名或地名，放在动量补语前后都可以。",
+        "vi": "Số từ + 次 đứng sau động từ, nêu số lần hành động diễn ra. Nếu tân ngữ là tên người hoặc địa danh thì có thể đặt trước hoặc sau bổ ngữ số lần."
+      },
+      "examples": [
+        {
+          "zh": "我想去中国，虽然去过一次，但是很想再去一次。",
+          "vi": "Tôi muốn đi Trung Quốc, tuy từng đi một lần nhưng rất muốn đi thêm một lần nữa.",
+          "py": "Wǒ xiǎng qù Zhōngguó, suīrán qùguo yí cì, dànshì hěn xiǎng zài qù yí cì.",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "安妮去过一次北京。",
+          "vi": "Annie từng đến Bắc Kinh một lần.",
+          "py": "Ānnī qùguo yí cì Běijīng.",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文见了杨同乐两次。",
+          "vi": "Lý Văn đã gặp Dương Đồng Lạc hai lần.",
+          "py": "Lǐ Wén jiànle Yáng Tónglè liǎng cì.",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你去过______上海，觉得怎么样？B：很不错，吃得好，玩得好。",
+          "vi": "A: Bạn từng đến Thượng Hải ______, thấy thế nào? B: Rất tốt, ăn ngon, chơi vui.",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：安妮来过______我们家，她知道怎么走。B：好，我跟安妮一起过去。",
+          "vi": "A: Annie từng đến nhà chúng tôi ______, cô ấy biết đường. B: Được, tôi cùng Annie qua đó.",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你吃过北京烤鸭吗？B：我吃过______，很好吃。",
+          "vi": "A: Bạn từng ăn vịt quay Bắc Kinh chưa? B: Tôi ăn ______ rồi, rất ngon.",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "动量补语（1）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:grammar2",
+      "title": {
+        "zh": "动量补语（2）",
+        "vi": "Bổ ngữ số lần (2)"
+      },
+      "structure": "动词 + 动量补语 + 事物名词；动词 + 代词 + 动量补语",
+      "explanation": {
+        "zh": "动词既带动量补语，又带宾语时，如果宾语是事物名词，一般放在动量补语后面；如果宾语是代词，放在动量补语前面。",
+        "vi": "Khi có cả bổ ngữ số lần và tân ngữ, danh từ chỉ vật thường đứng sau bổ ngữ số lần; đại từ đứng trước bổ ngữ số lần. So sánh 吃一次烤鸭 với 找他一次."
+      },
+      "examples": [
+        {
+          "zh": "因为我想再吃一次烤鸭，再喝一次奶茶。",
+          "vi": "Vì tôi muốn ăn vịt quay thêm một lần, uống trà sữa thêm một lần.",
+          "py": "Yīnwèi wǒ xiǎng zài chī yí cì kǎoyā, zài hē yí cì nǎichá.",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我想找他一次。",
+          "vi": "Tôi muốn gặp anh ấy một lần.",
+          "py": "Wǒ xiǎng zhǎo tā yí cì.",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "安妮来过这儿两次。",
+          "vi": "Annie từng đến đây hai lần.",
+          "py": "Ānnī láiguo zhèr liǎng cì.",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你们去北京的时候见到一雪姐姐了吗？B：我们见了______两次，还去了一次她家。",
+          "vi": "A: Khi đến Bắc Kinh, các bạn đã gặp chị Nhất Tuyết chưa? B: Chúng tôi gặp ______ hai lần, còn đến nhà chị ấy một lần.",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：______？B：我每个星期给家里打两次电话。",
+          "vi": "A: ______? B: Mỗi tuần tôi gọi về nhà hai lần.",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：______？B：就下过一次雪。我觉得今年没有去年冷。",
+          "vi": "A: ______? B: Chỉ có tuyết rơi một lần. Tôi thấy năm nay không lạnh bằng năm ngoái.",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "动量补语（2）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:grammar3",
+      "title": {
+        "zh": "“有”字句（2）",
+        "vi": "Câu 有 (2)"
+      },
+      "structure": "有 + 数量短语",
+      "explanation": {
+        "zh": "“有+数量短语”表示达到一定的数量。",
+        "vi": "有 + cụm số lượng diễn đạt đạt tới một lượng, tuổi hoặc khoảng thời gian nhất định. Trong 有一年没回国了, 有 nêu khoảng thời gian đã đạt một năm, không có nghĩa “sở hữu”."
+      },
+      "examples": [
+        {
+          "zh": "你有一年没回国了吧？",
+          "vi": "Bạn đã một năm chưa về nước rồi nhỉ?",
+          "py": "Nǐ yǒu yì nián méi huí guó le ba?",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你女儿今年有10岁了吗？",
+          "vi": "Năm nay con gái bạn đã mười tuổi chưa?",
+          "py": "Nǐ nǚ’ér jīnnián yǒu shí suì le ma?",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我有一个月没给家里打电话了。",
+          "vi": "Tôi đã một tháng chưa gọi điện về nhà.",
+          "py": "Wǒ yǒu yí ge yuè méi gěi jiāli dǎ diànhuà le.",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：飞北京的机票______8000块钱吗？B：没有，现在机票便宜。",
+          "vi": "A: Vé máy bay đi Bắc Kinh ______ 8.000 tệ không? B: Không, bây giờ vé rẻ.",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你男朋友______？B：没有，他今年29岁，比我还小一岁呢。",
+          "vi": "A: Bạn trai bạn ______? B: Chưa, năm nay anh ấy29 tuổi, còn nhỏ hơn tôi một tuổi.",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：我们两个______？B：是啊，一年没见，你还是那样。",
+          "vi": "A: Hai chúng ta ______? B: Đúng vậy, một năm không gặp, bạn vẫn như thế.",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "“有”字句（2）",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk2-fltrp-2026:l15:section1",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: điền từ"
+      },
+      "blocks": [
+        {
+          "zh": "A 出国；B 姓名；C 门票；D 鸟；E 机票",
+          "vi": "A ra nước ngoài; B họ tên; C vé vào cửa; D chim; E vé máy bay",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）你看，那只小______多漂亮啊！\\n（2）我记得这里的______不到10块钱，现在怎么这么贵了？\\n（3）儿子就要______上大学了，你给他准备了什么东西啊？\\n（4）A：你买的是什么时候的______？B：明天早上的，下午就到北京了。\\n（5）A：请您说一下他的______，我看看有没有这个人。B：王大明。A：不好意思，他没住在我们酒店。",
+          "vi": "(1) Bạn nhìn kìa, con ______ nhỏ đó đẹp biết bao!\\n(2) Tôi nhớ ______ ở đây chưa tới10 tệ, sao giờ đắt thế?\\n(3) Con trai sắp ______ học đại học, bạn đã chuẩn bị cho con những gì?\\n(4) A: ______ bạn mua là cho chuyến khởi hành lúc nào? B: Sáng mai, chiều là đến Bắc Kinh.\\n(5) A: Xin cho biết ______ của anh ấy để tôi xem có người này không. B: Vương Đại Minh. A: Xin lỗi, anh ấy không ở khách sạn chúng tôi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: mô tả tranh"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp của bài miêu tả tranh.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）她一个星期______三次法国。\\n（2）你的______同学有50个人吗？\\n（3）我走过这条到______的______。\\n（4）他们喜欢踢球，每个星期踢______次。",
+          "vi": "(1) Một tuần cô ấy ______ Pháp ba lần.\\n(2) Bạn học ______ của bạn có đến50 người không?\\n(3) Tôi từng đi ______ này đến ______.\\n(4) Họ thích đá bóng, mỗi tuần đá ______ lần.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片描述（编辑补充）：空乘人员在飞机上给乘客服务；穿校服的高中学生；机场外的道路；孩子们在踢足球。",
+          "vi": "Mô tả tranh (biên tập bổ sung): tiếp viên phục vụ khách trên máy bay; học sinh cấp ba mặc đồng phục; đường bên ngoài sân bay; trẻ chơi bóng đá.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:section3",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：双人活动",
+        "vi": "Hoạt động trên lớp: luyện theo cặp"
+      },
+      "blocks": [
+        {
+          "zh": "两人一组，谈论旅游经历，介绍去过哪里、去过几次、吃得怎么样、玩得怎么样以及旅游的感受，等等。尽可能使用本课所学生词和语法。",
+          "vi": "Theo cặp, trao đổi trải nghiệm du lịch: từng đến đâu, mấy lần, ăn uống, vui chơi thế nào và cảm nhận về chuyến đi. Cố gắng dùng từ và ngữ pháp của bài.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你去过北京吗？\\nB：去过。\\n……",
+          "vi": "A: Bạn từng đến Bắc Kinh chưa?\\nB: Rồi.\\n…",
+          "kind": "example",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "课堂活动：双人活动",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:section4",
+      "kind": "culture",
+      "title": {
+        "zh": "小语的彩蛋：中国240小时过境免签政策",
+        "vi": "Tìm hiểu thêm: chủ đề chính sách miễn thị thực quá cảnh240 giờ của Trung Quốc"
+      },
+      "blocks": [
+        {
+          "zh": "中国240小时过境免签政策。视频编号15-1。",
+          "vi": "Chủ đề in trong sách: chính sách miễn thị thực quá cảnh240 giờ của Trung Quốc. Mã video15-1.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "小语的彩蛋：中国240小时过境免签政策",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片描述及资源说明（编辑补充）：机场候机区内有行李箱，窗外有飞机。所提供素材没有对应视频，只保留原书主题；不能用同号课文音频代替。书中标题不是当前入境资格或旅行建议；实际出行前应核对官方现行规定。",
+          "vi": "Mô tả và ghi chú tài nguyên (biên tập bổ sung): vali ở khu chờ sân bay, ngoài cửa kính có máy bay. Gói tài liệu không có video tương ứng, chỉ lưu chủ đề trong sách; không thay bằng bản ghi bài khóa cùng số. Tiêu đề sách không xác nhận điều kiện nhập cảnh hiện hành; trước chuyến đi thực tế cần kiểm tra quy định chính thức đang áp dụng.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "小语的彩蛋：中国240小时过境免签政策",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 154,
+        "printedPage": 139,
+        "section": "小语的彩蛋：中国240小时过境免签政策",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:section5",
+      "kind": "review",
+      "title": {
+        "zh": "学习小结：13～15课",
+        "vi": "Tổng kết học tập: bài13–15"
+      },
+      "blocks": [
+        {
+          "zh": "13～15课我的学习情况：词语学习；我理解并会用；我需要努力的。",
+          "vi": "Tình hình học bài13–15: từ vựng; tôi hiểu và dùng được; điều cần cố gắng.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我已经记住并会使用的词语：______\\n我还没记住的词语：______",
+          "vi": "Những từ đã nhớ và dùng được: ______\\nNhững từ chưa nhớ: ______",
+          "kind": "table",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "每项分别自评：理解 □；会用 □。",
+          "vi": "Tự đánh giá riêng từng mục: hiểu □; dùng được □.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "双宾语句（2）。例：我送给她一本书。 理解 □；会用 □。",
+          "vi": "Hai tân ngữ (2). Ví dụ: Tôi tặng cô ấy một quyển sách. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（7）。例：我哥哥比我大两岁。 理解 □；会用 □。",
+          "vi": "So sánh (7). Ví dụ: Anh trai hơn tôi hai tuổi. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（8）。例：姐姐比我高一点儿。 理解 □；会用 □。",
+          "vi": "So sánh (8). Ví dụ: Chị cao hơn tôi một chút. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "存现句（2）。例：楼下站着很多人。 理解 □；会用 □。",
+          "vi": "Tồn hiện (2). Ví dụ: Dưới nhà có nhiều người đang đứng. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "程度副词“多”。例：她的汉语说得多好啊！ 理解 □；会用 □。",
+          "vi": "Phó từ 多. Ví dụ: Cô ấy nói tiếng Trung hay biết bao! Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "复合趋向补语。例：我们走回家去吧。 理解 □；会用 □。",
+          "vi": "Bổ ngữ xu hướng kép. Ví dụ: Chúng ta đi bộ về nhà đi. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "动量补语（1）。例：我去过两次北京。 理解 □；会用 □。",
+          "vi": "Bổ ngữ số lần (1). Ví dụ: Tôi từng đến Bắc Kinh hai lần. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "动量补语（2）。例：我来过这儿两次。 理解 □；会用 □。",
+          "vi": "Bổ ngữ số lần (2). Ví dụ: Tôi từng đến đây hai lần. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "“有”字句（2）。例：你的老师有三十岁吗？ 理解 □；会用 □。",
+          "vi": "Câu 有 (2). Ví dụ: Giáo viên của bạn đã ba mươi tuổi chưa? Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我需要努力的：______",
+          "vi": "Điều tôi cần cố gắng: ______",
+          "kind": "question",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 154,
+        "printedPage": 139,
+        "section": "学习小结：13～15课",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk2-fltrp-2026:l15:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "表格上要求写“姓名”，应该写什么？",
+        "vi": "Biểu mẫu yêu cầu viết 姓名, cần viết gì?"
+      },
+      "options": [
+        "自己的学校",
+        "自己的电话",
+        "自己的姓和名字"
+      ],
+      "answer": 2,
+      "focus": "full-name",
+      "explanation": {
+        "zh": "姓名包括姓和名字。",
+        "vi": "姓名 gồm họ và tên."
+      },
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“他去过三次上海”说明去上海的什么？",
+        "vi": "Anh ấy từng đến Thượng Hải ba lần nói thông tin gì?"
+      },
+      "options": [
+        "次数",
+        "每次住的天数",
+        "去的日期"
+      ],
+      "answer": 0,
+      "focus": "frequency-count",
+      "explanation": {
+        "zh": "三次是动作发生次数，不是时长或日期。",
+        "vi": "三次 là số lần, không phải thời lượng hoặc ngày đi."
+      },
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "按本课格式，代词作宾语时哪句合适？",
+        "vi": "Theo mẫu bài học, tân ngữ là đại từ thì câu nào phù hợp?"
+      },
+      "options": [
+        "我见过两次他。",
+        "我见过他两次。",
+        "我见他过两次。"
+      ],
+      "answer": 1,
+      "focus": "pronoun-position",
+      "explanation": {
+        "zh": "代词他应在次数前面。",
+        "vi": "Đại từ 他 đứng trước số lần."
+      },
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "按本课格式，用一次说明吃饭的次数，应选哪句？",
+        "vi": "Dùng 一次 để chỉ số lần ăn theo mẫu bài học."
+      },
+      "options": [
+        "我吃了一个小时的饭。",
+        "我吃了一碗饭。",
+        "我吃了一次饭。"
+      ],
+      "answer": 2,
+      "focus": "thing-object-position",
+      "explanation": {
+        "zh": "事物宾语饭放在一次后。",
+        "vi": "Tân ngữ 饭 đứng sau 一次."
+      },
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我有两个月没见他了”表示什么？",
+        "vi": "Tôi đã hai tháng chưa gặp anh ấy nghĩa là gì?"
+      },
+      "options": [
+        "两个月里没有见他。",
+        "两个月里见了他两次。",
+        "两个月后要见他。"
+      ],
+      "answer": 0,
+      "focus": "you-duration",
+      "explanation": {
+        "zh": "有两个月表示没有见面的时间达到两个月。",
+        "vi": "有两个月 nói thời gian chưa gặp đã đạt hai tháng."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "去公园参观，要买的入场凭证叫什么？",
+        "vi": "Đi tham quan công viên cần mua loại vé vào cửa nào?"
+      },
+      "options": [
+        "机票",
+        "门票",
+        "车票"
+      ],
+      "answer": 1,
+      "focus": "admission-ticket",
+      "explanation": {
+        "zh": "门票用于进入参观场所。",
+        "vi": "门票 là vé vào nơi tham quan."
+      },
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "坐飞机应先去什么地方？",
+        "vi": "Đi máy bay trước hết đến đâu?"
+      },
+      "options": [
+        "饭馆",
+        "花店",
+        "机场"
+      ],
+      "answer": 2,
+      "focus": "airport-place",
+      "explanation": {
+        "zh": "机场是乘坐飞机的地方。",
+        "vi": "机场 là nơi đi máy bay."
+      },
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“高中同学”是在哪个阶段一起学习的人？",
+        "vi": "Bạn học 高中 là người học cùng giai đoạn nào?"
+      },
+      "options": [
+        "高中",
+        "大学",
+        "小学"
+      ],
+      "answer": 0,
+      "focus": "school-stage",
+      "explanation": {
+        "zh": "高中指上大学以前的高中阶段。",
+        "vi": "高中 là bậc trung học phổ thông trước đại học."
+      },
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“那朵白花好像小鸟”是什么意思？",
+        "vi": "Bông hoa trắng đó giống chim nhỏ nghĩa là gì?"
+      },
+      "options": [
+        "说花是送给小鸟的。",
+        "说花的样子像小鸟。",
+        "说花旁边有小鸟。"
+      ],
+      "answer": 1,
+      "focus": "likeness",
+      "explanation": {
+        "zh": "好像表示花的样子像小鸟。",
+        "vi": "好像 cho biết hình dáng bông hoa giống chim nhỏ."
+      },
+      "source": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“机票有五千元吗？”是在问什么？",
+        "vi": "Vé máy bay có đến năm nghìn tệ không: hỏi gì?"
+      },
+      "options": [
+        "机票有五千张吗？",
+        "机票价格达到五千元吗？",
+        "机票是哪天的？"
+      ],
+      "answer": 1,
+      "focus": "you-amount",
+      "explanation": {
+        "zh": "有+数量短语表示是否达到该数量。",
+        "vi": "有 + số lượng hỏi có đạt mức đó không."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 我: Tôi từng đến Thượng Hải hai lần. Bắt buộc đặt 两次 trước địa danh. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "上海。",
+        "我",
+        "两次",
+        "去",
+        "过"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        2,
+        0
+      ],
+      "focus": "place-frequency",
+      "explanation": {
+        "zh": "我去过两次上海。",
+        "vi": "Theo vị trí được yêu cầu, số lần đứng trước địa danh."
+      },
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 姐姐去年: Năm ngoái chị gái đã gặp anh ấy ba lần. Giữ 见过 liền nhau. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "他",
+        "姐姐",
+        "三次。",
+        "见",
+        "去年",
+        "过"
+      ],
+      "answer": [
+        1,
+        4,
+        3,
+        5,
+        0,
+        2
+      ],
+      "focus": "pronoun-frequency",
+      "explanation": {
+        "zh": "姐姐去年见过他三次。",
+        "vi": "Đại từ 他 phải đứng trước 三次; 去年 đứng sau chủ ngữ theo yêu cầu."
+      },
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 姐姐每个月: Mỗi tháng chị gái đi máy bay hai lần. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "两次",
+        "姐姐",
+        "飞机。",
+        "每个月",
+        "坐"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "focus": "monthly-flight-frequency",
+      "explanation": {
+        "zh": "姐姐每个月坐两次飞机。",
+        "vi": "Sau chủ ngữ và khoảng thời gian là động từ 坐; 两次 đứng trước tân ngữ 飞机."
+      },
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 我有: Tôi đã ba tháng chưa đến quán ăn này rồi. Giữ 没来 liền nhau. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "三个月",
+        "这家饭馆",
+        "我",
+        "了。",
+        "有",
+        "没来"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        5,
+        1,
+        3
+      ],
+      "focus": "you-not-visited",
+      "explanation": {
+        "zh": "我有三个月没来这家饭馆了。",
+        "vi": "有 + thời lượng + 没 + hành động + 了."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 我们想先: Chúng tôi muốn mua vé vào cửa trên mạng trước. Đặt 在网上 ngay trước 买. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "门票。",
+        "我们",
+        "买",
+        "先",
+        "想",
+        "在网上"
+      ],
+      "answer": [
+        1,
+        4,
+        3,
+        5,
+        2,
+        0
+      ],
+      "focus": "online-ticket-plan",
+      "explanation": {
+        "zh": "我们想先在网上买门票。",
+        "vi": "想先 nêu dự định làm trước; 在网上 nêu cách mua."
+      },
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-1：老师问考完试的打算前，家月和天中的答题情况怎么样？",
+        "vi": "Nghe15-1: trước khi cô hỏi dự định sau kỳ thi, Gia Nguyệt và Thiên Trung làm bài đến đâu rồi?"
+      },
+      "options": [
+        "两个人都做完了。",
+        "只有家月做完了。",
+        "两个人都还没做完。"
+      ],
+      "answer": 0,
+      "focus": "listen-both-finished",
+      "explanation": {
+        "zh": "家月说“我做完了”，天中接着说“我也做完了”。",
+        "vi": "Gia Nguyệt nói đã làm xong; Thiên Trung tiếp lời rằng mình cũng đã xong."
+      },
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-3：家月已经在网上买好了什么？",
+        "vi": "Nghe15-3: Gia Nguyệt đã mua xong gì trên mạng?"
+      },
+      "options": [
+        "北京大学的电影票",
+        "颐和园的门票",
+        "去学校的地铁票"
+      ],
+      "answer": 1,
+      "focus": "listen-ticket-plan",
+      "explanation": {
+        "zh": "她说已经买好颐和园的门票。",
+        "vi": "Cô ấy nói đã mua vé vào Di Hòa Viên."
+      },
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-5：李文上次是什么时候回国的？",
+        "vi": "Nghe15-5: Lý Văn về nước lần trước vào lúc nào?"
+      },
+      "options": [
+        "三月",
+        "九月",
+        "六月"
+      ],
+      "answer": 2,
+      "focus": "listen-return-month",
+      "explanation": {
+        "zh": "他说六月的时候回去了一次。",
+        "vi": "Bạn ấy nói đã về một lần vào tháng sáu."
+      },
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-7：李文这次为什么要回家？",
+        "vi": "Nghe15-7: vì sao lần này Lý Văn muốn về nhà?"
+      },
+      "options": [
+        "回家过年，也有点儿想家。",
+        "回家参加高中考试。",
+        "回家买便宜的机票。"
+      ],
+      "answer": 0,
+      "focus": "listen-return-reason",
+      "explanation": {
+        "zh": "他提到想家和快过年了。",
+        "vi": "Bạn ấy nói nhớ nhà và sắp Tết."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-7"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-7：家月把两人比作什么？",
+        "vi": "Nghe15-7: Gia Nguyệt ví hai người với gì?"
+      },
+      "options": [
+        "两辆车",
+        "小鸟",
+        "两条路"
+      ],
+      "answer": 1,
+      "focus": "listen-metaphor",
+      "explanation": {
+        "zh": "她说他们好像小鸟，一起飞去再飞回。",
+        "vi": "Cô ví hai người với chim nhỏ, cùng bay đi và bay về."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-7"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Tôi muốn đi Tây An thêm một lần nữa."
+      },
+      "options": [
+        "我只去过一次西安。",
+        "我不想去西安。",
+        "我想再去一次西安。"
+      ],
+      "answer": 2,
+      "focus": "translation-lesson15",
+      "explanation": {
+        "zh": "想再去表示再次前往的愿望。",
+        "vi": "想再去 nói muốn đến thêm lần nữa."
+      },
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Anh ấy đã tìm tôi ba lần."
+      },
+      "options": [
+        "他找过我三次。",
+        "我找过他三次。",
+        "他三个月没找我了。"
+      ],
+      "answer": 0,
+      "focus": "translation-lesson15",
+      "explanation": {
+        "zh": "他是主语，我是代词宾语，在三次前。",
+        "vi": "他 là chủ ngữ; 我 là tân ngữ đại từ, đứng trước 三次."
+      },
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Em gái đã ba tháng chưa mua quần áo rồi."
+      },
+      "options": [
+        "妹妹三个月买了三次衣服。",
+        "妹妹有三个月没买衣服了。",
+        "妹妹三个月以后才买衣服。"
+      ],
+      "answer": 1,
+      "focus": "translation-lesson15",
+      "explanation": {
+        "zh": "有三个月没买衣服表示未买衣服的时长。",
+        "vi": "有三个月没买衣服 diễn đạt thời gian đã ba tháng chưa mua quần áo."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Chúng tôi muốn ra nước ngoài thăm bạn."
+      },
+      "options": [
+        "我们的朋友想出国。",
+        "我们想在机场见朋友。",
+        "我们想出国看朋友。"
+      ],
+      "answer": 2,
+      "focus": "translation-lesson15",
+      "explanation": {
+        "zh": "我们想出国看朋友保留主体、愿望、出国和看朋友四个信息。",
+        "vi": "Câu giữ đủ chủ thể chúng tôi, ý muốn, ra nước ngoài và thăm bạn."
+      },
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Vé máy bay của tôi rẻ hơn vé của bạn năm mươi tệ."
+      },
+      "options": [
+        "我的机票比你的便宜五十块钱。",
+        "我的机票比你的贵五十块钱。",
+        "你的机票比我的便宜五十块钱。"
+      ],
+      "answer": 0,
+      "focus": "translation-lesson15",
+      "explanation": {
+        "zh": "我的机票更便宜，差额是五十块钱。",
+        "vi": "Vé của tôi rẻ hơn; mức chênh lệch là năm mươi tệ."
+      },
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Bạn từng đến Việt Nam mấy lần?"
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Mỗi tháng tôi xem phim hai lần."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Đã hai tuần tôi chưa gọi điện cho bạn mình rồi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Tôi mua vé vào công viên trên mạng, còn bạn tôi mua ở cửa."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Dù vé máy bay không rẻ, tôi vẫn muốn đi cùng gia đình."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk2-fltrp-2026:l15:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-1：老师怎样回应家月再去中国的想法？",
+        "vi": "Nghe15-1: cô phản hồi thế nào về ý định đi Trung Quốc thêm lần nữa của Gia Nguyệt?"
+      },
+      "options": [
+        "说现在不可以去。",
+        "让她改去别的国家。",
+        "说这个想法不错。"
+      ],
+      "answer": 2,
+      "focus": "independent-teacher-response",
+      "explanation": {
+        "zh": "老师先说“不错”，随后说明到中国可以经常说中文。",
+        "vi": "Cô nói ý định đó hay, rồi giải thích rằng đến Trung Quốc có thể thường xuyên nói tiếng Trung."
+      },
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-3：李文建议谁给家月介绍颐和园？",
+        "vi": "Nghe15-3: Lý Văn đề nghị ai giới thiệu Di Hòa Viên cho Gia Nguyệt?"
+      },
+      "options": [
+        "他的高中同学",
+        "他的爸爸",
+        "王老师的姐姐"
+      ],
+      "answer": 0,
+      "focus": "independent-local-contact",
+      "explanation": {
+        "zh": "他提到在颐和园工作的高中同学。",
+        "vi": "Bạn ấy nhắc người bạn cấp ba làm việc ở Di Hòa Viên."
+      },
+      "source": {
+        "pdfPage": 148,
+        "printedPage": 133,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-5：李文猜上次机票便宜可能是什么原因？",
+        "vi": "Nghe15-5: Lý Văn đoán vé lần trước rẻ có thể vì lý do gì?"
+      },
+      "options": [
+        "那时去北京的人很多。",
+        "那时去北京的人不多。",
+        "朋友给他买了机票。"
+      ],
+      "answer": 1,
+      "focus": "independent-possible-fare-reason",
+      "explanation": {
+        "zh": "他说“可能因为那个时候去北京的人不多吧”，这只是他的猜测。",
+        "vi": "Bạn ấy nói có thể vì lúc đó ít người đến Bắc Kinh; đây chỉ là phỏng đoán của nhân vật."
+      },
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听15-7：家月说两人到了北京以后还要怎样？",
+        "vi": "Nghe15-7: Gia Nguyệt nói sau khi đến Bắc Kinh, hai người còn sẽ làm gì?"
+      },
+      "options": [
+        "一直住在北京。",
+        "分开去不同的地方。",
+        "再一起飞回这里。"
+      ],
+      "answer": 2,
+      "focus": "independent-return-together",
+      "explanation": {
+        "zh": "日记最后说一起飞到北京，再一起飞回这里。",
+        "vi": "Cuối nhật ký nói cùng bay đến Bắc Kinh, rồi cùng bay trở về nơi này."
+      },
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "15-7"
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:objective1",
+          "prompt": {
+            "zh": "能听懂并谈论旅游的计划。",
+            "vi": "Nghe hiểu và trao đổi kế hoạch du lịch."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用动量补语表达动作或事情发生的次数。",
+            "vi": "Nghe hiểu và dùng bổ ngữ số lần để diễn đạt số lần hành động hoặc sự việc xảy ra."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:objective3",
+          "prompt": {
+            "zh": "掌握“有”字句（2）的用法，能说明达到了一定的数量。",
+            "vi": "Nắm cách dùng câu 有 (2) để diễn đạt đạt tới một số lượng nhất định."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:warmup1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1：选择对应词语",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "路",
+              "vi": "đường"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机场",
+              "vi": "sân bay"
+            },
+            {
+              "zh": "出门",
+              "vi": "ra khỏi nhà"
+            }
+          ],
+          "answer": "鸟",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P130 热身1 图1（B）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2：选择对应词语",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "路",
+              "vi": "đường"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机场",
+              "vi": "sân bay"
+            },
+            {
+              "zh": "出门",
+              "vi": "ra khỏi nhà"
+            }
+          ],
+          "answer": "路",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P130 热身1 图2（A）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3：选择对应词语",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "路",
+              "vi": "đường"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机场",
+              "vi": "sân bay"
+            },
+            {
+              "zh": "出门",
+              "vi": "ra khỏi nhà"
+            }
+          ],
+          "answer": "出门",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P130 热身1 图3（D）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4：选择对应词语",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "路",
+              "vi": "đường"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机场",
+              "vi": "sân bay"
+            },
+            {
+              "zh": "出门",
+              "vi": "ra khỏi nhà"
+            }
+          ],
+          "answer": "机场",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P130 热身1 图4（C）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:warmup1-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l15:illustration:warmup1-1",
+        "hsk2-fltrp-2026:l15:illustration:warmup1-2",
+        "hsk2-fltrp-2026:l15:illustration:warmup1-3",
+        "hsk2-fltrp-2026:l15:illustration:warmup1-4"
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按题号顺序作答。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo thứ tự số câu."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:warmup2-frequency",
+      "kind": "survey",
+      "title": {
+        "zh": "根据自己的实际情况，说说下列行为发生的频率。",
+        "vi": "Theo thực tế bản thân, nói tần suất các hoạt động sau."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:warmup2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup2-frequency1",
+          "prompt": {
+            "zh": "运动：一个星期，______次",
+            "vi": "Tập thể dục: một tuần, ______ lần"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup2-frequency2",
+          "prompt": {
+            "zh": "看电影：一个月，______次",
+            "vi": "Xem phim: một tháng, ______ lần"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:warmup2-frequency3",
+          "prompt": {
+            "zh": "去旅游：一年，______次",
+            "vi": "Đi du lịch: một năm, ______ lần"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 145,
+            "printedPage": 130,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "matrix": {
+        "mode": "responses",
+        "rowHeading": {
+          "zh": "",
+          "vi": ""
+        },
+        "contextHeaders": [
+          {
+            "zh": "时间",
+            "vi": "Thời gian"
+          }
+        ],
+        "columns": [
+          {
+            "zh": "次数",
+            "vi": "Số lần"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "运动",
+              "vi": "Tập thể dục"
+            },
+            "contextCells": [
+              {
+                "zh": "一个星期",
+                "vi": "Một tuần"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:warmup2-frequency1"
+            ],
+            "cellLabels": [
+              {
+                "zh": "______次",
+                "vi": "______ lần"
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "看电影",
+              "vi": "Xem phim"
+            },
+            "contextCells": [
+              {
+                "zh": "一个月",
+                "vi": "Một tháng"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:warmup2-frequency2"
+            ],
+            "cellLabels": [
+              {
+                "zh": "______次",
+                "vi": "______ lần"
+              }
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "去旅游",
+              "vi": "Đi du lịch"
+            },
+            "contextCells": [
+              {
+                "zh": "一年",
+                "vi": "Một năm"
+              }
+            ],
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:warmup2-frequency3"
+            ],
+            "cellLabels": [
+              {
+                "zh": "______次",
+                "vi": "______ lần"
+              }
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "按自己的实际情况填写次数；时间栏是教材给定的固定范围。左上角在原书中没有标题。",
+        "vi": "Điền số lần theo thực tế của bạn; cột thời gian là khoảng cố định trong sách. Ô góc trên bên trái của sách không có tiêu đề."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text1:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text1-question1",
+          "prompt": {
+            "zh": "同学们要开始做什么？",
+            "vi": "Các bạn sắp bắt đầu làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "学习",
+              "vi": "học tập"
+            },
+            {
+              "zh": "考试",
+              "vi": "thi"
+            },
+            {
+              "zh": "跑步",
+              "vi": "chạy bộ"
+            }
+          ],
+          "answer": "考试",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P131 课文1 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text1:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text1-question2",
+          "prompt": {
+            "zh": "白家月去过几次中国？",
+            "vi": "Gia Nguyệt đã đến Trung Quốc mấy lần?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 146,
+            "printedPage": 131,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "一次",
+              "vi": "một lần"
+            },
+            {
+              "zh": "两次",
+              "vi": "hai lần"
+            },
+            {
+              "zh": "七次",
+              "vi": "bảy lần"
+            }
+          ],
+          "answer": "一次",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P131 课文1 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text1:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "15-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text1:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text1-question3",
+          "prompt": {
+            "zh": "考试开始前，王一飞让同学们做什么？",
+            "vi": "Trước khi thi, Nhất Phi bảo các bạn làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "她让同学们先写上姓名，写好后再做题。",
+            "vi": "Cô bảo các bạn viết họ tên trước, viết xong rồi làm bài."
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text1:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text1-question4",
+          "prompt": {
+            "zh": "王一飞说到中国后可以经常做什么？",
+            "vi": "Nhất Phi nói đến Trung Quốc có thể thường xuyên làm gì?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "到中国后可以经常说中文。",
+            "vi": "Đến Trung Quốc có thể thường xuyên nói tiếng Trung."
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text1:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text2:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text2-question1",
+          "prompt": {
+            "zh": "白家月要去哪儿？",
+            "vi": "Gia Nguyệt định đi đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "北京",
+              "vi": "Bắc Kinh"
+            },
+            {
+              "zh": "学校",
+              "vi": "trường học"
+            },
+            {
+              "zh": "同学家",
+              "vi": "nhà bạn học"
+            }
+          ],
+          "answer": "北京",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P132 课文2 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text2:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text2-question2",
+          "prompt": {
+            "zh": "李文的高中同学在哪儿工作？",
+            "vi": "Bạn học cấp ba của Lý Văn làm việc ở đâu?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "饭店",
+              "vi": "nhà hàng"
+            },
+            {
+              "zh": "电影院",
+              "vi": "rạp chiếu phim"
+            },
+            {
+              "zh": "颐和园",
+              "vi": "Di Hòa Viên"
+            }
+          ],
+          "answer": "颐和园",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P132 课文2 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text2:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "15-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text2:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text2-question3",
+          "prompt": {
+            "zh": "白家月为什么还要去北京？",
+            "vi": "Vì sao Gia Nguyệt còn muốn đi Bắc Kinh nữa?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "因为她想再吃烤鸭、喝奶茶、去北京大学看电影，还想去颐和园。",
+            "vi": "Vì cô muốn ăn vịt quay, uống trà sữa, xem phim ở Đại học Bắc Kinh thêm lần nữa và còn muốn đến Di Hòa Viên."
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text2:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text2-question4",
+          "prompt": {
+            "zh": "白家月在哪儿买的门票？",
+            "vi": "Gia Nguyệt mua vé vào cửa ở đâu?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "她在网上买的门票。",
+            "vi": "Cô ấy mua vé vào cửa trên mạng."
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text2:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text3:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text3-question1",
+          "prompt": {
+            "zh": "李文多长时间没回国了？",
+            "vi": "Lý Văn đã bao lâu chưa về nước?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "一年",
+              "vi": "một năm"
+            },
+            {
+              "zh": "六个月",
+              "vi": "sáu tháng"
+            },
+            {
+              "zh": "不到一年",
+              "vi": "chưa đến một năm"
+            }
+          ],
+          "answer": "不到一年",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P134 课文3 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text3:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text3-question2",
+          "prompt": {
+            "zh": "白家月这次买的机票怎么样？",
+            "vi": "Vé máy bay Gia Nguyệt mua lần này thế nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "很贵",
+              "vi": "rất đắt"
+            },
+            {
+              "zh": "很便宜",
+              "vi": "rất rẻ"
+            },
+            {
+              "zh": "有点儿贵",
+              "vi": "hơi đắt"
+            }
+          ],
+          "answer": "有点儿贵",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P134 课文3 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text3:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "15-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text3:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text3-question3",
+          "prompt": {
+            "zh": "上次回国，是谁送李文去机场的？",
+            "vi": "Lần trước về nước, ai đưa Lý Văn ra sân bay?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "是白家月送他去机场的。",
+            "vi": "Bạch Gia Nguyệt đưa anh ấy ra sân bay."
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text3:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text3-question4",
+          "prompt": {
+            "zh": "白家月为什么很高兴？",
+            "vi": "Vì sao Gia Nguyệt rất vui?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 150,
+            "printedPage": 135,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "因为她想到自己就要飞北京了。",
+            "vi": "Vì cô nghĩ mình sắp bay đến Bắc Kinh."
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text3:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text4:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text4-question1",
+          "prompt": {
+            "zh": "李文经常回北京，所以不想家。",
+            "vi": "Lý Văn thường về Bắc Kinh nên không nhớ nhà."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P136 课文4 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text4:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text4-question2",
+          "prompt": {
+            "zh": "李文、白家月跟鸟一起回北京。",
+            "vi": "Lý Văn và Gia Nguyệt cùng chim bay về Bắc Kinh."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "错误",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P136 课文4 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text4:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍课文，判断正误。",
+        "vi": "Nghe bài khóa hai lần rồi xác định đúng hay sai."
+      },
+      "audioTrack": "15-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:text4-reading",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:text4:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text4-question3",
+          "prompt": {
+            "zh": "李文坐什么时候的飞机？",
+            "vi": "Lý Văn đi chuyến bay ngày nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "星期五",
+              "vi": "thứ sáu"
+            },
+            {
+              "zh": "星期六",
+              "vi": "thứ bảy"
+            },
+            {
+              "zh": "星期天",
+              "vi": "chủ nhật"
+            }
+          ],
+          "answer": "星期五",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P137 课文4 读后 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text4:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:text4-question4",
+          "prompt": {
+            "zh": "白家月要做什么？",
+            "vi": "Gia Nguyệt định làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "回国",
+              "vi": "về nước"
+            },
+            {
+              "zh": "去北京",
+              "vi": "đến Bắc Kinh"
+            },
+            {
+              "zh": "去朋友家",
+              "vi": "đến nhà bạn"
+            }
+          ],
+          "answer": "去北京",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P137 课文4 读后 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l15:text4:question4"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后选择正确答案。",
+        "vi": "Đọc bài khóa rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你去过______上海，觉得怎么样？B：很不错，吃得好，玩得好。",
+        "vi": "A: Bạn từng đến Thượng Hải ______, thấy thế nào? B: Rất tốt, ăn ngon, chơi vui."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "动量补语（1）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar1-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "一次",
+            "vi": "một lần"
+          }
+        }
+      ],
+      "note": {
+        "zh": "以下参考表达只是非唯一示例；次数或个人情况不能从图片或题干确定，不代表学习者的实际情况。",
+        "vi": "Các câu tham khảo chỉ là ví dụ không duy nhất; số lần hoặc tình hình cá nhân không xác định được từ hình hay đề bài và không phải dữ liệu thực tế của người học."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：安妮来过______我们家，她知道怎么走。B：好，我跟安妮一起过去。",
+        "vi": "A: Annie từng đến nhà chúng tôi ______, cô ấy biết đường. B: Được, tôi cùng Annie qua đó."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "动量补语（1）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar1-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "两次",
+            "vi": "hai lần"
+          }
+        }
+      ],
+      "note": {
+        "zh": "以下参考表达只是非唯一示例；次数或个人情况不能从图片或题干确定，不代表学习者的实际情况。",
+        "vi": "Các câu tham khảo chỉ là ví dụ không duy nhất; số lần hoặc tình hình cá nhân không xác định được từ hình hay đề bài và không phải dữ liệu thực tế của người học."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你吃过北京烤鸭吗？B：我吃过______，很好吃。",
+        "vi": "A: Bạn từng ăn vịt quay Bắc Kinh chưa? B: Tôi ăn ______ rồi, rất ngon."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 147,
+        "printedPage": 132,
+        "section": "动量补语（1）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar1-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 147,
+            "printedPage": 132,
+            "section": "动量补语（1）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "一次",
+            "vi": "một lần"
+          }
+        }
+      ],
+      "note": {
+        "zh": "以下参考表达只是非唯一示例；次数或个人情况不能从图片或题干确定，不代表学习者的实际情况。",
+        "vi": "Các câu tham khảo chỉ là ví dụ không duy nhất; số lần hoặc tình hình cá nhân không xác định được từ hình hay đề bài và không phải dữ liệu thực tế của người học."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你们去北京的时候见到一雪姐姐了吗？B：我们见了______两次，还去了一次她家。",
+        "vi": "A: Khi đến Bắc Kinh, các bạn đã gặp chị Nhất Tuyết chưa? B: Chúng tôi gặp ______ hai lần, còn đến nhà chị ấy một lần."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "动量补语（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar2-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "她",
+            "vi": "chị ấy"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：______？B：我每个星期给家里打两次电话。",
+        "vi": "A: ______? B: Mỗi tuần tôi gọi về nhà hai lần."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "动量补语（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar2-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "你每个星期给家里打几次电话",
+            "vi": "Mỗi tuần bạn gọi về nhà mấy lần"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：______？B：就下过一次雪。我觉得今年没有去年冷。",
+        "vi": "A: ______? B: Chỉ có tuyết rơi một lần. Tôi thấy năm nay không lạnh bằng năm ngoái."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 149,
+        "printedPage": 134,
+        "section": "动量补语（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar2-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 149,
+            "printedPage": 134,
+            "section": "动量补语（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "今年下过几次雪",
+            "vi": "Năm nay tuyết đã rơi mấy lần"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：飞北京的机票______8000块钱吗？B：没有，现在机票便宜。",
+        "vi": "A: Vé máy bay đi Bắc Kinh ______ 8.000 tệ không? B: Không, bây giờ vé rẻ."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "“有”字句（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar3-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "有",
+            "vi": "có đến"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你男朋友______？B：没有，他今年29岁，比我还小一岁呢。",
+        "vi": "A: Bạn trai bạn ______? B: Chưa, năm nay anh ấy29 tuổi, còn nhỏ hơn tôi một tuổi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "“有”字句（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar3-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "有三十岁吗",
+            "vi": "đã ba mươi tuổi chưa"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：我们两个______？B：是啊，一年没见，你还是那样。",
+        "vi": "A: Hai chúng ta ______? B: Đúng vậy, một năm không gặp, bạn vẫn như thế."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 151,
+        "printedPage": 136,
+        "section": "“有”字句（2）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:grammar3-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 151,
+            "printedPage": 136,
+            "section": "“有”字句（2）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "有一年没见了吧",
+            "vi": "chắc đã một năm không gặp rồi nhỉ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:comprehensive-words",
+      "kind": "fill",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: điền từ"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 152,
+        "printedPage": 137,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:wordchoice1",
+          "prompt": {
+            "zh": "（1）你看，那只小______多漂亮啊！",
+            "vi": "(1) Bạn nhìn kìa, con ______ nhỏ đó đẹp biết bao!"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "出国",
+              "vi": "ra nước ngoài"
+            },
+            {
+              "zh": "姓名",
+              "vi": "họ tên"
+            },
+            {
+              "zh": "门票",
+              "vi": "vé vào cửa"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机票",
+              "vi": "vé máy bay"
+            }
+          ],
+          "answer": "鸟",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 20,
+            "item": "第15课 P137 综合练习 选词填空 第1题（D）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:wordchoice2",
+          "prompt": {
+            "zh": "（2）我记得这里的______不到10块钱，现在怎么这么贵了？",
+            "vi": "(2) Tôi nhớ ______ ở đây chưa tới10 tệ, sao giờ đắt thế?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "出国",
+              "vi": "ra nước ngoài"
+            },
+            {
+              "zh": "姓名",
+              "vi": "họ tên"
+            },
+            {
+              "zh": "门票",
+              "vi": "vé vào cửa"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机票",
+              "vi": "vé máy bay"
+            }
+          ],
+          "answer": "门票",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 21,
+            "item": "第15课 P137 综合练习 选词填空 第2题（C）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:wordchoice3",
+          "prompt": {
+            "zh": "（3）儿子就要______上大学了，你给他准备了什么东西啊？",
+            "vi": "(3) Con trai sắp ______ học đại học, bạn đã chuẩn bị cho con những gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "出国",
+              "vi": "ra nước ngoài"
+            },
+            {
+              "zh": "姓名",
+              "vi": "họ tên"
+            },
+            {
+              "zh": "门票",
+              "vi": "vé vào cửa"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机票",
+              "vi": "vé máy bay"
+            }
+          ],
+          "answer": "出国",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 21,
+            "item": "第15课 P137 综合练习 选词填空 第3题（A）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:wordchoice4",
+          "prompt": {
+            "zh": "（4）A：你买的是什么时候的______？B：明天早上的，下午就到北京了。",
+            "vi": "(4) A: ______ bạn mua là cho chuyến khởi hành lúc nào? B: Sáng mai, chiều là đến Bắc Kinh."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "出国",
+              "vi": "ra nước ngoài"
+            },
+            {
+              "zh": "姓名",
+              "vi": "họ tên"
+            },
+            {
+              "zh": "门票",
+              "vi": "vé vào cửa"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机票",
+              "vi": "vé máy bay"
+            }
+          ],
+          "answer": "机票",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 21,
+            "item": "第15课 P137 综合练习 选词填空 第4题（E）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:wordchoice5",
+          "prompt": {
+            "zh": "（5）A：请您说一下他的______，我看看有没有这个人。B：王大明。A：不好意思，他没住在我们酒店。",
+            "vi": "(5) A: Xin cho biết ______ của anh ấy để tôi xem có người này không. B: Vương Đại Minh. A: Xin lỗi, anh ấy không ở khách sạn chúng tôi."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 152,
+            "printedPage": 137,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "出国",
+              "vi": "ra nước ngoài"
+            },
+            {
+              "zh": "姓名",
+              "vi": "họ tên"
+            },
+            {
+              "zh": "门票",
+              "vi": "vé vào cửa"
+            },
+            {
+              "zh": "鸟",
+              "vi": "chim"
+            },
+            {
+              "zh": "机票",
+              "vi": "vé máy bay"
+            }
+          ],
+          "answer": "姓名",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 21,
+            "item": "第15课 P137 综合练习 选词填空 第5题（B）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "（1）她一个星期______三次法国。",
+        "vi": "(1) Một tuần cô ấy ______ Pháp ba lần."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section2:picture:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "飞",
+            "vi": "bay đến"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l15:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "（2）你的______同学有50个人吗？",
+        "vi": "(2) Bạn học ______ của bạn có đến50 người không?"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section2:picture:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "高中",
+            "vi": "cấp ba"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l15:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "（3）我走过这条到______的______。",
+        "vi": "(3) Tôi từng đi ______ [ô 2] này đến ______ [ô 1]."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section2:picture:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "机场",
+            "vi": "sân bay"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:practice-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "路",
+            "vi": "con đường"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l15:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:picture-dialogue4",
+      "kind": "fill",
+      "title": {
+        "zh": "（4）他们喜欢踢球，每个星期踢______次。",
+        "vi": "(4) Họ thích đá bóng, mỗi tuần đá ______ lần."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section2:picture:4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:picture4-blank1",
+          "prompt": {
+            "zh": "图4第1空",
+            "vi": "Hình 4, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "两",
+            "vi": "hai"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l15:illustration:practice-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l15:illustration:practice-4"
+      ],
+      "note": {
+        "zh": "以下参考表达只是非唯一示例；次数或个人情况不能从图片或题干确定，不代表学习者的实际情况。",
+        "vi": "Các câu tham khảo chỉ là ví dụ không duy nhất; số lần hoặc tình hình cá nhân không xác định được từ hình hay đề bài và không phải dữ liệu thực tế của người học."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:roleplay",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：双人活动",
+        "vi": "Hoạt động trên lớp: luyện theo cặp"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "课堂活动：双人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:classroom-roleplay",
+          "prompt": {
+            "zh": "两人一组，谈论旅游经历，介绍去过哪里、去过几次、吃得怎么样、玩得怎么样以及旅游的感受，等等。尽可能使用本课所学生词和语法。",
+            "vi": "Theo cặp, trao đổi trải nghiệm du lịch: từng đến đâu, mấy lần, ăn uống, vui chơi thế nào và cảm nhận về chuyến đi. Cố gắng dùng từ và ngữ pháp của bài."
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 153,
+            "printedPage": 138,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "保留原示例，记录提示后分角色练习；不自动判分。",
+        "vi": "Giữ ví dụ gốc, ghi gợi ý rồi đóng vai; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:review-vocabulary",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "词语学习",
+        "vi": "Học từ vựng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 154,
+        "printedPage": 139,
+        "section": "学习小结：13～15课",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section5:vocabulary",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-vocabulary1",
+          "prompt": {
+            "zh": "我已经记住并会使用的词语：______",
+            "vi": "Những từ đã nhớ và dùng được: ______"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-vocabulary2",
+          "prompt": {
+            "zh": "我还没记住的词语：______",
+            "vi": "Những từ chưa nhớ: ______"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "matrix": {
+        "mode": "responses",
+        "rowHeading": {
+          "zh": "学习情况",
+          "vi": "Tình hình học"
+        },
+        "columns": [
+          {
+            "zh": "词语",
+            "vi": "Từ vựng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "我已经记住并会使用的词语",
+              "vi": "Những từ đã nhớ và dùng được"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-vocabulary1"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "我还没记住的词语",
+              "vi": "Những từ chưa nhớ"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-vocabulary2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:review-grammar",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我理解并会用",
+        "vi": "Tôi hiểu và biết dùng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 154,
+        "printedPage": 139,
+        "section": "学习小结：13～15课",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section5:grammar",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar1-1",
+          "prompt": {
+            "zh": "第1项：理解",
+            "vi": "Mục 1: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar1-2",
+          "prompt": {
+            "zh": "第1项：会用",
+            "vi": "Mục 1: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar2-1",
+          "prompt": {
+            "zh": "第2项：理解",
+            "vi": "Mục 2: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar2-2",
+          "prompt": {
+            "zh": "第2项：会用",
+            "vi": "Mục 2: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar3-1",
+          "prompt": {
+            "zh": "第3项：理解",
+            "vi": "Mục 3: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar3-2",
+          "prompt": {
+            "zh": "第3项：会用",
+            "vi": "Mục 3: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar4-1",
+          "prompt": {
+            "zh": "第4项：理解",
+            "vi": "Mục 4: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar4-2",
+          "prompt": {
+            "zh": "第4项：会用",
+            "vi": "Mục 4: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 154,
+            "printedPage": 139,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar5-1",
+          "prompt": {
+            "zh": "第5项：理解",
+            "vi": "Mục 5: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar5-2",
+          "prompt": {
+            "zh": "第5项：会用",
+            "vi": "Mục 5: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar6-1",
+          "prompt": {
+            "zh": "第6项：理解",
+            "vi": "Mục 6: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar6-2",
+          "prompt": {
+            "zh": "第6项：会用",
+            "vi": "Mục 6: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar7-1",
+          "prompt": {
+            "zh": "第7项：理解",
+            "vi": "Mục 7: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar7-2",
+          "prompt": {
+            "zh": "第7项：会用",
+            "vi": "Mục 7: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar8-1",
+          "prompt": {
+            "zh": "第8项：理解",
+            "vi": "Mục 8: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar8-2",
+          "prompt": {
+            "zh": "第8项：会用",
+            "vi": "Mục 8: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar9-1",
+          "prompt": {
+            "zh": "第9项：理解",
+            "vi": "Mục 9: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-grammar9-2",
+          "prompt": {
+            "zh": "第9项：会用",
+            "vi": "Mục 9: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "matrix": {
+        "mode": "checks",
+        "rowHeading": {
+          "zh": "语言点与原例句",
+          "vi": "Điểm ngữ pháp và ví dụ gốc"
+        },
+        "columns": [
+          {
+            "zh": "理解",
+            "vi": "Hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "双宾语句（2）。例：我送给她一本书。",
+              "vi": "Hai tân ngữ (2). Ví dụ: Tôi tặng cô ấy một quyển sách."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar1-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar1-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（7）。例：我哥哥比我大两岁。",
+              "vi": "So sánh (7). Ví dụ: Anh trai hơn tôi hai tuổi."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar2-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar2-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（8）。例：姐姐比我高一点儿。",
+              "vi": "So sánh (8). Ví dụ: Chị cao hơn tôi một chút."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar3-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar3-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "存现句（2）。例：楼下站着很多人。",
+              "vi": "Tồn hiện (2). Ví dụ: Dưới nhà có nhiều người đang đứng."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar4-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar4-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "程度副词“多”。例：她的汉语说得多好啊！",
+              "vi": "Phó từ 多. Ví dụ: Cô ấy nói tiếng Trung hay biết bao!"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar5-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar5-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "复合趋向补语。例：我们走回家去吧。",
+              "vi": "Bổ ngữ xu hướng kép. Ví dụ: Chúng ta đi bộ về nhà đi."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar6-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar6-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "动量补语（1）。例：我去过两次北京。",
+              "vi": "Bổ ngữ số lần (1). Ví dụ: Tôi từng đến Bắc Kinh hai lần."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar7-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar7-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "动量补语（2）。例：我来过这儿两次。",
+              "vi": "Bổ ngữ số lần (2). Ví dụ: Tôi từng đến đây hai lần."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar8-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar8-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "“有”字句（2）。例：你的老师有三十岁吗？",
+              "vi": "Câu 有 (2). Ví dụ: Giáo viên của bạn đã ba mươi tuổi chưa?"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l15:field:review-grammar9-1",
+              "hsk2-fltrp-2026:l15:field:review-grammar9-2"
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "每项的理解和会用分别勾选；不强制评级，不算正确率。",
+        "vi": "Đánh dấu riêng mức hiểu và biết dùng ở mỗi mục; không bắt buộc xếp hạng, không tính tỉ lệ đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:activity:review-effort",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Điều tôi cần cố gắng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 155,
+        "printedPage": 140,
+        "section": "学习小结：13～15课",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l15:section5:effort",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l15:field:review-effort",
+          "prompt": {
+            "zh": "我需要努力的：______",
+            "vi": "Điều tôi cần cố gắng: ______"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 155,
+            "printedPage": 140,
+            "section": "学习小结：13～15课",
+            "provenance": "textbook"
+          }
+        }
+      ]
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "owner": "hsk2-fltrp-2026:l15:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l15:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:warmup1-picture1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "两只鸟停在同一根树枝上。",
+        "vi": "Hai con chim đậu trên cùng một cành cây."
+      },
+      "description": {
+        "zh": "两只鸟停在同一根树枝上。",
+        "vi": "Hai con chim đậu trên cùng một cành cây."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk2-l15-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "412f7203c7e4178993b27e35df4ce26a67d3919785c5913133f98e1da2222716",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two birds share branch; raised bird positions after pixel review so feet contact branch instead of hanging below it."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "owner": "hsk2-fltrp-2026:l15:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l15:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:warmup1-picture2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一条有白色标线的公路向远处山边延伸。",
+        "vi": "Một con đường có vạch trắng kéo dài về phía núi ở xa."
+      },
+      "description": {
+        "zh": "一条有白色标线的公路向远处山边延伸。",
+        "vi": "Một con đường có vạch trắng kéo dài về phía núi ở xa."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk2-l15-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "0aa483f08ea2b3b98ba22fc7a2b211585171e6f47fd357243527b6f5eab85729",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Road and lane lines extend toward distant hills; no destination invented."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "owner": "hsk2-fltrp-2026:l15:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l15:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:warmup1-picture3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一名成人和一个孩子牵着手走出敞开的门。",
+        "vi": "Một người lớn và một trẻ nắm tay đi ra khỏi cửa đang mở."
+      },
+      "description": {
+        "zh": "一名成人和一个孩子牵着手走出敞开的门。",
+        "vi": "Một người lớn và một trẻ nắm tay đi ra khỏi cửa đang mở."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk2-l15-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "b4a61a7cb609d0a19fd2f2d915ee36702a54a082e0425bbef9ba21a77fa721d4",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Adult and child hold hands beside open doorway; small directional arrow reinforces leaving relationship."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 145,
+        "printedPage": 130,
+        "owner": "hsk2-fltrp-2026:l15:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l15:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:warmup1-picture4"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "机场等候区里有座椅，玻璃窗外有一架飞机。",
+        "vi": "Khu chờ sân bay có ghế ngồi, ngoài cửa kính có một máy bay."
+      },
+      "description": {
+        "zh": "机场等候区里有座椅，玻璃窗外有一架飞机。",
+        "vi": "Khu chờ sân bay có ghế ngồi, ngoài cửa kính có một máy bay."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk2-l15-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "4b00b34f4e7ac9c3c3e6a9f971242f5718bc61c7d803418f83be55774ed9f6fb",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Airport seats and plane outside windows; no logos, boarding identity or unsupported travel detail."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 146,
+        "printedPage": 131,
+        "owner": "hsk2-fltrp-2026:l15:text1",
+        "sourceOwner": "hsk2-fltrp-2026:l15:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "教师站在正在桌前做试卷的学生旁边。",
+        "vi": "Giáo viên đứng cạnh học sinh đang làm bài thi tại bàn."
+      },
+      "description": {
+        "zh": "教师站在正在桌前做试卷的学生旁边。",
+        "vi": "Giáo viên đứng cạnh học sinh đang làm bài thi tại bàn."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk2-l15-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "a69f9fcb5bf04c3908fca27fa96f959c4c7da5541e8d0f5d3f9e3a4af479a2ce",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Teacher beside seated test-taking students; moved near student/desk upward to keep feet inside scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 150,
+        "printedPage": 135,
+        "owner": "hsk2-fltrp-2026:l15:text3",
+        "sourceOwner": "hsk2-fltrp-2026:l15:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "两名成人坐在咖啡店的小桌两边交谈，桌上有杯子。",
+        "vi": "Hai người lớn ngồi hai bên bàn nhỏ trong quán cà phê trò chuyện; trên bàn có cốc."
+      },
+      "description": {
+        "zh": "两名成人坐在咖啡店的小桌两边交谈，桌上有杯子。",
+        "vi": "Hai người lớn ngồi hai bên bàn nhỏ trong quán cà phê trò chuyện; trên bàn có cốc."
+      },
+      "sceneKey": "text3",
+      "file": "illustrations/hsk2-l15-text3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "797aa62aa0a188e8018b4579c683993145d26a1f8305a76993d1508b7f31bb57",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two adults seated at cafe table with two cups and plant; chairs support figures."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "owner": "hsk2-fltrp-2026:l15:section2",
+        "sourceOwner": "hsk2-fltrp-2026:l15:section2",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:picture1-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "机舱里，一名空乘人员给坐着的乘客端来饮品。",
+        "vi": "Trong khoang máy bay, tiếp viên mang đồ uống cho hành khách đang ngồi."
+      },
+      "description": {
+        "zh": "机舱里，一名空乘人员给坐着的乘客端来饮品。",
+        "vi": "Trong khoang máy bay, tiếp viên mang đồ uống cho hành khách đang ngồi."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk2-l15-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "812a582a765b903a777805c013950b35308b62a5d0f1445de9170694047d2cf9",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Cabin windows, seated passenger and attendant serving cup on tray; hands contact tray area."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "owner": "hsk2-fltrp-2026:l15:section2",
+        "sourceOwner": "hsk2-fltrp-2026:l15:section2",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:picture2-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "几名穿着校服的学生坐在教室里的课桌前。",
+        "vi": "Vài học sinh mặc đồng phục ngồi trước bàn học trong lớp."
+      },
+      "description": {
+        "zh": "几名穿着校服的学生坐在教室里的课桌前。",
+        "vi": "Vài học sinh mặc đồng phục ngồi trước bàn học trong lớp."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk2-l15-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "db9d9adfc0a0719d03f9682ff4c4b5a9f0eb1d03c386dc1dad323f4f65971c10",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Uniformed students seated at classroom desks; no invented class count in artwork."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "owner": "hsk2-fltrp-2026:l15:section2",
+        "sourceOwner": "hsk2-fltrp-2026:l15:section2",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:picture3-blank1",
+        "hsk2-fltrp-2026:l15:field:picture3-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "机场外的道路上停着出租车，远处有一架飞机。",
+        "vi": "Trên đường ngoài sân bay có taxi, phía xa có một máy bay."
+      },
+      "description": {
+        "zh": "机场外的道路上停着出租车，远处有一架飞机。",
+        "vi": "Trên đường ngoài sân bay có taxi, phía xa có một máy bay."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk2-l15-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "efd37cc0c01eb2c52827d2c9f79aa8a8d951bc517c9e93fe8fc61dc14d9e0fbf",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Airport road, terminal, taxi and distant plane convey place without answer label."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:practice-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "section": "辅助示意图：practice-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 153,
+        "printedPage": 138,
+        "owner": "hsk2-fltrp-2026:l15:section2",
+        "sourceOwner": "hsk2-fltrp-2026:l15:section2",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l15:field:picture4-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "孩子们在草地上踢足球，旁边有球门；图中没有频率数字。",
+        "vi": "Trẻ chơi bóng đá trên bãi cỏ, bên cạnh có khung thành; hình không ghi số lần chơi."
+      },
+      "description": {
+        "zh": "孩子们在草地上踢足球，旁边有球门；图中没有频率数字。",
+        "vi": "Trẻ chơi bóng đá trên bãi cỏ, bên cạnh có khung thành; hình không ghi số lần chơi."
+      },
+      "sceneKey": "practice-4",
+      "file": "illustrations/hsk2-l15-practice-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "63e8e4f7e18e4b4f6017647feb3ab9359a4b4b64d62d19c1d5286f2a6ac2eabf",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Changed central player to bent-leg running/kicking pose near football, with goal. Frequency deliberately not encoded."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l15:illustration:culture",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 154,
+        "printedPage": 139,
+        "section": "辅助示意图：culture",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 154,
+        "printedPage": 139,
+        "owner": "hsk2-fltrp-2026:l15:culture",
+        "sourceOwner": "hsk2-fltrp-2026:l15:section4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "机场等候区里放着一只行李箱，窗外有飞机，没有视频控件或证件细节。",
+        "vi": "Một vali đặt trong khu chờ sân bay, ngoài cửa sổ có máy bay; không có nút video hay chi tiết giấy tờ."
+      },
+      "description": {
+        "zh": "机场等候区里放着一只行李箱，窗外有飞机，没有视频控件或证件细节。",
+        "vi": "Một vali đặt trong khu chờ sân bay, ngoài cửa sổ có máy bay; không có nút video hay chi tiết giấy tờ."
+      },
+      "sceneKey": "culture",
+      "file": "illustrations/hsk2-l15-culture.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "d5cbd353c3df851d9ea1908feae0b96b51352456dfea81c6d347e211b0bfaeda",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic, not a photographic replica.",
+        "Do not disclose answer-bearing descriptions before learner reveal."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all26 rasterized SVGs in seven contact sheets; reopened every changed scene individually, including final bird and chair repairs.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Suitcase with wheels in waiting area, plane outside windows. No copied video controls, credentials, logo or legal-advice content."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK2 lessons 14–15 additive draft author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      145,
+      146,
+      147,
+      148,
+      149,
+      150,
+      151,
+      152,
+      153,
+      154,
+      155
+    ],
+    "answerPdfPages": [
+      20,
+      21
+    ],
+    "appendixPdfPages": [
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "independentReview": "passed-source-content-and-template-structure-recheck",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "c1bae766456aea0f136dd146df6b5b1218ec30f28fec14e68a7b2fe1a8054503",
+    "method": "Actual source, answer and appendix pixels inspected before additive authoring. Original nested content unchanged; references bilingual and nonunique.",
+    "limitations": [
+      "Author preparation is not independent acceptance.",
+      "No browser or release acceptance performed.",
+      "No audio alignment or perceptual verification claimed.",
+      "Blank-corner frequency matrix needs renderer/browser verification.",
+      "Printed ellipsis-only line and prefixed ellipsis retained; no invented speech.",
+      "Culture keeps unavailable video and not-current-entry-advice disclosure."
+    ],
+    "independentReviewReport": "independent-hsk2-lessons-14-15-review/candidate-review/independent-review.md"
+  }
+}
+`;export{e as default};

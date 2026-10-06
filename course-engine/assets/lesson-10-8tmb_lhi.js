@@ -1,0 +1,2487 @@
+var e=`{
+  "schema": 1,
+  "edition": "hsk1-print-2026-01",
+  "lesson": 10,
+  "version": "source-resume-20261004-reviewed-2",
+  "scope": "lesson-10-candidate",
+  "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "answerBookSHA256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+  "editorialStatus": "candidate-awaiting-independent-review",
+  "activities": [
+    {
+      "id": "hsk1-original-2026-l10-p070-objectives-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "objectives",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "本课目标",
+        "vi": "Mục tiêu bài học"
+      },
+      "instruction": {
+        "zh": "阅读本课学习目标。",
+        "vi": "Đọc mục tiêu học tập của bài."
+      },
+      "prompt": {
+        "zh": "（1）能听懂、看懂并简单谈论商品价格。\\n（2）掌握形容词谓语句的用法。\\n（3）掌握疑问代词“怎么样”的用法。\\n（4）认识人民币。",
+        "vi": "(1) Hiểu khi nghe, đọc và trò chuyện đơn giản về giá hàng hóa.\\n(2) Nắm cách dùng câu vị ngữ tính từ.\\n(3) Nắm cách dùng đại từ nghi vấn “怎么样”.\\n(4) Nhận biết nhân dân tệ."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l10-p070-warmup-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "warmup",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片1",
+        "vi": "Hình 1"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "衣服",
+              "py": "yīfu",
+              "vi": "quần áo"
+            },
+            {
+              "id": "B",
+              "zh": "便宜",
+              "py": "piányi",
+              "vi": "rẻ"
+            },
+            {
+              "id": "C",
+              "zh": "苹果",
+              "py": "píngguǒ",
+              "vi": "táo"
+            },
+            {
+              "id": "D",
+              "zh": "穿",
+              "py": "chuān",
+              "vi": "mặc"
+            },
+            {
+              "id": "E",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "F",
+              "zh": "商店",
+              "py": "shāngdiàn",
+              "vi": "cửa hàng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P70，热身",
+            "ordinal": 1
+          }
+        }
+      ],
+      "figure": "l10-warmup-01",
+      "figureSHA256": "7e6bab967ecdeb97498edf40190818901c8b06826d3e48099fa85ec909e5345a"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p070-warmup-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "warmup",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片2",
+        "vi": "Hình 2"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "衣服",
+              "py": "yīfu",
+              "vi": "quần áo"
+            },
+            {
+              "id": "B",
+              "zh": "便宜",
+              "py": "piányi",
+              "vi": "rẻ"
+            },
+            {
+              "id": "C",
+              "zh": "苹果",
+              "py": "píngguǒ",
+              "vi": "táo"
+            },
+            {
+              "id": "D",
+              "zh": "穿",
+              "py": "chuān",
+              "vi": "mặc"
+            },
+            {
+              "id": "E",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "F",
+              "zh": "商店",
+              "py": "shāngdiàn",
+              "vi": "cửa hàng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P70，热身",
+            "ordinal": 2
+          }
+        }
+      ],
+      "figure": "l10-warmup-02",
+      "figureSHA256": "c1b4b73cb671d7eabd078120ab8a20b8a18d20a9234907efb29b7b3994bab855"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p070-warmup-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "warmup",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片3",
+        "vi": "Hình 3"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "衣服",
+              "py": "yīfu",
+              "vi": "quần áo"
+            },
+            {
+              "id": "B",
+              "zh": "便宜",
+              "py": "piányi",
+              "vi": "rẻ"
+            },
+            {
+              "id": "C",
+              "zh": "苹果",
+              "py": "píngguǒ",
+              "vi": "táo"
+            },
+            {
+              "id": "D",
+              "zh": "穿",
+              "py": "chuān",
+              "vi": "mặc"
+            },
+            {
+              "id": "E",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "F",
+              "zh": "商店",
+              "py": "shāngdiàn",
+              "vi": "cửa hàng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P70，热身",
+            "ordinal": 3
+          }
+        }
+      ],
+      "figure": "l10-warmup-03",
+      "figureSHA256": "36587488d25dcc0fa8496063e0152c96671ed9b7a8405b95cf2d04f170b6aa89"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p070-warmup-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "warmup",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片4",
+        "vi": "Hình 4"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "衣服",
+              "py": "yīfu",
+              "vi": "quần áo"
+            },
+            {
+              "id": "B",
+              "zh": "便宜",
+              "py": "piányi",
+              "vi": "rẻ"
+            },
+            {
+              "id": "C",
+              "zh": "苹果",
+              "py": "píngguǒ",
+              "vi": "táo"
+            },
+            {
+              "id": "D",
+              "zh": "穿",
+              "py": "chuān",
+              "vi": "mặc"
+            },
+            {
+              "id": "E",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "F",
+              "zh": "商店",
+              "py": "shāngdiàn",
+              "vi": "cửa hàng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P70，热身",
+            "ordinal": 4
+          }
+        }
+      ],
+      "figure": "l10-warmup-04",
+      "figureSHA256": "fe8f5143cabc1cbe83a1fce1d47e6eb3ecebc0af36cfabbf947d35de0c46ee58"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p070-warmup-05",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "warmup",
+        "ordinal": 5
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片5",
+        "vi": "Hình 5"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "衣服",
+              "py": "yīfu",
+              "vi": "quần áo"
+            },
+            {
+              "id": "B",
+              "zh": "便宜",
+              "py": "piányi",
+              "vi": "rẻ"
+            },
+            {
+              "id": "C",
+              "zh": "苹果",
+              "py": "píngguǒ",
+              "vi": "táo"
+            },
+            {
+              "id": "D",
+              "zh": "穿",
+              "py": "chuān",
+              "vi": "mặc"
+            },
+            {
+              "id": "E",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "F",
+              "zh": "商店",
+              "py": "shāngdiàn",
+              "vi": "cửa hàng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "F",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P70，热身",
+            "ordinal": 5
+          }
+        }
+      ],
+      "figure": "l10-warmup-05",
+      "figureSHA256": "0d766453bf5c16044355c6b07a01bdab3ef12d8676621feec54afefee5312214"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p070-warmup-06",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "section": "warmup",
+        "ordinal": 6
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép các từ hoặc cụm từ dưới đây với hình tương ứng."
+      },
+      "prompt": {
+        "zh": "图片6",
+        "vi": "Hình 6"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "衣服",
+              "py": "yīfu",
+              "vi": "quần áo"
+            },
+            {
+              "id": "B",
+              "zh": "便宜",
+              "py": "piányi",
+              "vi": "rẻ"
+            },
+            {
+              "id": "C",
+              "zh": "苹果",
+              "py": "píngguǒ",
+              "vi": "táo"
+            },
+            {
+              "id": "D",
+              "zh": "穿",
+              "py": "chuān",
+              "vi": "mặc"
+            },
+            {
+              "id": "E",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "F",
+              "zh": "商店",
+              "py": "shāngdiàn",
+              "vi": "cửa hàng"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P70，热身",
+            "ordinal": 6
+          }
+        }
+      ],
+      "figure": "l10-warmup-06",
+      "figureSHA256": "12832b6e8fdea9e80f977ae6f74c7d1a0d3ed11e958bc20e94586ea8c2c564d4"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p071-role-text1-01",
+      "version": "source-resume-20261004-reviewed-2",
+      "lesson": 10,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 71,
+        "pdfPage": 86,
+        "section": "role-text1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "王一雪：请问，有杯子吗？\\n售货员：有，杯子在这边。\\n王一雪：多少钱一个？\\n售货员：这些五块钱一个，那些十块钱一个。\\n王一雪：我买这个吧。",
+        "vi": "Xin hỏi, ở đây có cốc không?\\nCó, cốc ở bên này.\\nMột cái bao nhiêu tiền?\\nNhững cái này 5 tệ một cái, những cái kia 10 tệ một cái.\\nTôi lấy cái này."
+      },
+      "audio": {
+        "sceneId": "textbook-l10-text-1",
+        "track": "10-1",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l10-text-1",
+      "figure": "l10-scene-01",
+      "figureSHA256": "0bc9e8f0c1863427f3fa4bec0a65271dedbc9189289de09da62103b484661576"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p071-pair-text1-01",
+      "version": "source-resume-20261004-reviewed-2",
+      "lesson": 10,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 71,
+        "pdfPage": 86,
+        "section": "pair-text1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，选择一个物品，互相问答价格。",
+        "vi": "Làm việc theo cặp, chọn một món đồ rồi hỏi và trả lời về giá."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l10-p072-money-table-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "reference-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 72,
+        "pdfPage": 87,
+        "section": "money-table",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "钱数的表达",
+        "vi": "Cách biểu đạt số tiền"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "人民币单位由大到小是“元、角、分”，口语中分别说“块、毛、分”；表达顺序为元/块→角/毛→分。",
+        "vi": "Đơn vị nhân dân tệ từ lớn đến nhỏ là “元、角、分”; trong khẩu ngữ là “块、毛、分”. Thứ tự biểu đạt: 元/块 → 角/毛 → 分."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "写法1",
+            "vi": "Cách viết 1"
+          },
+          {
+            "zh": "写法2",
+            "vi": "Cách viết 2"
+          },
+          {
+            "zh": "读法",
+            "vi": "Cách đọc"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "0.02元",
+                  "vi": "0.02元"
+                }
+              },
+              {
+                "text": {
+                  "zh": "两分",
+                  "vi": "hai phân"
+                }
+              },
+              {
+                "text": {
+                  "zh": "liǎng fēn",
+                  "vi": "liǎng fēn"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "0.2元",
+                  "vi": "0.2元"
+                }
+              },
+              {
+                "text": {
+                  "zh": "两毛",
+                  "vi": "hai hào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "liǎng máo",
+                  "vi": "liǎng máo"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3元",
+                  "vi": "3元"
+                }
+              },
+              {
+                "text": {
+                  "zh": "三块",
+                  "vi": "ba tệ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "sān kuài",
+                  "vi": "sān kuài"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-4",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3.2元",
+                  "vi": "3.2元"
+                }
+              },
+              {
+                "text": {
+                  "zh": "三块二",
+                  "vi": "ba tệ hai hào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "sān kuài èr",
+                  "vi": "sān kuài èr"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-5",
+            "cells": [
+              {
+                "text": {
+                  "zh": "6.02元",
+                  "vi": "6.02元"
+                }
+              },
+              {
+                "text": {
+                  "zh": "六块零两分",
+                  "vi": "sáu tệ lẻ hai phân"
+                }
+              },
+              {
+                "text": {
+                  "zh": "liù kuài líng liǎng fēn",
+                  "vi": "liù kuài líng liǎng fēn"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-6",
+            "cells": [
+              {
+                "text": {
+                  "zh": "202.2元",
+                  "vi": "202.2元"
+                }
+              },
+              {
+                "text": {
+                  "zh": "二百零二块两毛",
+                  "vi": "hai trăm lẻ hai tệ hai hào"
+                }
+              },
+              {
+                "text": {
+                  "zh": "èrbǎi líng èr kuài liǎng máo",
+                  "vi": "èrbǎi líng èr kuài liǎng máo"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p072-listen-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 72,
+        "pdfPage": 87,
+        "section": "listen-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "这儿的水果（　）。",
+        "vi": "Trái cây ở đây (　)."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "很少",
+              "py": "hěn shǎo",
+              "vi": "rất ít"
+            },
+            {
+              "id": "B",
+              "zh": "真不少",
+              "py": "zhēn bù shǎo",
+              "vi": "thật không ít"
+            },
+            {
+              "id": "C",
+              "zh": "真不多",
+              "py": "zhēn bù duō",
+              "vi": "thật không nhiều"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "课文2，听两遍对话，选择正确答案",
+            "ordinal": 1
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l10-text-2",
+        "track": "10-3",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p072-listen-text2-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 72,
+        "pdfPage": 87,
+        "section": "listen-text2",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "苹果（　）一斤。",
+        "vi": "Táo giá (　) một cân Trung Quốc (500 g)."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "三块",
+              "py": "sān kuài",
+              "vi": "ba tệ"
+            },
+            {
+              "id": "B",
+              "zh": "三块五",
+              "py": "sān kuài wǔ",
+              "vi": "ba tệ năm hào"
+            },
+            {
+              "id": "C",
+              "zh": "七块二",
+              "py": "qī kuài èr",
+              "vi": "bảy tệ hai hào"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "课文2，听两遍对话，选择正确答案",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l10-text-2",
+        "track": "10-3",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p073-role-text2-01",
+      "version": "source-resume-20261004-reviewed-2",
+      "lesson": 10,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 73,
+        "pdfPage": 88,
+        "section": "role-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "王一雪：这儿的水果真不少！\\n售货员：您想买什么？\\n王一雪：我想买两斤苹果。\\n售货员：苹果三块五一斤。这些七块二，七块钱吧。\\n王一雪：好的，这儿的苹果真便宜！",
+        "vi": "Hoa quả ở đây nhiều thật!\\nChị muốn mua gì?\\nTôi muốn mua hai 斤 táo (1 kg).\\nTáo 3,5 tệ một 斤 (500 gam). Chỗ này là 7,2 tệ; tính 7 tệ nhé.\\nĐược, táo ở đây thật rẻ!"
+      },
+      "audio": {
+        "sceneId": "textbook-l10-text-2",
+        "track": "10-3",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l10-text-2",
+      "figure": "l10-scene-02",
+      "figureSHA256": "455e50980f6d18dc6d6a49fde0d0a4af36ad68a79252958f12082d3c27318ad1"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p073-pair-text2-01",
+      "version": "source-resume-20261004-reviewed-2",
+      "lesson": 10,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 73,
+        "pdfPage": 88,
+        "section": "pair-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，一个人扮演顾客，一个人扮演售货员，进行购物问答。",
+        "vi": "Làm việc theo cặp: một người đóng vai khách hàng, một người đóng vai người bán; hỏi đáp khi mua hàng."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "participants": 2
+    },
+    {
+      "id": "hsk1-original-2026-l10-p074-grammar-adjectival-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 74,
+        "pdfPage": 89,
+        "section": "grammar-adjectival",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "形容词谓语句",
+        "vi": "Câu vị ngữ tính từ"
+      },
+      "instruction": {
+        "zh": "形容词可以直接作谓语，前面可用程度副词或否定副词。\\n大声朗读。",
+        "vi": "Tính từ có thể trực tiếp làm vị ngữ; trước nó có thể dùng phó từ chỉ mức độ hoặc phó từ phủ định.\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）这儿的水果真不少！\\n（2）我的房间不大。\\n（3）那个苹果好吃。",
+        "vi": "(1) Trái cây ở đây thật không ít!\\n(2) Phòng của tôi không lớn.\\n(3) Quả táo kia ngon."
+      },
+      "fields": [],
+      "explanation": {
+        "zh": "形容词可以直接作谓语，前面可用程度副词或否定副词。",
+        "vi": "Tính từ có thể trực tiếp làm vị ngữ; trước nó có thể dùng phó từ chỉ mức độ hoặc phó từ phủ định."
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p074-listen-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 74,
+        "pdfPage": 89,
+        "section": "listen-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "这件衣服（　）。",
+        "vi": "Chiếc áo này (　)."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "二十元",
+              "py": "èrshí yuán",
+              "vi": "hai mươi tệ"
+            },
+            {
+              "id": "B",
+              "zh": "一百元",
+              "py": "yìbǎi yuán",
+              "vi": "một trăm tệ"
+            },
+            {
+              "id": "C",
+              "zh": "一百一十元",
+              "py": "yìbǎi yīshí yuán",
+              "vi": "một trăm mười tệ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "课文3，听两遍对话，选择正确答案",
+            "ordinal": 1
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l10-text-3",
+        "track": "10-5",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p074-listen-text3-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 74,
+        "pdfPage": 89,
+        "section": "listen-text3",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "这件衣服（　）。",
+        "vi": "Chiếc áo này (　)."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "太贵",
+              "py": "tài guì",
+              "vi": "đắt quá"
+            },
+            {
+              "id": "B",
+              "zh": "很贵",
+              "py": "hěn guì",
+              "vi": "rất đắt"
+            },
+            {
+              "id": "C",
+              "zh": "不贵",
+              "py": "bú guì",
+              "vi": "không đắt"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "课文3，听两遍对话，选择正确答案",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l10-text-3",
+        "track": "10-5",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p075-role-text3-01",
+      "version": "source-resume-20261004-reviewed-2",
+      "lesson": 10,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 75,
+        "pdfPage": 90,
+        "section": "role-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "王一雪：这家商店衣服真多！这件一百元，怎么样？\\n刘明：好看，也不贵。\\n王一雪：小雪能穿，买一件吧。\\n刘明：好的。小明能穿吗？\\n王一雪：不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。\\n刘明：好的。",
+        "vi": "Cửa hàng này thật nhiều quần áo! Chiếc này 100 tệ, thấy thế nào?\\nĐẹp, cũng không đắt.\\nTiểu Tuyết mặc được, mua một chiếc nhé.\\nĐược. Tiểu Minh mặc được không?\\nKhông. Đây là quần áo con gái mặc. Quần áo con trai ở đằng kia.\\nĐược."
+      },
+      "audio": {
+        "sceneId": "textbook-l10-text-3",
+        "track": "10-5",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l10-text-3",
+      "figure": "l10-scene-03",
+      "figureSHA256": "7cea09ad5e7746c3f44f312552ca992f8aaf731aec0057a5eca718b968dff6e8"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p075-comprehension-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "reading-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 75,
+        "pdfPage": 90,
+        "section": "comprehension-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "根据课文内容回答问题",
+        "vi": "Trả lời câu hỏi theo bài đọc"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "那件衣服王一雪想买几件？",
+        "vi": "Vương Nhất Tuyết muốn mua mấy chiếc áo đó?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "她想买一件。",
+            "vi": "Cô ấy muốn mua một chiếc."
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "sourceSceneId": "textbook-l10-text-3"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p075-comprehension-text3-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "reading-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 75,
+        "pdfPage": 90,
+        "section": "comprehension-text3",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "根据课文内容回答问题",
+        "vi": "Trả lời câu hỏi theo bài đọc"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "男孩子的衣服在哪儿？",
+        "vi": "Quần áo của con trai ở đâu?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "男孩子的衣服在那儿。",
+            "vi": "Quần áo của con trai ở đằng kia."
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "sourceSceneId": "textbook-l10-text-3"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p076-grammar-how-dialogues-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 76,
+        "pdfPage": 91,
+        "section": "grammar-how-dialogues",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "疑问代词“怎么样”",
+        "vi": "Đại từ nghi vấn “怎么样”"
+      },
+      "instruction": {
+        "zh": "疑问代词“怎么样”用于征求意见、询问状况等。基本结构：……怎么样？\\n大声朗读。",
+        "vi": "Đại từ nghi vấn “怎么样” dùng để hỏi ý kiến, tình hình, v.v. Cấu trúc cơ bản: …怎么样?\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）A：这个杯子怎么样？\\nB：我很喜欢，也不贵。\\n（2）A：这本书怎么样？\\nB：很好看。\\n（3）A：这个菜怎么样？\\nB：这个菜不太好吃，我不喜欢。",
+        "vi": "(1) A: Cái cốc này thế nào?\\nB: Tôi rất thích, cũng không đắt.\\n(2) A: Quyển sách này thế nào?\\nB: Rất hay.\\n(3) A: Món này thế nào?\\nB: Món này không ngon lắm, tôi không thích."
+      },
+      "fields": [],
+      "explanation": {
+        "zh": "疑问代词“怎么样”用于征求意见、询问状况等。基本结构：……怎么样？",
+        "vi": "Đại từ nghi vấn “怎么样” dùng để hỏi ý kiến, tình hình, v.v. Cấu trúc cơ bản: …怎么样?"
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l10-p076-cloze-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 76,
+        "pdfPage": 91,
+        "section": "cloze",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "请问，这本书＿＿钱？",
+        "vi": "Xin hỏi, quyển sách này giá ＿＿ tiền?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "B",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "C",
+              "zh": "多少",
+              "py": "duōshao",
+              "vi": "bao nhiêu"
+            },
+            {
+              "id": "D",
+              "zh": "这些",
+              "py": "zhèxiē",
+              "vi": "những cái này"
+            },
+            {
+              "id": "E",
+              "zh": "块",
+              "py": "kuài",
+              "vi": "tệ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P76，选词填空",
+            "ordinal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l10-p076-cloze-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 76,
+        "pdfPage": 91,
+        "section": "cloze",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "这个＿＿不便宜，六十五＿＿钱一个。",
+        "vi": "Chiếc ＿＿ này không rẻ, sáu mươi lăm ＿＿ một chiếc."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "B",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "C",
+              "zh": "多少",
+              "py": "duōshao",
+              "vi": "bao nhiêu"
+            },
+            {
+              "id": "D",
+              "zh": "这些",
+              "py": "zhèxiē",
+              "vi": "những cái này"
+            },
+            {
+              "id": "E",
+              "zh": "块",
+              "py": "kuài",
+              "vi": "tệ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P76，选词填空",
+            "ordinal": 2
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "B",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "C",
+              "zh": "多少",
+              "py": "duōshao",
+              "vi": "bao nhiêu"
+            },
+            {
+              "id": "D",
+              "zh": "这些",
+              "py": "zhèxiē",
+              "vi": "những cái này"
+            },
+            {
+              "id": "E",
+              "zh": "块",
+              "py": "kuài",
+              "vi": "tệ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 7,
+            "section": "P76，选词填空",
+            "ordinal": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l10-p076-cloze-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 76,
+        "pdfPage": 91,
+        "section": "cloze",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "售货员：＿＿苹果很好吃，你买一些吧。\\n王一雪：好的，我买五个。",
+        "vi": "Người bán: ＿＿ táo này rất ngon, chị mua một ít nhé.\\nVương Nhất Tuyết: Được, tôi mua năm quả."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "B",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "C",
+              "zh": "多少",
+              "py": "duōshao",
+              "vi": "bao nhiêu"
+            },
+            {
+              "id": "D",
+              "zh": "这些",
+              "py": "zhèxiē",
+              "vi": "những cái này"
+            },
+            {
+              "id": "E",
+              "zh": "块",
+              "py": "kuài",
+              "vi": "tệ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 8,
+            "section": "P76，选词填空",
+            "ordinal": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l10-p076-cloze-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 76,
+        "pdfPage": 91,
+        "section": "cloze",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "安妮：这件衣服＿＿？\\n白家月：很好看。",
+        "vi": "Annie: Chiếc áo này ＿＿?\\nBạch Gia Nguyệt: Rất đẹp."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "杯子",
+              "py": "bēizi",
+              "vi": "cốc"
+            },
+            {
+              "id": "B",
+              "zh": "怎么样",
+              "py": "zěnmeyàng",
+              "vi": "thế nào"
+            },
+            {
+              "id": "C",
+              "zh": "多少",
+              "py": "duōshao",
+              "vi": "bao nhiêu"
+            },
+            {
+              "id": "D",
+              "zh": "这些",
+              "py": "zhèxiē",
+              "vi": "những cái này"
+            },
+            {
+              "id": "E",
+              "zh": "块",
+              "py": "kuài",
+              "vi": "tệ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 8,
+            "section": "P76，选词填空",
+            "ordinal": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l10-p077-picture-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "section": "picture",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "这儿的苹果＿＿。",
+        "vi": "Táo ở đây ＿＿."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "真多",
+            "vi": "thật nhiều"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l10-picture-01",
+      "figureSHA256": "e70b74177046ff75ef4057aadec2b4c980dbbbd6987198644a346061f637288c"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p077-picture-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "section": "picture",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "这个电影＿＿？",
+        "vi": "Bộ phim này ＿＿?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "怎么样",
+            "vi": "thế nào"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l10-picture-02",
+      "figureSHA256": "00a4fb4eb2349781a43945736f21188d66e1affbaf1166c3cf7b332d15f6bc83"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p077-picture-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "section": "picture",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "那些杯子＿＿，非常＿＿。",
+        "vi": "Những chiếc cốc kia ＿＿, rất ＿＿."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "很好看",
+            "vi": "rất đẹp"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "图中没有给定时间、价格或计划等信息。参考中的相关内容是编写示例，可以按合理语境另填；不是教材标准答案。",
+            "vi": "Hình không cho sẵn thông tin như thời gian, giá hoặc kế hoạch. Các chi tiết đó trong gợi ý là ví dụ do người biên soạn đặt, có thể thay bằng nội dung hợp lý; không phải đáp án chuẩn của sách."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "便宜",
+            "vi": "rẻ"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "图中没有给定时间、价格或计划等信息。参考中的相关内容是编写示例，可以按合理语境另填；不是教材标准答案。",
+            "vi": "Hình không cho sẵn thông tin như thời gian, giá hoặc kế hoạch. Các chi tiết đó trong gợi ý là ví dụ do người biên soạn đặt, có thể thay bằng nội dung hợp lý; không phải đáp án chuẩn của sách."
+          }
+        }
+      ],
+      "figure": "l10-picture-03",
+      "figureSHA256": "2643b05700a3e2b029554306c1d1c299057264207ad7961bbe724b6c521bc89f"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p077-picture-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 10,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "section": "picture",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "这件衣服＿＿，一件＿＿块。",
+        "vi": "Chiếc áo này ＿＿, mỗi chiếc ＿＿ tệ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "不贵",
+            "vi": "không đắt"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "图中没有给定时间、价格或计划等信息。参考中的相关内容是编写示例，可以按合理语境另填；不是教材标准答案。",
+            "vi": "Hình không cho sẵn thông tin như thời gian, giá hoặc kế hoạch. Các chi tiết đó trong gợi ý là ví dụ do người biên soạn đặt, có thể thay bằng nội dung hợp lý; không phải đáp án chuẩn của sách."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "五十",
+            "vi": "năm mươi"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "图中没有给定时间、价格或计划等信息。参考中的相关内容是编写示例，可以按合理语境另填；不是教材标准答案。",
+            "vi": "Hình không cho sẵn thông tin như thời gian, giá hoặc kế hoạch. Các chi tiết đó trong gợi ý là ví dụ do người biên soạn đặt, có thể thay bằng nội dung hợp lý; không phải đáp án chuẩn của sách."
+          }
+        }
+      ],
+      "figure": "l10-picture-04",
+      "figureSHA256": "12bc8cbfb817259a279226849db6ce4dee2ad904e4452ffdd9a1b3ab2cd8751a"
+    },
+    {
+      "id": "hsk1-original-2026-l10-p077-classroom-01",
+      "version": "source-resume-20261004-reviewed-2",
+      "lesson": 10,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "section": "classroom",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "三人一组，一个人扮演售货员，两个人扮演顾客，仿照本课三篇课文的内容对话。",
+        "vi": "Làm việc theo nhóm ba người: một người đóng vai người bán, hai người đóng vai khách hàng; dựa vào ba bài đọc để tạo hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "participants": 3
+    }
+  ],
+  "figures": [
+    {
+      "id": "l10-warmup-01",
+      "file": "figures/l10-warmup-01.png",
+      "alt": {
+        "zh": "一些红色水果。",
+        "vi": "Một số quả màu đỏ."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "cell": 1,
+        "cropPdfPoints": [
+          58.666666666666664,
+          446.0,
+          192.66666666666666,
+          536.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "7e6bab967ecdeb97498edf40190818901c8b06826d3e48099fa85ec909e5345a",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-warmup-02",
+      "file": "figures/l10-warmup-02.png",
+      "alt": {
+        "zh": "床上放着多件折好的衣物。",
+        "vi": "Nhiều bộ đồ được gấp trên giường."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "cell": 2,
+        "cropPdfPoints": [
+          211.33333333333334,
+          446.0,
+          345.3333333333333,
+          536.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "c1b4b73cb671d7eabd078120ab8a20b8a18d20a9234907efb29b7b3994bab855",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-warmup-03",
+      "file": "figures/l10-warmup-03.png",
+      "alt": {
+        "zh": "桌上有一个白色带把手的容器。",
+        "vi": "Trên bàn có một vật đựng màu trắng có quai."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "cell": 3,
+        "cropPdfPoints": [
+          364.0,
+          446.0,
+          498.0,
+          536.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "36587488d25dcc0fa8496063e0152c96671ed9b7a8405b95cf2d04f170b6aa89",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-warmup-04",
+      "file": "figures/l10-warmup-04.png",
+      "alt": {
+        "zh": "一人帮助另一人整理衬衣。",
+        "vi": "Một người giúp người kia chỉnh áo sơ mi."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "cell": 4,
+        "cropPdfPoints": [
+          58.666666666666664,
+          554.0,
+          192.66666666666666,
+          644.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "fe8f5143cabc1cbe83a1fce1d47e6eb3ecebc0af36cfabbf947d35de0c46ee58",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-warmup-05",
+      "file": "figures/l10-warmup-05.png",
+      "alt": {
+        "zh": "室内有陈列商品的货架。",
+        "vi": "Trong nhà có các kệ trưng bày hàng."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "cell": 5,
+        "cropPdfPoints": [
+          211.33333333333334,
+          554.0,
+          345.3333333333333,
+          644.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "0d766453bf5c16044355c6b07a01bdab3ef12d8676621feec54afefee5312214",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-warmup-06",
+      "file": "figures/l10-warmup-06.png",
+      "alt": {
+        "zh": "商品旁有50%的标志。",
+        "vi": "Cạnh hàng hóa có biển 50%."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 70,
+        "pdfPage": 85,
+        "cell": 6,
+        "cropPdfPoints": [
+          364.0,
+          554.0,
+          498.0,
+          644.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "12832b6e8fdea9e80f977ae6f74c7d1a0d3ed11e958bc20e94586ea8c2c564d4",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-picture-01",
+      "file": "figures/l10-picture-01.png",
+      "alt": {
+        "zh": "许多红苹果。",
+        "vi": "Nhiều quả táo đỏ."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "cell": 1,
+        "cropPdfPoints": [
+          114.66666666666667,
+          102.66666666666667,
+          308.6666666666667,
+          176.66666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "e70b74177046ff75ef4057aadec2b4c980dbbbd6987198644a346061f637288c",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-picture-02",
+      "file": "figures/l10-picture-02.png",
+      "alt": {
+        "zh": "电影画面里的人穿着航天服。",
+        "vi": "Nhân vật trong cảnh phim mặc đồ phi hành gia."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "cell": 2,
+        "cropPdfPoints": [
+          331.3333333333333,
+          102.66666666666667,
+          524.6666666666666,
+          176.66666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "00a4fb4eb2349781a43945736f21188d66e1affbaf1166c3cf7b332d15f6bc83",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-picture-03",
+      "file": "figures/l10-picture-03.png",
+      "alt": {
+        "zh": "四个不同颜色的杯子。",
+        "vi": "Bốn chiếc cốc khác màu."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "cell": 3,
+        "cropPdfPoints": [
+          114.66666666666667,
+          226.0,
+          308.6666666666667,
+          299.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "2643b05700a3e2b029554306c1d1c299057264207ad7961bbe724b6c521bc89f",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-picture-04",
+      "file": "figures/l10-picture-04.png",
+      "alt": {
+        "zh": "一件粉色衣服带有未显示价格的吊牌。",
+        "vi": "Một chiếc áo màu hồng có nhãn không ghi giá rõ ràng."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 77,
+        "pdfPage": 92,
+        "cell": 4,
+        "cropPdfPoints": [
+          331.3333333333333,
+          226.0,
+          524.6666666666666,
+          299.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "12bc8cbfb817259a279226849db6ce4dee2ad904e4452ffdd9a1b3ab2cd8751a",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-scene-01",
+      "file": "figures/l10-scene-01.png",
+      "alt": {
+        "zh": "货架上悬挂着不同颜色的杯子。",
+        "vi": "Các cốc nhiều màu treo trên kệ."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 71,
+        "pdfPage": 86,
+        "cell": 1,
+        "cropPdfPoints": [
+          283.3333333333333,
+          171.33333333333334,
+          522.0,
+          334.6666666666667
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "0bc9e8f0c1863427f3fa4bec0a65271dedbc9189289de09da62103b484661576",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-scene-02",
+      "file": "figures/l10-scene-02.png",
+      "alt": {
+        "zh": "水果摊上摆着多种水果。",
+        "vi": "Quầy hoa quả bày nhiều loại trái cây."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 73,
+        "pdfPage": 88,
+        "cell": 2,
+        "cropPdfPoints": [
+          306.0,
+          64.0,
+          528.0,
+          261.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "455e50980f6d18dc6d6a49fde0d0a4af36ad68a79252958f12082d3c27318ad1",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l10-scene-03",
+      "file": "figures/l10-scene-03.png",
+      "alt": {
+        "zh": "商店内陈列着多种衣服。",
+        "vi": "Nhiều loại quần áo được trưng bày trong cửa hàng."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 74,
+        "pdfPage": 89,
+        "cell": 3,
+        "cropPdfPoints": [
+          58.666666666666664,
+          556.6666666666666,
+          499.3333333333333,
+          743.3333333333334
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "7cea09ad5e7746c3f44f312552ca992f8aaf731aec0057a5eca718b968dff6e8",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "printedPage": 70,
+      "pdfPage": 85,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "objectives",
+        "warmup-6-panels"
+      ]
+    },
+    {
+      "printedPage": 71,
+      "pdfPage": 86,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "text1-existing",
+        "vocabulary-existing",
+        "role-read",
+        "pair-price"
+      ]
+    },
+    {
+      "printedPage": 72,
+      "pdfPage": 87,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "money-table-6x3",
+        "listen-text2-2"
+      ]
+    },
+    {
+      "printedPage": 73,
+      "pdfPage": 88,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "text2-existing",
+        "vocabulary-existing",
+        "role-read",
+        "shopping-pair"
+      ]
+    },
+    {
+      "printedPage": 74,
+      "pdfPage": 89,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "grammar-adjectival-3-examples",
+        "listen-text3-2",
+        "text3-scene-image"
+      ]
+    },
+    {
+      "printedPage": 75,
+      "pdfPage": 90,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "text3-existing",
+        "vocabulary-existing",
+        "role-read",
+        "comprehension-2"
+      ]
+    },
+    {
+      "printedPage": 76,
+      "pdfPage": 91,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "how-3-dialogues",
+        "cloze-4-items-5-fields"
+      ]
+    },
+    {
+      "printedPage": 77,
+      "pdfPage": 92,
+      "visualReview": "author-inspected",
+      "sourceSections": [
+        "picture-4-items-6-fields",
+        "classroom-3-participants",
+        "bonus-10-1-unavailable"
+      ]
+    }
+  ],
+  "textbookCorrections": [
+    {
+      "target": "textbook-l10-grammar-01",
+      "printedPage": 72,
+      "issue": "原版钱数表6行3列缺失；候选按原顺序恢复。"
+    },
+    {
+      "target": "textbook-l10-grammar-03",
+      "printedPage": 76,
+      "issue": "原版三组完整对话，现版仅前两组问题；候选恢复。"
+    },
+    {
+      "target": "textbook-l10-text-2-line-04",
+      "printedPage": 73,
+      "field": "py",
+      "suggested": "Píngguǒ sān kuài wǔ yì jīn. Zhèxiē qī kuài èr, qī kuài qián ba.",
+      "issue": "原书一斤为yì jīn。"
+    },
+    {
+      "target": "textbook-l10-text-3-line-03",
+      "printedPage": 75,
+      "field": "py",
+      "suggested": "Xiǎoxuě néng chuān, mǎi yí jiàn ba.",
+      "issue": "原书一件为yí jiàn。"
+    },
+    {
+      "target": "textbook-l10-text-3-line-05",
+      "printedPage": 75,
+      "field": "zh",
+      "suggested": "不能。这些是女孩子穿的衣服，男孩子的衣服在那儿。",
+      "issue": "现版用句号分句，原版是逗号；语义一致。"
+    }
+  ],
+  "bonus": {
+    "id": "hsk1-original-2026-l10-p077-bonus-reference-01",
+    "title": {
+      "zh": "认识人民币",
+      "vi": "Tìm hiểu nhân dân tệ"
+    },
+    "printedResourceId": "10-1",
+    "printedPage": 77,
+    "pdfPage": 92,
+    "availability": "unavailable",
+    "payload": null
+  },
+  "integrationNotes": [
+    "Candidate only; independent source review and browser acceptance remain pending.",
+    "All original cropped figure files are local candidates; do not expose full-page PDF images.",
+    "Blank references are editorial models, not unique answers; no automatic grading for open fields.",
+    "Source tables preserve distinct cells; optional self-review fields must not block saving.",
+    "Existing source Chinese scene lines checked visually; listed corrections are not applied to shared textbook.json.",
+    "Audio track IDs are print-aligned; human listening review has not been performed."
+  ]
+}
+`;export{e as default};

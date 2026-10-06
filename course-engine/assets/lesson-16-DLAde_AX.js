@@ -1,0 +1,6756 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk3-fltrp-2026",
+  "version": "2026.1",
+  "number": 16,
+  "id": "hsk3-fltrp-2026:l16",
+  "title": {
+    "zh": "我听说有的熊猫出国了",
+    "vi": "Tôi nghe nói có gấu trúc đã ra nước ngoài",
+    "py": "Wǒ tīngshuō yǒude xióngmāo chū guó le"
+  },
+  "source": {
+    "startPdfPage": 156,
+    "endPdfPage": 165,
+    "startPrintedPage": 144,
+    "endPrintedPage": 153
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent reviewer: review_hsk3_final_lessons",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "All eight original audio files freshly full-decoded and SHA256-matched; all eight complete ASR outputs inspected only as auxiliary evidence, not certified human listening.",
+      "Source text2 prints 他们 for pandas; retained exactly rather than silently changing to 它们. Zoo opening/closing hours are textbook comprehension data, not current visitor guidance.",
+      "Independent source-pixel, bilingual, pinyin, assessment and transcript-assisted audio review completed; see lesson independent audit. No full human listening or native certification claimed."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并描述动物的特征、习性和生活环境。",
+      "vi": "Nghe hiểu, mô tả đặc điểm, tập tính và môi trường sống của động vật.",
+      "id": "hsk3-fltrp-2026:l16:objective1",
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并表达个人对动物的看法。",
+      "vi": "Nghe hiểu và diễn đạt ý kiến về động vật.",
+      "id": "hsk3-fltrp-2026:l16:objective2",
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握比较句（11）的用法，能表达事物在数量或时间上的差异。",
+      "vi": "Dùng câu so sánh (11) diễn đạt khác biệt về số lượng hoặc thời gian.",
+      "id": "hsk3-fltrp-2026:l16:objective3",
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "了解大熊猫的基本情况。",
+      "vi": "Tìm hiểu thông tin cơ bản về gấu trúc lớn.",
+      "id": "hsk3-fltrp-2026:l16:objective4",
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk3-fltrp-2026:l16:warmup1",
+      "title": {
+        "zh": "在图片上标注下列词语。",
+        "vi": "Gắn nhãn từ vào hình."
+      },
+      "items": [
+        {
+          "zh": "A 脸；B 嘴；C 眼睛；D 耳朵；E 脚。",
+          "vi": "A mặt; B miệng; C mắt; D tai; E chân."
+        },
+        {
+          "zh": "图片说明（编辑补充）：两只熊猫身上标出五处：左上抬起的脚；右上耳朵；右侧脸；右下嘴；左下眼睛。",
+          "vi": "Mô tả hình bổ sung: năm vị trí ở hai gấu trúc: chân giơ ở trên trái; tai trên phải; mặt bên phải; miệng dưới phải; mắt dưới trái.",
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "热身图片：编辑描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:warmup2",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, trao đổi thực tế."
+      },
+      "items": [
+        {
+          "zh": "你喜欢去动物园吗？你在动物园最喜欢看什么动物？",
+          "vi": "Bạn thích đến sở thú không? Thích xem con gì nhất?"
+        },
+        {
+          "zh": "你养过什么小动物？给同学介绍一下你养过的动物。",
+          "vi": "Bạn từng nuôi con gì? Hãy giới thiệu với bạn học."
+        }
+      ],
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk3-fltrp-2026:l16:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在一家宠物领养店，王一雪和孩子们在看动物。",
+        "vi": "Tại một cơ sở nhận nuôi thú cưng, Nhất Tuyết và các con xem động vật."
+      },
+      "audioTrack": "16-1",
+      "lines": [
+        {
+          "zh": "这只小猫你们养了多久了？",
+          "vi": "Mọi người nuôi con mèo này bao lâu rồi?",
+          "id": "hsk3-fltrp-2026:l16:text1:line1",
+          "speaker": "刘小雪",
+          "py": "Zhè zhī xiǎo māo nǐmen yǎng le duō jiǔ le?",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "已经一年多了。第一天看见它的时候，它又脏又小。",
+          "vi": "Hơn một năm rồi. Ngày đầu thấy nó, nó vừa bẩn vừa nhỏ.",
+          "id": "hsk3-fltrp-2026:l16:text1:line2",
+          "speaker": "服务员",
+          "py": "Yǐjīng yì nián duō le. Dì yī tiān kàn jiàn tā de shíhou, tā yòu zāng yòu xiǎo.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "现在它变得又干净又漂亮了。",
+          "vi": "Giờ nó vừa sạch vừa đẹp rồi.",
+          "id": "hsk3-fltrp-2026:l16:text1:line3",
+          "speaker": "刘小雪",
+          "py": "Xiànzài tā biàn de yòu gānjìng yòu piàoliang le.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是啊。它还特别可爱，一会儿在你脚边睡觉，一会儿在你身上爬。",
+          "vi": "Đúng, còn rất đáng yêu, lúc ngủ bên chân, lúc trèo lên người bạn.",
+          "id": "hsk3-fltrp-2026:l16:text1:line4",
+          "speaker": "服务员",
+          "py": "Shì a. Tā hái tèbié kě'ài, yíhuìr zài nǐ jiǎo biān shuìjiào, yíhuìr zài nǐ shēn shàng pá.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你们把它照顾得真好。",
+          "vi": "Mọi người chăm nó tốt thật.",
+          "id": "hsk3-fltrp-2026:l16:text1:line5",
+          "speaker": "刘小雪",
+          "py": "Nǐmen bǎ tā zhàogù de zhēn hǎo.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "它就好像我们的孩子，我们照顾它，它也认得我们了。",
+          "vi": "Nó như con chúng tôi, chúng tôi chăm nó, nó cũng nhận ra chúng tôi rồi.",
+          "id": "hsk3-fltrp-2026:l16:text1:line6",
+          "speaker": "服务员",
+          "py": "Tā jiù hǎoxiàng wǒmen de háizi, wǒmen zhàogù tā, tā yě rènde wǒmen le.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "妈妈，我们家也养一只小猫吧。",
+          "vi": "Mẹ, nhà mình cũng nuôi mèo đi.",
+          "id": "hsk3-fltrp-2026:l16:text1:line7",
+          "speaker": "刘小雪",
+          "py": "Māma, wǒmen jiā yě yǎng yì zhī xiǎo māo ba.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "咱们没时间照顾，还是别养了，我周末带你们去北京动物园看动物吧。",
+          "vi": "Mình không có thời gian chăm nên thôi, cuối tuần mẹ dẫn các con đến Sở thú Bắc Kinh xem động vật nhé.",
+          "id": "hsk3-fltrp-2026:l16:text1:line8",
+          "speaker": "王一雪",
+          "py": "Zánmen méi shíjiān zhàogù, háishi bié yǎng le, wǒ zhōumò dài nǐmen qù Běijīng Dòngwùyuán kàn dòngwù ba.",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "这只小猫养了多久了？",
+          "vi": "Con mèo được nuôi bao lâu?",
+          "id": "hsk3-fltrp-2026:l16:text1:question1",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "第一天养",
+            "养了一年多了",
+            "养了很多年了"
+          ],
+          "answer": 1,
+          "editorialNote": {
+            "zh": "配套答案PDF第23页把印刷第145页误标为“课文4”，但教材第145页清楚标作课文1，配音为16-1；这里按教材页码及内容对应，答案仍为B。",
+            "vi": "Trang 23 PDF đáp án ghi nhầm trang in 145 là “bài khóa 4”; sách trang 145 là bài khóa 1, âm thanh 16-1. Ở đây ghép theo trang và nội dung sách, đáp án vẫn B.",
+            "source": {
+              "pdfPage": 157,
+              "printedPage": 145,
+              "section": "答案页课文编号误植：编者说明",
+              "provenance": "supplemental"
+            }
+          }
+        },
+        {
+          "zh": "现在这只小猫是什么样的？",
+          "vi": "Giờ con mèo thế nào?",
+          "id": "hsk3-fltrp-2026:l16:text1:question2",
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "特别小",
+            "特别可爱",
+            "不太干净"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "服务员第一天看见这只小猫的时候，它是什么样的？",
+          "vi": "Ngày đầu nhân viên thấy mèo, nó thế nào?",
+          "id": "hsk3-fltrp-2026:l16:text1:question3",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "服务员为什么觉得小猫很可爱？",
+          "vi": "Vì sao nhân viên thấy mèo đáng yêu?",
+          "id": "hsk3-fltrp-2026:l16:text1:question4",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "服务员和小猫的关系怎么样？",
+          "vi": "Quan hệ giữa nhân viên và mèo thế nào?",
+          "id": "hsk3-fltrp-2026:l16:text1:question5",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在动物园，王一雪和孩子们边走边聊。",
+        "vi": "Ở sở thú, Nhất Tuyết và các con vừa đi vừa nói."
+      },
+      "audioTrack": "16-3",
+      "lines": [
+        {
+          "zh": "妈妈，大熊猫这个名字很奇怪，它们跟猫有什么关系？",
+          "vi": "Mẹ, tên gấu trúc lạ nhỉ, nó liên quan gì đến mèo?",
+          "id": "hsk3-fltrp-2026:l16:text2:line1",
+          "speaker": "刘小明",
+          "py": "Māma, dàxióngmāo zhège míngzi hěn qíguài, tāmen gēn māo yǒu shénme guānxi?",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个问题问得好，它们跟猫没什么关系，其实应该叫大猫熊。",
+          "vi": "Câu hỏi hay, chúng không liên quan mấy đến mèo, thực ra nên gọi là “đại miêu hùng”.",
+          "id": "hsk3-fltrp-2026:l16:text2:line2",
+          "speaker": "王一雪",
+          "py": "Zhège wèntí wèn de hǎo, tāmen gēn māo méi shénme guānxi, qíshí yīnggāi jiào dàmāoxióng.",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "大熊猫为什么只吃竹子不吃肉？",
+          "vi": "Sao gấu trúc chỉ ăn tre không ăn thịt?",
+          "id": "hsk3-fltrp-2026:l16:text2:line3",
+          "speaker": "刘小明",
+          "py": "Dàxióngmāo wèishénme zhǐ chī zhúzi bù chī ròu?",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "它们跟人一样，也可以吃肉，但是对肉不感兴趣。",
+          "vi": "Chúng cũng ăn thịt được như người, nhưng không hứng thú với thịt.",
+          "id": "hsk3-fltrp-2026:l16:text2:line4",
+          "speaker": "王一雪",
+          "py": "Tāmen gēn rén yíyàng, yě kěyǐ chī ròu, dànshì duì ròu bù gǎn xìngqù.",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "大熊猫为什么是中国的国宝？",
+          "vi": "Sao gấu trúc là quốc bảo Trung Quốc?",
+          "id": "hsk3-fltrp-2026:l16:text2:line5",
+          "speaker": "刘小明",
+          "py": "Dàxióngmāo wèishénme shì Zhōngguó de guóbǎo?",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "全世界只有中国有野生大熊猫，中国是大熊猫的家。",
+          "vi": "Trên thế giới chỉ Trung Quốc có gấu trúc lớn hoang dã, Trung Quốc là quê hương của chúng.",
+          "id": "hsk3-fltrp-2026:l16:text2:line6",
+          "speaker": "王一雪",
+          "py": "Quán shìjiè zhǐ yǒu Zhōngguó yǒu yěshēng dàxióngmāo, Zhōngguó shì dàxióngmāo de jiā.",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我听说有的熊猫出国了，他们去哪儿了？",
+          "vi": "Con nghe có gấu trúc ra nước ngoài, chúng đi đâu rồi?",
+          "id": "hsk3-fltrp-2026:l16:text2:line7",
+          "speaker": "刘小明",
+          "py": "Wǒ tīngshuō yǒude xióngmāo chū guó le, tāmen qù nǎr le?",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "关于这个问题，我得慢慢给你讲。",
+          "vi": "Về chuyện này, mẹ phải kể dần cho con.",
+          "id": "hsk3-fltrp-2026:l16:text2:line8",
+          "speaker": "王一雪",
+          "py": "Guānyú zhège wèntí, wǒ děi mànmàn gěi nǐ jiǎng.",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "弟弟，你真是“十万个为什么”。",
+          "vi": "Em đúng là “mười vạn câu hỏi vì sao”.",
+          "id": "hsk3-fltrp-2026:l16:text2:line9",
+          "speaker": "刘小雪",
+          "py": "Dìdi, nǐ zhēn shì shí wàn ge wèishénme.",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一雪和孩子们在聊什么？",
+          "vi": "Nhất Tuyết và các con nói về gì?",
+          "id": "hsk3-fltrp-2026:l16:text2:question1",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "大熊猫",
+            "北京动物园",
+            "动物和人的不同"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "刘小雪为什么说弟弟是“十万个为什么”？",
+          "vi": "Vì sao Tiểu Tuyết gọi em như vậy?",
+          "id": "hsk3-fltrp-2026:l16:text2:question2",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "弟弟喜欢看书",
+            "弟弟喜欢听故事",
+            "弟弟喜欢问问题"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "大熊猫跟猫有关系吗？",
+          "vi": "Gấu trúc có liên quan với mèo không?",
+          "id": "hsk3-fltrp-2026:l16:text2:question3",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "大熊猫为什么只吃竹子不吃肉？",
+          "vi": "Vì sao gấu trúc chỉ ăn tre, không ăn thịt?",
+          "id": "hsk3-fltrp-2026:l16:text2:question4",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "大熊猫为什么是中国的国宝？",
+          "vi": "Vì sao gấu trúc là quốc bảo Trung Quốc?",
+          "id": "hsk3-fltrp-2026:l16:text2:question5",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在熊猫馆，王一雪和孩子们在看大熊猫。",
+        "vi": "Ở khu gấu trúc, Nhất Tuyết và các con xem gấu trúc."
+      },
+      "audioTrack": "16-5",
+      "lines": [
+        {
+          "zh": "这只大熊猫一会儿爬上去，一会儿跳下来，可爱极了！",
+          "vi": "Con này lúc trèo lên lúc nhảy xuống, đáng yêu quá!",
+          "id": "hsk3-fltrp-2026:l16:text3:line1",
+          "speaker": "刘小雪",
+          "py": "Zhè zhī dàxióngmāo yíhuìr pá shàngqu, yíhuìr tiào xiàlai, kě'ài jí le!",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "它好像还没吃饱，站起来张着嘴找吃的呢。",
+          "vi": "Hình như nó chưa no, đứng lên há miệng tìm đồ ăn.",
+          "id": "hsk3-fltrp-2026:l16:text3:line2",
+          "speaker": "王一雪",
+          "py": "Tā hǎoxiàng hái méi chī bǎo, zhàn qǐlai zhāngzhe zuǐ zhǎo chī de ne.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "它身边那只熊猫半天没动，是不是在睡觉呢？",
+          "vi": "Con bên cạnh mãi không động đậy, có đang ngủ không?",
+          "id": "hsk3-fltrp-2026:l16:text3:line3",
+          "speaker": "刘小雪",
+          "py": "Tā shēnbiān nà zhī xióngmāo bàntiān méi dòng, shì bu shì zài shuìjiào ne?",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我看不见它的脸，可能是吧。一般来说，熊猫每天要睡很多次觉。",
+          "vi": "Mẹ không thấy mặt nó, có thể vậy. Nói chung gấu trúc ngủ nhiều lần mỗi ngày.",
+          "id": "hsk3-fltrp-2026:l16:text3:line4",
+          "speaker": "王一雪",
+          "py": "Wǒ kàn bu jiàn tā de liǎn, kěnéng shì ba. Yìbān lái shuō, xióngmāo měi tiān yào shuì hěn duō cì jiào.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "对，除了睡觉以外，很多时间都在吃东西。",
+          "vi": "Vâng, ngoài ngủ ra thì chúng dành nhiều thời gian để ăn.",
+          "id": "hsk3-fltrp-2026:l16:text3:line5",
+          "speaker": "刘小雪",
+          "py": "Duì, chúle shuìjiào yǐwài, hěn duō shíjiān dōu zài chī dōngxi.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "大熊猫的生活真舒服啊！",
+          "vi": "Gấu trúc sống dễ chịu thật!",
+          "id": "hsk3-fltrp-2026:l16:text3:line6",
+          "speaker": "刘小明",
+          "py": "Dàxióngmāo de shēnghuó zhēn shūfu a!",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "妈妈，您帮我和这两只大熊猫照一张照片吧。",
+          "vi": "Mẹ chụp giúp con ảnh với hai con gấu này nhé.",
+          "id": "hsk3-fltrp-2026:l16:text3:line7",
+          "speaker": "刘小雪",
+          "py": "Māma, nín bāng wǒ hé zhè liǎng zhī dàxióngmāo zhào yì zhāng zhàopiàn ba.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "一般来说，大熊猫每天做什么？",
+          "vi": "Nói chung gấu trúc làm gì hằng ngày?",
+          "id": "hsk3-fltrp-2026:l16:text3:question1",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "爬来爬去",
+            "跟人拍照",
+            "吃东西和睡觉"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "刘小雪让妈妈帮她做什么？",
+          "vi": "Tiểu Tuyết nhờ mẹ giúp gì?",
+          "id": "hsk3-fltrp-2026:l16:text3:question2",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "照一张照片",
+            "买一些吃的",
+            "找一只熊猫"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "刘小雪为什么觉得这只大熊猫可爱极了？",
+          "vi": "Vì sao Tiểu Tuyết thấy gấu trúc đáng yêu?",
+          "id": "hsk3-fltrp-2026:l16:text3:question3",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一雪为什么觉得它没吃饱？",
+          "vi": "Vì sao mẹ nghĩ nó chưa no?",
+          "id": "hsk3-fltrp-2026:l16:text3:question4",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "刘小明觉得大熊猫的生活怎么样？",
+          "vi": "Tiểu Minh thấy cuộc sống gấu trúc thế nào?",
+          "id": "hsk3-fltrp-2026:l16:text3:question5",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "课文3：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在家里，王一雪在写日记。",
+        "vi": "Ở nhà, Nhất Tuyết viết nhật ký."
+      },
+      "audioTrack": "16-7",
+      "lines": [
+        {
+          "zh": "今天我带小雪和小明去动物园玩了。北京动物园是中国很有名的动物园，里面有非常多的动物，当然，大人和孩子最喜爱的还是大熊猫。每天有很多游客去熊猫馆，他们带着相机去给可爱的大熊猫拍照。动物园早上七点半开门，晚上七点关门，冬天比夏天游客少，所以也比平时早关门一个小时。如果第一次来北京旅游，跟家人一起去北京动物园是个不错的选择。",
+          "vi": "Hôm nay tôi dẫn Tiểu Tuyết và Tiểu Minh đi sở thú. Sở thú Bắc Kinh nổi tiếng ở Trung Quốc, có rất nhiều loài; người lớn và trẻ em thích nhất vẫn là gấu trúc. Mỗi ngày nhiều du khách mang máy ảnh đến khu gấu trúc chụp ảnh. Theo bài này, sở thú mở lúc bảy rưỡi sáng, đóng bảy giờ tối; mùa đông ít khách hơn mùa hè nên đóng sớm một giờ. Lần đầu du lịch Bắc Kinh, đi sở thú cùng gia đình là lựa chọn hay.",
+          "id": "hsk3-fltrp-2026:l16:text4:line1",
+          "speaker": "王一雪",
+          "py": "Jīntiān wǒ dài Xiǎoxuě hé Xiǎomíng qù dòngwùyuán wán le. Běijīng Dòngwùyuán shì Zhōngguó hěn yǒumíng de dòngwùyuán, lǐmian yǒu fēicháng duō de dòngwù, dāngrán, dàren hé háizi zuì xǐ'ài de háishi dàxióngmāo. Měi tiān yǒu hěn duō yóukè qù xióngmāoguǎn, tāmen dàizhe xiàngjī qù gěi kě'ài de dàxióngmāo pāizhào. Dòngwùyuán zǎoshang qī diǎn bàn kāi mén, wǎnshang qī diǎn guān mén, dōngtiān bǐ xiàtiān yóukè shǎo, suǒyǐ yě bǐ píngshí zǎo guān mén yí ge xiǎoshí. Rúguǒ dì yī cì lái Běijīng lǚyóu, gēn jiārén yìqǐ qù Běijīng Dòngwùyuán shì ge búcuò de xuǎnzé.",
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "游客最喜欢去北京动物园看什么动物？",
+          "vi": "Du khách thích xem con gì nhất?",
+          "id": "hsk3-fltrp-2026:l16:text4:question1",
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "牛",
+            "羊",
+            "大熊猫"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "北京动物园早上几点开门？",
+          "vi": "Theo bài, sở thú mở mấy giờ?",
+          "id": "hsk3-fltrp-2026:l16:text4:question2",
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "六点",
+            "七点",
+            "七点半"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "今天王一雪带孩子们去哪儿了？",
+          "vi": "Hôm nay chị dẫn con đi đâu?",
+          "id": "hsk3-fltrp-2026:l16:text4:question3",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "很多游客去动物园做什么？",
+          "vi": "Nhiều khách đến sở thú làm gì?",
+          "id": "hsk3-fltrp-2026:l16:text4:question4",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "北京动物园夏天和冬天的关门时间有什么不同？",
+          "vi": "Giờ đóng mùa hè và đông khác nhau thế nào theo bài?",
+          "id": "hsk3-fltrp-2026:l16:text4:question5",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "课文4",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "脏",
+      "vi": "bẩn",
+      "id": "hsk3-fltrp-2026:l16:word01",
+      "py": "zāng",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "脏",
+            "printedPinyin": "zāng",
+            "normalizedPinyin": "zāng",
+            "printedNumber": 1,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "脏",
+            "printedPinyin": "zāng",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "可爱",
+      "vi": "đáng yêu",
+      "id": "hsk3-fltrp-2026:l16:word02",
+      "py": "kě'ài",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "可爱",
+            "printedPinyin": "kě’ài",
+            "normalizedPinyin": "kě'ài",
+            "printedNumber": 2,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "可爱",
+            "printedPinyin": "kě'ài",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "一会儿",
+      "vi": "lúc thì (luân phiên trong thời gian ngắn)",
+      "id": "hsk3-fltrp-2026:l16:word03",
+      "py": "yíhuìr",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "一会儿",
+            "printedPinyin": "yíhuìr",
+            "normalizedPinyin": "yíhuìr",
+            "printedNumber": 3,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "一会儿",
+            "printedPinyin": "yíhuìr",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "脚",
+      "vi": "bàn chân",
+      "id": "hsk3-fltrp-2026:l16:word04",
+      "py": "jiǎo",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "脚",
+            "printedPinyin": "jiǎo",
+            "normalizedPinyin": "jiǎo",
+            "printedNumber": 4,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "脚",
+            "printedPinyin": "jiǎo",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "照顾",
+      "vi": "chăm sóc",
+      "id": "hsk3-fltrp-2026:l16:word05",
+      "py": "zhàogù",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "照顾",
+            "printedPinyin": "zhàogù",
+            "normalizedPinyin": "zhàogù",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "照顾",
+            "printedPinyin": "zhàogù",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "好像",
+      "vi": "dường như, giống như",
+      "id": "hsk3-fltrp-2026:l16:word06",
+      "py": "hǎoxiàng",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "好像",
+            "printedPinyin": "hǎoxiàng",
+            "normalizedPinyin": "hǎoxiàng",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "好像",
+            "printedPinyin": "hǎoxiàng",
+            "lessonNumbers": [
+              1,
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "认得",
+      "vi": "nhận ra, biết mặt",
+      "id": "hsk3-fltrp-2026:l16:word07",
+      "py": "rènde",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "认得",
+            "printedPinyin": "rènde",
+            "normalizedPinyin": "rènde",
+            "printedNumber": 7,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "认得",
+            "printedPinyin": "rènde",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "周末",
+      "vi": "cuối tuần",
+      "id": "hsk3-fltrp-2026:l16:word08",
+      "py": "zhōumò",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "周末",
+            "printedPinyin": "zhōumò",
+            "normalizedPinyin": "zhōumò",
+            "printedNumber": 8,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "周末",
+            "printedPinyin": "zhōumò",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "动物园",
+      "vi": "sở thú",
+      "id": "hsk3-fltrp-2026:l16:word09",
+      "py": "dòngwùyuán",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "动物园",
+            "printedPinyin": "dòngwùyuán",
+            "normalizedPinyin": "dòngwùyuán",
+            "printedNumber": 9,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "动物园",
+            "printedPinyin": "dòngwùyuán",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "动物",
+      "vi": "động vật",
+      "id": "hsk3-fltrp-2026:l16:word10",
+      "py": "dòngwù",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "16-2",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 158,
+              "printedPage": 146,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "动物",
+            "printedPinyin": "dòngwù",
+            "normalizedPinyin": "dòngwù",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "动物",
+            "printedPinyin": "dòngwù",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "大熊猫",
+      "vi": "gấu trúc lớn",
+      "id": "hsk3-fltrp-2026:l16:word11",
+      "py": "dàxióngmāo",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "大熊猫",
+            "printedPinyin": "dàxióng-\\nmāo",
+            "normalizedPinyin": "dàxióngmāo",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "大熊猫",
+            "printedPinyin": "dàxióngmāo",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "奇怪",
+      "vi": "kỳ lạ",
+      "id": "hsk3-fltrp-2026:l16:word12",
+      "py": "qíguài",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "奇怪",
+            "printedPinyin": "qíguài",
+            "normalizedPinyin": "qíguài",
+            "printedNumber": 12,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "奇怪",
+            "printedPinyin": "qíguài",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "其实",
+      "vi": "thực ra",
+      "id": "hsk3-fltrp-2026:l16:word13",
+      "py": "qíshí",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "其实",
+            "printedPinyin": "qíshí",
+            "normalizedPinyin": "qíshí",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "其实",
+            "printedPinyin": "qíshí",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "竹子",
+      "vi": "tre, trúc",
+      "id": "hsk3-fltrp-2026:l16:word14",
+      "py": "zhúzi",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 194,
+        "printedPage": 182,
+        "section": "词语表：竹子",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "竹子",
+            "printedPinyin": "zhúzi",
+            "normalizedPinyin": "zhúzi",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "竹子",
+            "printedPinyin": "zhúzi",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "国宝",
+      "vi": "quốc bảo",
+      "id": "hsk3-fltrp-2026:l16:word15",
+      "py": "guóbǎo",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 189,
+        "printedPage": 177,
+        "section": "词语表：国宝",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "国宝",
+            "printedPinyin": "guóbǎo",
+            "normalizedPinyin": "guóbǎo",
+            "printedNumber": 15,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "国宝",
+            "printedPinyin": "guóbǎo",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "全",
+      "vi": "toàn bộ",
+      "id": "hsk3-fltrp-2026:l16:word16",
+      "py": "quán",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：全",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "全",
+            "printedPinyin": "quán",
+            "normalizedPinyin": "quán",
+            "printedNumber": 16,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "全",
+            "printedPinyin": "quán",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "野生",
+      "vi": "hoang dã",
+      "id": "hsk3-fltrp-2026:l16:word17",
+      "py": "yěshēng",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 193,
+        "printedPage": 181,
+        "section": "词语表：野生",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "野生",
+            "printedPinyin": "yěshēng",
+            "normalizedPinyin": "yěshēng",
+            "printedNumber": 17,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "野生",
+            "printedPinyin": "yěshēng",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "关于",
+      "vi": "về (chủ đề)",
+      "id": "hsk3-fltrp-2026:l16:word18",
+      "py": "guānyú",
+      "pos": "giới từ",
+      "sourceText": 2,
+      "audioTrack": "16-4",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 159,
+              "printedPage": 147,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "关于",
+            "printedPinyin": "guānyú",
+            "normalizedPinyin": "guānyú",
+            "printedNumber": 18,
+            "sourceList": "new-words",
+            "printedPOSRaw": "giới.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "介词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "关于",
+            "printedPinyin": "guānyú",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "饱",
+      "vi": "no bụng",
+      "id": "hsk3-fltrp-2026:l16:word19",
+      "py": "bǎo",
+      "pos": "tính từ",
+      "sourceText": 3,
+      "audioTrack": "16-6",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 161,
+              "printedPage": 149,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "饱",
+            "printedPinyin": "bǎo",
+            "normalizedPinyin": "bǎo",
+            "printedNumber": 19,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "饱",
+            "printedPinyin": "bǎo",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "张",
+      "vi": "mở, há",
+      "id": "hsk3-fltrp-2026:l16:word20",
+      "py": "zhāng",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "16-6",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 161,
+              "printedPage": 149,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "张",
+            "printedPinyin": "zhāng",
+            "normalizedPinyin": "zhāng",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "张",
+            "printedPinyin": "zhāng",
+            "lessonNumbers": [
+              2,
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "嘴",
+      "vi": "miệng",
+      "id": "hsk3-fltrp-2026:l16:word21",
+      "py": "zuǐ",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "16-6",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 161,
+              "printedPage": 149,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "嘴",
+            "printedPinyin": "zuǐ",
+            "normalizedPinyin": "zuǐ",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "嘴",
+            "printedPinyin": "zuǐ",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "身边",
+      "vi": "bên cạnh mình",
+      "id": "hsk3-fltrp-2026:l16:word22",
+      "py": "shēnbiān",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "16-6",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 161,
+              "printedPage": 149,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "身边",
+            "printedPinyin": "shēnbiān",
+            "normalizedPinyin": "shēnbiān",
+            "printedNumber": 22,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "身边",
+            "printedPinyin": "shēnbiān",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "半天",
+      "vi": "một lúc lâu",
+      "id": "hsk3-fltrp-2026:l16:word23",
+      "py": "bàntiān",
+      "pos": "cụm số lượng",
+      "sourceText": 3,
+      "audioTrack": "16-6",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 161,
+              "printedPage": 149,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "半天",
+            "printedPinyin": "bàntiān",
+            "normalizedPinyin": "bàntiān",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "sl.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "数量词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "半天",
+            "printedPinyin": "bàntiān",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "脸",
+      "vi": "mặt",
+      "id": "hsk3-fltrp-2026:l16:word24",
+      "py": "liǎn",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "16-6",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 161,
+              "printedPage": 149,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "脸",
+            "printedPinyin": "liǎn",
+            "normalizedPinyin": "liǎn",
+            "printedNumber": 24,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "脸",
+            "printedPinyin": "liǎn",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "大人",
+      "vi": "người lớn",
+      "id": "hsk3-fltrp-2026:l16:word25",
+      "py": "dàren",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "16-8",
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 162,
+              "printedPage": 150,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "大人",
+            "printedPinyin": "dàren",
+            "normalizedPinyin": "dàren",
+            "printedNumber": 25,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "大人",
+            "printedPinyin": "dàren",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "喜爱",
+      "vi": "yêu thích",
+      "id": "hsk3-fltrp-2026:l16:word26",
+      "py": "xǐ'ài",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "16-8",
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 162,
+              "printedPage": 150,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "喜爱",
+            "printedPinyin": "xǐ’ài",
+            "normalizedPinyin": "xǐ'ài",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "喜爱",
+            "printedPinyin": "xǐ'ài",
+            "lessonNumbers": [
+              16
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3-fltrp-2026:l16:grammar1",
+      "title": {
+        "zh": "并列复句“一会儿……，一会儿……”",
+        "vi": "Câu luân phiên 一会儿……，一会儿……"
+      },
+      "structure": "一会儿＋动作／状态一，一会儿＋动作／状态二",
+      "explanation": {
+        "zh": "表示短时间内发生的不同动作，或者一种对立的情况。",
+        "vi": "Chỉ những hành động khác nhau hoặc trạng thái đối lập luân phiên trong thời gian ngắn."
+      },
+      "examples": [
+        {
+          "zh": "它一会儿在你脚边睡觉，一会儿在你身上爬。",
+          "vi": "Nó lúc ngủ bên chân, lúc trèo lên người bạn.",
+          "py": "Tā yíhuìr zài nǐ jiǎo biān shuìjiào, yíhuìr zài nǐ shēn shàng pá.",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他一会儿进来，一会儿出去，忙得很。",
+          "vi": "Anh ấy lúc vào lúc ra, rất bận.",
+          "py": "Tā yíhuìr jìnlai, yíhuìr chūqu, máng de hěn.",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "最近天气变化很快，一会儿冷，一会儿热。",
+          "vi": "Gần đây thời tiết đổi nhanh, lúc lạnh lúc nóng.",
+          "py": "Zuìjìn tiānqì biànhuà hěn kuài, yíhuìr lěng, yíhuìr rè.",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "她的想法总是变，________，一会儿说想学跳舞。",
+          "vi": "Ý cô ấy luôn đổi, ________, lúc lại muốn học nhảy.",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "运动会上，他一会儿参加跑步比赛，________。",
+          "vi": "Trong hội thao, lúc anh ấy thi chạy, ________.",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这只猫很可爱，一会儿躺在沙发上睡觉，________。",
+          "vi": "Mèo rất đáng yêu, lúc nằm ngủ trên sofa, ________.",
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”：完成句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "并列复句“一会儿……，一会儿……”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:grammar2",
+      "title": {
+        "zh": "介词“关于”",
+        "vi": "Giới từ 关于"
+      },
+      "structure": "关于＋名词，……／关于＋名词＋的＋名词",
+      "explanation": {
+        "zh": "“关于”后面加名词，引出涉及的对象。",
+        "vi": "关于 theo sau bởi danh từ để nêu chủ đề được đề cập."
+      },
+      "examples": [
+        {
+          "zh": "关于这个问题，我得慢慢给你讲。",
+          "vi": "Về vấn đề này tôi phải giải thích dần.",
+          "py": "Guānyú zhège wèntí, wǒ děi mànmàn gěi nǐ jiǎng.",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "关于他的要求，我们还要开会以后再决定。",
+          "vi": "Về yêu cầu của anh ấy, ta phải họp rồi mới quyết định.",
+          "py": "Guānyú tā de yāoqiú, wǒmen hái yào kāihuì yǐhòu zài juédìng.",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "关于比赛的时间，我明天一定告诉大家。",
+          "vi": "Về giờ thi, ngày mai tôi nhất định báo mọi người.",
+          "py": "Guānyú bǐsài de shíjiān, wǒ míngtiān yídìng gàosu dàjiā.",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "________，我还有一些问题想问你。",
+          "vi": "________, tôi còn vài điều muốn hỏi bạn.",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "经理要跟你谈一谈________的事情。",
+          "vi": "Quản lý muốn nói với bạn chuyện ________.",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你去找李老师吧，他可以告诉你一些________的方法。",
+          "vi": "Bạn tìm thầy Lý đi, thầy có thể chỉ vài cách ________.",
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”：完成句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "介词“关于”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:grammar3",
+      "title": {
+        "zh": "固定短语“一般来说”",
+        "vi": "Cụm 一般来说"
+      },
+      "structure": "一般来说，概括性判断",
+      "explanation": {
+        "zh": "意思是大多数情况下是这样，常用于句子的开头。",
+        "vi": "Nghĩa là trong đa số trường hợp, thường đứng đầu câu để nêu nhận định khái quát."
+      },
+      "examples": [
+        {
+          "zh": "一般来说，熊猫每天要睡很多次觉。",
+          "vi": "Nói chung gấu trúc ngủ nhiều lần mỗi ngày.",
+          "py": "Yìbān lái shuō, xióngmāo měi tiān yào shuì hěn duō cì jiào.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "固定短语“一般来说”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "一般来说，这种树每年开一次花。",
+          "vi": "Nói chung cây này nở hoa một lần mỗi năm.",
+          "py": "Yìbān lái shuō, zhè zhǒng shù měi nián kāi yí cì huā.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "固定短语“一般来说”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "一般来说，学习外语需要多练习。",
+          "vi": "Nói chung học ngoại ngữ cần luyện nhiều.",
+          "py": "Yìbān lái shuō, xuéxí wàiyǔ xūyào duō liànxí.",
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "固定短语“一般来说”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你喜欢早上锻炼还是晚上锻炼？B：________，因为我早上起床起得很早。",
+          "vi": "A: Bạn thích tập sáng hay tối? B: ________, vì sáng tôi dậy sớm.",
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "固定短语“一般来说”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你觉得下班时坐地铁和坐出租车哪个更快？B：________。",
+          "vi": "A: Tan làm, đi tàu điện hay taxi nhanh hơn? B: ________.",
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "固定短语“一般来说”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：周末你喜欢做什么？B：________。",
+          "vi": "A: Cuối tuần bạn thích làm gì? B: ________.",
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "固定短语“一般来说”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "固定短语“一般来说”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:grammar4",
+      "title": {
+        "zh": "比较句（11）",
+        "vi": "Câu so sánh (11)"
+      },
+      "structure": "A比B＋多／少／早／晚＋动词＋数量短语",
+      "explanation": {
+        "zh": "用“比”的比较句中，谓语为一般动词时，前面可以用“多、少、早、晚”，表示两者在数量或时间上的差异。",
+        "vi": "Trong câu 比 có vị ngữ là động từ thường, thêm 多/少/早/晚 trước động từ và cụm số lượng sau để chỉ mức chênh lệch số lượng, thời gian."
+      },
+      "examples": [
+        {
+          "zh": "冬天比夏天早关门一个小时。",
+          "vi": "Mùa đông đóng cửa sớm hơn hè một giờ.",
+          "py": "Dōngtiān bǐ xiàtiān zǎo guān mén yí ge xiǎoshí.",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "哥哥比弟弟多吃了三个饺子。",
+          "vi": "Anh ăn nhiều hơn em ba cái sủi cảo.",
+          "py": "Gēge bǐ dìdi duō chī le sān ge jiǎozi.",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我比他晚到了十分钟。",
+          "vi": "Tôi đến muộn hơn anh ấy mười phút.",
+          "py": "Wǒ bǐ tā wǎn dào le shí fēnzhōng.",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你今天怎么来得这么早？B：我是坐地铁来的，所以________。",
+          "vi": "A: Sao hôm nay đến sớm vậy? B: Tôi đi tàu điện nên ________.",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：已经十一点了，你怎么还不睡？B：明天不上课，我想________。",
+          "vi": "A: Mười một giờ sao chưa ngủ? B: Mai không học, tôi muốn ________.",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：我们该还信用卡了。B：对，这个月________。",
+          "vi": "A: Đến hạn thanh toán thẻ tín dụng rồi. B: Đúng, tháng này ________.",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "比较句（11）",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk3-fltrp-2026:l16:section1",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：十万个为什么",
+        "vi": "Lưu ý: Mười vạn câu hỏi vì sao"
+      },
+      "blocks": [
+        {
+          "zh": "“十万个为什么”源于中国很受欢迎的少儿科普读物《十万个为什么》，常用来形容孩子充满好奇心，有时以开玩笑的口吻形容对方问题多。",
+          "vi": "Cách nói này xuất phát từ bộ sách khoa học phổ thông thiếu nhi nổi tiếng cùng tên, thường nói trẻ tò mò hoặc đùa người hỏi quá nhiều.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "小语助力：十万个为什么",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "小语助力：十万个为什么",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tổng hợp: chọn từ"
+      },
+      "blocks": [
+        {
+          "zh": "A 照顾；B 张；C 饱；D 奇怪；E 脏。",
+          "vi": "A chăm sóc; B há; C no; D kỳ lạ; E bẩn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）小猫看到妈妈后马上________开嘴要吃的。",
+          "vi": "Mèo thấy mẹ liền ________ miệng đòi ăn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（2）这个电影介绍了怎么________离开爸爸妈妈的小动物。",
+          "vi": "Phim giới thiệu cách ________ thú nhỏ xa bố mẹ.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（3）这只大熊猫没吃________，你看它还在找吃的东西呢。",
+          "vi": "Gấu chưa ăn ________, vẫn tìm thức ăn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（4）这个饭馆的桌子这么________，碗也不干净，咱们换一家吧。",
+          "vi": "Bàn quán này ________, bát cũng không sạch, đổi quán nhé.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（5）这只鸟好像飞不起来，而且吃东西的时候看起来也很________。",
+          "vi": "Chim hình như không bay được, lúc ăn trông cũng ________.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A 认得；B 关于；C 其实；D 一般；E 半天。",
+          "vi": "A nhận ra; B về; C thực ra; D thường; E lâu.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（6）A：小王，你在找什么？B：我的手机不见了，我找了________也没找到。",
+          "vi": "A: Tiểu Vương, tìm gì thế? B: Mất điện thoại, tìm ________ vẫn không thấy.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（7）A：你想借哪本书？B：我忘了名字，是一本________动物的书。",
+          "vi": "A: Bạn muốn mượn cuốn nào? B: Quên tên rồi, sách ________ động vật.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（8）A：这只小猫在小区里好几天了，是不是找不到家了？B：我________它，这是我邻居家的小猫。",
+          "vi": "A: Mèo ở khu mấy ngày, có phải lạc không? B: Tôi ________ nó, mèo nhà hàng xóm.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（9）A：你周末带孩子做什么？B：如果天气好，我________带孩子去公园里玩。",
+          "vi": "A: Cuối tuần dẫn con làm gì? B: Trời đẹp tôi ________ dẫn con ra công viên.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（10）A：你怎么又去动物园了？B：________我也不想去，但是妈妈希望我和弟弟一起去。",
+          "vi": "A: Sao lại đi sở thú? B: ________ tôi cũng không muốn, nhưng mẹ muốn tôi đi với em.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:section3",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：“又”",
+        "vi": "Lưu ý: 又"
+      },
+      "blocks": [
+        {
+          "zh": "“又”表示又一次，后面的动词是重复的动作。",
+          "vi": "又 nghĩa là lại một lần nữa, động từ sau nó chỉ hành động lặp lại.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "小语助力：“又”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "小语助力：“又”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:section4",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：图片对话（1—2）",
+        "vi": "Hội thoại hình (1–2)"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và cấu trúc mới mô tả hình.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）A：已经晚上11点了，你比以前________。B：我去动物医院帮忙________了。A：你看起来很累。B：今天新来了几只生病的小猫，一会儿________，________。我们都累得不得了。",
+          "vi": "A: Mười một giờ tối rồi, bạn so với trước ________. B: Tôi đến bệnh viện thú y giúp ________. A: Trông mệt quá. B: Hôm nay có mấy mèo bệnh mới, lúc ________, ________. Ai cũng mệt lả.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（2）A：你看，那只大熊猫________，好像在找吃的。B：是啊，它身边的那只好像也________。A：它们刚才已经吃了半天了，应该吃饱了吧？B：________，它们一天要吃十几个小时呢。",
+          "vi": "A: Con gấu ấy ________, hình như tìm đồ ăn. B: Vâng, con bên cạnh cũng ________. A: Vừa ăn lâu rồi, chắc no chứ? B: ________, mỗi ngày chúng ăn hơn mười giờ.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片说明（编辑补充）：兽医照顾猫；两只大熊猫。",
+          "vi": "Mô tả hình bổ sung: bác sĩ thú y chăm mèo; hai gấu trúc.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "图片说明",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "综合练习：图片对话（1—2）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:section5",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：图片对话（3）",
+        "vi": "Hội thoại hình (3)"
+      },
+      "blocks": [
+        {
+          "zh": "A：老师让我们写一个关于________，我还没想好写什么。B：我也没想好。动物园里什么动物都有，咱们去看看吧。A：都五点了，动物园是不是快关门了？B：夏天比冬天________。咱们现在就去。",
+          "vi": "A: Thầy cô bảo viết một bài về ________, tôi chưa nghĩ ra. B: Tôi cũng vậy. Sở thú đủ loài, đến xem nhé. A: Năm giờ rồi, sắp đóng chưa? B: Mùa hè so với đông ________. Ta đi ngay.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "综合练习：图片对话（3）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片说明（编辑补充）：动物园入口。",
+          "vi": "Mô tả hình bổ sung: cổng sở thú.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "图片说明",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "综合练习：图片对话（3）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:section6",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：介绍动物",
+        "vi": "Hoạt động: giới thiệu động vật"
+      },
+      "blocks": [
+        {
+          "zh": "四人一组，每组选一个比较有特色的动物，围绕以下问题进行讨论。最后，每组选一名代表向全班介绍，其他同学可以提问。回答时，使用本课所学的词语和语言点。",
+          "vi": "Nhóm bốn người chọn một loài có đặc điểm riêng, thảo luận theo câu hỏi rồi cử đại diện giới thiệu. Lớp đặt câu hỏi, dùng từ và cấu trúc bài.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "课堂活动：介绍动物",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）这种动物长什么样？（2）它们一般生活在什么地方？（3）它们的生活习惯是什么样的？（4）……",
+          "vi": "Loài này trông thế nào? Thường sống đâu? Tập tính ra sao? Thêm câu hỏi khác.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "课堂活动：介绍动物",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "课堂活动：介绍动物",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:section7",
+      "kind": "culture",
+      "title": {
+        "zh": "小语的彩蛋：大熊猫的“明星”生活",
+        "vi": "Góc văn hóa: Cuộc sống “ngôi sao” của gấu trúc lớn"
+      },
+      "blocks": [
+        {
+          "zh": "大熊猫的“明星”生活；配套视频编号16-1。",
+          "vi": "Cuộc sống “ngôi sao” của gấu trúc lớn; mã video đi kèm 16-1.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "小语的彩蛋：大熊猫的“明星”生活",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "配套文化视频未提供，当前不可播放；本页仅保留教材印刷的主题。",
+          "vi": "Chưa có video văn hóa đi kèm nên hiện không thể phát; chỉ giữ chủ đề được in trong sách.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "文化视频可用性说明",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "kind": "paragraph",
+          "zh": "图片说明（编辑补充）：大熊猫伏在木台上。",
+          "vi": "Mô tả hình bổ sung: gấu trúc nằm trên bục gỗ.",
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "文化栏图片说明",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "小语的彩蛋：大熊猫的“明星”生活",
+        "provenance": "textbook"
+      },
+      "media": {
+        "type": "video",
+        "status": "unavailable",
+        "reason": "Original companion culture video was not supplied."
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk3-fltrp-2026:l16:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "姐姐吃了八个饺子，弟弟吃了六个。哪句正确？",
+        "vi": "Chị ăn tám cái, em trai sáu cái; câu nào đúng?"
+      },
+      "options": [
+        "姐姐比弟弟多吃了两个饺子。",
+        "姐姐比弟弟多吃了三个饺子。",
+        "姐姐比弟弟少吃了两个饺子。"
+      ],
+      "answer": 0,
+      "focus": "多动词数量",
+      "explanation": {
+        "zh": "八减六等于二，所以姐姐多吃两个；不是少吃，也不是三个。",
+        "vi": "Tám trừ sáu bằng hai nên chị ăn hơn hai cái."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "老师八点半到，我八点四十到。应怎么说？",
+        "vi": "Thầy tới 8:30, tôi tới 8:40, nói thế nào?"
+      },
+      "options": [
+        "我比老师晚到了半个小时。",
+        "我比老师早到了十分钟。",
+        "我比老师晚到了十分钟。"
+      ],
+      "answer": 2,
+      "focus": "晚动词数量",
+      "explanation": {
+        "zh": "八点四十比八点半晚十分钟，晚在到前，差量在后。",
+        "vi": "8:40 muộn hơn 8:30 mười phút; 晚 trước 到, số chênh sau động từ."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "小猫先在沙发睡，过一会儿又在门边玩。哪句说明交替？",
+        "vi": "Mèo lúc ngủ sofa, lát lại chơi cửa; câu nào nêu luân phiên?"
+      },
+      "options": [
+        "小猫只有睡觉，才会玩。",
+        "小猫一会儿睡觉，一会儿玩。",
+        "小猫一边睡觉，一边玩。"
+      ],
+      "answer": 1,
+      "focus": "一会儿",
+      "explanation": {
+        "zh": "一会儿…一会儿…是短时间交替，不是同时或必要条件。",
+        "vi": "一会儿…一会儿… chỉ luân phiên, không đồng thời hay điều kiện cần."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“一般来说，周末游客比较多”允许哪种情况？",
+        "vi": "“Nói chung cuối tuần đông khách” có cho phép tình huống nào?"
+      },
+      "options": [
+        "某个周末游客也可能少。",
+        "每个周末一定比工作日多。",
+        "周末不可能有游客少的时候。"
+      ],
+      "answer": 0,
+      "focus": "一般来说",
+      "explanation": {
+        "zh": "一般来说概括多数情况，不排除个别例外。",
+        "vi": "Nói chung mô tả đa số trường hợp, vẫn có ngoại lệ."
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "书的内容是动物的生活习惯，应说“一本____动物的书”。",
+        "vi": "Sách có nội dung về tập tính động vật; điền từ."
+      },
+      "options": [
+        "根据",
+        "向",
+        "关于"
+      ],
+      "answer": 2,
+      "focus": "关于",
+      "explanation": {
+        "zh": "关于引出书的主题；根据引出依据，向引出方向/对象。",
+        "vi": "关于 nêu chủ đề sách; 根据 là căn cứ, 向 là hướng/đối tượng."
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "几年没见，朋友走过来时我仍能叫出他的名字。我还____他。",
+        "vi": "Vài năm không gặp nhưng vẫn gọi đúng tên khi bạn tới; tôi còn…"
+      },
+      "options": [
+        "照顾",
+        "认得",
+        "相信"
+      ],
+      "answer": 1,
+      "focus": "认得",
+      "explanation": {
+        "zh": "认得表示凭外貌等认出，不等于照料或相信。",
+        "vi": "认得 là nhận ra nhờ diện mạo, không phải chăm hay tin."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "我已经吃够了，不想再吃。现在我很____。",
+        "vi": "Tôi đã ăn đủ, không muốn ăn nữa; hiện tôi…"
+      },
+      "options": [
+        "饱",
+        "饿",
+        "累"
+      ],
+      "answer": 0,
+      "focus": "饱",
+      "explanation": {
+        "zh": "吃够且不再想吃对应饱；饿相反，累是体力状态。",
+        "vi": "Ăn đủ không muốn ăn nữa là no; đói trái nghĩa, mệt là trạng thái sức lực."
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "衣服上全是泥，得洗一洗，因为它太____了。",
+        "vi": "Áo đầy bùn cần giặt vì quá…"
+      },
+      "options": [
+        "干净",
+        "旧",
+        "脏"
+      ],
+      "answer": 2,
+      "focus": "脏",
+      "explanation": {
+        "zh": "泥弄脏衣服，洗能清洁；旧表示使用时间，不必有泥。",
+        "vi": "Bùn làm bẩn áo, giặt để sạch; cũ chỉ thời gian sử dụng."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "大家以为他不喜欢动物，____他每天照顾邻居的小猫。",
+        "vi": "Ai cũng tưởng anh ấy không thích động vật, thực ra anh chăm mèo hàng xóm mỗi ngày."
+      },
+      "options": [
+        "其实",
+        "或者",
+        "所以"
+      ],
+      "answer": 0,
+      "focus": "其实",
+      "explanation": {
+        "zh": "其实纠正前面的误解；所以表示结果，或者提供选择。",
+        "vi": "其实 sửa hiểu lầm trước đó; 所以 là kết quả, 或者 là lựa chọn."
+      },
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "朋友出门一周，请我每天喂猫、换水。我答应帮他____小猫。",
+        "vi": "Bạn đi xa tuần, nhờ cho mèo ăn thay nước; tôi nhận…"
+      },
+      "options": [
+        "介绍",
+        "照顾",
+        "认得"
+      ],
+      "answer": 1,
+      "focus": "照顾",
+      "explanation": {
+        "zh": "喂食换水是持续照料，照顾最准确。",
+        "vi": "Cho ăn thay nước là chăm sóc liên tục, chọn 照顾."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语排列词块；必须以“我”开头，第二词块为“比姐姐”；保留词块内标点。",
+        "vi": "Tôi đến muộn hơn chị mười lăm phút. Bắt đầu bằng “我”, đặt “比姐姐” ở vị trí thứ hai; giữ dấu câu trong từng khối."
+      },
+      "tokens": [
+        "比姐姐",
+        "到了",
+        "晚",
+        "十五分钟。",
+        "我"
+      ],
+      "answer": [
+        4,
+        0,
+        2,
+        1,
+        3
+      ],
+      "focus": "晚到",
+      "explanation": {
+        "zh": "A比B晚到＋差量，主体是我。 按题设保留前两个词块的顺序。",
+        "vi": "Mẫu A比B晚到 + số chênh, chủ thể là tôi. Giữ hai khối đầu theo ràng buộc đề bài."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语排列词块；必须以“夏天”开头，第二词块为“这家商店”；保留词块内标点。",
+        "vi": "Mùa hè cửa hàng này đóng muộn hơn mùa đông hai giờ. Bắt đầu bằng “夏天”, đặt “这家商店” ở vị trí thứ hai; giữ dấu câu trong từng khối."
+      },
+      "tokens": [
+        "夏天",
+        "这家商店",
+        "晚关门",
+        "比冬天",
+        "两个小时。"
+      ],
+      "answer": [
+        0,
+        1,
+        3,
+        2,
+        4
+      ],
+      "focus": "晚关门",
+      "explanation": {
+        "zh": "比较季节，晚关门后面是相差两小时。 按题设保留前两个词块的顺序。",
+        "vi": "So sánh mùa, 晚关门 rồi nêu chênh hai giờ. Giữ hai khối đầu theo ràng buộc đề bài."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语排列词块；必须以“关于”开头，第二词块为“这只猫，”；保留词块内标点。",
+        "vi": "Về con mèo này, tôi còn hai câu hỏi. Bắt đầu bằng “关于”, đặt “这只猫，” ở vị trí thứ hai; giữ dấu câu trong từng khối."
+      },
+      "tokens": [
+        "我",
+        "还有",
+        "这只猫，",
+        "两个问题。",
+        "关于"
+      ],
+      "answer": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "focus": "关于",
+      "explanation": {
+        "zh": "关于引出话题，后接我还有两个问题。 按题设保留前两个词块的顺序。",
+        "vi": "关于 giới thiệu chủ đề rồi nêu còn hai câu hỏi. Giữ hai khối đầu theo ràng buộc đề bài."
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语排列词块；必须以“它”开头，第二词块为“一会儿爬上树，”；保留词块内标点。",
+        "vi": "Nó lúc trèo lên cây, lúc nằm trên cỏ. Bắt đầu bằng “它”, đặt “一会儿爬上树，” ở vị trí thứ hai; giữ dấu câu trong từng khối."
+      },
+      "tokens": [
+        "躺在",
+        "一会儿爬上树，",
+        "一会儿",
+        "它",
+        "草地上。"
+      ],
+      "answer": [
+        3,
+        1,
+        2,
+        0,
+        4
+      ],
+      "focus": "交替",
+      "explanation": {
+        "zh": "两动作先后交替；第二处一会儿在躺前。 按题设保留前两个词块的顺序。",
+        "vi": "Hai hành động luân phiên; 一会儿 thứ hai trước 躺. Giữ hai khối đầu theo ràng buộc đề bài."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语排列词块；必须以“一般来说，”开头，第二词块为“照顾”；保留词块内标点。",
+        "vi": "Nói chung, chăm động vật cần thời gian. Bắt đầu bằng “一般来说，”, đặt “照顾” ở vị trí thứ hai; giữ dấu câu trong từng khối."
+      },
+      "tokens": [
+        "照顾",
+        "一般来说，",
+        "动物",
+        "时间。",
+        "需要"
+      ],
+      "answer": [
+        1,
+        0,
+        2,
+        4,
+        3
+      ],
+      "focus": "一般来说",
+      "explanation": {
+        "zh": "先概括，再以照顾动物作主语。 按题设保留前两个词块的顺序。",
+        "vi": "Mở đầu khái quát rồi dùng việc chăm thú làm chủ ngữ. Giữ hai khối đầu theo ràng buộc đề bài."
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "妈妈不同意养猫的主要顾虑是什么？",
+        "vi": "Điều mẹ lo chính khi không đồng ý nuôi mèo là gì?"
+      },
+      "options": [
+        "认为猫不认人",
+        "觉得猫不漂亮",
+        "没有时间照顾"
+      ],
+      "answer": 2,
+      "audioTrack": "16-1",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "她明确说“咱们没时间照顾”，没有否定猫的外表或认人能力。",
+        "vi": "Mẹ nói không có thời gian chăm, không chê mèo hay cho rằng nó không nhận người."
+      },
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "服务员说的两个动作，是同时发生还是轮流发生？",
+        "vi": "Hai hành động nhân viên kể xảy ra đồng thời hay luân phiên?"
+      },
+      "options": [
+        "同时发生：边睡边爬",
+        "只发生过一次",
+        "轮流发生：睡在脚边和爬到身上"
+      ],
+      "answer": 2,
+      "audioTrack": "16-1",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "“一会儿…一会儿…”表示短时间交替；睡觉和爬不是同时。",
+        "vi": "一会儿…一会儿… diễn đạt luân phiên ngủ và trèo, không cùng lúc."
+      },
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "关于出国的熊猫，妈妈在这段录音中有没有说出具体国家？",
+        "vi": "Mẹ có nêu tên nước cụ thể gấu trúc đã đến trong bản thu này không?"
+      },
+      "options": [
+        "没有，她说要慢慢讲",
+        "有，她说英国",
+        "有，她说日本"
+      ],
+      "answer": 0,
+      "audioTrack": "16-3",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "回答只是“关于这个问题，我得慢慢给你讲”，没有国家名称。",
+        "vi": "Mẹ chỉ nói sẽ kể dần, chưa nêu tên nước nào."
+      },
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "妈妈对身边那只熊猫正在睡觉的判断有多确定？",
+        "vi": "Mẹ chắc đến đâu rằng con bên cạnh đang ngủ?"
+      },
+      "options": [
+        "完全确定，因为看到闭眼",
+        "肯定不是，因为它正在跳",
+        "只是猜测，因为看不见脸"
+      ],
+      "answer": 2,
+      "audioTrack": "16-5",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "她说“我看不见它的脸，可能是吧”，明确是有限证据下的猜测。",
+        "vi": "Không thấy mặt, có thể vậy cho thấy chỉ phỏng đoán."
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "按课文的营业时间，冬天应几点关门？",
+        "vi": "Theo giờ nêu trong bài, mùa đông đóng lúc mấy giờ?"
+      },
+      "options": [
+        "晚上七点",
+        "下午六点",
+        "晚上八点"
+      ],
+      "answer": 1,
+      "audioTrack": "16-7",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "平时七点，冬天提前一小时，因此是六点；仅为教材信息。",
+        "vi": "Bình thường bảy giờ, đông sớm một giờ là sáu giờ, theo dữ liệu bài học."
+      },
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择意思完全一致的中文。",
+        "vi": "Tôi ăn ít hơn anh trai hai cái bánh bao."
+      },
+      "options": [
+        "哥哥比我少吃了两个包子。",
+        "我比哥哥少吃了两个包子。",
+        "我比哥哥多吃了两个包子。"
+      ],
+      "answer": 1,
+      "focus": "少吃",
+      "explanation": {
+        "zh": "主体我，少吃两个；另两句使我吃得更多。",
+        "vi": "Chủ thể tôi ăn ít hơn hai cái; các câu kia thành tôi ăn nhiều hơn."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择意思完全一致的中文。",
+        "vi": "Con chó lúc chạy vào, lúc chạy ra."
+      },
+      "options": [
+        "小狗一会儿跑进来，一会儿跑出去。",
+        "小狗跑进来以后一直睡觉。",
+        "小狗一边跑进来，一边跑出去。"
+      ],
+      "answer": 0,
+      "focus": "交替",
+      "explanation": {
+        "zh": "一会儿重复表示来回交替，不是同时或睡觉。",
+        "vi": "Lặp 一会儿 chỉ vào ra luân phiên, không đồng thời hay ngủ."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择意思完全一致的中文。",
+        "vi": "Về giờ mở cửa, ngày mai tôi sẽ hỏi lại."
+      },
+      "options": [
+        "开门以后，我明天再问。",
+        "根据开门时间，我明天出发。",
+        "关于开门时间，我明天再问问。"
+      ],
+      "answer": 2,
+      "focus": "关于",
+      "explanation": {
+        "zh": "话题是开门时间，再问问保留hỏi lại。",
+        "vi": "Chủ đề là giờ mở, 再问问 giữ ý hỏi lại."
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择意思完全一致的中文。",
+        "vi": "Nhìn con mèo này, bạn có nhận ra nó không?"
+      },
+      "options": [
+        "看看这只猫，你照顾它吗？",
+        "看看这只猫，你认得它吗？",
+        "看看这只猫，你相信它吗？"
+      ],
+      "answer": 1,
+      "focus": "认得",
+      "explanation": {
+        "zh": "认得是识别，不是照顾或相信。",
+        "vi": "认得 là nhận ra, không phải chăm hoặc tin."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择意思完全一致的中文。",
+        "vi": "Nói chung, người lớn và trẻ đều thích động vật đáng yêu."
+      },
+      "options": [
+        "其实，大人都不喜欢可爱的动物。",
+        "一般来说，大人和孩子都喜欢可爱的动物。",
+        "一般来说，只有孩子喜欢可爱的动物。"
+      ],
+      "answer": 1,
+      "focus": "一般来说",
+      "explanation": {
+        "zh": "保留多数情况下及大人和孩子两个群体。",
+        "vi": "Giữ ý nói chung và cả hai nhóm người lớn, trẻ em."
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Cuối tuần này tôi muốn đến giúp chăm những con mèo bị ốm."
+      },
+      "focus": "viết-dịch",
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Cô ấy tìm điện thoại một lúc lâu mà vẫn chưa thấy."
+      },
+      "focus": "viết-dịch",
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Con chim bên cạnh tôi bỗng há miệng kêu."
+      },
+      "focus": "viết-dịch",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Em trai tôi thức dậy sớm hơn tôi nửa giờ."
+      },
+      "focus": "viết-dịch",
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Tôi tưởng con chó rất hung, thực ra nó rất đáng yêu."
+      },
+      "focus": "viết-dịch",
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3-fltrp-2026:l16:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "谁首先提出在自己家里养猫？",
+        "vi": "Ai đầu tiên đề nghị nuôi mèo ở nhà mình?"
+      },
+      "options": [
+        "王一雪",
+        "服务员",
+        "刘小雪"
+      ],
+      "answer": 2,
+      "audioTrack": "16-1",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "“妈妈，我们家也养一只小猫吧”由小雪说；服务员只是介绍猫。",
+        "vi": "Tiểu Tuyết nói mẹ ơi nhà mình nuôi mèo nhé; nhân viên chỉ giới thiệu mèo."
+      },
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "小明提出的问题按哪种顺序出现？",
+        "vi": "Các câu hỏi Tiểu Minh xuất hiện theo thứ tự nào?"
+      },
+      "options": [
+        "国宝、出国、名字、食物",
+        "食物、名字、出国、国宝",
+        "名字、食物、国宝、出国"
+      ],
+      "answer": 2,
+      "audioTrack": "16-3",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "先问跟猫的关系，再问竹子和肉，然后国宝，最后国外去向。",
+        "vi": "Đầu hỏi tên liên quan mèo, rồi thức ăn, quốc bảo, cuối nơi ở nước ngoài."
+      },
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "小雪最后希望怎样拍照？",
+        "vi": "Cuối cùng Tiểu Tuyết muốn chụp thế nào?"
+      },
+      "options": [
+        "自己和两只熊猫合照一张",
+        "只给妈妈拍一张",
+        "给每只熊猫各拍两张"
+      ],
+      "answer": 0,
+      "audioTrack": "16-5",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "她说“帮我和这两只大熊猫照一张”，人数与照片数量要分清。",
+        "vi": "Cô bé muốn một ảnh chụp mình cùng hai con gấu trúc; hai là số gấu, một là số ảnh."
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "关于喜欢熊猫的人，课文强调哪两个群体？",
+        "vi": "Bài nhấn mạnh hai nhóm nào đều thích gấu trúc?"
+      },
+      "options": [
+        "只有老师和家长",
+        "只有游客和学生",
+        "大人和孩子"
+      ],
+      "answer": 2,
+      "audioTrack": "16-7",
+      "focus": "nghe-hiểu-suy-luận",
+      "explanation": {
+        "zh": "原话“大人和孩子最喜爱的还是大熊猫”，并不限制为学校人群。",
+        "vi": "Bài nói người lớn và trẻ em, không giới hạn nhóm trong trường."
+      },
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "原创课后练习",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "grammarSourceExplanations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l16:grammar1",
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "并列复句“一会儿……，一会儿……”",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "并列复句“一会儿……，一会儿……”表示短时间内发生的不同动作，或者一种对立的情况。例如：",
+        "vi": "Câu song song 一会儿……，一会儿…… diễn tả những hành động khác nhau xảy ra trong thời gian ngắn hoặc những trạng thái đối lập luân phiên. Ví dụ:"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l16:grammar2",
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "介词“关于”",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "介词“关于”后面加名词，引出涉及的对象。例如：",
+        "vi": "Giới từ 关于 theo sau bởi danh từ, nêu đối tượng hoặc chủ đề được đề cập. Ví dụ:"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l16:grammar3",
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "固定短语“一般来说”",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "“一般来说”是一个固定短语，意思是大多数情况下是这样，常用于句子的开头。例如：",
+        "vi": "一般来说 là cụm cố định có nghĩa là trong đa số trường hợp đều như vậy, thường đứng đầu câu. Ví dụ:"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l16:grammar4",
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "比较句（11）",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "用“比”表示的比较句中，谓语为一般动词时，前面可以用“多、少、早、晚”，表示两者在数量或时间上的差异。基本结构：A比B+多/少/早/晚+动词+数量短语。例如：",
+        "vi": "Trong câu so sánh dùng 比, khi vị ngữ là động từ thông thường, có thể đặt 多, 少, 早 hoặc 晚 trước động từ để chỉ chênh lệch về số lượng hoặc thời gian. Cấu trúc: A + 比 + B + 多/少/早/晚 + động từ + cụm số lượng. Ví dụ:"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:objective1",
+          "prompt": {
+            "zh": "能听懂并描述动物的特征、习性和生活环境。",
+            "vi": "Nghe hiểu, mô tả đặc điểm, tập tính và môi trường sống của động vật."
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:objective2",
+          "prompt": {
+            "zh": "能听懂并表达个人对动物的看法。",
+            "vi": "Nghe hiểu và diễn đạt ý kiến về động vật."
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:objective3",
+          "prompt": {
+            "zh": "掌握比较句（11）的用法，能表达事物在数量或时间上的差异。",
+            "vi": "Dùng câu so sánh (11) diễn đạt khác biệt về số lượng hoặc thời gian."
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:objective4",
+          "prompt": {
+            "zh": "了解大熊猫的基本情况。",
+            "vi": "Tìm hiểu thông tin cơ bản về gấu trúc lớn."
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "在图片上标注下列词语。",
+        "vi": "Gắn nhãn từ vào hình."
+      },
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:warmup1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup1-picture1",
+          "prompt": {
+            "zh": "标号1",
+            "vi": "Vị trí 1"
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 脸",
+              "vi": "A mặt"
+            },
+            {
+              "zh": "B 嘴",
+              "vi": "B miệng"
+            },
+            {
+              "zh": "C 眼睛",
+              "vi": "C mắt"
+            },
+            {
+              "zh": "D 耳朵",
+              "vi": "D tai"
+            },
+            {
+              "zh": "E 脚",
+              "vi": "E chân"
+            }
+          ],
+          "answer": "E 脚",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 热身 标号1（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup1-picture2",
+          "prompt": {
+            "zh": "标号2",
+            "vi": "Vị trí 2"
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 脸",
+              "vi": "A mặt"
+            },
+            {
+              "zh": "B 嘴",
+              "vi": "B miệng"
+            },
+            {
+              "zh": "C 眼睛",
+              "vi": "C mắt"
+            },
+            {
+              "zh": "D 耳朵",
+              "vi": "D tai"
+            },
+            {
+              "zh": "E 脚",
+              "vi": "E chân"
+            }
+          ],
+          "answer": "D 耳朵",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 热身 标号2（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup1-picture3",
+          "prompt": {
+            "zh": "标号3",
+            "vi": "Vị trí 3"
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 脸",
+              "vi": "A mặt"
+            },
+            {
+              "zh": "B 嘴",
+              "vi": "B miệng"
+            },
+            {
+              "zh": "C 眼睛",
+              "vi": "C mắt"
+            },
+            {
+              "zh": "D 耳朵",
+              "vi": "D tai"
+            },
+            {
+              "zh": "E 脚",
+              "vi": "E chân"
+            }
+          ],
+          "answer": "A 脸",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 热身 标号3（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup1-picture4",
+          "prompt": {
+            "zh": "标号4",
+            "vi": "Vị trí 4"
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 脸",
+              "vi": "A mặt"
+            },
+            {
+              "zh": "B 嘴",
+              "vi": "B miệng"
+            },
+            {
+              "zh": "C 眼睛",
+              "vi": "C mắt"
+            },
+            {
+              "zh": "D 耳朵",
+              "vi": "D tai"
+            },
+            {
+              "zh": "E 脚",
+              "vi": "E chân"
+            }
+          ],
+          "answer": "B 嘴",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 热身 标号4（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup1-picture5",
+          "prompt": {
+            "zh": "标号5",
+            "vi": "Vị trí 5"
+          },
+          "source": {
+            "pdfPage": 156,
+            "printedPage": 144,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 脸",
+              "vi": "A mặt"
+            },
+            {
+              "zh": "B 嘴",
+              "vi": "B miệng"
+            },
+            {
+              "zh": "C 眼睛",
+              "vi": "C mắt"
+            },
+            {
+              "zh": "D 耳朵",
+              "vi": "D tai"
+            },
+            {
+              "zh": "E 脚",
+              "vi": "E chân"
+            }
+          ],
+          "answer": "C 眼睛",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 热身 标号5（C）"
+          }
+        }
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按标号配对。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; ghép theo số."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l16:illustration:warmup1-1"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:warmup2-discussion",
+      "kind": "open",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, trao đổi thực tế."
+      },
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:warmup2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup2-prompt1",
+          "prompt": {
+            "zh": "你喜欢去动物园吗？你在动物园最喜欢看什么动物？",
+            "vi": "Bạn thích đến sở thú không? Thích xem con gì nhất?"
+          },
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:warmup2-prompt2",
+          "prompt": {
+            "zh": "你养过什么小动物？给同学介绍一下你养过的动物。",
+            "vi": "Bạn từng nuôi con gì? Hãy giới thiệu với bạn học."
+          },
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text1:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text1-question1",
+          "prompt": {
+            "zh": "这只小猫养了多久了？",
+            "vi": "Con mèo được nuôi bao lâu?"
+          },
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "第一天养",
+              "vi": "Ngày đầu mới nuôi"
+            },
+            {
+              "zh": "养了一年多了",
+              "vi": "Đã nuôi hơn một năm"
+            },
+            {
+              "zh": "养了很多年了",
+              "vi": "Đã nuôi nhiều năm"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text1:question1",
+          "answer": "养了一年多了",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文1 听两遍 第1题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text1-question2",
+          "prompt": {
+            "zh": "现在这只小猫是什么样的？",
+            "vi": "Giờ con mèo thế nào?"
+          },
+          "source": {
+            "pdfPage": 157,
+            "printedPage": 145,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "特别小",
+              "vi": "Rất nhỏ"
+            },
+            {
+              "zh": "特别可爱",
+              "vi": "Rất đáng yêu"
+            },
+            {
+              "zh": "不太干净",
+              "vi": "Không được sạch lắm"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text1:question2",
+          "answer": "特别可爱",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文1 听两遍 第2题（B）"
+          }
+        }
+      ],
+      "audioTrack": "16-1",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍，选择答案。",
+        "vi": "Nghe hai lần rồi chọn đáp án."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text1:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text1-question3",
+          "prompt": {
+            "zh": "服务员第一天看见这只小猫的时候，它是什么样的？",
+            "vi": "Ngày đầu nhân viên thấy mèo, nó thế nào?"
+          },
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "它又脏又小。",
+            "vi": "Nó vừa bẩn vừa nhỏ."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text1:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text1-question4",
+          "prompt": {
+            "zh": "服务员为什么觉得小猫很可爱？",
+            "vi": "Vì sao nhân viên thấy mèo đáng yêu?"
+          },
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为它一会儿在人的脚边睡觉，一会儿在人身上爬。",
+            "vi": "Vì nó lúc thì ngủ bên chân người, lúc thì trèo lên người."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text1:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text1-question5",
+          "prompt": {
+            "zh": "服务员和小猫的关系怎么样？",
+            "vi": "Quan hệ giữa nhân viên và mèo thế nào?"
+          },
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "服务员把它当成自己的孩子照顾，小猫也认得他们。",
+            "vi": "Nhân viên chăm sóc nó như con của mình, và mèo cũng nhận ra họ."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text1:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Phân vai đọc hội thoại rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 159,
+        "printedPage": 147,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text2:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text2-question1",
+          "prompt": {
+            "zh": "王一雪和孩子们在聊什么？",
+            "vi": "Nhất Tuyết và các con nói về gì?"
+          },
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "大熊猫",
+              "vi": "Gấu trúc lớn"
+            },
+            {
+              "zh": "北京动物园",
+              "vi": "Sở thú Bắc Kinh"
+            },
+            {
+              "zh": "动物和人的不同",
+              "vi": "Sự khác biệt giữa động vật và con người"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text2:question1",
+          "answer": "大熊猫",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文2 听两遍 第1题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text2-question2",
+          "prompt": {
+            "zh": "刘小雪为什么说弟弟是“十万个为什么”？",
+            "vi": "Vì sao Tiểu Tuyết gọi em như vậy?"
+          },
+          "source": {
+            "pdfPage": 159,
+            "printedPage": 147,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "弟弟喜欢看书",
+              "vi": "Em trai thích đọc sách"
+            },
+            {
+              "zh": "弟弟喜欢听故事",
+              "vi": "Em trai thích nghe kể chuyện"
+            },
+            {
+              "zh": "弟弟喜欢问问题",
+              "vi": "Em trai thích đặt câu hỏi"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text2:question2",
+          "answer": "弟弟喜欢问问题",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文2 听两遍 第2题（C）"
+          }
+        }
+      ],
+      "audioTrack": "16-3",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍，选择答案。",
+        "vi": "Nghe hai lần rồi chọn đáp án."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text2:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text2-question3",
+          "prompt": {
+            "zh": "大熊猫跟猫有关系吗？",
+            "vi": "Gấu trúc có liên quan với mèo không?"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "没有什么关系。",
+            "vi": "Không có quan hệ gì."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text2:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text2-question4",
+          "prompt": {
+            "zh": "大熊猫为什么只吃竹子不吃肉？",
+            "vi": "Vì sao gấu trúc chỉ ăn tre, không ăn thịt?"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "它们也可以吃肉，但是对肉不感兴趣。",
+            "vi": "Chúng cũng có thể ăn thịt nhưng không thích thịt."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text2:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text2-question5",
+          "prompt": {
+            "zh": "大熊猫为什么是中国的国宝？",
+            "vi": "Vì sao gấu trúc là quốc bảo Trung Quốc?"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "课文说，全世界只有中国有野生大熊猫，中国是大熊猫的家。",
+            "vi": "Theo bài khóa, chỉ Trung Quốc có gấu trúc lớn hoang dã; Trung Quốc là quê hương của chúng."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text2:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Phân vai đọc hội thoại rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text3:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text3-question1",
+          "prompt": {
+            "zh": "一般来说，大熊猫每天做什么？",
+            "vi": "Nói chung gấu trúc làm gì hằng ngày?"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "爬来爬去",
+              "vi": "Leo lên leo xuống"
+            },
+            {
+              "zh": "跟人拍照",
+              "vi": "Chụp ảnh với người"
+            },
+            {
+              "zh": "吃东西和睡觉",
+              "vi": "Ăn và ngủ"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text3:question1",
+          "answer": "吃东西和睡觉",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文3 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text3-question2",
+          "prompt": {
+            "zh": "刘小雪让妈妈帮她做什么？",
+            "vi": "Tiểu Tuyết nhờ mẹ giúp gì?"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "照一张照片",
+              "vi": "Chụp một tấm ảnh"
+            },
+            {
+              "zh": "买一些吃的",
+              "vi": "Mua đồ ăn"
+            },
+            {
+              "zh": "找一只熊猫",
+              "vi": "Tìm một con gấu trúc"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text3:question2",
+          "answer": "照一张照片",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文3 听两遍 第2题（A）"
+          }
+        }
+      ],
+      "audioTrack": "16-5",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍，选择答案。",
+        "vi": "Nghe hai lần rồi chọn đáp án."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text3:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text3-question3",
+          "prompt": {
+            "zh": "刘小雪为什么觉得这只大熊猫可爱极了？",
+            "vi": "Vì sao Tiểu Tuyết thấy gấu trúc đáng yêu?"
+          },
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为它一会儿爬上去，一会儿跳下来。",
+            "vi": "Vì nó lúc thì leo lên, lúc thì nhảy xuống."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text3:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text3-question4",
+          "prompt": {
+            "zh": "王一雪为什么觉得它没吃饱？",
+            "vi": "Vì sao mẹ nghĩ nó chưa no?"
+          },
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为它站起来张着嘴找吃的。",
+            "vi": "Vì nó đứng lên, há miệng tìm thức ăn."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text3:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text3-question5",
+          "prompt": {
+            "zh": "刘小明觉得大熊猫的生活怎么样？",
+            "vi": "Tiểu Minh thấy cuộc sống gấu trúc thế nào?"
+          },
+          "source": {
+            "pdfPage": 161,
+            "printedPage": 149,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他觉得大熊猫的生活很舒服。",
+            "vi": "Em thấy gấu trúc sống rất thoải mái."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text3:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Phân vai đọc hội thoại rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text4:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text4-question1",
+          "prompt": {
+            "zh": "游客最喜欢去北京动物园看什么动物？",
+            "vi": "Du khách thích xem con gì nhất?"
+          },
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "牛",
+              "vi": "Bò"
+            },
+            {
+              "zh": "羊",
+              "vi": "Dê"
+            },
+            {
+              "zh": "大熊猫",
+              "vi": "Gấu trúc lớn"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text4:question1",
+          "answer": "大熊猫",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文4 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text4-question2",
+          "prompt": {
+            "zh": "北京动物园早上几点开门？",
+            "vi": "Theo bài, sở thú mở mấy giờ?"
+          },
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "六点",
+              "vi": "Sáu giờ"
+            },
+            {
+              "zh": "七点",
+              "vi": "Bảy giờ"
+            },
+            {
+              "zh": "七点半",
+              "vi": "Bảy giờ rưỡi"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l16:text4:question2",
+          "answer": "七点半",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 23,
+            "item": "第16课 课文4 听两遍 第2题（C）"
+          }
+        }
+      ],
+      "audioTrack": "16-7",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍。开放时间只用于教材理解，不代表当前营业时间。",
+        "vi": "Nghe hai lần. Giờ mở cửa chỉ dùng để hiểu bài khóa, không phải thông tin hoạt động hiện tại."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:text4-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:text4:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text4-question3",
+          "prompt": {
+            "zh": "今天王一雪带孩子们去哪儿了？",
+            "vi": "Hôm nay chị dẫn con đi đâu?"
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她带孩子们去北京动物园了。",
+            "vi": "Chị đưa các con đến sở thú Bắc Kinh."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text4:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text4-question4",
+          "prompt": {
+            "zh": "很多游客去动物园做什么？",
+            "vi": "Nhiều khách đến sở thú làm gì?"
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们带着相机去大熊猫馆给大熊猫拍照。",
+            "vi": "Họ mang máy ảnh đến khu gấu trúc để chụp ảnh chúng."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text4:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:text4-question5",
+          "prompt": {
+            "zh": "北京动物园夏天和冬天的关门时间有什么不同？",
+            "vi": "Giờ đóng mùa hè và đông khác nhau thế nào theo bài?"
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "按课文，夏天晚上七点关门，冬天早一个小时关门。",
+            "vi": "Theo bài khóa, mùa hè đóng cửa lúc bảy giờ tối; mùa đông đóng sớm hơn một tiếng."
+          },
+          "targetRef": "hsk3-fltrp-2026:l16:text4:question5"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Đọc to bài khóa rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "她的想法总是变，________，一会儿说想学跳舞。",
+        "vi": "Ý cô ấy luôn đổi, ________, lúc lại muốn học nhảy."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "并列复句“一会儿……，一会儿……”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar1-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一会儿说想学唱歌",
+            "vi": "lúc nói muốn học hát"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "运动会上，他一会儿参加跑步比赛，________。",
+        "vi": "Trong hội thao, lúc anh ấy thi chạy, ________."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "并列复句“一会儿……，一会儿……”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar1-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一会儿参加游泳比赛",
+            "vi": "lúc lại thi bơi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "这只猫很可爱，一会儿躺在沙发上睡觉，________。",
+        "vi": "Mèo rất đáng yêu, lúc nằm ngủ trên sofa, ________."
+      },
+      "source": {
+        "pdfPage": 158,
+        "printedPage": 146,
+        "section": "并列复句“一会儿……，一会儿……”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar1-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 158,
+            "printedPage": 146,
+            "section": "并列复句“一会儿……，一会儿……”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一会儿在房间里跑来跑去",
+            "vi": "lúc lại chạy quanh phòng"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "________，我还有一些问题想问你。",
+        "vi": "________, tôi còn vài điều muốn hỏi bạn."
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "介词“关于”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar2-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "关于学习中文",
+            "vi": "Về việc học tiếng Trung"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "经理要跟你谈一谈________的事情。",
+        "vi": "Quản lý muốn nói với bạn chuyện ________."
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "介词“关于”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar2-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "关于工作",
+            "vi": "liên quan đến công việc"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "你去找李老师吧，他可以告诉你一些________的方法。",
+        "vi": "Bạn hãy tìm thầy Lý; thầy có thể chỉ cho bạn một số phương pháp ________."
+      },
+      "source": {
+        "pdfPage": 160,
+        "printedPage": 148,
+        "section": "介词“关于”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar2-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 160,
+            "printedPage": 148,
+            "section": "介词“关于”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "关于学习中文",
+            "vi": "học tiếng Trung"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你喜欢早上锻炼还是晚上锻炼？B：________，因为我早上起床起得很早。",
+        "vi": "A: Bạn thích tập sáng hay tối? B: ________, vì sáng tôi dậy sớm."
+      },
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "固定短语“一般来说”：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar3-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "固定短语“一般来说”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一般来说，我喜欢早上锻炼",
+            "vi": "Nói chung, tôi thích tập vào buổi sáng"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你觉得下班时坐地铁和坐出租车哪个更快？B：________。",
+        "vi": "A: Tan làm, đi tàu điện hay taxi nhanh hơn? B: ________."
+      },
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "固定短语“一般来说”：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar3-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "固定短语“一般来说”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一般来说，坐地铁更快",
+            "vi": "Nói chung, đi tàu điện ngầm nhanh hơn"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：周末你喜欢做什么？B：________。",
+        "vi": "A: Cuối tuần bạn thích làm gì? B: ________."
+      },
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "固定短语“一般来说”：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar3-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 162,
+            "printedPage": 150,
+            "section": "固定短语“一般来说”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一般来说，我喜欢去公园散步",
+            "vi": "Nói chung, tôi thích ra công viên đi dạo"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar4-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你今天怎么来得这么早？B：我是坐地铁来的，所以________。",
+        "vi": "A: Sao hôm nay đến sớm vậy? B: Tôi đi tàu điện nên ________."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "比较句（11）：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar4:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar4-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "比平时早到了十分钟",
+            "vi": "đến sớm hơn thường lệ mười phút"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar4-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：已经十一点了，你怎么还不睡？B：明天不上课，我想________。",
+        "vi": "A: Mười một giờ sao chưa ngủ? B: Mai không học, tôi muốn ________."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "比较句（11）：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar4:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar4-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "比平时晚睡一个小时",
+            "vi": "ngủ muộn hơn thường lệ một tiếng"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:grammar4-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：我们该还信用卡了。B：对，这个月________。",
+        "vi": "A: Đến hạn thanh toán thẻ tín dụng rồi. B: Đúng, tháng này ________."
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "比较句（11）：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:grammar4:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:grammar4-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "比较句（11）：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我们比上个月多花了一千块钱",
+            "vi": "chúng ta đã tiêu nhiều hơn tháng trước một nghìn tệ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:words-bank1",
+      "kind": "fill",
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "source": {
+        "pdfPage": 163,
+        "printedPage": 151,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:section2:bank1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question1",
+          "prompt": {
+            "zh": "（1）小猫看到妈妈后马上________开嘴要吃的。",
+            "vi": "Mèo thấy mẹ liền ________ miệng đòi ăn."
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 照顾",
+              "vi": "A chăm sóc"
+            },
+            {
+              "zh": "B 张",
+              "vi": "B há"
+            },
+            {
+              "zh": "C 饱",
+              "vi": "C no"
+            },
+            {
+              "zh": "D 奇怪",
+              "vi": "D kỳ lạ"
+            },
+            {
+              "zh": "E 脏",
+              "vi": "E bẩn"
+            }
+          ],
+          "answer": "B 张",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第1题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question2",
+          "prompt": {
+            "zh": "（2）这个电影介绍了怎么________离开爸爸妈妈的小动物。",
+            "vi": "Phim giới thiệu cách ________ thú nhỏ xa bố mẹ."
+          },
+          "source": {
+            "pdfPage": 163,
+            "printedPage": 151,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 照顾",
+              "vi": "A chăm sóc"
+            },
+            {
+              "zh": "B 张",
+              "vi": "B há"
+            },
+            {
+              "zh": "C 饱",
+              "vi": "C no"
+            },
+            {
+              "zh": "D 奇怪",
+              "vi": "D kỳ lạ"
+            },
+            {
+              "zh": "E 脏",
+              "vi": "E bẩn"
+            }
+          ],
+          "answer": "A 照顾",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第2题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question3",
+          "prompt": {
+            "zh": "（3）这只大熊猫没吃________，你看它还在找吃的东西呢。",
+            "vi": "Con gấu trúc này chưa ăn ________; xem kìa, nó vẫn đang tìm thức ăn."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 照顾",
+              "vi": "A chăm sóc"
+            },
+            {
+              "zh": "B 张",
+              "vi": "B há"
+            },
+            {
+              "zh": "C 饱",
+              "vi": "C no"
+            },
+            {
+              "zh": "D 奇怪",
+              "vi": "D kỳ lạ"
+            },
+            {
+              "zh": "E 脏",
+              "vi": "E bẩn"
+            }
+          ],
+          "answer": "C 饱",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第3题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question4",
+          "prompt": {
+            "zh": "（4）这个饭馆的桌子这么________，碗也不干净，咱们换一家吧。",
+            "vi": "Bàn quán này ________, bát cũng không sạch, đổi quán nhé."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 照顾",
+              "vi": "A chăm sóc"
+            },
+            {
+              "zh": "B 张",
+              "vi": "B há"
+            },
+            {
+              "zh": "C 饱",
+              "vi": "C no"
+            },
+            {
+              "zh": "D 奇怪",
+              "vi": "D kỳ lạ"
+            },
+            {
+              "zh": "E 脏",
+              "vi": "E bẩn"
+            }
+          ],
+          "answer": "E 脏",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第4题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question5",
+          "prompt": {
+            "zh": "（5）这只鸟好像飞不起来，而且吃东西的时候看起来也很________。",
+            "vi": "Chim hình như không bay được, lúc ăn trông cũng ________."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 照顾",
+              "vi": "A chăm sóc"
+            },
+            {
+              "zh": "B 张",
+              "vi": "B há"
+            },
+            {
+              "zh": "C 饱",
+              "vi": "C no"
+            },
+            {
+              "zh": "D 奇怪",
+              "vi": "D kỳ lạ"
+            },
+            {
+              "zh": "E 脏",
+              "vi": "E bẩn"
+            }
+          ],
+          "answer": "D 奇怪",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第5题（D）"
+          }
+        }
+      ],
+      "note": {
+        "zh": "A 照顾；B 张；C 饱；D 奇怪；E 脏。",
+        "vi": "A chăm sóc; B há; C no; D kỳ lạ; E bẩn"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:words-bank2",
+      "kind": "fill",
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:section2:bank2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question6",
+          "prompt": {
+            "zh": "（6）A：小王，你在找什么？B：我的手机不见了，我找了________也没找到。",
+            "vi": "A: Tiểu Vương, bạn đang tìm gì? B: Điện thoại của tôi mất rồi; tôi tìm ________ mà vẫn chưa thấy."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 认得",
+              "vi": "A nhận ra"
+            },
+            {
+              "zh": "B 关于",
+              "vi": "B về"
+            },
+            {
+              "zh": "C 其实",
+              "vi": "C thực ra"
+            },
+            {
+              "zh": "D 一般",
+              "vi": "D thường"
+            },
+            {
+              "zh": "E 半天",
+              "vi": "E rất lâu"
+            }
+          ],
+          "answer": "E 半天",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第6题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question7",
+          "prompt": {
+            "zh": "（7）A：你想借哪本书？B：我忘了名字，是一本________动物的书。",
+            "vi": "A: Bạn muốn mượn cuốn nào? B: Quên tên rồi, sách ________ động vật."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 认得",
+              "vi": "A nhận ra"
+            },
+            {
+              "zh": "B 关于",
+              "vi": "B về"
+            },
+            {
+              "zh": "C 其实",
+              "vi": "C thực ra"
+            },
+            {
+              "zh": "D 一般",
+              "vi": "D thường"
+            },
+            {
+              "zh": "E 半天",
+              "vi": "E rất lâu"
+            }
+          ],
+          "answer": "B 关于",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第7题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question8",
+          "prompt": {
+            "zh": "（8）A：这只小猫在小区里好几天了，是不是找不到家了？B：我________它，这是我邻居家的小猫。",
+            "vi": "A: Mèo ở khu mấy ngày, có phải lạc không? B: Tôi ________ nó, mèo nhà hàng xóm."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 认得",
+              "vi": "A nhận ra"
+            },
+            {
+              "zh": "B 关于",
+              "vi": "B về"
+            },
+            {
+              "zh": "C 其实",
+              "vi": "C thực ra"
+            },
+            {
+              "zh": "D 一般",
+              "vi": "D thường"
+            },
+            {
+              "zh": "E 半天",
+              "vi": "E rất lâu"
+            }
+          ],
+          "answer": "A 认得",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第8题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question9",
+          "prompt": {
+            "zh": "（9）A：你周末带孩子做什么？B：如果天气好，我________带孩子去公园里玩。",
+            "vi": "A: Cuối tuần dẫn con làm gì? B: Trời đẹp tôi ________ dẫn con ra công viên."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 认得",
+              "vi": "A nhận ra"
+            },
+            {
+              "zh": "B 关于",
+              "vi": "B về"
+            },
+            {
+              "zh": "C 其实",
+              "vi": "C thực ra"
+            },
+            {
+              "zh": "D 一般",
+              "vi": "D thường"
+            },
+            {
+              "zh": "E 半天",
+              "vi": "E rất lâu"
+            }
+          ],
+          "answer": "D 一般",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第9题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:words-question10",
+          "prompt": {
+            "zh": "（10）A：你怎么又去动物园了？B：________我也不想去，但是妈妈希望我和弟弟一起去。",
+            "vi": "A: Sao lại đi sở thú? B: ________ tôi cũng không muốn, nhưng mẹ muốn tôi đi với em."
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 认得",
+              "vi": "A nhận ra"
+            },
+            {
+              "zh": "B 关于",
+              "vi": "B về"
+            },
+            {
+              "zh": "C 其实",
+              "vi": "C thực ra"
+            },
+            {
+              "zh": "D 一般",
+              "vi": "D thường"
+            },
+            {
+              "zh": "E 半天",
+              "vi": "E rất lâu"
+            }
+          ],
+          "answer": "C 其实",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 24,
+            "item": "第16课 选词填空 第10题（C）"
+          }
+        }
+      ],
+      "note": {
+        "zh": "A 认得；B 关于；C 其实；D 一般；E 半天。",
+        "vi": "A nhận ra; B về; C thực ra; D thường; E rất lâu"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:picture1",
+      "kind": "fill",
+      "title": {
+        "zh": "（1）A：已经晚上11点了，你比以前________。B：我去动物医院帮忙________了。A：你看起来很累。B：今天新来了几只生病的小猫，一会儿________，________。我们都累得不得了。",
+        "vi": "A: Đã mười một giờ tối rồi, bạn ________. B: Tôi đến bệnh viện thú y giúp ________. A: Trông bạn mệt quá. B: Hôm nay có mấy con mèo bệnh mới đến, lúc thì ________, ________. Chúng tôi đều mệt lả."
+      },
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "综合练习：图片对话（1—2）",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:section4:block:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "晚回家了两个小时",
+            "vi": "về nhà muộn hơn trước hai tiếng"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture1-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "照顾小猫",
+            "vi": "chăm sóc mèo con"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture1-blank3",
+          "prompt": {
+            "zh": "第3空",
+            "vi": "Chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "给它们喂吃的",
+            "vi": "cho chúng ăn"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture1-blank4",
+          "prompt": {
+            "zh": "第4空",
+            "vi": "Chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一会儿给它们检查身体",
+            "vi": "lúc lại khám cho chúng"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l16:illustration:picture-1"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:picture2",
+      "kind": "fill",
+      "title": {
+        "zh": "（2）A：你看，那只大熊猫________，好像在找吃的。B：是啊，它身边的那只好像也________。A：它们刚才已经吃了半天了，应该吃饱了吧？B：________，它们一天要吃十几个小时呢。",
+        "vi": "A: Nhìn kìa, con gấu trúc ấy ________, hình như đang tìm thức ăn. B: Vâng, con bên cạnh nó hình như cũng ________. A: Chúng vừa ăn khá lâu rồi, chắc đã no chứ? B: ________, chúng ăn hơn mười tiếng mỗi ngày."
+      },
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "综合练习：图片对话（1—2）",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:section4:block:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "张着嘴",
+            "vi": "đang há miệng"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture2-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "没吃饱",
+            "vi": "chưa ăn no"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture2-blank3",
+          "prompt": {
+            "zh": "第3空",
+            "vi": "Chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 164,
+            "printedPage": 152,
+            "section": "综合练习：图片对话（1—2）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "一般来说",
+            "vi": "Nói chung"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l16:illustration:picture-2"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:picture3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：老师让我们写一个关于________，我还没想好写什么。B：我也没想好。动物园里什么动物都有，咱们去看看吧。A：都五点了，动物园是不是快关门了？B：夏天比冬天________。咱们现在就去。",
+        "vi": "A: Thầy cô bảo chúng tôi viết một câu chuyện về ________, tôi chưa nghĩ ra sẽ viết gì. B: Tôi cũng chưa nghĩ ra. Sở thú có đủ loài, chúng ta đến xem nhé. A: Năm giờ rồi, sở thú sắp đóng cửa phải không? B: Mùa hè ________. Chúng ta đi ngay thôi."
+      },
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "综合练习：图片对话（3）",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:section5:block:0",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "综合练习：图片对话（3）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "动物的故事",
+            "vi": "động vật"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:picture3-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "综合练习：图片对话（3）",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "晚关门一个小时",
+            "vi": "đóng cửa muộn hơn mùa đông một tiếng"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l16:illustration:picture-3"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:activity:classroom",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：介绍动物",
+        "vi": "Hoạt động: giới thiệu động vật"
+      },
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "课堂活动：介绍动物",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l16:section6",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l16:field:classroom-response1",
+          "prompt": {
+            "zh": "这种动物长什么样？",
+            "vi": "Loài vật này trông như thế nào?"
+          },
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "课堂活动：介绍动物",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:classroom-response2",
+          "prompt": {
+            "zh": "它们一般生活在什么地方？",
+            "vi": "Chúng thường sống ở đâu?"
+          },
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "课堂活动：介绍动物",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:classroom-response3",
+          "prompt": {
+            "zh": "它们的生活习惯是什么样的？",
+            "vi": "Chúng có tập tính như thế nào?"
+          },
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "课堂活动：介绍动物",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l16:field:classroom-continuation",
+          "prompt": {
+            "zh": "（4）……（自拟问题与回答，可选）",
+            "vi": "(4) … (Tự đặt câu hỏi và trả lời, tùy chọn)"
+          },
+          "source": {
+            "pdfPage": 165,
+            "printedPage": 153,
+            "section": "课堂活动：介绍动物",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "optional": true
+        }
+      ],
+      "note": {
+        "zh": "四人一组，每组选一个比较有特色的动物，围绕以下问题进行讨论。最后，每组选一名代表向全班介绍，其他同学可以提问。回答时，使用本课所学的词语和语言点。 可使用虚构情境，不必提供真实个人信息；不自动判分。 第（4）项“……”为可选追加问题，可在线下交流。",
+        "vi": "Nhóm bốn người chọn một loài có đặc điểm riêng, thảo luận theo câu hỏi rồi cử đại diện giới thiệu. Lớp đặt câu hỏi, dùng từ và cấu trúc bài. Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động. Mục (4) là câu hỏi thêm tùy chọn, có thể trao đổi trực tiếp."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 156,
+        "printedPage": 144,
+        "section": "自制辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:warmup1",
+        "position": 1,
+        "pdfPage": 156,
+        "printedPage": 144
+      },
+      "alt": {
+        "zh": "两只熊猫的身体部位标号：1连接左侧抬起的脚，2连接右侧耳朵，3连接脸部，4连接嘴，5连接左侧眼睛。",
+        "vi": "Các vị trí trên hai gấu trúc: 1 nối với chân giơ lên bên trái; 2 với tai bên phải; 3 với mặt; 4 với miệng; 5 với mắt bên trái."
+      },
+      "description": {
+        "zh": "两只熊猫的身体部位标号：1连接左侧抬起的脚，2连接右侧耳朵，3连接脸部，4连接嘴，5连接左侧眼睛。",
+        "vi": "Các vị trí trên hai gấu trúc: 1 nối với chân giơ lên bên trái; 2 với tai bên phải; 3 với mặt; 4 với miệng; 5 với mắt bên trái."
+      },
+      "file": "illustrations/hsk3-l16-warmup1-1.svg",
+      "sceneKey": "warmup1-1",
+      "publicationStatus": "approved",
+      "assetSha256": "2dbf02faa3df5a7985ad0c9cc4f58f0d5f3a5c3f9cdf5023a0ee6f2c188dd6c2",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l16:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:text1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 157,
+        "printedPage": 145,
+        "section": "自制辅助示意图：text1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:text1",
+        "position": 1,
+        "pdfPage": 157,
+        "printedPage": 145
+      },
+      "alt": {
+        "zh": "一只干净的小猫站在领养店的台面上。",
+        "vi": "Một con mèo sạch sẽ đứng trên bàn ở cơ sở nhận nuôi thú cưng."
+      },
+      "description": {
+        "zh": "一只干净的小猫站在领养店的台面上。",
+        "vi": "Một con mèo sạch sẽ đứng trên bàn ở cơ sở nhận nuôi thú cưng."
+      },
+      "file": "illustrations/hsk3-l16-text1-1.svg",
+      "sceneKey": "text1-1",
+      "publicationStatus": "approved",
+      "assetSha256": "4bafa55ef15f55cb63e0d77680d832ffa25659a419d930388e21d64ff22a62c0",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:text3-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 161,
+        "printedPage": 149,
+        "section": "自制辅助示意图：text3-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:text3",
+        "position": 1,
+        "pdfPage": 161,
+        "printedPage": 149
+      },
+      "alt": {
+        "zh": "两只大熊猫坐在树旁，一只拿着竹子。",
+        "vi": "Hai gấu trúc lớn ngồi bên cây, một con cầm tre."
+      },
+      "description": {
+        "zh": "两只大熊猫坐在树旁，一只拿着竹子。",
+        "vi": "Hai gấu trúc lớn ngồi bên cây, một con cầm tre."
+      },
+      "file": "illustrations/hsk3-l16-text3-1.svg",
+      "sceneKey": "text3-1",
+      "publicationStatus": "approved",
+      "assetSha256": "4fa8c2e59ad0344188611a8dceda07c2f1c080ffa494e9439cb176b75c031894",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:text4-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 162,
+        "printedPage": 150,
+        "section": "自制辅助示意图：text4-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:text4",
+        "position": 1,
+        "pdfPage": 162,
+        "printedPage": 150
+      },
+      "alt": {
+        "zh": "动物园入口有三个落地拱门，两边种着树。",
+        "vi": "Cổng sở thú có ba cửa vòm chạm nền, hai bên có cây."
+      },
+      "description": {
+        "zh": "动物园入口有三个落地拱门，两边种着树。",
+        "vi": "Cổng sở thú có ba cửa vòm chạm nền, hai bên có cây."
+      },
+      "file": "illustrations/hsk3-l16-text4-1.svg",
+      "sceneKey": "text4-1",
+      "publicationStatus": "approved",
+      "assetSha256": "e549435f0a9ef31bbb793510f8b16d8ff79c6c9d9aa4f1fbb4ddbeab437a1b81",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:picture-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "自制辅助示意图：picture-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:section4",
+        "position": 1,
+        "pdfPage": 164,
+        "printedPage": 152
+      },
+      "alt": {
+        "zh": "穿白衣的兽医在检查台旁照顾小猫，胸前挂着听诊器。",
+        "vi": "Bác sĩ thú y mặc áo trắng, đeo ống nghe, chăm sóc mèo con bên bàn khám."
+      },
+      "description": {
+        "zh": "穿白衣的兽医在检查台旁照顾小猫，胸前挂着听诊器。",
+        "vi": "Bác sĩ thú y mặc áo trắng, đeo ống nghe, chăm sóc mèo con bên bàn khám."
+      },
+      "file": "illustrations/hsk3-l16-picture-1.svg",
+      "sceneKey": "picture-1",
+      "publicationStatus": "approved",
+      "assetSha256": "d907bbf56638ee389334d7182c5bc54738907f5645f9e224666d776c61d1e8b5",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l16:activity:picture1"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:picture-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 164,
+        "printedPage": 152,
+        "section": "自制辅助示意图：picture-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:section4",
+        "position": 2,
+        "pdfPage": 164,
+        "printedPage": 152
+      },
+      "alt": {
+        "zh": "两只熊猫坐在一起，一只身前有竹子。",
+        "vi": "Hai gấu trúc ngồi cạnh nhau, một con có tre trước người."
+      },
+      "description": {
+        "zh": "两只熊猫坐在一起，一只身前有竹子。",
+        "vi": "Hai gấu trúc ngồi cạnh nhau, một con có tre trước người."
+      },
+      "file": "illustrations/hsk3-l16-picture-2.svg",
+      "sceneKey": "picture-2",
+      "publicationStatus": "approved",
+      "assetSha256": "febad7f0a2a717991d971deb0795cf5fe12092cdbeec56c01a43d4fc39410221",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l16:activity:picture2"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:picture-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "自制辅助示意图：picture-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:section5",
+        "position": 1,
+        "pdfPage": 165,
+        "printedPage": 153
+      },
+      "alt": {
+        "zh": "动物园的拱形入口通向园内。",
+        "vi": "Cổng vòm dẫn vào bên trong sở thú."
+      },
+      "description": {
+        "zh": "动物园的拱形入口通向园内。",
+        "vi": "Cổng vòm dẫn vào bên trong sở thú."
+      },
+      "file": "illustrations/hsk3-l16-picture-3.svg",
+      "sceneKey": "picture-3",
+      "publicationStatus": "approved",
+      "assetSha256": "7dbfddbb7a08e59de0a83f6fc777e4993c3852fff9018a32fcc20726869c354d",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l16:activity:picture3"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l16:illustration:culture-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 165,
+        "printedPage": 153,
+        "section": "自制辅助示意图：culture-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l16:culture",
+        "position": 1,
+        "pdfPage": 165,
+        "printedPage": 153
+      },
+      "alt": {
+        "zh": "一只熊猫靠在有支撑腿的木台上；仅提示文化主题，不是视频画面。",
+        "vi": "Một gấu trúc tựa trên bục gỗ có chân đỡ; chỉ gợi chủ đề văn hóa, không phải khung hình video."
+      },
+      "description": {
+        "zh": "一只熊猫靠在有支撑腿的木台上；仅提示文化主题，不是视频画面。",
+        "vi": "Một gấu trúc tựa trên bục gỗ có chân đỡ; chỉ gợi chủ đề văn hóa, không phải khung hình video."
+      },
+      "file": "illustrations/hsk3-l16-culture-1.svg",
+      "sceneKey": "culture-1",
+      "publicationStatus": "approved",
+      "assetSha256": "6995528a2d830b448a4be940b725bc3d047b5229231cdb7feca1380899641d99",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    }
+  ],
+  "additionalSourceRevisions": [
+    {
+      "id": "hsk3-official-vi-20261004",
+      "filename": "HSK3 (3.0).pdf",
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "bodyPrintedPageOffset": 12,
+      "language": "zh+vi",
+      "role": "additional-official-source; no replacement of original-source identity",
+      "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "sameBytesAsOriginalChineseSource": false,
+      "officialPOSAbbreviationLanguage": "Vietnamese",
+      "doesNotRevalidateOriginalEnglishAppendix": true,
+      "posLegend": {
+        "source": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表：词类缩写说明",
+          "provenance": "textbook"
+        },
+        "printedLanguage": "vi",
+        "rawLabelToChineseCategory": {
+          "dt.": "名词",
+          "đgt.": "动词",
+          "tt.": "形容词",
+          "đt.": "代词",
+          "phó.": "副词",
+          "giới.": "介词",
+          "liên.": "连词",
+          "trợ.": "助词",
+          "số.": "数词",
+          "lượng.": "量词",
+          "sl.": "数量词",
+          "ct.": "叹词",
+          "tượng.": "拟声词",
+          "đtnn.": "能愿动词",
+          "ttố.": "前缀",
+          "htố.": "后缀"
+        }
+      },
+      "sourceAudit": {
+        "authorStatus": "visual-reviewed",
+        "independentStatus": "accepted-source-evidence",
+        "scope": "Chinese, pinyin, printed number, POS, glossary page, lesson numbers and stars",
+        "vietnameseGlossAlignment": "deferred-to-Phase-B",
+        "independentEvidence": {
+          "status": "accepted-source-evidence",
+          "reviewer": "qa_hsk1_05_08",
+          "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+          "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+          "reviewedStableRows": 523,
+          "acceptedInputFiles": [
+            "official-vi-glossary.tsv",
+            "official-vi-l01-06.json",
+            "official-vi-l07-12.json",
+            "official-vi-l13-18.json"
+          ],
+          "acceptedStableIdCount": 523,
+          "acceptedInputManifest": [
+            {
+              "filename": "official-vi-glossary.tsv",
+              "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+              "status": "independently-accepted-source-evidence",
+              "glossaryRows": 487
+            },
+            {
+              "filename": "official-vi-l01-06.json",
+              "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 171,
+              "printedOccurrences": 162,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l07-12.json",
+              "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 184,
+              "printedOccurrences": 166,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l13-18.json",
+              "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 168,
+              "printedOccurrences": 163,
+              "vocabularyBoxes": 24
+            }
+          ],
+          "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+        }
+      }
+    }
+  ]
+}
+`;export{e as default};

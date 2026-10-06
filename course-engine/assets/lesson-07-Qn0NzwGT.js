@@ -1,0 +1,4365 @@
+var e=`{
+  "schema": 1,
+  "edition": "hsk1-print-2026-01",
+  "lesson": 7,
+  "version": "source-resume-20261004-candidate-1",
+  "scope": "lesson-7-candidate",
+  "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+  "answerBookSHA256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+  "editorialStatus": "candidate-awaiting-independent-review",
+  "activities": [
+    {
+      "id": "hsk1-original-2026-l07-p045-objectives-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "objectives",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "本课目标",
+        "vi": "Mục tiêu bài học"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "（1）能听懂并描述事情发生的时间。\\n（2）掌握语气助词“吧”（1）表达建议、商量等的用法。\\n（3）掌握语气助词“呢”（2）表达确认的事实的用法。\\n（4）掌握副词、时间词语作状语的位置。",
+        "vi": "(1) Hiểu khi nghe và mô tả thời gian xảy ra sự việc.\\n(2) Nắm cách dùng “吧” (1) để đề nghị, bàn bạc, v.v.\\n(3) Nắm cách dùng “呢” (2) để nói sự thật đã xác nhận.\\n(4) Nắm vị trí phó từ và cụm thời gian làm trạng ngữ."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p045-warmup-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "warmup",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的时间选择对应的图片。",
+        "vi": "Ghép các thời điểm dưới đây với hình đồng hồ tương ứng."
+      },
+      "prompt": {
+        "zh": "图片1",
+        "vi": "Hình 1"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "8:15",
+              "py": "",
+              "vi": "8 giờ 15"
+            },
+            {
+              "id": "B",
+              "zh": "15:20",
+              "py": "",
+              "vi": "15 giờ 20"
+            },
+            {
+              "id": "C",
+              "zh": "10:10",
+              "py": "",
+              "vi": "10 giờ 10"
+            },
+            {
+              "id": "D",
+              "zh": "13:45",
+              "py": "",
+              "vi": "13 giờ 45"
+            },
+            {
+              "id": "E",
+              "zh": "12:30",
+              "py": "",
+              "vi": "12 giờ 30"
+            },
+            {
+              "id": "F",
+              "zh": "18:00",
+              "py": "",
+              "vi": "18 giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "P45，热身",
+            "ordinal": 1
+          }
+        }
+      ],
+      "figure": "l07-warmup-01",
+      "figureSHA256": "e6d6dcd832807f2e6512494e255ff143627e081026184cfbda3777abf08fcfd9"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p045-warmup-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "warmup",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的时间选择对应的图片。",
+        "vi": "Ghép các thời điểm dưới đây với hình đồng hồ tương ứng."
+      },
+      "prompt": {
+        "zh": "图片2",
+        "vi": "Hình 2"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "8:15",
+              "py": "",
+              "vi": "8 giờ 15"
+            },
+            {
+              "id": "B",
+              "zh": "15:20",
+              "py": "",
+              "vi": "15 giờ 20"
+            },
+            {
+              "id": "C",
+              "zh": "10:10",
+              "py": "",
+              "vi": "10 giờ 10"
+            },
+            {
+              "id": "D",
+              "zh": "13:45",
+              "py": "",
+              "vi": "13 giờ 45"
+            },
+            {
+              "id": "E",
+              "zh": "12:30",
+              "py": "",
+              "vi": "12 giờ 30"
+            },
+            {
+              "id": "F",
+              "zh": "18:00",
+              "py": "",
+              "vi": "18 giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "P45，热身",
+            "ordinal": 2
+          }
+        }
+      ],
+      "figure": "l07-warmup-02",
+      "figureSHA256": "e02480d777430be77912f68826c5d2f1a64616f1efb01e10313f1ce08fff5bea"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p045-warmup-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "warmup",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的时间选择对应的图片。",
+        "vi": "Ghép các thời điểm dưới đây với hình đồng hồ tương ứng."
+      },
+      "prompt": {
+        "zh": "图片3",
+        "vi": "Hình 3"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "8:15",
+              "py": "",
+              "vi": "8 giờ 15"
+            },
+            {
+              "id": "B",
+              "zh": "15:20",
+              "py": "",
+              "vi": "15 giờ 20"
+            },
+            {
+              "id": "C",
+              "zh": "10:10",
+              "py": "",
+              "vi": "10 giờ 10"
+            },
+            {
+              "id": "D",
+              "zh": "13:45",
+              "py": "",
+              "vi": "13 giờ 45"
+            },
+            {
+              "id": "E",
+              "zh": "12:30",
+              "py": "",
+              "vi": "12 giờ 30"
+            },
+            {
+              "id": "F",
+              "zh": "18:00",
+              "py": "",
+              "vi": "18 giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "P45，热身",
+            "ordinal": 3
+          }
+        }
+      ],
+      "figure": "l07-warmup-03",
+      "figureSHA256": "35fd4d67d19b96de5970258d56837b80bafd0840efb7a5f908c35c2516cb14c5"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p045-warmup-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "warmup",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的时间选择对应的图片。",
+        "vi": "Ghép các thời điểm dưới đây với hình đồng hồ tương ứng."
+      },
+      "prompt": {
+        "zh": "图片4",
+        "vi": "Hình 4"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "8:15",
+              "py": "",
+              "vi": "8 giờ 15"
+            },
+            {
+              "id": "B",
+              "zh": "15:20",
+              "py": "",
+              "vi": "15 giờ 20"
+            },
+            {
+              "id": "C",
+              "zh": "10:10",
+              "py": "",
+              "vi": "10 giờ 10"
+            },
+            {
+              "id": "D",
+              "zh": "13:45",
+              "py": "",
+              "vi": "13 giờ 45"
+            },
+            {
+              "id": "E",
+              "zh": "12:30",
+              "py": "",
+              "vi": "12 giờ 30"
+            },
+            {
+              "id": "F",
+              "zh": "18:00",
+              "py": "",
+              "vi": "18 giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "P45，热身",
+            "ordinal": 4
+          }
+        }
+      ],
+      "figure": "l07-warmup-04",
+      "figureSHA256": "1635af1657cf4b2bb3e92eb0b60338ad148771e9a863a421031cea853f7f4118"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p045-warmup-05",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "warmup",
+        "ordinal": 5
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的时间选择对应的图片。",
+        "vi": "Ghép các thời điểm dưới đây với hình đồng hồ tương ứng."
+      },
+      "prompt": {
+        "zh": "图片5",
+        "vi": "Hình 5"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "8:15",
+              "py": "",
+              "vi": "8 giờ 15"
+            },
+            {
+              "id": "B",
+              "zh": "15:20",
+              "py": "",
+              "vi": "15 giờ 20"
+            },
+            {
+              "id": "C",
+              "zh": "10:10",
+              "py": "",
+              "vi": "10 giờ 10"
+            },
+            {
+              "id": "D",
+              "zh": "13:45",
+              "py": "",
+              "vi": "13 giờ 45"
+            },
+            {
+              "id": "E",
+              "zh": "12:30",
+              "py": "",
+              "vi": "12 giờ 30"
+            },
+            {
+              "id": "F",
+              "zh": "18:00",
+              "py": "",
+              "vi": "18 giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "F",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "P45，热身",
+            "ordinal": 5
+          }
+        }
+      ],
+      "figure": "l07-warmup-05",
+      "figureSHA256": "76d02fae78f377bb7dcb6adfe204a2781fb7d7d6a5c3f69ccc79cf740afd4faa"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p045-warmup-06",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "image-match",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "section": "warmup",
+        "ordinal": 6
+      },
+      "title": {
+        "zh": "热身 · 图片配词",
+        "vi": "Khởi động · Ghép hình và từ"
+      },
+      "instruction": {
+        "zh": "给下面的时间选择对应的图片。",
+        "vi": "Ghép các thời điểm dưới đây với hình đồng hồ tương ứng."
+      },
+      "prompt": {
+        "zh": "图片6",
+        "vi": "Hình 6"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "8:15",
+              "py": "",
+              "vi": "8 giờ 15"
+            },
+            {
+              "id": "B",
+              "zh": "15:20",
+              "py": "",
+              "vi": "15 giờ 20"
+            },
+            {
+              "id": "C",
+              "zh": "10:10",
+              "py": "",
+              "vi": "10 giờ 10"
+            },
+            {
+              "id": "D",
+              "zh": "13:45",
+              "py": "",
+              "vi": "13 giờ 45"
+            },
+            {
+              "id": "E",
+              "zh": "12:30",
+              "py": "",
+              "vi": "12 giờ 30"
+            },
+            {
+              "id": "F",
+              "zh": "18:00",
+              "py": "",
+              "vi": "18 giờ"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "P45，热身",
+            "ordinal": 6
+          }
+        }
+      ],
+      "figure": "l07-warmup-06",
+      "figureSHA256": "62391624ea1e17340b23efffe186f2c2daa4df21d806a02690cb73174b69c763"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p046-vocabulary-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 46,
+        "pdfPage": 61,
+        "section": "vocabulary",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "1",
+                  "vi": "1"
+                }
+              },
+              {
+                "text": {
+                  "zh": "现在",
+                  "vi": "bây giờ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xiànzài",
+                  "vi": "xiànzài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "now",
+                  "vi": "now"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bây giờ",
+                  "vi": "bây giờ"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "2",
+                  "vi": "2"
+                }
+              },
+              {
+                "text": {
+                  "zh": "点",
+                  "vi": "giờ (khi nói giờ trong ngày)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "diǎn",
+                  "vi": "diǎn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "m.",
+                  "vi": "m."
+                }
+              },
+              {
+                "text": {
+                  "zh": "o’clock",
+                  "vi": "o’clock"
+                }
+              },
+              {
+                "text": {
+                  "zh": "giờ (khi nói giờ trong ngày)",
+                  "vi": "giờ (khi nói giờ trong ngày)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "3",
+                  "vi": "3"
+                }
+              },
+              {
+                "text": {
+                  "zh": "早上",
+                  "vi": "buổi sáng; sáng sớm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zǎoshang",
+                  "vi": "zǎoshang"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "(early) morning",
+                  "vi": "(early) morning"
+                }
+              },
+              {
+                "text": {
+                  "zh": "buổi sáng; sáng sớm",
+                  "vi": "buổi sáng; sáng sớm"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-4",
+            "cells": [
+              {
+                "text": {
+                  "zh": "4",
+                  "vi": "4"
+                }
+              },
+              {
+                "text": {
+                  "zh": "上午",
+                  "vi": "buổi sáng; trước trưa"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shàngwǔ",
+                  "vi": "shàngwǔ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "morning",
+                  "vi": "morning"
+                }
+              },
+              {
+                "text": {
+                  "zh": "buổi sáng; trước trưa",
+                  "vi": "buổi sáng; trước trưa"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-5",
+            "cells": [
+              {
+                "text": {
+                  "zh": "5",
+                  "vi": "5"
+                }
+              },
+              {
+                "text": {
+                  "zh": "分",
+                  "vi": "phút (trong cách nói giờ)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "fēn",
+                  "vi": "fēn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "m.",
+                  "vi": "m."
+                }
+              },
+              {
+                "text": {
+                  "zh": "minute",
+                  "vi": "minute"
+                }
+              },
+              {
+                "text": {
+                  "zh": "phút (trong cách nói giờ)",
+                  "vi": "phút (trong cách nói giờ)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-6",
+            "cells": [
+              {
+                "text": {
+                  "zh": "6",
+                  "vi": "6"
+                }
+              },
+              {
+                "text": {
+                  "zh": "课",
+                  "vi": "tiết học; buổi học"
+                }
+              },
+              {
+                "text": {
+                  "zh": "kè",
+                  "vi": "kè"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "class; lesson",
+                  "vi": "class; lesson"
+                }
+              },
+              {
+                "text": {
+                  "zh": "tiết học; buổi học",
+                  "vi": "tiết học; buổi học"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-7",
+            "cells": [
+              {
+                "text": {
+                  "zh": "7",
+                  "vi": "7"
+                }
+              },
+              {
+                "text": {
+                  "zh": "下午",
+                  "vi": "buổi chiều"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xiàwǔ",
+                  "vi": "xiàwǔ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "afternoon",
+                  "vi": "afternoon"
+                }
+              },
+              {
+                "text": {
+                  "zh": "buổi chiều",
+                  "vi": "buổi chiều"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-8",
+            "cells": [
+              {
+                "text": {
+                  "zh": "8",
+                  "vi": "8"
+                }
+              },
+              {
+                "text": {
+                  "zh": "见",
+                  "vi": "gặp"
+                }
+              },
+              {
+                "text": {
+                  "zh": "jiàn",
+                  "vi": "jiàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "meet",
+                  "vi": "meet"
+                }
+              },
+              {
+                "text": {
+                  "zh": "gặp",
+                  "vi": "gặp"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-9",
+            "cells": [
+              {
+                "text": {
+                  "zh": "9",
+                  "vi": "9"
+                }
+              },
+              {
+                "text": {
+                  "zh": "吧",
+                  "vi": "nhé; đi (trợ từ đề nghị)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "ba",
+                  "vi": "ba"
+                }
+              },
+              {
+                "text": {
+                  "zh": "part.",
+                  "vi": "part."
+                }
+              },
+              {
+                "text": {
+                  "zh": "used at the end of a sentence to express suggestions, consultations, advice, or requests",
+                  "vi": "used at the end of a sentence to express suggestions, consultations, advice, or requests"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nhé; đi (trợ từ đề nghị)",
+                  "vi": "nhé; đi (trợ từ đề nghị)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "7-2"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p046-role-text1-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 46,
+        "pdfPage": 61,
+        "section": "role-text1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "白家月：现在几点？\\n安妮：早上八点四十。\\n白家月：我上午十点十分有课。\\n安妮：好的，我们下午两点见吧。",
+        "vi": "Bây giờ là mấy giờ?\\nTám giờ bốn mươi sáng.\\nMười giờ mười sáng tôi có tiết học.\\nĐược, hai giờ chiều chúng ta gặp nhau nhé."
+      },
+      "audio": {
+        "sceneId": "textbook-l07-text-1",
+        "track": "7-1",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l07-text-1",
+      "figure": "l07-scene-01",
+      "figureSHA256": "9429551ce66bd06b8e4e0fd55509d5eff794fa176aadf1cb9c33ae07dd99fcfc"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p046-pair-text1-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 46,
+        "pdfPage": 61,
+        "section": "pair-text1",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Làm việc theo cặp, hội thoại theo tình huống thực tế."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p047-time-table-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 47,
+        "pdfPage": 62,
+        "section": "time-table",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "时间的表达（2）· 点、分",
+        "vi": "Cách biểu đạt thời gian (2) · Giờ, phút"
+      },
+      "instruction": {
+        "zh": "“点、分”表示具体时间点，整点使用“点”，不是整点使用“分”，“分”可以省略。但是，当时间为“十分”时，不能省略“分”；当时间为十分以下时，要读出“零”。大声朗读。",
+        "vi": "“点、分” biểu thị thời điểm cụ thể. Giờ tròn dùng “点”, giờ có phút dùng “分”; có thể lược “分”. Tuy nhiên, với mười phút phải giữ “分”; khi dưới mười phút phải đọc “零”. Đọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "保留原表的行列顺序。",
+        "vi": "Giữ nguyên thứ tự hàng và cột của bảng gốc."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "点",
+            "vi": "Giờ"
+          },
+          {
+            "zh": "分",
+            "vi": "Phút"
+          },
+          {
+            "zh": "数字写法",
+            "vi": "Cách viết bằng số"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "九点",
+                  "vi": "chín giờ"
+                }
+              },
+              {},
+              {
+                "text": {
+                  "zh": "9:00",
+                  "vi": "9:00"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "二十点",
+                  "vi": "hai mươi giờ"
+                }
+              },
+              {},
+              {
+                "text": {
+                  "zh": "20:00",
+                  "vi": "20:00"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "十五点",
+                  "vi": "mười lăm giờ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "四十",
+                  "vi": "bốn mươi"
+                }
+              },
+              {
+                "text": {
+                  "zh": "15:40",
+                  "vi": "15:40"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-4",
+            "cells": [
+              {
+                "text": {
+                  "zh": "二十一点",
+                  "vi": "hai mươi mốt giờ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "十分",
+                  "vi": "mười phút"
+                }
+              },
+              {
+                "text": {
+                  "zh": "21:10",
+                  "vi": "21:10"
+                }
+              }
+            ]
+          },
+          {
+            "id": "row-5",
+            "cells": [
+              {
+                "text": {
+                  "zh": "二十二点",
+                  "vi": "hai mươi hai giờ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "零五",
+                  "vi": "lẻ năm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "22:05",
+                  "vi": "22:05"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p047-time-period-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 47,
+        "pdfPage": 62,
+        "section": "time-period",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "时间段",
+        "vi": "Khoảng thời gian trong ngày"
+      },
+      "instruction": {
+        "zh": "“上午、中午、下午、晚上”等时间名词可以表达时间段。这些时间名词后还可以直接加时间点。\\n大声朗读。",
+        "vi": "Các danh từ thời gian như “上午、中午、下午、晚上” chỉ các khoảng trong ngày; có thể thêm thời điểm cụ thể ngay sau đó.\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）上午\\n（2）中午十二点\\n（3）下午两点半\\n（4）晚上九点十分",
+        "vi": "(1) Buổi sáng\\n(2) Mười hai giờ trưa\\n(3) Hai giờ rưỡi chiều\\n(4) Chín giờ mười phút tối"
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p047-grammar-ba-explanation-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 47,
+        "pdfPage": 62,
+        "section": "grammar-ba-explanation",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "语气助词“吧”（1）",
+        "vi": "Trợ từ ngữ khí “吧” (1)"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "本课语气助词“吧”读轻声（ba），在句子末尾，表示建议、商量、劝告、请求。",
+        "vi": "Trong bài này, “吧” đọc thanh nhẹ (ba), đứng cuối câu để đề nghị, bàn bạc, khuyên nhủ hoặc yêu cầu."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p048-grammar-ba-dialogues-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 48,
+        "pdfPage": 63,
+        "section": "grammar-ba-dialogues",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "“吧” · 朗读对话",
+        "vi": "“吧” · Đọc hội thoại"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）A：我们下午三点见吧。\\nB：好的。\\n（2）A：你去超市买吧。\\nB：超市没有。\\n（3）A：我们去西安饭店吃晚饭吧。\\nB：好的。",
+        "vi": "(1) A: Chiều nay ba giờ chúng ta gặp nhé.\\nB: Được.\\n(2) A: Bạn đến siêu thị mua nhé.\\nB: Siêu thị không có.\\n(3) A: Chúng ta đến nhà hàng Tây An ăn tối nhé.\\nB: Được."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p048-listen-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 48,
+        "pdfPage": 63,
+        "section": "listen-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "李文下午想去（　）。",
+        "vi": "Chọn việc Lý Văn muốn đi làm vào buổi chiều."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "超市",
+              "py": "chāoshì",
+              "vi": "siêu thị"
+            },
+            {
+              "id": "B",
+              "zh": "看电影",
+              "py": "kàn diànyǐng",
+              "vi": "xem phim"
+            },
+            {
+              "id": "C",
+              "zh": "西安饭店",
+              "py": "Xī’ān Fàndiàn",
+              "vi": "nhà hàng Tây An"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "课文2，听两遍对话，选择正确答案",
+            "ordinal": 1
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l07-text-2",
+        "track": "7-3",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p048-listen-text2-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 48,
+        "pdfPage": 63,
+        "section": "listen-text2",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "白家月明天下午还（　）。",
+        "vi": "Chọn việc Bạch Gia Nguyệt vẫn làm chiều mai."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "上课",
+              "py": "shàngkè",
+              "vi": "đi học"
+            },
+            {
+              "id": "B",
+              "zh": "有事",
+              "py": "yǒu shì",
+              "vi": "có việc"
+            },
+            {
+              "id": "C",
+              "zh": "去超市",
+              "py": "qù chāoshì",
+              "vi": "đi siêu thị"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "课文2，听两遍对话，选择正确答案",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l07-text-2",
+        "track": "7-3",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p049-vocabulary-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 49,
+        "pdfPage": 64,
+        "section": "vocabulary",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-10",
+            "cells": [
+              {
+                "text": {
+                  "zh": "10",
+                  "vi": "10"
+                }
+              },
+              {
+                "text": {
+                  "zh": "电影院",
+                  "vi": "rạp chiếu phim"
+                }
+              },
+              {
+                "text": {
+                  "zh": "diànyǐngyuàn",
+                  "vi": "diànyǐngyuàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "cinema",
+                  "vi": "cinema"
+                }
+              },
+              {
+                "text": {
+                  "zh": "rạp chiếu phim",
+                  "vi": "rạp chiếu phim"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-11",
+            "cells": [
+              {
+                "text": {
+                  "zh": "11",
+                  "vi": "11"
+                }
+              },
+              {
+                "text": {
+                  "zh": "看",
+                  "vi": "xem; nhìn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "kàn",
+                  "vi": "kàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "watch; see; read; look at",
+                  "vi": "watch; see; read; look at"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xem; nhìn",
+                  "vi": "xem; nhìn"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-12",
+            "cells": [
+              {
+                "text": {
+                  "zh": "12",
+                  "vi": "12"
+                }
+              },
+              {
+                "text": {
+                  "zh": "电影",
+                  "vi": "phim"
+                }
+              },
+              {
+                "text": {
+                  "zh": "diànyǐng",
+                  "vi": "diànyǐng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "movie; film",
+                  "vi": "movie; film"
+                }
+              },
+              {
+                "text": {
+                  "zh": "phim",
+                  "vi": "phim"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-13",
+            "cells": [
+              {
+                "text": {
+                  "zh": "13",
+                  "vi": "13"
+                }
+              },
+              {
+                "text": {
+                  "zh": "事",
+                  "vi": "việc; chuyện"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shì",
+                  "vi": "shì"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "thing; affair",
+                  "vi": "thing; affair"
+                }
+              },
+              {
+                "text": {
+                  "zh": "việc; chuyện",
+                  "vi": "việc; chuyện"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-14",
+            "cells": [
+              {
+                "text": {
+                  "zh": "14",
+                  "vi": "14"
+                }
+              },
+              {
+                "text": {
+                  "zh": "上课",
+                  "vi": "vào học; học trên lớp"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shàngkè",
+                  "vi": "shàngkè"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "attend a class",
+                  "vi": "attend a class"
+                }
+              },
+              {
+                "text": {
+                  "zh": "vào học; học trên lớp",
+                  "vi": "vào học; học trên lớp"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-15",
+            "cells": [
+              {
+                "text": {
+                  "zh": "15",
+                  "vi": "15"
+                }
+              },
+              {
+                "text": {
+                  "zh": "呢",
+                  "vi": "mà; đấy (nhấn mạnh điều được khẳng định)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "ne",
+                  "vi": "ne"
+                }
+              },
+              {
+                "text": {
+                  "zh": "part.",
+                  "vi": "part."
+                }
+              },
+              {
+                "text": {
+                  "zh": "marker of a declarative sentence",
+                  "vi": "marker of a declarative sentence"
+                }
+              },
+              {
+                "text": {
+                  "zh": "mà; đấy (nhấn mạnh điều được khẳng định)",
+                  "vi": "mà; đấy (nhấn mạnh điều được khẳng định)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-16",
+            "cells": [
+              {
+                "text": {
+                  "zh": "16",
+                  "vi": "16"
+                }
+              },
+              {
+                "text": {
+                  "zh": "半",
+                  "vi": "nửa; rưỡi"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bàn",
+                  "vi": "bàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "num.",
+                  "vi": "num."
+                }
+              },
+              {
+                "text": {
+                  "zh": "half",
+                  "vi": "half"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nửa; rưỡi",
+                  "vi": "nửa; rưỡi"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-17",
+            "cells": [
+              {
+                "text": {
+                  "zh": "17",
+                  "vi": "17"
+                }
+              },
+              {
+                "text": {
+                  "zh": "下课",
+                  "vi": "tan học; hết tiết học"
+                }
+              },
+              {
+                "text": {
+                  "zh": "xiàkè",
+                  "vi": "xiàkè"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "dismiss a class",
+                  "vi": "dismiss a class"
+                }
+              },
+              {
+                "text": {
+                  "zh": "tan học; hết tiết học",
+                  "vi": "tan học; hết tiết học"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "7-4"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p049-role-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 49,
+        "pdfPage": 64,
+        "section": "role-text2",
+        "ordinal": 1,
+        "printedPages": [
+          48,
+          49
+        ],
+        "pdfPages": [
+          63,
+          64
+        ]
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "李文：下午我想去电影院看电影，你去吗？\\n白家月：我不想去，下午还有事。\\n李文：好的。明天呢？\\n白家月：我明天下午两点还上课呢，四点半下课。",
+        "vi": "Chiều nay tôi muốn đi rạp xem phim, bạn đi không?\\nTôi không muốn đi, chiều nay tôi còn có việc.\\nĐược. Còn ngày mai?\\nHai giờ chiều mai tôi vẫn còn học, bốn rưỡi mới tan học."
+      },
+      "audio": {
+        "sceneId": "textbook-l07-text-2",
+        "track": "7-3",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l07-text-2",
+      "figure": "l07-scene-02",
+      "figureSHA256": "a2e9171487ad74d0255043b2c0b3ef112207d520bef628dc5180937a2b6a6dcc"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p049-pair-text2-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 49,
+        "pdfPage": 64,
+        "section": "pair-text2",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Làm việc theo cặp, hội thoại theo tình huống thực tế."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p049-grammar-adverb-explanation-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 49,
+        "pdfPage": 64,
+        "section": "grammar-adverb-explanation",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "副词、时间词语作状语的位置",
+        "vi": "Vị trí phó từ và cụm thời gian làm trạng ngữ"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "在汉语中，副词、时间词语作状语时，一般都要在动词或形容词前。",
+        "vi": "Trong tiếng Trung, khi phó từ và cụm thời gian làm trạng ngữ, chúng thường đứng trước động từ hoặc tính từ."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-grammar-adverb-examples-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "grammar-adverb-examples",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "状语位置 · 大声朗读",
+        "vi": "Vị trí trạng ngữ · Đọc thành tiếng"
+      },
+      "instruction": {
+        "zh": "大声朗读。",
+        "vi": "Đọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）我不想去。\\n（2）妹妹很高兴。\\n（3）她上午十点半上课。",
+        "vi": "(1) Tôi không muốn đi.\\n(2) Em gái rất vui.\\n(3) Cô ấy học lúc mười giờ rưỡi sáng."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-complete-dialogues-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "open-dialogue-completion",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "complete-dialogues",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "完成对话",
+        "vi": "Hoàn thành hội thoại"
+      },
+      "instruction": {
+        "zh": "完成对话。",
+        "vi": "Hoàn thành hội thoại."
+      },
+      "prompt": {
+        "zh": "A：我们（　）点见？\\nB：我们下午（　）见吧。",
+        "vi": "Hỏi giờ gặp nhau rồi đề xuất một thời điểm vào buổi chiều."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "几",
+            "vi": "mấy"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "三点",
+            "vi": "ba giờ"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-complete-dialogues-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "open-dialogue-completion",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "complete-dialogues",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "完成对话",
+        "vi": "Hoàn thành hội thoại"
+      },
+      "instruction": {
+        "zh": "完成对话。",
+        "vi": "Hoàn thành hội thoại."
+      },
+      "prompt": {
+        "zh": "A：你上午去上课，是吗？\\nB：对，我（　）有课。",
+        "vi": "A hỏi bạn có đi học buổi sáng không; B xác nhận lịch học."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "上午",
+            "vi": "buổi sáng"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-complete-dialogues-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "open-dialogue-completion",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "complete-dialogues",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "完成对话",
+        "vi": "Hoàn thành hội thoại"
+      },
+      "instruction": {
+        "zh": "完成对话。",
+        "vi": "Hoàn thành hội thoại."
+      },
+      "prompt": {
+        "zh": "A：我们（　）去超市吧。\\nB：对不起，我（　）有课。",
+        "vi": "A đề xuất thời gian đi siêu thị; B từ chối vì có tiết học."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "下午",
+            "vi": "buổi chiều"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "下午",
+            "vi": "buổi chiều"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-grammar-ne-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "read-aloud",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "grammar-ne",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "语气助词“呢”（2）",
+        "vi": "Trợ từ ngữ khí “呢” (2)"
+      },
+      "instruction": {
+        "zh": "本课语气助词“呢”位于句子末尾，表示确认的事实。基本结构：……呢。\\n大声朗读。",
+        "vi": "Trong bài này, “呢” đứng cuối câu để biểu thị sự thật đã xác nhận. Cấu trúc: …呢.\\nĐọc thành tiếng."
+      },
+      "prompt": {
+        "zh": "（1）我明天下午两点还上课呢。\\n（2）妹妹会做两个菜呢。\\n（3）李文晚上还有事呢。",
+        "vi": "(1) Chiều mai lúc hai giờ tôi vẫn còn tiết học.\\n(2) Em gái biết nấu hai món đấy.\\n(3) Buổi tối Lý Văn vẫn còn có việc."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-listen-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "listen-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "刘明（　）呢。",
+        "vi": "Chọn tình trạng/địa điểm của Lưu Minh."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "上班",
+              "py": "shàngbān",
+              "vi": "đi làm"
+            },
+            {
+              "id": "B",
+              "zh": "买菜",
+              "py": "mǎi cài",
+              "vi": "mua rau"
+            },
+            {
+              "id": "C",
+              "zh": "在家里",
+              "py": "zài jiā li",
+              "vi": "ở nhà"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "课文3，听两遍对话，选择正确答案",
+            "ordinal": 1
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l07-text-3",
+        "track": "7-5",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p050-listen-text3-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "listening-choice",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 50,
+        "pdfPage": 65,
+        "section": "listen-text3",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "听两遍，选答案",
+        "vi": "Nghe hai lần và chọn đáp án"
+      },
+      "instruction": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "prompt": {
+        "zh": "王一雪（　）下班。",
+        "vi": "Chọn giờ Vương Nhất Tuyết tan làm."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "五点",
+              "py": "wǔ diǎn",
+              "vi": "năm giờ"
+            },
+            {
+              "id": "B",
+              "zh": "六点",
+              "py": "liù diǎn",
+              "vi": "sáu giờ"
+            },
+            {
+              "id": "C",
+              "zh": "六点半",
+              "py": "liù diǎn bàn",
+              "vi": "sáu giờ rưỡi"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 4,
+            "section": "课文3，听两遍对话，选择正确答案",
+            "ordinal": 2
+          }
+        }
+      ],
+      "audio": {
+        "sceneId": "textbook-l07-text-3",
+        "track": "7-5",
+        "plays": 2,
+        "verifiedByListening": false
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p051-original-tip-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 51,
+        "pdfPage": 66,
+        "section": "original-tip",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Gợi ý của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "“里”作方位词时，在“家、超市”等名词性词语后，一般读轻声“li”；在“里边”等词语中，需读第三声“lǐ”。",
+        "vi": "Khi “里” là từ chỉ phương vị, đứng sau danh từ như “家、超市”, thường đọc thanh nhẹ “li”; trong từ như “里边” đọc thanh ba “lǐ”."
+      },
+      "fields": []
+    },
+    {
+      "id": "hsk1-original-2026-l07-p051-vocabulary-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 51,
+        "pdfPage": 66,
+        "section": "vocabulary",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "生词",
+        "vi": "Từ mới"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "按原书顺序朗读词语。",
+        "vi": "Đọc các từ theo thứ tự trong sách."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "序号",
+            "vi": "STT"
+          },
+          {
+            "zh": "词语",
+            "vi": "Từ"
+          },
+          {
+            "zh": "拼音",
+            "vi": "Phiên âm"
+          },
+          {
+            "zh": "词性（原书）",
+            "vi": "Từ loại (sách gốc)"
+          },
+          {
+            "zh": "原书英文释义",
+            "vi": "Nghĩa tiếng Anh trong sách"
+          },
+          {
+            "zh": "越南语释义",
+            "vi": "Nghĩa tiếng Việt"
+          }
+        ],
+        "rows": [
+          {
+            "id": "word-18",
+            "cells": [
+              {
+                "text": {
+                  "zh": "18",
+                  "vi": "18"
+                }
+              },
+              {
+                "text": {
+                  "zh": "在",
+                  "vi": "ở; có mặt ở"
+                }
+              },
+              {
+                "text": {
+                  "zh": "zài",
+                  "vi": "zài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "be at/in/on",
+                  "vi": "be at/in/on"
+                }
+              },
+              {
+                "text": {
+                  "zh": "ở; có mặt ở",
+                  "vi": "ở; có mặt ở"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-19",
+            "cells": [
+              {
+                "text": {
+                  "zh": "19",
+                  "vi": "19"
+                }
+              },
+              {
+                "text": {
+                  "zh": "家",
+                  "vi": "nhà; nơi ở"
+                }
+              },
+              {
+                "text": {
+                  "zh": "jiā",
+                  "vi": "jiā"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "home",
+                  "vi": "home"
+                }
+              },
+              {
+                "text": {
+                  "zh": "nhà; nơi ở",
+                  "vi": "nhà; nơi ở"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-20",
+            "cells": [
+              {
+                "text": {
+                  "zh": "20",
+                  "vi": "20"
+                }
+              },
+              {
+                "text": {
+                  "zh": "里",
+                  "vi": "trong; bên trong"
+                }
+              },
+              {
+                "text": {
+                  "zh": "li/lǐ",
+                  "vi": "li/lǐ"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "inner; inside",
+                  "vi": "inner; inside"
+                }
+              },
+              {
+                "text": {
+                  "zh": "trong; bên trong",
+                  "vi": "trong; bên trong"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-21",
+            "cells": [
+              {
+                "text": {
+                  "zh": "21",
+                  "vi": "21"
+                }
+              },
+              {
+                "text": {
+                  "zh": "晚上",
+                  "vi": "buổi tối"
+                }
+              },
+              {
+                "text": {
+                  "zh": "wǎnshang",
+                  "vi": "wǎnshang"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "evening",
+                  "vi": "evening"
+                }
+              },
+              {
+                "text": {
+                  "zh": "buổi tối",
+                  "vi": "buổi tối"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-22",
+            "cells": [
+              {
+                "text": {
+                  "zh": "22",
+                  "vi": "22"
+                }
+              },
+              {
+                "text": {
+                  "zh": "医院",
+                  "vi": "bệnh viện"
+                }
+              },
+              {
+                "text": {
+                  "zh": "yīyuàn",
+                  "vi": "yīyuàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "hospital",
+                  "vi": "hospital"
+                }
+              },
+              {
+                "text": {
+                  "zh": "bệnh viện",
+                  "vi": "bệnh viện"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-23",
+            "cells": [
+              {
+                "text": {
+                  "zh": "23",
+                  "vi": "23"
+                }
+              },
+              {
+                "text": {
+                  "zh": "上班",
+                  "vi": "đi làm; vào ca làm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "shàngbān",
+                  "vi": "shàngbān"
+                }
+              },
+              {
+                "text": {
+                  "zh": "v.",
+                  "vi": "v."
+                }
+              },
+              {
+                "text": {
+                  "zh": "go to work",
+                  "vi": "go to work"
+                }
+              },
+              {
+                "text": {
+                  "zh": "đi làm; vào ca làm",
+                  "vi": "đi làm; vào ca làm"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-24",
+            "cells": [
+              {
+                "text": {
+                  "zh": "24",
+                  "vi": "24"
+                }
+              },
+              {
+                "text": {
+                  "zh": "店",
+                  "vi": "cửa hàng; tiệm"
+                }
+              },
+              {
+                "text": {
+                  "zh": "diàn",
+                  "vi": "diàn"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "shop; store",
+                  "vi": "shop; store"
+                }
+              },
+              {
+                "text": {
+                  "zh": "cửa hàng; tiệm",
+                  "vi": "cửa hàng; tiệm"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-25",
+            "cells": [
+              {
+                "text": {
+                  "zh": "25",
+                  "vi": "25"
+                }
+              },
+              {
+                "text": {
+                  "zh": "菜",
+                  "vi": "rau; rau xanh"
+                }
+              },
+              {
+                "text": {
+                  "zh": "cài",
+                  "vi": "cài"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "vegetable; greens",
+                  "vi": "vegetable; greens"
+                }
+              },
+              {
+                "text": {
+                  "zh": "rau; rau xanh",
+                  "vi": "rau; rau xanh"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-26",
+            "cells": [
+              {
+                "text": {
+                  "zh": "26",
+                  "vi": "26"
+                }
+              },
+              {
+                "text": {
+                  "zh": "分钟",
+                  "vi": "phút (đơn vị thời lượng)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "fēnzhōng",
+                  "vi": "fēnzhōng"
+                }
+              },
+              {
+                "text": {
+                  "zh": "m.",
+                  "vi": "m."
+                }
+              },
+              {
+                "text": {
+                  "zh": "minute",
+                  "vi": "minute"
+                }
+              },
+              {
+                "text": {
+                  "zh": "phút (đơn vị thời lượng)",
+                  "vi": "phút (đơn vị thời lượng)"
+                }
+              }
+            ]
+          },
+          {
+            "id": "word-27",
+            "cells": [
+              {
+                "text": {
+                  "zh": "27",
+                  "vi": "27"
+                }
+              },
+              {
+                "text": {
+                  "zh": "后",
+                  "vi": "sau; sau đó (về thời gian)"
+                }
+              },
+              {
+                "text": {
+                  "zh": "hòu",
+                  "vi": "hòu"
+                }
+              },
+              {
+                "text": {
+                  "zh": "n.",
+                  "vi": "n."
+                }
+              },
+              {
+                "text": {
+                  "zh": "after; later",
+                  "vi": "after; later"
+                }
+              },
+              {
+                "text": {
+                  "zh": "sau; sau đó (về thời gian)",
+                  "vi": "sau; sau đó (về thời gian)"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "printAudioTrack": "7-6"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p051-role-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "pair-work",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 51,
+        "pdfPage": 66,
+        "section": "role-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "对话活动",
+        "vi": "Hoạt động hội thoại"
+      },
+      "instruction": {
+        "zh": "分角色朗读对话。",
+        "vi": "Phân vai đọc hội thoại."
+      },
+      "prompt": {
+        "zh": "记录你们的对话。",
+        "vi": "Ghi lại hội thoại của các bạn."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "对话记录",
+            "vi": "Nội dung hội thoại"
+          },
+          "input": "textarea",
+          "assessment": "ungraded",
+          "required": false
+        }
+      ],
+      "example": {
+        "zh": "王一雪：喂，你在哪儿呢？\\n刘明：我在家里呢。\\n王一雪：我晚上六点半下班。\\n刘明：我八点去医院上班。\\n王一雪：好的，你去店里买些菜吧。\\n刘明：好，我十分钟后去。",
+        "vi": "A lô, anh đang ở đâu?\\nAnh đang ở nhà.\\nTối nay sáu rưỡi em tan làm.\\nTám giờ anh đi bệnh viện làm việc.\\nĐược, anh đi cửa hàng mua ít rau nhé.\\nĐược, mười phút nữa anh đi."
+      },
+      "audio": {
+        "sceneId": "textbook-l07-text-3",
+        "track": "7-5",
+        "plays": 1,
+        "verifiedByListening": false
+      },
+      "sourceSceneId": "textbook-l07-text-3",
+      "figure": "l07-scene-03",
+      "figureSHA256": "31ceff1c53773087aaecdf137c7a07e71bf4edf76da175712b830015abc74874"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p051-comprehension-text3-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reading-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 51,
+        "pdfPage": 66,
+        "section": "comprehension-text3",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "根据课文内容回答问题",
+        "vi": "Trả lời câu hỏi theo bài đọc"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "刘明晚上还去做什么？",
+        "vi": "Buổi tối Lưu Minh còn đi làm gì?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "他八点去医院上班。",
+            "vi": "Anh ấy đi làm ở bệnh viện lúc tám giờ."
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "sourceSceneId": "textbook-l07-text-3"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p051-comprehension-text3-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reading-response",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 51,
+        "pdfPage": 66,
+        "section": "comprehension-text3",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "根据课文内容回答问题",
+        "vi": "Trả lời câu hỏi theo bài đọc"
+      },
+      "instruction": {
+        "zh": "根据课文内容回答问题。",
+        "vi": "Trả lời theo nội dung bài đọc."
+      },
+      "prompt": {
+        "zh": "刘明十分钟后去做什么？",
+        "vi": "Mười phút nữa Lưu Minh đi làm gì?"
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "他去店里买些菜。",
+            "vi": "Anh ấy đến cửa hàng mua ít rau."
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "sourceSceneId": "textbook-l07-text-3"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-cloze-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "cloze",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "她星期天没有＿＿。",
+        "vi": "Nói việc cô ấy không có vào Chủ nhật."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "医院",
+              "py": "yīyuàn",
+              "vi": "bệnh viện"
+            },
+            {
+              "id": "B",
+              "zh": "十二点半",
+              "py": "shí’èr diǎn bàn",
+              "vi": "mười hai giờ rưỡi"
+            },
+            {
+              "id": "C",
+              "zh": "课",
+              "py": "kè",
+              "vi": "tiết học"
+            },
+            {
+              "id": "D",
+              "zh": "现在",
+              "py": "xiànzài",
+              "vi": "bây giờ"
+            },
+            {
+              "id": "E",
+              "zh": "见",
+              "py": "jiàn",
+              "vi": "gặp"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "C",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P52，选词填空",
+            "ordinal": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-cloze-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "cloze",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "我们中午＿＿下课，下午两点＿＿吧。",
+        "vi": "Nói giờ tan học vào buổi trưa rồi đề nghị gặp nhau lúc hai giờ chiều."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "医院",
+              "py": "yīyuàn",
+              "vi": "bệnh viện"
+            },
+            {
+              "id": "B",
+              "zh": "十二点半",
+              "py": "shí’èr diǎn bàn",
+              "vi": "mười hai giờ rưỡi"
+            },
+            {
+              "id": "C",
+              "zh": "课",
+              "py": "kè",
+              "vi": "tiết học"
+            },
+            {
+              "id": "D",
+              "zh": "现在",
+              "py": "xiànzài",
+              "vi": "bây giờ"
+            },
+            {
+              "id": "E",
+              "zh": "见",
+              "py": "jiàn",
+              "vi": "gặp"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "B",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P52，选词填空",
+            "ordinal": 2
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "医院",
+              "py": "yīyuàn",
+              "vi": "bệnh viện"
+            },
+            {
+              "id": "B",
+              "zh": "十二点半",
+              "py": "shí’èr diǎn bàn",
+              "vi": "mười hai giờ rưỡi"
+            },
+            {
+              "id": "C",
+              "zh": "课",
+              "py": "kè",
+              "vi": "tiết học"
+            },
+            {
+              "id": "D",
+              "zh": "现在",
+              "py": "xiànzài",
+              "vi": "bây giờ"
+            },
+            {
+              "id": "E",
+              "zh": "见",
+              "py": "jiàn",
+              "vi": "gặp"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "E",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P52，选词填空",
+            "ordinal": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-cloze-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "cloze",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "白家月：对不起，我＿＿有事呢，你去吧。\\n李文：好的，你忙吧。",
+        "vi": "Bạch Gia Nguyệt xin lỗi vì có việc vào thời điểm đang nói và bảo Lý Văn đi; Lý Văn đồng ý."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "医院",
+              "py": "yīyuàn",
+              "vi": "bệnh viện"
+            },
+            {
+              "id": "B",
+              "zh": "十二点半",
+              "py": "shí’èr diǎn bàn",
+              "vi": "mười hai giờ rưỡi"
+            },
+            {
+              "id": "C",
+              "zh": "课",
+              "py": "kè",
+              "vi": "tiết học"
+            },
+            {
+              "id": "D",
+              "zh": "现在",
+              "py": "xiànzài",
+              "vi": "bây giờ"
+            },
+            {
+              "id": "E",
+              "zh": "见",
+              "py": "jiàn",
+              "vi": "gặp"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "D",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P52，选词填空",
+            "ordinal": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-cloze-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "word-bank-cloze",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "cloze",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "instruction": {
+        "zh": "选词填空。",
+        "vi": "Chọn từ thích hợp điền vào chỗ trống."
+      },
+      "prompt": {
+        "zh": "王一雪：你今天晚上几点去＿＿上班？\\n刘明：晚上八点。",
+        "vi": "Vương Nhất Tuyết hỏi tối nay Lưu Minh đến nơi làm việc lúc mấy giờ; anh ấy trả lời tám giờ tối."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "select",
+          "options": [
+            {
+              "id": "A",
+              "zh": "医院",
+              "py": "yīyuàn",
+              "vi": "bệnh viện"
+            },
+            {
+              "id": "B",
+              "zh": "十二点半",
+              "py": "shí’èr diǎn bàn",
+              "vi": "mười hai giờ rưỡi"
+            },
+            {
+              "id": "C",
+              "zh": "课",
+              "py": "kè",
+              "vi": "tiết học"
+            },
+            {
+              "id": "D",
+              "zh": "现在",
+              "py": "xiànzài",
+              "vi": "bây giờ"
+            },
+            {
+              "id": "E",
+              "zh": "见",
+              "py": "jiàn",
+              "vi": "gặp"
+            }
+          ],
+          "assessment": "answer-key",
+          "answer": "A",
+          "answerSource": {
+            "sha256": "9e783c9deb889231a778d6776b65dbc04fc734eeca0fdfda1c9d99eb793104e5",
+            "pdfPage": 5,
+            "section": "P52，选词填空",
+            "ordinal": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-picture-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "picture",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "现在是＿＿点＿＿分。",
+        "vi": "Điền giờ và phút theo đồng hồ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "七",
+            "vi": "bảy"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "二十",
+            "vi": "hai mươi"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l07-picture-01",
+      "figureSHA256": "496799a6256526dbb227c383c5fa7165e43fe7826d13ebe43dc8c043be39f224"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-picture-02",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "picture",
+        "ordinal": 2
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "我们上午＿＿吧。",
+        "vi": "Hoàn thành lời đề nghị theo thời gian trên đồng hồ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "十点十分见",
+            "vi": "gặp lúc mười giờ mười phút"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l07-picture-02",
+      "figureSHA256": "e5d9dbb3be6a968fe34808db807b9b9de2b071f80c2f42ea6fc45188fc19f5ac"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-picture-03",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "picture",
+        "ordinal": 3
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "我今天晚上＿＿还＿＿呢。",
+        "vi": "Nói thời gian và việc vẫn làm vào buổi tối theo gợi ý đồng hồ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "九点",
+            "vi": "chín giờ"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "有课",
+            "vi": "có tiết học"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l07-picture-03",
+      "figureSHA256": "43a01586b0b044a29096031744c58fd28e0611a721693d851b2e43869bda3f3e"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p052-picture-04",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "picture-description",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "section": "picture",
+        "ordinal": 4
+      },
+      "title": {
+        "zh": "看图表达",
+        "vi": "Diễn đạt theo hình"
+      },
+      "instruction": {
+        "zh": "用本课新学的词语和语言点描述图片。",
+        "vi": "Dùng từ ngữ và điểm ngữ pháp mới trong bài để miêu tả hình."
+      },
+      "prompt": {
+        "zh": "妹妹＿＿有课。",
+        "vi": "Hoàn thành thời gian em gái có tiết học theo đồng hồ."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "ungraded",
+          "reference": {
+            "zh": "下午两点",
+            "vi": "hai giờ chiều"
+          },
+          "referenceProvenance": "editorial-model-not-unique",
+          "feedbackNote": {
+            "zh": "这是一种参考表达，不是唯一答案；请结合上下文检查语义和句式。",
+            "vi": "Đây là một cách diễn đạt tham khảo, không phải đáp án duy nhất; hãy kiểm tra ý nghĩa và mẫu câu trong ngữ cảnh."
+          }
+        }
+      ],
+      "figure": "l07-picture-04",
+      "figureSHA256": "b0885bf7898f62ad5c4f8302101645488e790efe51e86351428e273f3daf1604"
+    },
+    {
+      "id": "hsk1-original-2026-l07-p053-classroom-table-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "group-work-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 53,
+        "pdfPage": 68,
+        "section": "classroom-table",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "课堂活动 · 填写表格",
+        "vi": "Hoạt động trên lớp · Điền bảng"
+      },
+      "instruction": {
+        "zh": "三人一组，每人根据自己的情况填写时间，填好后分享。",
+        "vi": "Làm việc theo nhóm ba người; mỗi người điền thời gian theo lịch của mình rồi chia sẻ."
+      },
+      "prompt": {
+        "zh": "原表每人各填一行，下面分别保留三人的记录。",
+        "vi": "Mỗi người điền một hàng của bảng gốc; dưới đây giữ riêng bản ghi của ba người."
+      },
+      "fields": [
+        {
+          "id": "blank-1",
+          "label": {
+            "zh": "第1人 · 午饭",
+            "vi": "Người 1 · Ăn trưa"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-2",
+          "label": {
+            "zh": "第1人 · 休息",
+            "vi": "Người 1 · Nghỉ ngơi"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-3",
+          "label": {
+            "zh": "第1人 · 下课",
+            "vi": "Người 1 · Tan học"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-4",
+          "label": {
+            "zh": "第2人 · 午饭",
+            "vi": "Người 2 · Ăn trưa"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-5",
+          "label": {
+            "zh": "第2人 · 休息",
+            "vi": "Người 2 · Nghỉ ngơi"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-6",
+          "label": {
+            "zh": "第2人 · 下课",
+            "vi": "Người 2 · Tan học"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-7",
+          "label": {
+            "zh": "第3人 · 午饭",
+            "vi": "Người 3 · Ăn trưa"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-8",
+          "label": {
+            "zh": "第3人 · 休息",
+            "vi": "Người 3 · Nghỉ ngơi"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        },
+        {
+          "id": "blank-9",
+          "label": {
+            "zh": "第3人 · 下课",
+            "vi": "Người 3 · Tan học"
+          },
+          "input": "text",
+          "assessment": "ungraded"
+        }
+      ],
+      "table": {
+        "columns": [
+          {
+            "zh": "",
+            "vi": ""
+          },
+          {
+            "zh": "午饭",
+            "vi": "Ăn trưa"
+          },
+          {
+            "zh": "休息",
+            "vi": "Nghỉ ngơi"
+          },
+          {
+            "zh": "下课",
+            "vi": "Tan học"
+          }
+        ],
+        "rows": [
+          {
+            "id": "person-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "第1人",
+                  "vi": "Người 1"
+                }
+              },
+              {
+                "fieldId": "blank-1"
+              },
+              {
+                "fieldId": "blank-2"
+              },
+              {
+                "fieldId": "blank-3"
+              }
+            ]
+          },
+          {
+            "id": "person-2",
+            "cells": [
+              {
+                "text": {
+                  "zh": "第2人",
+                  "vi": "Người 2"
+                }
+              },
+              {
+                "fieldId": "blank-4"
+              },
+              {
+                "fieldId": "blank-5"
+              },
+              {
+                "fieldId": "blank-6"
+              }
+            ]
+          },
+          {
+            "id": "person-3",
+            "cells": [
+              {
+                "text": {
+                  "zh": "第3人",
+                  "vi": "Người 3"
+                }
+              },
+              {
+                "fieldId": "blank-7"
+              },
+              {
+                "fieldId": "blank-8"
+              },
+              {
+                "fieldId": "blank-9"
+              }
+            ]
+          }
+        ]
+      },
+      "adaptation": {
+        "zh": "原书表格为一人的时间行，按原指令扩展为三人的独立记录；三个事项列不变。",
+        "vi": "Bảng gốc có một hàng thời gian cho một người; mở rộng thành ba bản ghi riêng theo yêu cầu trong sách, giữ nguyên ba cột hoạt động."
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p053-classroom-example-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference-table",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 53,
+        "pdfPage": 68,
+        "section": "classroom-example",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语的例子",
+        "vi": "Ví dụ của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "保留原表的行列顺序。",
+        "vi": "Giữ nguyên thứ tự hàng và cột của bảng gốc."
+      },
+      "fields": [],
+      "table": {
+        "columns": [
+          {
+            "zh": "",
+            "vi": ""
+          },
+          {
+            "zh": "午饭（wǔfàn）",
+            "vi": "Ăn trưa"
+          },
+          {
+            "zh": "休息",
+            "vi": "Nghỉ ngơi"
+          },
+          {
+            "zh": "下课",
+            "vi": "Tan học"
+          }
+        ],
+        "rows": [
+          {
+            "id": "row-1",
+            "cells": [
+              {
+                "text": {
+                  "zh": "时间（shíjiān）",
+                  "vi": "Thời gian"
+                }
+              },
+              {
+                "text": {
+                  "zh": "12:00～13:00",
+                  "vi": "12:00–13:00"
+                }
+              },
+              {
+                "text": {
+                  "zh": "13:00～14:00",
+                  "vi": "13:00–14:00"
+                }
+              },
+              {
+                "text": {
+                  "zh": "16:00",
+                  "vi": "16:00"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk1-original-2026-l07-p053-original-tip-01",
+      "version": "source-resume-20261004-candidate-1",
+      "lesson": 7,
+      "kind": "reference",
+      "source": {
+        "sourceRevision": "hsk1-print-2026-01",
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 53,
+        "pdfPage": 68,
+        "section": "original-tip",
+        "ordinal": 1
+      },
+      "title": {
+        "zh": "小语助力",
+        "vi": "Gợi ý của Tiểu Ngữ"
+      },
+      "instruction": {
+        "zh": "阅读教材内容。",
+        "vi": "Đọc nội dung trong sách."
+      },
+      "prompt": {
+        "zh": "你会写数字了，是不是还想写汉字呢？那就去敲敲“小语的彩蛋”吧！",
+        "vi": "Bạn đã biết viết số rồi, có muốn viết chữ Hán nữa không? Hãy thử mở “Nội dung bổ sung của Tiểu Ngữ”!"
+      },
+      "fields": []
+    }
+  ],
+  "figures": [
+    {
+      "id": "l07-warmup-01",
+      "file": "figures/l07-warmup-01.png",
+      "alt": {
+        "zh": "钟面1，请观察长针和短针。",
+        "vi": "Mặt đồng hồ 1; hãy quan sát kim dài và kim ngắn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "cell": 1,
+        "cropPdfPoints": [
+          123.33333333333333,
+          456.0,
+          220.66666666666666,
+          552.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "e6d6dcd832807f2e6512494e255ff143627e081026184cfbda3777abf08fcfd9",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-warmup-02",
+      "file": "figures/l07-warmup-02.png",
+      "alt": {
+        "zh": "钟面2，请观察长针和短针。",
+        "vi": "Mặt đồng hồ 2; hãy quan sát kim dài và kim ngắn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "cell": 2,
+        "cropPdfPoints": [
+          262.0,
+          456.0,
+          360.0,
+          552.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "e02480d777430be77912f68826c5d2f1a64616f1efb01e10313f1ce08fff5bea",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-warmup-03",
+      "file": "figures/l07-warmup-03.png",
+      "alt": {
+        "zh": "钟面3，请观察长针和短针。",
+        "vi": "Mặt đồng hồ 3; hãy quan sát kim dài và kim ngắn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "cell": 3,
+        "cropPdfPoints": [
+          400.0,
+          456.0,
+          498.0,
+          552.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "35fd4d67d19b96de5970258d56837b80bafd0840efb7a5f908c35c2516cb14c5",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-warmup-04",
+      "file": "figures/l07-warmup-04.png",
+      "alt": {
+        "zh": "钟面4，请观察长针和短针。",
+        "vi": "Mặt đồng hồ 4; hãy quan sát kim dài và kim ngắn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "cell": 4,
+        "cropPdfPoints": [
+          123.33333333333333,
+          590.6666666666666,
+          220.66666666666666,
+          686.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "1635af1657cf4b2bb3e92eb0b60338ad148771e9a863a421031cea853f7f4118",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-warmup-05",
+      "file": "figures/l07-warmup-05.png",
+      "alt": {
+        "zh": "钟面5，请观察长针和短针。",
+        "vi": "Mặt đồng hồ 5; hãy quan sát kim dài và kim ngắn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "cell": 5,
+        "cropPdfPoints": [
+          262.0,
+          590.6666666666666,
+          360.0,
+          686.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "76d02fae78f377bb7dcb6adfe204a2781fb7d7d6a5c3f69ccc79cf740afd4faa",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-warmup-06",
+      "file": "figures/l07-warmup-06.png",
+      "alt": {
+        "zh": "钟面6，请观察长针和短针。",
+        "vi": "Mặt đồng hồ 6; hãy quan sát kim dài và kim ngắn."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 45,
+        "pdfPage": 60,
+        "cell": 6,
+        "cropPdfPoints": [
+          400.0,
+          590.6666666666666,
+          498.0,
+          686.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "62391624ea1e17340b23efffe186f2c2daa4df21d806a02690cb73174b69c763",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-scene-01",
+      "file": "figures/l07-scene-01.png",
+      "alt": {
+        "zh": "两人分别拿着手机通话。",
+        "vi": "Hai người cầm điện thoại nói chuyện."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 46,
+        "pdfPage": 61,
+        "cell": 1,
+        "cropPdfPoints": [
+          74.66666666666667,
+          161.33333333333334,
+          512.0,
+          310.6666666666667
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "9429551ce66bd06b8e4e0fd55509d5eff794fa176aadf1cb9c33ae07dd99fcfc",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-scene-02",
+      "file": "figures/l07-scene-02.png",
+      "alt": {
+        "zh": "李文与白家月在校园中交谈。",
+        "vi": "Lý Văn và Bạch Gia Nguyệt nói chuyện trong khuôn viên trường."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 48,
+        "pdfPage": 63,
+        "cell": 2,
+        "cropPdfPoints": [
+          55.333333333333336,
+          495.3333333333333,
+          496.0,
+          742.0
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "a2e9171487ad74d0255043b2c0b3ef112207d520bef628dc5180937a2b6a6dcc",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-scene-03",
+      "file": "figures/l07-scene-03.png",
+      "alt": {
+        "zh": "刘明在家打电话，旁边小图是通话中的王一雪。",
+        "vi": "Lưu Minh gọi điện ở nhà; hình nhỏ bên cạnh là Vương Nhất Tuyết đang nói điện thoại."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 51,
+        "pdfPage": 66,
+        "cell": 3,
+        "cropPdfPoints": [
+          306.6666666666667,
+          210.66666666666666,
+          540.0,
+          376.6666666666667
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "31ceff1c53773087aaecdf137c7a07e71bf4edf76da175712b830015abc74874",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-picture-01",
+      "file": "figures/l07-picture-01.png",
+      "alt": {
+        "zh": "一只手拿着闹钟，请观察时针和分针。",
+        "vi": "Một bàn tay cầm đồng hồ báo thức; hãy xem kim giờ và kim phút."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "cell": 1,
+        "cropPdfPoints": [
+          84.66666666666667,
+          366.6666666666667,
+          277.3333333333333,
+          475.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "496799a6256526dbb227c383c5fa7165e43fe7826d13ebe43dc8c043be39f224",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-picture-02",
+      "file": "figures/l07-picture-02.png",
+      "alt": {
+        "zh": "墙上钟面有三根针，需区分时针、分针和秒针。",
+        "vi": "Đồng hồ có ba kim; cần phân biệt kim giờ, phút và giây."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "cell": 2,
+        "cropPdfPoints": [
+          299.3333333333333,
+          366.6666666666667,
+          492.0,
+          475.3333333333333
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "e5d9dbb3be6a968fe34808db807b9b9de2b071f80c2f42ea6fc45188fc19f5ac",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-picture-03",
+      "file": "figures/l07-picture-03.png",
+      "alt": {
+        "zh": "暗色背景上的闹钟。",
+        "vi": "Đồng hồ báo thức trên nền tối."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "cell": 3,
+        "cropPdfPoints": [
+          84.66666666666667,
+          526.0,
+          277.3333333333333,
+          634.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "43a01586b0b044a29096031744c58fd28e0611a721693d851b2e43869bda3f3e",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    },
+    {
+      "id": "l07-picture-04",
+      "file": "figures/l07-picture-04.png",
+      "alt": {
+        "zh": "浅色背景上的挂钟。",
+        "vi": "Đồng hồ treo tường trên nền sáng."
+      },
+      "source": {
+        "textbookSHA256": "25d1aad102e4179307b5bc4f932927bbd244b3f4dd53edeb6cfd4dbbb8d4f2ba",
+        "printedPage": 52,
+        "pdfPage": 67,
+        "cell": 4,
+        "cropPdfPoints": [
+          299.3333333333333,
+          526.0,
+          492.0,
+          634.6666666666666
+        ]
+      },
+      "kind": "original-crop",
+      "sha256": "b0885bf7898f62ad5c4f8302101645488e790efe51e86351428e273f3daf1604",
+      "note": {
+        "zh": "教材原图裁切。",
+        "vi": "Hình được cắt trực tiếp từ sách."
+      }
+    }
+  ],
+  "coverage": [
+    {
+      "printedPage": 45,
+      "pdfPage": 60,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p045-objectives-01",
+        "hsk1-original-2026-l07-p045-warmup-01",
+        "hsk1-original-2026-l07-p045-warmup-02",
+        "hsk1-original-2026-l07-p045-warmup-03",
+        "hsk1-original-2026-l07-p045-warmup-04",
+        "hsk1-original-2026-l07-p045-warmup-05",
+        "hsk1-original-2026-l07-p045-warmup-06"
+      ]
+    },
+    {
+      "printedPage": 46,
+      "pdfPage": 61,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p046-vocabulary-01",
+        "hsk1-original-2026-l07-p046-role-text1-01",
+        "hsk1-original-2026-l07-p046-pair-text1-01"
+      ]
+    },
+    {
+      "printedPage": 47,
+      "pdfPage": 62,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p047-time-table-01",
+        "hsk1-original-2026-l07-p047-time-period-01",
+        "hsk1-original-2026-l07-p047-grammar-ba-explanation-01"
+      ]
+    },
+    {
+      "printedPage": 48,
+      "pdfPage": 63,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p048-grammar-ba-dialogues-01",
+        "hsk1-original-2026-l07-p048-listen-text2-01",
+        "hsk1-original-2026-l07-p048-listen-text2-02"
+      ]
+    },
+    {
+      "printedPage": 49,
+      "pdfPage": 64,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p049-vocabulary-02",
+        "hsk1-original-2026-l07-p049-role-text2-01",
+        "hsk1-original-2026-l07-p049-pair-text2-01",
+        "hsk1-original-2026-l07-p049-grammar-adverb-explanation-01"
+      ]
+    },
+    {
+      "printedPage": 50,
+      "pdfPage": 65,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p050-grammar-adverb-examples-01",
+        "hsk1-original-2026-l07-p050-complete-dialogues-01",
+        "hsk1-original-2026-l07-p050-complete-dialogues-02",
+        "hsk1-original-2026-l07-p050-complete-dialogues-03",
+        "hsk1-original-2026-l07-p050-grammar-ne-01",
+        "hsk1-original-2026-l07-p050-listen-text3-01",
+        "hsk1-original-2026-l07-p050-listen-text3-02"
+      ]
+    },
+    {
+      "printedPage": 51,
+      "pdfPage": 66,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p051-original-tip-01",
+        "hsk1-original-2026-l07-p051-vocabulary-03",
+        "hsk1-original-2026-l07-p051-role-text3-01",
+        "hsk1-original-2026-l07-p051-comprehension-text3-01",
+        "hsk1-original-2026-l07-p051-comprehension-text3-02"
+      ]
+    },
+    {
+      "printedPage": 52,
+      "pdfPage": 67,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p052-cloze-01",
+        "hsk1-original-2026-l07-p052-cloze-02",
+        "hsk1-original-2026-l07-p052-cloze-03",
+        "hsk1-original-2026-l07-p052-cloze-04",
+        "hsk1-original-2026-l07-p052-picture-01",
+        "hsk1-original-2026-l07-p052-picture-02",
+        "hsk1-original-2026-l07-p052-picture-03",
+        "hsk1-original-2026-l07-p052-picture-04"
+      ]
+    },
+    {
+      "printedPage": 53,
+      "pdfPage": 68,
+      "visualReview": "author-inspected",
+      "activityIds": [
+        "hsk1-original-2026-l07-p053-classroom-table-01",
+        "hsk1-original-2026-l07-p053-classroom-example-01",
+        "hsk1-original-2026-l07-p053-original-tip-01"
+      ]
+    }
+  ],
+  "textbookCorrections": [
+    {
+      "target": "textbook-l07-grammar-01",
+      "field": "examples",
+      "printedPage": 47,
+      "issue": "原版5行点/分/数字表、四个时段例句和十分不可省分、个位分钟读零的说明缺失。"
+    },
+    {
+      "target": "textbook-l07-grammar-02",
+      "field": "examples",
+      "printedPage": 48,
+      "issue": "原版三组完整对话未完整保留。"
+    },
+    {
+      "target": "textbook-l07-grammar-03",
+      "field": "examples",
+      "printedPage": 50,
+      "issue": "原版三例句和三组填空对话未完整保留。"
+    },
+    {
+      "target": "textbook-l07-grammar-04",
+      "field": "examples",
+      "printedPage": 50,
+      "issue": "原版妹妹会做两个菜呢缺失。"
+    },
+    {
+      "target": "textbook-l07-text-3-line-02",
+      "field": "py",
+      "printedPage": 51,
+      "suggested": "Wǒ zài jiā li ne.",
+      "issue": "后置方位词里按原书轻声。"
+    },
+    {
+      "target": "textbook-l07-text-3-line-05",
+      "field": "py",
+      "printedPage": 51,
+      "suggested": "Hǎo de, nǐ qù diàn li mǎi xiē cài ba.",
+      "issue": "店里中里按原书轻声。"
+    },
+    {
+      "target": "textbook-l07-text-1-line-02",
+      "field": "py",
+      "printedPage": 46,
+      "suggested": "Zǎoshang bā diǎn sìshí.",
+      "issue": "按源页课文拼音纠正轻声、儿化或喂的第二声；仅展示修订，不改冻结历史题库。"
+    },
+    {
+      "target": "textbook-l07-text-3-line-01",
+      "field": "py",
+      "printedPage": 51,
+      "suggested": "Wéi, nǐ zài nǎr ne?",
+      "issue": "按源页课文拼音纠正轻声、儿化或喂的第二声；仅展示修订，不改冻结历史题库。"
+    },
+    {
+      "target": "textbook-l07-text-3-line-03",
+      "field": "py",
+      "printedPage": 51,
+      "suggested": "Wǒ wǎnshang liù diǎn bàn xiàbān.",
+      "issue": "按源页课文拼音纠正轻声、儿化或喂的第二声；仅展示修订，不改冻结历史题库。"
+    },
+    {
+      "target": "textbook-l07-title",
+      "field": "title_py",
+      "printedPage": 45,
+      "suggested": "Wǒ wǎnshang liù diǎn bàn xiàbān",
+      "issue": "按原书标题拼音恢复轻声音节；仅展示修订，不改冻结历史题库。"
+    }
+  ],
+  "bonus": {
+    "id": "hsk1-original-2026-l07-p053-bonus-reference-01",
+    "title": {
+      "zh": "学汉字",
+      "vi": "Học chữ Hán"
+    },
+    "printedResourceId": "7-1",
+    "printedPage": 53,
+    "pdfPage": 68,
+    "availability": "unavailable",
+    "payload": null
+  },
+  "integrationNotes": [
+    "Candidate pending independent source review and browser acceptance.",
+    "All images are exact source crops with recorded PDF coordinates.",
+    "Open references are editorial, non-unique and ungraded.",
+    "Original vocabulary keeps sequence, pronunciation, POS and English gloss alongside Vietnamese.",
+    "printAudioTrack records only the printed vocabulary audio number; no invented scene resolver ID.",
+    "All listening/audio flags remain false pending human listening."
+  ]
+}
+`;export{e as default};

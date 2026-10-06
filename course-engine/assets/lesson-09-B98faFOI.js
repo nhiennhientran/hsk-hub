@@ -1,0 +1,8138 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk3-fltrp-2026",
+  "version": "2026.1",
+  "number": 9,
+  "id": "hsk3-fltrp-2026:l09",
+  "title": {
+    "zh": "打不好没关系",
+    "vi": "Chơi chưa tốt cũng không sao",
+    "py": "Dǎ bu hǎo méi guānxi"
+  },
+  "source": {
+    "startPdfPage": 88,
+    "endPdfPage": 97,
+    "startPrintedPage": 76,
+    "endPrintedPage": 85
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent AI source and language review by implementation lead; separate from author",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "Optional editorial pinyin reviewed: 还 huán in 还你校园卡; 为了 wèile; 得 de in potential complement versus 得分 défēn and 得到 dédào; 着急 zháojí; 几乎 jīhū; 刘长春 Liú Chángchūn. Potential-complement 不 uses neutral bu.",
+      "26 source headwords plus2 proper nouns yield33 POS-sense entries after separating 比赛、练习、只是、影响、得分 printed dual POS.",
+      "All8 ASR complete segment arrays checked against printed source, and8 hashes/full ffmpeg decodes rechecked. This is not human listening certification.",
+      "Text4 is the textbook character’s speech and preserves the source date range1896–2024 and historical names; its evaluative claims are attributed to that speech. No culture-video panel is printed in lesson9. Full7–9 review retained.",
+      "Independent review inspected all textbook PDF88–97 and answer PDF12–13 pages, every field and question, fresh8 SHA/full-decode checks and full8 ASR outputs. Restored source wording 在那里/年年, corrected practice task labels, constrained two alternative ordering positions and improved distinct listening synthesis. Not native-speaker or full human listening certification."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并介绍体育比赛的名称、运动员、影响等信息。",
+      "vi": "Nghe hiểu và giới thiệu tên giải thể thao, vận động viên, ảnh hưởng và thông tin liên quan.",
+      "id": "hsk3-fltrp-2026:l09:objective1",
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用可能补语说明情况的可能性。",
+      "vi": "Nghe hiểu và dùng bổ ngữ khả năng để nói một kết quả có thực hiện được không.",
+      "id": "hsk3-fltrp-2026:l09:objective2",
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握“越A越B”格式的用法，能说明事物或情况的变化。",
+      "vi": "Nắm mẫu 越A越B để diễn đạt sự thay đổi của sự vật, tình huống.",
+      "id": "hsk3-fltrp-2026:l09:objective3",
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk3-fltrp-2026:l09:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với hình tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 球场；B 得分；C 羽毛球；D 网球；E 足球；F 篮球。",
+          "vi": "A sân bóng; B ghi điểm/điểm số; C cầu lông; D quần vợt; E bóng đá; F bóng rổ."
+        },
+        {
+          "zh": "图片说明（编辑补充）：从左到右、从上到下为记分牌6比4、网球和球拍、篮球场、篮球、踢足球、羽毛球。",
+          "vi": "Mô tả hình do biên soạn bổ sung: từ trái sang phải, trên xuống dưới là bảng điểm 6–4, bóng và vợt quần vợt, sân bóng rổ, bóng rổ, đá bóng và quả cầu lông.",
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身图片：编辑描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:warmup2",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên thực tế."
+      },
+      "items": [
+        {
+          "zh": "你喜欢什么运动？你参加过什么比赛？",
+          "vi": "Bạn thích môn thể thao nào? Từng thi đấu giải nào?"
+        },
+        {
+          "zh": "你看过体育比赛吗？介绍一下你看过的比赛。",
+          "vi": "Bạn từng xem thi đấu thể thao chưa? Giới thiệu một trận bạn đã xem."
+        }
+      ],
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk3-fltrp-2026:l09:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在图书馆门口，李文向白家月跑过去。",
+        "vi": "Ở cửa thư viện, Lý Văn chạy về phía Gia Nguyệt."
+      },
+      "audioTrack": "9-1",
+      "lines": [
+        {
+          "zh": "家月，对不起，我昨天忘了还你校园卡了。",
+          "vi": "Gia Nguyệt, xin lỗi, hôm qua tôi quên trả thẻ trường cho bạn.",
+          "id": "hsk3-fltrp-2026:l09:text1:line1",
+          "speaker": "李文",
+          "py": "Jiāyuè, duìbuqǐ, wǒ zuótiān wàng le huán nǐ xiàoyuánkǎ le.",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没关系。你怎么这么快就过来了？",
+          "vi": "Không sao. Sao bạn đến nhanh thế?",
+          "id": "hsk3-fltrp-2026:l09:text1:line2",
+          "speaker": "白家月",
+          "py": "Méi guānxi. Nǐ zěnme zhème kuài jiù guòlai le?",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我正在球场打球呢，接了你的电话就跑过来了。",
+          "vi": "Tôi đang chơi bóng ở sân, nghe điện thoại của bạn là chạy đến ngay.",
+          "id": "hsk3-fltrp-2026:l09:text1:line3",
+          "speaker": "李文",
+          "py": "Wǒ zhèngzài qiúchǎng dǎ qiú ne, jiē le nǐ de diànhuà jiù pǎo guòlai le.",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "听说为了准备运动会，你们几个男生每天都练球。",
+          "vi": "Nghe nói để chuẩn bị hội thao, mấy bạn nam ngày nào cũng tập bóng.",
+          "id": "hsk3-fltrp-2026:l09:text1:line4",
+          "speaker": "白家月",
+          "py": "Tīngshuō wèile zhǔnbèi yùndònghuì, nǐmen jǐ ge nánshēng měi tiān dōu liàn qiú.",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是啊！你打算参加运动会吗？",
+          "vi": "Đúng vậy! Bạn định tham gia hội thao không?",
+          "id": "hsk3-fltrp-2026:l09:text1:line5",
+          "speaker": "李文",
+          "py": "Shì a! Nǐ dǎsuàn cānjiā yùndònghuì ma?",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我想参加网球比赛，最近一直在练习。",
+          "vi": "Tôi muốn thi quần vợt, gần đây đang tập suốt.",
+          "id": "hsk3-fltrp-2026:l09:text1:line6",
+          "speaker": "白家月",
+          "py": "Wǒ xiǎng cānjiā wǎngqiú bǐsài, zuìjìn yìzhí zài liànxí.",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好，到时候我去看你的比赛。",
+          "vi": "Được, đến lúc đó tôi sẽ xem bạn thi đấu.",
+          "id": "hsk3-fltrp-2026:l09:text1:line7",
+          "speaker": "李文",
+          "py": "Hǎo, dào shíhou wǒ qù kàn nǐ de bǐsài.",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "李文昨天忘了做什么了？",
+          "vi": "Hôm qua Lý Văn quên làm gì?",
+          "id": "hsk3-fltrp-2026:l09:text1:question1",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "去学校打球",
+            "还白家月校园卡",
+            "给白家月打电话"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "运动会的时候，李文要做什么？",
+          "vi": "Trong hội thao, Lý Văn định làm gì?",
+          "id": "hsk3-fltrp-2026:l09:text1:question2",
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "游泳",
+            "踢足球",
+            "看白家月的比赛"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文为什么来得很快？",
+          "vi": "Vì sao Lý Văn đến nhanh?",
+          "id": "hsk3-fltrp-2026:l09:text1:question3",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文每天在做什么？",
+          "vi": "Mỗi ngày Lý Văn đang làm gì?",
+          "id": "hsk3-fltrp-2026:l09:text1:question4",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月最近在做什么？",
+          "vi": "Gần đây Gia Nguyệt làm gì?",
+          "id": "hsk3-fltrp-2026:l09:text1:question5",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在校园里，李文和白家月在聊天儿。",
+        "vi": "Trong khuôn viên trường, Lý Văn và Gia Nguyệt đang trò chuyện."
+      },
+      "audioTrack": "9-3",
+      "lines": [
+        {
+          "zh": "家月，你跟我们一起打羽毛球吧？",
+          "vi": "Gia Nguyệt, chơi cầu lông cùng chúng tôi nhé?",
+          "id": "hsk3-fltrp-2026:l09:text2:line1",
+          "speaker": "李文",
+          "py": "Jiāyuè, nǐ gēn wǒmen yìqǐ dǎ yǔmáoqiú ba?",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我好多年没打羽毛球了，几乎忘了怎么打了。",
+          "vi": "Nhiều năm rồi tôi không chơi cầu lông, gần như quên cách đánh.",
+          "id": "hsk3-fltrp-2026:l09:text2:line2",
+          "speaker": "白家月",
+          "py": "Wǒ hǎoduō nián méi dǎ yǔmáoqiú le, jīhū wàng le zěnme dǎ le.",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "不是比赛，打不好没关系。",
+          "vi": "Đâu phải thi đấu, đánh chưa tốt cũng không sao.",
+          "id": "hsk3-fltrp-2026:l09:text2:line3",
+          "speaker": "李文",
+          "py": "Bú shì bǐsài, dǎ bu hǎo méi guānxi.",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这么多同学一起打，如果总是接不住球，就太不好意思了。",
+          "vi": "Nhiều bạn cùng chơi thế, cứ không đỡ được cầu thì ngại lắm.",
+          "id": "hsk3-fltrp-2026:l09:text2:line4",
+          "speaker": "白家月",
+          "py": "Zhème duō tóngxué yìqǐ dǎ, rúguǒ zǒngshì jiē bu zhù qiú, jiù tài bù hǎoyìsi le.",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你想得太多了！大家打球只是为了锻炼身体。",
+          "vi": "Bạn nghĩ nhiều quá! Mọi người chơi chỉ để rèn luyện sức khỏe thôi.",
+          "id": "hsk3-fltrp-2026:l09:text2:line5",
+          "speaker": "李文",
+          "py": "Nǐ xiǎng de tài duō le! Dàjiā dǎ qiú zhǐshì wèile duànliàn shēntǐ.",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我先自己练练吧，下周再跟你们一起打。",
+          "vi": "Để tôi tự tập trước, tuần sau chơi cùng các bạn.",
+          "id": "hsk3-fltrp-2026:l09:text2:line6",
+          "speaker": "白家月",
+          "py": "Wǒ xiān zìjǐ liànlian ba, xià zhōu zài gēn nǐmen yìqǐ dǎ.",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我在教天中打羽毛球，你可以过来跟我们一起练。",
+          "vi": "Tôi đang dạy Thiên Trung đánh cầu lông, bạn có thể đến tập cùng.",
+          "id": "hsk3-fltrp-2026:l09:text2:line7",
+          "speaker": "李文",
+          "py": "Wǒ zài jiāo Tiānzhōng dǎ yǔmáoqiú, nǐ kěyǐ guòlai gēn wǒmen yìqǐ liàn.",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "李文和白家月在说什么？",
+          "vi": "Lý Văn và Gia Nguyệt nói về gì?",
+          "id": "hsk3-fltrp-2026:l09:text2:question1",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "运动会",
+            "打网球",
+            "打羽毛球"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "大家为什么一起打球？",
+          "vi": "Vì sao mọi người chơi cùng nhau?",
+          "id": "hsk3-fltrp-2026:l09:text2:question2",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "为了比赛",
+            "为了锻炼身体",
+            "为了参加运动会"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "李文叫白家月一起做什么？",
+          "vi": "Lý Văn rủ Gia Nguyệt làm gì?",
+          "id": "hsk3-fltrp-2026:l09:text2:question3",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月为什么不想去？",
+          "vi": "Vì sao Gia Nguyệt không muốn đi?",
+          "id": "hsk3-fltrp-2026:l09:text2:question4",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月想先做什么？",
+          "vi": "Gia Nguyệt muốn làm gì trước?",
+          "id": "hsk3-fltrp-2026:l09:text2:question5",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "课文2：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在李文家，李文、白家月和陈天中一起看电视。",
+        "vi": "Ở nhà Lý Văn, Lý Văn, Gia Nguyệt và Thiên Trung cùng xem tivi."
+      },
+      "audioTrack": "9-5",
+      "lines": [
+        {
+          "zh": "足球比赛已经开始了，快过来看吧！",
+          "vi": "Trận bóng đá bắt đầu rồi, mau đến xem!",
+          "id": "hsk3-fltrp-2026:l09:text3:line1",
+          "speaker": "陈天中",
+          "py": "Zúqiú bǐsài yǐjīng kāishǐ le, kuài guòlai kàn ba!",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你们先看，冰箱里有啤酒和饮料，我去拿一下。",
+          "vi": "Các bạn xem trước, tủ lạnh có bia và đồ uống, để tôi lấy.",
+          "id": "hsk3-fltrp-2026:l09:text3:line2",
+          "speaker": "李文",
+          "py": "Nǐmen xiān kàn, bīngxiāng lǐ yǒu píjiǔ hé yǐnliào, wǒ qù ná yíxià.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "今天怎么回事？总是踢不进去！",
+          "vi": "Hôm nay sao thế? Cứ sút không vào!",
+          "id": "hsk3-fltrp-2026:l09:text3:line3",
+          "speaker": "白家月",
+          "py": "Jīntiān zěnme huí shì? Zǒngshì tī bu jìnqu!",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "几个老球员生病了，新球员第一次参加这么重要的比赛，太紧张了。",
+          "vi": "Mấy cầu thủ kỳ cựu bị ốm, cầu thủ mới lần đầu dự trận quan trọng thế nên căng thẳng quá.",
+          "id": "hsk3-fltrp-2026:l09:text3:line4",
+          "speaker": "陈天中",
+          "py": "Jǐ ge lǎo qiúyuán shēng bìng le, xīn qiúyuán dì yī cì cānjiā zhème zhòngyào de bǐsài, tài jǐnzhāng le.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是啊，主要的球员没参加比赛，所以大家也都受到影响了。",
+          "vi": "Đúng, các cầu thủ chủ chốt không thi đấu nên mọi người đều bị ảnh hưởng.",
+          "id": "hsk3-fltrp-2026:l09:text3:line5",
+          "speaker": "李文",
+          "py": "Shì a, zhǔyào de qiúyuán méi cānjiā bǐsài, suǒyǐ dàjiā yě dōu shòudào yǐngxiǎng le.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "越看越着急。我不看了，你们告诉我得分吧。",
+          "vi": "Càng xem càng sốt ruột. Tôi không xem nữa, các bạn báo điểm cho tôi nhé.",
+          "id": "hsk3-fltrp-2026:l09:text3:line6",
+          "speaker": "白家月",
+          "py": "Yuè kàn yuè zháojí. Wǒ bú kàn le, nǐmen gàosu wǒ défēn ba.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "他们在做什么？",
+          "vi": "Họ đang làm gì?",
+          "id": "hsk3-fltrp-2026:l09:text3:question1",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "看足球比赛",
+            "准备踢足球",
+            "准备参加比赛"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "白家月为什么着急？",
+          "vi": "Vì sao Gia Nguyệt sốt ruột?",
+          "id": "hsk3-fltrp-2026:l09:text3:question2",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "老球员生病了",
+            "球一直踢不进去",
+            "看不到比赛的得分"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "李文要去冰箱里拿什么？",
+          "vi": "Lý Văn định lấy gì trong tủ lạnh?",
+          "id": "hsk3-fltrp-2026:l09:text3:question3",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "今天的足球比赛踢得怎么样？",
+          "vi": "Trận bóng hôm nay chơi thế nào?",
+          "id": "hsk3-fltrp-2026:l09:text3:question4",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "球员们受到什么影响了？",
+          "vi": "Các cầu thủ chịu ảnh hưởng gì?",
+          "id": "hsk3-fltrp-2026:l09:text3:question5",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "课文3",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在家里，李文准备演讲稿。",
+        "vi": "Ở nhà, Lý Văn chuẩn bị bài phát biểu."
+      },
+      "audioTrack": "9-7",
+      "lines": [
+        {
+          "zh": "我喜欢看体育比赛，最爱看的就是奥运会。奥运会是世界上影响最大的体育比赛。",
+          "vi": "Tôi thích xem thi đấu thể thao, thích nhất là Thế vận hội. Thế vận hội là cuộc thi thể thao có ảnh hưởng lớn nhất thế giới.",
+          "id": "hsk3-fltrp-2026:l09:text4:line1",
+          "speaker": "李文（演讲稿）",
+          "py": "Wǒ xǐhuan kàn tǐyù bǐsài, zuì ài kàn de jiù shì Àoyùnhuì. Àoyùnhuì shì shìjiè shàng yǐngxiǎng zuì dà de tǐyù bǐsài.",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "从1896年到2024年，每次奥运会都有非常多的运动员参加。",
+          "vi": "Từ năm 1896 đến 2024, mỗi kỳ Thế vận hội đều có rất nhiều vận động viên tham gia.",
+          "id": "hsk3-fltrp-2026:l09:text4:line2",
+          "speaker": "李文（演讲稿）",
+          "py": "Cóng yī bā jiǔ liù nián dào èr líng èr sì nián, měi cì Àoyùnhuì dōu yǒu fēicháng duō de yùndòngyuán cānjiā.",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第一位参加奥运会的中国运动员是刘长春，他1932年参加了100米和200米短跑比赛。",
+          "vi": "Vận động viên Trung Quốc đầu tiên dự Thế vận hội là Lưu Trường Xuân; năm 1932 ông thi chạy ngắn 100m và 200m.",
+          "id": "hsk3-fltrp-2026:l09:text4:line3",
+          "speaker": "李文（演讲稿）",
+          "py": "Dì yī wèi cānjiā Àoyùnhuì de Zhōngguó yùndòngyuán shì Liú Chángchūn, tā yī jiǔ sān èr nián cānjiā le yìbǎi mǐ hé èrbǎi mǐ duǎnpǎo bǐsài.",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "虽然他没有得到好成绩，但是他让世界认识了中国。",
+          "vi": "Dù không đạt thành tích tốt, ông đã giúp thế giới biết đến Trung Quốc.",
+          "id": "hsk3-fltrp-2026:l09:text4:line4",
+          "speaker": "李文（演讲稿）",
+          "py": "Suīrán tā méiyǒu dédào hǎo chéngjì, dànshì tā ràng shìjiè rènshi le Zhōngguó.",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "李文在说什么体育比赛？",
+          "vi": "Lý Văn nói về giải thể thao nào?",
+          "id": "hsk3-fltrp-2026:l09:text4:question1",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "奥运会",
+            "短跑比赛",
+            "中国的体育比赛"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "刘长春参加了哪个比赛？",
+          "vi": "Lưu Trường Xuân tham gia nội dung nào?",
+          "id": "hsk3-fltrp-2026:l09:text4:question2",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "100米短跑",
+            "200米游泳",
+            "5000米长跑"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "奥运会是一个什么样的体育比赛？",
+          "vi": "Theo bài, Thế vận hội là cuộc thi thể thao thế nào?",
+          "id": "hsk3-fltrp-2026:l09:text4:question3",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "1932年，中国运动员的比赛成绩怎么样？",
+          "vi": "Theo bài, thành tích vận động viên Trung Quốc năm 1932 thế nào?",
+          "id": "hsk3-fltrp-2026:l09:text4:question4",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "刘长春的影响是什么？",
+          "vi": "Bài nêu ảnh hưởng của Lưu Trường Xuân là gì?",
+          "id": "hsk3-fltrp-2026:l09:text4:question5",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文4：情境",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "校园",
+      "vi": "khuôn viên trường",
+      "id": "hsk3-fltrp-2026:l09:word01",
+      "py": "xiàoyuán",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "校园",
+            "printedPinyin": "xiàoyuán",
+            "normalizedPinyin": "xiàoyuán",
+            "printedNumber": 1,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "校园",
+            "printedPinyin": "xiàoyuán",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "卡",
+      "vi": "thẻ",
+      "id": "hsk3-fltrp-2026:l09:word02",
+      "py": "kǎ",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "卡",
+            "printedPinyin": "kǎ",
+            "normalizedPinyin": "kǎ",
+            "printedNumber": 2,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "卡",
+            "printedPinyin": "kǎ",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "球场",
+      "vi": "sân bóng, sân thi đấu",
+      "id": "hsk3-fltrp-2026:l09:word03",
+      "py": "qiúchǎng",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "球场",
+            "printedPinyin": "qiúchǎng",
+            "normalizedPinyin": "qiúchǎng",
+            "printedNumber": 3,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "球场",
+            "printedPinyin": "qiúchǎng",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "为了",
+      "vi": "để, nhằm",
+      "id": "hsk3-fltrp-2026:l09:word04",
+      "py": "wèile",
+      "pos": "giới từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "为了",
+            "printedPinyin": "wèile",
+            "normalizedPinyin": "wèile",
+            "printedNumber": 4,
+            "sourceList": "new-words",
+            "printedPOSRaw": "giới.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "介词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "为了",
+            "printedPinyin": "wèile",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "运动会",
+      "vi": "hội thao, đại hội thể thao",
+      "id": "hsk3-fltrp-2026:l09:word05",
+      "py": "yùndònghuì",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "运动会",
+            "printedPinyin": "yùndòng-\\nhuì",
+            "normalizedPinyin": "yùndònghuì",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "运动会",
+            "printedPinyin": "yùndònghuì",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "男生",
+      "vi": "nam sinh",
+      "id": "hsk3-fltrp-2026:l09:word06",
+      "py": "nánshēng",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "男生",
+            "printedPinyin": "nánshēng",
+            "normalizedPinyin": "nánshēng",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "男生",
+            "printedPinyin": "nánshēng",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "练",
+      "vi": "tập, luyện",
+      "id": "hsk3-fltrp-2026:l09:word07",
+      "py": "liàn",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "练",
+            "printedPinyin": "liàn",
+            "normalizedPinyin": "liàn",
+            "printedNumber": 7,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "练",
+            "printedPinyin": "liàn",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "参加",
+      "vi": "tham gia",
+      "id": "hsk3-fltrp-2026:l09:word08",
+      "py": "cānjiā",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "参加",
+            "printedPinyin": "cānjiā",
+            "normalizedPinyin": "cānjiā",
+            "printedNumber": 8,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "参加",
+            "printedPinyin": "cānjiā",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "网球",
+      "vi": "quần vợt, tennis",
+      "id": "hsk3-fltrp-2026:l09:word09",
+      "py": "wǎngqiú",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "网球",
+            "printedPinyin": "wǎngqiú",
+            "normalizedPinyin": "wǎngqiú",
+            "printedNumber": 9,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "网球",
+            "printedPinyin": "wǎngqiú",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "比赛",
+      "vi": "trận đấu, cuộc thi",
+      "id": "hsk3-fltrp-2026:l09:word10",
+      "py": "bǐsài",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "比赛",
+            "printedPinyin": "bǐsài",
+            "normalizedPinyin": "bǐsài",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt./\\nđgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词",
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "比赛",
+            "printedPinyin": "bǐsài",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "比赛",
+      "vi": "thi đấu",
+      "id": "hsk3-fltrp-2026:l09:word11",
+      "py": "bǐsài",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "比赛",
+            "printedPinyin": "bǐsài",
+            "normalizedPinyin": "bǐsài",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt./\\nđgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词",
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "比赛",
+            "printedPinyin": "bǐsài",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "练习",
+      "vi": "luyện tập",
+      "id": "hsk3-fltrp-2026:l09:word12",
+      "py": "liànxí",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "练习",
+            "printedPinyin": "liànxí",
+            "normalizedPinyin": "liànxí",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./\\ndt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "练习",
+            "printedPinyin": "liànxí",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "练习",
+      "vi": "bài tập, việc luyện tập",
+      "id": "hsk3-fltrp-2026:l09:word13",
+      "py": "liànxí",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "9-2",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 89,
+              "printedPage": 77,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "练习",
+            "printedPinyin": "liànxí",
+            "normalizedPinyin": "liànxí",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./\\ndt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "练习",
+            "printedPinyin": "liànxí",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "好多",
+      "vi": "rất nhiều",
+      "id": "hsk3-fltrp-2026:l09:word14",
+      "py": "hǎoduō",
+      "pos": "số từ",
+      "sourceText": 2,
+      "audioTrack": "9-4",
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 91,
+              "printedPage": 79,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "好多",
+            "printedPinyin": "hǎoduō",
+            "normalizedPinyin": "hǎoduō",
+            "printedNumber": 12,
+            "sourceList": "new-words",
+            "printedPOSRaw": "số.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "数词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "好多",
+            "printedPinyin": "hǎoduō",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "几乎",
+      "vi": "gần như, hầu như",
+      "id": "hsk3-fltrp-2026:l09:word15",
+      "py": "jīhū",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "9-4",
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 91,
+              "printedPage": 79,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "几乎",
+            "printedPinyin": "jīhū",
+            "normalizedPinyin": "jīhū",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "几乎",
+            "printedPinyin": "jīhū",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "只是",
+      "vi": "chỉ, chỉ là",
+      "id": "hsk3-fltrp-2026:l09:word16",
+      "py": "zhǐshì",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "9-4",
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 91,
+              "printedPage": 79,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "只是",
+            "printedPinyin": "zhǐshì",
+            "normalizedPinyin": "zhǐshì",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó./liên.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词",
+              "连词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "只是",
+            "printedPinyin": "zhǐshì",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "只是",
+      "vi": "chỉ có điều, nhưng",
+      "id": "hsk3-fltrp-2026:l09:word17",
+      "py": "zhǐshì",
+      "pos": "liên từ",
+      "sourceText": 2,
+      "audioTrack": "9-4",
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 91,
+              "printedPage": 79,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "只是",
+            "printedPinyin": "zhǐshì",
+            "normalizedPinyin": "zhǐshì",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó./liên.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词",
+              "连词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "只是",
+            "printedPinyin": "zhǐshì",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "啤酒",
+      "vi": "bia",
+      "id": "hsk3-fltrp-2026:l09:word18",
+      "py": "píjiǔ",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "啤酒",
+            "printedPinyin": "píjiǔ",
+            "normalizedPinyin": "píjiǔ",
+            "printedNumber": 15,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "啤酒",
+            "printedPinyin": "píjiǔ",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "回",
+      "vi": "chuyện, lần (đếm sự việc)",
+      "id": "hsk3-fltrp-2026:l09:word19",
+      "py": "huí",
+      "pos": "lượng từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "回",
+            "printedPinyin": "huí",
+            "normalizedPinyin": "huí",
+            "printedNumber": 16,
+            "sourceList": "new-words",
+            "printedPOSRaw": "lượng.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "量词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "回",
+            "printedPinyin": "huí",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "紧张",
+      "vi": "căng thẳng, hồi hộp",
+      "id": "hsk3-fltrp-2026:l09:word20",
+      "py": "jǐnzhāng",
+      "pos": "tính từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：紧张",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "紧张",
+            "printedPinyin": "jǐnzhāng",
+            "normalizedPinyin": "jǐnzhāng",
+            "printedNumber": 17,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "紧张",
+            "printedPinyin": "jǐnzhāng",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "主要",
+      "vi": "chính, chủ yếu",
+      "id": "hsk3-fltrp-2026:l09:word21",
+      "py": "zhǔyào",
+      "pos": "tính từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "主要",
+            "printedPinyin": "zhǔyào",
+            "normalizedPinyin": "zhǔyào",
+            "printedNumber": 18,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "主要",
+            "printedPinyin": "zhǔyào",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "受到",
+      "vi": "chịu, nhận (tác động)",
+      "id": "hsk3-fltrp-2026:l09:word22",
+      "py": "shòudào",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "受到",
+            "printedPinyin": "shòudào",
+            "normalizedPinyin": "shòudào",
+            "printedNumber": 19,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "受到",
+            "printedPinyin": "shòudào",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "影响",
+      "vi": "ảnh hưởng",
+      "id": "hsk3-fltrp-2026:l09:word23",
+      "py": "yǐngxiǎng",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "影响",
+            "printedPinyin": "yǐngxiǎng",
+            "normalizedPinyin": "yǐngxiǎng",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt./đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词",
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "影响",
+            "printedPinyin": "yǐngxiǎng",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "影响",
+      "vi": "ảnh hưởng đến",
+      "id": "hsk3-fltrp-2026:l09:word24",
+      "py": "yǐngxiǎng",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "影响",
+            "printedPinyin": "yǐngxiǎng",
+            "normalizedPinyin": "yǐngxiǎng",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt./đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词",
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "影响",
+            "printedPinyin": "yǐngxiǎng",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "得分",
+      "vi": "ghi điểm",
+      "id": "hsk3-fltrp-2026:l09:word25",
+      "py": "défēn",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "得分",
+            "printedPinyin": "défēn",
+            "normalizedPinyin": "défēn",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "得分",
+            "printedPinyin": "défēn",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "得分",
+      "vi": "điểm số",
+      "id": "hsk3-fltrp-2026:l09:word26",
+      "py": "défēn",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "9-6",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 93,
+              "printedPage": 81,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "得分",
+            "printedPinyin": "défēn",
+            "normalizedPinyin": "défēn",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt./dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词",
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "得分",
+            "printedPinyin": "défēn",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "体育",
+      "vi": "thể thao, thể dục",
+      "id": "hsk3-fltrp-2026:l09:word27",
+      "py": "tǐyù",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "体育",
+            "printedPinyin": "tǐyù",
+            "normalizedPinyin": "tǐyù",
+            "printedNumber": 22,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "体育",
+            "printedPinyin": "tǐyù",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "世界",
+      "vi": "thế giới",
+      "id": "hsk3-fltrp-2026:l09:word28",
+      "py": "shìjiè",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "世界",
+            "printedPinyin": "shìjiè",
+            "normalizedPinyin": "shìjiè",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "世界",
+            "printedPinyin": "shìjiè",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "运动员",
+      "vi": "vận động viên",
+      "id": "hsk3-fltrp-2026:l09:word29",
+      "py": "yùndòngyuán",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "运动员",
+            "printedPinyin": "yùndòng-\\nyuán",
+            "normalizedPinyin": "yùndòngyuán",
+            "printedNumber": 24,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "运动员",
+            "printedPinyin": "yùndòngyuán",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "得到",
+      "vi": "nhận được, đạt được",
+      "id": "hsk3-fltrp-2026:l09:word30",
+      "py": "dédào",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "得到",
+            "printedPinyin": "dédào",
+            "normalizedPinyin": "dédào",
+            "printedNumber": 25,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "得到",
+            "printedPinyin": "dédào",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "成绩",
+      "vi": "thành tích, kết quả",
+      "id": "hsk3-fltrp-2026:l09:word31",
+      "py": "chéngjì",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "成绩",
+            "printedPinyin": "chéngjì",
+            "normalizedPinyin": "chéngjì",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "成绩",
+            "printedPinyin": "chéngjì",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "奥运会",
+      "vi": "Thế vận hội",
+      "id": "hsk3-fltrp-2026:l09:word32",
+      "py": "Àoyùnhuì",
+      "pos": "danh từ riêng",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "奥运会",
+            "printedPinyin": "Àoyùnhuì",
+            "normalizedPinyin": "Àoyùnhuì",
+            "printedNumber": 1,
+            "sourceList": "proper-names",
+            "printedPOSRaw": null,
+            "printedPOSLanguage": "vi",
+            "posPrinted": false,
+            "posCategoriesZh": [],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "奥运会",
+            "printedPinyin": "Àoyùnhuì",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "刘长春",
+      "vi": "Lưu Trường Xuân",
+      "id": "hsk3-fltrp-2026:l09:word33",
+      "py": "Liú Chángchūn",
+      "pos": "danh từ riêng",
+      "sourceText": 4,
+      "audioTrack": "9-8",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 94,
+              "printedPage": 82,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "刘长春",
+            "printedPinyin": "Liú Chángchūn",
+            "normalizedPinyin": "Liú Chángchūn",
+            "printedNumber": 2,
+            "sourceList": "proper-names",
+            "printedPOSRaw": null,
+            "printedPOSLanguage": "vi",
+            "posPrinted": false,
+            "posCategoriesZh": [],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "刘长春",
+            "printedPinyin": "Liú Chángchūn",
+            "lessonNumbers": [
+              9
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3-fltrp-2026:l09:grammar1",
+      "title": {
+        "zh": "目的复句“为了……，……”",
+        "vi": "Câu chỉ mục đích 为了……，……"
+      },
+      "structure": "为了 + mục đích，chủ ngữ + hành động",
+      "explanation": {
+        "zh": "为了后的小句表示目的，另一小句表示为达到目的采取的行动。",
+        "vi": "Mệnh đề sau 为了 nêu mục đích; mệnh đề còn lại nêu hành động thực hiện để đạt mục đích. Dịch là “để…”."
+      },
+      "examples": [
+        {
+          "zh": "听说为了准备运动会，你们几个男生每天都练球。",
+          "vi": "Nghe nói để chuẩn bị hội thao, mấy bạn nam ngày nào cũng tập bóng.",
+          "py": "Tīngshuō wèile zhǔnbèi yùndònghuì, nǐmen jǐ ge nánshēng měi tiān dōu liàn qiú.",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "为了考上大学，她每天努力学习。",
+          "vi": "Để thi đỗ đại học, cô ấy ngày nào cũng cố gắng học. (努力 nǔlì: nỗ lực, chú giải trong sách.)",
+          "py": "Wèile kǎo shàng dàxué, tā měi tiān nǔlì xuéxí.",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "为了早点儿到家，我打算坐飞机回去。",
+          "vi": "Để về nhà sớm hơn, tôi định đi máy bay.",
+          "py": "Wèile zǎo diǎnr dào jiā, wǒ dǎsuàn zuò fēijī huíqu.",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "______，我们决定搬家。",
+          "vi": "______ chúng tôi quyết định chuyển nhà.",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "______，她每天都去锻炼身体。",
+          "vi": "______ cô ấy đi tập thể dục mỗi ngày.",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "______，他们打算坐高铁去上海。",
+          "vi": "______ họ định đi tàu cao tốc đến Thượng Hải.",
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”：完成句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "目的复句“为了……，……”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:grammar2",
+      "title": {
+        "zh": "可能补语",
+        "vi": "Bổ ngữ khả năng"
+      },
+      "structure": "Động từ + 得/不 + bổ ngữ kết quả/xu hướng; V得C＋V不C？ hoặc V得C吗？",
+      "explanation": {
+        "zh": "在动词与结果补语或趋向补语之间插入得或不，表示条件是否容许实现该结果或趋向。肯定用得，否定用不；可用肯否并列形式或吗提问。",
+        "vi": "Chen 得 hoặc 不 giữa động từ và bổ ngữ kết quả/xu hướng để nói điều kiện có cho phép đạt kết quả đó không. Khẳng định dùng 得, phủ định dùng 不. Hỏi bằng dạng khẳng định–phủ định hoặc thêm 吗. Phân biệt 听得见 “nghe thấy được” với 听见了 “đã nghe thấy”."
+      },
+      "examples": [
+        {
+          "zh": "打不好没关系。",
+          "vi": "Đánh chưa tốt cũng không sao.",
+          "py": "Dǎ bu hǎo méi guānxi.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这本书你看得懂看不懂？",
+          "vi": "Cuốn sách này bạn đọc hiểu được không?",
+          "py": "Zhè běn shū nǐ kàn de dǒng kàn bu dǒng?",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你只有一个星期的时间，学得会游泳吗？",
+          "vi": "Bạn chỉ có một tuần, có học bơi được không?",
+          "py": "Nǐ zhǐ yǒu yí ge xīngqī de shíjiān, xué de huì yóuyǒng ma?",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：我和你妈妈在门口等着你呢。 B：机场人太多了，我______。",
+          "vi": "A: Bố và mẹ đang đợi con ở cửa. B: Sân bay đông quá, con ______.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：喂？喂？我说话你______？ B：没问题，我听得见。",
+          "vi": "A: A-lô? Bạn ______ tôi nói không? B: Không vấn đề, tôi nghe thấy được.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：咱们还没做今天的作业呢，半个小时______？ B：没问题，______，今天的作业一点儿也不多。",
+          "vi": "A: Mình chưa làm bài hôm nay, nửa tiếng ______ không? B: Không vấn đề, ______, hôm nay bài chẳng nhiều.",
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "可能补语",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:grammar3",
+      "title": {
+        "zh": "固定格式“越A越B”",
+        "vi": "Mẫu cố định 越A越B"
+      },
+      "structure": "越 + A + 越 + B; S1 + 越A，S2 + 越B",
+      "explanation": {
+        "zh": "A和B可以是动词性或形容词性短语，表示B随着A的变化而变化。",
+        "vi": "A và B có thể là cụm động từ hoặc tính từ. Mẫu chỉ B thay đổi theo A, tương đương “càng A càng B”. Hai vế có thể cùng chủ ngữ hoặc khác chủ ngữ."
+      },
+      "examples": [
+        {
+          "zh": "今天的足球比赛我越看越着急。",
+          "vi": "Trận bóng hôm nay càng xem tôi càng sốt ruột.",
+          "py": "Jīntiān de zúqiú bǐsài wǒ yuè kàn yuè zháojí.",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "妈妈越说，他越不高兴。",
+          "vi": "Mẹ càng nói, anh ấy càng không vui.",
+          "py": "Māma yuè shuō, tā yuè bù gāoxìng.",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我想认识中国朋友，越多越好。",
+          "vi": "Tôi muốn quen bạn Trung Quốc, càng nhiều càng tốt.",
+          "py": "Wǒ xiǎng rènshi Zhōngguó péngyou, yuè duō yuè hǎo.",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "我们越说______。",
+          "vi": "Chúng tôi càng nói ______.",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个电影越看______。",
+          "vi": "Phim này càng xem ______.",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "她______，我越担心。",
+          "vi": "Cô ấy ______, tôi càng lo.",
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”：完成句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "固定格式“越A越B”",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk3-fltrp-2026:l09:section1",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：“接球”",
+        "vi": "Gợi ý: 接球"
+      },
+      "blocks": [
+        {
+          "zh": "“接”的本义是托住、承受，这里“接球”的意思是回球或者把球打回去。",
+          "vi": "Nghĩa gốc của 接 là đỡ, tiếp nhận; 接球 ở đây là đỡ cầu hoặc đánh trả cầu.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "小语助力：“接球”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "小语助力：“接球”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "blocks": [
+        {
+          "zh": "第一组：A 世界；B 成绩；C 球场；D 参加；E 影响。",
+          "vi": "Nhóm 1: A thế giới; B thành tích; C sân bóng; D tham gia; E ảnh hưởng.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "1. 我的腿不舒服，所以没______这次网球比赛。",
+          "vi": "1. Chân tôi khó chịu nên không ______ giải quần vợt này.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "2. 学校的______上，每天都有很多同学在那儿做运动。",
+          "vi": "2. Trên ______ của trường, ngày nào cũng nhiều bạn tập thể thao.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "3. 运动员们为了得到好______，每天要练十多个小时。",
+          "vi": "3. Để đạt ______ tốt, các vận động viên phải tập hơn mười tiếng mỗi ngày. (Nội dung câu luyện trong sách.)",
+          "kind": "question",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "4. 受到天气的______，今天的足球比赛要晚两个小时开始。",
+          "vi": "4. Do ______ của thời tiết, trận bóng hôm nay bắt đầu muộn hai tiếng.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "5. 这位运动员觉得______上最重要的运动会就是奥运会。",
+          "vi": "5. Vận động viên này cho rằng đại hội thể thao quan trọng nhất ______ là Thế vận hội.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第二组：A 只是；B 几乎；C 主要；D 得到；E 受到。",
+          "vi": "Nhóm 2: A chỉ; B gần như; C chủ yếu; D đạt được; E chịu/nhận.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "6. A：她游泳游得快吗？ B：她______每天都游，现在游得特别快。",
+          "vi": "6. A: Cô ấy bơi nhanh không? B: Cô ấy ______ ngày nào cũng bơi, giờ rất nhanh.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "7. A：他们以前每年都是第一名，为什么今年成绩这么不好？ B：我觉得______是因为好多老球员病了。",
+          "vi": "7. A: Trước năm nào họ cũng nhất, sao năm nay kém vậy? B: Tôi nghĩ ______ vì nhiều cầu thủ kỳ cựu bị ốm.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "8. A：你打得这么好，是羽毛球运动员吗？ B：打羽毛球______我的兴趣，我不是运动员。",
+          "vi": "8. A: Bạn đánh giỏi vậy, là vận động viên cầu lông à? B: Cầu lông ______ là sở thích, tôi không phải vận động viên.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "9. A：______我爸爸的影响，我十几岁就开始打网球了。 B：现在你也开始影响我，我也喜欢上了打网球。",
+          "vi": "9. A: ______ ảnh hưởng của bố, tôi chơi quần vợt từ tuổi thiếu niên. B: Giờ bạn cũng ảnh hưởng tôi, tôi bắt đầu thích quần vợt.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "10. A：我听说你参加了学校的运动会？ B：是的。虽然没有______很好的成绩，但是我认识了很多新朋友。",
+          "vi": "10. A: Nghe nói bạn tham gia hội thao trường? B: Đúng, dù không ______ thành tích cao nhưng quen nhiều bạn mới.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:section3",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: miêu tả hình"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp mới của bài để miêu tả hình.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片说明（编辑补充）：图1是体育馆里打篮球的学生；图2是网球场上发球的人；图3是聚在电视前看比赛的人。",
+          "vi": "Mô tả hình do biên soạn bổ sung: hình 1 học sinh chơi bóng rổ trong nhà thể thao; hình 2 người giao bóng trên sân tennis; hình 3 nhóm người xem trận đấu trước tivi.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "图1：A：今天你们去______吗？ B：去。为了______，我们每天下课后都去球场练习。 A：我觉得这次______，你们一定能得到好成绩。 B：谢谢。虽然______不是最重要的，但是我们也要努力。",
+          "vi": "Hình 1: A: Hôm nay các bạn đi ______ không? B: Có. Để ______, tan học ngày nào cũng đến sân tập. A: Tôi nghĩ lần ______ này các bạn sẽ đạt thành tích tốt. B: Cảm ơn, dù ______ không quan trọng nhất nhưng vẫn phải cố gắng.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图2：A：我看你每天都去打网球，你打得怎么样？ B：我最近才开始学，打得不太好。 A：______没关系，你的身体越______。 B：你说得对，我运动只是为了______。",
+          "vi": "Hình 2: A: Thấy bạn ngày nào cũng đánh quần vợt, bạn đánh thế nào? B: Gần đây mới học, chưa tốt lắm. A: ______ không sao, cơ thể bạn càng ______. B: Đúng, tôi vận động chỉ để ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图3：A：为了______，我没吃饭就来了。没想到到现在一个球也没踢进去。 B：可能受到______，每个运动员都很紧张。 A：他们现在好好休息，一会儿一定会得分的。 B：我不想看了，越______。",
+          "vi": "Hình 3: A: Để ______, tôi chưa ăn đã đến. Không ngờ giờ vẫn chưa ghi bàn nào. B: Có lẽ chịu ______ nên ai cũng căng thẳng. A: Họ nghỉ ngơi tốt, lát nữa chắc sẽ ghi điểm. B: Tôi không muốn xem nữa, càng ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:section4",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "blocks": [
+        {
+          "zh": "四人一组，介绍自己熟悉的运动，可以围绕以下问题讨论。讨论时，使用本课所学的词语和语言点。小组练习结束后，可以选一位同学向全班同学介绍自己熟悉的运动。",
+          "vi": "Nhóm bốn người giới thiệu môn thể thao mình biết, thảo luận theo câu hỏi, dùng từ và ngữ pháp trong bài. Sau khi luyện, chọn một bạn trình bày trước lớp.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你最喜欢的运动是什么？为什么？",
+          "vi": "Bạn thích môn nào nhất? Vì sao?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你是受到谁的影响开始喜欢这个运动的？",
+          "vi": "Bạn chịu ảnh hưởng của ai mà bắt đầu thích môn này?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你多久练习一次？每次练习多长时间？",
+          "vi": "Bao lâu bạn tập một lần? Mỗi lần bao lâu?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这个运动对你有什么影响？",
+          "vi": "Môn này ảnh hưởng gì đến bạn?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你参加过什么体育比赛？",
+          "vi": "Bạn từng tham gia giải thể thao nào?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你成绩最好的一次比赛是什么？",
+          "vi": "Trận thi đấu nào bạn đạt thành tích tốt nhất?",
+          "kind": "question",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 96,
+        "printedPage": 84,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:section5",
+      "kind": "review",
+      "title": {
+        "zh": "学习小结：7—9课我的学习情况",
+        "vi": "Tổng kết học tập: bài7–9"
+      },
+      "blocks": [
+        {
+          "zh": "词语学习：我已经记住并会使用的词语：______；我还没记住的词语：______。",
+          "vi": "Học từ vựng: Từ đã nhớ và biết dùng: ______; từ chưa nhớ: ______.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我理解并会用：每项分别检查“理解”和“会用”。",
+          "vi": "Tôi hiểu và biết dùng: tự kiểm tra riêng “đã hiểu” và “biết dùng” cho từng mục.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "连动句（2）：咱们可以走着去。　理解□　会用□",
+          "vi": "Câu liên động (2): Chúng ta có thể đi bộ đến đó.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（10）：裙子不比短裤贵多少。　理解□　会用□",
+          "vi": "So sánh (10): Váy không đắt hơn quần soóc bao nhiêu.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "程度补语（3）：这块冰西瓜甜极了。　理解□　会用□",
+          "vi": "Bổ ngữ mức độ (3): Miếng dưa ướp lạnh này ngọt cực kỳ.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "递进复句“不但……，而且……”：现在的电视不但便宜，而且用着非常方便。　理解□　会用□",
+          "vi": "Câu tăng tiến: Tivi hiện nay không chỉ rẻ mà dùng còn rất tiện.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "趋向补语的引申用法（1）：我今年胖了十多斤，不能再胖下去了。　理解□　会用□",
+          "vi": "Nghĩa mở rộng bổ ngữ xu hướng: Năm nay tôi tăng hơn mười cân Trung Quốc, không thể tiếp tục tăng nữa.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "离合词（2）：昨天游完泳以后，我的耳朵一直有点儿疼。　理解□　会用□",
+          "vi": "Từ ly hợp (2): Bơi xong hôm qua, tai tôi cứ hơi đau.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "时量补语（2）：我上次来医院已经过去差不多两年了。　理解□　会用□",
+          "vi": "Bổ ngữ thời lượng (2): Từ lần trước tôi đến viện đã gần hai năm.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "固定格式“……以前/以后/前/后”：这种药需要每天睡前吃一次。　理解□　会用□",
+          "vi": "Mẫu trước/sau: Trong tình huống bài học, loại thuốc này cần uống mỗi ngày một lần trước ngủ.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "目的复句“为了……，……”：听说为了准备运动会，你们几个男生每天都练球。　理解□　会用□",
+          "vi": "Câu mục đích: Nghe nói để chuẩn bị hội thao, mấy bạn nam ngày nào cũng tập bóng.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "可能补语：打不好没关系。　理解□　会用□",
+          "vi": "Bổ ngữ khả năng: Chơi chưa tốt cũng không sao.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "固定格式“越A越B”：今天的足球比赛我越看越着急。　理解□　会用□",
+          "vi": "Mẫu 越A越B: Trận bóng hôm nay càng xem tôi càng sốt ruột.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我需要努力的：______。",
+          "vi": "Những điểm tôi cần cố gắng thêm: ______.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 96,
+        "printedPage": 84,
+        "section": "学习小结：7—9课我的学习情况",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk3-fltrp-2026:l09:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“为了参加比赛，她每天练球。”目的是什么？",
+        "vi": "“Để thi đấu, cô ấy tập bóng mỗi ngày.” Mục đích là gì?"
+      },
+      "options": [
+        "每天",
+        "参加比赛",
+        "练球的方法"
+      ],
+      "answer": 1,
+      "focus": "为了：目的",
+      "explanation": {
+        "zh": "为了后面是参加比赛。",
+        "vi": "Sau 为了 là mục đích tham gia thi đấu."
+      },
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想表达提前买票是为了坐在一起，哪句最清楚？",
+        "vi": "Muốn nói mua vé sớm để ngồi cùng nhau, câu nào rõ nhất?"
+      },
+      "options": [
+        "因为买票，我们不坐一起。",
+        "我们坐在一起，所以不买票。",
+        "为了坐在一起，我们早点儿买票。"
+      ],
+      "answer": 2,
+      "focus": "目的与行动",
+      "explanation": {
+        "zh": "坐一起是目的，早买票是行动。",
+        "vi": "Ngồi cùng là mục đích, mua vé sớm là hành động."
+      },
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "这些词我没学过，虽然听得见声音，可是我______你说什么。",
+        "vi": "Những từ này tôi chưa học, dù nghe thấy tiếng nhưng tôi ______ bạn nói gì."
+      },
+      "options": [
+        "听不懂",
+        "听懂了",
+        "听得懂"
+      ],
+      "answer": 0,
+      "focus": "可能补语否定",
+      "explanation": {
+        "zh": "听不懂是否定理解的可能。",
+        "vi": "听不懂 phủ định khả năng hiểu."
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "明天只给你十分钟，你______这封长邮件吗？",
+        "vi": "Ngày mai chỉ có mười phút, bạn ______ bức email dài này không?"
+      },
+      "options": [
+        "写完了",
+        "写得完",
+        "没写完"
+      ],
+      "answer": 1,
+      "focus": "可能与完成区分",
+      "explanation": {
+        "zh": "时间限制下问能否完成用写得完。",
+        "vi": "Hỏi khả năng hoàn thành trong giới hạn dùng 写得完."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我听得见，但听不懂。”哪项正确？",
+        "vi": "“Tôi nghe thấy nhưng không hiểu.” Điều nào đúng?"
+      },
+      "options": [
+        "完全没有听到声音",
+        "已经理解所有内容",
+        "听到声音，却不了解意思"
+      ],
+      "answer": 2,
+      "focus": "听见与听懂",
+      "explanation": {
+        "zh": "见指感知到声音，懂指理解。",
+        "vi": "见 là nhận biết âm, 懂 là hiểu nghĩa."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“你越说，我越想参加。”什么随着什么变化？",
+        "vi": "“Bạn càng nói, tôi càng muốn tham gia.” Điều gì thay đổi theo điều gì?"
+      },
+      "options": [
+        "参加的愿望随着对方说话而增强",
+        "对方越说我越不想去",
+        "参加的愿望一直没变化"
+      ],
+      "answer": 0,
+      "focus": "越A越B",
+      "explanation": {
+        "zh": "越想参加随越说增强。",
+        "vi": "Mong muốn tham gia tăng theo lời nói của đối phương."
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想说认识的朋友越多越好，哪项表达符合意思？",
+        "vi": "Muốn nói quen bạn càng nhiều càng tốt, chọn câu đúng ý."
+      },
+      "options": [
+        "朋友少一点儿更好。",
+        "朋友越多越好。",
+        "朋友越多越不好。"
+      ],
+      "answer": 1,
+      "focus": "越多越好",
+      "explanation": {
+        "zh": "越多越好表示数量越大越满意。",
+        "vi": "越多越好 chỉ càng nhiều càng tốt."
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“他几乎每天都练习。”最准确的理解是什么？",
+        "vi": "“Anh ấy gần như tập mỗi ngày.” Hiểu chính xác nhất là gì?"
+      },
+      "options": [
+        "他从来不练习",
+        "他每年只练一天",
+        "绝大多数日子都练习"
+      ],
+      "answer": 2,
+      "focus": "几乎",
+      "explanation": {
+        "zh": "几乎每天接近每天，并非绝对每天。",
+        "vi": "几乎每天 là hầu hết các ngày, không khẳng định tuyệt đối mỗi ngày."
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“比赛受到天气的影响。”影响在这里是什么？",
+        "vi": "影响 trong “Trận đấu chịu ảnh hưởng của thời tiết” là gì?"
+      },
+      "options": [
+        "表示作用的名词",
+        "表示运动员的名词",
+        "表示每天的副词"
+      ],
+      "answer": 0,
+      "focus": "影响：名词",
+      "explanation": {
+        "zh": "受到……的影响中影响作名词。",
+        "vi": "Trong 受到……的影响, 影响 là danh từ."
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“打网球只是我的兴趣。”只是强调什么？",
+        "vi": "“Quần vợt chỉ là sở thích của tôi.” 只是 nhấn mạnh gì?"
+      },
+      "options": [
+        "这是我的职业",
+        "限制为兴趣",
+        "我从来不喜欢网球"
+      ],
+      "answer": 1,
+      "focus": "只是：范围",
+      "explanation": {
+        "zh": "只是限制身份为兴趣，不是职业。",
+        "vi": "只是 giới hạn là sở thích, không phải nghề nghiệp."
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；以“为了”开头，主语“我们”放在“每天”前；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “为了”; đặt chủ ngữ “我们” trước “每天”: Để chuẩn bị trận đấu tuần sau, chúng tôi luyện tập mỗi ngày. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我们",
+        "为了",
+        "每天",
+        "准备下周的比赛，",
+        "都练习。"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "focus": "为了",
+      "explanation": {
+        "zh": "为了准备下周的比赛，我们每天都练习。",
+        "vi": "Mục đích đứng trước dấu phẩy. Theo yêu cầu của bài, chủ ngữ 我们 đứng trước 每天; vị trí trạng ngữ này ngoài bài có thể linh hoạt."
+      },
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “你”: Bạn có đọc hiểu được bài viết này bằng tiếng Trung không? Đặt 看得懂 ngay sau 你. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "这篇",
+        "你",
+        "中文文章",
+        "看得懂",
+        "吗？"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "focus": "可能补语",
+      "explanation": {
+        "zh": "你看得懂这篇中文文章吗？",
+        "vi": "得 nằm giữa 看 và 懂; theo yêu cầu 看得懂 ngay sau 你, 吗 cuối câu."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “我”: Chỉ có mười phút, tôi không viết xong nhiều bài tập thế này được. Đặt giới hạn thời gian ngay sau chủ ngữ. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "写不完",
+        "这么多",
+        "我",
+        "只有十分钟，",
+        "作业。"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        1,
+        4
+      ],
+      "focus": "可能补语否定",
+      "explanation": {
+        "zh": "我只有十分钟，写不完这么多作业。",
+        "vi": "Không đủ thời gian là điều kiện; 写不完 chỉ không thể xong."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；以“这场比赛”开头，“自己”紧接在“参加”前；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “这场比赛”, đặt “自己” ngay trước “参加”: Trận đấu này, tôi càng xem càng muốn tự tham gia. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "越想",
+        "这场比赛，",
+        "我越看",
+        "参加。",
+        "自己"
+      ],
+      "answer": [
+        1,
+        2,
+        0,
+        4,
+        3
+      ],
+      "focus": "越A越B",
+      "explanation": {
+        "zh": "这场比赛，我越看越想自己参加。",
+        "vi": "越看 và 越想 tương ứng; 自己 đứng trước 参加."
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “你”: Bạn càng luyện nghiêm túc, trình độ quần vợt của bạn càng cao. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "你的网球水平",
+        "你",
+        "越高。",
+        "越认真",
+        "练习，"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "focus": "越A越B不同主语",
+      "explanation": {
+        "zh": "你越认真练习，你的网球水平越高。",
+        "vi": "Vế đầu nêu luyện tập, vế sau nêu trình độ thay đổi."
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：接电话以前，李文正在做什么？",
+        "vi": "Nghe bài khóa 1: Trước khi nghe điện thoại, Lý Văn đang làm gì?"
+      },
+      "options": [
+        "在球场打球",
+        "在图书馆看书",
+        "在家准备演讲"
+      ],
+      "answer": 0,
+      "focus": "听懂正在进行的动作",
+      "explanation": {
+        "zh": "他说正在球场打球。",
+        "vi": "Anh ấy nói đang chơi bóng ở sân."
+      },
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：白家月原来想什么时候跟同学一起打球？",
+        "vi": "Nghe bài khóa 2: Ban đầu Gia Nguyệt định khi nào chơi cùng các bạn?"
+      },
+      "options": [
+        "当天马上",
+        "下周",
+        "明年"
+      ],
+      "answer": 1,
+      "focus": "听懂计划",
+      "explanation": {
+        "zh": "她先自己练练，下周再一起打。",
+        "vi": "Cô ấy muốn tự tập rồi tuần sau chơi cùng."
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：新球员紧张的一个原因是什么？",
+        "vi": "Nghe bài khóa 3: Một lý do cầu thủ mới căng thẳng là gì?"
+      },
+      "options": [
+        "他们没有看过电视",
+        "他们全都生病了",
+        "第一次参加这么重要的比赛"
+      ],
+      "answer": 2,
+      "focus": "听懂原因",
+      "explanation": {
+        "zh": "第一次参加重要比赛，让他们紧张。",
+        "vi": "Lần đầu dự trận quan trọng làm họ căng thẳng."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：李文说刘长春在哪一年参加奥运会？",
+        "vi": "Nghe bài khóa 4: Lý Văn nói Lưu Trường Xuân dự Olympic năm nào?"
+      },
+      "options": [
+        "1932年",
+        "1896年",
+        "2024年"
+      ],
+      "answer": 0,
+      "focus": "听懂年份",
+      "explanation": {
+        "zh": "课文说1932年。",
+        "vi": "Bài nói năm 1932."
+      },
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：刘长春参加的两个项目是什么？",
+        "vi": "Nghe bài khóa 4: Lưu Trường Xuân thi hai nội dung nào?"
+      },
+      "options": [
+        "游泳和网球",
+        "100米和200米短跑",
+        "篮球和足球"
+      ],
+      "answer": 1,
+      "focus": "听懂项目",
+      "explanation": {
+        "zh": "原文列出100米和200米短跑。",
+        "vi": "Bài liệt kê chạy ngắn 100m và 200m."
+      },
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Để xem trận đấu, tôi về nhà sớm hơn."
+      },
+      "options": [
+        "我看完比赛才回家。",
+        "我回家不是为了看比赛。",
+        "为了看比赛，我早点儿回家。"
+      ],
+      "answer": 2,
+      "focus": "为了",
+      "explanation": {
+        "zh": "看比赛是目的。",
+        "vi": "Xem trận đấu là mục đích."
+      },
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tôi không nghe thấy bạn nói gì."
+      },
+      "options": [
+        "我听不见你说什么。",
+        "我已经听懂你说什么了。",
+        "我听得见，也听得懂。"
+      ],
+      "answer": 0,
+      "focus": "听不见",
+      "explanation": {
+        "zh": "听不见表示无法听到。",
+        "vi": "听不见 chỉ không nghe thấy được."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Bạn làm xong những bài tập này trong một tiếng được không?"
+      },
+      "options": [
+        "你已经做完这些练习了。",
+        "你一个小时做得完这些练习吗？",
+        "你每天都不做这些练习吗？"
+      ],
+      "answer": 1,
+      "focus": "做得完",
+      "explanation": {
+        "zh": "得完表示能够完成。",
+        "vi": "得完 chỉ khả năng hoàn thành."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tôi càng xem trận này càng căng thẳng."
+      },
+      "options": [
+        "我看完比赛以后不紧张了。",
+        "这场比赛一点儿也不紧张。",
+        "这场比赛我越看越紧张。"
+      ],
+      "answer": 2,
+      "focus": "越A越B",
+      "explanation": {
+        "zh": "紧张随观看增加。",
+        "vi": "Căng thẳng tăng khi xem tiếp."
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tôi chỉ đến để luyện tập."
+      },
+      "options": [
+        "我只是来练习的。",
+        "我是来参加正式比赛的。",
+        "我从来没练习过。"
+      ],
+      "answer": 0,
+      "focus": "只是",
+      "explanation": {
+        "zh": "只是限制来这里的目的。",
+        "vi": "只是 giới hạn mục đích đến đây."
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Để quen thêm bạn mới, tôi tham gia giải quần vợt của trường."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Chữ trong cuốn sách này nhỏ quá, ông tôi không nhìn rõ được."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Ngày mai bạn có học xong mười từ mới này được không?"
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Mẹ càng hỏi, tôi càng không biết phải nói gì."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Chúng tôi càng luyện cùng nhau thì càng thích môn thể thao này."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3-fltrp-2026:l09:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：运动会前，李文和家月分别在准备什么？",
+        "vi": "Nghe bài khóa1: Trước hội thao, Lý Văn và Gia Nguyệt đang chuẩn bị gì?"
+      },
+      "options": [
+        "两人都在练习游泳",
+        "李文等男生练球，家月练网球",
+        "李文练网球，家月准备演讲"
+      ],
+      "answer": 1,
+      "focus": "综合两人的准备",
+      "explanation": {
+        "zh": "家月提到李文等男生每天练球；自己则想参加网球比赛，最近一直练习。",
+        "vi": "Gia Nguyệt nói nhóm nam của Lý Văn tập bóng mỗi ngày; cô ấy muốn thi quần vợt nên gần đây tập liên tục."
+      },
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：李文还在教谁打羽毛球？",
+        "vi": "Nghe bài khóa 2: Lý Văn còn đang dạy ai chơi cầu lông?"
+      },
+      "options": [
+        "天中",
+        "一雪",
+        "小李"
+      ],
+      "answer": 0,
+      "focus": "听懂人物",
+      "explanation": {
+        "zh": "他说我在教天中打羽毛球。",
+        "vi": "Anh ấy nói đang dạy Thiên Trung."
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：家月决定不再看时，请朋友告诉她什么？",
+        "vi": "Nghe bài khóa 3: Khi quyết định không xem nữa, Gia Nguyệt nhờ bạn báo gì?"
+      },
+      "options": [
+        "饮料的价格",
+        "得分",
+        "球员的年龄"
+      ],
+      "answer": 1,
+      "focus": "听懂请求",
+      "explanation": {
+        "zh": "她说你们告诉我得分吧。",
+        "vi": "Cô ấy nhờ báo điểm."
+      },
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：关于刘长春，李文同时说明了哪两方面？",
+        "vi": "Nghe bài khóa4: Về Lưu Trường Xuân, Lý Văn đồng thời nêu hai mặt nào?"
+      },
+      "options": [
+        "拿了第一名，也打破了世界纪录",
+        "没有去参赛，却得到了好成绩",
+        "成绩不理想，却让世界认识了中国"
+      ],
+      "answer": 2,
+      "focus": "听懂让步与影响",
+      "explanation": {
+        "zh": "虽然没有得到好成绩，但是让世界认识中国，成绩和影响是不同方面。",
+        "vi": "Dù thành tích chưa tốt nhưng giúp thế giới biết đến Trung Quốc; kết quả và ảnh hưởng là hai mặt khác nhau."
+      },
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "9-7"
+    }
+  ],
+  "grammarSourceExplanations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l09:grammar1",
+      "explanation": {
+        "zh": "目的复句“为了……，……”中，“为了”后面的小句表示目的，另一个小句表示为了达到目的采取的行动。例如：",
+        "vi": "Trong câu phức chỉ mục đích “为了……，……”, mệnh đề sau “为了” nêu mục đích, mệnh đề còn lại nêu hành động được thực hiện để đạt mục đích đó. Ví dụ:"
+      },
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "目的复句“为了……，……”：教材原文说明",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l09:grammar2",
+      "explanation": {
+        "zh": "在动词和结果补语或趋向补语之间插入“得”或“不”构成可能补语，表示条件是否允许实现某种结果或趋向。肯定形式是“动词+得+补语”，否定形式是“动词+不+补语”，疑问形式是“动词+得+补语+动词+不+补语”或者“动词+得+补语+吗”。例如：",
+        "vi": "Chèn “得” hoặc “不” giữa động từ và bổ ngữ kết quả hoặc bổ ngữ xu hướng tạo thành bổ ngữ khả năng, biểu thị điều kiện có cho phép đạt một kết quả hoặc xu hướng hay không. Dạng khẳng định là “động từ + 得 + bổ ngữ”, dạng phủ định là “động từ + 不 + bổ ngữ”; dạng nghi vấn là “động từ + 得 + bổ ngữ + động từ + 不 + bổ ngữ” hoặc “động từ + 得 + bổ ngữ + 吗”. Ví dụ:"
+      },
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "可能补语：教材原文说明",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l09:grammar3",
+      "explanation": {
+        "zh": "固定格式“越A越B”的句子中，A和B可以都是动词性短语或形容词性短语，也可以一个是动词性短语，另一个是形容词性短语，表示B随着A的变化而变化。例如：",
+        "vi": "Trong câu theo mẫu cố định “越A越B”, A và B đều có thể là cụm động từ hoặc cụm tính từ, hoặc một bên là cụm động từ và bên kia là cụm tính từ. Mẫu này biểu thị B thay đổi theo sự thay đổi của A. Ví dụ:"
+      },
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "固定格式“越A越B”：教材原文说明",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:objective1",
+          "prompt": {
+            "zh": "能听懂并介绍体育比赛的名称、运动员、影响等信息。",
+            "vi": "Nghe hiểu và giới thiệu tên giải thể thao, vận động viên, ảnh hưởng và thông tin liên quan."
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用可能补语说明情况的可能性。",
+            "vi": "Nghe hiểu và dùng bổ ngữ khả năng để nói một kết quả có thực hiện được không."
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:objective3",
+          "prompt": {
+            "zh": "掌握“越A越B”格式的用法，能说明事物或情况的变化。",
+            "vi": "Nắm mẫu 越A越B để diễn đạt sự thay đổi của sự vật, tình huống."
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với hình tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:warmup1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1",
+            "vi": "Hình 1"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 球场",
+              "vi": "A sân bóng"
+            },
+            {
+              "zh": "B 得分",
+              "vi": "B điểm số"
+            },
+            {
+              "zh": "C 羽毛球",
+              "vi": "C cầu lông"
+            },
+            {
+              "zh": "D 网球",
+              "vi": "D quần vợt"
+            },
+            {
+              "zh": "E 足球",
+              "vi": "E bóng đá"
+            },
+            {
+              "zh": "F 篮球",
+              "vi": "F bóng rổ"
+            }
+          ],
+          "answer": "B 得分",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 P76 热身1 图1（B）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2",
+            "vi": "Hình 2"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 球场",
+              "vi": "A sân bóng"
+            },
+            {
+              "zh": "B 得分",
+              "vi": "B điểm số"
+            },
+            {
+              "zh": "C 羽毛球",
+              "vi": "C cầu lông"
+            },
+            {
+              "zh": "D 网球",
+              "vi": "D quần vợt"
+            },
+            {
+              "zh": "E 足球",
+              "vi": "E bóng đá"
+            },
+            {
+              "zh": "F 篮球",
+              "vi": "F bóng rổ"
+            }
+          ],
+          "answer": "D 网球",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 P76 热身1 图2（D）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3",
+            "vi": "Hình 3"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 球场",
+              "vi": "A sân bóng"
+            },
+            {
+              "zh": "B 得分",
+              "vi": "B điểm số"
+            },
+            {
+              "zh": "C 羽毛球",
+              "vi": "C cầu lông"
+            },
+            {
+              "zh": "D 网球",
+              "vi": "D quần vợt"
+            },
+            {
+              "zh": "E 足球",
+              "vi": "E bóng đá"
+            },
+            {
+              "zh": "F 篮球",
+              "vi": "F bóng rổ"
+            }
+          ],
+          "answer": "A 球场",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 P76 热身1 图3（A）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4",
+            "vi": "Hình 4"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 球场",
+              "vi": "A sân bóng"
+            },
+            {
+              "zh": "B 得分",
+              "vi": "B điểm số"
+            },
+            {
+              "zh": "C 羽毛球",
+              "vi": "C cầu lông"
+            },
+            {
+              "zh": "D 网球",
+              "vi": "D quần vợt"
+            },
+            {
+              "zh": "E 足球",
+              "vi": "E bóng đá"
+            },
+            {
+              "zh": "F 篮球",
+              "vi": "F bóng rổ"
+            }
+          ],
+          "answer": "F 篮球",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 P76 热身1 图4（F）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:warmup1-4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup1-picture5",
+          "prompt": {
+            "zh": "图5",
+            "vi": "Hình 5"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 球场",
+              "vi": "A sân bóng"
+            },
+            {
+              "zh": "B 得分",
+              "vi": "B điểm số"
+            },
+            {
+              "zh": "C 羽毛球",
+              "vi": "C cầu lông"
+            },
+            {
+              "zh": "D 网球",
+              "vi": "D quần vợt"
+            },
+            {
+              "zh": "E 足球",
+              "vi": "E bóng đá"
+            },
+            {
+              "zh": "F 篮球",
+              "vi": "F bóng rổ"
+            }
+          ],
+          "answer": "E 足球",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 P76 热身1 图5（E）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:warmup1-5"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup1-picture6",
+          "prompt": {
+            "zh": "图6",
+            "vi": "Hình 6"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 球场",
+              "vi": "A sân bóng"
+            },
+            {
+              "zh": "B 得分",
+              "vi": "B điểm số"
+            },
+            {
+              "zh": "C 羽毛球",
+              "vi": "C cầu lông"
+            },
+            {
+              "zh": "D 网球",
+              "vi": "D quần vợt"
+            },
+            {
+              "zh": "E 足球",
+              "vi": "E bóng đá"
+            },
+            {
+              "zh": "F 篮球",
+              "vi": "F bóng rổ"
+            }
+          ],
+          "answer": "C 羽毛球",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 P76 热身1 图6（C）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:warmup1-6"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l09:illustration:warmup1-1",
+        "hsk3-fltrp-2026:l09:illustration:warmup1-2",
+        "hsk3-fltrp-2026:l09:illustration:warmup1-3",
+        "hsk3-fltrp-2026:l09:illustration:warmup1-4",
+        "hsk3-fltrp-2026:l09:illustration:warmup1-5",
+        "hsk3-fltrp-2026:l09:illustration:warmup1-6"
+      ],
+      "note": {
+        "zh": "A 球场；B 得分；C 羽毛球；D 网球；E 足球；F 篮球。 自制辅助示意图，不是教材原图；按从左到右、从上到下的图号作答。",
+        "vi": "A sân bóng; B ghi điểm/điểm số; C cầu lông; D quần vợt; E bóng đá; F bóng rổ. Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo thứ tự hình từ trái sang phải, trên xuống dưới."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:warmup2-discussion",
+      "kind": "open",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên thực tế."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:warmup2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup2-prompt1",
+          "prompt": {
+            "zh": "你喜欢什么运动？你参加过什么比赛？",
+            "vi": "Bạn thích môn thể thao nào? Từng thi đấu giải nào?"
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:warmup2-prompt2",
+          "prompt": {
+            "zh": "你看过体育比赛吗？介绍一下你看过的比赛。",
+            "vi": "Bạn từng xem thi đấu thể thao chưa? Giới thiệu một trận bạn đã xem."
+          },
+          "source": {
+            "pdfPage": 88,
+            "printedPage": 76,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可用虚构情境或化名；不必分享真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu hoặc tên giả; không cần chia sẻ thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text1:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text1-question1",
+          "prompt": {
+            "zh": "李文昨天忘了做什么了？",
+            "vi": "Hôm qua Lý Văn quên làm gì?"
+          },
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "去学校打球",
+              "vi": "đến trường chơi bóng"
+            },
+            {
+              "zh": "还白家月校园卡",
+              "vi": "trả thẻ trường cho Gia Nguyệt"
+            },
+            {
+              "zh": "给白家月打电话",
+              "vi": "gọi điện cho Gia Nguyệt"
+            }
+          ],
+          "answer": "还白家月校园卡",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 课文1 听两遍 第1题（B）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text1:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text1-question2",
+          "prompt": {
+            "zh": "运动会的时候，李文要做什么？",
+            "vi": "Trong hội thao, Lý Văn định làm gì?"
+          },
+          "source": {
+            "pdfPage": 89,
+            "printedPage": 77,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "游泳",
+              "vi": "bơi"
+            },
+            {
+              "zh": "踢足球",
+              "vi": "đá bóng"
+            },
+            {
+              "zh": "看白家月的比赛",
+              "vi": "xem Gia Nguyệt thi đấu"
+            }
+          ],
+          "answer": "看白家月的比赛",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 课文1 听两遍 第2题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text1:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "9-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text1:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text1-question3",
+          "prompt": {
+            "zh": "李文为什么来得很快？",
+            "vi": "Vì sao Lý Văn đến nhanh?"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text1:question3",
+          "referenceAnswer": {
+            "zh": "他正在球场打球，接了白家月的电话就跑过来了。",
+            "vi": "Anh ấy đang chơi bóng ở sân, nhận điện thoại của Gia Nguyệt thì chạy đến."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text1-question4",
+          "prompt": {
+            "zh": "李文每天在做什么？",
+            "vi": "Mỗi ngày Lý Văn đang làm gì?"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text1:question4",
+          "referenceAnswer": {
+            "zh": "为了准备运动会，他每天都练球。",
+            "vi": "Để chuẩn bị hội thao, ngày nào anh ấy cũng tập bóng."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text1-question5",
+          "prompt": {
+            "zh": "白家月最近在做什么？",
+            "vi": "Gần đây Gia Nguyệt làm gì?"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text1:question5",
+          "referenceAnswer": {
+            "zh": "她想参加网球比赛，最近一直在练习。",
+            "vi": "Cô ấy muốn thi đấu quần vợt nên gần đây liên tục luyện tập."
+          }
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。 以下参考回答由编辑依据课文编写，提交后用于自检；合理表述可以不同，不按唯一字符串判分。",
+        "vi": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu trả lời tham khảo dưới đây do biên tập viên viết dựa trên bài khóa, dùng để tự kiểm tra sau khi nộp; có thể diễn đạt hợp lý theo nhiều cách, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text2:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text2-question1",
+          "prompt": {
+            "zh": "李文和白家月在说什么？",
+            "vi": "Lý Văn và Gia Nguyệt nói về gì?"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "运动会",
+              "vi": "hội thao"
+            },
+            {
+              "zh": "打网球",
+              "vi": "chơi quần vợt"
+            },
+            {
+              "zh": "打羽毛球",
+              "vi": "chơi cầu lông"
+            }
+          ],
+          "answer": "打羽毛球",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 课文2 听两遍 第1题（C）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text2:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text2-question2",
+          "prompt": {
+            "zh": "大家为什么一起打球？",
+            "vi": "Vì sao mọi người chơi cùng nhau?"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "为了比赛",
+              "vi": "để thi đấu"
+            },
+            {
+              "zh": "为了锻炼身体",
+              "vi": "để rèn luyện sức khỏe"
+            },
+            {
+              "zh": "为了参加运动会",
+              "vi": "để tham gia hội thao"
+            }
+          ],
+          "answer": "为了锻炼身体",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 12,
+            "item": "第9课 课文2 听两遍 第2题（B）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text2:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "9-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text2:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text2-question3",
+          "prompt": {
+            "zh": "李文叫白家月一起做什么？",
+            "vi": "Lý Văn rủ Gia Nguyệt làm gì?"
+          },
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text2:question3",
+          "referenceAnswer": {
+            "zh": "李文叫她跟大家一起打羽毛球。",
+            "vi": "Lý Văn rủ cô ấy chơi cầu lông cùng mọi người."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text2-question4",
+          "prompt": {
+            "zh": "白家月为什么不想去？",
+            "vi": "Vì sao Gia Nguyệt không muốn đi?"
+          },
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text2:question4",
+          "referenceAnswer": {
+            "zh": "她好多年没打羽毛球，几乎忘了怎么打，怕总是接不住球会不好意思。",
+            "vi": "Cô ấy nhiều năm chưa chơi cầu lông, gần như quên cách chơi; cô ấy sợ không đỡ được cầu sẽ ngại."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text2-question5",
+          "prompt": {
+            "zh": "白家月想先做什么？",
+            "vi": "Gia Nguyệt muốn làm gì trước?"
+          },
+          "source": {
+            "pdfPage": 91,
+            "printedPage": 79,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text2:question5",
+          "referenceAnswer": {
+            "zh": "她想先自己练练，下周再跟大家一起打。",
+            "vi": "Cô ấy muốn tự tập trước, tuần sau mới chơi cùng mọi người."
+          }
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。 以下参考回答由编辑依据课文编写，提交后用于自检；合理表述可以不同，不按唯一字符串判分。",
+        "vi": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu trả lời tham khảo dưới đây do biên tập viên viết dựa trên bài khóa, dùng để tự kiểm tra sau khi nộp; có thể diễn đạt hợp lý theo nhiều cách, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text3:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text3-question1",
+          "prompt": {
+            "zh": "他们在做什么？",
+            "vi": "Họ đang làm gì?"
+          },
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "看足球比赛",
+              "vi": "xem bóng đá"
+            },
+            {
+              "zh": "准备踢足球",
+              "vi": "chuẩn bị đá bóng"
+            },
+            {
+              "zh": "准备参加比赛",
+              "vi": "chuẩn bị tham gia thi đấu"
+            }
+          ],
+          "answer": "看足球比赛",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 课文3 听两遍 第1题（A）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text3:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text3-question2",
+          "prompt": {
+            "zh": "白家月为什么着急？",
+            "vi": "Vì sao Gia Nguyệt sốt ruột?"
+          },
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "老球员生病了",
+              "vi": "cầu thủ kỳ cựu bị ốm"
+            },
+            {
+              "zh": "球一直踢不进去",
+              "vi": "mãi không đá bóng vào được"
+            },
+            {
+              "zh": "看不到比赛的得分",
+              "vi": "không xem được điểm số trận đấu"
+            }
+          ],
+          "answer": "球一直踢不进去",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 课文3 听两遍 第2题（B）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text3:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "9-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text3:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text3-question3",
+          "prompt": {
+            "zh": "李文要去冰箱里拿什么？",
+            "vi": "Lý Văn định lấy gì trong tủ lạnh?"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text3:question3",
+          "referenceAnswer": {
+            "zh": "他要去拿啤酒和饮料。",
+            "vi": "Anh ấy định lấy bia và đồ uống."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text3-question4",
+          "prompt": {
+            "zh": "今天的足球比赛踢得怎么样？",
+            "vi": "Trận bóng hôm nay chơi thế nào?"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text3:question4",
+          "referenceAnswer": {
+            "zh": "球总是踢不进去，白家月越看越着急。",
+            "vi": "Bóng mãi không vào lưới, Gia Nguyệt càng xem càng sốt ruột."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text3-question5",
+          "prompt": {
+            "zh": "球员们受到什么影响了？",
+            "vi": "Các cầu thủ chịu ảnh hưởng gì?"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text3:question5",
+          "referenceAnswer": {
+            "zh": "几个老球员生病，主要的球员没有参加比赛；新球员第一次参加这么重要的比赛，很紧张，大家都受到影响。",
+            "vi": "Một số cầu thủ kỳ cựu bị ốm, các cầu thủ chủ chốt không thi đấu; cầu thủ mới lần đầu dự trận quan trọng như vậy nên rất căng thẳng, cả đội đều bị ảnh hưởng."
+          }
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。 以下参考回答由编辑依据课文编写，提交后用于自检；合理表述可以不同，不按唯一字符串判分。",
+        "vi": "Phân vai đọc hội thoại, sau đó trả lời câu hỏi. Câu trả lời tham khảo dưới đây do biên tập viên viết dựa trên bài khóa, dùng để tự kiểm tra sau khi nộp; có thể diễn đạt hợp lý theo nhiều cách, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text4:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text4-question1",
+          "prompt": {
+            "zh": "李文在说什么体育比赛？",
+            "vi": "Lý Văn nói về giải thể thao nào?"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "奥运会",
+              "vi": "Thế vận hội"
+            },
+            {
+              "zh": "短跑比赛",
+              "vi": "cuộc thi chạy cự ly ngắn"
+            },
+            {
+              "zh": "中国的体育比赛",
+              "vi": "thi đấu thể thao Trung Quốc"
+            }
+          ],
+          "answer": "奥运会",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 课文4 听两遍 第1题（A）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text4:question1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text4-question2",
+          "prompt": {
+            "zh": "刘长春参加了哪个比赛？",
+            "vi": "Lưu Trường Xuân tham gia nội dung nào?"
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "100米短跑",
+              "vi": "chạy 100 mét"
+            },
+            {
+              "zh": "200米游泳",
+              "vi": "bơi 200 mét"
+            },
+            {
+              "zh": "5000米长跑",
+              "vi": "chạy dài 5.000 mét"
+            }
+          ],
+          "answer": "100米短跑",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 课文4 听两遍 第2题（A）"
+          },
+          "targetRef": "hsk3-fltrp-2026:l09:text4:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍课文，选择正确答案。",
+        "vi": "Nghe bài khóa hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "9-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:text4-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:text4:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text4-question3",
+          "prompt": {
+            "zh": "奥运会是一个什么样的体育比赛？",
+            "vi": "Theo bài, Thế vận hội là cuộc thi thể thao thế nào?"
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text4:question3",
+          "referenceAnswer": {
+            "zh": "课文介绍奥运会是世界上影响最大的体育比赛，每次都有非常多的运动员参加。",
+            "vi": "Bài khóa giới thiệu Thế vận hội là cuộc thi thể thao có ảnh hưởng lớn nhất thế giới, mỗi kỳ có rất nhiều vận động viên tham gia."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text4-question4",
+          "prompt": {
+            "zh": "1932年，中国运动员的比赛成绩怎么样？",
+            "vi": "Theo bài, thành tích vận động viên Trung Quốc năm 1932 thế nào?"
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text4:question4",
+          "referenceAnswer": {
+            "zh": "按课文，刘长春没有得到好成绩。",
+            "vi": "Theo bài, Lưu Trường Xuân không đạt thành tích tốt."
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:text4-question5",
+          "prompt": {
+            "zh": "刘长春的影响是什么？",
+            "vi": "Bài nêu ảnh hưởng của Lưu Trường Xuân là gì?"
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "targetRef": "hsk3-fltrp-2026:l09:text4:question5",
+          "referenceAnswer": {
+            "zh": "课文说他让世界认识了中国。",
+            "vi": "Bài khóa nói rằng ông đã giúp thế giới biết đến Trung Quốc."
+          }
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后回答问题。 以下参考回答由编辑依据课文编写，提交后用于自检；合理表述可以不同，不按唯一字符串判分。",
+        "vi": "Đọc thành tiếng bài khóa, sau đó trả lời câu hỏi. Câu trả lời tham khảo dưới đây do biên tập viên viết dựa trên bài khóa, dùng để tự kiểm tra sau khi nộp; có thể diễn đạt hợp lý theo nhiều cách, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "______，我们决定搬家。",
+        "vi": "______ chúng tôi quyết định chuyển nhà."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "目的复句“为了……，……”：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar1-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "为了离学校近一点儿",
+            "vi": "để ở gần trường hơn một chút"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成句子。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "______，她每天都去锻炼身体。",
+        "vi": "______ cô ấy đi tập thể dục mỗi ngày."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "目的复句“为了……，……”：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar1-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "为了身体健康",
+            "vi": "để cơ thể khỏe mạnh"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成句子。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "______，他们打算坐高铁去上海。",
+        "vi": "______ họ định đi tàu cao tốc đến Thượng Hải."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 90,
+        "printedPage": 78,
+        "section": "目的复句“为了……，……”：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar1-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 90,
+            "printedPage": 78,
+            "section": "目的复句“为了……，……”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "为了早点儿到",
+            "vi": "để đến sớm hơn"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成句子。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：我和你妈妈在门口等着你呢。 B：机场人太多了，我______。",
+        "vi": "A: Bố và mẹ đang đợi con ở cửa. B: Sân bay đông quá, con ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "可能补语：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar2-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "看不见你们",
+            "vi": "không nhìn thấy bố mẹ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成对话。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành hội thoại. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：喂？喂？我说话你______？ B：没问题，我听得见。",
+        "vi": "A: A-lô? Bạn ______ tôi nói không? B: Không vấn đề, tôi nghe thấy được."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "可能补语：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar2-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "听得见吗",
+            "vi": "có nghe thấy được không"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成对话。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành hội thoại. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：咱们还没做今天的作业呢，半个小时______？ B：没问题，______，今天的作业一点儿也不多。",
+        "vi": "A: Mình chưa làm bài hôm nay, nửa tiếng ______ không? B: Không vấn đề, ______, hôm nay bài chẳng nhiều."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "可能补语：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar2-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "做得完吗",
+            "vi": "có làm xong được không"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar2-practice3-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 92,
+            "printedPage": 80,
+            "section": "可能补语：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "做得完",
+            "vi": "làm xong được"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成对话。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành hội thoại. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "我们越说______。",
+        "vi": "Chúng tôi càng nói ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "固定格式“越A越B”：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar3-practice1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "越高兴",
+            "vi": "càng vui"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成句子。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "这个电影越看______。",
+        "vi": "Phim này càng xem ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "固定格式“越A越B”：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar3-practice2",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "越有意思",
+            "vi": "càng thú vị"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成句子。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "她______，我越担心。",
+        "vi": "Cô ấy ______, tôi càng lo."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 93,
+        "printedPage": 81,
+        "section": "固定格式“越A越B”：完成句子",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:grammar3-practice3",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 93,
+            "printedPage": 81,
+            "section": "固定格式“越A越B”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "越不说话",
+            "vi": "càng không nói gì"
+          }
+        }
+      ],
+      "note": {
+        "zh": "完成句子。 参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Hoàn thành câu. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:comprehensive-words1",
+      "kind": "fill",
+      "title": {
+        "zh": "第一组：A 世界；B 成绩；C 球场；D 参加；E 影响。",
+        "vi": "Nhóm 1: A thế giới; B thành tích; C sân bóng; D tham gia; E ảnh hưởng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 94,
+        "printedPage": 82,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section2:bank:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice1",
+          "prompt": {
+            "zh": "1. 我的腿不舒服，所以没______这次网球比赛。",
+            "vi": "1. Chân tôi khó chịu nên không ______ giải quần vợt này."
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "世界",
+              "vi": "thế giới"
+            },
+            {
+              "zh": "成绩",
+              "vi": "thành tích"
+            },
+            {
+              "zh": "球场",
+              "vi": "sân bóng"
+            },
+            {
+              "zh": "参加",
+              "vi": "tham gia"
+            },
+            {
+              "zh": "影响",
+              "vi": "ảnh hưởng"
+            }
+          ],
+          "answer": "参加",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P82 综合练习 选词填空 第1题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice2",
+          "prompt": {
+            "zh": "2. 学校的______上，每天都有很多同学在那儿做运动。",
+            "vi": "2. Trên ______ của trường, ngày nào cũng nhiều bạn tập thể thao."
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "世界",
+              "vi": "thế giới"
+            },
+            {
+              "zh": "成绩",
+              "vi": "thành tích"
+            },
+            {
+              "zh": "球场",
+              "vi": "sân bóng"
+            },
+            {
+              "zh": "参加",
+              "vi": "tham gia"
+            },
+            {
+              "zh": "影响",
+              "vi": "ảnh hưởng"
+            }
+          ],
+          "answer": "球场",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P82 综合练习 选词填空 第2题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice3",
+          "prompt": {
+            "zh": "3. 运动员们为了得到好______，每天要练十多个小时。",
+            "vi": "3. Để đạt ______ tốt, các vận động viên phải tập hơn mười tiếng mỗi ngày. (Nội dung câu luyện trong sách.)"
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "世界",
+              "vi": "thế giới"
+            },
+            {
+              "zh": "成绩",
+              "vi": "thành tích"
+            },
+            {
+              "zh": "球场",
+              "vi": "sân bóng"
+            },
+            {
+              "zh": "参加",
+              "vi": "tham gia"
+            },
+            {
+              "zh": "影响",
+              "vi": "ảnh hưởng"
+            }
+          ],
+          "answer": "成绩",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P82 综合练习 选词填空 第3题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice4",
+          "prompt": {
+            "zh": "4. 受到天气的______，今天的足球比赛要晚两个小时开始。",
+            "vi": "4. Do ______ của thời tiết, trận bóng hôm nay bắt đầu muộn hai tiếng."
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "世界",
+              "vi": "thế giới"
+            },
+            {
+              "zh": "成绩",
+              "vi": "thành tích"
+            },
+            {
+              "zh": "球场",
+              "vi": "sân bóng"
+            },
+            {
+              "zh": "参加",
+              "vi": "tham gia"
+            },
+            {
+              "zh": "影响",
+              "vi": "ảnh hưởng"
+            }
+          ],
+          "answer": "影响",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P82 综合练习 选词填空 第4题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice5",
+          "prompt": {
+            "zh": "5. 这位运动员觉得______上最重要的运动会就是奥运会。",
+            "vi": "5. Vận động viên này cho rằng đại hội thể thao quan trọng nhất ______ là Thế vận hội."
+          },
+          "source": {
+            "pdfPage": 94,
+            "printedPage": 82,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "世界",
+              "vi": "thế giới"
+            },
+            {
+              "zh": "成绩",
+              "vi": "thành tích"
+            },
+            {
+              "zh": "球场",
+              "vi": "sân bóng"
+            },
+            {
+              "zh": "参加",
+              "vi": "tham gia"
+            },
+            {
+              "zh": "影响",
+              "vi": "ảnh hưởng"
+            }
+          ],
+          "answer": "世界",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P82 综合练习 选词填空 第5题（A）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:comprehensive-words2",
+      "kind": "fill",
+      "title": {
+        "zh": "第二组：A 只是；B 几乎；C 主要；D 得到；E 受到。",
+        "vi": "Nhóm 2: A chỉ; B gần như; C chủ yếu; D đạt được; E chịu/nhận."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section2:bank:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice6",
+          "prompt": {
+            "zh": "6. A：她游泳游得快吗？ B：她______每天都游，现在游得特别快。",
+            "vi": "6. A: Cô ấy bơi nhanh không? B: Cô ấy ______ ngày nào cũng bơi, giờ rất nhanh."
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "只是",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "几乎",
+              "vi": "gần như"
+            },
+            {
+              "zh": "主要",
+              "vi": "chủ yếu"
+            },
+            {
+              "zh": "得到",
+              "vi": "đạt được"
+            },
+            {
+              "zh": "受到",
+              "vi": "chịu/nhận"
+            }
+          ],
+          "answer": "几乎",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P83 综合练习 选词填空 第6题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice7",
+          "prompt": {
+            "zh": "7. A：他们以前每年都是第一名，为什么今年成绩这么不好？ B：我觉得______是因为好多老球员病了。",
+            "vi": "7. A: Trước năm nào họ cũng nhất, sao năm nay kém vậy? B: Tôi nghĩ ______ vì nhiều cầu thủ kỳ cựu bị ốm."
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "只是",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "几乎",
+              "vi": "gần như"
+            },
+            {
+              "zh": "主要",
+              "vi": "chủ yếu"
+            },
+            {
+              "zh": "得到",
+              "vi": "đạt được"
+            },
+            {
+              "zh": "受到",
+              "vi": "chịu/nhận"
+            }
+          ],
+          "answer": "主要",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P83 综合练习 选词填空 第7题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice8",
+          "prompt": {
+            "zh": "8. A：你打得这么好，是羽毛球运动员吗？ B：打羽毛球______我的兴趣，我不是运动员。",
+            "vi": "8. A: Bạn đánh giỏi vậy, là vận động viên cầu lông à? B: Cầu lông ______ là sở thích, tôi không phải vận động viên."
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "只是",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "几乎",
+              "vi": "gần như"
+            },
+            {
+              "zh": "主要",
+              "vi": "chủ yếu"
+            },
+            {
+              "zh": "得到",
+              "vi": "đạt được"
+            },
+            {
+              "zh": "受到",
+              "vi": "chịu/nhận"
+            }
+          ],
+          "answer": "只是",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P83 综合练习 选词填空 第8题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice9",
+          "prompt": {
+            "zh": "9. A：______我爸爸的影响，我十几岁就开始打网球了。 B：现在你也开始影响我，我也喜欢上了打网球。",
+            "vi": "9. A: ______ ảnh hưởng của bố, tôi chơi quần vợt từ tuổi thiếu niên. B: Giờ bạn cũng ảnh hưởng tôi, tôi bắt đầu thích quần vợt."
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "只是",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "几乎",
+              "vi": "gần như"
+            },
+            {
+              "zh": "主要",
+              "vi": "chủ yếu"
+            },
+            {
+              "zh": "得到",
+              "vi": "đạt được"
+            },
+            {
+              "zh": "受到",
+              "vi": "chịu/nhận"
+            }
+          ],
+          "answer": "受到",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P83 综合练习 选词填空 第9题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:wordchoice10",
+          "prompt": {
+            "zh": "10. A：我听说你参加了学校的运动会？ B：是的。虽然没有______很好的成绩，但是我认识了很多新朋友。",
+            "vi": "10. A: Nghe nói bạn tham gia hội thao trường? B: Đúng, dù không ______ thành tích cao nhưng quen nhiều bạn mới."
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "只是",
+              "vi": "chỉ"
+            },
+            {
+              "zh": "几乎",
+              "vi": "gần như"
+            },
+            {
+              "zh": "主要",
+              "vi": "chủ yếu"
+            },
+            {
+              "zh": "得到",
+              "vi": "đạt được"
+            },
+            {
+              "zh": "受到",
+              "vi": "chịu/nhận"
+            }
+          ],
+          "answer": "得到",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 13,
+            "item": "第9课 P83 综合练习 选词填空 第10题（D）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "图1：A：今天你们去______吗？ B：去。为了______，我们每天下课后都去球场练习。 A：我觉得这次______，你们一定能得到好成绩。 B：谢谢。虽然______不是最重要的，但是我们也要努力。",
+        "vi": "Hình 1: A: Hôm nay các bạn đi ______ không? B: Có. Để ______, tan học ngày nào cũng đến sân tập. A: Tôi nghĩ lần ______ này các bạn sẽ đạt thành tích tốt. B: Cảm ơn, dù ______ không quan trọng nhất nhưng vẫn phải cố gắng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section3:picture:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "练篮球",
+            "vi": "tập bóng rổ"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture1-blank2",
+          "prompt": {
+            "zh": "图1第2空",
+            "vi": "Hình 1, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "准备比赛",
+            "vi": "chuẩn bị thi đấu"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture1-blank3",
+          "prompt": {
+            "zh": "图1第3空",
+            "vi": "Hình 1, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "比赛",
+            "vi": "thi đấu"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture1-blank4",
+          "prompt": {
+            "zh": "图1第4空",
+            "vi": "Hình 1, chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "成绩",
+            "vi": "thành tích"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l09:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "图2：A：我看你每天都去打网球，你打得怎么样？ B：我最近才开始学，打得不太好。 A：______没关系，你的身体越______。 B：你说得对，我运动只是为了______。",
+        "vi": "Hình 2: A: Thấy bạn ngày nào cũng đánh quần vợt, bạn đánh thế nào? B: Gần đây mới học, chưa tốt lắm. A: ______ không sao, cơ thể bạn càng ______. B: Đúng, tôi vận động chỉ để ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section3:picture:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "打不好",
+            "vi": "chơi chưa tốt"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "练越健康",
+            "vi": "tập càng khỏe"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture2-blank3",
+          "prompt": {
+            "zh": "图2第3空",
+            "vi": "Hình 2, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "锻炼身体",
+            "vi": "rèn luyện sức khỏe"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l09:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "图3：A：为了______，我没吃饭就来了。没想到到现在一个球也没踢进去。 B：可能受到______，每个运动员都很紧张。 A：他们现在好好休息，一会儿一定会得分的。 B：我不想看了，越______。",
+        "vi": "Hình 3: A: Để ______, tôi chưa ăn đã đến. Không ngờ giờ vẫn chưa ghi bàn nào. B: Có lẽ chịu ______ nên ai cũng căng thẳng. A: Họ nghỉ ngơi tốt, lát nữa chắc sẽ ghi điểm. B: Tôi không muốn xem nữa, càng ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section3:picture:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "看这场足球比赛",
+            "vi": "xem trận bóng này"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "天气的影响",
+            "vi": "ảnh hưởng của thời tiết"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:picture3-blank3",
+          "prompt": {
+            "zh": "图3第3空",
+            "vi": "Hình 3, chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 95,
+            "printedPage": 83,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "看越着急",
+            "vi": "xem càng sốt ruột"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l09:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l09:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:classroom-group",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 96,
+        "printedPage": 84,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section4",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-prompt1",
+          "prompt": {
+            "zh": "你最喜欢的运动是什么？为什么？",
+            "vi": "Bạn thích môn nào nhất? Vì sao?"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-prompt2",
+          "prompt": {
+            "zh": "你是受到谁的影响开始喜欢这个运动的？",
+            "vi": "Bạn chịu ảnh hưởng của ai mà bắt đầu thích môn này?"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-prompt3",
+          "prompt": {
+            "zh": "你多久练习一次？每次练习多长时间？",
+            "vi": "Bao lâu bạn tập một lần? Mỗi lần bao lâu?"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-prompt4",
+          "prompt": {
+            "zh": "这个运动对你有什么影响？",
+            "vi": "Môn này ảnh hưởng gì đến bạn?"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-prompt5",
+          "prompt": {
+            "zh": "你参加过什么体育比赛？",
+            "vi": "Bạn từng tham gia giải thể thao nào?"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-prompt6",
+          "prompt": {
+            "zh": "你成绩最好的一次比赛是什么？",
+            "vi": "Trận thi đấu nào bạn đạt thành tích tốt nhất?"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-speaker",
+          "prompt": {
+            "zh": "选一位同学向全班介绍（可记化名或角色编号）。",
+            "vi": "Chọn một bạn giới thiệu trước lớp (có thể ghi tên giả hoặc số vai)."
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:classroom-presentation",
+          "prompt": {
+            "zh": "向全班介绍自己熟悉的运动：发言提纲。",
+            "vi": "Giới thiệu môn thể thao mình biết trước lớp: dàn ý trình bày."
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "四人一组，介绍自己熟悉的运动，可以围绕以下问题讨论。讨论时，使用本课所学的词语和语言点。小组练习结束后，可以选一位同学向全班同学介绍自己熟悉的运动。 可用虚构情境或化名；不必分享真实个人信息；不自动判分。",
+        "vi": "Nhóm bốn người giới thiệu môn thể thao mình biết, thảo luận theo câu hỏi, dùng từ và ngữ pháp trong bài. Sau khi luyện, chọn một bạn trình bày trước lớp. Có thể dùng tình huống hư cấu hoặc tên giả; không cần chia sẻ thông tin cá nhân thật; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:review-vocabulary",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "词语学习",
+        "vi": "Học từ vựng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 96,
+        "printedPage": 84,
+        "section": "学习小结：7—9课我的学习情况",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section5:vocabulary",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-vocabulary-known",
+          "prompt": {
+            "zh": "我已经记住并会使用的词语",
+            "vi": "Từ tôi đã nhớ và biết dùng"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-vocabulary-learning",
+          "prompt": {
+            "zh": "我还没记住的词语",
+            "vi": "Từ tôi chưa nhớ"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "自主记录，不自动判分。",
+        "vi": "Tự ghi nhận, không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:review-grammar",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我理解并会用",
+        "vi": "Tôi hiểu và biết dùng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 96,
+        "printedPage": 84,
+        "section": "学习小结：7—9课我的学习情况",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section5:grammar",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar1-understand",
+          "prompt": {
+            "zh": "连动句（2）：咱们可以走着去。：理解",
+            "vi": "Câu liên động (2): Chúng ta có thể đi bộ đến đó.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar1-use",
+          "prompt": {
+            "zh": "连动句（2）：咱们可以走着去。：会用",
+            "vi": "Câu liên động (2): Chúng ta có thể đi bộ đến đó.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar2-understand",
+          "prompt": {
+            "zh": "比较句（10）：裙子不比短裤贵多少。：理解",
+            "vi": "So sánh (10): Váy không đắt hơn quần soóc bao nhiêu.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar2-use",
+          "prompt": {
+            "zh": "比较句（10）：裙子不比短裤贵多少。：会用",
+            "vi": "So sánh (10): Váy không đắt hơn quần soóc bao nhiêu.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 96,
+            "printedPage": 84,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar3-understand",
+          "prompt": {
+            "zh": "程度补语（3）：这块冰西瓜甜极了。：理解",
+            "vi": "Bổ ngữ mức độ (3): Miếng dưa ướp lạnh này ngọt cực kỳ.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar3-use",
+          "prompt": {
+            "zh": "程度补语（3）：这块冰西瓜甜极了。：会用",
+            "vi": "Bổ ngữ mức độ (3): Miếng dưa ướp lạnh này ngọt cực kỳ.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar4-understand",
+          "prompt": {
+            "zh": "递进复句“不但……，而且……”：现在的电视不但便宜，而且用着非常方便。：理解",
+            "vi": "Câu tăng tiến: Tivi hiện nay không chỉ rẻ mà dùng còn rất tiện.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar4-use",
+          "prompt": {
+            "zh": "递进复句“不但……，而且……”：现在的电视不但便宜，而且用着非常方便。：会用",
+            "vi": "Câu tăng tiến: Tivi hiện nay không chỉ rẻ mà dùng còn rất tiện.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar5-understand",
+          "prompt": {
+            "zh": "趋向补语的引申用法（1）：我今年胖了十多斤，不能再胖下去了。：理解",
+            "vi": "Nghĩa mở rộng bổ ngữ xu hướng: Năm nay tôi tăng hơn mười cân Trung Quốc, không thể tiếp tục tăng nữa.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar5-use",
+          "prompt": {
+            "zh": "趋向补语的引申用法（1）：我今年胖了十多斤，不能再胖下去了。：会用",
+            "vi": "Nghĩa mở rộng bổ ngữ xu hướng: Năm nay tôi tăng hơn mười cân Trung Quốc, không thể tiếp tục tăng nữa.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar6-understand",
+          "prompt": {
+            "zh": "离合词（2）：昨天游完泳以后，我的耳朵一直有点儿疼。：理解",
+            "vi": "Từ ly hợp (2): Bơi xong hôm qua, tai tôi cứ hơi đau.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar6-use",
+          "prompt": {
+            "zh": "离合词（2）：昨天游完泳以后，我的耳朵一直有点儿疼。：会用",
+            "vi": "Từ ly hợp (2): Bơi xong hôm qua, tai tôi cứ hơi đau.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar7-understand",
+          "prompt": {
+            "zh": "时量补语（2）：我上次来医院已经过去差不多两年了。：理解",
+            "vi": "Bổ ngữ thời lượng (2): Từ lần trước tôi đến viện đã gần hai năm.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar7-use",
+          "prompt": {
+            "zh": "时量补语（2）：我上次来医院已经过去差不多两年了。：会用",
+            "vi": "Bổ ngữ thời lượng (2): Từ lần trước tôi đến viện đã gần hai năm.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar8-understand",
+          "prompt": {
+            "zh": "固定格式“……以前/以后/前/后”：这种药需要每天睡前吃一次。：理解",
+            "vi": "Mẫu trước/sau: Trong tình huống bài học, loại thuốc này cần uống mỗi ngày một lần trước ngủ.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar8-use",
+          "prompt": {
+            "zh": "固定格式“……以前/以后/前/后”：这种药需要每天睡前吃一次。：会用",
+            "vi": "Mẫu trước/sau: Trong tình huống bài học, loại thuốc này cần uống mỗi ngày một lần trước ngủ.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar9-understand",
+          "prompt": {
+            "zh": "目的复句“为了……，……”：听说为了准备运动会，你们几个男生每天都练球。：理解",
+            "vi": "Câu mục đích: Nghe nói để chuẩn bị hội thao, mấy bạn nam ngày nào cũng tập bóng.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar9-use",
+          "prompt": {
+            "zh": "目的复句“为了……，……”：听说为了准备运动会，你们几个男生每天都练球。：会用",
+            "vi": "Câu mục đích: Nghe nói để chuẩn bị hội thao, mấy bạn nam ngày nào cũng tập bóng.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar10-understand",
+          "prompt": {
+            "zh": "可能补语：打不好没关系。：理解",
+            "vi": "Bổ ngữ khả năng: Chơi chưa tốt cũng không sao.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar10-use",
+          "prompt": {
+            "zh": "可能补语：打不好没关系。：会用",
+            "vi": "Bổ ngữ khả năng: Chơi chưa tốt cũng không sao.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar11-understand",
+          "prompt": {
+            "zh": "固定格式“越A越B”：今天的足球比赛我越看越着急。：理解",
+            "vi": "Mẫu 越A越B: Trận bóng hôm nay càng xem tôi càng sốt ruột.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-grammar11-use",
+          "prompt": {
+            "zh": "固定格式“越A越B”：今天的足球比赛我越看越着急。：会用",
+            "vi": "Mẫu 越A越B: Trận bóng hôm nay càng xem tôi càng sốt ruột.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "matrix": {
+        "mode": "checks",
+        "rowHeading": {
+          "zh": "语言点与例句",
+          "vi": "Ngữ pháp và ví dụ"
+        },
+        "columns": [
+          {
+            "zh": "理解",
+            "vi": "Đã hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "连动句（2）：咱们可以走着去。",
+              "vi": "Câu liên động (2): Chúng ta có thể đi bộ đến đó."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar1-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar1-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（10）：裙子不比短裤贵多少。",
+              "vi": "So sánh (10): Váy không đắt hơn quần soóc bao nhiêu."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar2-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar2-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "程度补语（3）：这块冰西瓜甜极了。",
+              "vi": "Bổ ngữ mức độ (3): Miếng dưa ướp lạnh này ngọt cực kỳ."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar3-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar3-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "递进复句“不但……，而且……”：现在的电视不但便宜，而且用着非常方便。",
+              "vi": "Câu tăng tiến: Tivi hiện nay không chỉ rẻ mà dùng còn rất tiện."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar4-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar4-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "趋向补语的引申用法（1）：我今年胖了十多斤，不能再胖下去了。",
+              "vi": "Nghĩa mở rộng bổ ngữ xu hướng: Năm nay tôi tăng hơn mười cân Trung Quốc, không thể tiếp tục tăng nữa."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar5-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar5-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "离合词（2）：昨天游完泳以后，我的耳朵一直有点儿疼。",
+              "vi": "Từ ly hợp (2): Bơi xong hôm qua, tai tôi cứ hơi đau."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar6-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar6-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "时量补语（2）：我上次来医院已经过去差不多两年了。",
+              "vi": "Bổ ngữ thời lượng (2): Từ lần trước tôi đến viện đã gần hai năm."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar7-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar7-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "固定格式“……以前/以后/前/后”：这种药需要每天睡前吃一次。",
+              "vi": "Mẫu trước/sau: Trong tình huống bài học, loại thuốc này cần uống mỗi ngày một lần trước ngủ."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar8-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar8-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "目的复句“为了……，……”：听说为了准备运动会，你们几个男生每天都练球。",
+              "vi": "Câu mục đích: Nghe nói để chuẩn bị hội thao, mấy bạn nam ngày nào cũng tập bóng."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar9-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar9-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "可能补语：打不好没关系。",
+              "vi": "Bổ ngữ khả năng: Chơi chưa tốt cũng không sao."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar10-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar10-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "固定格式“越A越B”：今天的足球比赛我越看越着急。",
+              "vi": "Mẫu 越A越B: Trận bóng hôm nay càng xem tôi càng sốt ruột."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l09:field:review-grammar11-understand",
+              "hsk3-fltrp-2026:l09:field:review-grammar11-use"
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "每项分别检查“理解”和“会用”；不自动判分。",
+        "vi": "Đánh dấu riêng “Đã hiểu” và “Biết dùng” cho từng mục; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:activity:review-effort",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Những điểm tôi cần cố gắng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 97,
+        "printedPage": 85,
+        "section": "学习小结：7—9课我的学习情况",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk3-fltrp-2026:l09:section5:effort",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l09:field:review-effort",
+          "prompt": {
+            "zh": "我需要努力的",
+            "vi": "Những điểm tôi cần cố gắng"
+          },
+          "source": {
+            "pdfPage": 97,
+            "printedPage": 85,
+            "section": "学习小结：7—9课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ]
+    }
+  ],
+  "coverageReview": {
+    "status": "author-candidate-independent-review-pending",
+    "date": "2026-10-04",
+    "scope": "HSK3 lesson 9: activity fields, source explanations, original figures and source wording",
+    "independentReview": "pending",
+    "browserVerification": "pending",
+    "note": "Historical reviewStatus retained only as prior review history; this candidate is not independently accepted."
+  },
+  "illustrationManifest": [
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "owner": "hsk3-fltrp-2026:l09:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:warmup1-picture1"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "翻页板上的两个大数字为6和4。",
+        "vi": "Hai chữ số lớn trên bảng lật là 6 và 4."
+      },
+      "description": {
+        "zh": "翻页板上的两个大数字为6和4。",
+        "vi": "Hai chữ số lớn trên bảng lật là 6 và 4."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk3-l09-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "62e19cf4a0465b575c13d388f0567cf5b756b3a2fc785f8ccfb7473e8739ab32",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "owner": "hsk3-fltrp-2026:l09:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:warmup1-picture2"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "浅绿色小球放在椭圆形带网线的长柄球拍上。",
+        "vi": "Những quả bóng nhỏ xanh nhạt đặt trên vợt cán dài, mặt bầu dục có dây đan."
+      },
+      "description": {
+        "zh": "浅绿色小球放在椭圆形带网线的长柄球拍上。",
+        "vi": "Những quả bóng nhỏ xanh nhạt đặt trên vợt cán dài, mặt bầu dục có dây đan."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk3-l09-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "34dbc42cc2631f3649e63769061b33220107a1cc75fc78a5c316631249c99243",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "owner": "hsk3-fltrp-2026:l09:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:warmup1-picture3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "室外铺装地面有白色边线、中圈和高处的篮圈。",
+        "vi": "Mặt sân lát ngoài trời có vạch trắng, vòng giữa và vành rổ trên cao."
+      },
+      "description": {
+        "zh": "室外铺装地面有白色边线、中圈和高处的篮圈。",
+        "vi": "Mặt sân lát ngoài trời có vạch trắng, vòng giữa và vành rổ trên cao."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk3-l09-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "b38624f940bf775a9fad49ec2596bb3f40c7c0b75e66f07fd592be8605331995",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "owner": "hsk3-fltrp-2026:l09:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:warmup1-picture4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一个橙色圆球，表面有黑色弧线，静放在地面上。",
+        "vi": "Một quả bóng tròn màu cam có đường cong đen, đặt trên mặt đất."
+      },
+      "description": {
+        "zh": "一个橙色圆球，表面有黑色弧线，静放在地面上。",
+        "vi": "Một quả bóng tròn màu cam có đường cong đen, đặt trên mặt đất."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk3-l09-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "f2d8525c2923e3dd752fc3081a81ddced7be0667747ebed79f924ef94e663e07",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:warmup1-5",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "辅助示意图：warmup1-5",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "owner": "hsk3-fltrp-2026:l09:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:warmup1",
+        "position": 5
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:warmup1-picture5"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "穿长袜和运动鞋的人用脚踢一个黑白圆球。",
+        "vi": "Người mang tất dài và giày thể thao dùng chân đá quả bóng đen trắng."
+      },
+      "description": {
+        "zh": "穿长袜和运动鞋的人用脚踢一个黑白圆球。",
+        "vi": "Người mang tất dài và giày thể thao dùng chân đá quả bóng đen trắng."
+      },
+      "sceneKey": "warmup1-5",
+      "file": "illustrations/hsk3-l09-warmup1-5.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "a895dde128185fa3606fde854be9dbfecb02acf753f0d2a190e805f0953e73c2",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:warmup1-6",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "section": "辅助示意图：warmup1-6",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 88,
+        "printedPage": 76,
+        "owner": "hsk3-fltrp-2026:l09:warmup1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:warmup1",
+        "position": 6
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:warmup1-picture6"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:warmup1-matching"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "带白色羽片和圆底的小物体在球网前。",
+        "vi": "Vật nhỏ có lông trắng và đáy tròn ở trước lưới."
+      },
+      "description": {
+        "zh": "带白色羽片和圆底的小物体在球网前。",
+        "vi": "Vật nhỏ có lông trắng và đáy tròn ở trước lưới."
+      },
+      "sceneKey": "warmup1-6",
+      "file": "illustrations/hsk3-l09-warmup1-6.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "f1dba337bc966c17bc89da39b0189d5be5a02c10a0e645d1e09ad924ea396810",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 89,
+        "printedPage": 77,
+        "owner": "hsk3-fltrp-2026:l09:text1",
+        "sourceOwner": "hsk3-fltrp-2026:l09:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "校园建筑门口，背包的男生和一位女生交谈。",
+        "vi": "Trước cửa một tòa nhà trong trường, nam sinh đeo ba lô trò chuyện với nữ sinh."
+      },
+      "description": {
+        "zh": "校园建筑门口，背包的男生和一位女生交谈。",
+        "vi": "Trước cửa một tòa nhà trong trường, nam sinh đeo ba lô trò chuyện với nữ sinh."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk3-l09-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "dd80490ee8853c263854035198aaa92a2406288edcaebaa2d53e1eaa31f7c1ee",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 91,
+        "printedPage": 79,
+        "owner": "hsk3-fltrp-2026:l09:text2",
+        "sourceOwner": "hsk3-fltrp-2026:l09:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "体育馆中，两人隔网用球拍练习，空中有白色羽毛球。",
+        "vi": "Trong nhà thể thao, hai người cầm vợt tập qua lưới, có quả cầu lông trên không."
+      },
+      "description": {
+        "zh": "体育馆中，两人隔网用球拍练习，空中有白色羽毛球。",
+        "vi": "Trong nhà thể thao, hai người cầm vợt tập qua lưới, có quả cầu lông trên không."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk3-l09-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "5c683a839274eb243a7f2be0f0a620cac819efb2c570bfb29f067f247710242b",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 92,
+        "printedPage": 80,
+        "owner": "hsk3-fltrp-2026:l09:text3",
+        "sourceOwner": "hsk3-fltrp-2026:l09:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "activityBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "三位朋友在客厅沙发上看电视里的足球比赛。",
+        "vi": "Ba người bạn ngồi sofa trong phòng khách xem bóng đá trên tivi."
+      },
+      "description": {
+        "zh": "三位朋友在客厅沙发上看电视里的足球比赛。",
+        "vi": "Ba người bạn ngồi sofa trong phòng khách xem bóng đá trên tivi."
+      },
+      "sceneKey": "text3",
+      "file": "illustrations/hsk3-l09-text3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "be7e05f119e90f2618ab8852663831105f2611bdcc73323f9a3fb02d886f1297",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "owner": "hsk3-fltrp-2026:l09:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l09:section3",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:picture1-blank1",
+        "hsk3-fltrp-2026:l09:field:picture1-blank2",
+        "hsk3-fltrp-2026:l09:field:picture1-blank3",
+        "hsk3-fltrp-2026:l09:field:picture1-blank4"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:picture-dialogue1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "室内球场上，学生举起篮球朝篮圈投去，其他学生在旁边练习。",
+        "vi": "Trên sân trong nhà, một học viên đưa bóng rổ lên để ném, các bạn khác tập bên cạnh."
+      },
+      "description": {
+        "zh": "室内球场上，学生举起篮球朝篮圈投去，其他学生在旁边练习。",
+        "vi": "Trên sân trong nhà, một học viên đưa bóng rổ lên để ném, các bạn khác tập bên cạnh."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk3-l09-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "924c4dab80775c4a1f90eb16df3aa098a6ae106e3d2fb6c504420dc7b875bb0c",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "owner": "hsk3-fltrp-2026:l09:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l09:section3",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:picture2-blank1",
+        "hsk3-fltrp-2026:l09:field:picture2-blank2",
+        "hsk3-fltrp-2026:l09:field:picture2-blank3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:picture-dialogue2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一人拿椭圆球拍，在室外场地把绿色小球抛高准备发球。",
+        "vi": "Một người cầm vợt bầu dục, tung bóng xanh lên để giao bóng ngoài trời."
+      },
+      "description": {
+        "zh": "一人拿椭圆球拍，在室外场地把绿色小球抛高准备发球。",
+        "vi": "Một người cầm vợt bầu dục, tung bóng xanh lên để giao bóng ngoài trời."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk3-l09-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "34404373e12c6d443c9e6ed8cd7d5bc7df715d190029dbfee0a2435661b0d43e",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l09:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 95,
+        "printedPage": 83,
+        "owner": "hsk3-fltrp-2026:l09:section3",
+        "sourceOwner": "hsk3-fltrp-2026:l09:section3",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk3-fltrp-2026:l09:field:picture3-blank1",
+        "hsk3-fltrp-2026:l09:field:picture3-blank2",
+        "hsk3-fltrp-2026:l09:field:picture3-blank3"
+      ],
+      "activityBindings": [
+        "hsk3-fltrp-2026:l09:activity:picture-dialogue3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "几个人聚坐在电视前，观看屏幕中的足球比赛。",
+        "vi": "Một nhóm người ngồi trước tivi, xem trận bóng đá trên màn hình."
+      },
+      "description": {
+        "zh": "几个人聚坐在电视前，观看屏幕中的足球比赛。",
+        "vi": "Một nhóm người ngồi trước tivi, xem trận bóng đá trên màn hình."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk3-l09-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-04",
+      "assetSha256": "39f8a3a5bde7b22bdf950162b1ed6ea09c42002763b1a9f00fcad0be2eeb44a8",
+      "rights": "Original vectors; no source pixels, external embeds, scripts, copied video controls or third-party logos. Publication status permits rendering own original artwork only; independent acceptance remains pending.",
+      "displayRequirements": [
+        "Preserve source figure order and activity bindings.",
+        "Original auxiliary schematic, not a photographic replica.",
+        "No answer letters, vocabulary answers or filled blanks in the scene."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "Inspected all 25 Inkscape-rasterized 640x400 figures in seven full-resolution contact sheets; reopened five repaired figures at native size.",
+        "independentReview": "pending"
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    }
+  ],
+  "additionalSourceRevisions": [
+    {
+      "id": "hsk3-official-vi-20261004",
+      "filename": "HSK3 (3.0).pdf",
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "bodyPrintedPageOffset": 12,
+      "language": "zh+vi",
+      "role": "additional-official-source; no replacement of original-source identity",
+      "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "sameBytesAsOriginalChineseSource": false,
+      "officialPOSAbbreviationLanguage": "Vietnamese",
+      "doesNotRevalidateOriginalEnglishAppendix": true,
+      "posLegend": {
+        "source": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表：词类缩写说明",
+          "provenance": "textbook"
+        },
+        "printedLanguage": "vi",
+        "rawLabelToChineseCategory": {
+          "dt.": "名词",
+          "đgt.": "动词",
+          "tt.": "形容词",
+          "đt.": "代词",
+          "phó.": "副词",
+          "giới.": "介词",
+          "liên.": "连词",
+          "trợ.": "助词",
+          "số.": "数词",
+          "lượng.": "量词",
+          "sl.": "数量词",
+          "ct.": "叹词",
+          "tượng.": "拟声词",
+          "đtnn.": "能愿动词",
+          "ttố.": "前缀",
+          "htố.": "后缀"
+        }
+      },
+      "sourceAudit": {
+        "authorStatus": "visual-reviewed",
+        "independentStatus": "accepted-source-evidence",
+        "scope": "Chinese, pinyin, printed number, POS, glossary page, lesson numbers and stars",
+        "vietnameseGlossAlignment": "deferred-to-Phase-B",
+        "independentEvidence": {
+          "status": "accepted-source-evidence",
+          "reviewer": "qa_hsk1_05_08",
+          "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+          "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+          "reviewedStableRows": 523,
+          "acceptedInputFiles": [
+            "official-vi-glossary.tsv",
+            "official-vi-l01-06.json",
+            "official-vi-l07-12.json",
+            "official-vi-l13-18.json"
+          ],
+          "acceptedStableIdCount": 523,
+          "acceptedInputManifest": [
+            {
+              "filename": "official-vi-glossary.tsv",
+              "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+              "status": "independently-accepted-source-evidence",
+              "glossaryRows": 487
+            },
+            {
+              "filename": "official-vi-l01-06.json",
+              "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 171,
+              "printedOccurrences": 162,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l07-12.json",
+              "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 184,
+              "printedOccurrences": 166,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l13-18.json",
+              "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 168,
+              "printedOccurrences": 163,
+              "vocabularyBoxes": 24
+            }
+          ],
+          "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+        }
+      }
+    }
+  ]
+}
+`;export{e as default};

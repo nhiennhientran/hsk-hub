@@ -1,0 +1,73 @@
+var e=`[
+  {
+    "legacyId": "legacy-textbook-l04-basic-03",
+    "lesson": 4,
+    "kind": "meaning",
+    "word": "六",
+    "contentId": "textbook-l04-v017"
+  },
+  {
+    "legacyId": "legacy-textbook-l04-basic-04",
+    "lesson": 4,
+    "kind": "meaning",
+    "word": "三",
+    "contentId": "textbook-l04-v025"
+  },
+  {
+    "legacyId": "legacy-textbook-l04-basic-05",
+    "lesson": 4,
+    "kind": "pinyin",
+    "word": "五",
+    "contentId": "textbook-l04-v030"
+  },
+  {
+    "legacyId": "legacy-textbook-l04-basic-06",
+    "lesson": 4,
+    "kind": "pinyin",
+    "word": "一",
+    "contentId": "textbook-l04-v031"
+  },
+  {
+    "legacyId": "legacy-textbook-l04-basic-07",
+    "lesson": 4,
+    "kind": "pinyin",
+    "word": "有",
+    "contentId": "textbook-l04-v032"
+  },
+  {
+    "legacyId": "legacy-textbook-l07-basic-04",
+    "lesson": 7,
+    "kind": "meaning",
+    "word": "晚上",
+    "contentId": "textbook-l07-v020"
+  },
+  {
+    "legacyId": "legacy-textbook-l07-basic-05",
+    "lesson": 7,
+    "kind": "pinyin",
+    "word": "医院",
+    "contentId": "textbook-l07-v024"
+  },
+  {
+    "legacyId": "legacy-textbook-l09-basic-04",
+    "lesson": 9,
+    "kind": "meaning",
+    "word": "书",
+    "contentId": "textbook-l09-v017"
+  },
+  {
+    "legacyId": "legacy-textbook-l09-basic-05",
+    "lesson": 9,
+    "kind": "pinyin",
+    "word": "学习",
+    "contentId": "textbook-l09-v020"
+  },
+  {
+    "legacyId": "legacy-textbook-l15-basic-05",
+    "lesson": 15,
+    "kind": "pinyin",
+    "word": "要",
+    "contentId": "textbook-l15-v014"
+  }
+]
+`;export{e as default};

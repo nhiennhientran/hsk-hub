@@ -1,0 +1,7979 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk3-fltrp-2026",
+  "version": "2026.1",
+  "number": 18,
+  "id": "hsk3-fltrp-2026:l18",
+  "title": {
+    "zh": "我学会了包饺子",
+    "vi": "Tôi đã học được cách gói sủi cảo",
+    "py": "Wǒ xuéhuì le bāo jiǎozi"
+  },
+  "source": {
+    "startPdfPage": 175,
+    "endPdfPage": 185,
+    "startPrintedPage": 163,
+    "endPrintedPage": 173
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent review: lesson-18 source, language, audio mapping and assessment audit",
+    "notes": [
+      "Independently inspected all 11 textbook page images: PDF 175–185, printed 163–173, and answer-key pages 26–27. Source transcription, speakers, options, task types and page provenance checked and corrected.",
+      "All Vietnamese translations and optional sentence pinyin are editorial additions, not printed source text. Word-list pinyin and parts of speech were checked against pixels.",
+      "Inventory: 4 objectives, 2 warm-ups, 4 texts / 25 lines / 20 printed questions, 28 numbered headwords plus 春节 and split 大概 parts of speech = 30 vocabulary records, 4 grammar points / 13 examples / 12 tasks, 10 integrated fill-ins, 3 picture dialogues, classroom activity and all 12 review rows for lessons 16–18.",
+      "All 8 original MP3 files freshly SHA-256 matched to the numeric level/lesson/track manifest entries and fully decoded with ffmpeg without errors. All 8 complete ASR outputs independently compared with the printed Chinese; name, pronoun and homophone ASR errors were not copied into source text. This is not full human-listening certification.",
+      "All 30 original homework questions and 4 separate listening questions independently checked for answerability, answer keys, plausible distractors and source independence. Five ordering items have constrained unique expected orders; five manual writing prompts contain no answers or Chinese target hints.",
+      "Supplemental picture descriptions checked against their actual images and labelled separately. No culture panel is printed in this lesson.",
+      "Detailed evidence, corrections and limits are recorded in the independent content audit. Review covers lesson 18 only and makes no completeness claim for other lessons."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并描述生活中的变化和成长经历。",
+      "vi": "Nghe hiểu và kể về những thay đổi trong cuộc sống và trải nghiệm trưởng thành.",
+      "id": "hsk3-fltrp-2026:l18:objective1",
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并使用概数表达不确定的数量。",
+      "vi": "Nghe hiểu và dùng số ước lượng để diễn đạt số lượng không xác định.",
+      "id": "hsk3-fltrp-2026:l18:objective2",
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握“只要”的用法，能表达充分条件和结果。",
+      "vi": "Nắm cách dùng 只要 để diễn đạt điều kiện đủ và kết quả.",
+      "id": "hsk3-fltrp-2026:l18:objective3",
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "了解中国传统节日“春节”的习俗。",
+      "vi": "Tìm hiểu phong tục Tết Nguyên đán, ngày lễ truyền thống của Trung Quốc.",
+      "id": "hsk3-fltrp-2026:l18:objective4",
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk3-fltrp-2026:l18:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép cụm từ với hình tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 包饺子；B 给红包；C 说“过年好”；D 吃年夜饭；E 打扫房子；F 看春节联欢晚会。",
+          "vi": "A gói sủi cảo; B mừng tuổi bằng bao lì xì; C nói “Chúc mừng năm mới”; D ăn cơm tất niên; E dọn nhà; F xem chương trình văn nghệ mừng xuân."
+        },
+        {
+          "zh": "图片说明（编辑补充）：从左到右、从上到下：一家人举春联拜年；长辈给孩子红包；家人一起吃饭；包饺子；全家看电视；打扫房子。",
+          "vi": "Mô tả hình do biên soạn bổ sung, từ trái sang phải và trên xuống dưới: gia đình cầm câu đối chúc Tết; người lớn lì xì trẻ nhỏ; cả nhà ăn cơm; gói sủi cảo; cả nhà xem truyền hình; dọn nhà.",
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身图片：编辑描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:warmup2",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên thực tế."
+      },
+      "items": [
+        {
+          "zh": "你在中国过过哪些节日？",
+          "vi": "Bạn từng đón những ngày lễ nào ở Trung Quốc?"
+        },
+        {
+          "zh": "你知道中国人怎么过春节吗？",
+          "vi": "Bạn có biết người Trung Quốc đón Tết Nguyên đán thế nào không?"
+        }
+      ],
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk3-fltrp-2026:l18:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在飞机上，白家月和李文在聊天儿。",
+        "vi": "Trên máy bay, Gia Nguyệt và Lý Văn trò chuyện."
+      },
+      "audioTrack": "18-1",
+      "lines": [
+        {
+          "zh": "我要在中国过年，真开心。",
+          "vi": "Tôi sắp đón Tết ở Trung Quốc, vui thật.",
+          "id": "hsk3-fltrp-2026:l18:text1:line1",
+          "speaker": "白家月",
+          "py": "Wǒ yào zài Zhōngguó guònián, zhēn kāixīn.",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第一次请外国朋友来家里过春节，我也很高兴。",
+          "vi": "Lần đầu mời bạn nước ngoài đến nhà đón Tết, tôi cũng rất vui.",
+          "id": "hsk3-fltrp-2026:l18:text1:line2",
+          "speaker": "李文",
+          "py": "Dì yī cì qǐng wàiguó péngyou lái jiā lǐ guò Chūnjié, wǒ yě hěn gāoxìng.",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你们怎样过节？",
+          "vi": "Các bạn đón Tết như thế nào?",
+          "id": "hsk3-fltrp-2026:l18:text1:line3",
+          "speaker": "白家月",
+          "py": "Nǐmen zěnyàng guòjié?",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "春节是中国最重要的节日，我们一般会回家，跟家人一起过。",
+          "vi": "Tết Nguyên đán là ngày lễ quan trọng nhất ở Trung Quốc. Chúng tôi thường về nhà đón Tết cùng gia đình.",
+          "id": "hsk3-fltrp-2026:l18:text1:line4",
+          "speaker": "李文",
+          "py": "Chūnjié shì Zhōngguó zuì zhòngyào de jiérì, wǒmen yìbān huì huí jiā, gēn jiārén yìqǐ guò.",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那你跟家人会一起做什么？",
+          "vi": "Vậy bạn và gia đình cùng làm gì?",
+          "id": "hsk3-fltrp-2026:l18:text1:line5",
+          "speaker": "白家月",
+          "py": "Nà nǐ gēn jiārén huì yìqǐ zuò shénme?",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我们家会一边包饺子，一边看春节联欢晚会，一直到十二点以后才睡觉。",
+          "vi": "Nhà tôi vừa gói sủi cảo vừa xem chương trình văn nghệ mừng xuân, đến sau mười hai giờ mới ngủ.",
+          "id": "hsk3-fltrp-2026:l18:text1:line6",
+          "speaker": "李文",
+          "py": "Wǒmen jiā huì yìbiān bāo jiǎozi, yìbiān kàn Chūnjié Liánhuān Wǎnhuì, yìzhí dào shí'èr diǎn yǐhòu cái shuìjiào.",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "听起来很有意思。春节放几天假？",
+          "vi": "Nghe thú vị quá. Tết được nghỉ mấy ngày?",
+          "id": "hsk3-fltrp-2026:l18:text1:line7",
+          "speaker": "白家月",
+          "py": "Tīng qǐlai hěn yǒu yìsi. Chūnjié fàng jǐ tiān jià?",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "大概七八天。",
+          "vi": "Khoảng bảy, tám ngày.",
+          "id": "hsk3-fltrp-2026:l18:text1:line8",
+          "speaker": "李文",
+          "py": "Dàgài qī bā tiān.",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月为什么很开心？",
+          "vi": "Vì sao Gia Nguyệt rất vui?",
+          "id": "hsk3-fltrp-2026:l18:text1:question1",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "可以去北京",
+            "可以去李文家",
+            "可以在中国过春节"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "中国人一般怎么过春节？",
+          "vi": "Người Trung Quốc thường đón Tết thế nào?",
+          "id": "hsk3-fltrp-2026:l18:text1:question2",
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "去朋友家过节",
+            "出去旅游过节",
+            "跟家人一起过节"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文为什么很高兴？",
+          "vi": "Vì sao Lý Văn rất vui?",
+          "id": "hsk3-fltrp-2026:l18:text1:question3",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文和家人春节的时候会做什么？",
+          "vi": "Lý Văn và gia đình làm gì vào dịp Tết?",
+          "id": "hsk3-fltrp-2026:l18:text1:question4",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "春节大概放几天假？",
+          "vi": "Tết được nghỉ khoảng mấy ngày?",
+          "id": "hsk3-fltrp-2026:l18:text1:question5",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在李文家，白家月给李文的父母拜年。",
+        "vi": "Tại nhà Lý Văn, Gia Nguyệt chúc Tết bố mẹ anh."
+      },
+      "audioTrack": "18-3",
+      "lines": [
+        {
+          "zh": "张阿姨，李叔叔。过年好！这是我准备的礼物，请收下。",
+          "vi": "Cháu chúc cô Trương, chú Lý năm mới vui vẻ! Đây là quà cháu chuẩn bị, xin cô chú nhận cho.",
+          "id": "hsk3-fltrp-2026:l18:text2:line1",
+          "speaker": "白家月",
+          "py": "Zhāng āyí, Lǐ shūshu. Guònián hǎo! Zhè shì wǒ zhǔnbèi de lǐwù, qǐng shōu xià.",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "谢谢家月，你太客气了！",
+          "vi": "Cảm ơn Gia Nguyệt, cháu khách sáo quá!",
+          "id": "hsk3-fltrp-2026:l18:text2:line2",
+          "speaker": "李叔叔",
+          "py": "Xièxie Jiāyuè, nǐ tài kèqi le!",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "总听小文说起你，今天终于有机会见面了。",
+          "vi": "Cô thường nghe Tiểu Văn nhắc đến cháu, hôm nay cuối cùng cũng có dịp gặp mặt.",
+          "id": "hsk3-fltrp-2026:l18:text2:line3",
+          "speaker": "张阿姨",
+          "py": "Zǒng tīng Xiǎo Wén shuō qǐ nǐ, jīntiān zhōngyú yǒu jīhuì jiànmiàn le.",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "谢谢您和叔叔请我来家里做客。",
+          "vi": "Cháu cảm ơn cô chú đã mời cháu đến chơi nhà.",
+          "id": "hsk3-fltrp-2026:l18:text2:line4",
+          "speaker": "白家月",
+          "py": "Xièxie nín hé shūshu qǐng wǒ lái jiā lǐ zuòkè.",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "桌子上有饮料，还有矿泉水，你想喝什么就自己拿。",
+          "vi": "Trên bàn có đồ uống và nước khoáng, cháu muốn uống gì thì tự lấy nhé.",
+          "id": "hsk3-fltrp-2026:l18:text2:line5",
+          "speaker": "李叔叔",
+          "py": "Zhuōzi shàng yǒu yǐnliào, hái yǒu kuàngquánshuǐ, nǐ xiǎng hē shénme jiù zìjǐ ná.",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你先坐着看会儿电视，饺子很快就包好了。",
+          "vi": "Cháu cứ ngồi xem tivi một lát, sủi cảo sắp gói xong rồi.",
+          "id": "hsk3-fltrp-2026:l18:text2:line6",
+          "speaker": "张阿姨",
+          "py": "Nǐ xiān zuòzhe kàn huìr diànshì, jiǎozi hěn kuài jiù bāo hǎo le.",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我刚刚看视频学会了包饺子，我跟你们一起包吧。",
+          "vi": "Cháu vừa xem video học được cách gói sủi cảo, cho cháu gói cùng cô chú nhé.",
+          "id": "hsk3-fltrp-2026:l18:text2:line7",
+          "speaker": "白家月",
+          "py": "Wǒ gānggāng kàn shìpín xuéhuì le bāo jiǎozi, wǒ gēn nǐmen yìqǐ bāo ba.",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月为什么去李文家？",
+          "vi": "Vì sao Gia Nguyệt đến nhà Lý Văn?",
+          "id": "hsk3-fltrp-2026:l18:text2:question1",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "送礼物",
+            "学包饺子",
+            "一起过年"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文家今天晚上吃什么？",
+          "vi": "Tối nay nhà Lý Văn ăn gì?",
+          "id": "hsk3-fltrp-2026:l18:text2:question2",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "饺子",
+            "包子",
+            "面条儿"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "白家月送礼物的时候说什么了？",
+          "vi": "Gia Nguyệt nói gì khi tặng quà?",
+          "id": "hsk3-fltrp-2026:l18:text2:question3",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文的家人是怎么欢迎白家月的？",
+          "vi": "Gia đình Lý Văn đón tiếp Gia Nguyệt thế nào?",
+          "id": "hsk3-fltrp-2026:l18:text2:question4",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月想跟李文的家人一起做什么？",
+          "vi": "Gia Nguyệt muốn làm gì cùng gia đình Lý Văn?",
+          "id": "hsk3-fltrp-2026:l18:text2:question5",
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "课文2：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在李文家，李文妈妈和白家月在聊天儿。",
+        "vi": "Tại nhà Lý Văn, mẹ anh và Gia Nguyệt trò chuyện."
+      },
+      "audioTrack": "18-5",
+      "lines": [
+        {
+          "zh": "这张照片是李文出国前照的吗？",
+          "vi": "Tấm ảnh này chụp trước khi Lý Văn ra nước ngoài phải không ạ?",
+          "id": "hsk3-fltrp-2026:l18:text3:line1",
+          "speaker": "白家月",
+          "py": "Zhè zhāng zhàopiàn shì Lǐ Wén chū guó qián zhào de ma?",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "对，这是他从北京出发时，我们全家在机场照的。",
+          "vi": "Đúng, ảnh cả nhà chụp ở sân bay khi Lý Văn khởi hành từ Bắc Kinh.",
+          "id": "hsk3-fltrp-2026:l18:text3:line2",
+          "speaker": "张阿姨",
+          "py": "Duì, zhè shì tā cóng Běijīng chūfā shí, wǒmen quán jiā zài jīchǎng zhào de.",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那是三四年前吧？",
+          "vi": "Chắc là ba, bốn năm trước ạ?",
+          "id": "hsk3-fltrp-2026:l18:text3:line3",
+          "speaker": "白家月",
+          "py": "Nà shì sān sì nián qián ba?",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "是啊，时间过得真快，好像是不久前发生的一样。",
+          "vi": "Ừ, thời gian trôi nhanh thật, cứ như mới xảy ra cách đây không lâu.",
+          "id": "hsk3-fltrp-2026:l18:text3:line4",
+          "speaker": "张阿姨",
+          "py": "Shì a, shíjiān guò de zhēn kuài, hǎoxiàng shì bùjiǔ qián fāshēng de yíyàng.",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "您一定特别想李文吧？",
+          "vi": "Chắc cô rất nhớ Lý Văn ạ?",
+          "id": "hsk3-fltrp-2026:l18:text3:line5",
+          "speaker": "白家月",
+          "py": "Nín yídìng tèbié xiǎng Lǐ Wén ba?",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他刚离开家时，我很不习惯，只要几天不跟他视频，就很想他。",
+          "vi": "Lúc con mới xa nhà, cô chưa quen chút nào. Chỉ cần vài ngày không gọi video là cô nhớ con lắm.",
+          "id": "hsk3-fltrp-2026:l18:text3:line6",
+          "speaker": "张阿姨",
+          "py": "Tā gāng líkāi jiā shí, wǒ hěn bù xíguàn, zhǐyào jǐ tiān bù gēn tā shìpín, jiù hěn xiǎng tā.",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "还有最后一个学期就要毕业了，他很快就会回来了。",
+          "vi": "Chỉ còn học kỳ cuối là tốt nghiệp, anh ấy sẽ sớm về thôi ạ.",
+          "id": "hsk3-fltrp-2026:l18:text3:line7",
+          "speaker": "白家月",
+          "py": "Hái yǒu zuìhòu yí ge xuéqī jiù yào bìyè le, tā hěn kuài jiù huì huílai le.",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月和李文妈妈在做什么？",
+          "vi": "Gia Nguyệt và mẹ Lý Văn đang làm gì?",
+          "id": "hsk3-fltrp-2026:l18:text3:question1",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "一起看电视",
+            "一起看视频",
+            "一起看照片"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文什么时候毕业？",
+          "vi": "Khi nào Lý Văn tốt nghiệp?",
+          "id": "hsk3-fltrp-2026:l18:text3:question2",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "一个月以后",
+            "一个学期以后",
+            "三四年以后"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "李文第一次出国留学，是从哪儿出发的？",
+          "vi": "Lần đầu đi du học, Lý Văn khởi hành từ đâu?",
+          "id": "hsk3-fltrp-2026:l18:text3:question3",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文全家的照片是什么时候照的？",
+          "vi": "Ảnh cả gia đình Lý Văn được chụp khi nào?",
+          "id": "hsk3-fltrp-2026:l18:text3:question4",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文刚离开家的时候，张阿姨怎么样？",
+          "vi": "Khi Lý Văn mới xa nhà, cô Trương cảm thấy thế nào?",
+          "id": "hsk3-fltrp-2026:l18:text3:question5",
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "contextSource": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "课文3：情境",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在家里，白家月在写日记。",
+        "vi": "Ở nhà, Gia Nguyệt viết nhật ký."
+      },
+      "audioTrack": "18-7",
+      "lines": [
+        {
+          "zh": "这次来中国，我最高兴的是认识了李文的父母。他们给我看了李文出生时的照片，还给我讲了很多他过去的故事。",
+          "vi": "Lần này đến Trung Quốc, điều khiến tôi vui nhất là được gặp bố mẹ Lý Văn. Họ cho tôi xem ảnh lúc anh ấy mới sinh và kể nhiều chuyện trước đây của anh ấy.",
+          "id": "hsk3-fltrp-2026:l18:text4:line1",
+          "speaker": "白家月",
+          "py": "Zhè cì lái Zhōngguó, wǒ zuì gāoxìng de shì rènshi le Lǐ Wén de fùmǔ. Tāmen gěi wǒ kàn le Lǐ Wén chūshēng shí de zhàopiàn, hái gěi wǒ jiǎng le hěn duō tā guòqù de gùshi.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文高中的时候想学医，从那时起就努力学习。高三的时候，因为成绩特别好，他得到了出国留学的机会。",
+          "vi": "Hồi cấp ba, Lý Văn muốn học y nên từ đó đã chăm chỉ học tập. Năm cuối cấp ba, nhờ thành tích rất tốt, anh ấy có cơ hội đi du học.",
+          "id": "hsk3-fltrp-2026:l18:text4:line2",
+          "speaker": "白家月",
+          "py": "Lǐ Wén gāozhōng de shíhou xiǎng xué yī, cóng nà shí qǐ jiù nǔlì xuéxí. Gāo sān de shíhou, yīnwèi chéngjì tèbié hǎo, tā dédào le chū guó liúxué de jīhuì.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "在他身上，我懂得了，只要一直坚持，就能完成自己的目标。我相信，他以后一定会发展得更好。",
+          "vi": "Qua anh ấy, tôi hiểu rằng chỉ cần kiên trì thì có thể đạt mục tiêu của mình. Tôi tin sau này anh ấy nhất định sẽ phát triển tốt hơn.",
+          "id": "hsk3-fltrp-2026:l18:text4:line3",
+          "speaker": "白家月",
+          "py": "Zài tā shēnshang, wǒ dǒngde le, zhǐyào yìzhí jiānchí, jiù néng wánchéng zìjǐ de mùbiāo. Wǒ xiāngxìn, tā yǐhòu yídìng huì fāzhǎn de gèng hǎo.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月这次来中国，让她最高兴的事是什么？",
+          "vi": "Trong chuyến đến Trung Quốc lần này, điều khiến Gia Nguyệt vui nhất là gì?",
+          "id": "hsk3-fltrp-2026:l18:text4:question1",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "过春节",
+            "吃饺子",
+            "认识李文的父母"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "在李文身上，白家月学到什么了？",
+          "vi": "Gia Nguyệt học được điều gì từ Lý Văn?",
+          "id": "hsk3-fltrp-2026:l18:text4:question2",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "如果想学医，就要努力学习",
+            "只有成绩好，才能出国留学",
+            "只要坚持努力，就能完成目标"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文的父母给白家月看什么了？",
+          "vi": "Bố mẹ Lý Văn cho Gia Nguyệt xem gì?",
+          "id": "hsk3-fltrp-2026:l18:text4:question3",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月从李文的父母那里了解到什么了？",
+          "vi": "Gia Nguyệt biết được điều gì từ bố mẹ Lý Văn?",
+          "id": "hsk3-fltrp-2026:l18:text4:question4",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文为什么能得到出国留学的机会？",
+          "vi": "Vì sao Lý Văn có cơ hội du học?",
+          "id": "hsk3-fltrp-2026:l18:text4:question5",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "课文4",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "怎样",
+      "vi": "như thế nào",
+      "id": "hsk3-fltrp-2026:l18:word01",
+      "py": "zěnyàng",
+      "pos": "đại từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "怎样",
+            "printedPinyin": "zěnyàng",
+            "normalizedPinyin": "zěnyàng",
+            "printedNumber": 1,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "代词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "怎样",
+            "printedPinyin": "zěnyàng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "过节",
+      "vi": "đón lễ, ăn Tết",
+      "id": "hsk3-fltrp-2026:l18:word02",
+      "py": "guòjié",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "过节",
+            "printedPinyin": "guòjié",
+            "normalizedPinyin": "guòjié",
+            "printedNumber": 2,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "过节",
+            "printedPinyin": "guòjié",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "节",
+      "vi": "ngày lễ, Tết",
+      "id": "hsk3-fltrp-2026:l18:word03",
+      "py": "jié",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "节",
+            "printedPinyin": "jié",
+            "normalizedPinyin": "jié",
+            "printedNumber": 3,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "节",
+            "printedPinyin": "jié",
+            "lessonNumbers": [
+              14,
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "节日",
+      "vi": "ngày lễ",
+      "id": "hsk3-fltrp-2026:l18:word04",
+      "py": "jiérì",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "节日",
+            "printedPinyin": "jiérì",
+            "normalizedPinyin": "jiérì",
+            "printedNumber": 4,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "节日",
+            "printedPinyin": "jiérì",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "联欢",
+      "vi": "liên hoan, cùng vui chơi",
+      "id": "hsk3-fltrp-2026:l18:word05",
+      "py": "liánhuān",
+      "pos": "động từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 190,
+        "printedPage": 178,
+        "section": "词语表：联欢",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "联欢",
+            "printedPinyin": "liánhuān",
+            "normalizedPinyin": "liánhuān",
+            "printedNumber": 5,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "联欢",
+            "printedPinyin": "liánhuān",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "大概",
+      "vi": "có lẽ; khoảng, chừng",
+      "id": "hsk3-fltrp-2026:l18:word06",
+      "py": "dàgài",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "大概",
+            "printedPinyin": "dàgài",
+            "normalizedPinyin": "dàgài",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó./\\ntt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词",
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "大概",
+            "printedPinyin": "dàgài",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "大概",
+      "vi": "sơ lược, đại khái",
+      "id": "hsk3-fltrp-2026:l18:word07",
+      "py": "dàgài",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "大概",
+            "printedPinyin": "dàgài",
+            "normalizedPinyin": "dàgài",
+            "printedNumber": 6,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó./\\ntt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词",
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "大概",
+            "printedPinyin": "dàgài",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "春节",
+      "vi": "Tết Nguyên đán",
+      "id": "hsk3-fltrp-2026:l18:word08",
+      "py": "Chūnjié",
+      "pos": "danh từ riêng",
+      "sourceText": 1,
+      "audioTrack": "18-2",
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 176,
+              "printedPage": 164,
+              "section": "课文1：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "春节",
+            "printedPinyin": "Chūnjié",
+            "normalizedPinyin": "Chūnjié",
+            "printedNumber": 1,
+            "sourceList": "proper-names",
+            "printedPOSRaw": null,
+            "printedPOSLanguage": "vi",
+            "posPrinted": false,
+            "posCategoriesZh": [],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "春节",
+            "printedPinyin": "Chūnjié",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "阿姨",
+      "vi": "cô, dì (cách xưng hô với phụ nữ thế hệ mẹ)",
+      "id": "hsk3-fltrp-2026:l18:word09",
+      "py": "āyí",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "阿姨",
+            "printedPinyin": "āyí",
+            "normalizedPinyin": "āyí",
+            "printedNumber": 7,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 186,
+              "printedPage": 174,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "阿姨",
+            "printedPinyin": "āyí",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "叔叔",
+      "vi": "chú (cách xưng hô với nam giới thế hệ cha)",
+      "id": "hsk3-fltrp-2026:l18:word10",
+      "py": "shūshu",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "叔叔",
+            "printedPinyin": "shūshu",
+            "normalizedPinyin": "shūshu",
+            "printedNumber": 8,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "叔叔",
+            "printedPinyin": "shūshu",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "收",
+      "vi": "nhận",
+      "id": "hsk3-fltrp-2026:l18:word11",
+      "py": "shōu",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "收",
+            "printedPinyin": "shōu",
+            "normalizedPinyin": "shōu",
+            "printedNumber": 9,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "收",
+            "printedPinyin": "shōu",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "总",
+      "vi": "luôn, thường xuyên",
+      "id": "hsk3-fltrp-2026:l18:word12",
+      "py": "zǒng",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "总",
+            "printedPinyin": "zǒng",
+            "normalizedPinyin": "zǒng",
+            "printedNumber": 10,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 194,
+              "printedPage": 182,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "总",
+            "printedPinyin": "zǒng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "起",
+      "vi": "(sau động từ) chỉ người hoặc sự việc được nói đến, nhớ đến",
+      "id": "hsk3-fltrp-2026:l18:word13",
+      "py": "qǐ",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "起",
+            "printedPinyin": "qǐ",
+            "normalizedPinyin": "qǐ",
+            "printedNumber": 11,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "起",
+            "printedPinyin": "qǐ",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "见面",
+      "vi": "gặp mặt",
+      "id": "hsk3-fltrp-2026:l18:word14",
+      "py": "jiànmiàn",
+      "pos": "động từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "见面",
+            "printedPinyin": "jiànmiàn",
+            "normalizedPinyin": "jiànmiàn",
+            "printedNumber": 12,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "见面",
+            "printedPinyin": "jiànmiàn",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "矿泉水",
+      "vi": "nước khoáng",
+      "id": "hsk3-fltrp-2026:l18:word15",
+      "py": "kuàngquánshuǐ",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "矿泉水",
+            "printedPinyin": "kuàngquán-\\nshuǐ",
+            "normalizedPinyin": "kuàngquánshuǐ",
+            "printedNumber": 13,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 190,
+              "printedPage": 178,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "矿泉水",
+            "printedPinyin": "kuàngquánshuǐ",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "刚刚",
+      "vi": "vừa mới",
+      "id": "hsk3-fltrp-2026:l18:word16",
+      "py": "gānggāng",
+      "pos": "phó từ",
+      "sourceText": 2,
+      "audioTrack": "18-4",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 178,
+              "printedPage": 166,
+              "section": "课文2：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "刚刚",
+            "printedPinyin": "gānggāng",
+            "normalizedPinyin": "gānggāng",
+            "printedNumber": 14,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "刚刚",
+            "printedPinyin": "gānggāng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "出发",
+      "vi": "khởi hành, xuất phát",
+      "id": "hsk3-fltrp-2026:l18:word17",
+      "py": "chūfā",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "出发",
+            "printedPinyin": "chūfā",
+            "normalizedPinyin": "chūfā",
+            "printedNumber": 15,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "出发",
+            "printedPinyin": "chūfā",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "不久",
+      "vi": "không lâu",
+      "id": "hsk3-fltrp-2026:l18:word18",
+      "py": "bùjiǔ",
+      "pos": "tính từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "不久",
+            "printedPinyin": "bùjiǔ",
+            "normalizedPinyin": "bùjiǔ",
+            "printedNumber": 16,
+            "sourceList": "new-words",
+            "printedPOSRaw": "tt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "形容词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "不久",
+            "printedPinyin": "bùjiǔ",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "发生",
+      "vi": "xảy ra",
+      "id": "hsk3-fltrp-2026:l18:word19",
+      "py": "fāshēng",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "发生",
+            "printedPinyin": "fāshēng",
+            "normalizedPinyin": "fāshēng",
+            "printedNumber": 17,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "发生",
+            "printedPinyin": "fāshēng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "刚",
+      "vi": "vừa, mới",
+      "id": "hsk3-fltrp-2026:l18:word20",
+      "py": "gāng",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "刚",
+            "printedPinyin": "gāng",
+            "normalizedPinyin": "gāng",
+            "printedNumber": 18,
+            "sourceList": "new-words",
+            "printedPOSRaw": "phó.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "副词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "刚",
+            "printedPinyin": "gāng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "只要",
+      "vi": "chỉ cần",
+      "id": "hsk3-fltrp-2026:l18:word21",
+      "py": "zhǐyào",
+      "pos": "liên từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "只要",
+            "printedPinyin": "zhǐyào",
+            "normalizedPinyin": "zhǐyào",
+            "printedNumber": 19,
+            "sourceList": "new-words",
+            "printedPOSRaw": "liên.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "连词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "只要",
+            "printedPinyin": "zhǐyào",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "学期",
+      "vi": "học kỳ",
+      "id": "hsk3-fltrp-2026:l18:word22",
+      "py": "xuéqī",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "学期",
+            "printedPinyin": "xuéqī",
+            "normalizedPinyin": "xuéqī",
+            "printedNumber": 20,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 193,
+              "printedPage": 181,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "学期",
+            "printedPinyin": "xuéqī",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "毕业",
+      "vi": "tốt nghiệp",
+      "id": "hsk3-fltrp-2026:l18:word23",
+      "py": "bìyè",
+      "pos": "động từ",
+      "sourceText": 3,
+      "audioTrack": "18-6",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 187,
+        "printedPage": 175,
+        "section": "词语表：毕业",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 180,
+              "printedPage": 168,
+              "section": "课文3：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "毕业",
+            "printedPinyin": "bìyè",
+            "normalizedPinyin": "bìyè",
+            "printedNumber": 21,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "毕业",
+            "printedPinyin": "bìyè",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "出生",
+      "vi": "ra đời, sinh ra",
+      "id": "hsk3-fltrp-2026:l18:word24",
+      "py": "chūshēng",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "出生",
+            "printedPinyin": "chūshēng",
+            "normalizedPinyin": "chūshēng",
+            "printedNumber": 22,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 187,
+              "printedPage": 175,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "出生",
+            "printedPinyin": "chūshēng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "过去",
+      "vi": "quá khứ, trước đây",
+      "id": "hsk3-fltrp-2026:l18:word25",
+      "py": "guòqù",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "过去",
+            "printedPinyin": "guòqù",
+            "normalizedPinyin": "guòqù",
+            "printedNumber": 23,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "过去",
+            "printedPinyin": "guòqù",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "懂得",
+      "vi": "hiểu, biết",
+      "id": "hsk3-fltrp-2026:l18:word26",
+      "py": "dǒngde",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "懂得",
+            "printedPinyin": "dǒngde",
+            "normalizedPinyin": "dǒngde",
+            "printedNumber": 24,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "懂得",
+            "printedPinyin": "dǒngde",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "坚持",
+      "vi": "kiên trì",
+      "id": "hsk3-fltrp-2026:l18:word27",
+      "py": "jiānchí",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "坚持",
+            "printedPinyin": "jiānchí",
+            "normalizedPinyin": "jiānchí",
+            "printedNumber": 25,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 189,
+              "printedPage": 177,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "坚持",
+            "printedPinyin": "jiānchí",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "完成",
+      "vi": "hoàn thành",
+      "id": "hsk3-fltrp-2026:l18:word28",
+      "py": "wánchéng",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "完成",
+            "printedPinyin": "wánchéng",
+            "normalizedPinyin": "wánchéng",
+            "printedNumber": 26,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 192,
+              "printedPage": 180,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "完成",
+            "printedPinyin": "wánchéng",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    },
+    {
+      "zh": "目标",
+      "vi": "mục tiêu",
+      "id": "hsk3-fltrp-2026:l18:word29",
+      "py": "mùbiāo",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": true,
+      "appendixSource": {
+        "pdfPage": 191,
+        "printedPage": 179,
+        "section": "词语表：目标",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "目标",
+            "printedPinyin": "mùbiāo",
+            "normalizedPinyin": "mùbiāo",
+            "printedNumber": 27,
+            "sourceList": "new-words",
+            "printedPOSRaw": "dt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "名词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 191,
+              "printedPage": 179,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "目标",
+            "printedPinyin": "mùbiāo",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": true
+          }
+        }
+      ]
+    },
+    {
+      "zh": "发展",
+      "vi": "phát triển",
+      "id": "hsk3-fltrp-2026:l18:word30",
+      "py": "fāzhǎn",
+      "pos": "động từ",
+      "sourceText": 4,
+      "audioTrack": "18-8",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "additionalSourceEvidence": [
+        {
+          "sourceRevisionId": "hsk3-official-vi-20261004",
+          "vocabulary": {
+            "source": {
+              "pdfPage": 182,
+              "printedPage": 170,
+              "section": "课文4：生词与专有名词",
+              "provenance": "textbook"
+            },
+            "headword": "发展",
+            "printedPinyin": "fāzhǎn",
+            "normalizedPinyin": "fāzhǎn",
+            "printedNumber": 28,
+            "sourceList": "new-words",
+            "printedPOSRaw": "đgt.",
+            "printedPOSLanguage": "vi",
+            "posPrinted": true,
+            "posCategoriesZh": [
+              "动词"
+            ],
+            "posScope": "complete-printed-entry-POS-set; current stable senses remain distinct"
+          },
+          "glossary": {
+            "source": {
+              "pdfPage": 188,
+              "printedPage": 176,
+              "section": "词语表",
+              "provenance": "textbook"
+            },
+            "headword": "发展",
+            "printedPinyin": "fāzhǎn",
+            "lessonNumbers": [
+              18
+            ],
+            "rawStarred": false
+          }
+        }
+      ]
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk3-fltrp-2026:l18:grammar1",
+      "title": {
+        "zh": "概数表达法",
+        "vi": "Cách diễn đạt số ước lượng"
+      },
+      "structure": "Hai số liền kề + lượng từ / đơn vị",
+      "explanation": {
+        "zh": "汉语中相邻的两个数字连用，表示不确定的数量。",
+        "vi": "Hai số liền kề đi cùng nhau để chỉ số lượng ước chừng, không phải phép cộng hay một số ghép chính xác."
+      },
+      "examples": [
+        {
+          "zh": "春节大概放七八天假。",
+          "vi": "Tết được nghỉ khoảng bảy, tám ngày.",
+          "py": "Chūnjié dàgài fàng qī bā tiān jià.",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "教室里来了五六个学生。",
+          "vi": "Có khoảng năm, sáu học sinh đến lớp.",
+          "py": "Jiàoshì lǐ lái le wǔ liù ge xuésheng.",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这些照片是三四年前照的吧？",
+          "vi": "Những ảnh này chụp khoảng ba, bốn năm trước phải không?",
+          "py": "Zhèxiē zhàopiàn shì sān sì nián qián zhào de ba?",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "用“概数表达法”回答问题：你一般晚上几点睡觉？",
+          "vi": "Dùng số ước lượng trả lời: Buổi tối bạn thường ngủ lúc mấy giờ?",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法：用“概数表达法”回答问题",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“概数表达法”回答问题：你每天学习多长时间汉语？",
+          "vi": "Dùng số ước lượng trả lời: Mỗi ngày bạn học tiếng Trung bao lâu?",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法：用“概数表达法”回答问题",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“概数表达法”回答问题：你们国家新年一般放几天假？",
+          "vi": "Dùng số ước lượng trả lời: Nước bạn thường nghỉ Tết mấy ngày?",
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法：用“概数表达法”回答问题",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "概数表达法",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:grammar2",
+      "title": {
+        "zh": "“刚才”和“刚刚”",
+        "vi": "Phân biệt 刚才 và 刚刚"
+      },
+      "structure": "刚才 (danh từ thời gian) / chủ ngữ + 刚刚 (phó từ) + động từ",
+      "explanation": {
+        "zh": "“刚才”是时间名词，表示很短的时间以前，一般来说就是几分钟以前。“刚才”可以放在句首，也可以放在主语后面，动词前面。“刚刚”是时间副词，表示对说话人来说事情发生的时间不长，可能是几分钟、几天甚至几个月。“刚刚”应该放在主语后面，动词前面。",
+        "vi": "刚才 là danh từ thời gian, chỉ cách đây rất ít lâu, thường vài phút; đặt đầu câu hoặc sau chủ ngữ trước động từ, cũng có thể làm định ngữ với 的. 刚刚 là phó từ, diễn đạt việc mới xảy ra theo cảm nhận người nói, có thể vài phút, vài ngày hay thậm chí vài tháng; theo mẫu trong sách, đứng sau chủ ngữ trước động từ."
+      },
+      "examples": [
+        {
+          "zh": "刚才的电话是我妈妈打来的。",
+          "vi": "Cuộc gọi vừa rồi là mẹ tôi gọi đến.",
+          "py": "Gāngcái de diànhuà shì wǒ māma dǎ lái de.",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我刚才看过一遍，不想再看了。",
+          "vi": "Tôi vừa xem một lượt rồi, không muốn xem nữa.",
+          "py": "Wǒ gāngcái kàn guo yí biàn, bù xiǎng zài kàn le.",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我刚刚看视频学会了包饺子。",
+          "vi": "Tôi vừa xem video và học được cách gói sủi cảo.",
+          "py": "Wǒ gānggāng kàn shìpín xuéhuì le bāo jiǎozi.",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他刚刚来北京两个月。",
+          "vi": "Anh ấy mới đến Bắc Kinh được hai tháng.",
+          "py": "Tā gānggāng lái Běijīng liǎng ge yuè.",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "用“刚刚”或者“刚才”填空：请你再说一遍______的问题。",
+          "vi": "Điền 刚刚 hoặc 刚才: Xin bạn nhắc lại câu hỏi ______.",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“刚刚”或者“刚才”填空：你______来了两三天就要走，为什么？",
+          "vi": "Điền 刚刚 hoặc 刚才: Bạn ______ đến hai, ba ngày mà đã đi, vì sao?",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "用“刚刚”或者“刚才”填空：我不是______开始学习中文的，我已经学了一年了。",
+          "vi": "Điền 刚刚 hoặc 刚才: Tôi không phải ______ bắt đầu học tiếng Trung; tôi đã học được một năm rồi.",
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "“刚才”和“刚刚”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:grammar3",
+      "title": {
+        "zh": "条件复句“只要……，就……”",
+        "vi": "Câu điều kiện 只要……，就……"
+      },
+      "structure": "只要 + điều kiện đủ，chủ ngữ + 就 + kết quả",
+      "explanation": {
+        "zh": "“只要……，就……”中，“只要”后面是所需要的充分条件，有这个条件就能产生“就”后面的结果。主语可以放在“只要”前，也可以放在“只要”后。如果句子有两个主语，第二个主语要放在“就”前面。",
+        "vi": "只要 nêu điều kiện đủ: chỉ cần điều kiện ấy có thì kết quả sau 就 có thể xảy ra. Chủ ngữ có thể đứng trước hoặc sau 只要; nếu có hai chủ ngữ, chủ ngữ thứ hai đứng trước 就. Phân biệt với 只有……才…… nêu điều kiện cần."
+      },
+      "examples": [
+        {
+          "zh": "我只要几天不跟他视频，就很想他。",
+          "vi": "Chỉ cần vài ngày không gọi video với con là tôi nhớ con lắm.",
+          "py": "Wǒ zhǐyào jǐ tiān bù gēn tā shìpín, jiù hěn xiǎng tā.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "只要你同意，我们就这么决定了。",
+          "vi": "Chỉ cần bạn đồng ý, chúng ta quyết định như vậy nhé.",
+          "py": "Zhǐyào nǐ tóngyì, wǒmen jiù zhème juédìng le.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "只要你坚持每天早睡，身体就一定会好起来。",
+          "vi": "Chỉ cần bạn kiên trì ngủ sớm mỗi ngày, sức khỏe nhất định sẽ khá lên.",
+          "py": "Zhǐyào nǐ jiānchí měi tiān zǎo shuì, shēntǐ jiù yídìng huì hǎo qǐlai.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你对大家都这么好啊？ B：我相信只要我对别人好，______。",
+          "vi": "A: Bạn tốt với mọi người như vậy à? B: Tôi tin chỉ cần tôi tốt với người khác thì ______.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：只要你努力学习，______。 B：老师，我一定会努力的。",
+          "vi": "A: Chỉ cần em chăm chỉ học thì ______. B: Thưa thầy/cô, em nhất định sẽ cố gắng.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：张阿姨，谢谢您做了这么多菜，一定累得很。 B：不累，______，我就不觉得累。",
+          "vi": "A: Cháu cảm ơn cô Trương đã nấu nhiều món, chắc cô mệt lắm. B: Không mệt đâu, ______ thì cô không thấy mệt.",
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "条件复句“只要……，就……”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:grammar4",
+      "title": {
+        "zh": "固定格式“从……起”",
+        "vi": "Mẫu 从……起"
+      },
+      "structure": "从 + mốc bắt đầu + 起，…",
+      "explanation": {
+        "zh": "固定格式“从……起”有“从……开始”的意思，多表示时间。常用在句首，作状语。",
+        "vi": "从……起 nghĩa là “bắt đầu từ…”, thường chỉ thời gian và làm trạng ngữ ở đầu câu; cũng có thể đứng sau chủ ngữ như ví dụ trong sách."
+      },
+      "examples": [
+        {
+          "zh": "他从那时起就努力学习。",
+          "vi": "Từ khi ấy anh ấy đã chăm chỉ học tập.",
+          "py": "Tā cóng nà shí qǐ jiù nǔlì xuéxí.",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "从那天起，我们就变成了好朋友。",
+          "vi": "Từ ngày ấy, chúng tôi trở thành bạn tốt.",
+          "py": "Cóng nà tiān qǐ, wǒmen jiù biànchéng le hǎo péngyou.",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "从那次旅游起，我对中国文化更有兴趣了。",
+          "vi": "Từ chuyến du lịch ấy, tôi càng hứng thú với văn hóa Trung Quốc.",
+          "py": "Cóng nà cì lǚyóu qǐ, wǒ duì Zhōngguó wénhuà gèng yǒu xìngqù le.",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "从搬到北京起，______。",
+          "vi": "Từ khi chuyển đến Bắc Kinh, ______.",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "从______起，我每天都锻炼二三十分钟。",
+          "vi": "Từ ______, tôi tập thể dục khoảng hai, ba chục phút mỗi ngày.",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”：完成句子",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "______，我就开始喜欢拍照了。",
+          "vi": "______, tôi bắt đầu thích chụp ảnh.",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”：完成句子",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "固定格式“从……起”",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk3-fltrp-2026:l18:section1",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: chọn từ điền chỗ trống"
+      },
+      "blocks": [
+        {
+          "zh": "第一组：A 刚；B 总；C 起；D 收；E 见面。",
+          "vi": "Nhóm 1: A mới; B thường, luôn; C từ…trở đi; D nhận; E gặp mặt.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "1. 我______来中国几个月，还没在中国过过春节。",
+          "vi": "1. Tôi ______ đến Trung Quốc vài tháng, chưa từng đón Tết ở đây.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "2. 这是我给您和叔叔准备的小礼物，请您______下。",
+          "vi": "2. Đây là món quà nhỏ cháu chuẩn bị cho cô chú, xin cô ______ cho.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "3. 过年的时候，小孩子______会收到大人给的红包。",
+          "vi": "3. Vào dịp Tết, trẻ nhỏ ______ nhận bao lì xì từ người lớn.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "4. 从上个月______，妈妈就开始为春节做准备了。",
+          "vi": "4. Từ tháng trước ______, mẹ bắt đầu chuẩn bị Tết.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "5. 春节的时候只要有时间，就一定要跟小时候的朋友们______。",
+          "vi": "5. Dịp Tết, chỉ cần có thời gian thì nhất định phải ______ với các bạn thuở nhỏ.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "第二组：A 完成；B 坚持；C 发生；D 怎样；E 大概。",
+          "vi": "Nhóm 2: A hoàn thành; B kiên trì; C xảy ra; D thế nào; E khoảng.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "6. A：你想______过今年的春节？ B：我好几年没回爸爸妈妈家了，今年打算回去过节。",
+          "vi": "6. A: Bạn muốn đón Tết năm nay ______? B: Mấy năm rồi tôi chưa về nhà bố mẹ, năm nay định về ăn Tết.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "7. A：这一年______了很多开心的事。 B：希望明年更好，祝我们大家都新年快乐！",
+          "vi": "7. A: Trong năm qua đã ______ nhiều chuyện vui. B: Mong năm sau tốt hơn, chúc mọi người năm mới vui vẻ!",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "8. A：你今年怎么过春节？ B：我回家住______三四天，然后出去旅游。",
+          "vi": "8. A: Năm nay bạn đón Tết thế nào? B: Tôi về nhà ở ______ ba, bốn ngày rồi đi du lịch.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "9. A：快12点了，你是不是想睡觉了？ B：我一定要______到12点，新的一年开始以后再睡觉。",
+          "vi": "9. A: Gần 12 giờ rồi, bạn buồn ngủ phải không? B: Tôi nhất định phải ______ đến 12 giờ, sang năm mới rồi mới ngủ.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "10. A：新年就要到了，可是今年的目标还没______呢。 B：没关系，明年我们一起努力吧。",
+          "vi": "10. A: Năm mới sắp đến mà mục tiêu năm nay vẫn chưa ______. B: Không sao, năm sau mình cùng cố gắng nhé.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: miêu tả hình"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp mới của bài để miêu tả hình.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片说明（编辑补充）：图1是两位女性交谈；图2是准备出行的行李；图3是城市景观。",
+          "vi": "Mô tả hình do biên soạn bổ sung: hình 1 là hai phụ nữ trò chuyện; hình 2 là hành lý chuẩn bị đi xa; hình 3 là cảnh thành phố.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        },
+        {
+          "zh": "图1：A：马上就要过春节了，你______？ B：我刚刚______，要和家人一起过。 A：太好了，你和家人已经很久没______了吧？ B：是啊，我大概______没回家过春节了。",
+          "vi": "Hình 1: A: Sắp Tết rồi, bạn ______? B: Tôi vừa ______, sẽ đón Tết cùng gia đình. A: Tốt quá, chắc bạn đã lâu không ______ với gia đình? B: Đúng, khoảng ______ rồi tôi chưa về nhà ăn Tết.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图2：A：行李都准备好了吗？什么时候______？ B：还有大概______。我一想到自己在外国生活就难过。 A：别难过，你______，就跟我视频。 B：好的。从______，我要学会照顾自己。",
+          "vi": "Hình 2: A: Chuẩn bị xong hành lý chưa? Khi nào ______? B: Còn khoảng ______. Cứ nghĩ đến sống một mình ở nước ngoài là tôi buồn. A: Đừng buồn, bạn ______ thì gọi video cho tôi. B: Được. Từ ______, tôi phải học cách tự chăm sóc.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图3：A：你是在哪儿______的？ B：在一个小城市，那里这几年______。 A：我听说你们国家工作机会很多，______，就能找到好工作。 B：没错，所以你应该从______努力学习，以后来我们国家。",
+          "vi": "Hình 3: A: Bạn ______ ở đâu? B: Ở một thành phố nhỏ, mấy năm nay ở đó ______. A: Nghe nói nước bạn có nhiều cơ hội việc làm, ______ thì có thể tìm được công việc tốt. B: Đúng, nên bạn hãy chăm chỉ học từ ______, sau này đến nước tôi.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:section3",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "blocks": [
+        {
+          "zh": "四人一组，每人介绍自己国家的一个传统节日。介绍内容包括：节日名称、节日的时间、怎么庆祝这个节日、节日的特色食物和意义等。练习时，使用本课所学的词语和语言点。",
+          "vi": "Nhóm bốn người, mỗi người giới thiệu một ngày lễ truyền thống của nước mình: tên lễ, thời gian, cách mừng lễ, món ăn đặc trưng và ý nghĩa. Dùng từ và ngữ pháp đã học trong bài.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 184,
+        "printedPage": 172,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:section4",
+      "kind": "review",
+      "title": {
+        "zh": "学习小结：16—18课我的学习情况",
+        "vi": "Tổng kết học tập: bài 16–18"
+      },
+      "blocks": [
+        {
+          "zh": "词语学习：我已经记住并会使用的词语：______；我还没记住的词语：______。",
+          "vi": "Học từ vựng: Những từ đã nhớ và biết dùng: ______; những từ chưa nhớ: ______.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我理解并会用：理解□　会用□",
+          "vi": "Tự đánh giá riêng mức “đã hiểu” và “biết dùng” cho từng mục.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "并列复句“一会儿……，一会儿……”：它一会儿在你脚边睡觉，一会儿在你身上爬。　理解□　会用□",
+          "vi": "Câu song song 一会儿…一会儿…: Nó lúc thì ngủ bên chân bạn, lúc thì leo trên người bạn.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "介词“关于”：关于这个问题，我得慢慢给你讲。　理解□　会用□",
+          "vi": "Giới từ 关于: Về vấn đề này, tôi phải giải thích từ từ cho bạn.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "固定短语“一般来说”：一般来说，熊猫每天要睡很多次觉。　理解□　会用□",
+          "vi": "Cụm 一般来说: Nói chung, gấu trúc ngủ nhiều lần mỗi ngày.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（11）：冬天比夏天早关门一个小时。　理解□　会用□",
+          "vi": "So sánh(11): Mùa đông đóng cửa sớm hơn mùa hè một tiếng.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "介词“向”：别再向前走了。　理解□　会用□",
+          "vi": "Giới từ 向: Đừng đi tiếp về phía trước nữa.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "反问句“不是……吗？”：你不是喜欢玩电脑吗？你可以去看看跟电脑有关系的书。　理解□　会用□",
+          "vi": "Câu hỏi tu từ 不是…吗?: Chẳng phải bạn thích dùng máy tính sao? Bạn có thể xem sách liên quan đến máy tính.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "递进复句“……，更……”：我还没想好学什么，更没想好去哪个国家。　理解□　会用□",
+          "vi": "Câu tăng tiến 更: Tôi chưa nghĩ xong sẽ học gì, càng chưa nghĩ xong sẽ đi nước nào.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "条件复句“只有……，才……”：只有想清楚自己真正喜欢什么，才能做出最合适的选择。　理解□　会用□",
+          "vi": "Điều kiện cần 只有…才…: Chỉ khi hiểu rõ mình thật sự thích gì mới đưa ra lựa chọn phù hợp nhất.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "概数表达法：春节大概放七八天假。　理解□　会用□",
+          "vi": "Số ước lượng: Tết được nghỉ khoảng bảy, tám ngày.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "“刚才”和“刚刚”：刚才的电话是我妈妈打来的。　理解□　会用□",
+          "vi": "刚才 và 刚刚: Cuộc gọi vừa rồi là mẹ tôi gọi đến.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "条件复句“只要……，就……”：我只要几天不跟他视频，就很想他。　理解□　会用□",
+          "vi": "Điều kiện đủ 只要…就…: Chỉ cần vài ngày không gọi video với con là tôi nhớ con lắm.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "固定格式“从……起”：他从那时起就努力学习。　理解□　会用□",
+          "vi": "Mẫu 从…起: Từ khi ấy anh ấy đã chăm chỉ học tập.　Đã hiểu □　Biết dùng □",
+          "kind": "table",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我需要努力的：______。",
+          "vi": "Những điểm tôi cần cố gắng thêm: ______.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 184,
+        "printedPage": 172,
+        "section": "学习小结：16—18课我的学习情况",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk3-fltrp-2026:l18:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“客人大概七八点到。”怎样理解七八点？",
+        "vi": "“Khách đến khoảng bảy, tám giờ.” Hiểu 七八点 thế nào?"
+      },
+      "options": [
+        "七点或八点左右，不是准确时刻",
+        "七点零八分",
+        "七点和八点各来一次"
+      ],
+      "answer": 0,
+      "focus": "概数",
+      "explanation": {
+        "zh": "相邻数字七八连用表示大致范围。",
+        "vi": "Hai số liền kề 七八 chỉ khoảng thời gian ước chừng."
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "不能确定人数，大约五到六人，哪句最合适？",
+        "vi": "Chưa biết chính xác, khoảng năm đến sáu người. Câu nào phù hợp?"
+      },
+      "options": [
+        "客人一共五十六个。",
+        "大概有五六个客人。",
+        "客人正好十一个。"
+      ],
+      "answer": 1,
+      "focus": "概数与精确数",
+      "explanation": {
+        "zh": "五六个是不确定数量；五十六和十一是精确数。",
+        "vi": "五六个 là khoảng năm, sáu; 五十六 và 十一 là số chính xác."
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "朋友说：“刚才的比赛真有意思。”这场比赛最可能在什么时候结束？",
+        "vi": "Một người bạn nói: “Trận đấu vừa rồi hay thật.” Trận đấu này có khả năng vừa kết thúc lúc nào?"
+      },
+      "options": [
+        "三个月前",
+        "去年",
+        "几分钟前"
+      ],
+      "answer": 2,
+      "focus": "刚才的时间范围",
+      "explanation": {
+        "zh": "刚才通常指几分钟前；不是几个月前或去年。",
+        "vi": "刚才 thường chỉ vài phút trước, không phải mấy tháng trước hay năm ngoái."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“他刚刚毕业两个月。”刚刚在这里表达什么？",
+        "vi": "Trong “Anh ấy mới tốt nghiệp hai tháng”, 刚刚 diễn đạt gì?"
+      },
+      "options": [
+        "说话人觉得毕业还不久",
+        "毕业发生在两分钟前",
+        "说话人不知道他是否毕业"
+      ],
+      "answer": 0,
+      "focus": "刚刚的相对近期",
+      "explanation": {
+        "zh": "刚刚可指相对较短的时间，不限于几分钟。",
+        "vi": "刚刚 diễn đạt khoảng thời gian tương đối ngắn, không chỉ vài phút."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“只要你有时间，我就陪你练习。”哪项是足以让练习发生的条件？",
+        "vi": "“Chỉ cần bạn có thời gian, tôi sẽ luyện tập cùng bạn.” Điều kiện đủ là gì?"
+      },
+      "options": [
+        "我已经练习完了",
+        "你有时间",
+        "我们昨天见过面"
+      ],
+      "answer": 1,
+      "focus": "充分条件",
+      "explanation": {
+        "zh": "只要后面有时间是句中给出的充分条件。",
+        "vi": "有时间 sau 只要 là điều kiện đủ được nêu trong câu."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "按“只要……就……”表达两个不同主语，哪句正确？",
+        "vi": "Dùng 只要……就…… với hai chủ ngữ khác nhau, câu nào đúng?"
+      },
+      "options": [
+        "只要你同意，就我们开始准备。",
+        "只要你同意，我们开始准备就。",
+        "只要你同意，我们就开始准备。"
+      ],
+      "answer": 2,
+      "focus": "第二主语位置",
+      "explanation": {
+        "zh": "第二个主语我们应放在就前。",
+        "vi": "Chủ ngữ thứ hai 我们 đứng trước 就."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“从上个学期起，他就每天练习。”说明了什么？",
+        "vi": "“Từ học kỳ trước, anh ấy luyện tập mỗi ngày.” Câu cho biết điều gì?"
+      },
+      "options": [
+        "开始每天练习的时间",
+        "每天练习几次",
+        "练习已经停止的时间"
+      ],
+      "answer": 0,
+      "focus": "从……起",
+      "explanation": {
+        "zh": "从上个学期起指出持续行为的起点。",
+        "vi": "从上个学期起 nêu mốc bắt đầu của việc luyện tập đều đặn."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“妈妈总说起小时候的故事。”总在这里表示什么？",
+        "vi": "总 trong “Mẹ thường nhắc đến chuyện thời nhỏ” nghĩa là gì?"
+      },
+      "options": [
+        "故事的总数量",
+        "常常、一直如此",
+        "故事刚刚开始"
+      ],
+      "answer": 1,
+      "focus": "总：频率",
+      "explanation": {
+        "zh": "总作副词表示经常如此，不是数量总和。",
+        "vi": "总 là phó từ chỉ thường xuyên, không chỉ tổng số."
+      },
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我们完成了今年的目标。”哪项与这句话相符？",
+        "vi": "“Chúng tôi đã hoàn thành mục tiêu năm nay.” Điều nào phù hợp?"
+      },
+      "options": [
+        "目标还没想好",
+        "我们决定放弃目标",
+        "目标已经实现"
+      ],
+      "answer": 2,
+      "focus": "完成目标",
+      "explanation": {
+        "zh": "完成表示事情或目标已经达到。",
+        "vi": "完成 nghĩa là công việc hoặc mục tiêu đã đạt được."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "甲说“只要有票，就能进去”，乙说“只有买到票，才能进去”。哪项区别正确？",
+        "vi": "A nói “Chỉ cần có vé là vào được”, B nói “Chỉ khi mua được vé mới vào được”. Khác biệt nào đúng?"
+      },
+      "options": [
+        "甲说有票就够了，乙说进去必须买到票",
+        "甲说没有票也能进，乙说有票也不能进",
+        "甲说进去以后买票，乙说出来以后买票"
+      ],
+      "answer": 0,
+      "focus": "只要与只有",
+      "explanation": {
+        "zh": "只要……就……是充分条件，只有……才……强调必要条件。",
+        "vi": "只要…就… nêu điều kiện đủ; 只有…才… nhấn mạnh điều kiện cần."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “我们班”: Lớp chúng tôi có khoảng mười bảy, mười tám người muốn tham gia liên hoan. Đặt cụm chỉ số lượng ngay sau 大概有. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "十七八个人",
+        "我们班",
+        "想参加",
+        "大概有",
+        "联欢活动。"
+      ],
+      "answer": [
+        1,
+        3,
+        0,
+        2,
+        4
+      ],
+      "focus": "概数",
+      "explanation": {
+        "zh": "我们班大概有十七八个人想参加联欢活动。",
+        "vi": "十七八 chỉ khoảng 17–18; số lượng đứng sau 大概有 theo yêu cầu."
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “刚才的”: Lời nói vừa rồi khiến tôi nhớ ra việc ấy. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我想起了",
+        "刚才的",
+        "那件事。",
+        "话",
+        "让"
+      ],
+      "answer": [
+        1,
+        3,
+        4,
+        0,
+        2
+      ],
+      "focus": "刚才作定语",
+      "explanation": {
+        "zh": "刚才的话让我想起了那件事。",
+        "vi": "刚才的 bổ nghĩa cho 话; 让 nối nguyên nhân với điều được gợi nhớ."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “只要你”: Chỉ cần bạn tiếp tục cố gắng, chúng tôi sẽ giúp bạn hoàn thành mục tiêu. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我们就会",
+        "完成目标。",
+        "只要你",
+        "帮你",
+        "坚持努力，"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        3,
+        1
+      ],
+      "focus": "充分条件",
+      "explanation": {
+        "zh": "只要你坚持努力，我们就会帮你完成目标。",
+        "vi": "Điều kiện đứng trước dấu phẩy; 我们 trước 就."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “从”: Từ lần gặp mặt ấy, tôi bắt đầu thích thành phố này. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "起，",
+        "我就开始",
+        "那次见面",
+        "喜欢这座城市了。",
+        "从"
+      ],
+      "answer": [
+        4,
+        2,
+        0,
+        1,
+        3
+      ],
+      "focus": "时间起点",
+      "explanation": {
+        "zh": "从那次见面起，我就开始喜欢这座城市了。",
+        "vi": "从 và 起 bao quanh mốc thời gian; sau đó là sự thay đổi."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng “姐姐”: Chị gái mới đến đây được ba, bốn ngày. Đặt 刚刚 ngay sau chủ ngữ. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "来",
+        "三四天。",
+        "姐姐",
+        "刚刚",
+        "这里"
+      ],
+      "answer": [
+        2,
+        3,
+        0,
+        4,
+        1
+      ],
+      "focus": "刚刚与概数",
+      "explanation": {
+        "zh": "姐姐刚刚来这里三四天。",
+        "vi": "刚刚 đứng sau chủ ngữ; 三四天 chỉ số ngày ước chừng."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：关于包饺子和看晚会，哪种安排符合李文的话？",
+        "vi": "Nghe bài khóa 1: Việc gói sủi cảo và xem chương trình văn nghệ được sắp xếp thế nào?"
+      },
+      "options": [
+        "一边包饺子，一边看晚会",
+        "先包完饺子，再看晚会",
+        "看完晚会以后才包饺子"
+      ],
+      "answer": 0,
+      "focus": "听懂同时进行",
+      "explanation": {
+        "zh": "一边……一边……表示两个活动同时进行。",
+        "vi": "一边……一边…… cho biết hai hoạt động diễn ra cùng lúc."
+      },
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：张阿姨以前总听谁说起家月？",
+        "vi": "Nghe bài khóa 2: Trước đây cô Trương thường nghe ai nhắc đến Gia Nguyệt?"
+      },
+      "options": [
+        "李叔叔",
+        "小文",
+        "白家月"
+      ],
+      "answer": 1,
+      "focus": "听懂信息来源",
+      "explanation": {
+        "zh": "张阿姨说总听小文说起你。",
+        "vi": "Cô Trương nói thường nghe Tiểu Văn nhắc đến Gia Nguyệt."
+      },
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：照片里除了李文，还有哪些人？",
+        "vi": "Nghe bài khóa 3: Trong ảnh, ngoài Lý Văn còn có ai?"
+      },
+      "options": [
+        "同班同学",
+        "李文的老师",
+        "他的全家"
+      ],
+      "answer": 2,
+      "focus": "听懂照片人物",
+      "explanation": {
+        "zh": "张阿姨说我们全家在机场照的。",
+        "vi": "Cô Trương nói đó là ảnh cả nhà chụp ở sân bay."
+      },
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：李文开始努力学习的时间与什么想法有关？",
+        "vi": "Nghe bài khóa 4: Việc Lý Văn bắt đầu chăm học gắn với mong muốn nào?"
+      },
+      "options": [
+        "高中时想学医",
+        "想拍更多照片",
+        "想跟父母一起旅游"
+      ],
+      "answer": 0,
+      "focus": "听懂成长动机",
+      "explanation": {
+        "zh": "他高中时想学医，从那时起就努力学习。",
+        "vi": "Hồi cấp ba anh ấy muốn học y nên từ đó chăm chỉ học."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：白家月对李文以后的发展是什么态度？",
+        "vi": "Nghe bài khóa 4: Gia Nguyệt có thái độ gì về sự phát triển sau này của Lý Văn?"
+      },
+      "options": [
+        "觉得他以后很难进步",
+        "相信他会发展得更好",
+        "担心他会放弃自己的目标"
+      ],
+      "answer": 1,
+      "focus": "听懂评价态度",
+      "explanation": {
+        "zh": "结尾说我相信，他以后一定会发展得更好。",
+        "vi": "Cuối bài cô ấy tin sau này anh ấy sẽ phát triển tốt hơn."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-7"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Tôi cần khoảng hai, ba ngày để hoàn thành công việc này."
+      },
+      "options": [
+        "我已经工作了二十三天。",
+        "我两三天前已经完成这项工作了。",
+        "我需要两三天完成这项工作。"
+      ],
+      "answer": 2,
+      "focus": "概数",
+      "explanation": {
+        "zh": "两三天是约两到三天，不是二十三天。",
+        "vi": "两三天 là khoảng hai đến ba ngày, không phải 23 ngày."
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Bạn còn nhớ tên của vị khách vừa rồi không?"
+      },
+      "options": [
+        "你还记得刚才那位客人的名字吗？",
+        "你刚刚告诉客人自己的名字了吗？",
+        "刚才那位客人记得你的名字吗？"
+      ],
+      "answer": 0,
+      "focus": "刚才修饰名词",
+      "explanation": {
+        "zh": "刚才那位客人指不久前的那位客人；问的是你是否还记得他的名字。",
+        "vi": "刚才那位客人 chỉ vị khách vừa rồi; câu hỏi là bạn có còn nhớ tên người ấy không."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Chỉ cần bố mẹ khỏe mạnh, tôi cảm thấy yên tâm."
+      },
+      "options": [
+        "只有我放心，父母才健康。",
+        "只要父母身体好，我就放心。",
+        "我虽然放心，但是父母不舒服。"
+      ],
+      "answer": 1,
+      "focus": "充分条件",
+      "explanation": {
+        "zh": "父母身体好是使我放心的充分条件。",
+        "vi": "Bố mẹ khỏe là điều kiện đủ để tôi yên tâm."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Từ kỳ nghỉ ấy, chúng tôi bắt đầu thường xuyên liên lạc."
+      },
+      "options": [
+        "我们决定假期以后不再联系。",
+        "假期开始以前，我们已经见过面。",
+        "从那个假期起，我们就开始经常联系。"
+      ],
+      "answer": 2,
+      "focus": "从……起",
+      "explanation": {
+        "zh": "从那个假期起保留起点意义。",
+        "vi": "从那个假期起 giữ đúng ý mốc bắt đầu."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择准确的中文翻译。",
+        "vi": "Anh ấy tin rằng kiên trì có thể giúp mình đạt mục tiêu."
+      },
+      "options": [
+        "他相信坚持能帮助自己完成目标。",
+        "他已经决定不再努力了。",
+        "他不知道自己的目标是什么。"
+      ],
+      "answer": 0,
+      "focus": "坚持与目标",
+      "explanation": {
+        "zh": "相信、坚持、完成目标保留三层意思。",
+        "vi": "Câu giữ đủ ý tin tưởng, kiên trì và đạt mục tiêu."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Nhà tôi thường mời khoảng sáu, bảy người bạn đến ăn cơm vào dịp Tết."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Bố tôi vừa học được cách gọi video, bây giờ rất muốn thử."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Chỉ cần cuối tuần bạn rảnh, tôi sẽ dạy bạn làm món ăn này."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Từ khi tốt nghiệp, chị ấy ngày nào cũng gọi điện về nhà."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Trong học kỳ mới, tôi muốn kiên trì đọc sách để hiểu thêm văn hóa Trung Quốc."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk3-fltrp-2026:l18:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文1：到十二点以前，他们通常已经睡觉了吗？",
+        "vi": "Nghe bài khóa 1: Trước nửa đêm, gia đình thường đã đi ngủ chưa?"
+      },
+      "options": [
+        "没有，要到十二点以后才睡",
+        "是，他们通常十一点就睡了",
+        "李文没有提到睡觉时间"
+      ],
+      "answer": 0,
+      "focus": "听懂时间界限",
+      "explanation": {
+        "zh": "一直到十二点以后才睡觉说明十二点以前还不睡。",
+        "vi": "Đến sau nửa đêm mới ngủ nghĩa là trước đó họ chưa ngủ."
+      },
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-1"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文2：家月为什么能提出和大家一起包饺子？",
+        "vi": "Nghe bài khóa 2: Vì sao Gia Nguyệt có thể đề nghị gói sủi cảo cùng mọi người?"
+      },
+      "options": [
+        "李叔叔刚刚教会了她",
+        "她刚看视频学会了",
+        "她以前已经跟家人学会了"
+      ],
+      "answer": 1,
+      "focus": "听懂能力来源",
+      "explanation": {
+        "zh": "她刚刚通过视频学会包饺子。",
+        "vi": "Cô ấy vừa học cách gói qua video."
+      },
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-3"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文3：家月说李文“很快就会回来了”，主要是想做什么？",
+        "vi": "Nghe bài khóa 3: Khi nói Lý Văn “sẽ sớm về thôi”, Gia Nguyệt chủ yếu muốn làm gì?"
+      },
+      "options": [
+        "请张阿姨准备去机场接人",
+        "告诉张阿姨李文要提前毕业",
+        "安慰张阿姨，让她放心"
+      ],
+      "answer": 2,
+      "focus": "听懂安慰意图",
+      "explanation": {
+        "zh": "她说只剩最后一个学期，很快就回来，语境是在安慰妈妈。",
+        "vi": "Cô ấy nói chỉ còn học kỳ cuối, anh ấy sớm về, nhằm an ủi mẹ anh."
+      },
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-5"
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听课文4：日记先写父母分享照片和故事，接着主要写了什么？",
+        "vi": "Nghe bài khóa 4: Sau đoạn bố mẹ chia sẻ ảnh và chuyện cũ, nhật ký chủ yếu kể tiếp điều gì?"
+      },
+      "options": [
+        "李文高中时的想法和学习经历",
+        "李文一家怎样准备春节晚饭",
+        "李文毕业以后已经做过的工作"
+      ],
+      "answer": 0,
+      "focus": "听懂叙述顺序",
+      "explanation": {
+        "zh": "照片和故事之后，日记写李文高中时想学医、努力学习，后来得到留学机会。",
+        "vi": "Sau phần ảnh và chuyện cũ, nhật ký kể Lý Văn muốn học y từ cấp ba, chăm chỉ học rồi có cơ hội du học."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "18-7"
+    }
+  ],
+  "grammarSourceExplanations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l18:grammar1",
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "概数表达法",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "汉语中相邻的两个数字连用，表示不确定的数量。例如：",
+        "vi": "Trong tiếng Trung, hai số liền nhau được dùng cạnh nhau để chỉ số lượng không xác định chính xác. Ví dụ:"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l18:grammar2",
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "“刚才”和“刚刚”",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "“刚才”是时间名词，表示很短的时间以前，一般来说就是几分钟以前。“刚才”可以放在句首，也可以放在主语后面，动词前面。例如：\\n“刚刚”是时间副词，表示对说话人来说事情发生的时间不长，可能是几分钟、几天甚至几个月。“刚刚”应该放在主语后面，动词前面。例如：",
+        "vi": "刚才 là danh từ thời gian, chỉ một thời điểm cách đây rất ngắn, thường là vài phút. Có thể đặt ở đầu câu hoặc sau chủ ngữ, trước động từ. Ví dụ:\\n刚刚 là phó từ thời gian, chỉ việc xảy ra chưa lâu theo cảm nhận của người nói, có thể là vài phút, vài ngày, thậm chí vài tháng. Theo mẫu trong sách, 刚刚 đứng sau chủ ngữ, trước động từ. Ví dụ:"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l18:grammar3",
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "条件复句“只要……，就……”",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "“只要……，就……”中，“只要”后面是所需要的充分条件，有这个条件就能产生“就”后面的结果。主语可以放在“只要”前，也可以放在“只要”后。如果句子有两个主语，第二个主语要放在“就”前面。例如：",
+        "vi": "Trong mẫu 只要……，就……, vế sau 只要 nêu điều kiện đủ: có điều kiện ấy thì có thể có kết quả sau 就. Chủ ngữ có thể đứng trước hoặc sau 只要. Nếu câu có hai chủ ngữ, chủ ngữ thứ hai phải đứng trước 就. Ví dụ:"
+      }
+    },
+    {
+      "grammarId": "hsk3-fltrp-2026:l18:grammar4",
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "固定格式“从……起”",
+        "provenance": "textbook"
+      },
+      "explanation": {
+        "zh": "固定格式“从……起”有“从……开始”的意思，多表示时间。常用在句首，作状语。例如：",
+        "vi": "Mẫu cố định 从……起 có nghĩa là bắt đầu từ, thường chỉ thời gian; thường đứng đầu câu làm trạng ngữ. Ví dụ:"
+      }
+    }
+  ],
+  "grammarPresentations": [
+    {
+      "grammarId": "hsk3-fltrp-2026:l18:grammar2",
+      "groups": [
+        {
+          "title": {
+            "zh": "刚才：时间名词",
+            "vi": "刚才: danh từ thời gian"
+          },
+          "explanation": {
+            "zh": "“刚才”是时间名词，表示很短的时间以前，一般来说就是几分钟以前。“刚才”可以放在句首，也可以放在主语后面，动词前面。例如：",
+            "vi": "刚才 là danh từ thời gian, chỉ một thời điểm cách đây rất ngắn, thường là vài phút. Có thể đặt ở đầu câu hoặc sau chủ ngữ, trước động từ. Ví dụ:"
+          },
+          "exampleIndices": [
+            0,
+            1
+          ],
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "“刚才”和“刚刚”",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "title": {
+            "zh": "刚刚：时间副词",
+            "vi": "刚刚: phó từ thời gian"
+          },
+          "explanation": {
+            "zh": "“刚刚”是时间副词，表示对说话人来说事情发生的时间不长，可能是几分钟、几天甚至几个月。“刚刚”应该放在主语后面，动词前面。例如：",
+            "vi": "刚刚 là phó từ thời gian, chỉ việc xảy ra chưa lâu theo cảm nhận của người nói, có thể là vài phút, vài ngày, thậm chí vài tháng. Theo mẫu trong sách, 刚刚 đứng sau chủ ngữ, trước động từ. Ví dụ:"
+          },
+          "exampleIndices": [
+            2,
+            3
+          ],
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”",
+            "provenance": "textbook"
+          }
+        }
+      ]
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:objective1",
+          "prompt": {
+            "zh": "能听懂并描述生活中的变化和成长经历。",
+            "vi": "Nghe hiểu và kể về những thay đổi trong cuộc sống và trải nghiệm trưởng thành."
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:objective2",
+          "prompt": {
+            "zh": "能听懂并使用概数表达不确定的数量。",
+            "vi": "Nghe hiểu và dùng số ước lượng để diễn đạt số lượng không xác định."
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:objective3",
+          "prompt": {
+            "zh": "掌握“只要”的用法，能表达充分条件和结果。",
+            "vi": "Nắm cách dùng 只要 để diễn đạt điều kiện đủ và kết quả."
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:objective4",
+          "prompt": {
+            "zh": "了解中国传统节日“春节”的习俗。",
+            "vi": "Tìm hiểu phong tục Tết Nguyên đán, ngày lễ truyền thống của Trung Quốc."
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "目标",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép cụm từ với hình tương ứng."
+      },
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:warmup1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1",
+            "vi": "Hình 1"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 包饺子",
+              "vi": "A gói sủi cảo"
+            },
+            {
+              "zh": "B 给红包",
+              "vi": "B mừng tuổi bằng bao lì xì"
+            },
+            {
+              "zh": "C 说“过年好”",
+              "vi": "C nói “Chúc mừng năm mới”"
+            },
+            {
+              "zh": "D 吃年夜饭",
+              "vi": "D ăn cơm tất niên"
+            },
+            {
+              "zh": "E 打扫房子",
+              "vi": "E dọn nhà"
+            },
+            {
+              "zh": "F 看春节联欢晚会",
+              "vi": "F xem chương trình văn nghệ mừng xuân"
+            }
+          ],
+          "answer": "C 说“过年好”",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 热身 标号1（C）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l18:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2",
+            "vi": "Hình 2"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 包饺子",
+              "vi": "A gói sủi cảo"
+            },
+            {
+              "zh": "B 给红包",
+              "vi": "B mừng tuổi bằng bao lì xì"
+            },
+            {
+              "zh": "C 说“过年好”",
+              "vi": "C nói “Chúc mừng năm mới”"
+            },
+            {
+              "zh": "D 吃年夜饭",
+              "vi": "D ăn cơm tất niên"
+            },
+            {
+              "zh": "E 打扫房子",
+              "vi": "E dọn nhà"
+            },
+            {
+              "zh": "F 看春节联欢晚会",
+              "vi": "F xem chương trình văn nghệ mừng xuân"
+            }
+          ],
+          "answer": "B 给红包",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 热身 标号2（B）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l18:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3",
+            "vi": "Hình 3"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 包饺子",
+              "vi": "A gói sủi cảo"
+            },
+            {
+              "zh": "B 给红包",
+              "vi": "B mừng tuổi bằng bao lì xì"
+            },
+            {
+              "zh": "C 说“过年好”",
+              "vi": "C nói “Chúc mừng năm mới”"
+            },
+            {
+              "zh": "D 吃年夜饭",
+              "vi": "D ăn cơm tất niên"
+            },
+            {
+              "zh": "E 打扫房子",
+              "vi": "E dọn nhà"
+            },
+            {
+              "zh": "F 看春节联欢晚会",
+              "vi": "F xem chương trình văn nghệ mừng xuân"
+            }
+          ],
+          "answer": "D 吃年夜饭",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 热身 标号3（D）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l18:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4",
+            "vi": "Hình 4"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 包饺子",
+              "vi": "A gói sủi cảo"
+            },
+            {
+              "zh": "B 给红包",
+              "vi": "B mừng tuổi bằng bao lì xì"
+            },
+            {
+              "zh": "C 说“过年好”",
+              "vi": "C nói “Chúc mừng năm mới”"
+            },
+            {
+              "zh": "D 吃年夜饭",
+              "vi": "D ăn cơm tất niên"
+            },
+            {
+              "zh": "E 打扫房子",
+              "vi": "E dọn nhà"
+            },
+            {
+              "zh": "F 看春节联欢晚会",
+              "vi": "F xem chương trình văn nghệ mừng xuân"
+            }
+          ],
+          "answer": "A 包饺子",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 热身 标号4（A）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l18:illustration:warmup1-4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup1-picture5",
+          "prompt": {
+            "zh": "图5",
+            "vi": "Hình 5"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 包饺子",
+              "vi": "A gói sủi cảo"
+            },
+            {
+              "zh": "B 给红包",
+              "vi": "B mừng tuổi bằng bao lì xì"
+            },
+            {
+              "zh": "C 说“过年好”",
+              "vi": "C nói “Chúc mừng năm mới”"
+            },
+            {
+              "zh": "D 吃年夜饭",
+              "vi": "D ăn cơm tất niên"
+            },
+            {
+              "zh": "E 打扫房子",
+              "vi": "E dọn nhà"
+            },
+            {
+              "zh": "F 看春节联欢晚会",
+              "vi": "F xem chương trình văn nghệ mừng xuân"
+            }
+          ],
+          "answer": "F 看春节联欢晚会",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 热身 标号5（F）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l18:illustration:warmup1-5"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup1-picture6",
+          "prompt": {
+            "zh": "图6",
+            "vi": "Hình 6"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 包饺子",
+              "vi": "A gói sủi cảo"
+            },
+            {
+              "zh": "B 给红包",
+              "vi": "B mừng tuổi bằng bao lì xì"
+            },
+            {
+              "zh": "C 说“过年好”",
+              "vi": "C nói “Chúc mừng năm mới”"
+            },
+            {
+              "zh": "D 吃年夜饭",
+              "vi": "D ăn cơm tất niên"
+            },
+            {
+              "zh": "E 打扫房子",
+              "vi": "E dọn nhà"
+            },
+            {
+              "zh": "F 看春节联欢晚会",
+              "vi": "F xem chương trình văn nghệ mừng xuân"
+            }
+          ],
+          "answer": "E 打扫房子",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 热身 标号6（E）"
+          },
+          "illustrationId": "hsk3-fltrp-2026:l18:illustration:warmup1-6"
+        }
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按标号配对。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; ghép theo số."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:warmup2-discussion",
+      "kind": "open",
+      "title": {
+        "zh": "两人一组，根据实际情况对话。",
+        "vi": "Theo cặp, hội thoại dựa trên thực tế."
+      },
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:warmup2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup2-prompt1",
+          "prompt": {
+            "zh": "你在中国过过哪些节日？",
+            "vi": "Bạn từng đón những ngày lễ nào ở Trung Quốc?"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:warmup2-prompt2",
+          "prompt": {
+            "zh": "你知道中国人怎么过春节吗？",
+            "vi": "Bạn có biết người Trung Quốc đón Tết Nguyên đán thế nào không?"
+          },
+          "source": {
+            "pdfPage": 175,
+            "printedPage": 163,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text1:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text1-question1",
+          "prompt": {
+            "zh": "白家月为什么很开心？",
+            "vi": "Vì sao Gia Nguyệt rất vui?"
+          },
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "可以去北京",
+              "vi": "Có thể đến Bắc Kinh"
+            },
+            {
+              "zh": "可以去李文家",
+              "vi": "Có thể đến nhà Lý Văn"
+            },
+            {
+              "zh": "可以在中国过春节",
+              "vi": "Có thể đón Tết ở Trung Quốc"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text1:question1",
+          "answer": "可以在中国过春节",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文1 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text1-question2",
+          "prompt": {
+            "zh": "中国人一般怎么过春节？",
+            "vi": "Người Trung Quốc thường đón Tết thế nào?"
+          },
+          "source": {
+            "pdfPage": 176,
+            "printedPage": 164,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "去朋友家过节",
+              "vi": "Đón Tết ở nhà bạn"
+            },
+            {
+              "zh": "出去旅游过节",
+              "vi": "Đi du lịch trong dịp Tết"
+            },
+            {
+              "zh": "跟家人一起过节",
+              "vi": "Đón Tết cùng gia đình"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text1:question2",
+          "answer": "跟家人一起过节",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文1 听两遍 第2题（C）"
+          }
+        }
+      ],
+      "audioTrack": "18-1",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍。假期天数是课文情境，不代表当前放假规定。",
+        "vi": "Nghe hai lần. Số ngày nghỉ thuộc tình huống bài khóa, không phải quy định nghỉ lễ hiện tại."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text1:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text1-question3",
+          "prompt": {
+            "zh": "李文为什么很高兴？",
+            "vi": "Vì sao Lý Văn rất vui?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为他第一次请外国朋友来家里过春节。",
+            "vi": "Vì đây là lần đầu anh mời bạn nước ngoài đến nhà đón Tết."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text1:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text1-question4",
+          "prompt": {
+            "zh": "李文和家人春节的时候会做什么？",
+            "vi": "Lý Văn và gia đình làm gì vào dịp Tết?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们一边包饺子，一边看春节联欢晚会，一直到十二点以后才睡觉。",
+            "vi": "Họ vừa gói sủi cảo vừa xem chương trình văn nghệ Tết, đến sau mười hai giờ mới ngủ."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text1:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text1-question5",
+          "prompt": {
+            "zh": "春节大概放几天假？",
+            "vi": "Tết được nghỉ khoảng mấy ngày?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "按课文，大概七八天。",
+            "vi": "Theo bài khóa, khoảng bảy, tám ngày."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text1:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Phân vai đọc hội thoại rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text2:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text2-question1",
+          "prompt": {
+            "zh": "白家月为什么去李文家？",
+            "vi": "Vì sao Gia Nguyệt đến nhà Lý Văn?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "送礼物",
+              "vi": "Tặng quà"
+            },
+            {
+              "zh": "学包饺子",
+              "vi": "Học gói sủi cảo"
+            },
+            {
+              "zh": "一起过年",
+              "vi": "Cùng đón Tết"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text2:question1",
+          "answer": "一起过年",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文2 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text2-question2",
+          "prompt": {
+            "zh": "李文家今天晚上吃什么？",
+            "vi": "Tối nay nhà Lý Văn ăn gì?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "饺子",
+              "vi": "Sủi cảo"
+            },
+            {
+              "zh": "包子",
+              "vi": "Bánh bao"
+            },
+            {
+              "zh": "面条儿",
+              "vi": "Mì"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text2:question2",
+          "answer": "饺子",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文2 听两遍 第2题（A）"
+          }
+        }
+      ],
+      "audioTrack": "18-3",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍，选择答案。",
+        "vi": "Nghe hai lần rồi chọn đáp án."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text2:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text2-question3",
+          "prompt": {
+            "zh": "白家月送礼物的时候说什么了？",
+            "vi": "Gia Nguyệt nói gì khi tặng quà?"
+          },
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她说：“张阿姨，李叔叔。过年好！这是我准备的礼物，请收下。”",
+            "vi": "Cô nói: “Cháu chào cô Trương, chú Lý. Chúc mừng năm mới! Đây là quà cháu chuẩn bị, xin cô chú nhận cho.”"
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text2:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text2-question4",
+          "prompt": {
+            "zh": "李文的家人是怎么欢迎白家月的？",
+            "vi": "Gia đình Lý Văn đón tiếp Gia Nguyệt thế nào?"
+          },
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们感谢她的礼物，请她自己拿饮料、先坐着看电视。",
+            "vi": "Họ cảm ơn món quà, mời cô tự lấy đồ uống và ngồi xem tivi trước."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text2:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text2-question5",
+          "prompt": {
+            "zh": "白家月想跟李文的家人一起做什么？",
+            "vi": "Gia Nguyệt muốn làm gì cùng gia đình Lý Văn?"
+          },
+          "source": {
+            "pdfPage": 178,
+            "printedPage": 166,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她想跟他们一起包饺子。",
+            "vi": "Cô muốn cùng họ gói sủi cảo."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text2:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Phân vai đọc hội thoại rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text3:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text3-question1",
+          "prompt": {
+            "zh": "白家月和李文妈妈在做什么？",
+            "vi": "Gia Nguyệt và mẹ Lý Văn đang làm gì?"
+          },
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一起看电视",
+              "vi": "Cùng xem tivi"
+            },
+            {
+              "zh": "一起看视频",
+              "vi": "Cùng xem video"
+            },
+            {
+              "zh": "一起看照片",
+              "vi": "Cùng xem ảnh"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text3:question1",
+          "answer": "一起看照片",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文3 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text3-question2",
+          "prompt": {
+            "zh": "李文什么时候毕业？",
+            "vi": "Khi nào Lý Văn tốt nghiệp?"
+          },
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "一个月以后",
+              "vi": "Sau một tháng"
+            },
+            {
+              "zh": "一个学期以后",
+              "vi": "Sau một học kỳ"
+            },
+            {
+              "zh": "三四年以后",
+              "vi": "Sau ba hoặc bốn năm"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text3:question2",
+          "answer": "一个学期以后",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文3 听两遍 第2题（B）"
+          }
+        }
+      ],
+      "audioTrack": "18-5",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍，选择答案。",
+        "vi": "Nghe hai lần rồi chọn đáp án."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 180,
+        "printedPage": 168,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text3:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text3-question3",
+          "prompt": {
+            "zh": "李文第一次出国留学，是从哪儿出发的？",
+            "vi": "Lần đầu đi du học, Lý Văn khởi hành từ đâu?"
+          },
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他从北京出发。",
+            "vi": "Anh khởi hành từ Bắc Kinh."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text3:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text3-question4",
+          "prompt": {
+            "zh": "李文全家的照片是什么时候照的？",
+            "vi": "Ảnh cả gia đình Lý Văn được chụp khi nào?"
+          },
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "三四年前，李文从北京出发时，全家在机场照的。",
+            "vi": "Ảnh cả nhà chụp ở sân bay khi Lý Văn khởi hành từ Bắc Kinh, ba hoặc bốn năm trước."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text3:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text3-question5",
+          "prompt": {
+            "zh": "李文刚离开家的时候，张阿姨怎么样？",
+            "vi": "Khi Lý Văn mới xa nhà, cô Trương cảm thấy thế nào?"
+          },
+          "source": {
+            "pdfPage": 180,
+            "printedPage": 168,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她很不习惯，只要几天不跟他视频，就很想他。",
+            "vi": "Cô rất chưa quen; chỉ cần vài ngày không gọi video với con là cô nhớ con lắm."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text3:question5"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Phân vai đọc hội thoại rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text4:listening",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text4-question1",
+          "prompt": {
+            "zh": "白家月这次来中国，让她最高兴的事是什么？",
+            "vi": "Trong chuyến đến Trung Quốc lần này, điều khiến Gia Nguyệt vui nhất là gì?"
+          },
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "过春节",
+              "vi": "Đón Tết"
+            },
+            {
+              "zh": "吃饺子",
+              "vi": "Ăn sủi cảo"
+            },
+            {
+              "zh": "认识李文的父母",
+              "vi": "Làm quen với bố mẹ Lý Văn"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text4:question1",
+          "answer": "认识李文的父母",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文4 听两遍 第1题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text4-question2",
+          "prompt": {
+            "zh": "在李文身上，白家月学到什么了？",
+            "vi": "Gia Nguyệt học được điều gì từ Lý Văn?"
+          },
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "如果想学医，就要努力学习",
+              "vi": "Muốn học y thì phải chăm chỉ học"
+            },
+            {
+              "zh": "只有成绩好，才能出国留学",
+              "vi": "Chỉ khi thành tích tốt mới có thể du học"
+            },
+            {
+              "zh": "只要坚持努力，就能完成目标",
+              "vi": "Chỉ cần kiên trì nỗ lực thì có thể hoàn thành mục tiêu"
+            }
+          ],
+          "targetRef": "hsk3-fltrp-2026:l18:text4:question2",
+          "answer": "只要坚持努力，就能完成目标",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 课文4 听两遍 第2题（C）"
+          }
+        }
+      ],
+      "audioTrack": "18-7",
+      "recommendedPlays": 2,
+      "note": {
+        "zh": "听两遍，选择答案。",
+        "vi": "Nghe hai lần rồi chọn đáp án."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:text4-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:text4:reading",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text4-question3",
+          "prompt": {
+            "zh": "李文的父母给白家月看什么了？",
+            "vi": "Bố mẹ Lý Văn cho Gia Nguyệt xem gì?"
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "他们给她看了李文出生时的照片。",
+            "vi": "Họ cho cô xem ảnh lúc Lý Văn mới sinh."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text4:question3"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text4-question4",
+          "prompt": {
+            "zh": "白家月从李文的父母那里了解到什么了？",
+            "vi": "Gia Nguyệt biết được điều gì từ bố mẹ Lý Văn?"
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "她了解到李文过去的故事：高中时想学医，从那时起就努力学习。",
+            "vi": "Cô biết những chuyện trước đây của Lý Văn: khi học phổ thông anh muốn học y và từ đó chăm chỉ học tập."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text4:question4"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:text4-question5",
+          "prompt": {
+            "zh": "李文为什么能得到出国留学的机会？",
+            "vi": "Vì sao Lý Văn có cơ hội du học?"
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "因为他高三的时候成绩特别好。",
+            "vi": "Vì khi học lớp cuối cấp phổ thông, thành tích của anh rất tốt."
+          },
+          "targetRef": "hsk3-fltrp-2026:l18:text4:question5"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后回答问题。参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Đọc to bài khóa rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar1-practice1",
+      "kind": "open",
+      "title": {
+        "zh": "用“概数表达法”回答问题：你一般晚上几点睡觉？",
+        "vi": "Dùng số ước lượng trả lời: Buổi tối bạn thường ngủ lúc mấy giờ?"
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "概数表达法：用“概数表达法”回答问题",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar1-practice1-blank1",
+          "prompt": {
+            "zh": "用“概数表达法”回答问题：你一般晚上几点睡觉？",
+            "vi": "Dùng số ước lượng trả lời: Buổi tối bạn thường ngủ lúc mấy giờ?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法：用“概数表达法”回答问题",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我一般晚上十一二点睡觉。",
+            "vi": "Tôi thường đi ngủ vào khoảng mười một, mười hai giờ đêm."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。 示例情境可虚构，不表示当前放假规定。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất. Có thể dùng tình huống hư cấu; ví dụ không phải quy định nghỉ lễ hiện tại."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar1-practice2",
+      "kind": "open",
+      "title": {
+        "zh": "用“概数表达法”回答问题：你每天学习多长时间汉语？",
+        "vi": "Dùng số ước lượng trả lời: Mỗi ngày bạn học tiếng Trung bao lâu?"
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "概数表达法：用“概数表达法”回答问题",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar1-practice2-blank1",
+          "prompt": {
+            "zh": "用“概数表达法”回答问题：你每天学习多长时间汉语？",
+            "vi": "Dùng số ước lượng trả lời: Mỗi ngày bạn học tiếng Trung bao lâu?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法：用“概数表达法”回答问题",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我每天学习一两个小时汉语。",
+            "vi": "Mỗi ngày tôi học tiếng Trung một hoặc hai tiếng."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。 示例情境可虚构，不表示当前放假规定。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất. Có thể dùng tình huống hư cấu; ví dụ không phải quy định nghỉ lễ hiện tại."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar1-practice3",
+      "kind": "open",
+      "title": {
+        "zh": "用“概数表达法”回答问题：你们国家新年一般放几天假？",
+        "vi": "Dùng số ước lượng trả lời: Nước bạn thường nghỉ Tết mấy ngày?"
+      },
+      "source": {
+        "pdfPage": 177,
+        "printedPage": 165,
+        "section": "概数表达法：用“概数表达法”回答问题",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar1-practice3-blank1",
+          "prompt": {
+            "zh": "用“概数表达法”回答问题：你们国家新年一般放几天假？",
+            "vi": "Dùng số ước lượng trả lời: Nước bạn thường nghỉ Tết mấy ngày?"
+          },
+          "source": {
+            "pdfPage": 177,
+            "printedPage": 165,
+            "section": "概数表达法：用“概数表达法”回答问题",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我们国家新年一般放三四天假。",
+            "vi": "Ở nước tôi, dịp năm mới thường được nghỉ ba hoặc bốn ngày."
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。 示例情境可虚构，不表示当前放假规定。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất. Có thể dùng tình huống hư cấu; ví dụ không phải quy định nghỉ lễ hiện tại."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "用“刚刚”或者“刚才”填空：请你再说一遍______的问题。",
+        "vi": "Điền 刚刚 hoặc 刚才: Xin bạn nhắc lại câu hỏi ______."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar2-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "刚才",
+            "vi": "vừa nãy"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "用“刚刚”或者“刚才”填空：你______来了两三天就要走，为什么？",
+        "vi": "Điền 刚刚 hoặc 刚才: Bạn ______ đến hai, ba ngày mà đã đi, vì sao?"
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar2-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "刚刚",
+            "vi": "mới"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "用“刚刚”或者“刚才”填空：我不是______开始学习中文的，我已经学了一年了。",
+        "vi": "Điền 刚刚 hoặc 刚才: Tôi không phải chỉ ________ bắt đầu học tiếng Trung; tôi đã học được một năm rồi."
+      },
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar2-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 179,
+            "printedPage": 167,
+            "section": "“刚才”和“刚刚”：用“刚刚”或者“刚才”填空",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "刚刚",
+            "vi": "mới"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "feedbackNote": {
+        "zh": "此处参考用“刚刚”；特定语境下“刚才”也能成立，因此不设唯一答案。",
+        "vi": "Ở đây gợi ý dùng 刚刚; trong ngữ cảnh cụ thể, 刚才 cũng có thể hợp lý, nên không đặt một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你对大家都这么好啊？ B：我相信只要我对别人好，______。",
+        "vi": "A: Bạn tốt với mọi người như vậy à? B: Tôi tin chỉ cần tôi tốt với người khác thì ______."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "条件复句“只要……，就……”：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar3-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "别人就会对我好",
+            "vi": "người khác cũng sẽ tốt với tôi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：只要你努力学习，______。 B：老师，我一定会努力的。",
+        "vi": "A: Chỉ cần em chăm chỉ học thì ______. B: Thưa thầy/cô, em nhất định sẽ cố gắng."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "条件复句“只要……，就……”：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar3-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "就能取得进步",
+            "vi": "em có thể tiến bộ"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：张阿姨，谢谢您做了这么多菜，一定累得很。 B：不累，______，我就不觉得累。",
+        "vi": "A: Cháu cảm ơn cô Trương đã nấu nhiều món, chắc cô mệt lắm. B: Không mệt đâu, ______ thì cô không thấy mệt."
+      },
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "条件复句“只要……，就……”：完成对话",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar3-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 181,
+            "printedPage": 169,
+            "section": "条件复句“只要……，就……”：完成对话",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "只要你们吃得开心",
+            "vi": "chỉ cần các cháu ăn thấy vui"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar4-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "从搬到北京起，______。",
+        "vi": "Từ khi chuyển đến Bắc Kinh, ______."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "固定格式“从……起”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar4:practice:1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar4-practice1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "我就经常坐地铁了",
+            "vi": "tôi thường xuyên đi tàu điện ngầm"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar4-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "从______起，我每天都锻炼二三十分钟。",
+        "vi": "Từ ______, tôi tập thể dục khoảng hai, ba chục phút mỗi ngày."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "固定格式“从……起”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar4:practice:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar4-practice2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "去年",
+            "vi": "năm ngoái"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:grammar4-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "______，我就开始喜欢拍照了。",
+        "vi": "______, tôi bắt đầu thích chụp ảnh."
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "固定格式“从……起”：完成句子",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:grammar4:practice:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:grammar4-practice3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "固定格式“从……起”：完成句子",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "从那次旅行起",
+            "vi": "Từ chuyến du lịch ấy"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:words-bank1",
+      "kind": "fill",
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "source": {
+        "pdfPage": 182,
+        "printedPage": 170,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section1:bank1",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question1",
+          "prompt": {
+            "zh": "1. 我______来中国几个月，还没在中国过过春节。",
+            "vi": "1. Tôi ______ đến Trung Quốc vài tháng, chưa từng đón Tết ở đây."
+          },
+          "source": {
+            "pdfPage": 182,
+            "printedPage": 170,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 刚",
+              "vi": "A mới"
+            },
+            {
+              "zh": "B 总",
+              "vi": "B thường"
+            },
+            {
+              "zh": "C 起",
+              "vi": "C trở đi"
+            },
+            {
+              "zh": "D 收",
+              "vi": "D nhận"
+            },
+            {
+              "zh": "E 见面",
+              "vi": "E gặp mặt"
+            }
+          ],
+          "answer": "A 刚",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 选词填空 第1题（A）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question2",
+          "prompt": {
+            "zh": "2. 这是我给您和叔叔准备的小礼物，请您______下。",
+            "vi": "2. Đây là món quà nhỏ cháu chuẩn bị cho cô chú, xin cô ______ cho."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 刚",
+              "vi": "A mới"
+            },
+            {
+              "zh": "B 总",
+              "vi": "B thường"
+            },
+            {
+              "zh": "C 起",
+              "vi": "C trở đi"
+            },
+            {
+              "zh": "D 收",
+              "vi": "D nhận"
+            },
+            {
+              "zh": "E 见面",
+              "vi": "E gặp mặt"
+            }
+          ],
+          "answer": "D 收",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 选词填空 第2题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question3",
+          "prompt": {
+            "zh": "3. 过年的时候，小孩子______会收到大人给的红包。",
+            "vi": "Vào dịp Tết, trẻ nhỏ ________ nhận được bao lì xì từ người lớn."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 刚",
+              "vi": "A mới"
+            },
+            {
+              "zh": "B 总",
+              "vi": "B thường"
+            },
+            {
+              "zh": "C 起",
+              "vi": "C trở đi"
+            },
+            {
+              "zh": "D 收",
+              "vi": "D nhận"
+            },
+            {
+              "zh": "E 见面",
+              "vi": "E gặp mặt"
+            }
+          ],
+          "answer": "B 总",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 26,
+            "item": "第18课 选词填空 第3题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question4",
+          "prompt": {
+            "zh": "4. 从上个月______，妈妈就开始为春节做准备了。",
+            "vi": "Từ tháng trước ________, mẹ đã bắt đầu chuẩn bị cho Tết."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 刚",
+              "vi": "A mới"
+            },
+            {
+              "zh": "B 总",
+              "vi": "B thường"
+            },
+            {
+              "zh": "C 起",
+              "vi": "C trở đi"
+            },
+            {
+              "zh": "D 收",
+              "vi": "D nhận"
+            },
+            {
+              "zh": "E 见面",
+              "vi": "E gặp mặt"
+            }
+          ],
+          "answer": "C 起",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第4题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question5",
+          "prompt": {
+            "zh": "5. 春节的时候只要有时间，就一定要跟小时候的朋友们______。",
+            "vi": "5. Dịp Tết, chỉ cần có thời gian thì nhất định phải ______ với các bạn thuở nhỏ."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 刚",
+              "vi": "A mới"
+            },
+            {
+              "zh": "B 总",
+              "vi": "B thường"
+            },
+            {
+              "zh": "C 起",
+              "vi": "C trở đi"
+            },
+            {
+              "zh": "D 收",
+              "vi": "D nhận"
+            },
+            {
+              "zh": "E 见面",
+              "vi": "E gặp mặt"
+            }
+          ],
+          "answer": "E 见面",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第5题（E）"
+          }
+        }
+      ],
+      "note": {
+        "zh": "A 刚；B 总；C 起；D 收；E 见面。",
+        "vi": "A mới; B thường; C trở đi; D nhận; E gặp mặt"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:words-bank2",
+      "kind": "fill",
+      "title": {
+        "zh": "选词填空",
+        "vi": "Chọn từ điền vào chỗ trống"
+      },
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section1:bank2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question6",
+          "prompt": {
+            "zh": "6. A：你想______过今年的春节？ B：我好几年没回爸爸妈妈家了，今年打算回去过节。",
+            "vi": "6. A: Bạn muốn đón Tết năm nay ______? B: Mấy năm rồi tôi chưa về nhà bố mẹ, năm nay định về ăn Tết."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 完成",
+              "vi": "A hoàn thành"
+            },
+            {
+              "zh": "B 坚持",
+              "vi": "B kiên trì"
+            },
+            {
+              "zh": "C 发生",
+              "vi": "C xảy ra"
+            },
+            {
+              "zh": "D 怎样",
+              "vi": "D thế nào"
+            },
+            {
+              "zh": "E 大概",
+              "vi": "E khoảng"
+            }
+          ],
+          "answer": "D 怎样",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第6题（D）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question7",
+          "prompt": {
+            "zh": "7. A：这一年______了很多开心的事。 B：希望明年更好，祝我们大家都新年快乐！",
+            "vi": "7. A: Trong năm qua đã ______ nhiều chuyện vui. B: Mong năm sau tốt hơn, chúc mọi người năm mới vui vẻ!"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 完成",
+              "vi": "A hoàn thành"
+            },
+            {
+              "zh": "B 坚持",
+              "vi": "B kiên trì"
+            },
+            {
+              "zh": "C 发生",
+              "vi": "C xảy ra"
+            },
+            {
+              "zh": "D 怎样",
+              "vi": "D thế nào"
+            },
+            {
+              "zh": "E 大概",
+              "vi": "E khoảng"
+            }
+          ],
+          "answer": "C 发生",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第7题（C）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question8",
+          "prompt": {
+            "zh": "8. A：你今年怎么过春节？ B：我回家住______三四天，然后出去旅游。",
+            "vi": "8. A: Năm nay bạn đón Tết thế nào? B: Tôi về nhà ở ______ ba, bốn ngày rồi đi du lịch."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 完成",
+              "vi": "A hoàn thành"
+            },
+            {
+              "zh": "B 坚持",
+              "vi": "B kiên trì"
+            },
+            {
+              "zh": "C 发生",
+              "vi": "C xảy ra"
+            },
+            {
+              "zh": "D 怎样",
+              "vi": "D thế nào"
+            },
+            {
+              "zh": "E 大概",
+              "vi": "E khoảng"
+            }
+          ],
+          "answer": "E 大概",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第8题（E）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question9",
+          "prompt": {
+            "zh": "9. A：快12点了，你是不是想睡觉了？ B：我一定要______到12点，新的一年开始以后再睡觉。",
+            "vi": "A: Gần mười hai giờ rồi, bạn buồn ngủ phải không? B: Tôi nhất định phải ________ thức đến mười hai giờ, sang năm mới rồi mới ngủ."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 完成",
+              "vi": "A hoàn thành"
+            },
+            {
+              "zh": "B 坚持",
+              "vi": "B kiên trì"
+            },
+            {
+              "zh": "C 发生",
+              "vi": "C xảy ra"
+            },
+            {
+              "zh": "D 怎样",
+              "vi": "D thế nào"
+            },
+            {
+              "zh": "E 大概",
+              "vi": "E khoảng"
+            }
+          ],
+          "answer": "B 坚持",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第9题（B）"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:words-question10",
+          "prompt": {
+            "zh": "10. A：新年就要到了，可是今年的目标还没______呢。 B：没关系，明年我们一起努力吧。",
+            "vi": "A: Năm mới sắp đến mà mục tiêu năm nay tôi vẫn chưa ________. B: Không sao, năm sau chúng ta cùng cố gắng nhé."
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "input": "select",
+          "assessment": "official",
+          "options": [
+            {
+              "zh": "A 完成",
+              "vi": "A hoàn thành"
+            },
+            {
+              "zh": "B 坚持",
+              "vi": "B kiên trì"
+            },
+            {
+              "zh": "C 发生",
+              "vi": "C xảy ra"
+            },
+            {
+              "zh": "D 怎样",
+              "vi": "D thế nào"
+            },
+            {
+              "zh": "E 大概",
+              "vi": "E khoảng"
+            }
+          ],
+          "answer": "A 完成",
+          "answerSource": {
+            "document": "hsk3-answers",
+            "pdfPage": 27,
+            "item": "第18课 选词填空 第10题（A）"
+          }
+        }
+      ],
+      "note": {
+        "zh": "A 完成；B 坚持；C 发生；D 怎样；E 大概。",
+        "vi": "A hoàn thành; B kiên trì; C xảy ra; D thế nào; E khoảng"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:picture1",
+      "kind": "fill",
+      "title": {
+        "zh": "图1：A：马上就要过春节了，你______？ B：我刚刚______，要和家人一起过。 A：太好了，你和家人已经很久没______了吧？ B：是啊，我大概______没回家过春节了。",
+        "vi": "A: Sắp Tết rồi, bạn ________? B: Tôi vừa ________, sẽ đón Tết cùng gia đình. A: Tốt quá, chắc bạn đã lâu không ________ với gia đình rồi nhỉ? B: Đúng vậy, khoảng ________ rồi tôi chưa về nhà ăn Tết."
+      },
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section2:block:2",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "打算怎样过",
+            "vi": "định đón Tết thế nào"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture1-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "买了回家的车票",
+            "vi": "mua vé về quê"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture1-blank3",
+          "prompt": {
+            "zh": "第3空",
+            "vi": "Chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "见面",
+            "vi": "gặp mặt"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture1-blank4",
+          "prompt": {
+            "zh": "第4空",
+            "vi": "Chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "三四年",
+            "vi": "ba hoặc bốn năm"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l18:illustration:picture-1"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:picture2",
+      "kind": "fill",
+      "title": {
+        "zh": "图2：A：行李都准备好了吗？什么时候______？ B：还有大概______。我一想到自己在外国生活就难过。 A：别难过，你______，就跟我视频。 B：好的。从______，我要学会照顾自己。",
+        "vi": "A: Hành lý chuẩn bị xong chưa? Khi nào ________? B: Còn khoảng ________. Cứ nghĩ đến sống ở nước ngoài là tôi buồn. A: Đừng buồn, bạn ________ thì gọi video cho tôi. B: Được. Từ ________, tôi phải học cách tự chăm sóc bản thân."
+      },
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section2:block:3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "出发",
+            "vi": "khởi hành"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture2-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "两三个小时",
+            "vi": "hai hoặc ba tiếng"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture2-blank3",
+          "prompt": {
+            "zh": "第3空",
+            "vi": "Chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "只要想家了",
+            "vi": "chỉ cần nhớ nhà"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture2-blank4",
+          "prompt": {
+            "zh": "第4空",
+            "vi": "Chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "现在起",
+            "vi": "bây giờ trở đi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l18:illustration:picture-2"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:picture3",
+      "kind": "fill",
+      "title": {
+        "zh": "图3：A：你是在哪儿______的？ B：在一个小城市，那里这几年______。 A：我听说你们国家工作机会很多，______，就能找到好工作。 B：没错，所以你应该从______努力学习，以后来我们国家。",
+        "vi": "A: Bạn ________ ở đâu? B: Ở một thành phố nhỏ, nơi đó mấy năm nay ________. A: Tôi nghe nói nước bạn có nhiều cơ hội việc làm; ________ thì có thể tìm được việc tốt. B: Đúng, nên bạn hãy chăm chỉ học từ ________, sau này đến nước tôi."
+      },
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section2:block:4",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "出生",
+            "vi": "sinh ra"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture3-blank2",
+          "prompt": {
+            "zh": "第2空",
+            "vi": "Chỗ trống 2"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "发展得很快",
+            "vi": "phát triển rất nhanh"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture3-blank3",
+          "prompt": {
+            "zh": "第3空",
+            "vi": "Chỗ trống 3"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "只要有合适的能力",
+            "vi": "chỉ cần có năng lực phù hợp"
+          }
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:picture3-blank4",
+          "prompt": {
+            "zh": "第4空",
+            "vi": "Chỗ trống 4"
+          },
+          "source": {
+            "pdfPage": 183,
+            "printedPage": 171,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "referenceAnswer": {
+            "zh": "现在起",
+            "vi": "bây giờ trở đi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由编辑依据课文补充；合理答案可以不同，不作唯一答案判分。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung dựa trên bài học; có nhiều cách trả lời hợp lý, không chấm theo một đáp án duy nhất."
+      },
+      "illustrationIds": [
+        "hsk3-fltrp-2026:l18:illustration:picture-3"
+      ]
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:classroom",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：多人活动",
+        "vi": "Hoạt động trên lớp: làm việc nhóm"
+      },
+      "source": {
+        "pdfPage": 184,
+        "printedPage": 172,
+        "section": "课堂活动：多人活动",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section3",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:classroom-response1",
+          "prompt": {
+            "zh": "节日名称、时间、庆祝方式、特色食物和意义",
+            "vi": "Tên lễ, thời gian, cách tổ chức, món ăn đặc trưng và ý nghĩa"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "课堂活动：多人活动",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "四人一组，每人介绍自己国家的一个传统节日。介绍内容包括：节日名称、节日的时间、怎么庆祝这个节日、节日的特色食物和意义等。练习时，使用本课所学的词语和语言点。 可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Nhóm bốn người, mỗi người giới thiệu một ngày lễ truyền thống của nước mình: tên lễ, thời gian, cách mừng lễ, món ăn đặc trưng và ý nghĩa. Dùng từ và ngữ pháp đã học trong bài. Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:review-vocabulary",
+      "kind": "open",
+      "title": {
+        "zh": "词语学习",
+        "vi": "Tự đánh giá từ vựng"
+      },
+      "source": {
+        "pdfPage": 184,
+        "printedPage": 172,
+        "section": "学习小结：16—18课我的学习情况",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section4:vocabulary",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-known",
+          "prompt": {
+            "zh": "我已经记住并会使用的词语",
+            "vi": "Những từ tôi đã nhớ và dùng được"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-learning",
+          "prompt": {
+            "zh": "我还没记住的词语",
+            "vi": "Những từ tôi chưa nhớ"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:review-grammar",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我理解并会用",
+        "vi": "Tôi hiểu và biết dùng"
+      },
+      "source": {
+        "pdfPage": 184,
+        "printedPage": 172,
+        "section": "学习小结：16—18课我的学习情况",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section4:grammar",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar1-understand",
+          "prompt": {
+            "zh": "并列复句“一会儿……，一会儿……”：它一会儿在你脚边睡觉，一会儿在你身上爬。：理解",
+            "vi": "Câu song song 一会儿…一会儿…: Nó lúc thì ngủ bên chân bạn, lúc thì leo trên người bạn.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar1-use",
+          "prompt": {
+            "zh": "并列复句“一会儿……，一会儿……”：它一会儿在你脚边睡觉，一会儿在你身上爬。：会用",
+            "vi": "Câu song song 一会儿…一会儿…: Nó lúc thì ngủ bên chân bạn, lúc thì leo trên người bạn.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar2-understand",
+          "prompt": {
+            "zh": "介词“关于”：关于这个问题，我得慢慢给你讲。：理解",
+            "vi": "Giới từ 关于: Về vấn đề này, tôi phải giải thích từ từ cho bạn.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar2-use",
+          "prompt": {
+            "zh": "介词“关于”：关于这个问题，我得慢慢给你讲。：会用",
+            "vi": "Giới từ 关于: Về vấn đề này, tôi phải giải thích từ từ cho bạn.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar3-understand",
+          "prompt": {
+            "zh": "固定短语“一般来说”：一般来说，熊猫每天要睡很多次觉。：理解",
+            "vi": "Cụm 一般来说: Nói chung, gấu trúc ngủ nhiều lần mỗi ngày.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar3-use",
+          "prompt": {
+            "zh": "固定短语“一般来说”：一般来说，熊猫每天要睡很多次觉。：会用",
+            "vi": "Cụm 一般来说: Nói chung, gấu trúc ngủ nhiều lần mỗi ngày.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar4-understand",
+          "prompt": {
+            "zh": "比较句（11）：冬天比夏天早关门一个小时。：理解",
+            "vi": "So sánh(11): Mùa đông đóng cửa sớm hơn mùa hè một tiếng.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar4-use",
+          "prompt": {
+            "zh": "比较句（11）：冬天比夏天早关门一个小时。：会用",
+            "vi": "So sánh(11): Mùa đông đóng cửa sớm hơn mùa hè một tiếng.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar5-understand",
+          "prompt": {
+            "zh": "介词“向”：别再向前走了。：理解",
+            "vi": "Giới từ 向: Đừng đi tiếp về phía trước nữa.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar5-use",
+          "prompt": {
+            "zh": "介词“向”：别再向前走了。：会用",
+            "vi": "Giới từ 向: Đừng đi tiếp về phía trước nữa.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 184,
+            "printedPage": 172,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar6-understand",
+          "prompt": {
+            "zh": "反问句“不是……吗？”：你不是喜欢玩电脑吗？你可以去看看跟电脑有关系的书。：理解",
+            "vi": "Câu hỏi tu từ 不是…吗?: Chẳng phải bạn thích dùng máy tính sao? Bạn có thể xem sách liên quan đến máy tính.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar6-use",
+          "prompt": {
+            "zh": "反问句“不是……吗？”：你不是喜欢玩电脑吗？你可以去看看跟电脑有关系的书。：会用",
+            "vi": "Câu hỏi tu từ 不是…吗?: Chẳng phải bạn thích dùng máy tính sao? Bạn có thể xem sách liên quan đến máy tính.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar7-understand",
+          "prompt": {
+            "zh": "递进复句“……，更……”：我还没想好学什么，更没想好去哪个国家。：理解",
+            "vi": "Câu tăng tiến 更: Tôi chưa nghĩ xong sẽ học gì, càng chưa nghĩ xong sẽ đi nước nào.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar7-use",
+          "prompt": {
+            "zh": "递进复句“……，更……”：我还没想好学什么，更没想好去哪个国家。：会用",
+            "vi": "Câu tăng tiến 更: Tôi chưa nghĩ xong sẽ học gì, càng chưa nghĩ xong sẽ đi nước nào.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar8-understand",
+          "prompt": {
+            "zh": "条件复句“只有……，才……”：只有想清楚自己真正喜欢什么，才能做出最合适的选择。：理解",
+            "vi": "Điều kiện cần 只有…才…: Chỉ khi hiểu rõ mình thật sự thích gì mới đưa ra lựa chọn phù hợp nhất.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar8-use",
+          "prompt": {
+            "zh": "条件复句“只有……，才……”：只有想清楚自己真正喜欢什么，才能做出最合适的选择。：会用",
+            "vi": "Điều kiện cần 只有…才…: Chỉ khi hiểu rõ mình thật sự thích gì mới đưa ra lựa chọn phù hợp nhất.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar9-understand",
+          "prompt": {
+            "zh": "概数表达法：春节大概放七八天假。：理解",
+            "vi": "Số ước lượng: Tết được nghỉ khoảng bảy, tám ngày.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar9-use",
+          "prompt": {
+            "zh": "概数表达法：春节大概放七八天假。：会用",
+            "vi": "Số ước lượng: Tết được nghỉ khoảng bảy, tám ngày.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar10-understand",
+          "prompt": {
+            "zh": "“刚才”和“刚刚”：刚才的电话是我妈妈打来的。：理解",
+            "vi": "刚才 và 刚刚: Cuộc gọi vừa rồi là mẹ tôi gọi đến.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar10-use",
+          "prompt": {
+            "zh": "“刚才”和“刚刚”：刚才的电话是我妈妈打来的。：会用",
+            "vi": "刚才 và 刚刚: Cuộc gọi vừa rồi là mẹ tôi gọi đến.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar11-understand",
+          "prompt": {
+            "zh": "条件复句“只要……，就……”：我只要几天不跟他视频，就很想他。：理解",
+            "vi": "Điều kiện đủ 只要…就…: Chỉ cần vài ngày không gọi video với con là tôi nhớ con lắm.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar11-use",
+          "prompt": {
+            "zh": "条件复句“只要……，就……”：我只要几天不跟他视频，就很想他。：会用",
+            "vi": "Điều kiện đủ 只要…就…: Chỉ cần vài ngày không gọi video với con là tôi nhớ con lắm.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar12-understand",
+          "prompt": {
+            "zh": "固定格式“从……起”：他从那时起就努力学习。：理解",
+            "vi": "Mẫu 从…起: Từ khi ấy anh ấy đã chăm chỉ học tập.: Đã hiểu"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        },
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-grammar12-use",
+          "prompt": {
+            "zh": "固定格式“从……起”：他从那时起就努力学习。：会用",
+            "vi": "Mẫu 从…起: Từ khi ấy anh ấy đã chăm chỉ học tập.: Biết dùng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "checkbox",
+          "assessment": "open"
+        }
+      ],
+      "matrix": {
+        "mode": "checks",
+        "rowHeading": {
+          "zh": "语言点与例句",
+          "vi": "Ngữ pháp và ví dụ"
+        },
+        "columns": [
+          {
+            "zh": "理解",
+            "vi": "Đã hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "并列复句“一会儿……，一会儿……”：它一会儿在你脚边睡觉，一会儿在你身上爬。",
+              "vi": "Câu song song 一会儿…一会儿…: Nó lúc thì ngủ bên chân bạn, lúc thì leo trên người bạn."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar1-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar1-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "介词“关于”：关于这个问题，我得慢慢给你讲。",
+              "vi": "Giới từ 关于: Về vấn đề này, tôi phải giải thích từ từ cho bạn."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar2-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar2-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "固定短语“一般来说”：一般来说，熊猫每天要睡很多次觉。",
+              "vi": "Cụm 一般来说: Nói chung, gấu trúc ngủ nhiều lần mỗi ngày."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar3-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar3-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（11）：冬天比夏天早关门一个小时。",
+              "vi": "So sánh(11): Mùa đông đóng cửa sớm hơn mùa hè một tiếng."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar4-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar4-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "介词“向”：别再向前走了。",
+              "vi": "Giới từ 向: Đừng đi tiếp về phía trước nữa."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar5-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar5-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "反问句“不是……吗？”：你不是喜欢玩电脑吗？你可以去看看跟电脑有关系的书。",
+              "vi": "Câu hỏi tu từ 不是…吗?: Chẳng phải bạn thích dùng máy tính sao? Bạn có thể xem sách liên quan đến máy tính."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar6-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar6-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "递进复句“……，更……”：我还没想好学什么，更没想好去哪个国家。",
+              "vi": "Câu tăng tiến 更: Tôi chưa nghĩ xong sẽ học gì, càng chưa nghĩ xong sẽ đi nước nào."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar7-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar7-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "条件复句“只有……，才……”：只有想清楚自己真正喜欢什么，才能做出最合适的选择。",
+              "vi": "Điều kiện cần 只有…才…: Chỉ khi hiểu rõ mình thật sự thích gì mới đưa ra lựa chọn phù hợp nhất."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar8-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar8-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "概数表达法：春节大概放七八天假。",
+              "vi": "Số ước lượng: Tết được nghỉ khoảng bảy, tám ngày."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar9-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar9-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "“刚才”和“刚刚”：刚才的电话是我妈妈打来的。",
+              "vi": "刚才 và 刚刚: Cuộc gọi vừa rồi là mẹ tôi gọi đến."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar10-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar10-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "条件复句“只要……，就……”：我只要几天不跟他视频，就很想他。",
+              "vi": "Điều kiện đủ 只要…就…: Chỉ cần vài ngày không gọi video với con là tôi nhớ con lắm."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar11-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar11-use"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "固定格式“从……起”：他从那时起就努力学习。",
+              "vi": "Mẫu 从…起: Từ khi ấy anh ấy đã chăm chỉ học tập."
+            },
+            "fieldIds": [
+              "hsk3-fltrp-2026:l18:field:review-grammar12-understand",
+              "hsk3-fltrp-2026:l18:field:review-grammar12-use"
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:activity:review-improvement",
+      "kind": "open",
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Những điểm tôi cần cố gắng"
+      },
+      "source": {
+        "pdfPage": 185,
+        "printedPage": 173,
+        "section": "学习小结：16—18课我的学习情况",
+        "provenance": "textbook"
+      },
+      "origin": "textbook",
+      "targetRef": "hsk3-fltrp-2026:l18:section4:improvement",
+      "fields": [
+        {
+          "id": "hsk3-fltrp-2026:l18:field:review-improvement",
+          "prompt": {
+            "zh": "我需要努力的",
+            "vi": "Những điểm tôi cần cố gắng"
+          },
+          "source": {
+            "pdfPage": 185,
+            "printedPage": 173,
+            "section": "学习小结：16—18课我的学习情况",
+            "provenance": "textbook"
+          },
+          "input": "textarea",
+          "assessment": "open"
+        }
+      ],
+      "note": {
+        "zh": "可使用虚构情境，不必提供真实个人信息；不自动判分。",
+        "vi": "Có thể dùng tình huống hư cấu, không cần cung cấp thông tin cá nhân thật; không chấm tự động."
+      }
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "自制辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:warmup1",
+        "position": 1,
+        "pdfPage": 175,
+        "printedPage": 163
+      },
+      "alt": {
+        "zh": "两个人在红灯笼下拱手问候，上方写着拼音Guònián hǎo。",
+        "vi": "Hai người chắp tay chào nhau dưới đèn lồng đỏ, phía trên ghi pinyin Guònián hǎo."
+      },
+      "description": {
+        "zh": "两个人在红灯笼下拱手问候，上方写着拼音Guònián hǎo。",
+        "vi": "Hai người chắp tay chào nhau dưới đèn lồng đỏ, phía trên ghi pinyin Guònián hǎo."
+      },
+      "file": "illustrations/hsk3-l18-warmup1-1.svg",
+      "sceneKey": "warmup1-1",
+      "publicationStatus": "approved",
+      "assetSha256": "982bb62b22dd5a4a9053501b3ddf23a64a2b9d8138b213f1c2e823e90d9e086c",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "自制辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:warmup1",
+        "position": 2,
+        "pdfPage": 175,
+        "printedPage": 163
+      },
+      "alt": {
+        "zh": "一位长辈向孩子递红色红包。",
+        "vi": "Một người lớn trao bao lì xì màu đỏ cho trẻ."
+      },
+      "description": {
+        "zh": "一位长辈向孩子递红色红包。",
+        "vi": "Một người lớn trao bao lì xì màu đỏ cho trẻ."
+      },
+      "file": "illustrations/hsk3-l18-warmup1-2.svg",
+      "sceneKey": "warmup1-2",
+      "publicationStatus": "approved",
+      "assetSha256": "7c281b5b1a75530422a6c641e35362ee7815a61c13d7037afd546a9a2bf553c5",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "自制辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:warmup1",
+        "position": 3,
+        "pdfPage": 175,
+        "printedPage": 163
+      },
+      "alt": {
+        "zh": "一家人在灯笼装饰的餐桌旁吃团圆饭。",
+        "vi": "Một gia đình ăn bữa cơm đoàn viên quanh bàn có trang trí đèn lồng."
+      },
+      "description": {
+        "zh": "一家人在灯笼装饰的餐桌旁吃团圆饭。",
+        "vi": "Một gia đình ăn bữa cơm đoàn viên quanh bàn có trang trí đèn lồng."
+      },
+      "file": "illustrations/hsk3-l18-warmup1-3.svg",
+      "sceneKey": "warmup1-3",
+      "publicationStatus": "approved",
+      "assetSha256": "54276686e900a303f4845d07a787e4389b999d756d9b50c803fdfe258a2df00f",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "自制辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:warmup1",
+        "position": 4,
+        "pdfPage": 175,
+        "printedPage": 163
+      },
+      "alt": {
+        "zh": "双手在案板上捏合饺子皮，旁边放着包好的饺子。",
+        "vi": "Hai bàn tay nắn mép vỏ sủi cảo trên thớt; bên cạnh có sủi cảo đã gói."
+      },
+      "description": {
+        "zh": "双手在案板上捏合饺子皮，旁边放着包好的饺子。",
+        "vi": "Hai bàn tay nắn mép vỏ sủi cảo trên thớt; bên cạnh có sủi cảo đã gói."
+      },
+      "file": "illustrations/hsk3-l18-warmup1-4.svg",
+      "sceneKey": "warmup1-4",
+      "publicationStatus": "approved",
+      "assetSha256": "2dd8e067e9f3c298828e780bd9dd2a5897c5b483ac99ef311469e321323313ea",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:warmup1-5",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "自制辅助示意图：warmup1-5",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:warmup1",
+        "position": 5,
+        "pdfPage": 175,
+        "printedPage": 163
+      },
+      "alt": {
+        "zh": "一家人面对电视观看舞台表演，屏幕上有表演者。",
+        "vi": "Một gia đình hướng về tivi xem chương trình văn nghệ, trên màn hình có người biểu diễn."
+      },
+      "description": {
+        "zh": "一家人面对电视观看舞台表演，屏幕上有表演者。",
+        "vi": "Một gia đình hướng về tivi xem chương trình văn nghệ, trên màn hình có người biểu diễn."
+      },
+      "file": "illustrations/hsk3-l18-warmup1-5.svg",
+      "sceneKey": "warmup1-5",
+      "publicationStatus": "approved",
+      "assetSha256": "ce095abccae03d84df3d39c7e25d9d25e9edf2614db50fb8eb9cdfc20de3ff41",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:warmup1-6",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 175,
+        "printedPage": 163,
+        "section": "自制辅助示意图：warmup1-6",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:warmup1",
+        "position": 6,
+        "pdfPage": 175,
+        "printedPage": 163
+      },
+      "alt": {
+        "zh": "一个人用扫帚打扫房间，旁边有窗户。",
+        "vi": "Một người dùng chổi quét dọn phòng, bên cạnh có cửa sổ."
+      },
+      "description": {
+        "zh": "一个人用扫帚打扫房间，旁边有窗户。",
+        "vi": "Một người dùng chổi quét dọn phòng, bên cạnh có cửa sổ."
+      },
+      "file": "illustrations/hsk3-l18-warmup1-6.svg",
+      "sceneKey": "warmup1-6",
+      "publicationStatus": "approved",
+      "assetSha256": "8d023f3167d11968cc07ee8b5990bbb76c304d4328dad9d7057b692b8fd275d9",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:warmup1-matching"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:text1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 176,
+        "printedPage": 164,
+        "section": "自制辅助示意图：text1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:text1",
+        "position": 1,
+        "pdfPage": 176,
+        "printedPage": 164
+      },
+      "alt": {
+        "zh": "新年餐桌上摆着饺子、水果和红包，上方挂着红灯笼。",
+        "vi": "Bàn ngày Tết có sủi cảo, trái cây và bao lì xì; phía trên treo đèn lồng đỏ."
+      },
+      "description": {
+        "zh": "新年餐桌上摆着饺子、水果和红包，上方挂着红灯笼。",
+        "vi": "Bàn ngày Tết có sủi cảo, trái cây và bao lì xì; phía trên treo đèn lồng đỏ."
+      },
+      "file": "illustrations/hsk3-l18-text1-1.svg",
+      "sceneKey": "text1-1",
+      "publicationStatus": "approved",
+      "assetSha256": "4e135098d94a6bff308b71035353784e6e6661fc002ea18078b7ffe35d3df257",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:text2-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 178,
+        "printedPage": 166,
+        "section": "自制辅助示意图：text2-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:text2",
+        "position": 1,
+        "pdfPage": 178,
+        "printedPage": 166
+      },
+      "alt": {
+        "zh": "客人带着礼袋到家里拜年，主人热情迎接。",
+        "vi": "Khách mang túi quà đến nhà chúc Tết, chủ nhà vui vẻ đón tiếp."
+      },
+      "description": {
+        "zh": "客人带着礼袋到家里拜年，主人热情迎接。",
+        "vi": "Khách mang túi quà đến nhà chúc Tết, chủ nhà vui vẻ đón tiếp."
+      },
+      "file": "illustrations/hsk3-l18-text2-1.svg",
+      "sceneKey": "text2-1",
+      "publicationStatus": "approved",
+      "assetSha256": "58ab8fd02bd7da260bd816cfea24849566c1258632132f22f6edc54ab752658c",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:text3-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 179,
+        "printedPage": 167,
+        "section": "自制辅助示意图：text3-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:text3",
+        "position": 1,
+        "pdfPage": 179,
+        "printedPage": 167
+      },
+      "alt": {
+        "zh": "两位女子一起看打开的相册，书页里有照片。",
+        "vi": "Hai phụ nữ cùng xem album mở, trên trang có ảnh."
+      },
+      "description": {
+        "zh": "两位女子一起看打开的相册，书页里有照片。",
+        "vi": "Hai phụ nữ cùng xem album mở, trên trang có ảnh."
+      },
+      "file": "illustrations/hsk3-l18-text3-1.svg",
+      "sceneKey": "text3-1",
+      "publicationStatus": "approved",
+      "assetSha256": "8321be2e270c4780f0310bcab9908e2c6f104a9b01f36513ec6a9646c4e428c8",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:text4-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 181,
+        "printedPage": 169,
+        "section": "自制辅助示意图：text4-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:text4",
+        "position": 1,
+        "pdfPage": 181,
+        "printedPage": 169
+      },
+      "alt": {
+        "zh": "四个人并排站在一起，表示春节家庭合影。",
+        "vi": "Bốn người đứng cạnh nhau, gợi ảnh chụp chung của gia đình dịp Tết."
+      },
+      "description": {
+        "zh": "四个人并排站在一起，表示春节家庭合影。",
+        "vi": "Bốn người đứng cạnh nhau, gợi ảnh chụp chung của gia đình dịp Tết."
+      },
+      "file": "illustrations/hsk3-l18-text4-1.svg",
+      "sceneKey": "text4-1",
+      "publicationStatus": "approved",
+      "assetSha256": "e00713ecca5d5b0d97e4a08b372033ac995886e297cb25b3fc7ac1e0acaede16",
+      "activityBindings": [],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:picture-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "自制辅助示意图：picture-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:section2",
+        "position": 1,
+        "pdfPage": 183,
+        "printedPage": 171
+      },
+      "alt": {
+        "zh": "两位女子站在屋外边笑边交谈。",
+        "vi": "Hai phụ nữ đứng ngoài nhà, vừa cười vừa trò chuyện."
+      },
+      "description": {
+        "zh": "两位女子站在屋外边笑边交谈。",
+        "vi": "Hai phụ nữ đứng ngoài nhà, vừa cười vừa trò chuyện."
+      },
+      "file": "illustrations/hsk3-l18-picture-1.svg",
+      "sceneKey": "picture-1",
+      "publicationStatus": "approved",
+      "assetSha256": "b51065869eafc10765d147e0e0bf982705e76285a1419b9187f1a60f5eb2bd0e",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:picture1"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:picture-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "自制辅助示意图：picture-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:section2",
+        "position": 2,
+        "pdfPage": 183,
+        "printedPage": 171
+      },
+      "alt": {
+        "zh": "一个带拉杆和轮子的行李箱旁放着背包。",
+        "vi": "Một va li có tay kéo và bánh xe đặt cạnh ba lô."
+      },
+      "description": {
+        "zh": "一个带拉杆和轮子的行李箱旁放着背包。",
+        "vi": "Một va li có tay kéo và bánh xe đặt cạnh ba lô."
+      },
+      "file": "illustrations/hsk3-l18-picture-2.svg",
+      "sceneKey": "picture-2",
+      "publicationStatus": "approved",
+      "assetSha256": "95a94571b4a89d1b07e5e63c03d15e72859e124e209d4f3ca1a1aa5651393cdd",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:picture2"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    },
+    {
+      "id": "hsk3-fltrp-2026:l18:illustration:picture-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 183,
+        "printedPage": 171,
+        "section": "自制辅助示意图：picture-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "owner": "hsk3-fltrp-2026:l18:section2",
+        "position": 3,
+        "pdfPage": 183,
+        "printedPage": 171
+      },
+      "alt": {
+        "zh": "水边的现代城市建筑及其倒影，楼体全部落在岸线上。",
+        "vi": "Các tòa nhà hiện đại ven nước và bóng phản chiếu; chân các tòa nhà đều tiếp giáp bờ."
+      },
+      "description": {
+        "zh": "水边的现代城市建筑及其倒影，楼体全部落在岸线上。",
+        "vi": "Các tòa nhà hiện đại ven nước và bóng phản chiếu; chân các tòa nhà đều tiếp giáp bờ."
+      },
+      "file": "illustrations/hsk3-l18-picture-3.svg",
+      "sceneKey": "picture-3",
+      "publicationStatus": "approved",
+      "assetSha256": "d4ce75aa5195c10f1a232615ef0259c60c7424b9de5217e15238683aeadad23c",
+      "activityBindings": [
+        "hsk3-fltrp-2026:l18:activity:picture3"
+      ],
+      "rights": "Original SVG vectors authored for this lesson; no source pixels, external assets or logos. Approved means artwork publication rights, not independent lesson acceptance.",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-04",
+        "method": "All 35 original 640x400 SVGs rendered with Inkscape and personally inspected in nine full-resolution sheets. Repaired panda body outlines, limbs, human necks, podium, hand-to-envelope contact, television viewers, lantern strings and broom grip; re-rendered and inspected final pixels."
+      },
+      "independentReview": {
+        "status": "pending",
+        "browserVerification": "pending"
+      }
+    }
+  ],
+  "additionalSourceRevisions": [
+    {
+      "id": "hsk3-official-vi-20261004",
+      "filename": "HSK3 (3.0).pdf",
+      "sha256": "7e4e6953ff41659af5ec4ca3efd12c7b53e9703f7529ee65d418426afd814951",
+      "bytes": 96266563,
+      "pdfPages": 212,
+      "bodyPrintedPageOffset": 12,
+      "language": "zh+vi",
+      "role": "additional-official-source; no replacement of original-source identity",
+      "originalChinesePdfSha256": "33a9c743f73f634f97a9864aa0423ac4e3568b3febbf57b63e983b5dcc0932f2",
+      "sameBytesAsOriginalChineseSource": false,
+      "officialPOSAbbreviationLanguage": "Vietnamese",
+      "doesNotRevalidateOriginalEnglishAppendix": true,
+      "posLegend": {
+        "source": {
+          "pdfPage": 186,
+          "printedPage": 174,
+          "section": "词语表：词类缩写说明",
+          "provenance": "textbook"
+        },
+        "printedLanguage": "vi",
+        "rawLabelToChineseCategory": {
+          "dt.": "名词",
+          "đgt.": "动词",
+          "tt.": "形容词",
+          "đt.": "代词",
+          "phó.": "副词",
+          "giới.": "介词",
+          "liên.": "连词",
+          "trợ.": "助词",
+          "số.": "数词",
+          "lượng.": "量词",
+          "sl.": "数量词",
+          "ct.": "叹词",
+          "tượng.": "拟声词",
+          "đtnn.": "能愿动词",
+          "ttố.": "前缀",
+          "htố.": "后缀"
+        }
+      },
+      "sourceAudit": {
+        "authorStatus": "visual-reviewed",
+        "independentStatus": "accepted-source-evidence",
+        "scope": "Chinese, pinyin, printed number, POS, glossary page, lesson numbers and stars",
+        "vietnameseGlossAlignment": "deferred-to-Phase-B",
+        "independentEvidence": {
+          "status": "accepted-source-evidence",
+          "reviewer": "qa_hsk1_05_08",
+          "evidenceFile": "docs/resume-20261004/qa-hsk3-official-source/review.json",
+          "evidenceSha256": "9f015fbf612d81a8c8ab498ecf6b3af40209f5ae0832d34e78bc961f85d5a23c",
+          "reviewedStableRows": 523,
+          "acceptedInputFiles": [
+            "official-vi-glossary.tsv",
+            "official-vi-l01-06.json",
+            "official-vi-l07-12.json",
+            "official-vi-l13-18.json"
+          ],
+          "acceptedStableIdCount": 523,
+          "acceptedInputManifest": [
+            {
+              "filename": "official-vi-glossary.tsv",
+              "sha256": "aea9a464ff839968750c51c30df22736ed2385ce49fa1c8ace996583f32cd5df",
+              "status": "independently-accepted-source-evidence",
+              "glossaryRows": 487
+            },
+            {
+              "filename": "official-vi-l01-06.json",
+              "sha256": "6ecc974a2fc390f6ca4db68f066a960d24c31a173fadc78f91188544815cfcb1",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 171,
+              "printedOccurrences": 162,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l07-12.json",
+              "sha256": "d36d94b7897b655c0830efe03b2742f284825f683e4fafba3bc21c87610fa5c4",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 184,
+              "printedOccurrences": 166,
+              "vocabularyBoxes": 24
+            },
+            {
+              "filename": "official-vi-l13-18.json",
+              "sha256": "452fde861c9899f90a1e16b82e4c8556414d563ed94fd6a7dac0502c59758449",
+              "status": "independently-accepted-source-evidence",
+              "stableRows": 168,
+              "printedOccurrences": 163,
+              "vocabularyBoxes": 24
+            }
+          ],
+          "scope": "Official additional-source Chinese/pinyin/number/POS/glossary anchors only; no original English or full VI audit"
+        }
+      }
+    }
+  ]
+}
+`;export{e as default};

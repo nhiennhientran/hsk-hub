@@ -1,0 +1,10 @@
+var e=`{
+  "schemaVersion": 1,
+  "active": {
+    "manifestFile": "content/official-vi-revisions/hsk1-official-vi-release-ready-20261005.json",
+    "manifestSHA256": "4b41c41fd5ef18e0c1b803195015dfccc352ef4f9b58dc80e6d7ea6fc68b8e7e",
+    "reviewFile": "content/official-vi-revisions/hsk1-official-vi-release-ready-20261005.review.json",
+    "reviewSHA256": "dc375a677399a4a99d54778a2b3439621cdd937a30a2c3ce05dd45bbd8b4caec"
+  }
+}
+`;export{e as default};

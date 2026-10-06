@@ -1,0 +1,6158 @@
+var e=`{
+  "schemaVersion": 1,
+  "courseId": "hsk2-fltrp-2026",
+  "version": "2026.1",
+  "number": 12,
+  "id": "hsk2-fltrp-2026:l12",
+  "title": {
+    "zh": "这里比北京冷多了",
+    "vi": "Ở đây lạnh hơn Bắc Kinh nhiều",
+    "py": "Zhèlǐ bǐ Běijīng lěngduō le"
+  },
+  "source": {
+    "startPdfPage": 117,
+    "endPdfPage": 126,
+    "startPrintedPage": 102,
+    "endPrintedPage": 111
+  },
+  "reviewStatus": {
+    "sourceVisual": true,
+    "vietnamese": true,
+    "pinyin": true,
+    "reviewer": "independent AI source/language/pedagogy reviewer",
+    "notes": [
+      "Chinese source content checked against all lesson page images; source pinyin retained and editorial pinyin checked.",
+      "All Vietnamese text is an editorial translation, not printed textbook content.",
+      "Original homework and independent listening questions are supplemental.",
+      "All textbook PDF117–126 and answer PDF15–17 visually inspected.11 numbered headwords/11 lexical records.",
+      "Complete nine-row lessons10–12 review retained with both vocabulary fields and separate understanding/use checks. No culture panel printed.",
+      "All8 original-track ASR segment outputs read. ASR names/homophones and trailing hallucinated subtitle credit in12-1 are not adopted as printed source; auxiliary mapping evidence is not human listening certification.",
+      "Text4 printed 个 is neutral ge; source sense 好 is adverb hǎo.",
+      "Independent reviewer inspected all lesson/answer page pixels, every JSON field and all8 ASR segment outputs;16/16 combined lesson11–12 MP3 hashes and full decodes rechecked. This is not human/native-speaker audio certification.",
+      "Supplemental listening near-repeats replaced with distinct comprehension targets; ordering prompts now constrain plausible alternative chunk placements. See independent audit."
+    ]
+  },
+  "objectives": [
+    {
+      "zh": "能听懂并谈论天气情况。",
+      "vi": "Nghe hiểu và trò chuyện về thời tiết.",
+      "id": "hsk2-fltrp-2026:l12:objective1",
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "能听懂并描述动作状态之间的差别。",
+      "vi": "Nghe hiểu và miêu tả sự khác nhau về trạng thái/cách thực hiện hành động.",
+      "id": "hsk2-fltrp-2026:l12:objective2",
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "掌握比较句的用法，能说明事物之间的差别很大。",
+      "vi": "Nắm câu so sánh để diễn đạt sự chênh lệch lớn giữa các sự vật.",
+      "id": "hsk2-fltrp-2026:l12:objective3",
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "目标",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "warmup": [
+    {
+      "id": "hsk2-fltrp-2026:l12:warmup1",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "items": [
+        {
+          "zh": "A 晴；B 楼；C 地铁；D 阴",
+          "vi": "A nắng, quang đãng; B tòa nhà; C tàu điện ngầm; D âm u"
+        },
+        {
+          "zh": "图片描述（编辑补充）：地铁站台和列车；有阳光的蓝天；阴云下的城市；多栋高楼。",
+          "vi": "Mô tả tranh (biên tập bổ sung): sân ga và tàu điện ngầm; trời xanh có nắng; thành phố dưới mây âm u; nhiều tòa nhà cao tầng.",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身图片描述",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:warmup2",
+      "title": {
+        "zh": "小调查：四人一组，完成下面的表格。",
+        "vi": "Khảo sát nhỏ: theo nhóm bốn người, hoàn thành bảng."
+      },
+      "items": [
+        {
+          "zh": "列：我；A：______；B：______；C：______",
+          "vi": "Cột: tôi; A: ______; B: ______; C: ______"
+        },
+        {
+          "zh": "几点起床？",
+          "vi": "Dậy lúc mấy giờ?"
+        },
+        {
+          "zh": "几点睡觉？",
+          "vi": "Đi ngủ lúc mấy giờ?"
+        },
+        {
+          "zh": "跑步快不快？",
+          "vi": "Chạy có nhanh không?"
+        }
+      ],
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "热身",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "texts": [
+    {
+      "id": "hsk2-fltrp-2026:l12:text1",
+      "number": 1,
+      "title": {
+        "zh": "课文1",
+        "vi": "Bài khóa 1"
+      },
+      "context": {
+        "zh": "在房间，王一雪接到白家月的电话。",
+        "vi": "Trong phòng, Vương Nhất Tuyết nhận cuộc gọi của Bạch Gia Nguyệt.",
+        "source": {
+          "pdfPage": 118,
+          "printedPage": 103,
+          "section": "课文1情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "12-1",
+      "lines": [
+        {
+          "zh": "喂，家月，是你啊！有什么事情吗？",
+          "vi": "A lô, Gia Nguyệt, là em à! Có chuyện gì không?",
+          "id": "hsk2-fltrp-2026:l12:text1:line1",
+          "speaker": "王一雪",
+          "py": "Wèi, Jiāyuè, shì nǐ a! Yǒu shénme shìqing ma?",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "没什么事，就想跟您说说话。",
+          "vi": "Không có việc gì ạ, em chỉ muốn nói chuyện với cô một chút.",
+          "id": "hsk2-fltrp-2026:l12:text1:line2",
+          "speaker": "白家月",
+          "py": "Méi shénme shì, jiù xiǎng gēn nín shuōshuo huà.",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好啊。你今天没课吗？",
+          "vi": "Được chứ. Hôm nay em không có tiết học à?",
+          "id": "hsk2-fltrp-2026:l12:text1:line3",
+          "speaker": "王一雪",
+          "py": "Hǎo a. Nǐ jīntiān méi kè ma?",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "下午有课。您那里天气怎么样？",
+          "vi": "Chiều em có tiết ạ. Chỗ cô thời tiết thế nào?",
+          "id": "hsk2-fltrp-2026:l12:text1:line4",
+          "speaker": "白家月",
+          "py": "Xiàwǔ yǒu kè. Nín nàlǐ tiānqì zěnmeyàng?",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "北京这几天虽然是晴天，但是有点儿冷。",
+          "vi": "Mấy hôm nay Bắc Kinh tuy có nắng nhưng hơi lạnh.",
+          "id": "hsk2-fltrp-2026:l12:text1:line5",
+          "speaker": "王一雪",
+          "py": "Běijīng zhè jǐ tiān suīrán shì qíng tiān, dànshì yǒudiǎnr lěng.",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我这里比北京冷多了，外边还正下着雪呢！",
+          "vi": "Chỗ em lạnh hơn Bắc Kinh nhiều, ngoài trời còn đang có tuyết rơi!",
+          "id": "hsk2-fltrp-2026:l12:text1:line6",
+          "speaker": "白家月",
+          "py": "Wǒ zhèlǐ bǐ Běijīng lěngduō le, wàibian hái zhèng xiàzhe xuě ne!",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "白家月今天什么时候有课？",
+          "vi": "Hôm nay Gia Nguyệt có tiết học lúc nào?",
+          "id": "hsk2-fltrp-2026:l12:text1:question1",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "上午",
+            "下午",
+            "晚上"
+          ],
+          "answer": 1
+        },
+        {
+          "zh": "北京天气怎么样？",
+          "vi": "Thời tiết Bắc Kinh thế nào?",
+          "id": "hsk2-fltrp-2026:l12:text1:question2",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "不是晴天",
+            "正下着雪",
+            "有点儿冷"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "白家月为什么打电话？",
+          "vi": "Vì sao Gia Nguyệt gọi điện?",
+          "id": "hsk2-fltrp-2026:l12:text1:question3",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月那里的天气怎么样？",
+          "vi": "Thời tiết chỗ Gia Nguyệt thế nào?",
+          "id": "hsk2-fltrp-2026:l12:text1:question4",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:text2",
+      "number": 2,
+      "title": {
+        "zh": "课文2",
+        "vi": "Bài khóa 2"
+      },
+      "context": {
+        "zh": "在客厅，王一雪给王一飞打电话。",
+        "vi": "Trong phòng khách, Nhất Tuyết gọi điện cho Nhất Phi.",
+        "source": {
+          "pdfPage": 120,
+          "printedPage": 105,
+          "section": "课文2情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "12-3",
+      "lines": [
+        {
+          "zh": "喂，一飞，听家月说你那边下雪了，下得大不大？",
+          "vi": "A lô, Nhất Phi, nghe Gia Nguyệt nói chỗ em có tuyết rơi, tuyết có lớn không?",
+          "id": "hsk2-fltrp-2026:l12:text2:line1",
+          "speaker": "王一雪",
+          "py": "Wèi, Yīfēi, tīng Jiāyuè shuō nǐ nàbian xià xuě le, xià de dà bu dà?",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "今天不大，昨天比今天下得大。",
+          "vi": "Hôm nay không lớn, hôm qua tuyết rơi lớn hơn hôm nay.",
+          "id": "hsk2-fltrp-2026:l12:text2:line2",
+          "speaker": "王一飞",
+          "py": "Jīntiān bú dà, zuótiān bǐ jīntiān xià de dà.",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "天气不好，你去外面的时候多穿点儿衣服。",
+          "vi": "Thời tiết xấu, khi ra ngoài em mặc thêm quần áo nhé.",
+          "id": "hsk2-fltrp-2026:l12:text2:line3",
+          "speaker": "王一雪",
+          "py": "Tiānqì bù hǎo, nǐ qù wàimiàn de shíhou duō chuān diǎnr yīfu.",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "这几天我在网上上课，没出去过。",
+          "vi": "Mấy hôm nay em dạy trực tuyến, chưa ra ngoài.",
+          "id": "hsk2-fltrp-2026:l12:text2:line4",
+          "speaker": "王一飞",
+          "py": "Zhè jǐ tiān wǒ zài wǎngshang shàngkè, méi chūquguo.",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "那就好，有事记得给我打电话。",
+          "vi": "Vậy thì tốt, có việc gì nhớ gọi cho chị.",
+          "id": "hsk2-fltrp-2026:l12:text2:line5",
+          "speaker": "王一雪",
+          "py": "Nà jiù hǎo, yǒu shì jìde gěi wǒ dǎ diànhuà.",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好的。现在不下雪了，我出去买点儿吃的。",
+          "vi": "Vâng. Bây giờ hết tuyết rồi, em ra ngoài mua ít đồ ăn.",
+          "id": "hsk2-fltrp-2026:l12:text2:line6",
+          "speaker": "王一飞",
+          "py": "Hǎo de. Xiànzài bú xià xuě le, wǒ chūqù mǎi diǎnr chī de.",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "一次多买点儿，阴天下雪什么的就少出去吧。",
+          "vi": "Mỗi lần mua nhiều một chút, những hôm âm u hay có tuyết thì hạn chế ra ngoài nhé.",
+          "id": "hsk2-fltrp-2026:l12:text2:line7",
+          "speaker": "王一雪",
+          "py": "Yí cì duō mǎi diǎnr, yīn tiān xià xuě shénme de jiù shǎo chūqù ba.",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "王一飞那里的天气怎么样？",
+          "vi": "Thời tiết chỗ Nhất Phi thế nào?",
+          "id": "hsk2-fltrp-2026:l12:text2:question1",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "晴",
+            "阴",
+            "下雪"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一飞现在要去做什么？",
+          "vi": "Bây giờ Nhất Phi định đi làm gì?",
+          "id": "hsk2-fltrp-2026:l12:text2:question2",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "上课",
+            "穿衣服",
+            "买吃的"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "王一飞这几天怎么给学生们上课？",
+          "vi": "Mấy hôm nay Nhất Phi dạy học sinh bằng cách nào?",
+          "id": "hsk2-fltrp-2026:l12:text2:question3",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "王一雪为什么让王一飞多买点儿吃的？",
+          "vi": "Vì sao Nhất Tuyết bảo Nhất Phi mua thêm đồ ăn?",
+          "id": "hsk2-fltrp-2026:l12:text2:question4",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:text3",
+      "number": 3,
+      "title": {
+        "zh": "课文3",
+        "vi": "Bài khóa 3"
+      },
+      "context": {
+        "zh": "在房间，李文给白家月打电话。",
+        "vi": "Trong phòng, Lý Văn gọi điện cho Gia Nguyệt.",
+        "source": {
+          "pdfPage": 121,
+          "printedPage": 106,
+          "section": "课文3情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "12-5",
+      "lines": [
+        {
+          "zh": "喂，家月，今天天气不错，我们去跑步吧！",
+          "vi": "A lô, Gia Nguyệt, hôm nay trời đẹp, mình đi chạy bộ nhé!",
+          "id": "hsk2-fltrp-2026:l12:text3:line1",
+          "speaker": "李文",
+          "py": "Wèi, Jiāyuè, jīntiān tiānqì búcuò, wǒmen qù pǎobù ba!",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "你跑步跑得比我快，我们能一起跑吗？",
+          "vi": "Bạn chạy nhanh hơn tôi, chúng ta chạy cùng nhau được không?",
+          "id": "hsk2-fltrp-2026:l12:text3:line2",
+          "speaker": "白家月",
+          "py": "Nǐ pǎobù pǎo de bǐ wǒ kuài, wǒmen néng yìqǐ pǎo ma?",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "可以的，我慢慢跑，等着你。",
+          "vi": "Được chứ, tôi chạy từ từ và đợi bạn.",
+          "id": "hsk2-fltrp-2026:l12:text3:line3",
+          "speaker": "李文",
+          "py": "Kěyǐ de, wǒ mànmàn pǎo, děngzhe nǐ.",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好吧。你真爱跑步啊！",
+          "vi": "Được. Bạn thật sự thích chạy bộ nhỉ!",
+          "id": "hsk2-fltrp-2026:l12:text3:line4",
+          "speaker": "白家月",
+          "py": "Hǎo ba. Nǐ zhēn ài pǎobù a!",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我从小就经常跟爸爸跑步，跑步能让人快乐！",
+          "vi": "Từ nhỏ tôi đã thường chạy cùng bố; chạy bộ có thể khiến người ta vui vẻ!",
+          "id": "hsk2-fltrp-2026:l12:text3:line5",
+          "speaker": "李文",
+          "py": "Wǒ cóngxiǎo jiù jīngcháng gēn bàba pǎobù, pǎobù néng ràng rén kuàilè!",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "好，那我准备一下。",
+          "vi": "Được, vậy tôi chuẩn bị một chút.",
+          "id": "hsk2-fltrp-2026:l12:text3:line6",
+          "speaker": "白家月",
+          "py": "Hǎo, nà wǒ zhǔnbèi yíxià.",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我现在坐地铁去找你，一会儿楼下见。",
+          "vi": "Bây giờ tôi đi tàu điện ngầm đến chỗ bạn, lát nữa gặp dưới nhà nhé.",
+          "id": "hsk2-fltrp-2026:l12:text3:line7",
+          "speaker": "李文",
+          "py": "Wǒ xiànzài zuò dìtiě qù zhǎo nǐ, yíhuìr lóu xià jiàn.",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "李文找白家月做什么？",
+          "vi": "Lý Văn rủ Gia Nguyệt làm gì?",
+          "id": "hsk2-fltrp-2026:l12:text3:question1",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "一起去跑步",
+            "一起坐地铁",
+            "一起见朋友"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "李文怎么去找白家月？",
+          "vi": "Lý Văn đến chỗ Gia Nguyệt bằng cách nào?",
+          "id": "hsk2-fltrp-2026:l12:text3:question2",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "跑步",
+            "打车",
+            "坐地铁"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文是从什么时候开始跑步的？",
+          "vi": "Lý Văn bắt đầu chạy bộ từ khi nào?",
+          "id": "hsk2-fltrp-2026:l12:text3:question3",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文和白家月在哪儿见？",
+          "vi": "Lý Văn và Gia Nguyệt gặp ở đâu?",
+          "id": "hsk2-fltrp-2026:l12:text3:question4",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "课文3音频标记",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:text4",
+      "number": 4,
+      "title": {
+        "zh": "课文4",
+        "vi": "Bài khóa 4"
+      },
+      "context": {
+        "zh": "在房间，白家月在写日记。",
+        "vi": "Trong phòng, Gia Nguyệt viết nhật ký.",
+        "source": {
+          "pdfPage": 123,
+          "printedPage": 108,
+          "section": "课文4情景",
+          "provenance": "textbook"
+        }
+      },
+      "audioTrack": "12-7",
+      "lines": [
+        {
+          "zh": "前几天天气不好，我没走路，每天坐两站地铁去学校。今天是个大晴天，李文让我跟他去外面跑步。他小时候经常跑步，跑得比我快，但是他会等我。跟李文一起跑步，我好高兴啊！",
+          "vi": "Mấy hôm trước trời xấu, tôi không đi bộ mà mỗi ngày đi hai ga tàu điện ngầm đến trường. Hôm nay trời rất quang đãng, Lý Văn rủ tôi ra ngoài chạy bộ cùng. Bạn ấy từ nhỏ thường chạy nên chạy nhanh hơn tôi, nhưng sẽ đợi tôi. Chạy cùng Lý Văn, tôi vui quá!",
+          "id": "hsk2-fltrp-2026:l12:text4:line1",
+          "speaker": "白家月",
+          "py": "Qián jǐ tiān tiānqì bù hǎo, wǒ méi zǒulù, měi tiān zuò liǎng zhàn dìtiě qù xuéxiào. Jīntiān shì ge dà qíng tiān, Lǐ Wén ràng wǒ gēn tā qù wàimiàn pǎobù. Tā xiǎoshíhou jīngcháng pǎobù, pǎo de bǐ wǒ kuài, dànshì tā huì děng wǒ. Gēn Lǐ Wén yìqǐ pǎobù, wǒ hǎo gāoxìng a!",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "课文4",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "questions": [
+        {
+          "zh": "今天是个晴天，白家月去外面跑步了。",
+          "vi": "Hôm nay trời nắng, Gia Nguyệt đã ra ngoài chạy bộ.",
+          "id": "hsk2-fltrp-2026:l12:text4:question1",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "白家月很喜欢跟李文一起跑步。",
+          "vi": "Gia Nguyệt rất thích chạy bộ cùng Lý Văn.",
+          "id": "hsk2-fltrp-2026:l12:text4:question2",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "正确",
+            "错误"
+          ],
+          "answer": 0
+        },
+        {
+          "zh": "这几天白家月是怎么去学校的？",
+          "vi": "Mấy hôm nay Gia Nguyệt đến trường bằng cách nào?",
+          "id": "hsk2-fltrp-2026:l12:text4:question3",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "跑步",
+            "走路",
+            "坐地铁"
+          ],
+          "answer": 2
+        },
+        {
+          "zh": "李文让白家月跟他去做什么？",
+          "vi": "Lý Văn rủ Gia Nguyệt đi làm gì cùng?",
+          "id": "hsk2-fltrp-2026:l12:text4:question4",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            "跑步",
+            "坐地铁",
+            "等朋友"
+          ],
+          "answer": 0
+        }
+      ],
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "课文4",
+        "provenance": "textbook"
+      },
+      "audioSource": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "课文4音频标记",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "vocabulary": [
+    {
+      "zh": "事情",
+      "vi": "việc, sự việc",
+      "id": "hsk2-fltrp-2026:l12:word01",
+      "py": "shìqing",
+      "pos": "danh từ",
+      "sourceText": 1,
+      "audioTrack": "12-2",
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：事情",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 1,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "晴",
+      "vi": "nắng, quang đãng",
+      "id": "hsk2-fltrp-2026:l12:word02",
+      "py": "qíng",
+      "pos": "tính từ",
+      "sourceText": 1,
+      "audioTrack": "12-2",
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 159,
+        "printedPage": 144,
+        "section": "词语表：晴",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 2,
+        "sourcePos": "adj.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "正",
+      "vi": "đang, đúng lúc (hành động hoặc trạng thái đang diễn ra)",
+      "id": "hsk2-fltrp-2026:l12:word03",
+      "py": "zhèng",
+      "pos": "phó từ",
+      "sourceText": 1,
+      "audioTrack": "12-2",
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：正",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 3,
+        "sourcePos": "adv.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "外面",
+      "vi": "bên ngoài",
+      "id": "hsk2-fltrp-2026:l12:word04",
+      "py": "wàimiàn",
+      "pos": "danh từ",
+      "sourceText": 2,
+      "audioTrack": "12-4",
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：外面",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 4,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "阴",
+      "vi": "âm u, nhiều mây",
+      "id": "hsk2-fltrp-2026:l12:word05",
+      "py": "yīn",
+      "pos": "tính từ",
+      "sourceText": 2,
+      "audioTrack": "12-4",
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：阴",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 5,
+        "sourcePos": "adj.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "从小",
+      "vi": "từ nhỏ",
+      "id": "hsk2-fltrp-2026:l12:word06",
+      "py": "cóngxiǎo",
+      "pos": "phó từ",
+      "sourceText": 3,
+      "audioTrack": "12-6",
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：从小",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 6,
+        "sourcePos": "adv.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "地铁",
+      "vi": "tàu điện ngầm",
+      "id": "hsk2-fltrp-2026:l12:word07",
+      "py": "dìtiě",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "12-6",
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 157,
+        "printedPage": 142,
+        "section": "词语表：地铁",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 7,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "楼",
+      "vi": "tòa nhà, nhà nhiều tầng",
+      "id": "hsk2-fltrp-2026:l12:word08",
+      "py": "lóu",
+      "pos": "danh từ",
+      "sourceText": 3,
+      "audioTrack": "12-6",
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：楼",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 8,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "站",
+      "vi": "bến, trạm, ga",
+      "id": "hsk2-fltrp-2026:l12:word09",
+      "py": "zhàn",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "12-8",
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：站",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 9,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          12,
+          14
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "小时候",
+      "vi": "thời thơ ấu, lúc còn nhỏ",
+      "id": "hsk2-fltrp-2026:l12:word10",
+      "py": "xiǎoshíhou",
+      "pos": "danh từ",
+      "sourceText": 4,
+      "audioTrack": "12-8",
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 160,
+        "printedPage": 145,
+        "section": "词语表：小时候",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 10,
+        "sourcePos": "n.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "zh": "好",
+      "vi": "rất, quá (nhấn mạnh mức độ)",
+      "id": "hsk2-fltrp-2026:l12:word11",
+      "py": "hǎo",
+      "pos": "phó từ",
+      "sourceText": 4,
+      "audioTrack": "12-8",
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      },
+      "supplementarySyllabus": false,
+      "appendixSource": {
+        "pdfPage": 158,
+        "printedPage": 143,
+        "section": "词语表：好",
+        "provenance": "textbook"
+      },
+      "appendixMetadata": {
+        "sourceNumber": 11,
+        "sourcePos": "adv.",
+        "lessonNumbers": [
+          12
+        ],
+        "sourceStarred": false,
+        "starMeaning": {
+          "zh": "前面加“★”的是本级超纲词。",
+          "vi": "Từ có dấu ★ nằm ngoài đề cương của cấp độ này."
+        },
+        "starLegendSource": {
+          "pdfPage": 156,
+          "printedPage": 141,
+          "section": "词语表星号说明",
+          "provenance": "textbook"
+        },
+        "sourceList": "new-words",
+        "sourcePosPrinted": true
+      },
+      "sourceNumberPosSource": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：生词",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "grammar": [
+    {
+      "id": "hsk2-fltrp-2026:l12:grammar1",
+      "title": {
+        "zh": "比较句（4）",
+        "vi": "Câu so sánh (4)"
+      },
+      "structure": "A + 比 + B + 形容词 + 多了／得多",
+      "explanation": {
+        "zh": "用“比”表示的比较句中，“多了”或“得多”用在形容词后面，表示差别很大。基本结构：A比B+形容词+多了/得多。",
+        "vi": "Trong câu so sánh dùng 比, đặt 多了 hoặc 得多 sau tính từ để nói chênh lệch lớn, tương đương “hơn nhiều”."
+      },
+      "examples": [
+        {
+          "zh": "我这里比北京冷多了。",
+          "vi": "Chỗ tôi lạnh hơn Bắc Kinh nhiều.",
+          "py": "Wǒ zhèlǐ bǐ Běijīng lěngduō le.",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "坐飞机比坐火车快得多。",
+          "vi": "Đi máy bay nhanh hơn đi tàu hỏa nhiều.",
+          "py": "Zuò fēijī bǐ zuò huǒchē kuài de duō.",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他觉得红茶比绿茶好喝得多。",
+          "vi": "Anh ấy thấy hồng trà ngon hơn trà xanh nhiều.",
+          "py": "Tā juéde hóngchá bǐ lǜchá hǎohē de duō.",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：左边这块手表好看还是右边那块好看？B：左边这块，但是它______。",
+          "vi": "A: Đồng hồ bên trái đẹp hay chiếc bên phải đẹp? B: Chiếc bên trái, nhưng nó ______.",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：走，我请你喝咖啡。B：喝奶茶吧，奶茶店______。我有点儿累，不想走太远。",
+          "vi": "A: Đi thôi, tôi mời bạn uống cà phê. B: Uống trà sữa đi, quán trà sữa ______. Tôi hơi mệt, không muốn đi xa quá.",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：几年没见你女儿了，她个子很高了吧？B：是啊，个子______。",
+          "vi": "A: Mấy năm không gặp con gái bạn rồi, chắc cô bé cao lắm rồi nhỉ? B: Đúng vậy, chiều cao ______.",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "比较句（4）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:grammar2",
+      "title": {
+        "zh": "比较句（5）",
+        "vi": "Câu so sánh (5)"
+      },
+      "structure": "A + 比 + B + 动词 + 得 + 状态补语；A + 动词 + 得 + 比 + B + 状态补语",
+      "explanation": {
+        "zh": "用“比”表示的比较句中，如果动词带状态补语，“比”用在动词前后都可以。",
+        "vi": "Khi động từ có bổ ngữ trạng thái, cụm 比 + đối tượng so sánh có thể đứng trước động từ hoặc sau động từ + 得. Ví dụ hai cách “A 比 B 跑得快” và “A 跑得比 B 快”."
+      },
+      "examples": [
+        {
+          "zh": "昨天比今天下得大。",
+          "vi": "Hôm qua tuyết rơi lớn hơn hôm nay.",
+          "py": "Zuótiān bǐ jīntiān xià de dà.",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "妈妈比我睡得晚。",
+          "vi": "Mẹ ngủ muộn hơn tôi.",
+          "py": "Māma bǐ wǒ shuì de wǎn.",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "李文跑得比白家月快。",
+          "vi": "Lý Văn chạy nhanh hơn Gia Nguyệt.",
+          "py": "Lǐ Wén pǎo de bǐ Bái Jiāyuè kuài.",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：家月，你今天来得真早！B：老师，天中______，他去外面跑步了。",
+          "vi": "A: Gia Nguyệt, hôm nay em đến sớm thật! B: Thưa cô, Thiên Trung ______, bạn ấy ra ngoài chạy bộ rồi.",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：小明，你中午没吃饭吧？晚上吃得这么多！B：多吗？您看看姐姐，她______。",
+          "vi": "A: Tiểu Minh, trưa con không ăn à? Tối ăn nhiều thế! B: Nhiều ạ? Bố/mẹ xem chị kìa, chị ấy ______.",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：一飞，这些汉字是外国人写的吗？B：是啊！A：真好看！我觉得______。",
+          "vi": "A: Nhất Phi, chữ Hán này là người nước ngoài viết à? B: Vâng! A: Đẹp thật! Chị thấy ______.",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "比较句（5）",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:grammar3",
+      "title": {
+        "zh": "比较句（6）",
+        "vi": "Câu so sánh (6)"
+      },
+      "structure": "主语 + 宾语 + 动词 + 得 + 比……；主语 + 动词 + 宾语 + 动词 + 得 + 比……",
+      "explanation": {
+        "zh": "用“比”表示的比较句中，如果动词既带宾语，又带状态补语，可以把宾语提前，或者重复动词。如果动词是离合词，需要重复动词性语素。",
+        "vi": "Nếu động từ vừa có tân ngữ vừa có bổ ngữ trạng thái, có thể đưa tân ngữ lên trước hoặc lặp động từ. Với từ ly hợp, lặp thành phần động từ, như 跑步跑得…. Cụm so sánh cũng có thể đứng trước động từ mang bổ ngữ như ví dụ thứ ba."
+      },
+      "examples": [
+        {
+          "zh": "你跑步跑得比我快。",
+          "vi": "Bạn chạy bộ nhanh hơn tôi.",
+          "py": "Nǐ pǎobù pǎo de bǐ wǒ kuài.",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "白家月汉字写得比陈天中好。",
+          "vi": "Gia Nguyệt viết chữ Hán đẹp hơn Thiên Trung.",
+          "py": "Bái Jiāyuè Hànzì xiě de bǐ Chén Tiānzhōng hǎo.",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "他踢足球比我踢得好。",
+          "vi": "Anh ấy đá bóng giỏi hơn tôi.",
+          "py": "Tā tī zúqiú bǐ wǒ tī de hǎo.",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "practice": [
+        {
+          "zh": "A：你们几个谁打篮球打得好？B：李文，他______。",
+          "vi": "A: Trong mấy bạn, ai chơi bóng rổ giỏi? B: Lý Văn, bạn ấy ______.",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你会做菜吗？B：会，但______，所以我更喜欢吃妈妈做的菜。",
+          "vi": "A: Bạn biết nấu ăn không? B: Biết, nhưng ______, nên tôi thích ăn món mẹ nấu hơn.",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）：完成对话",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：你唱歌唱得怎么样？B：还可以，但家月______。",
+          "vi": "A: Bạn hát thế nào? B: Cũng được, nhưng Gia Nguyệt ______.",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）：完成对话",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "比较句（6）",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "sections": [
+    {
+      "id": "hsk2-fltrp-2026:l12:section1",
+      "kind": "tip",
+      "title": {
+        "zh": "小语助力：“大晴天”",
+        "vi": "Gợi ý: 大晴天"
+      },
+      "blocks": [
+        {
+          "zh": "“大晴天”的意思是天气很晴朗。",
+          "vi": "大晴天 nghĩa là thời tiết rất quang đãng.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "小语助力：“大晴天”",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "小语助力：“大晴天”",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:section2",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: điền từ"
+      },
+      "blocks": [
+        {
+          "zh": "A 事情；B 正；C 从小；D 外面；E 好",
+          "vi": "A sự việc; B đang; C từ nhỏ; D bên ngoài; E rất/quá",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）你看，前边的那个人______高啊！\\n（2）今天的天气没有昨天好，______正下着雨呢。\\n（3）对不起，公司这几天______很多，太忙了，所以忘了你的生日。\\n（4）A：我______就爱动，经常跟朋友一起踢球、跑步。B：所以你身体这么好！\\n（5）A：小雪在做什么呢？B：快要考试了，她______看书呢。",
+          "vi": "(1) Bạn nhìn kìa, người phía trước cao ______!\\n(2) Hôm nay trời không đẹp bằng hôm qua, ______ đang mưa.\\n(3) Xin lỗi, mấy hôm nay công ty có nhiều ______, bận quá nên tôi quên sinh nhật bạn.\\n(4) A: Tôi ______ đã thích vận động, thường đá bóng, chạy bộ cùng bạn. B: Vì vậy bạn khỏe thế!\\n(5) A: Tiểu Tuyết đang làm gì? B: Sắp thi rồi, cô bé ______ đọc sách.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:section3",
+      "kind": "practice",
+      "title": {
+        "zh": "综合练习：描述图片",
+        "vi": "Bài tập tổng hợp: mô tả tranh"
+      },
+      "blocks": [
+        {
+          "zh": "用本课新学的词语和语言点描述图片。",
+          "vi": "Dùng từ và ngữ pháp của bài miêu tả tranh.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "（1）______我比弟弟高多了，但现在没有他高了。\\n（2）明天的天气会______今天______得多。\\n（3）弟弟跑得______姐姐______。\\n（4）她______唱得______。",
+          "vi": "(1) ______ tôi cao hơn em trai nhiều, nhưng giờ không cao bằng em nữa.\\n(2) Ngày mai thời tiết sẽ ______ hôm nay ______ nhiều.\\n(3) Em trai chạy ______ chị gái ______.\\n(4) Cô ấy ______ hát ______.",
+          "kind": "question",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "图片描述（编辑补充）：两个身高不同的小男孩；今天19°C有雷雨、明天26°C晴的天气图；弟弟跑在姐姐前面；女子拿麦克风唱歌。",
+          "vi": "Mô tả tranh (biên tập bổ sung): hai bé trai cao thấp khác nhau; dự báo hôm nay 19°C có dông mưa, mai 26°C có nắng; em trai chạy trước chị gái; một cô gái cầm micro hát.",
+          "kind": "paragraph",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "supplemental"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:section4",
+      "kind": "activity",
+      "title": {
+        "zh": "课堂活动：双人活动",
+        "vi": "Hoạt động trên lớp: luyện theo cặp"
+      },
+      "blocks": [
+        {
+          "zh": "两人一组，打电话谈论天气情况，并对比不同地方的天气差异，等等。尽可能使用本课所学生词和语法。",
+          "vi": "Theo cặp, gọi điện trao đổi về thời tiết và so sánh thời tiết ở các nơi. Cố gắng dùng từ và ngữ pháp của bài.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "A：喂，家月，你在做什么呢？\\nB：我在家休息呢。\\n……",
+          "vi": "A: A lô, Gia Nguyệt, bạn đang làm gì?\\nB: Tôi đang nghỉ ở nhà.\\n…",
+          "kind": "example",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "课堂活动：双人活动",
+        "provenance": "textbook"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:section5",
+      "kind": "review",
+      "title": {
+        "zh": "学习小结：10～12课",
+        "vi": "Tổng kết học tập: bài10–12"
+      },
+      "blocks": [
+        {
+          "zh": "10～12课我的学习情况：词语学习；我理解并会用；我需要努力的。",
+          "vi": "Tình hình học bài10–12: từ vựng; tôi hiểu và dùng được; điều tôi cần cố gắng.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我已经记住并会使用的词语：______\\n我还没记住的词语：______",
+          "vi": "Những từ tôi đã nhớ và dùng được: ______\\nNhững từ tôi chưa nhớ: ______",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "每项分别自评：理解 □；会用 □。",
+          "vi": "Tự đánh giá riêng từng mục: hiểu □; dùng được □.",
+          "kind": "instruction",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "主谓谓语句。例：他学习很好。 理解 □；会用 □。",
+          "vi": "Câu có cụm chủ–vị làm vị ngữ. Ví dụ: Anh ấy học rất tốt. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "选择问句。例：你喝咖啡还是茶？ 理解 □；会用 □。",
+          "vi": "Câu hỏi lựa chọn. Ví dụ: Bạn uống cà phê hay trà? Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "固定格式“要/快/快要/就要……了”。例：我要回国了。 理解 □；会用 □。",
+          "vi": "Mẫu 要/快/快要/就要……了. Ví dụ: Tôi sắp về nước rồi. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "动态助词“着”（1）。例：他在那儿坐着。 理解 □；会用 □。",
+          "vi": "Trợ từ 着 (1). Ví dụ: Anh ấy đang ngồi ở đó. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "动态助词“着”（2）。例：她穿着白色的裤子。 理解 □；会用 □。",
+          "vi": "Trợ từ 着 (2). Ví dụ: Cô ấy đang mặc quần trắng. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "程度副词“最”。例：在我们家，爸爸最高。 理解 □；会用 □。",
+          "vi": "Phó từ 最. Ví dụ: Trong nhà chúng tôi, bố cao nhất. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（4）。例：今天比昨天热多了。 理解 □；会用 □。",
+          "vi": "So sánh (4). Ví dụ: Hôm nay nóng hơn hôm qua nhiều. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（5）。例：我写得比他快。 理解 □；会用 □。",
+          "vi": "So sánh (5). Ví dụ: Tôi viết nhanh hơn anh ấy. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "比较句（6）。例：他踢足球比我踢得好。 理解 □；会用 □。",
+          "vi": "So sánh (6). Ví dụ: Anh ấy đá bóng giỏi hơn tôi. Hiểu □; dùng được □.",
+          "kind": "table",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "zh": "我需要努力的：______",
+          "vi": "Điều tôi cần cố gắng: ______",
+          "kind": "question",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "source": {
+        "pdfPage": 126,
+        "printedPage": 111,
+        "section": "学习小结：10～12课",
+        "provenance": "textbook"
+      }
+    }
+  ],
+  "homework": [
+    {
+      "id": "hsk2-fltrp-2026:l12:hw01",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“晴天”最可能看到什么？",
+        "vi": "Ngày nắng thường thấy gì?"
+      },
+      "options": [
+        "下大雪",
+        "黑云和大雨",
+        "明亮的太阳"
+      ],
+      "answer": 2,
+      "focus": "sunny-weather",
+      "explanation": {
+        "zh": "晴表示天空晴朗，有阳光。",
+        "vi": "晴 nói trời quang, có nắng."
+      },
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw02",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“别说话，他正睡觉呢”说明什么？",
+        "vi": "Đừng nói chuyện, anh ấy đang ngủ: 正 cho biết gì?"
+      },
+      "options": [
+        "睡觉正在进行。",
+        "他已经睡醒了。",
+        "他明天才睡。"
+      ],
+      "answer": 0,
+      "focus": "progressive-zheng",
+      "explanation": {
+        "zh": "正说明动作正在发生。",
+        "vi": "正 cho biết hành động đang diễn ra."
+      },
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw03",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "小杯10元，大杯30元。怎样说大杯的价格？",
+        "vi": "Cốc nhỏ10 tệ, cốc lớn30 tệ. Nói giá cốc lớn thế nào?"
+      },
+      "options": [
+        "大杯比小杯便宜多了。",
+        "大杯比小杯贵多了。",
+        "大杯和小杯一样贵。"
+      ],
+      "answer": 1,
+      "focus": "large-difference",
+      "explanation": {
+        "zh": "30元比10元贵很多。",
+        "vi": "30 tệ đắt hơn10 tệ nhiều."
+      },
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw04",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "哪句话表示两个地方很大的冷热差别？",
+        "vi": "Câu nào chỉ hai nơi chênh lệch nhiệt độ lớn?"
+      },
+      "options": [
+        "这儿比那儿冷一点儿。",
+        "这儿和那儿一样冷。",
+        "这儿比那儿冷得多。"
+      ],
+      "answer": 2,
+      "focus": "degree-contrast",
+      "explanation": {
+        "zh": "得多表示差别大，一点儿表示差别小。",
+        "vi": "得多 nói chênh lệch lớn; 一点儿 nói chênh lệch nhỏ."
+      },
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw05",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "与“晴”相对，天空有很多云时可用哪个词？",
+        "vi": "Trái với trời nắng, nhiều mây có thể dùng từ nào?"
+      },
+      "options": [
+        "阴",
+        "晴",
+        "热"
+      ],
+      "answer": 0,
+      "focus": "cloudy-weather",
+      "explanation": {
+        "zh": "阴表示天空被云遮住，天气不晴朗。",
+        "vi": "阴 diễn đạt trời âm u, không quang đãng."
+      },
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw06",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "小李七点到，小王八点到。哪句正确？",
+        "vi": "Tiểu Lý đến7 giờ, Tiểu Vương đến8 giờ. Câu nào đúng?"
+      },
+      "options": [
+        "小李比小王来得晚。",
+        "小李来得比小王早。",
+        "小李和小王同时来。"
+      ],
+      "answer": 1,
+      "focus": "state-comparison",
+      "explanation": {
+        "zh": "七点比八点早。",
+        "vi": "7 giờ sớm hơn8 giờ."
+      },
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw07",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想说妹妹写汉字的水平比哥哥高，哪句合适？",
+        "vi": "Muốn nói em gái viết chữ Hán giỏi hơn anh trai, chọn câu nào?"
+      },
+      "options": [
+        "妹妹汉字写得比哥哥好。",
+        "妹妹汉字写得比哥哥差。",
+        "哥哥汉字写得比妹妹好。"
+      ],
+      "answer": 0,
+      "focus": "object-state",
+      "explanation": {
+        "zh": "汉字是宾语，写得比哥哥好比较书写水平。",
+        "vi": "汉字 là tân ngữ, phần sau so sánh trình độ viết."
+      },
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw08",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“从小”指从什么时候开始？",
+        "vi": "从小 nói bắt đầu từ khi nào?"
+      },
+      "options": [
+        "昨天晚上",
+        "上个月",
+        "小时候"
+      ],
+      "answer": 2,
+      "focus": "childhood-start",
+      "explanation": {
+        "zh": "从小说明从小时候开始。",
+        "vi": "从小 nghĩa là từ lúc còn nhỏ."
+      },
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw09",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "“我好累啊”中，“好”的意思是什么？",
+        "vi": "好 trong Tôi mệt quá nghĩa là gì?"
+      },
+      "options": [
+        "好的、不错的",
+        "很、非常",
+        "已经好了"
+      ],
+      "answer": 1,
+      "focus": "hao-adverb",
+      "explanation": {
+        "zh": "这里好是程度副词，不是好坏的好。",
+        "vi": "Ở đây 好 là phó từ mức độ, nghĩa là rất/quá."
+      },
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw10",
+      "part": "vocabGrammar",
+      "prompt": {
+        "zh": "想坐地铁，应去哪里等车？",
+        "vi": "Muốn đi tàu điện ngầm, nên đợi ở đâu?"
+      },
+      "options": [
+        "机场",
+        "地铁站",
+        "饭馆"
+      ],
+      "answer": 1,
+      "focus": "subway-station",
+      "explanation": {
+        "zh": "地铁站是地铁停靠、乘客上下车的地方。",
+        "vi": "Ga tàu điện ngầm là nơi tàu dừng cho hành khách lên xuống."
+      },
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw11",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 这件衣服: Chiếc áo này rẻ hơn chiếc kia nhiều. Dùng 多了 ở cuối. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "便宜",
+        "那件",
+        "这件衣服",
+        "多了。",
+        "比"
+      ],
+      "answer": [
+        2,
+        4,
+        1,
+        0,
+        3
+      ],
+      "focus": "comparison-large",
+      "explanation": {
+        "zh": "这件衣服比那件便宜多了。",
+        "vi": "A 比 B + tính từ + 多了 nói chênh lệch lớn."
+      },
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw12",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 哥哥: Anh trai ngủ muộn hơn tôi. Đặt 睡得 ngay sau chủ ngữ. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "比",
+        "我",
+        "哥哥",
+        "晚。",
+        "睡得"
+      ],
+      "answer": [
+        2,
+        4,
+        0,
+        1,
+        3
+      ],
+      "focus": "compare-sleep",
+      "explanation": {
+        "zh": "哥哥睡得比我晚。",
+        "vi": "Sau 睡得 là 比我 rồi tính từ 晚."
+      },
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw13",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 小林: Tiểu Lâm hát hay hơn tôi. Đặt 唱歌 ngay sau chủ ngữ và đặt 比 sau 唱得. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "我",
+        "唱得",
+        "小林",
+        "好。",
+        "比",
+        "唱歌"
+      ],
+      "answer": [
+        2,
+        5,
+        1,
+        4,
+        0,
+        3
+      ],
+      "focus": "compare-sing",
+      "explanation": {
+        "zh": "小林唱歌唱得比我好。",
+        "vi": "Lặp 唱 sau 唱歌 để dùng bổ ngữ trạng thái."
+      },
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw14",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 我: Bây giờ tôi đi tàu điện ngầm đến công ty. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "去",
+        "我",
+        "地铁",
+        "公司。",
+        "现在",
+        "坐"
+      ],
+      "answer": [
+        1,
+        4,
+        5,
+        2,
+        0,
+        3
+      ],
+      "focus": "transport-action",
+      "explanation": {
+        "zh": "我现在坐地铁去公司。",
+        "vi": "Thời gian sau chủ ngữ, phương tiện đứng trước 去 + nơi đến."
+      },
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw15",
+      "part": "ordering",
+      "prompt": {
+        "zh": "按越南语意思排列词块；带标点的词块位置固定。",
+        "vi": "Bắt đầu bằng 妹妹: Hồi nhỏ em gái thường bơi cùng mẹ. Đặt 经常 ngay trước 跟妈妈. (Khối có dấu câu phải giữ đúng vị trí trong câu.)"
+      },
+      "tokens": [
+        "跟妈妈",
+        "经常",
+        "妹妹",
+        "游泳。",
+        "小时候"
+      ],
+      "answer": [
+        2,
+        4,
+        1,
+        0,
+        3
+      ],
+      "focus": "childhood-habit",
+      "explanation": {
+        "zh": "妹妹小时候经常跟妈妈游泳。",
+        "vi": "Nêu thời kỳ, tần suất rồi người cùng làm và hành động."
+      },
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw16",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-1：两个人提到的地方，天气有什么不同？",
+        "vi": "Nghe 12-1: thời tiết ở hai nơi được nhắc đến khác nhau thế nào?"
+      },
+      "options": [
+        "北京下着大雪，家月那里是晴天。",
+        "北京是晴天，家月那里正下雪。",
+        "两个地方都没有下雪。"
+      ],
+      "answer": 1,
+      "focus": "listen-two-place-contrast",
+      "explanation": {
+        "zh": "一雪说北京这几天是晴天；家月说她那里还正下着雪。",
+        "vi": "Nhất Tuyết nói mấy hôm nay Bắc Kinh có nắng; Gia Nguyệt nói chỗ mình đang có tuyết rơi."
+      },
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw17",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-3：一飞说哪一天雪下得更大？",
+        "vi": "Nghe12-3: Nhất Phi nói ngày nào tuyết rơi lớn hơn?"
+      },
+      "options": [
+        "明天",
+        "今天",
+        "昨天"
+      ],
+      "answer": 2,
+      "focus": "listen-snow-degree",
+      "explanation": {
+        "zh": "她说昨天比今天下得大。",
+        "vi": "Cô ấy nói hôm qua tuyết rơi lớn hơn hôm nay."
+      },
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw18",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-5：家月为什么担心不能和李文一起跑？",
+        "vi": "Nghe12-5: vì sao Gia Nguyệt lo không chạy cùng Lý Văn được?"
+      },
+      "options": [
+        "李文跑得比她快。",
+        "她不知道见面的地方。",
+        "李文还在北京。"
+      ],
+      "answer": 0,
+      "focus": "listen-concern",
+      "explanation": {
+        "zh": "家月说你跑步跑得比我快。",
+        "vi": "Gia Nguyệt nói Lý Văn chạy nhanh hơn mình."
+      },
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw19",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-7：前几天家月每天坐几站地铁？",
+        "vi": "Nghe12-7: mấy hôm trước mỗi ngày Gia Nguyệt đi mấy ga tàu điện ngầm?"
+      },
+      "options": [
+        "一站",
+        "两站",
+        "三站"
+      ],
+      "answer": 1,
+      "focus": "listen-stop-count",
+      "explanation": {
+        "zh": "她说每天坐两站地铁去学校。",
+        "vi": "Cô ấy nói đi hai ga để đến trường."
+      },
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-7"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw20",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-7：家月跟李文跑步时心情怎么样？",
+        "vi": "Nghe12-7: Gia Nguyệt cảm thấy thế nào khi chạy cùng Lý Văn?"
+      },
+      "options": [
+        "很累，不想跑。",
+        "很生气。",
+        "很高兴。"
+      ],
+      "answer": 2,
+      "focus": "listen-feeling",
+      "explanation": {
+        "zh": "她说我好高兴啊。",
+        "vi": "Cô ấy nói mình vui quá."
+      },
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-7"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw21",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Khách sạn này yên tĩnh hơn khách sạn kia nhiều."
+      },
+      "options": [
+        "这家酒店比那家安静多了。",
+        "这家酒店没有那家安静。",
+        "这家酒店和那家一样安静。"
+      ],
+      "answer": 0,
+      "focus": "translation-lesson12",
+      "explanation": {
+        "zh": "安静多了表示安静的程度明显更高。",
+        "vi": "安静多了 diễn đạt yên tĩnh hơn rõ rệt."
+      },
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw22",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Tôi đến sớm hơn bạn."
+      },
+      "options": [
+        "你比我来得早。",
+        "我来得比你早。",
+        "我来得比你晚。"
+      ],
+      "answer": 1,
+      "focus": "translation-lesson12",
+      "explanation": {
+        "zh": "比较方向是我早、你晚。",
+        "vi": "Hướng so sánh: tôi sớm, bạn muộn."
+      },
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw23",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Bố chơi bóng rổ giỏi hơn tôi."
+      },
+      "options": [
+        "我打篮球打得比爸爸好。",
+        "爸爸打篮球打得比我慢。",
+        "爸爸打篮球打得比我好。"
+      ],
+      "answer": 2,
+      "focus": "translation-lesson12",
+      "explanation": {
+        "zh": "重复打，得后说明打球的水平。",
+        "vi": "Lặp 打, sau 得 nêu trình độ chơi bóng."
+      },
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw24",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Mẹ đang xem ti vi."
+      },
+      "options": [
+        "妈妈正看着电视呢。",
+        "妈妈昨天没看电视。",
+        "妈妈明天要看电视。"
+      ],
+      "answer": 0,
+      "focus": "translation-lesson12",
+      "explanation": {
+        "zh": "正……着呢表示动作现在正在进行。",
+        "vi": "正…着呢 diễn đạt hành động đang diễn ra bây giờ."
+      },
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw25",
+      "part": "translationChoice",
+      "prompt": {
+        "zh": "选择正确的中文翻译。",
+        "vi": "Từ nhỏ anh ấy đã thích chạy bộ."
+      },
+      "options": [
+        "他昨天才开始跑步。",
+        "他从小就喜欢跑步。",
+        "他从小就不喜欢跑步。"
+      ],
+      "answer": 1,
+      "focus": "translation-lesson12",
+      "explanation": {
+        "zh": "从小就说明爱好从童年已开始。",
+        "vi": "从小就 cho biết sở thích có từ thời nhỏ."
+      },
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "原创课后作业",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw26",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Đi tàu điện ngầm rẻ hơn đi taxi nhiều."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw27",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Mẹ dậy sớm hơn bố."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw28",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Bạn tôi viết chữ Hán đẹp hơn tôi."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw29",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Đừng gọi điện, chị gái tôi đang ngủ."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:hw30",
+      "part": "writing",
+      "prompt": {
+        "zh": "请把越南语句子译成中文。",
+        "vi": "Hồi nhỏ tôi thường đi bộ đến trường cùng anh trai."
+      },
+      "focus": "Dịch viết tổng hợp",
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "原创人工批改写作",
+        "provenance": "supplemental"
+      }
+    }
+  ],
+  "listening": [
+    {
+      "id": "hsk2-fltrp-2026:l12:listen01",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-1：一雪接起电话后先问家月什么？",
+        "vi": "Nghe 12-1: khi nghe máy, Nhất Tuyết hỏi Gia Nguyệt điều gì trước?"
+      },
+      "options": [
+        "她今天想吃什么。",
+        "她明天去不去北京。",
+        "她有什么事情。"
+      ],
+      "answer": 2,
+      "focus": "independent-first-question",
+      "explanation": {
+        "zh": "一雪开头先说“有什么事情吗？”，后来才问今天有没有课。",
+        "vi": "Mở đầu, Nhất Tuyết hỏi có chuyện gì không, sau đó mới hỏi hôm nay có tiết học không."
+      },
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-1"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:listen02",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-3：一雪是从谁那里听说一飞那边下雪的？",
+        "vi": "Nghe 12-3: Nhất Tuyết nghe ai nói chỗ Nhất Phi có tuyết rơi?"
+      },
+      "options": [
+        "白家月。",
+        "王一飞。",
+        "李文。"
+      ],
+      "answer": 0,
+      "focus": "independent-information-source",
+      "explanation": {
+        "zh": "一雪说“听家月说你那边下雪了”。",
+        "vi": "Nhất Tuyết nói đã nghe Gia Nguyệt kể chỗ Nhất Phi có tuyết rơi."
+      },
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-3"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:listen03",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-5：李文准备怎样配合家月的速度？",
+        "vi": "Nghe12-5: Lý Văn định điều chỉnh thế nào theo tốc độ của Gia Nguyệt?"
+      },
+      "options": [
+        "让她坐车。",
+        "慢慢跑，等着她。",
+        "请爸爸跟她跑。"
+      ],
+      "answer": 1,
+      "focus": "independent-accommodation",
+      "explanation": {
+        "zh": "他说我慢慢跑，等着你。",
+        "vi": "Bạn ấy nói sẽ chạy từ từ và đợi."
+      },
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-5"
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:listen04",
+      "part": "listening",
+      "prompt": {
+        "zh": "听12-7：前几天家月为什么没有走路去学校？",
+        "vi": "Nghe12-7: vì sao mấy hôm trước Gia Nguyệt không đi bộ đến trường?"
+      },
+      "options": [
+        "她起得很晚。",
+        "她买了汽车。",
+        "天气不好。"
+      ],
+      "answer": 2,
+      "focus": "independent-weather-reason",
+      "explanation": {
+        "zh": "日记开头说前几天天气不好。",
+        "vi": "Đầu nhật ký nói mấy hôm trước thời tiết xấu."
+      },
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "原创听力练习",
+        "provenance": "supplemental"
+      },
+      "audioTrack": "12-7"
+    }
+  ],
+  "activities": [
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:objectives",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "本课目标自评（可选）",
+        "vi": "Tự đánh giá mục tiêu bài học (tùy chọn)"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "目标",
+        "provenance": "textbook"
+      },
+      "targetRef": "objectives",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:objective1",
+          "prompt": {
+            "zh": "能听懂并谈论天气情况。",
+            "vi": "Nghe hiểu và trò chuyện về thời tiết."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:objective2",
+          "prompt": {
+            "zh": "能听懂并描述动作状态之间的差别。",
+            "vi": "Nghe hiểu và miêu tả sự khác nhau về trạng thái/cách thực hiện hành động."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:objective3",
+          "prompt": {
+            "zh": "掌握比较句的用法，能说明事物之间的差别很大。",
+            "vi": "Nắm câu so sánh để diễn đạt sự chênh lệch lớn giữa các sự vật."
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "目标",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "自评不作为练习分数。",
+        "vi": "Tự đánh giá không tính vào điểm bài tập."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:warmup1-matching",
+      "kind": "matching",
+      "title": {
+        "zh": "给下面的词语选择对应的图片。",
+        "vi": "Ghép từ với tranh tương ứng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:warmup1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup1-picture1",
+          "prompt": {
+            "zh": "图1：选择对应词语",
+            "vi": "Hình 1: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "晴",
+              "vi": "nắng, quang đãng"
+            },
+            {
+              "zh": "楼",
+              "vi": "tòa nhà"
+            },
+            {
+              "zh": "地铁",
+              "vi": "tàu điện ngầm"
+            },
+            {
+              "zh": "阴",
+              "vi": "âm u"
+            }
+          ],
+          "answer": "地铁",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P102 热身1 图1（C）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:warmup1-1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup1-picture2",
+          "prompt": {
+            "zh": "图2：选择对应词语",
+            "vi": "Hình 2: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "晴",
+              "vi": "nắng, quang đãng"
+            },
+            {
+              "zh": "楼",
+              "vi": "tòa nhà"
+            },
+            {
+              "zh": "地铁",
+              "vi": "tàu điện ngầm"
+            },
+            {
+              "zh": "阴",
+              "vi": "âm u"
+            }
+          ],
+          "answer": "晴",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P102 热身1 图2（A）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:warmup1-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup1-picture3",
+          "prompt": {
+            "zh": "图3：选择对应词语",
+            "vi": "Hình 3: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "晴",
+              "vi": "nắng, quang đãng"
+            },
+            {
+              "zh": "楼",
+              "vi": "tòa nhà"
+            },
+            {
+              "zh": "地铁",
+              "vi": "tàu điện ngầm"
+            },
+            {
+              "zh": "阴",
+              "vi": "âm u"
+            }
+          ],
+          "answer": "阴",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P102 热身1 图3（D）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:warmup1-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup1-picture4",
+          "prompt": {
+            "zh": "图4：选择对应词语",
+            "vi": "Hình 4: chọn từ tương ứng"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "晴",
+              "vi": "nắng, quang đãng"
+            },
+            {
+              "zh": "楼",
+              "vi": "tòa nhà"
+            },
+            {
+              "zh": "地铁",
+              "vi": "tàu điện ngầm"
+            },
+            {
+              "zh": "阴",
+              "vi": "âm u"
+            }
+          ],
+          "answer": "楼",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P102 热身1 图4（B）"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:warmup1-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l12:illustration:warmup1-1",
+        "hsk2-fltrp-2026:l12:illustration:warmup1-2",
+        "hsk2-fltrp-2026:l12:illustration:warmup1-3",
+        "hsk2-fltrp-2026:l12:illustration:warmup1-4"
+      ],
+      "note": {
+        "zh": "自制辅助示意图，不是教材原图；按题号顺序作答。",
+        "vi": "Hình hỗ trợ tự thiết kế, không phải ảnh gốc; trả lời theo thứ tự số câu."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:warmup2-survey",
+      "kind": "survey",
+      "title": {
+        "zh": "小调查：四人一组，完成下面的表格。",
+        "vi": "Khảo sát nhỏ: theo nhóm bốn người, hoàn thành bảng."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "热身",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:warmup2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-nameA",
+          "prompt": {
+            "zh": "A：______",
+            "vi": "A: ______"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-nameB",
+          "prompt": {
+            "zh": "B：______",
+            "vi": "B: ______"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-nameC",
+          "prompt": {
+            "zh": "C：______",
+            "vi": "C: ______"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row1-person1",
+          "prompt": {
+            "zh": "我：几点起床？",
+            "vi": "Tôi: Dậy lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row1-person2",
+          "prompt": {
+            "zh": "A：几点起床？",
+            "vi": "A: Dậy lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row1-person3",
+          "prompt": {
+            "zh": "B：几点起床？",
+            "vi": "B: Dậy lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row1-person4",
+          "prompt": {
+            "zh": "C：几点起床？",
+            "vi": "C: Dậy lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row2-person1",
+          "prompt": {
+            "zh": "我：几点睡觉？",
+            "vi": "Tôi: Đi ngủ lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row2-person2",
+          "prompt": {
+            "zh": "A：几点睡觉？",
+            "vi": "A: Đi ngủ lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row2-person3",
+          "prompt": {
+            "zh": "B：几点睡觉？",
+            "vi": "B: Đi ngủ lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row2-person4",
+          "prompt": {
+            "zh": "C：几点睡觉？",
+            "vi": "C: Đi ngủ lúc mấy giờ?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row3-person1",
+          "prompt": {
+            "zh": "我：跑步快不快？",
+            "vi": "Tôi: Chạy có nhanh không?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row3-person2",
+          "prompt": {
+            "zh": "A：跑步快不快？",
+            "vi": "A: Chạy có nhanh không?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row3-person3",
+          "prompt": {
+            "zh": "B：跑步快不快？",
+            "vi": "B: Chạy có nhanh không?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:warmup2-row3-person4",
+          "prompt": {
+            "zh": "C：跑步快不快？",
+            "vi": "C: Chạy có nhanh không?"
+          },
+          "input": "text",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 117,
+            "printedPage": 102,
+            "section": "热身",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "matrix": {
+        "mode": "responses",
+        "horizontalScroll": true,
+        "rowHeading": {
+          "zh": "问题",
+          "vi": "Câu hỏi"
+        },
+        "columns": [
+          {
+            "zh": "我",
+            "vi": "Tôi"
+          },
+          {
+            "zh": "A：",
+            "vi": "A:"
+          },
+          {
+            "zh": "B：",
+            "vi": "B:"
+          },
+          {
+            "zh": "C：",
+            "vi": "C:"
+          }
+        ],
+        "headerFieldIds": [
+          null,
+          "hsk2-fltrp-2026:l12:field:warmup2-nameA",
+          "hsk2-fltrp-2026:l12:field:warmup2-nameB",
+          "hsk2-fltrp-2026:l12:field:warmup2-nameC"
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "几点起床？",
+              "vi": "Dậy lúc mấy giờ?"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:warmup2-row1-person1",
+              "hsk2-fltrp-2026:l12:field:warmup2-row1-person2",
+              "hsk2-fltrp-2026:l12:field:warmup2-row1-person3",
+              "hsk2-fltrp-2026:l12:field:warmup2-row1-person4"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "几点睡觉？",
+              "vi": "Đi ngủ lúc mấy giờ?"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:warmup2-row2-person1",
+              "hsk2-fltrp-2026:l12:field:warmup2-row2-person2",
+              "hsk2-fltrp-2026:l12:field:warmup2-row2-person3",
+              "hsk2-fltrp-2026:l12:field:warmup2-row2-person4"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "跑步快不快？",
+              "vi": "Chạy có nhanh không?"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:warmup2-row3-person1",
+              "hsk2-fltrp-2026:l12:field:warmup2-row3-person2",
+              "hsk2-fltrp-2026:l12:field:warmup2-row3-person3",
+              "hsk2-fltrp-2026:l12:field:warmup2-row3-person4"
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "在A、B、C列头填写组员姓名（可用昵称或代称），再按实际情况填写各题；不设标准答案。",
+        "vi": "Điền tên thành viên ở đầu cột A, B, C (có thể dùng biệt danh hoặc tên thay thế), rồi ghi câu trả lời thực tế; không có đáp án cố định."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text1-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文1：听后练习",
+        "vi": "Bài khóa 1: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text1:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text1-question1",
+          "prompt": {
+            "zh": "白家月今天什么时候有课？",
+            "vi": "Hôm nay Gia Nguyệt có tiết học lúc nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "上午",
+              "vi": "buổi sáng"
+            },
+            {
+              "zh": "下午",
+              "vi": "buổi chiều"
+            },
+            {
+              "zh": "晚上",
+              "vi": "buổi tối"
+            }
+          ],
+          "answer": "下午",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P103 课文1 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text1:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text1-question2",
+          "prompt": {
+            "zh": "北京天气怎么样？",
+            "vi": "Thời tiết Bắc Kinh thế nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 118,
+            "printedPage": 103,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "不是晴天",
+              "vi": "không phải trời nắng"
+            },
+            {
+              "zh": "正下着雪",
+              "vi": "đang có tuyết rơi"
+            },
+            {
+              "zh": "有点儿冷",
+              "vi": "hơi lạnh"
+            }
+          ],
+          "answer": "有点儿冷",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P103 课文1 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text1:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "12-1",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text1-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文1：读后练习",
+        "vi": "Bài khóa 1: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "课文1：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text1:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text1-question3",
+          "prompt": {
+            "zh": "白家月为什么打电话？",
+            "vi": "Vì sao Gia Nguyệt gọi điện?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "她没什么事，只想跟王一雪说说话。",
+            "vi": "Cô ấy không có việc gì, chỉ muốn trò chuyện với Vương Nhất Tuyết."
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text1:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text1-question4",
+          "prompt": {
+            "zh": "白家月那里的天气怎么样？",
+            "vi": "Thời tiết chỗ Gia Nguyệt thế nào?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "课文1：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "她那里比北京冷多了，外边还正下着雪。",
+            "vi": "Chỗ cô ấy lạnh hơn Bắc Kinh nhiều, ngoài trời vẫn đang có tuyết rơi."
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text1:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text2-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文2：听后练习",
+        "vi": "Bài khóa 2: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text2:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text2-question1",
+          "prompt": {
+            "zh": "王一飞那里的天气怎么样？",
+            "vi": "Thời tiết chỗ Nhất Phi thế nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "晴",
+              "vi": "nắng, quang đãng"
+            },
+            {
+              "zh": "阴",
+              "vi": "âm u"
+            },
+            {
+              "zh": "下雪",
+              "vi": "tuyết rơi"
+            }
+          ],
+          "answer": "下雪",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P105 课文2 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text2:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text2-question2",
+          "prompt": {
+            "zh": "王一飞现在要去做什么？",
+            "vi": "Bây giờ Nhất Phi định đi làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 120,
+            "printedPage": 105,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "上课",
+              "vi": "lên lớp"
+            },
+            {
+              "zh": "穿衣服",
+              "vi": "mặc quần áo"
+            },
+            {
+              "zh": "买吃的",
+              "vi": "mua đồ ăn"
+            }
+          ],
+          "answer": "买吃的",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P105 课文2 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text2:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "12-3",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text2-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文2：读后练习",
+        "vi": "Bài khóa 2: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "课文2：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text2:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text2-question3",
+          "prompt": {
+            "zh": "王一飞这几天怎么给学生们上课？",
+            "vi": "Mấy hôm nay Nhất Phi dạy học sinh bằng cách nào?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "他在网上给学生们上课。",
+            "vi": "Anh ấy dạy học sinh qua mạng."
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text2:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text2-question4",
+          "prompt": {
+            "zh": "王一雪为什么让王一飞多买点儿吃的？",
+            "vi": "Vì sao Nhất Tuyết bảo Nhất Phi mua thêm đồ ăn?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文2：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "这样阴天下雪的时候，他就可以少出去。",
+            "vi": "Như vậy vào những ngày âm u, có tuyết rơi, anh ấy có thể ít ra ngoài hơn."
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text2:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text3-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文3：听后练习",
+        "vi": "Bài khóa 3: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text3:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text3-question1",
+          "prompt": {
+            "zh": "李文找白家月做什么？",
+            "vi": "Lý Văn rủ Gia Nguyệt làm gì?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "一起去跑步",
+              "vi": "cùng đi chạy bộ"
+            },
+            {
+              "zh": "一起坐地铁",
+              "vi": "cùng đi tàu điện ngầm"
+            },
+            {
+              "zh": "一起见朋友",
+              "vi": "cùng gặp bạn"
+            }
+          ],
+          "answer": "一起去跑步",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P106 课文3 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text3:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text3-question2",
+          "prompt": {
+            "zh": "李文怎么去找白家月？",
+            "vi": "Lý Văn đến chỗ Gia Nguyệt bằng cách nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "跑步",
+              "vi": "chạy bộ"
+            },
+            {
+              "zh": "打车",
+              "vi": "đi taxi"
+            },
+            {
+              "zh": "坐地铁",
+              "vi": "đi tàu điện ngầm"
+            }
+          ],
+          "answer": "坐地铁",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P106 课文3 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text3:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍对话，选择正确答案。",
+        "vi": "Nghe hội thoại hai lần rồi chọn đáp án đúng."
+      },
+      "audioTrack": "12-5",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text3-reading",
+      "kind": "open",
+      "title": {
+        "zh": "课文3：读后练习",
+        "vi": "Bài khóa 3: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "课文3：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text3:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text3-question3",
+          "prompt": {
+            "zh": "李文是从什么时候开始跑步的？",
+            "vi": "Lý Văn bắt đầu chạy bộ từ khi nào?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "他从小就经常跟爸爸跑步。",
+            "vi": "Từ nhỏ anh ấy đã thường chạy bộ cùng bố."
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text3:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text3-question4",
+          "prompt": {
+            "zh": "李文和白家月在哪儿见？",
+            "vi": "Lý Văn và Gia Nguyệt gặp ở đâu?"
+          },
+          "input": "textarea",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 122,
+            "printedPage": 107,
+            "section": "课文3：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "他们在白家月的楼下见。",
+            "vi": "Họ gặp nhau ở dưới nhà Bạch Gia Nguyệt."
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text3:question4"
+        }
+      ],
+      "note": {
+        "zh": "分角色朗读对话，读后回答问题。参考表达为编辑补充，可以有不同的合理答案。",
+        "vi": "Đọc hội thoại theo vai rồi trả lời câu hỏi. Câu tham khảo do biên tập viên bổ sung; có thể có nhiều câu trả lời hợp lý."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text4-listening",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：听后练习",
+        "vi": "Bài khóa 4: bài tập sau khi nghe"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text4:listening",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text4-question1",
+          "prompt": {
+            "zh": "今天是个晴天，白家月去外面跑步了。",
+            "vi": "Hôm nay trời nắng, Gia Nguyệt đã ra ngoài chạy bộ."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "正确",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P108 课文4 听两遍 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text4:question1"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text4-question2",
+          "prompt": {
+            "zh": "白家月很喜欢跟李文一起跑步。",
+            "vi": "Gia Nguyệt rất thích chạy bộ cùng Lý Văn."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "正确",
+              "vi": "đúng"
+            },
+            {
+              "zh": "错误",
+              "vi": "sai"
+            }
+          ],
+          "answer": "正确",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P108 课文4 听两遍 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text4:question2"
+        }
+      ],
+      "note": {
+        "zh": "听两遍课文，判断正误。",
+        "vi": "Nghe bài khóa hai lần rồi xác định đúng hay sai."
+      },
+      "audioTrack": "12-7",
+      "recommendedPlays": 2
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:text4-reading",
+      "kind": "choice",
+      "title": {
+        "zh": "课文4：读后练习",
+        "vi": "Bài khóa 4: bài tập sau khi đọc"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "课文4：听后/读后练习",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:text4:reading",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text4-question3",
+          "prompt": {
+            "zh": "这几天白家月是怎么去学校的？",
+            "vi": "Mấy hôm nay Gia Nguyệt đến trường bằng cách nào?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "跑步",
+              "vi": "chạy bộ"
+            },
+            {
+              "zh": "走路",
+              "vi": "đi bộ"
+            },
+            {
+              "zh": "坐地铁",
+              "vi": "đi tàu điện ngầm"
+            }
+          ],
+          "answer": "坐地铁",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P109 课文4 读后 第1题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text4:question3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:text4-question4",
+          "prompt": {
+            "zh": "李文让白家月跟他去做什么？",
+            "vi": "Lý Văn rủ Gia Nguyệt đi làm gì cùng?"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "课文4：听后/读后练习",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "跑步",
+              "vi": "chạy bộ"
+            },
+            {
+              "zh": "坐地铁",
+              "vi": "đi tàu điện ngầm"
+            },
+            {
+              "zh": "等朋友",
+              "vi": "đợi bạn"
+            }
+          ],
+          "answer": "跑步",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P109 课文4 读后 第2题"
+          },
+          "targetRef": "hsk2-fltrp-2026:l12:text4:question4"
+        }
+      ],
+      "note": {
+        "zh": "朗读课文，读后选择正确答案。",
+        "vi": "Đọc bài khóa rồi chọn đáp án đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar1-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：左边这块手表好看还是右边那块好看？B：左边这块，但是它______。",
+        "vi": "A: Đồng hồ bên trái đẹp hay chiếc bên phải đẹp? B: Chiếc bên trái, nhưng nó ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "比较句（4）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar1:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar1-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比右边那块贵多了",
+            "vi": "đắt hơn chiếc bên phải nhiều"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar1-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：走，我请你喝咖啡。B：喝奶茶吧，奶茶店______。我有点儿累，不想走太远。",
+        "vi": "A: Đi thôi, tôi mời bạn uống cà phê. B: Uống trà sữa đi, quán trà sữa ______. Tôi hơi mệt, không muốn đi xa quá."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "比较句（4）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar1:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar1-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比咖啡店近得多",
+            "vi": "gần hơn quán cà phê nhiều"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar1-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：几年没见你女儿了，她个子很高了吧？B：是啊，个子______。",
+        "vi": "A: Mấy năm không gặp con gái bạn rồi, chắc cô bé cao lắm rồi nhỉ? B: Đúng vậy, chiều cao ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 119,
+        "printedPage": 104,
+        "section": "比较句（4）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar1:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar1-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 119,
+            "printedPage": 104,
+            "section": "比较句（4）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比以前高多了",
+            "vi": "cao hơn trước nhiều"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar2-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：家月，你今天来得真早！B：老师，天中______，他去外面跑步了。",
+        "vi": "A: Gia Nguyệt, hôm nay em đến sớm thật! B: Thưa cô, Thiên Trung ______, bạn ấy ra ngoài chạy bộ rồi."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "比较句（5）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar2:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar2-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比我来得早",
+            "vi": "đến sớm hơn em"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar2-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：小明，你中午没吃饭吧？晚上吃得这么多！B：多吗？您看看姐姐，她______。",
+        "vi": "A: Tiểu Minh, trưa con không ăn à? Tối ăn nhiều thế! B: Nhiều ạ? Bố/mẹ xem chị kìa, chị ấy ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "比较句（5）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar2:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar2-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比我吃得多",
+            "vi": "ăn nhiều hơn con"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar2-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：一飞，这些汉字是外国人写的吗？B：是啊！A：真好看！我觉得______。",
+        "vi": "A: Nhất Phi, chữ Hán này là người nước ngoài viết à? B: Vâng! A: Đẹp thật! Chị thấy ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 121,
+        "printedPage": 106,
+        "section": "比较句（5）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar2:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar2-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 121,
+            "printedPage": 106,
+            "section": "比较句（5）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "他们比我写得好",
+            "vi": "họ viết đẹp hơn tôi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar3-practice1",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你们几个谁打篮球打得好？B：李文，他______。",
+        "vi": "A: Trong mấy bạn, ai chơi bóng rổ giỏi? B: Lý Văn, bạn ấy ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "比较句（6）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar3:practice:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar3-dialogue1-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "打篮球打得比我们好",
+            "vi": "chơi bóng rổ giỏi hơn chúng tôi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar3-practice2",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你会做菜吗？B：会，但______，所以我更喜欢吃妈妈做的菜。",
+        "vi": "A: Bạn biết nấu ăn không? B: Biết, nhưng ______, nên tôi thích ăn món mẹ nấu hơn."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "比较句（6）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar3:practice:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar3-dialogue2-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "妈妈做菜比我做得好",
+            "vi": "mẹ tôi nấu ăn ngon hơn tôi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:grammar3-practice3",
+      "kind": "fill",
+      "title": {
+        "zh": "A：你唱歌唱得怎么样？B：还可以，但家月______。",
+        "vi": "A: Bạn hát thế nào? B: Cũng được, nhưng Gia Nguyệt ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 123,
+        "printedPage": 108,
+        "section": "比较句（6）：完成对话",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:grammar3:practice:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:grammar3-dialogue3-blank1",
+          "prompt": {
+            "zh": "第1空",
+            "vi": "Chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 123,
+            "printedPage": 108,
+            "section": "比较句（6）：完成对话",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "唱歌唱得比我好",
+            "vi": "hát hay hơn tôi"
+          }
+        }
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:comprehensive-words",
+      "kind": "fill",
+      "title": {
+        "zh": "综合练习：选词填空",
+        "vi": "Bài tập tổng hợp: điền từ"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "综合练习：选词填空",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:wordchoice1",
+          "prompt": {
+            "zh": "（1）你看，前边的那个人______高啊！",
+            "vi": "(1) Bạn nhìn kìa, người phía trước cao ______!"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "事情",
+              "vi": "sự việc"
+            },
+            {
+              "zh": "正",
+              "vi": "đang"
+            },
+            {
+              "zh": "从小",
+              "vi": "từ nhỏ"
+            },
+            {
+              "zh": "外面",
+              "vi": "bên ngoài"
+            },
+            {
+              "zh": "好",
+              "vi": "rất, quá"
+            }
+          ],
+          "answer": "好",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 16,
+            "item": "第12课 P109 综合练习 选词填空 第1题（E）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:wordchoice2",
+          "prompt": {
+            "zh": "（2）今天的天气没有昨天好，______正下着雨呢。",
+            "vi": "(2) Hôm nay trời không đẹp bằng hôm qua, ______ đang mưa."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "事情",
+              "vi": "sự việc"
+            },
+            {
+              "zh": "正",
+              "vi": "đang"
+            },
+            {
+              "zh": "从小",
+              "vi": "từ nhỏ"
+            },
+            {
+              "zh": "外面",
+              "vi": "bên ngoài"
+            },
+            {
+              "zh": "好",
+              "vi": "rất, quá"
+            }
+          ],
+          "answer": "外面",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 17,
+            "item": "第12课 P109 综合练习 选词填空 第2题（D）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:wordchoice3",
+          "prompt": {
+            "zh": "（3）对不起，公司这几天______很多，太忙了，所以忘了你的生日。",
+            "vi": "(3) Xin lỗi, mấy hôm nay công ty có nhiều ______, bận quá nên tôi quên sinh nhật bạn."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "事情",
+              "vi": "sự việc"
+            },
+            {
+              "zh": "正",
+              "vi": "đang"
+            },
+            {
+              "zh": "从小",
+              "vi": "từ nhỏ"
+            },
+            {
+              "zh": "外面",
+              "vi": "bên ngoài"
+            },
+            {
+              "zh": "好",
+              "vi": "rất, quá"
+            }
+          ],
+          "answer": "事情",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 17,
+            "item": "第12课 P109 综合练习 选词填空 第3题（A）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:wordchoice4",
+          "prompt": {
+            "zh": "（4）A：我______就爱动，经常跟朋友一起踢球、跑步。B：所以你身体这么好！",
+            "vi": "(4) A: Tôi ______ đã thích vận động, thường đá bóng, chạy bộ cùng bạn. B: Vì vậy bạn khỏe thế!"
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "事情",
+              "vi": "sự việc"
+            },
+            {
+              "zh": "正",
+              "vi": "đang"
+            },
+            {
+              "zh": "从小",
+              "vi": "từ nhỏ"
+            },
+            {
+              "zh": "外面",
+              "vi": "bên ngoài"
+            },
+            {
+              "zh": "好",
+              "vi": "rất, quá"
+            }
+          ],
+          "answer": "从小",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 17,
+            "item": "第12课 P109 综合练习 选词填空 第4题（C）"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:wordchoice5",
+          "prompt": {
+            "zh": "（5）A：小雪在做什么呢？B：快要考试了，她______看书呢。",
+            "vi": "(5) A: Tiểu Tuyết đang làm gì? B: Sắp thi rồi, cô bé ______ đọc sách."
+          },
+          "input": "select",
+          "assessment": "official",
+          "source": {
+            "pdfPage": 124,
+            "printedPage": 109,
+            "section": "综合练习：选词填空",
+            "provenance": "textbook"
+          },
+          "options": [
+            {
+              "zh": "事情",
+              "vi": "sự việc"
+            },
+            {
+              "zh": "正",
+              "vi": "đang"
+            },
+            {
+              "zh": "从小",
+              "vi": "từ nhỏ"
+            },
+            {
+              "zh": "外面",
+              "vi": "bên ngoài"
+            },
+            {
+              "zh": "好",
+              "vi": "rất, quá"
+            }
+          ],
+          "answer": "正",
+          "answerSource": {
+            "document": "hsk2-answers",
+            "pdfPage": 17,
+            "item": "第12课 P109 综合练习 选词填空 第5题（B）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:picture-dialogue1",
+      "kind": "fill",
+      "title": {
+        "zh": "（1）______我比弟弟高多了，但现在没有他高了。",
+        "vi": "(1) ______ tôi cao hơn em trai nhiều, nhưng giờ không cao bằng em nữa."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section3:picture:1",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture1-blank1",
+          "prompt": {
+            "zh": "图1第1空",
+            "vi": "Hình 1, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "小时候",
+            "vi": "hồi nhỏ"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-1"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l12:illustration:practice-1"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:picture-dialogue2",
+      "kind": "fill",
+      "title": {
+        "zh": "（2）明天的天气会______今天______得多。",
+        "vi": "(2) Ngày mai thời tiết sẽ ______ hôm nay ______ nhiều."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section3:picture:2",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture2-blank1",
+          "prompt": {
+            "zh": "图2第1空",
+            "vi": "Hình 2, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比",
+            "vi": "so với"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-2"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture2-blank2",
+          "prompt": {
+            "zh": "图2第2空",
+            "vi": "Hình 2, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "好",
+            "vi": "đẹp"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-2"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l12:illustration:practice-2"
+      ],
+      "note": {
+        "zh": "图中是教材的固定示例：今天19°C、有雷雨；明天26°C、晴。这不是实时天气预报。参考答案不唯一。",
+        "vi": "Hình là ví dụ cố định trong sách: hôm nay 19°C có dông mưa; ngày mai 26°C có nắng. Đây không phải dự báo thời tiết hiện tại. Câu tham khảo không duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:picture-dialogue3",
+      "kind": "fill",
+      "title": {
+        "zh": "（3）弟弟跑得______姐姐______。",
+        "vi": "(3) Em trai chạy ______ chị gái ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section3:picture:3",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture3-blank1",
+          "prompt": {
+            "zh": "图3第1空",
+            "vi": "Hình 3, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比",
+            "vi": "so với"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-3"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture3-blank2",
+          "prompt": {
+            "zh": "图3第2空",
+            "vi": "Hình 3, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "快",
+            "vi": "nhanh"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-3"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l12:illustration:practice-3"
+      ],
+      "note": {
+        "zh": "参考表达由课程编辑补充；合理答案可以不同，不按唯一字符串判错。",
+        "vi": "Câu tham khảo do biên tập viên bổ sung; có thể có nhiều cách trả lời đúng, không chấm theo một chuỗi duy nhất."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:picture-dialogue4",
+      "kind": "fill",
+      "title": {
+        "zh": "（4）她______唱得______。",
+        "vi": "(4) Cô ấy ______ hát ______."
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "综合练习：描述图片",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section3:picture:4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture4-blank1",
+          "prompt": {
+            "zh": "图4第1空",
+            "vi": "Hình 4, chỗ trống 1"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "唱歌",
+            "vi": "hát"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-4"
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:picture4-blank2",
+          "prompt": {
+            "zh": "图4第2空",
+            "vi": "Hình 4, chỗ trống 2"
+          },
+          "input": "text",
+          "assessment": "reference",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "综合练习：描述图片",
+            "provenance": "textbook"
+          },
+          "referenceAnswer": {
+            "zh": "比我好",
+            "vi": "hay hơn tôi"
+          },
+          "illustrationId": "hsk2-fltrp-2026:l12:illustration:practice-4"
+        }
+      ],
+      "illustrationIds": [
+        "hsk2-fltrp-2026:l12:illustration:practice-4"
+      ],
+      "note": {
+        "zh": "以下参考表达只是非唯一示例；人物、数量或个人情况不能从图片或题干确定，不代表学习者的实际情况。",
+        "vi": "Các câu tham khảo chỉ là ví dụ không duy nhất; nhân vật, số lượng hoặc tình hình cá nhân không xác định được từ hình hay đề bài và không phải dữ liệu thực tế của người học."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:roleplay",
+      "kind": "open",
+      "title": {
+        "zh": "课堂活动：双人活动",
+        "vi": "Hoạt động trên lớp: luyện theo cặp"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "课堂活动：双人活动",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section4",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:classroom-roleplay",
+          "prompt": {
+            "zh": "两人一组，打电话谈论天气情况，并对比不同地方的天气差异，等等。尽可能使用本课所学生词和语法。",
+            "vi": "Theo cặp, gọi điện trao đổi về thời tiết và so sánh thời tiết ở các nơi. Cố gắng dùng từ và ngữ pháp của bài."
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 125,
+            "printedPage": 110,
+            "section": "课堂活动：双人活动",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "note": {
+        "zh": "保留原示例，记录提示后分角色练习；不自动判分。",
+        "vi": "Giữ ví dụ gốc, ghi gợi ý rồi đóng vai; không chấm điểm tự động."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:review-vocabulary",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "词语学习",
+        "vi": "Học từ vựng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 126,
+        "printedPage": 111,
+        "section": "学习小结：10～12课",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section5:vocabulary",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-vocabulary1",
+          "prompt": {
+            "zh": "我已经记住并会使用的词语：______",
+            "vi": "Những từ tôi đã nhớ và dùng được: ______"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-vocabulary2",
+          "prompt": {
+            "zh": "我还没记住的词语：______",
+            "vi": "Những từ tôi chưa nhớ: ______"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "matrix": {
+        "mode": "responses",
+        "rowHeading": {
+          "zh": "学习情况",
+          "vi": "Tình hình học"
+        },
+        "columns": [
+          {
+            "zh": "词语",
+            "vi": "Từ vựng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "我已经记住并会使用的词语",
+              "vi": "Những từ tôi đã nhớ và dùng được"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-vocabulary1"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "我还没记住的词语",
+              "vi": "Những từ tôi chưa nhớ"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-vocabulary2"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:review-grammar",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我理解并会用",
+        "vi": "Tôi hiểu và biết dùng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 126,
+        "printedPage": 111,
+        "section": "学习小结：10～12课",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section5:grammar",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar1-1",
+          "prompt": {
+            "zh": "第1项：理解",
+            "vi": "Mục 1: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar1-2",
+          "prompt": {
+            "zh": "第1项：会用",
+            "vi": "Mục 1: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar2-1",
+          "prompt": {
+            "zh": "第2项：理解",
+            "vi": "Mục 2: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar2-2",
+          "prompt": {
+            "zh": "第2项：会用",
+            "vi": "Mục 2: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar3-1",
+          "prompt": {
+            "zh": "第3项：理解",
+            "vi": "Mục 3: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar3-2",
+          "prompt": {
+            "zh": "第3项：会用",
+            "vi": "Mục 3: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar4-1",
+          "prompt": {
+            "zh": "第4项：理解",
+            "vi": "Mục 4: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar4-2",
+          "prompt": {
+            "zh": "第4项：会用",
+            "vi": "Mục 4: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar5-1",
+          "prompt": {
+            "zh": "第5项：理解",
+            "vi": "Mục 5: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar5-2",
+          "prompt": {
+            "zh": "第5项：会用",
+            "vi": "Mục 5: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar6-1",
+          "prompt": {
+            "zh": "第6项：理解",
+            "vi": "Mục 6: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar6-2",
+          "prompt": {
+            "zh": "第6项：会用",
+            "vi": "Mục 6: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar7-1",
+          "prompt": {
+            "zh": "第7项：理解",
+            "vi": "Mục 7: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar7-2",
+          "prompt": {
+            "zh": "第7项：会用",
+            "vi": "Mục 7: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar8-1",
+          "prompt": {
+            "zh": "第8项：理解",
+            "vi": "Mục 8: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar8-2",
+          "prompt": {
+            "zh": "第8项：会用",
+            "vi": "Mục 8: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar9-1",
+          "prompt": {
+            "zh": "第9项：理解",
+            "vi": "Mục 9: Hiểu"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        },
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-grammar9-2",
+          "prompt": {
+            "zh": "第9项：会用",
+            "vi": "Mục 9: Biết dùng"
+          },
+          "input": "checkbox",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        }
+      ],
+      "matrix": {
+        "mode": "checks",
+        "rowHeading": {
+          "zh": "语言点与原例句",
+          "vi": "Điểm ngữ pháp và ví dụ gốc"
+        },
+        "columns": [
+          {
+            "zh": "理解",
+            "vi": "Hiểu"
+          },
+          {
+            "zh": "会用",
+            "vi": "Biết dùng"
+          }
+        ],
+        "rows": [
+          {
+            "prompt": {
+              "zh": "主谓谓语句。例：他学习很好。",
+              "vi": "Câu có cụm chủ–vị làm vị ngữ. Ví dụ: Anh ấy học rất tốt."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar1-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar1-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "选择问句。例：你喝咖啡还是茶？",
+              "vi": "Câu hỏi lựa chọn. Ví dụ: Bạn uống cà phê hay trà?"
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar2-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar2-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "固定格式“要/快/快要/就要……了”。例：我要回国了。",
+              "vi": "Mẫu 要/快/快要/就要……了. Ví dụ: Tôi sắp về nước rồi."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar3-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar3-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "动态助词“着”（1）。例：他在那儿坐着。",
+              "vi": "Trợ từ 着 (1). Ví dụ: Anh ấy đang ngồi ở đó."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar4-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar4-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "动态助词“着”（2）。例：她穿着白色的裤子。",
+              "vi": "Trợ từ 着 (2). Ví dụ: Cô ấy đang mặc quần trắng."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar5-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar5-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "程度副词“最”。例：在我们家，爸爸最高。",
+              "vi": "Phó từ 最. Ví dụ: Trong nhà chúng tôi, bố cao nhất."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar6-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar6-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（4）。例：今天比昨天热多了。",
+              "vi": "So sánh (4). Ví dụ: Hôm nay nóng hơn hôm qua nhiều."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar7-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar7-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（5）。例：我写得比他快。",
+              "vi": "So sánh (5). Ví dụ: Tôi viết nhanh hơn anh ấy."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar8-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar8-2"
+            ]
+          },
+          {
+            "prompt": {
+              "zh": "比较句（6）。例：他踢足球比我踢得好。",
+              "vi": "So sánh (6). Ví dụ: Anh ấy đá bóng giỏi hơn tôi."
+            },
+            "fieldIds": [
+              "hsk2-fltrp-2026:l12:field:review-grammar9-1",
+              "hsk2-fltrp-2026:l12:field:review-grammar9-2"
+            ]
+          }
+        ]
+      },
+      "note": {
+        "zh": "每项的理解和会用分别勾选；不强制评级，不算正确率。",
+        "vi": "Đánh dấu riêng mức hiểu và biết dùng ở mỗi mục; không bắt buộc xếp hạng, không tính tỉ lệ đúng."
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:activity:review-effort",
+      "kind": "self-assessment",
+      "title": {
+        "zh": "我需要努力的",
+        "vi": "Điều tôi cần cố gắng"
+      },
+      "origin": "textbook",
+      "source": {
+        "pdfPage": 126,
+        "printedPage": 111,
+        "section": "学习小结：10～12课",
+        "provenance": "textbook"
+      },
+      "targetRef": "hsk2-fltrp-2026:l12:section5:effort",
+      "fields": [
+        {
+          "id": "hsk2-fltrp-2026:l12:field:review-effort",
+          "prompt": {
+            "zh": "我需要努力的：______",
+            "vi": "Điều tôi cần cố gắng: ______"
+          },
+          "input": "textarea",
+          "assessment": "open",
+          "source": {
+            "pdfPage": 126,
+            "printedPage": 111,
+            "section": "学习小结：10～12课",
+            "provenance": "textbook"
+          }
+        }
+      ]
+    }
+  ],
+  "illustrationManifest": [
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:warmup1-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "辅助示意图：warmup1-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "owner": "hsk2-fltrp-2026:l12:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l12:warmup1",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:warmup1-picture1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "站台边停着一列有多扇车门和窗户的轨道列车。",
+        "vi": "Một đoàn tàu đường ray có nhiều cửa và cửa sổ dừng bên sân ga."
+      },
+      "description": {
+        "zh": "站台边停着一列有多扇车门和窗户的轨道列车。",
+        "vi": "Một đoàn tàu đường ray có nhiều cửa và cửa sổ dừng bên sân ga."
+      },
+      "sceneKey": "warmup1-1",
+      "file": "illustrations/hsk2-l12-warmup1-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "f3e021c3cdda1eb6979f21013983d4a777f7dcaa1fc1a0da4d35c4a1d2ab6c92",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Train doors/windows, overhead platform structure and platform safety line distinguish the subway scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:warmup1-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "辅助示意图：warmup1-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "owner": "hsk2-fltrp-2026:l12:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l12:warmup1",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:warmup1-picture2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "蓝色天空中太阳明亮，白云在下方，边缘有树叶。",
+        "vi": "Mặt trời sáng trên nền trời xanh, mây trắng phía dưới và lá cây ở mép hình."
+      },
+      "description": {
+        "zh": "蓝色天空中太阳明亮，白云在下方，边缘有树叶。",
+        "vi": "Mặt trời sáng trên nền trời xanh, mây trắng phía dưới và lá cây ở mép hình."
+      },
+      "sceneKey": "warmup1-2",
+      "file": "illustrations/hsk2-l12-warmup1-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "80d4f320274fb13f00512e089b10dab7391bcf0e5a124fb5a30bf32039038c84",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Changed floating miniature trees to edge foliage after opening first raster. Bright sun and blue sky remain clear."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:warmup1-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "辅助示意图：warmup1-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "owner": "hsk2-fltrp-2026:l12:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l12:warmup1",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:warmup1-picture3"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "灰色云层覆盖河边的城市建筑，河面颜色暗淡。",
+        "vi": "Mây xám phủ các tòa nhà ven sông; mặt sông có màu trầm."
+      },
+      "description": {
+        "zh": "灰色云层覆盖河边的城市建筑，河面颜色暗淡。",
+        "vi": "Mây xám phủ các tòa nhà ven sông; mặt sông có màu trầm."
+      },
+      "sceneKey": "warmup1-3",
+      "file": "illustrations/hsk2-l12-warmup1-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "eb6d3539d27591cdaf8cf57bf1392f31c4a5a26cc75c888ed222ab9c343ff271",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Overcast cloud cover, muted city skyline and river retained; no answer labels."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:warmup1-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "section": "辅助示意图：warmup1-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 117,
+        "printedPage": 102,
+        "owner": "hsk2-fltrp-2026:l12:warmup1",
+        "sourceOwner": "hsk2-fltrp-2026:l12:warmup1",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:warmup1-picture4"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "几栋高大的多层建筑并排，每栋都有许多窗户。",
+        "vi": "Vài công trình cao tầng đứng cạnh nhau, mỗi tòa có nhiều cửa sổ."
+      },
+      "description": {
+        "zh": "几栋高大的多层建筑并排，每栋都有许多窗户。",
+        "vi": "Vài công trình cao tầng đứng cạnh nhau, mỗi tòa có nhiều cửa sổ."
+      },
+      "sceneKey": "warmup1-4",
+      "file": "illustrations/hsk2-l12-warmup1-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "c1cfb73000ea86294ae7c3a6bdafca9b2a672cc66d652fc4e32bff0215ee5f55",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Several tall multiwindow buildings retained, distinct from the overcast river scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:text1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "section": "辅助示意图：text1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 118,
+        "printedPage": 103,
+        "owner": "hsk2-fltrp-2026:l12:text1",
+        "sourceOwner": "hsk2-fltrp-2026:l12:text1",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "女子坐在沙发上，把手机贴在耳边，身旁有植物。",
+        "vi": "Một phụ nữ ngồi trên sofa, đưa điện thoại lên tai, bên cạnh có cây xanh."
+      },
+      "description": {
+        "zh": "女子坐在沙发上，把手机贴在耳边，身旁有植物。",
+        "vi": "Một phụ nữ ngồi trên sofa, đưa điện thoại lên tai, bên cạnh có cây xanh."
+      },
+      "sceneKey": "text1",
+      "file": "illustrations/hsk2-l12-text1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "15c094ee79b92b80fae7644478abef007ee8e92f3f03b7dfbe69e505520acb6e",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Seated woman is supported by sofa, phone at ear and hand contacting phone."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:text2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "section": "辅助示意图：text2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 120,
+        "printedPage": 105,
+        "owner": "hsk2-fltrp-2026:l12:text2",
+        "sourceOwner": "hsk2-fltrp-2026:l12:text2",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "雪地中有两个小雪人，戴着不同颜色的帽子和围巾。",
+        "vi": "Trên tuyết có hai người tuyết nhỏ, đội mũ và quàng khăn khác màu."
+      },
+      "description": {
+        "zh": "雪地中有两个小雪人，戴着不同颜色的帽子和围巾。",
+        "vi": "Trên tuyết có hai người tuyết nhỏ, đội mũ và quàng khăn khác màu."
+      },
+      "sceneKey": "text2",
+      "file": "illustrations/hsk2-l12-text2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "171f00246bd88a564c23a926f47e82c2f0b56a48717b08bf5b125baeed572021",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two small snow figures with contrasting winter caps and scarves, not an invented phone scene."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:text3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "section": "辅助示意图：text3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 122,
+        "printedPage": 107,
+        "owner": "hsk2-fltrp-2026:l12:text3",
+        "sourceOwner": "hsk2-fltrp-2026:l12:text3",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "一男一女并肩在户外小路上慢跑，两侧有树木。",
+        "vi": "Một người nam và một người nữ chạy bộ cạnh nhau trên lối đi ngoài trời, hai bên có cây."
+      },
+      "description": {
+        "zh": "一男一女并肩在户外小路上慢跑，两侧有树木。",
+        "vi": "Một người nam và một người nữ chạy bộ cạnh nhau trên lối đi ngoài trời, hai bên có cây."
+      },
+      "sceneKey": "text3",
+      "file": "illustrations/hsk2-l12-text3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "a8cf4a1f3fef676c41ae2c6169f8762e929cf75597af90ff060607e5410564f2",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Two adults jogging together on a wooded outdoor path; source relationship retained schematically."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:text4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "section": "辅助示意图：text4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 124,
+        "printedPage": 109,
+        "owner": "hsk2-fltrp-2026:l12:text4",
+        "sourceOwner": "hsk2-fltrp-2026:l12:text4",
+        "position": 1
+      },
+      "sourceFieldBindings": [],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "较近的画面中，一男一女在户外一起慢跑。",
+        "vi": "Trong khung cảnh gần hơn, một người nam và một người nữ cùng chạy bộ ngoài trời."
+      },
+      "description": {
+        "zh": "较近的画面中，一男一女在户外一起慢跑。",
+        "vi": "Trong khung cảnh gần hơn, một người nam và một người nữ cùng chạy bộ ngoài trời."
+      },
+      "sceneKey": "text4",
+      "file": "illustrations/hsk2-l12-text4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "46ae2d65a58f06dcd5609fd2f03f725944fb03239ae78c80932808c7e23922f4",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Distinct closer framing of the same jogging pair, bound to actual PDF124 photograph."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:practice-1",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "辅助示意图：practice-1",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "owner": "hsk2-fltrp-2026:l12:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l12:section3",
+        "position": 1
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:picture1-blank1"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "树林小路上，两个不同身高的男孩并排站着。",
+        "vi": "Trên lối đi trong rừng, hai cậu bé có chiều cao khác nhau đứng cạnh nhau."
+      },
+      "description": {
+        "zh": "树林小路上，两个不同身高的男孩并排站着。",
+        "vi": "Trên lối đi trong rừng, hai cậu bé có chiều cao khác nhau đứng cạnh nhau."
+      },
+      "sceneKey": "practice-1",
+      "file": "illustrations/hsk2-l12-practice-1.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "4625c1024b59a25836db21f5d22d52427d74ad0e82be70fff97b9c36da766613",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Different-height boys on wooded path; adjoining hands visibly meet. No invented age labels."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:practice-2",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "辅助示意图：practice-2",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "owner": "hsk2-fltrp-2026:l12:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l12:section3",
+        "position": 2
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:picture2-blank1",
+        "hsk2-fltrp-2026:l12:field:picture2-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "固定示例图分为今天和明天：今天19°C，雷雨图标；明天26°C，太阳图标。",
+        "vi": "Hình ví dụ cố định chia hôm nay và ngày mai: hôm nay 19°C với biểu tượng dông mưa; ngày mai 26°C với biểu tượng mặt trời."
+      },
+      "description": {
+        "zh": "固定示例图分为今天和明天：今天19°C，雷雨图标；明天26°C，太阳图标。",
+        "vi": "Hình ví dụ cố định chia hôm nay và ngày mai: hôm nay 19°C với biểu tượng dông mưa; ngày mai 26°C với biểu tượng mặt trời."
+      },
+      "sceneKey": "practice-2",
+      "file": "illustrations/hsk2-l12-practice-2.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "b9da29491cb2e3d835261b2f0de7c78aa212734f5932710a6670470dd7bacac3",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Fixed source 19°C storm today and 26°C sun tomorrow retained exactly. These are textbook data, not a current forecast. English image labels are backed by bilingual activity note/alt and original Chinese sentence."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:practice-3",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "辅助示意图：practice-3",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "owner": "hsk2-fltrp-2026:l12:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l12:section3",
+        "position": 3
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:picture3-blank1",
+        "hsk2-fltrp-2026:l12:field:picture3-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "小路上一个男孩在前，一个女孩在后，两人都在跑。",
+        "vi": "Trên lối đi, một cậu bé ở phía trước và một cô bé ở phía sau, cả hai đang chạy."
+      },
+      "description": {
+        "zh": "小路上一个男孩在前，一个女孩在后，两人都在跑。",
+        "vi": "Trên lối đi, một cậu bé ở phía trước và một cô bé ở phía sau, cả hai đang chạy."
+      },
+      "sceneKey": "practice-3",
+      "file": "illustrations/hsk2-l12-practice-3.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "b5c464152d1dad6955447eb6259954ce451ed4526760986671fe75a4c4ff7b07",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Boy is ahead and girl behind, both running, without answer-bearing written labels."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    },
+    {
+      "id": "hsk2-fltrp-2026:l12:illustration:practice-4",
+      "kind": "original-illustration",
+      "originalTextbookImage": false,
+      "source": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "section": "辅助示意图：practice-4",
+        "provenance": "supplemental"
+      },
+      "textbookRelation": {
+        "pdfPage": 125,
+        "printedPage": 110,
+        "owner": "hsk2-fltrp-2026:l12:section3",
+        "sourceOwner": "hsk2-fltrp-2026:l12:section3",
+        "position": 4
+      },
+      "sourceFieldBindings": [
+        "hsk2-fltrp-2026:l12:field:picture4-blank1",
+        "hsk2-fltrp-2026:l12:field:picture4-blank2"
+      ],
+      "title": {
+        "zh": "辅助示意图",
+        "vi": "Hình hỗ trợ"
+      },
+      "alt": {
+        "zh": "女子站在舞台上，一手持麦克风靠近嘴，另一只手举起。",
+        "vi": "Một phụ nữ đứng trên sân khấu, một tay giữ micro gần miệng, tay kia giơ lên."
+      },
+      "description": {
+        "zh": "女子站在舞台上，一手持麦克风靠近嘴，另一只手举起。",
+        "vi": "Một phụ nữ đứng trên sân khấu, một tay giữ micro gần miệng, tay kia giơ lên."
+      },
+      "sceneKey": "practice-4",
+      "file": "illustrations/hsk2-l12-practice-4.svg",
+      "publicationStatus": "approved",
+      "label": {
+        "zh": "自制辅助示意图（非教材原图）",
+        "vi": "Hình hỗ trợ tự thiết kế (không phải ảnh gốc)"
+      },
+      "size": {
+        "width": 640,
+        "height": 400
+      },
+      "creator": "Original native-code SVG author; 2026-10-03",
+      "assetSha256": "704986799e9fb0b5501d384fd4863bc653c4eb0443bd8cd8f94a4b27ca19b129",
+      "rights": "Original vectors using previously authored course primitives; no source pixels, scripts, external images or logos.",
+      "displayRequirements": [
+        "Keep source task number and scene relationships.",
+        "Auxiliary schematic; not a photographic replica."
+      ],
+      "authorVisualReview": {
+        "status": "author-pixels-inspected",
+        "date": "2026-10-03",
+        "method": "Opened all23 rasterized SVGs in six contact sheets at full640×400 cell size; reopened all seven changed scenes individually and the final repaired family scene.",
+        "independentReview": "passed-source-and-pixels",
+        "note": "Moved microphone from cheek toward mouth after pixel inspection; hand contacts microphone stem and other hand is raised."
+      },
+      "independentReview": {
+        "report": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md",
+        "status": "passed-as-original-instructional-schematic",
+        "browserVerification": "pending-integrated-CI"
+      }
+    }
+  ],
+  "coverageReview": {
+    "author": "HSK2 lessons 12–13 additive draft author",
+    "date": "2026-10-03",
+    "textbookPdfPages": [
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126
+    ],
+    "answerPdfPages": [
+      15,
+      16,
+      17
+    ],
+    "appendixPdfPages": [
+      156,
+      157,
+      158,
+      159,
+      160,
+      161
+    ],
+    "independentReview": "passed-source-content-and-template-structure-recheck",
+    "uiVerification": "pending-integrated-CI",
+    "publicationStatus": "integrated-preview-only",
+    "baselineSha256": "5196c717cdb0f188c0d893667fcaa89c15ea44ed63faacefac07a185812d46ca",
+    "method": "Actual source/answer/appendix page pixels inspected before additive authoring. Original nested content unchanged; references are bilingual, nonunique and not official keys.",
+    "limitations": [
+      "Author preparation is not independent acceptance.",
+      "No browser or release acceptance performed.",
+      "No new original-audio alignment or perceptual audio verification claimed.",
+      "Matrix headerFieldIds support must be independently verified."
+    ],
+    "independentReviewReport": "independent-hsk2-lessons-12-13-review/candidate-review/independent-review.md"
+  }
+}
+`;export{e as default};
