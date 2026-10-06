@@ -26,6 +26,7 @@ class RecordedAuditRecovery(unittest.TestCase):
         self.report = {'status': 'accepted-complete-source-frame-review', 'completeCoverage': True,
                        'acceptedSourceFrameGates': [{} for _ in range(2539)]}
         report_bytes = (json.dumps(self.report) + '\n').encode()
+        self.inventory['independentReportSHA256'] = sha(report_bytes)
         compressed = gzip.compress(report_bytes, mtime=0)
         self.write('report.json.gz', compressed)
         self.write('course-app/content/audio-precision-authority-20261006.json',
@@ -58,6 +59,8 @@ class RecordedAuditRecovery(unittest.TestCase):
                                         'files': [{'path': self.name, 'bytes': len(self.raw), 'sha256': sha(self.raw)}]}]}
 
     def seal_request(self):
+        if hasattr(self, 'report'):
+            self.inventory['independentReportSHA256'] = sha((json.dumps(self.report) + '\n').encode())
         body = json.dumps(self.inventory).encode()
         self.write('audit-inventory.json', body)
         self.request.update(precisionAuditInventoryFile='audit-inventory.json', precisionAuditInventorySHA256=sha(body))

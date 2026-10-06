@@ -50,9 +50,10 @@ test('accepted non-spoken annotation blocks legacy line and child fallback while
  const historical=structuredClone(original),template=historical.lines[ids[0]];
  historical.lines[annotation]={...structuredClone(template),sourceText:'（李老师给学生讲题。）',subsegments:[child]};
  historical.subsegments[child]={...structuredClone(template),sourceText:'李老师给学生讲题。',parentLineId:annotation,sentenceNumber:1};
+ historical.lines[child]=structuredClone(historical.subsegments[child]);
  globalThis.location={href:'https://example.test/hsk/'};
  registerSegments(historical);registerPrecisionRows([]);
- assert.ok(originalSegment('lines',annotation,'./'));assert.equal(sentenceSegments(annotation,'./').length,1);
+ assert.ok(originalSegment('lines',annotation,'./'));assert.ok(originalSegment('lines',child,'./'));assert.equal(sentenceSegments(annotation,'./').length,1);
  try{
   registerPrecisionRows([],[annotation]);
   assert.equal(originalSegment('lines',annotation,'./'),undefined);

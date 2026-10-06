@@ -13,13 +13,15 @@ import tempfile
 from pathlib import Path
 
 
-def restore_audit(root, request, inside):
+def restore_audit(root, request, inside, report_sha):
     inventory_bytes = inside(request['precisionAuditInventoryFile']).read_bytes()
     if hashlib.sha256(inventory_bytes).hexdigest() != request['precisionAuditInventorySHA256']:
         raise ValueError('recorded final audit inventory differs')
     inventory = json.loads(inventory_bytes)
     if inventory.get('schemaVersion') != 1 or inventory.get('status') != 'final-accepted-audit-bytes':
         raise ValueError('partial checkpoint cannot supply final audit identity')
+    if inventory.get('independentReportSHA256') != report_sha:
+        raise ValueError('audit inventory belongs to another independent report')
     restored = set()
     for archive in inventory['archives']:
         listed = {row['path']: row for row in archive['files']}
@@ -94,7 +96,7 @@ def restore(root, request_file):
         raise ValueError('final source-frame coverage differs')
     if destination.exists() and destination.read_bytes() != actual:
         raise ValueError('existing independent report has different actual bytes')
-    audit_files = restore_audit(root, request, inside)
+    audit_files = restore_audit(root, request, inside, sha)
     destination.parent.mkdir(parents=True, exist_ok=True)
     destination.write_bytes(actual)
     return {'status': 'materialized-pinned-independent-report', 'sha256': sha,

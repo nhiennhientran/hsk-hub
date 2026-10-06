@@ -11,6 +11,13 @@ site. Only after 254 passes does it stream every Git blob against the tested
 inventory and push a new staging branch. Its staging receipt supplies the
 actual commit and tree for the separate root publication lease.
 
+The freeze request also pins the complete independent report gzip and final audit
+inventory through precisionIndependentReportCompressedFile/SHA256 and
+precisionAuditInventoryFile/SHA256. Each job restores only those actual recorded
+bytes, validates every archive part and member, and rejects a partial checkpoint,
+altered existing evidence or an unlisted archive path. Preflight rechecks all
+referenced audit bytes before the build.
+
 After GitHub Pages reports actual deployment success, root may commit
 `course-app/docs/final-quality-20261006/ci-live-request.json` with these fields.
 The placeholders below are field documentation, not an executable request or
