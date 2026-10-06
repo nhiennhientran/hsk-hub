@@ -13,8 +13,8 @@ import re
 NO_SPEECH = 'crop-ASR-hallucination-or-no-speech-warning'
 MODEL_SHA = 'c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51'
 GLYPH_SCOPE_REFERENCE = {
-    'file': 'course-app/docs/final-quality-20261006/audio-review/explicit-noSpeech-glyph-scopes-03.json',
-    'sha256': 'c878009e0d6f713735614492db23f239f684309051e35c9ff63ee4f8d51211ed',
+    'file': 'course-app/docs/final-quality-20261006/audio-review/explicit-noSpeech-glyph-scopes-02.json',
+    'sha256': '5c6a84d57d5154ea8eced03495aa4ef23e2e7ffca60afb00bb036ef1ac4f0fad',
 }
 LEXICAL_ER_UTTERANCE_IDS = {'textbook-l14-text-3-line-01', 'textbook-l14-text-3-line-01-sentence-1'}
 BACKGROUND_PEER_REFERENCE={'file':'course-app/docs/final-quality-20261006/audio-context-peer-hsk3-background6/independent-background6-explicit-decisions-v1.json','sha256':'0ac6af09df37893ddec2b7b68a3740ade2147cbbd61bc47d35cd2b7ebef0a53f'}

@@ -174,7 +174,7 @@ def validate(row,decision,root,support=None,source_context_only=False):
             previous_character=b
         if previous_character!=len(expected):raise ValueError('a canonical source syllable is missing')
     else:
-        syllables=[{'sourcePinyinSegment':expected,'sourcePinyinCharacterRange':[0,len(expected)],'components':proof.get('observedOriginalSyllableComponents16k',[])}]
+        syllables=[{'sourcePinyinSegment':expected,'components':proof.get('observedOriginalSyllableComponents16k',[])}]
     previous=first
     previous_nucleus_end=first
     for syllable in syllables:
@@ -204,45 +204,22 @@ def validate(row,decision,root,support=None,source_context_only=False):
     if observed.get('featureBins')!=bins or observed.get('featureBinsSHA256')!=feature_sha(bins):
         raise ValueError('short-syllable observations do not reproduce actual original PCM')
     voiced=[];nucleus_observations=[]
-    by_syllable=proof.get('fixedOriginalNucleusSpectrumEvidenceBySyllable')
-    used_spectrum_ranges=set()
-    if by_syllable is not None:
-        if not isinstance(by_syllable,list) or not by_syllable:
-            raise ValueError('fixed source alternatives require actual separate syllable proofs')
-        keys=[tuple(a.get('sourcePinyinCharacterRange',[])) for a in by_syllable]
-        if any(len(k)!=2 for k in keys) or len(keys)!=len(set(keys)):
-            raise ValueError('fixed source alternatives cannot duplicate/reuse one syllable nucleus')
-        if proof.get('fixedOriginalNucleusSpectrumEvidence'):
-            raise ValueError('separate and singular fixed nucleus routes cannot be mixed')
     for syllable in syllables:
         nuclei=[c['sourceSampleRange16k']for c in syllable['components']if c['kind']=='nucleus']
         observed_voice=[x for x in bins if x['voicedObservation']and any(a<=x['sourceWindowFrames16k'][0]and x['sourceWindowFrames16k'][1]<=b for a,b in nuclei)]
         proxy_passed=bool(len(observed_voice)>=10 and max(x['sourceWindowFrames16k'][1]for x in observed_voice)-min(x['sourceWindowFrames16k'][0]for x in observed_voice)>=1280)
         spectrum_alternative=None
         if not proxy_passed:
-            if by_syllable is not None:
-                py_range=syllable.get('sourcePinyinCharacterRange')
-                alternatives=[a for a in by_syllable if a.get('sourcePinyinCharacterRange')==py_range]
-                if len(alternatives)!=1:
-                    raise ValueError('each failed original nucleus requires its own exact canonical syllable proof')
-                alternative=alternatives[0]
-                spec=importlib.util.spec_from_file_location('fixed_separate_source_nucleus',Path(__file__).with_name('review-hard-six-fixed-original-nuclei.py'))
-                fixed=importlib.util.module_from_spec(spec);spec.loader.exec_module(fixed)
-                spectrum_alternative=fixed.validate(row,alternative,root,support,nuclei,py_range)
-                used_spectrum_ranges.add(tuple(py_range))
-            else:
-                alternative=proof.get('fixedOriginalNucleusSpectrumEvidence')
-                if not alternative:
-                    raise ValueError('actual original syllable has insufficient voiced nucleus observations')
-                spec=importlib.util.spec_from_file_location('fixed_actual_nucleus',Path(__file__).with_name('review-fixed-nucleus-spectrum.py'))
-                fixed=importlib.util.module_from_spec(spec);spec.loader.exec_module(fixed)
-                spectrum_alternative=fixed.validate(row,alternative,root,support,nuclei)
+            alternative=proof.get('fixedOriginalNucleusSpectrumEvidence')
+            if not alternative:
+                raise ValueError('actual original syllable has insufficient voiced nucleus observations')
+            spec=importlib.util.spec_from_file_location('fixed_actual_nucleus',Path(__file__).with_name('review-fixed-nucleus-spectrum.py'))
+            fixed=importlib.util.module_from_spec(spec);spec.loader.exec_module(fixed)
+            spectrum_alternative=fixed.validate(row,alternative,root,support,nuclei)
         voiced.extend(observed_voice);nucleus_observations.append({'sourcePinyinSegment':syllable['sourcePinyinSegment'],
             'actualObservedVoicedNucleusFrames16k':[min(x['sourceWindowFrames16k'][0]for x in observed_voice),max(x['sourceWindowFrames16k'][1]for x in observed_voice)] if observed_voice else None,
             'originalVoicedNucleusProxyPassed':proxy_passed,'actualOriginalVoicedNucleusObservationCount':len(observed_voice),
             'independentFixedOriginalSpectrumAlternative':spectrum_alternative})
-    if by_syllable is not None and used_spectrum_ranges != {tuple(a['sourcePinyinCharacterRange']) for a in by_syllable}:
-        raise ValueError('unused or unrelated source nucleus alternative is not authorized')
     wave=proof.get('waveformObservation',{});data=json.loads(support.actual_file(root,wave).read_text())
     if any(data.get(k)!=row[k]for k in ('sourceTrack','sourceSHA256','sourcePCM_SHA256')):
         raise ValueError('short-syllable waveform is not this original source')

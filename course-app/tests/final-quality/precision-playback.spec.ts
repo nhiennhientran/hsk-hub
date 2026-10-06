@@ -68,7 +68,8 @@ function picks(level:number,lesson:number){
   const book=level===1?h1.find((l:any)=>l.id===lesson):undefined;
   const wordRows=rows.filter(r=>r.unit==='word'&&(level!==1||book.vocab.some((w:any)=>w.catalogIds[0]===r.id)));
   const long=(a:PrecisionRow,b:PrecisionRow)=>(b.sourceSampleRange16k[1]-b.sourceSampleRange16k[0])-(a.sourceSampleRange16k[1]-a.sourceSampleRange16k[0]);
-  const word=level===1&&lesson===5?wordRows.find(r=>r.id==='v-l05-lex-60f87a79fc-s1'):[...wordRows].sort(long)[0];
+  const word=level===1&&lesson===5?wordRows.find(r=>r.id==='v-l05-lex-60f87a79fc-s1'):
+    level===3&&lesson===14?wordRows.find(r=>r.id==='hsk3-fltrp-2026:l14:word25'):[...wordRows].sort(long)[0];
   const sentences=rows.filter(r=>r.unit==='sentence');
   // HSK1 exposes separate sentence controls on multi-sentence source lines;
   // its single-sentence line control has the independently accepted line row.
@@ -160,7 +161,7 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native wo
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
   const {rows,book,word,sentence}=picks(level,lesson);
   const wordButton=await openWord(page,word,book);
-  let wordRecordingNoteEvidence:unknown;
+  let wordRecordingNoteEvidence:Record<string,unknown>|undefined;
   if(level===1&&lesson===5){
     expect(word.recordingNote,'The accepted original-recording word variant has its student explanation').toBeTruthy();
     const bookWord=book.vocab.find((w:any)=>w.catalogIds[0]===word.id);
@@ -179,10 +180,26 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native wo
     await expect(card.locator(`[data-vocab-detail="${bookWord.id}"]`)).toBeFocused();
     wordRecordingNoteEvidence={id:word.id,bookWordId:bookWord.id,recordingNote:word.recordingNote,cardAndDetailBilingualVisible:true,detailCloseRestoresFocus:true};
   }
+  if(level===3&&lesson===14){
+    expect(word.recordingNote,'The accepted HSK3 original-word variant has its real student explanation').toBeTruthy();
+    const dialog=page.locator('.word-dialog');await expect(dialog).toBeVisible();
+    const note=dialog.locator(`[data-recording-note="${word.id}"]`);
+    await expect(note).toHaveCount(1);await expect(note).toBeVisible();
+    await expect(note).toContainText(word.recordingNote!.zh);await expect(note).toContainText(word.recordingNote!.vi);
+    await expect(note.locator('[lang="zh"]')).toBeVisible();await expect(note.locator('[lang="vi"]')).toBeVisible();
+    wordRecordingNoteEvidence={id:word.id,recordingNote:word.recordingNote,detailBilingualVisible:true};
+  }
   const first=await playBound(page,wordButton,word);
   // The shared player is outside the native modal. Close the detail normally
   // before using it, as a student must; closing detail preserves playback.
-  if(level!==1)await page.locator('.word-dialog').getByRole('button',{name:/^关闭/}).click();
+  if(level!==1){
+    await page.locator('.word-dialog').getByRole('button',{name:/^关闭/}).click();
+    if(level===3&&lesson===14){
+      await expect(page.locator('.word-dialog')).toHaveCount(0);
+      await expect(page.locator(`.vocabulary-item[data-word-id="${word.id}"] .word-open`)).toBeFocused();
+      wordRecordingNoteEvidence={...wordRecordingNoteEvidence,detailCloseRestoresFocus:true};
+    }
+  }
   await first.stop.click();
   await expect.poll(async()=>(await native(page)).every((a:any)=>a.paused&&!a.hasSource)).toBe(true);
   const next=await openSentence(page,sentence,rows,book);const second=await playBound(page,next.button,next.played);await second.stop.click();
@@ -200,7 +217,7 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native wo
   const noted=recordingNotePick(level);
   const recordingNoteEvidence=noted.lesson===lesson?await verifyRecordingNoteAndBlindPlayback(page,noted,rows,book):undefined;
   expect(errors).toEqual([]);
-  await info.attach('native-precision-button-evidence.json',{body:JSON.stringify({level,lesson,word:{id:word.id,sourceSampleRange16k:word.sourceSampleRange16k},sentence:{id:next.played.id,sourceSampleRange16k:next.played.sourceSampleRange16k},wordRecordingNoteEvidence,recordingNoteEvidence,nativeAudio:await native(page),errors,samplingBoundary:'One visible word and one sentence/line control per lesson; all row source/frame completeness is independently verified by the precision authority. One accepted bilingual recording note per level also exercises real blind-mode playback and transcript hiding; HSK1 L5 also reviews the accepted word note on its card and detail.'}),contentType:'application/json'});
+  await info.attach('native-precision-button-evidence.json',{body:JSON.stringify({level,lesson,word:{id:word.id,sourceSampleRange16k:word.sourceSampleRange16k},sentence:{id:next.played.id,sourceSampleRange16k:next.played.sourceSampleRange16k},wordRecordingNoteEvidence,recordingNoteEvidence,nativeAudio:await native(page),errors,samplingBoundary:'One visible word and one sentence/line control per lesson; all row source/frame completeness is independently verified by the precision authority. One accepted bilingual recording note per level also exercises real blind-mode playback and transcript hiding; HSK1 L5 reviews its accepted word note on card and detail, and HSK3 L14 reviews its accepted word note in the native detail dialog with focus restoration.'}),contentType:'application/json'});
 });
 
 for(const level of [1,2,3])test(`HSK${level} native precision controls preserve rate, bounded seek, replay and navigation cancellation`,async({page},info)=>{
