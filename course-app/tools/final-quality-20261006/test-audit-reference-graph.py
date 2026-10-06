@@ -6,7 +6,9 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from audit_reference_graph import AuditGraph,HISTORICAL,META_ROLE,POLICY_FIELDS,sha
+from audit_reference_graph import (AuditGraph,HISTORICAL,META_ROLE,POLICY_FIELDS,sha,
+                                  FEATURE_INDEX_GENERATOR_SHA, FEATURE_INDEX_GENERATOR,
+                                  FEATURE_INDEX_OWNER)
 
 
 class DurabilityFixtures(unittest.TestCase):
@@ -48,6 +50,85 @@ class DurabilityFixtures(unittest.TestCase):
     def replace_owner(self,obj):
         self.report['ownerEvidence']=self.write('owner.json',obj)
         self.write('report.json',self.report)
+
+    def feature_index_policy(self):
+        # Use genuine immutable observation bytes for this bounded fixture.
+        # The fixture creates no complete-coverage acceptance report.
+        project=Path(__file__).resolve().parents[3]
+        paths=[FEATURE_INDEX_OWNER[0],
+               'course-app/docs/final-quality-20261006/audio-review/final-accepted2539-fresh-source-audit/historical-observation85-actual-feature-recheck-v1.json']
+        for name in paths:
+            path=self.root/name;path.parent.mkdir(parents=True,exist_ok=True)
+            path.write_bytes((project/name).read_bytes())
+        recheck=paths[1]
+        entry=dict(zip(('ownerJSON','ownerJSONActualSHA256','jsonPointer','recordedPath','recordedSHA256'),FEATURE_INDEX_OWNER))
+        entry.update(status='historical-bytes-unavailable',role=META_ROLE,
+                     metadataKind=FEATURE_INDEX_GENERATOR[1])
+        self.policy['classifications'].append({
+            'recordedPath':FEATURE_INDEX_GENERATOR[0],
+            'recordedSHA256':FEATURE_INDEX_GENERATOR_SHA,
+            'status':'historical-bytes-unavailable','role':META_ROLE,
+            'metadataKind':FEATURE_INDEX_GENERATOR[1],'ownerReferences':[entry]})
+        self.policy['exactHistoricalSHAClassificationCount']=8
+        self.policy['historicalFeatureIndexReproductionEvidence']={
+            'file':recheck,'sha256':sha((self.root/recheck).read_bytes())}
+        self.update_feature_policy()
+
+    def update_feature_policy(self):
+        self.report[POLICY_FIELDS[0]]=self.write('classification.json',self.policy)
+        self.write('report.json',self.report)
+
+    def test_exact_single_feature_index_metadata_positive(self):
+        self.feature_index_policy()
+        graph=AuditGraph(self.root,'report.json')
+        self.assertTrue(graph.classify(*FEATURE_INDEX_OWNER,{}))
+        self.assertEqual(len(graph.classified),1)
+        self.assertFalse(next(iter(graph.classified.values()))['historicalBytesRestored'])
+
+    def test_feature_index_changed_owner_rejected(self):
+        self.feature_index_policy()
+        self.policy['classifications'][-1]['ownerReferences'][0]['ownerJSONActualSHA256']='a'*64
+        self.update_feature_policy()
+        with self.assertRaisesRegex(ValueError,'single exact authorized owner'):AuditGraph(self.root,'report.json')
+
+    def test_feature_index_changed_pointer_rejected(self):
+        self.feature_index_policy()
+        self.policy['classifications'][-1]['ownerReferences'][0]['jsonPointer']='/rawSHA256'
+        self.update_feature_policy()
+        with self.assertRaisesRegex(ValueError,'single exact authorized owner'):AuditGraph(self.root,'report.json')
+
+    def test_feature_index_additional_owner_rejected(self):
+        self.feature_index_policy()
+        entries=self.policy['classifications'][-1]['ownerReferences']
+        entries.append(copy.deepcopy(entries[0]))
+        self.update_feature_policy()
+        with self.assertRaises(ValueError):AuditGraph(self.root,'report.json')
+
+    def test_feature_index_cannot_hide_native_raw(self):
+        self.feature_index_policy()
+        graph=AuditGraph(self.root,'report.json')
+        with self.assertRaises(ValueError):
+            graph.retain('native-raw.json',FEATURE_INDEX_GENERATOR_SHA,
+                         owner=FEATURE_INDEX_OWNER[0],owner_sha=FEATURE_INDEX_OWNER[1],
+                         pointer=FEATURE_INDEX_OWNER[2],node={})
+
+    def test_feature_index_actual_recomputation_required(self):
+        self.feature_index_policy()
+        reference=self.policy['historicalFeatureIndexReproductionEvidence']
+        data=json.loads((self.root/reference['file']).read_text())
+        data['checks']=data['checks'][:20]
+        self.policy['historicalFeatureIndexReproductionEvidence']=self.write(reference['file'],data)
+        self.update_feature_policy()
+        with self.assertRaisesRegex(ValueError,'all actual 85 observations'):AuditGraph(self.root,'report.json')
+
+    def test_feature_index_cannot_claim_restored_old_code(self):
+        self.feature_index_policy()
+        reference=self.policy['historicalFeatureIndexReproductionEvidence']
+        data=json.loads((self.root/reference['file']).read_text())
+        data['oldProducerBytesRecovered']=True
+        self.policy['historicalFeatureIndexReproductionEvidence']=self.write(reference['file'],data)
+        self.update_feature_policy()
+        with self.assertRaisesRegex(ValueError,'all actual 85 observations'):AuditGraph(self.root,'report.json')
 
     def test_exact_unselected_metadata_positive(self):
         r=self.graph();self.assertEqual(len(r['historicalMetadataExclusions']),1)

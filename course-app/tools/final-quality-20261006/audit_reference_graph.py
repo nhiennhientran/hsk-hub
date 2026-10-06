@@ -27,6 +27,16 @@ HISTORICAL = {
     '1a87acac3cdb420b6eda2ecd05e7140ca37589cb7d543532f517b7dbd42fcfd1':
         ('course-app/docs/final-quality-20261006/audio-review/actual-remaining-targets-checkpoint-01.json', 'historical-diagnostic-remaining-triage-population-snapshot'),
 }
+# This additional identity is authorized only at one explicit path-bearing
+# producer field. Naked feature-body SHA scalars are retained unchanged; they
+# are not interpreted as recovered code or additional historical exclusions.
+FEATURE_INDEX_GENERATOR_SHA = '374ca5ce165a16cd778f94c6b9021888a7a5c2e4bfef2d4cc09561526b5be346'
+FEATURE_INDEX_GENERATOR = ('tools/final-quality-20261006/review-syllable-evidence.py',
+                           'historical-feature-producer-identity-metadata')
+FEATURE_INDEX_OWNER = ('course-app/docs/final-quality-20261006/audio-hsk2/closure-followup/actual-phoneme-feature-index.json',
+                       'daffa89461329818078b8af01fc133dfa61856653f64dd39e4561b3d2a6fd461',
+                       '/producerScriptSHA256', FEATURE_INDEX_GENERATOR[0],
+                       FEATURE_INDEX_GENERATOR_SHA)
 META_ROLE = 'metadata-only; not current actual source/crop/native-ASR acceptance input'
 POLICY_FIELDS = ('historicalMetadataClassificationEvidence',
                  'immutableReferenceVersionEvidence', 'freshSourceFrameReverificationEvidence')
@@ -105,15 +115,16 @@ class AuditGraph:
         if classification_ref:
             classification = self.read_policy(classification_ref)
             count = classification.get('exactHistoricalSHAClassificationCount')
-            allowed_sets = (set(list(HISTORICAL)[:6]), set(HISTORICAL))
-            if count not in (6, 7):
+            registered = {**HISTORICAL, FEATURE_INDEX_GENERATOR_SHA: FEATURE_INDEX_GENERATOR}
+            allowed_sets = (set(list(HISTORICAL)[:6]), set(HISTORICAL), set(registered))
+            if count not in (6, 7, 8):
                 raise ValueError('historical classification must pin one explicitly registered exact identity set')
             groups = classification.get('classifications', [])
             if len(groups) != count or {x.get('recordedSHA256') for x in groups} != allowed_sets[count - 6]:
                 raise ValueError('historical metadata scope differs from the explicitly registered exact identities')
             for group in groups:
                 expected = group['recordedSHA256']
-                path, kind = HISTORICAL[expected]
+                path, kind = registered[expected]
                 if group.get('recordedPath') != path or group.get('metadataKind') != kind or group.get('status') != 'historical-bytes-unavailable' or group.get('role') != META_ROLE:
                     raise ValueError('historical classification cannot change role/path/status')
                 for entry in group.get('ownerReferences', []):
@@ -123,11 +134,33 @@ class AuditGraph:
                     if self.resolve(entry['recordedPath']).relative_to(self.root).as_posix() != path:
                         raise ValueError('owner tuple cannot classify a different required raw/source path')
                     key = (owner, entry['ownerJSONActualSHA256'], entry['jsonPointer'], entry['recordedPath'], expected)
+                    if expected == FEATURE_INDEX_GENERATOR_SHA and key != FEATURE_INDEX_OWNER:
+                        raise ValueError('feature-index generator classification must retain its single exact authorized owner tuple')
                     if not HASH.fullmatch(entry['ownerJSONActualSHA256']) or not entry['jsonPointer'].startswith('/'):
                         raise ValueError('historical owner needs actual byte SHA and exact JSON pointer')
                     if key in self.metadata:
                         raise ValueError('duplicate historical owner tuple')
                     self.metadata[key] = entry
+                if expected == FEATURE_INDEX_GENERATOR_SHA and len(group.get('ownerReferences', [])) != 1:
+                    raise ValueError('feature-index generator cannot classify additional historical owners')
+            if count == 8:
+                recheck = self.read_policy(classification.get('historicalFeatureIndexReproductionEvidence'))
+                index_reference = recheck.get('historicalObservationIndexEvidence', {})
+                if (index_reference.get('file'), index_reference.get('sha256')) != FEATURE_INDEX_OWNER[:2]:
+                    raise ValueError('feature-index recheck must pin the exact unchanged historical index')
+                index = self.read_policy(index_reference)
+                observed = recheck.get('checks', [])
+                expected_features = {(x['id'], x['file'], x['sha256'], tuple(x['sourceSampleRange16k']), x['cropPCM_SHA256'], x['featureBinsSHA256']) for x in index.get('targets', [])}
+                actual_features = {(x['id'], x['file'], x['sha256'], tuple(x['sourceSampleRange16k']), x['cropPCM_SHA256'], x['featureBinsSHA256']) for x in observed}
+                if (recheck.get('status') != 'historical-observation-feature-bins-actually-reproduced-not-new-approval'
+                        or recheck.get('errors') or recheck.get('actualFeatureDocumentsRecomputed') != 85
+                        or len(observed) != 85 or len(expected_features) != 85 or actual_features != expected_features
+                        or any(x.get('status') != 'actual-feature-bins-freshly-reproduced' for x in observed)
+                        or recheck.get('oldProducerBytesRecovered') is not False
+                        or recheck.get('originalIndexAndFeatureDocumentsModified') is not False
+                        or recheck.get('newASRInferences') != 0 or recheck.get('newApprovalDecisions') != 0
+                        or index.get('observations') != 85 or index.get('productionApproved') is not False):
+                    raise ValueError('feature-index metadata needs all actual 85 observations reproduced without restoration or approval')
         version_ref = self.policy_refs.get(POLICY_FIELDS[1])
         if version_ref:
             versions = self.read_policy(version_ref)
