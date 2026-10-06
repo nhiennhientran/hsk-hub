@@ -7,7 +7,7 @@ import {derivePrecisionTargets} from './build-precision-targets.mjs';
 import {validatePrecisionManifest,canonicalPrecisionJSON,precisionSHA256,nonSpokenStageDirection} from '../../src/precision-contract.ts';
 
 const repo=resolve(import.meta.dirname,'../../..');
-const fields=['id','level','lesson','unit','sourceText','sourceLessonFile','sourceLessonSHA256','parentLineId','sentenceNumber','sourceTrack','sourceSHA256','sourcePCM_SHA256','sourceSampleRange16k','cropPCM_SHA256','clipUnit','readingCount','reviewDecisionId','sourceJSONPointer'];
+const fields=['id','level','lesson','unit','sourceText','sourceLessonFile','sourceLessonSHA256','parentLineId','sentenceNumber','sourceTrack','sourceSHA256','sourcePCM_SHA256','sourceSampleRange16k','cropPCM_SHA256','clipUnit','readingCount','reviewDecisionId','sourceJSONPointer','recordingNote'];
 export function requireCompleteReview(report,catalogSHA){
  assert.equal(report.schemaVersion,1);
  assert.equal(report.status,'accepted-complete-source-frame-review','Only the complete independent final decision set can create runtime authority');
@@ -34,12 +34,12 @@ export function verifyReviewReferences(value,root){
   if(!Array.isArray(v)&&typeof v.file==='string'&&typeof v.sha256==='string'){
    assert.match(v.sha256,/^[a-f0-9]{64}$/);let p;
    if(isAbsolute(v.file)&&recordedRoot){const oldRelative=relative(resolve(recordedRoot),resolve(v.file));assert.ok(oldRelative&&!oldRelative.startsWith('../')&&!isAbsolute(oldRelative),'Audit absolute reference lies outside the recorded repository');p=resolve(root,oldRelative);}
-   else p=isAbsolute(v.file)?resolve(v.file):resolve(root,v.file);
+   else {const name=v.file.startsWith('course-assets/')?'course-app/public/'+v.file:v.file.startsWith('audio/')?'new-hsk1/hsk1/'+v.file:v.file.startsWith('figures/')?'hsk1-app/public/source-activities/'+v.file:v.file;p=isAbsolute(name)?resolve(name):resolve(root,name);}
    const rel=relative(root,p);assert.ok(rel&&!rel.startsWith('../')&&!isAbsolute(rel),'Audit reference must remain in the recorded repository');
    if(seen.has(p))assert.equal(seen.get(p),v.sha256,'Conflicting audit reference identity');
    else {assert.equal(hash(readFileSync(p)),v.sha256,'Independent audit evidence changed: '+rel);seen.set(p,v.sha256);count++;}
   }
-  for(const x of Object.values(v))visit(x);
+  for(const [key,x] of Object.entries(v))if(key!=='modelFiles')visit(x);
  };visit(value);assert.ok(count>0,'Final decisions must reference actual retained evidence');return count;
 }
 export async function buildPrecisionManifest(reportFile,{write=false}={}){

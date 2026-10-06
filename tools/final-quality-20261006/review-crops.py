@@ -72,6 +72,19 @@ def lexical(text):
     return ''.join(ch for ch in unicodedata.normalize('NFKC', str(text)).casefold() if ch.isalnum())
 
 
+def meaningful_non_cjk_units(text):
+    """Keep actual Roman/digit unit order separate from unrelated CJK spelling."""
+    units, current = [], []
+    for ch in unicodedata.normalize('NFKC', str(text)).casefold():
+        if ch.isalnum() and not cjk(ch):
+            current.append(ch)
+        elif current:
+            units.append(''.join(current)); current = []
+    if current:
+        units.append(''.join(current))
+    return units
+
+
 def sentence_parts(text):
     return [s.strip() for s in re.findall(r'[^。！？!?]+[。！？!?]*', text) if cjk(s)]
 
@@ -125,7 +138,7 @@ def source_registry(root):
 
 
 def source_binding(candidate, lesson):
-    source_id = candidate.get('sourceId', candidate.get('parentLineId', candidate.get('lineId', candidate['id'])))
+    source_id = candidate.get('sourceId') or candidate.get('parentLineId') or candidate.get('lineId') or candidate['id']
     if candidate.get('sourceJSONPointer'):
         obj = pointer(lesson, candidate['sourceJSONPointer'])
         path = candidate['sourceJSONPointer']
@@ -160,11 +173,14 @@ def source_binding(candidate, lesson):
         wanted = parts[ordinal - 1]
     if wanted != candidate.get('sourceZH', candidate.get('sourceText')):
         raise ValueError('candidate Chinese differs from canonical source')
+    source_pinyin = obj.get('pinyin', obj.get('py', obj.get('sourcePinyin')))
+    if candidate.get('unit') == 'word' and candidate.get('sourcePinyin') is not None and source_pinyin != candidate.get('sourcePinyin'):
+        raise ValueError('candidate word pinyin differs from canonical source')
     context = {'sourceId': obj.get('id'), 'sourceJSONPointer': path, 'parentZH': whole,
                'sentenceOrdinal': ordinal, 'sentenceCount': len(parts),
                'previousSentence': parts[ordinal - 2] if ordinal and ordinal > 1 else None,
                'nextSentence': parts[ordinal] if ordinal and ordinal < len(parts) else None,
-               'source': obj.get('source')}
+               'source': obj.get('source'), 'sourcePinyin': source_pinyin}
     # Report actual adjacent rows from the containing source array, not producer cues.
     parent_path, _, index = path.rpartition('/')
     try:
@@ -310,7 +326,7 @@ def inspect_raw(raw, candidate, crop_sha, duration, path, expected_sha=None, nor
         holds.append('crop-ASR-Chinese-differs-from-source-needs-phonetic-or-glyph-review')
     normalized_transcript = normalizer(transcript) if normalizer else transcript
     normalized_wanted = normalizer(wanted) if normalizer else wanted
-    if any(ch.isalnum() and not cjk(ch) for ch in wanted) and lexical(normalized_transcript) != lexical(normalized_wanted):
+    if meaningful_non_cjk_units(normalized_wanted) and meaningful_non_cjk_units(normalized_transcript) != meaningful_non_cjk_units(normalized_wanted):
         holds.append('crop-ASR-meaningful-Roman-or-numeric-source-unit-not-proven')
     if any(ch.isalnum() and not cjk(ch) for ch in transcript) and lexical(normalized_transcript) != lexical(normalized_wanted):
         holds.append('crop-ASR-foreign-lexical-token-or-digit-needs-explicit-review')
@@ -339,6 +355,7 @@ def main():
     parser.add_argument('--repo-root', type=Path, required=True)
     parser.add_argument('--candidates', type=Path, required=True)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--target-catalog', type=Path, help='Optional independent canonical full target catalog; checks semantic labels without changing PCM')
     parser.add_argument('--asr-dir', action='append', type=Path, default=[], help='Actual crop raw JSON directories only; full-track ASR is not crop proof')
     parser.add_argument('--asr-index', type=Path, help='JSON records with file and optional sha256; repository-relative paths')
     parser.add_argument('--comparison-normalization', choices=['none', 'opencc-t2s'], default='none',
@@ -369,6 +386,8 @@ def main():
     if not isinstance(candidates, list) or not candidates:
         raise ValueError('nonempty candidate targets/candidates array required')
     registry, source_cache, lesson_cache, raw_index = source_registry(root), {}, {}, defaultdict(list)
+    catalog_bytes = args.target_catalog.read_bytes() if args.target_catalog else None
+    target_catalog = {t['id']: t for t in json.loads(catalog_bytes)['targets']} if catalog_bytes else None
     paths = [(p, None) for directory in args.asr_dir for p in directory.rglob('*.json')]
     if args.asr_index:
         index = read(args.asr_index)
@@ -394,9 +413,14 @@ def main():
                'parentLineId': candidate.get('parentLineId', candidate.get('lineId') if candidate.get('unit') == 'sentence' else None),
                'sentenceNumber': candidate.get('sentenceNumber', candidate.get('sentenceIndex', -1) + 1) or None,
                'sourcePinyin': candidate.get('sourcePinyin'), 'repetition': candidate.get('repetition'),
-               'clipUnit': candidate.get('clipUnit'), 'expectedReadingCount': candidate.get('expectedReadingCount', 1),
+               'clipUnit': candidate.get('clipUnit') or {'word':'single-original-pronunciation', 'line':'original-source-line', 'sentence':'single-original-sentence'}.get(candidate.get('unit')),
+               'expectedReadingCount': candidate.get('expectedReadingCount') if candidate.get('expectedReadingCount') is not None else 1,
                'declaredOriginalPronunciations': candidate.get('declaredOriginalPronunciations'),
                'sourceOccurrenceEvidence': candidate.get('sourceOccurrenceEvidence'),
+               'candidateId': candidate.get('candidateId'),
+               'boundaryRefinementSourceGuards': candidate.get('boundaryRefinementSourceGuards'),
+               'boundaryRefinementEdges': candidate.get('boundaryRefinementEdges'),
+               'contextAlternativeEvidence': candidate.get('contextAlternativeEvidence'),
                'humanListening': False, 'pronunciationToneCertified': False,
                'devicePlaybackCertified': False, 'productionApproved': False}
         try:
@@ -411,6 +435,8 @@ def main():
                 raise ValueError('candidate source SHA differs from independent original registry')
             if candidate.get('level') not in (None, track['level']):
                 row['holds'].append('cross-level-source-reuse-needs-independent-phonetic-review')
+            if track.get('lesson') is not None and candidate.get('lesson') not in (None, track['lesson']):
+                row['holds'].append('cross-lesson-source-reuse-needs-independent-phonetic-review')
             if track['kind'] == 'vocab' and candidate.get('unit') != 'word':
                 row['holds'].append('sentence-or-line-uses-vocabulary-track')
             if track['kind'] == 'text' and candidate.get('unit') == 'word' and not candidate.get('crossLessonReuseEvidence'):
@@ -425,6 +451,23 @@ def main():
             if row['sentenceNumber'] is None:
                 row['sentenceNumber'] = context['sentenceOrdinal']
             row['canonicalSource'] = dict(context, file=candidate['sourceLessonFile'], sha256=lesson_identity)
+            if candidate['unit'] == 'sentence':
+                row['sentenceNumber'] = context['sentenceOrdinal'] or (1 if context['sentenceCount'] == 1 else None)
+                row['parentLineId'] = context['sourceId'] if row['level'] == 1 or context['sentenceCount'] > 1 else None
+            if candidate['unit'] == 'word':
+                row['sourcePinyin'] = context['sourcePinyin']
+            if target_catalog is not None:
+                target = target_catalog.get(row['id'])
+                expected = {'level': row['level'], 'lesson': row['lesson'], 'unit': row['unit'], 'sourceText': row['sourceZH'],
+                            'sourceLessonFile': candidate['sourceLessonFile'], 'sourceLessonSHA256': lesson_identity,
+                            'parentLineId': row['parentLineId'], 'sentenceNumber': row['sentenceNumber']}
+                if target is None or any(target.get(k) != v for k, v in expected.items()):
+                    raise ValueError('actual canonical semantic labels differ from independent target catalog')
+                pointer_path = target.get('sourceJSONPointer', '')
+                if pointer_path.endswith('/zh') or pointer_path.endswith('/sourceText'):
+                    pointer_path = pointer_path.rpartition('/')[0]
+                if pointer_path != context['sourceJSONPointer']:
+                    raise ValueError('canonical object identity differs from target catalog pointer')
             track_path = inside(root, track['disk'])
             if track_path not in source_cache:
                 actual_sha = file_sha(track_path)
@@ -459,6 +502,15 @@ def main():
             row['actualEdgeRMSDbFS20ms'] = edges
             if any(value is not None and value > POLICY['quietEdgeDbFS'] for value in edges.values()):
                 row['holds'].append('non-quiet-boundary-needs-independent-phoneme-review')
+            guards = candidate.get('boundaryRefinementSourceGuards')
+            if guards:
+                minimum, maximum = guards.get('minimumStartFrame'), guards.get('maximumEndFrame')
+                if minimum is None and maximum is None and guards.get('method') == 'explicit-independent-source-context-review-required' and guards.get('notCertifiedByRawASRTimestamps') is True:
+                    row['holds'].append('source-neighbor-anchors-await-independent-context-review')
+                elif type(minimum) is not int or type(maximum) is not int or not 0 <= minimum <= maximum <= len(pcm) // 4:
+                    row['holds'].append('source-neighbor-guard-invalid')
+                elif first < minimum or last > maximum:
+                    row['holds'].append('actual-crop-outside-proposed-source-neighbor-guards-needs-independent-boundary-review')
             if candidate['unit'] == 'sentence' and context['sentenceCount'] > 1 and context['sentenceOrdinal'] is None:
                 row['holds'].append('multi-sentence-source-row-not-single-sentence')
             alternative = candidate.get('clipUnit') == 'alternative-original-pronunciations'
@@ -471,7 +523,18 @@ def main():
                     if expected_readings != 2 or not isinstance(pronunciations, list) or len(pronunciations) != 2 or not candidate.get('sourceOccurrenceEvidence'):
                         row['holds'].append('alternative-original-pronunciation-source-binding-incomplete')
                 elif candidate.get('repetition') not in (1, 2) or not candidate.get('sourceOccurrenceEvidence'):
-                    row['holds'].append('single-pronunciation-repetition-and-source-occurrence-unbound')
+                    # A word extracted from a printed source sentence has a unique
+                    # occurrence, not a fictitious first/second vocabulary reading.
+                    # Its actual full-source word references stay provisional and
+                    # require a separate explicit source-context/phonetic decision.
+                    actual_refs = [word for item in row.get('actualSourceOccurrenceFiles', []) for word in item.get('actualReferencedWords', [])]
+                    occurrence=candidate.get('sourceOccurrenceEvidence', {})
+                    explicit_single_original=(occurrence.get('singleOriginalSentenceOccurrence') is True
+                                              and occurrence.get('originalSpokenSyllable')==candidate['sourceZH'])
+                    if (occurrence.get('comparisonNumeral') or explicit_single_original) and actual_refs:
+                        row['holds'].append('nonrepeated-original-word-occurrence-needs-independent-source-context-review')
+                    else:
+                        row['holds'].append('single-pronunciation-repetition-and-source-occurrence-unbound')
             if candidate['unit'] == 'word':
                 runs = word_runs(crop, first)
                 row['independentWordSpeechLikeRuns16k'] = runs
@@ -499,6 +562,7 @@ def main():
     report = {'schemaVersion': 1, 'generatedAt': dt.datetime.now(dt.timezone.utc).isoformat(),
               'reviewer': 'independent original-source/crop/ASR evidence checker',
               'scriptSHA256': executed_script_sha, 'candidateInputSHA256': sha(candidate_bytes),
+              'independentTargetCatalogSHA256': sha(catalog_bytes) if catalog_bytes else None,
               'comparisonNormalization': normalization,
               'evidencePathMaps': [{'originalPrefix': prefix, 'localRoot': str(local)} for prefix, local in mappings],
               'policy': POLICY, 'policySHA256': sha(json.dumps(POLICY, sort_keys=True).encode()),

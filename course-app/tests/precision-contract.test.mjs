@@ -11,6 +11,13 @@ async function fixture(){
  return {manifestText,targetCatalogText,authority,authoritySHA256:await precisionSHA256(canonicalPrecisionJSON(authority)),sources:[source]};
 }
 test('one exact independently approved word and one source-bound nonspoken annotation pass',async()=>{const rows=await validatePrecisionManifest(await fixture());assert.equal(rows.length,1);assert.deepEqual(rows[0].sourceSampleRange16k,[8000,24000]);});
+test('student recording notes stay bound to the independent source/frame decision',async()=>{
+ const f=await fixture(),m=JSON.parse(f.manifestText),note={zh:'请结合整句跟读。',vi:'Hãy luyện đọc theo cả câu.'};
+ m.records[0].recordingNote=note;f.manifestText=JSON.stringify(m);f.authority.acceptedSourceFrameGates=structuredClone(m.records);f.authority.manifestSHA256=await precisionSHA256(f.manifestText);f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));
+ assert.deepEqual((await validatePrecisionManifest(f))[0].recordingNote,note);
+ m.records[0].recordingNote.zh='未经审核的录音说明';f.manifestText=JSON.stringify(m);f.authority.manifestSHA256=await precisionSHA256(f.manifestText);f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));
+ await assert.rejects(validatePrecisionManifest(f),/unaccepted frame or source binding/);
+});
 test('two agreeing altered manifests cannot replace the pinned independent authority',async()=>{const f=await fixture();const m=JSON.parse(f.manifestText);m.records[0].sourceSampleRange16k=[0,80000];f.manifestText=JSON.stringify(m);f.authority.acceptedSourceFrameGates=m.records;f.authority.manifestSHA256=await precisionSHA256(f.manifestText);await assert.rejects(validatePrecisionManifest(f),/authority checksum/);});
 test('a different source recording with otherwise valid hashes is rejected',async()=>{const f=await fixture();f.sources=[{...source,sha256:h('f')}];await assert.rejects(validatePrecisionManifest(f),/original source identity/);});
 test('omitting a required target cannot masquerade as complete precision',async()=>{const f=await fixture();f.authority.nonSpokenAnnotations=[];f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));await assert.rejects(validatePrecisionManifest(f),/complete target partition/);});

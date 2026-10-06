@@ -2,7 +2,7 @@ import {createActivityCard,createFeedbackEpoch} from '../../hsk1-app/src/shared/
 import {archivedActivities,archivedActivityContext} from './activity-history.ts';
 import {fieldSourcesNeedNotes,sharedRowSource} from './activity-provenance.ts';
 import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
-import {precisionNonSpokenAnnotation} from './precision-resolver.ts';
+import {precisionNonSpokenAnnotation,precisionRecordingNotes} from './precision-resolver.ts';
 import { el, button, link, copy, sourceNote } from "./dom.ts";
 import { routeHref, type Route, type Section } from "./router.ts";
 import type {
@@ -628,6 +628,7 @@ export function mountLesson(
         el("p", line.vi, "vietnamese-line"),
       );
       const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
+      for(const note of precisionRecordingNotes(line.id)){const p=el('p',note,'recording-note');p.dataset.recordingNote=line.id;row.append(p);}
       if(precisionNonSpokenAnnotation(line.id)){const note=el('p',copy('场景说明（原录音中没有单独朗读）','Chỉ dẫn bối cảnh (không được đọc riêng trong bản ghi gốc)'));note.dataset.audioAnnotation=line.id;row.append(note);}
       else if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const play=button(copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
       textBody.append(row);

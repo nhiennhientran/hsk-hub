@@ -4,6 +4,10 @@ let rows:readonly PrecisionRow[]=[];
 let annotations=new Set<string>();
 export function registerPrecisionRows(value:readonly PrecisionRow[],nonSpokenIds:readonly string[]=[]):void{rows=value;annotations=new Set(nonSpokenIds);}
 export function precisionNonSpokenAnnotation(id:string):boolean{return annotations.has(id);}
+export function precisionRecordingNotes(id:string):readonly {zh:string;vi:string}[]{
+ const notes=rows.filter(r=>r.id===id||r.parentLineId===id).flatMap(r=>r.recordingNote?[r.recordingNote]:[]);
+ return notes.filter((note,index)=>notes.findIndex(n=>n.zh===note.zh&&n.vi===note.vi)===index);
+}
 export function precisionRequest(row:PrecisionRow,assetBase:string):AudioRequest{
  return {url:new URL(canonicalPrecisionTrack(row.sourceTrack),new URL(assetBase,location.href)).href,start:row.sourceSampleRange16k[0]/16000,end:row.sourceSampleRange16k[1]/16000,sourceKind:'segment',label:`原音 · Âm thanh gốc · ${row.sourceText}`};
 }

@@ -1,7 +1,7 @@
 import {registerReviewedTextbookAudio} from '../../hsk1-app/src/services/content/reviewed-audio.ts';
 import type {OriginalTrack,TextbookAudio} from '../../hsk1-app/src/services/content/textbook.ts';
 import media from '../../hsk1-app/content/media-references.json' with {type:'json'};
-import {registerPrecisionRows,precisionRequest} from './precision-resolver.ts';
+import {registerPrecisionRows,precisionRequest,precisionRecordingNotes} from './precision-resolver.ts';
 import {tracks} from './content.ts';
 import {canonicalPrecisionJSON,canonicalPrecisionTrack,precisionSHA256,validatePrecisionManifest,type PrecisionAuthority,type PrecisionRow,type PrecisionSource} from './precision-contract.ts';
 
@@ -34,6 +34,7 @@ export function loadPrecisionSegments():Promise<boolean>{
   const accepted=await validatePrecisionManifest({manifestText:manifestText as string,targetCatalogText:targetCatalogText as string,authority,authoritySHA256:precisionAuthoritySHA256,sources:precisionSources});
   rows=accepted;registerPrecisionRows(accepted,authority.nonSpokenAnnotations.map(r=>r.id));
   registerReviewedTextbookAudio({
+   recordingNotes:precisionRecordingNotes,
    word(id){const row=rows.find(r=>r.level===1&&r.unit==='word'&&r.id===id);return row?textbookAudio(row):undefined;},
    line(id){const row=rows.find(r=>r.level===1&&r.unit==='line'&&r.id===id);return row?textbookAudio(row):undefined;},
    sentences(id){return rows.filter(r=>r.level===1&&r.unit==='sentence'&&r.parentLineId===id).sort((a,b)=>(a.sentenceNumber??1)-(b.sentenceNumber??1)).map(r=>({id:r.id,sourceText:r.sourceText,sentenceNumber:r.sentenceNumber??1,audio:textbookAudio(r)}));}

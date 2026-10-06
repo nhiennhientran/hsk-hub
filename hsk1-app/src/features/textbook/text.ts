@@ -6,6 +6,7 @@ import { sceneFigures } from '../../services/source-activities/scene-figures.ts'
 import { sourceFigureAssetPath } from '../../services/source-activities/content.ts';
 import type { AudioService } from '../../services/audio/index.ts';
 import type { BookLesson, TextbookContent } from '../../services/content/textbook.ts';
+import { reviewedTextbookAudio } from '../../services/content/reviewed-audio.ts';
 import { button, element } from './dom.ts';
 
 export function mountText(host: HTMLElement, options: { lesson: BookLesson; content: TextbookContent; audio: AudioService; signal: AbortSignal;scene?:number;onSceneChange?:(scene:number)=>void }): { dispose(): void; updateScene(scene: number): void } {
@@ -52,6 +53,7 @@ export function mountText(host: HTMLElement, options: { lesson: BookLesson; cont
       card.append(element('strong', line.s));
       const text = element('div'); text.dataset.originalText = ''; const zh = element('p', line.zh); zh.lang = 'zh'; zh.className = 'textbook-zh';
       text.append(zh, element('p', line.py), element('p', line.vn));
+      for(const note of reviewedTextbookAudio()?.recordingNotes?.(line.id)??[]){const p=element('p',note);p.className='textbook-recording-note';p.dataset.recordingNote=line.id;text.append(p);}
       const source = content.resolveLine(lesson.id, scene.id, line.id);
       // The shared player remains visible when the dialogue is hidden. Never put
       // the transcript in its label, including when hide mode changes mid-play.

@@ -10,6 +10,7 @@ export interface ReviewedTextbookAudioResolver {
  word(catalogId:string):TextbookAudio|undefined;
  line(lineId:string):TextbookAudio|undefined;
  sentences(lineId:string):readonly ReviewedSentenceAudio[];
+ recordingNotes?(lineId:string):readonly {zh:string;vi:string}[];
 }
 let resolver:ReviewedTextbookAudioResolver|undefined;
 /** The unified source-bound gate registers only independently accepted rows. */

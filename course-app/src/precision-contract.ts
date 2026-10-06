@@ -6,6 +6,7 @@ export interface PrecisionRow extends PrecisionTarget {
  sourceTrack:string;sourceSHA256:string;sourcePCM_SHA256:string;sourceSampleRange16k:[number,number];
  cropPCM_SHA256:string;clipUnit:string;readingCount:number;reviewDecisionId:string;
  sourceJSONPointer?:string|null;
+ recordingNote?:{zh:string;vi:string}|null;
 }
 export interface PrecisionManifest {schemaVersion:1;status:'accepted';sampleRate:16000;records:PrecisionRow[];}
 export interface PrecisionAuthority {
@@ -36,7 +37,7 @@ export function canonicalPrecisionJSON(value:unknown):string{
 export async function precisionSHA256(text:string):Promise<string>{
  return [...new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(text)))].map(x=>x.toString(16).padStart(2,'0')).join('');
 }
-const binding=(r:PrecisionRow)=>({id:r.id,level:r.level,lesson:r.lesson,unit:r.unit,sourceText:r.sourceText,sourceLessonFile:r.sourceLessonFile,sourceLessonSHA256:r.sourceLessonSHA256,parentLineId:r.parentLineId??null,sentenceNumber:r.sentenceNumber??null,sourceTrack:r.sourceTrack,sourceSHA256:r.sourceSHA256,sourcePCM_SHA256:r.sourcePCM_SHA256,sourceSampleRange16k:r.sourceSampleRange16k,cropPCM_SHA256:r.cropPCM_SHA256,clipUnit:r.clipUnit,readingCount:r.readingCount,reviewDecisionId:r.reviewDecisionId,sourceJSONPointer:r.sourceJSONPointer??null});
+const binding=(r:PrecisionRow)=>({id:r.id,level:r.level,lesson:r.lesson,unit:r.unit,sourceText:r.sourceText,sourceLessonFile:r.sourceLessonFile,sourceLessonSHA256:r.sourceLessonSHA256,parentLineId:r.parentLineId??null,sentenceNumber:r.sentenceNumber??null,sourceTrack:r.sourceTrack,sourceSHA256:r.sourceSHA256,sourcePCM_SHA256:r.sourcePCM_SHA256,sourceSampleRange16k:r.sourceSampleRange16k,cropPCM_SHA256:r.cropPCM_SHA256,clipUnit:r.clipUnit,readingCount:r.readingCount,reviewDecisionId:r.reviewDecisionId,sourceJSONPointer:r.sourceJSONPointer??null,recordingNote:r.recordingNote??null});
 /** Exact approved frame set plus an independently source-derived target set.
  * Runtime checks do not claim to listen to, or certify tones of, the audio. */
 export async function validatePrecisionManifest(args:{manifestText:string;targetCatalogText:string;authority:PrecisionAuthority;authoritySHA256:string;sources:readonly PrecisionSource[]}):Promise<readonly PrecisionRow[]>{
@@ -65,6 +66,7 @@ export async function validatePrecisionManifest(args:{manifestText:string;target
   if(!object(item)||typeof item.id!=='string'||seen.has(item.id))fail('duplicate or malformed runtime row');
   const r=item as unknown as PrecisionRow,target=targets.get(r.id),gate=approved.get(r.id),source=sourceMap.get(canonicalPrecisionTrack(r.sourceTrack));
   if(!target||!gate||annotations.has(r.id)||canonicalPrecisionJSON(binding(r))!==canonicalPrecisionJSON(binding(gate)))fail('unaccepted frame or source binding '+r.id);
+  if(r.recordingNote!==undefined&&r.recordingNote!==null&&(!object(r.recordingNote)||Object.keys(r.recordingNote).sort().join(',')!=='vi,zh'||['zh','vi'].some(k=>typeof r.recordingNote![k as 'zh'|'vi']!=='string'||!r.recordingNote![k as 'zh'|'vi'].trim())))fail('recording note shape '+r.id);
   if(r.level!==target.level||r.lesson!==target.lesson||r.unit!==target.unit||r.sourceText!==target.sourceText||r.sourceLessonFile!==target.sourceLessonFile||r.sourceLessonSHA256!==target.sourceLessonSHA256||(r.parentLineId??null)!==(target.parentLineId??null)||(r.sentenceNumber??null)!==(target.sentenceNumber??null))fail('source target differs '+r.id);
   if(!source||source.sha256!==r.sourceSHA256||!sha(r.sourcePCM_SHA256)||!sha(r.cropPCM_SHA256)||typeof r.reviewDecisionId!=='string'||!r.reviewDecisionId.trim()||!Array.isArray(r.sourceSampleRange16k)||r.sourceSampleRange16k.length!==2)fail('original source identity '+r.id);
   const [start,end]=r.sourceSampleRange16k;
