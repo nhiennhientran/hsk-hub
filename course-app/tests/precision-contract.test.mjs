@@ -17,3 +17,17 @@ test('omitting a required target cannot masquerade as complete precision',async(
 test('a vocabulary word cannot be excluded as an unspoken stage direction',async()=>{const f=await fixture();const r=f.authority.acceptedSourceFrameGates[0];f.authority.acceptedSourceFrameGates=[];f.authority.nonSpokenAnnotations.push({id:r.id,sourceLessonSHA256:r.sourceLessonSHA256,reason:'fake note',reviewDecisionId:'fake'});f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));await assert.rejects(validatePrecisionManifest(f),/annotation exclusion/);});
 test('zero duration and extra repeated readings are held even if both JSON files agree',async()=>{for(const edit of [r=>{r.sourceSampleRange16k=[8000,8000];},r=>{r.readingCount=2;}]){const f=await fixture(),m=JSON.parse(f.manifestText);edit(m.records[0]);f.manifestText=JSON.stringify(m);f.authority.acceptedSourceFrameGates=m.records;f.authority.manifestSHA256=await precisionSHA256(f.manifestText);f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));await assert.rejects(validatePrecisionManifest(f),/sample range|pronunciation unit/);}});
 test('duplicate runtime IDs and a partial approval status are rejected',async()=>{for(const edit of [m=>m.records.push(m.records[0]),m=>{m.status='candidate';}]){const f=await fixture(),m=JSON.parse(f.manifestText);edit(m);f.manifestText=JSON.stringify(m);f.authority.manifestSHA256=await precisionSHA256(f.manifestText);f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));await assert.rejects(validatePrecisionManifest(f),/duplicate|manifest or catalog shape/);}});
+test('calling repeated readings alternatives cannot authorize an unrelated word',async()=>{
+ const f=await fixture(),m=JSON.parse(f.manifestText);m.records[0].clipUnit='alternative-original-pronunciations';m.records[0].readingCount=2;
+ f.manifestText=JSON.stringify(m);f.authority.acceptedSourceFrameGates=m.records;f.authority.manifestSHA256=await precisionSHA256(f.manifestText);f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));
+ await assert.rejects(validatePrecisionManifest(f),/word pronunciation unit/);
+});
+test('the four registered HSK1 pronunciation alternatives remain eligible under exact independent authority',async()=>{
+ for(const [id,sourceText,lesson]of [['v-l03-lex-f0ef38a883-s1','谁',3],['v-l07-lex-c5a8f40bc0-s1','里',7],['v-l09-lex-586e4f0ccf-s1','边',9],['v-l09-lex-b967ce841a-s1','上',9]]){
+  const f=await fixture(),m=JSON.parse(f.manifestText),catalog=JSON.parse(f.targetCatalogText);
+  const patch={id,sourceText,lesson,level:1,sourceLessonFile:'hsk1-app/content/stage3-catalog.json'};
+  Object.assign(m.records[0],patch,{clipUnit:'alternative-original-pronunciations',readingCount:2});Object.assign(catalog.targets[0],patch);
+  f.manifestText=JSON.stringify(m);f.targetCatalogText=JSON.stringify(catalog);f.authority.acceptedSourceFrameGates=m.records;f.authority.manifestSHA256=await precisionSHA256(f.manifestText);f.authority.targetCatalogSHA256=await precisionSHA256(f.targetCatalogText);f.authoritySHA256=await precisionSHA256(canonicalPrecisionJSON(f.authority));
+  assert.equal((await validatePrecisionManifest(f))[0].id,id);
+ }
+});

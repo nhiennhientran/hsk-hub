@@ -16,6 +16,10 @@ export interface PrecisionAuthority {
 }
 export interface PrecisionSource {file:string;sha256:string;duration:number;}
 export const nonSpokenStageDirection={id:'hsk3-fltrp-2026:l10:text3:line5',sourceText:'（李老师给学生讲题。）',sourceLessonFile:'course-app/content/hsk3/lesson-10.json'} as const;
+const alternativePronunciationWords=new Map([
+ ['v-l03-lex-f0ef38a883-s1','谁'],['v-l07-lex-c5a8f40bc0-s1','里'],
+ ['v-l09-lex-586e4f0ccf-s1','边'],['v-l09-lex-b967ce841a-s1','上']
+]);
 export function canonicalPrecisionTrack(path:string):string{
  if(/^course-app\/public\/course-assets\/(?:hsk[23]\/)?audio\/\d+-[1-8]\.mp3$/.test(path))path=path.slice('course-app/public/'.length);
  if(/^new-hsk1\/hsk1\/audio\/\d+-[1-7]\.mp3$/.test(path))path=path.replace('new-hsk1/hsk1/audio/','course-assets/audio/');
@@ -65,7 +69,7 @@ export async function validatePrecisionManifest(args:{manifestText:string;target
   if(!source||source.sha256!==r.sourceSHA256||!sha(r.sourcePCM_SHA256)||!sha(r.cropPCM_SHA256)||typeof r.reviewDecisionId!=='string'||!r.reviewDecisionId.trim()||!Array.isArray(r.sourceSampleRange16k)||r.sourceSampleRange16k.length!==2)fail('original source identity '+r.id);
   const [start,end]=r.sourceSampleRange16k;
   if(!Number.isInteger(start)||!Number.isInteger(end)||start<0||end<=start||end/16000>source.duration+.05)fail('source sample range '+r.id);
-  if(r.unit==='word'&&!((r.clipUnit==='single-original-pronunciation'&&r.readingCount===1)||(r.clipUnit==='alternative-original-pronunciations'&&r.readingCount===2)))fail('word pronunciation unit '+r.id);
+  if(r.unit==='word'&&!((r.clipUnit==='single-original-pronunciation'&&r.readingCount===1)||(r.clipUnit==='alternative-original-pronunciations'&&r.readingCount===2&&r.level===1&&alternativePronunciationWords.get(r.id)===r.sourceText)))fail('word pronunciation unit '+r.id);
   if(r.unit!=='word'&&(!['single-original-sentence','original-source-line'].includes(r.clipUnit)||r.readingCount!==1))fail('sentence unit '+r.id);
   seen.add(r.id);records.push(r);
  }
