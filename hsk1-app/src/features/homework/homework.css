@@ -46,6 +46,8 @@
 .homework .homework-length { font-size: .875rem; }
 .homework .homework-length > .bilingual-vi { display: inline; margin: 0; }
 .homework .homework-length > .bilingual-separator { display: inline; }
+.homework:not(.homework30) > [data-homework-parts] { flex-wrap: wrap; overflow: visible; }
+.homework:not(.homework30) > [data-homework-parts] > [data-homework-part] { white-space: normal; overflow-wrap: anywhere; }
 @media (max-width: 600px) {
   .homework-options { grid-template-columns: 1fr; }
   .homework-question { padding: 18px; }

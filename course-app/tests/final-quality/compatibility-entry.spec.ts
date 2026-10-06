@@ -91,7 +91,25 @@ test('all ten approved HTML entries resolve shared resources and old deep links;
     expect(linked.some(url=>url.endsWith('.js'))).toBe(true);expect(linked.some(url=>url.endsWith('.css'))).toBe(true);
     for(const url of linked){expect(url.startsWith(engine+'assets/'),entry.path).toBe(true);expect((await page.request.head(url)).status()).toBe(200);}
     if(entry.path.endsWith('/lesson.html')){await page.goto('./'+entry.path+'?id=1&sec=text');await settled(page,1,'lesson');await expect(page.locator('#textbook-text')).toBeVisible();}
-    if(entry.path.endsWith('/learning.html')){await page.goto('./'+entry.path+'?mode=homework&lesson=1&stage=choice');await settled(page,1,'homework');await expect(page.locator('#module-host')).toHaveAttribute('data-feature','homework');}
+    if(entry.path.endsWith('/learning.html')){
+      await page.goto('./'+entry.path+'?mode=homework&lesson=1&stage=choice');await settled(page,1,'homework');
+      const homework=page.locator('#module-host [data-module-surface="homework"] #homework-module');
+      await expect(homework).toBeVisible();
+      await expect(homework).toContainText('旧版15题作业与提交记录');
+      await expect(homework).toContainText('Bài tập cũ 15 câu và lịch sử bài nộp');
+      await expect(homework.locator('.homework-question')).toHaveCount(5);
+      await expect(homework.locator('input[type="radio"]').first()).toBeEnabled();
+      await expect(homework.locator('#submit-homework')).toBeEnabled();
+      const parts=homework.locator('[data-homework-part]');await expect(parts).toHaveCount(3);
+      for(const part of await parts.all()){
+        await expect(part).toBeVisible();
+        for(const language of ['.bilingual-zh','.bilingual-vi']){
+          const label=part.locator(language);await expect(label).toBeVisible();
+          expect(await label.evaluate(node=>node.scrollWidth<=node.clientWidth+1)).toBe(true);
+        }
+      }
+      await noOverflow(page);
+    }
     const hash=entry.level===1?'#/textbook?lesson=1&section=text':`#view=lesson&level=${entry.level}&lesson=1&section=text&scene=1`;
     await page.goto('./'+entry.path+hash);await settled(page,entry.level,'lesson');
     for(const image of await page.locator('main img').all())if(await image.isVisible()){await image.scrollIntoViewIfNeeded();await expect.poll(()=>image.evaluate((img:HTMLImageElement)=>img.complete&&img.naturalWidth>0)).toBe(true);}
