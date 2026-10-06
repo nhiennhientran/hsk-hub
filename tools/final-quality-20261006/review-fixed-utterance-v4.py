@@ -23,7 +23,6 @@ SCOPE_REFERENCES = [
      'sha256': '1a592b5b918b43c6f82f77a395031b93d48a88a655c05dc28131c55996acdccd'},
     {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-04.json',
      'sha256': '1fe836401e849a918ae9fbd85df24ae293ae19afe8d17598b39adcbb3c47da08'},
-    {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-05.json', 'sha256': '0e17839d970908c507bf5702318e85c93a55d1d0f340ee07e4308e85cdfd9aee'},
 ]
 NO_SPEECH = 'crop-ASR-hallucination-or-no-speech-warning'
 ZERO_WORD = 'crop-ASR-zero-inverted-or-out-of-bounds-word'
@@ -73,19 +72,6 @@ def validate(row, decision, root, support=None):
     if len(declared) != 1 or declared[0]['actualOriginalUtteranceSourcePhysicalEvidence'] != physical:
         raise ValueError('original physical facts are absent from their actual immutable source proposal')
     support.actual_identity(row, physical, 'original utterance physical evidence')
-    numeral_variant = physical.get('originalRecordedNumeralVariantEvidence')
-    if numeral_variant:
-        if row['id'] != 'hsk3-fltrp-2026:l07:text2:line5' or row['candidateId'] != '7e90c37da48e74c52c890261' or row['sourceSampleRange16k'] != [225280,269280] or row['cropPCM_SHA256'] != '145f4a93a701ef974104b06b5592391f4b976c38cab294fe70120551e2d0fe1b':
-            raise ValueError('recorded colloquial numeral scope cannot be reused for any other source')
-        if proof.get('originalRecordedNumeralVariantEvidence') != numeral_variant or numeral_variant.get('canonicalWrittenFirstPrice') != '480' or numeral_variant.get('actualOriginalRecordedZH') != '裙子四百八，短裤四百。' or numeral_variant.get('canonicalFullBashiPronunciationClaim') is not False or numeral_variant.get('noSyntheticShiAdded') is not True or numeral_variant.get('noDigitPredictionUsedAsPhoneEvidence') is not True:
-            raise ValueError('complete original spoken price and unchanged printed 480 must remain explicitly separate')
-        note_reference = entry.get('studentVisibleRecordingNoteEvidence')
-        if proof.get('studentVisibleRecordingNoteEvidence') != note_reference or not note_reference:
-            raise ValueError('the exact recorded price variant requires its bound student notice')
-        notice = json.loads(support.actual_file(root,note_reference).read_text())
-        matches = [n for n in notice.get('entries',[]) if all(n.get(k)==row.get(k) for k in keys)]
-        if len(matches)!=1 or matches[0].get('canonicalZH') != row['sourceZH'] or matches[0].get('canonicalPinyin') != row['canonicalSource']['sourcePinyin'] or matches[0].get('actualOriginalRecordedZH') != numeral_variant['actualOriginalRecordedZH'] or not all(matches[0].get('recordingNote',{}).get(k) for k in ('zh','vi')) or notice.get('globalNumericOrTextSubstitution') is not False:
-            raise ValueError('recorded price notice cannot describe another crop/value or a global substitution')
     for flag in ('completeOriginalOnsetRimeAndFinalReviewed', 'neighborPhonemesExcluded',
                  'sourceOrderChecked', 'originalPrintedPronunciationChecked', 'allASRWarningsRetained', 'noSyntheticPadding'):
         if physical.get(flag) is not True:

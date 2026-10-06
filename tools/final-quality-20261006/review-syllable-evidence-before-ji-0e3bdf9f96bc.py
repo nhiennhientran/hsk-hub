@@ -102,12 +102,6 @@ def validate(row,decision,root,support=None,source_context_only=False):
               'sourceASRTimestampsAreAuxiliaryOnly','F0IsObservationNotToneCertification',
               'allActualCropASRDiagnosticsRetained','noSyntheticPadding',
               'phonemeIdentityIsKnownForThisExactSourceOccurrence')
-    recorded_head = proof.get('fixedOriginalRecordedHeadVariantEvidence')
-    if recorded_head:
-        spec=importlib.util.spec_from_file_location('fixed_recorded_original_head',Path(__file__).with_name('review-fixed-recorded-head.py'))
-        fixed=importlib.util.module_from_spec(spec);spec.loader.exec_module(fixed)
-        fixed.validate(row,decision,root,support)
-        required=tuple(k for k in required if k!='phonemeIdentityIsKnownForThisExactSourceOccurrence')
     if any(proof.get(k)is not True for k in required):
         raise ValueError('short syllable lacks a complete explicit source/phoneme check')
     if not all(proof.get(k) for k in ('explanation','onsetExplanation','rimeAndFinalExplanation','originalOccurrenceExplanation')):

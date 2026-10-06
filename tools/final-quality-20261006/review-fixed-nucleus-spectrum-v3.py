@@ -34,7 +34,7 @@ ADDITIONAL_SOURCE_PHYSICAL_SCOPES={
  'hsk3-fltrp-2026:l10:word03':'3180577334f83dff9a3b41331d6e29cb8c95711310bafaec19305a40ceab0068',
  'hsk3-fltrp-2026:l12:word06':'3180577334f83dff9a3b41331d6e29cb8c95711310bafaec19305a40ceab0068',
  'hsk3-fltrp-2026:l13:word15':'3180577334f83dff9a3b41331d6e29cb8c95711310bafaec19305a40ceab0068',
- 'hsk2-fltrp-2026:l02:word04':('1af15d37e057d8760b05c268672e611613196c26bed90ea044ccd54438a9546b','3079afb1b9c41b6703826174c2837c71a5c907ecdf1b0dd4d553ac5e84c25b54'),
+ 'hsk2-fltrp-2026:l02:word04':'1af15d37e057d8760b05c268672e611613196c26bed90ea044ccd54438a9546b',
 }
 # These are explicit original-source observations, not a general shorter gate.
 PINNED_HARMONIC_WINDOW_RUNS={'hsk3-fltrp-2026:l10:word03': [93440,93760]}
@@ -86,9 +86,7 @@ def validate(row,proof,root,support,nuclei):
     support.actual_identity(row,proof,'fixed-actual-nucleus-spectrum')
     if row['id']in ADDITIONAL_SOURCE_PHYSICAL_SCOPES:
         reference=proof.get('independentlyReviewedSourcePhysicalEvidence',{})
-        allowed_source_sha=ADDITIONAL_SOURCE_PHYSICAL_SCOPES[row['id']]
-        if isinstance(allowed_source_sha,str):allowed_source_sha=(allowed_source_sha,)
-        if reference.get('sha256')not in allowed_source_sha:
+        if reference.get('sha256')!=ADDITIONAL_SOURCE_PHYSICAL_SCOPES[row['id']]:
             raise ValueError('fixed source nucleus requires its exact independent physical decision')
         signed=json.loads(support.actual_file(root,reference).read_text())
         matching=[d for d in signed.get('decisions',[])if d.get('id')==row['id']and d.get('sourceSampleRange16k')==row['sourceSampleRange16k']]
