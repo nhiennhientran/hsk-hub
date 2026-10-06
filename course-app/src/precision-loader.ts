@@ -7,7 +7,7 @@ import {canonicalPrecisionJSON,canonicalPrecisionTrack,precisionSHA256,validateP
 
 const assets=import.meta.glob('../content/audio-precision*-20261006.json',{query:'?raw',import:'default'});
 // Set only after the independent final source/frame report is complete.
-export const precisionAuthoritySHA256='';
+export const precisionAuthoritySHA256='f8e842066c20d0fff5fe2e81e9fc2bb4696e1c70d83c429bb61a3a9d6dfdb639';
 const h1Sources=media.originalTracks.map(t=>({file:t.path,sha256:t.sha256,duration:t.duration_s}));
 export const precisionSources:readonly PrecisionSource[]=[...tracks.map(t=>({file:t.file,sha256:t.sha256,duration:t.duration})),...h1Sources];
 let rows:readonly PrecisionRow[]=[];
