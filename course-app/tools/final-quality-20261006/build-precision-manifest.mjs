@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import {readFileSync,writeFileSync} from 'node:fs';
 import {resolve,isAbsolute,relative} from 'node:path';
+import {spawnSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
 import {hash} from '../package-core.mjs';
 import {derivePrecisionTargets} from './build-precision-targets.mjs';
@@ -25,7 +26,15 @@ export function requireCompleteReview(report,catalogSHA){
 }
 // All audit references are checked against their actual bytes. The heavy raw,
 // spectrum and decision reports remain outside the student-facing manifest.
-export function verifyReviewReferences(value,root){
+export function verifyReviewReferences(value,root,{reportFile}={}){
+ if(value?.historicalMetadataClassificationEvidence!==undefined){
+  assert.ok(reportFile,'Typed retained-reference verification requires the actual final report file');
+  assert.equal(canonicalPrecisionJSON(JSON.parse(readFileSync(reportFile))),canonicalPrecisionJSON(value),'Typed audit report bytes differ from the supplied decision set');
+  const result=spawnSync('python3',[resolve(root,'course-app/tools/final-quality-20261006/audit_reference_graph.py'),'--repo-root',root,'--report',reportFile,'--require-complete','--summary-only'],{encoding:'utf8',maxBuffer:8*1024*1024});
+  assert.equal(result.status,0,'Actual typed source/audit reference verification failed: '+result.stderr+result.stdout);
+  const verified=JSON.parse(result.stdout);assert.ok(Number.isInteger(verified.actualPinnedFiles)&&verified.actualPinnedFiles>0,'Final decisions must reference actual retained evidence');
+  assert.equal(verified.errors?.length??0,0,'Current required audit evidence is incomplete');return verified.actualPinnedFiles;
+ }
  let count=0;const seen=new Map();
  const recordedRoot=value?.recordedRepositoryRoot;
  if(recordedRoot!==undefined)assert.ok(typeof recordedRoot==='string'&&isAbsolute(recordedRoot),'Recorded repository root must be an absolute source identity');
@@ -46,7 +55,7 @@ export async function buildPrecisionManifest(reportFile,{write=false}={}){
  const reportPath=resolve(repo,reportFile),reportBytes=readFileSync(reportPath),report=JSON.parse(reportBytes);
  const targetPath=resolve(repo,'course-app/content/audio-precision-targets-20261006.json'),catalogBytes=readFileSync(targetPath),catalogSHA=hash(catalogBytes);
  assert.deepEqual(JSON.parse(catalogBytes),derivePrecisionTargets(repo),'Target catalog must match the current original teaching files');
- requireCompleteReview(report,catalogSHA);const checkedAuditFiles=verifyReviewReferences(report,repo);
+ requireCompleteReview(report,catalogSHA);const checkedAuditFiles=verifyReviewReferences(report,repo,{reportFile:reportPath});
  const records=report.acceptedSourceFrameGates.map(row=>Object.fromEntries(fields.map(k=>[k,row[k]??null]))).sort((a,b)=>a.id<b.id?-1:a.id>b.id?1:0);
  const manifestText=JSON.stringify({schemaVersion:1,status:'accepted',sampleRate:16000,records})+'\n';
  const authority={schemaVersion:1,status:'accepted',manifestSHA256:hash(Buffer.from(manifestText)),targetCatalogSHA256:catalogSHA,independentReportSHA256:hash(reportBytes),acceptedSourceFrameGates:records,nonSpokenAnnotations:report.nonSpokenAnnotations.map(r=>({id:r.id,sourceLessonSHA256:r.sourceLessonSHA256,reason:r.reason,reviewDecisionId:r.reviewDecisionId})),certifications:{humanListening:false,pronunciationToneCertified:false,devicePlaybackCertified:false}};

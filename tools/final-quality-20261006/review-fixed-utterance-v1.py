@@ -2,7 +2,7 @@
 """Validate explicitly registered complete-source utterance diagnostics.
 
 This never infers a pronunciation from a decoder word or moves its timestamp.
-Exact versioned source/crop scopes retain their actual raw text, no-speech probability
+Two exact source/crop scopes retain their actual raw text, no-speech probability
 or zero-width word emission. Acceptance still requires an independent decision
 about the complete original utterance, spectrum and excluded neighbours.
 """
@@ -15,13 +15,6 @@ SCOPE_REFERENCE = {
     'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-01.json',
     'sha256': 'cc7ec87940b019c0b51bd993bb0048b49785656abacdac91165dbae79cced9d8',
 }
-SCOPE_REFERENCES = [
-    SCOPE_REFERENCE,
-    {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-02.json',
-     'sha256': '6b1e5286b435fdce27d239799c88d27952617d04a8b0a2dc06553ab164360995'},
-    {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-03.json',
-     'sha256': '1a592b5b918b43c6f82f77a395031b93d48a88a655c05dc28131c55996acdccd'},
-]
 NO_SPEECH = 'crop-ASR-hallucination-or-no-speech-warning'
 ZERO_WORD = 'crop-ASR-zero-inverted-or-out-of-bounds-word'
 MODEL_SHA = 'c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51'
@@ -44,15 +37,12 @@ def validate(row, decision, root, support=None):
     support.actual_identity(row, proof, 'fixed original utterance')
     if proof.get('category') != 'fixed-complete-original-utterance-decoder-diagnostic-review':
         raise ValueError('fixed utterance requires its separate explicit diagnostic category')
-    scope_reference = proof.get('authorizedFixedSourceScope')
-    if scope_reference not in SCOPE_REFERENCES:
-        raise ValueError('utterance diagnostic registry is not an exact immutable approved version')
-    scopes = json.loads(support.actual_file(root, scope_reference).read_text())
+    scopes = json.loads(support.actual_file(root, SCOPE_REFERENCE).read_text())
     keys = ('id', 'candidateId', 'sourceTrack', 'sourceSHA256', 'sourcePCM_SHA256',
             'sourceSampleRange16k', 'cropPCM_SHA256')
     matches = [x for x in scopes['targets'] if all(x.get(k) == row.get(k) for k in keys)
                and x['canonicalSourceText'] == row['sourceZH'] and x['canonicalSource'] == row['canonicalSource']]
-    if len(matches) != 1 or proof.get('authorizedFixedSourceScope') != scope_reference:
+    if len(matches) != 1 or proof.get('authorizedFixedSourceScope') != SCOPE_REFERENCE:
         raise ValueError('utterance diagnostic is outside the exact authorized source/crop scope')
     entry = matches[0]
     allowed = set(entry['allowedDecoderHolds'])

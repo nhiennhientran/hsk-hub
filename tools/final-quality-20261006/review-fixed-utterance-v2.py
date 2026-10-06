@@ -15,13 +15,7 @@ SCOPE_REFERENCE = {
     'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-01.json',
     'sha256': 'cc7ec87940b019c0b51bd993bb0048b49785656abacdac91165dbae79cced9d8',
 }
-SCOPE_REFERENCES = [
-    SCOPE_REFERENCE,
-    {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-02.json',
-     'sha256': '6b1e5286b435fdce27d239799c88d27952617d04a8b0a2dc06553ab164360995'},
-    {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-03.json',
-     'sha256': '1a592b5b918b43c6f82f77a395031b93d48a88a655c05dc28131c55996acdccd'},
-]
+SCOPE_REFERENCES = [SCOPE_REFERENCE, {'file': 'course-app/docs/final-quality-20261006/audio-review/fixed-original-utterance-decoder-scopes-02.json', 'sha256': '6b1e5286b435fdce27d239799c88d27952617d04a8b0a2dc06553ab164360995'}]
 NO_SPEECH = 'crop-ASR-hallucination-or-no-speech-warning'
 ZERO_WORD = 'crop-ASR-zero-inverted-or-out-of-bounds-word'
 MODEL_SHA = 'c71f0ce00bec95b07744e116345e33d8cbbe08cef896382cf907bf4b51a2cd51'

@@ -108,6 +108,52 @@ async function playBound(page:Page,button:Locator,row:PrecisionRow){
   },{timeout:10000,intervals:[20,40,80]}).toBe(true);
   return player;
 }
+function recordingNotePick(level:number):PrecisionRow {
+  const notes=manifest().records.filter(r=>r.level===level&&r.unit!=='word'&&r.recordingNote);
+  const row=level===1?notes.find(r=>r.id==='textbook-l05-text-2-line-04'):
+    level===3?notes.find(r=>(r.parentLineId??r.id)==='hsk3-fltrp-2026:l04:text1:line4'):
+    [...notes].sort((a,b)=>a.lesson-b.lesson||a.id.localeCompare(b.id))[0];
+  expect(row,`HSK${level} independently accepted recording note for browser review`).toBeTruthy();
+  return row!;
+}
+async function verifyRecordingNoteAndBlindPlayback(page:Page,row:PrecisionRow,rows:PrecisionRow[],book:any){
+  const lineId=row.parentLineId??row.id;
+  let button:Locator,played:PrecisionRow;
+  if(row.level===1){
+    const scene=book.scenes.findIndex((s:any)=>s.lines.some((l:any)=>l.id===lineId))+1;
+    expect(scene).toBeGreaterThan(0);
+    await page.goto(`./#view=lesson&level=1&lesson=${row.lesson}&section=text&scene=${scene}`);await ready(page,1);
+    button=page.locator(`[data-line-audio="${lineId}"]`);
+    played=rows.find(r=>r.unit==='line'&&r.id===lineId)!;expect(played).toBeTruthy();
+  }else ({button,played}=await openSentence(page,row,rows,book));
+  const note=page.locator(`[data-recording-note="${lineId}"]`).filter({hasText:row.recordingNote!.zh});
+  await expect(note).toHaveCount(1);await expect(note).toBeVisible();
+  await expect(note).toContainText(row.recordingNote!.zh);await expect(note).toContainText(row.recordingNote!.vi);
+  const original=note.locator('xpath=ancestor::*[@data-original-text][1]');
+  await expect(original).toBeVisible();
+  const mode=page.locator('#text-listen-mode'),show=page.locator('#text-show-original');
+  await expect(mode).not.toBeChecked();await expect(show).toBeChecked();
+  await mode.focus();await mode.press('Space');
+  await expect(mode).toBeChecked();await expect(show).not.toBeChecked();
+  await expect(original).toBeHidden();await expect(note).toBeHidden();
+  await expect(page.locator('[data-original-text]:visible')).toHaveCount(0);
+  await expect(button).toBeVisible();await expect(button).toBeEnabled();
+  const player=await playBound(page,button,played);
+  await expect(player.panel).not.toContainText(played.sourceText);
+  await expect(player.panel).not.toContainText(row.recordingNote!.zh);
+  await expect(player.panel).not.toContainText(row.recordingNote!.vi);
+  await player.pause.click();await expect(player.panel).toHaveAttribute('data-state','paused');
+  await show.check();await expect(note).toBeVisible();
+  await expect(player.panel).not.toContainText(played.sourceText);
+  await show.uncheck();await expect(note).toBeHidden();
+  await mode.uncheck();await expect(show).toBeChecked();await expect(note).toBeVisible();
+  await expect(player.panel).not.toContainText(played.sourceText);
+  await player.stop.click();
+  await expect.poll(async()=>(await native(page)).every((a:any)=>a.paused&&!a.hasSource)).toBe(true);
+  return {id:row.id,lineId,recordingNote:row.recordingNote,bilingualVisible:true,
+    blindModeHidesOriginalAndNote:true,originalToggleRestoresNote:true,
+    nativePlaybackAvailableWhileHidden:true,playerLabelContainsNoTranscriptOrNote:true};
+}
 
 for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native word and sentence buttons use accepted precision frames`,async({page},info)=>{
   const errors:string[]=[];page.on('pageerror',e=>errors.push(e.message));
@@ -125,9 +171,15 @@ for(const [level,lesson]of lessons)test(`HSK${level} L${lesson} actual native wo
     const annotation=page.locator('[data-audio-annotation="hsk3-fltrp-2026:l10:text3:line5"]');
     await expect(annotation).toBeVisible();await expect(annotation.locator('..').getByRole('button')).toHaveCount(0);
     await expect(page.getByRole('button',{name:/播放本篇原音/})).toBeEnabled();
+    await page.locator('#text-listen-mode').check();await expect(annotation).toBeHidden();
+    await expect(page.locator('[data-original-text]:visible')).toHaveCount(0);
+    await expect(page.getByRole('button',{name:/播放本篇原音/})).toBeVisible();
+    await page.locator('#text-listen-mode').uncheck();await expect(annotation).toBeVisible();
   }
+  const noted=recordingNotePick(level);
+  const recordingNoteEvidence=noted.lesson===lesson?await verifyRecordingNoteAndBlindPlayback(page,noted,rows,book):undefined;
   expect(errors).toEqual([]);
-  await info.attach('native-precision-button-evidence.json',{body:JSON.stringify({level,lesson,word:{id:word.id,sourceSampleRange16k:word.sourceSampleRange16k},sentence:{id:next.played.id,sourceSampleRange16k:next.played.sourceSampleRange16k},nativeAudio:await native(page),errors,samplingBoundary:'One visible word and one sentence/line control per lesson; all row source/frame completeness is independently verified by the precision authority.'}),contentType:'application/json'});
+  await info.attach('native-precision-button-evidence.json',{body:JSON.stringify({level,lesson,word:{id:word.id,sourceSampleRange16k:word.sourceSampleRange16k},sentence:{id:next.played.id,sourceSampleRange16k:next.played.sourceSampleRange16k},recordingNoteEvidence,nativeAudio:await native(page),errors,samplingBoundary:'One visible word and one sentence/line control per lesson; all row source/frame completeness is independently verified by the precision authority. One accepted bilingual recording note per level also exercises real blind-mode playback and transcript hiding.'}),contentType:'application/json'});
 });
 
 for(const level of [1,2,3])test(`HSK${level} native precision controls preserve rate, bounded seek, replay and navigation cancellation`,async({page},info)=>{

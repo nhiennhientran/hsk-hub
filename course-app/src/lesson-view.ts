@@ -1,6 +1,7 @@
 import {createActivityCard,createFeedbackEpoch} from '../../hsk1-app/src/shared/activity-card.ts';
 import {archivedActivities,archivedActivityContext} from './activity-history.ts';
 import {fieldSourcesNeedNotes,sharedRowSource} from './activity-provenance.ts';
+import { bilingualText } from '../../hsk1-app/src/app/bilingual.ts';
 import {originalSegment,sentenceSegments,isSingleSentence} from "./segment-resolver.ts";
 import {precisionNonSpokenAnnotation,precisionRecordingNotes} from './precision-resolver.ts';
 import { el, button, link, copy, sourceNote } from "./dom.ts";
@@ -617,20 +618,27 @@ export function mountLesson(
     body.append(pyLabel);
     body.classList.toggle("show-pinyin", py.checked);
     py.onchange = () => body.classList.toggle("show-pinyin", py.checked);
+    const listen=el('input'),showOriginal=el('input');listen.type=showOriginal.type='checkbox';listen.id='text-listen-mode';showOriginal.id='text-show-original';showOriginal.checked=true;
+    const listenLabel=el('label',copy('盲听练习','Luyện nghe không nhìn bài')),showLabel=el('label',copy('显示原文','Hiện bài gốc'));listenLabel.prepend(listen);showLabel.prepend(showOriginal);
+    const listeningToolbar=el('div',undefined,'text-listening-toolbar');listeningToolbar.append(listenLabel,showLabel);body.append(listeningToolbar);
+    const originalVisibility=()=>{for(const node of body.querySelectorAll<HTMLElement>('[data-original-text]'))node.hidden=!showOriginal.checked;};
+    listen.onchange=()=>{showOriginal.checked=!listen.checked;originalVisibility();};showOriginal.onchange=originalVisibility;
     for(const pic of l.illustrationManifest??[])if(pic.textbookRelation?.owner===text.id)body.append(illustration(pic,c.assetBase,events.signal));
     const textBody = el("section", undefined, "dialogue-text");
     for (const line of text.lines) {
       const row = el("div", undefined, "dialogue-line");
-      if (line.speaker) row.append(el("strong", line.speaker));
-      row.append(
+      const transcript=el('div',undefined,'dialogue-transcript');transcript.dataset.originalText='';
+      if (line.speaker) transcript.append(el("strong", line.speaker));
+      transcript.append(
         el("p", line.zh, "chinese-line"),
         el("p", line.py, "pinyin-line"),
         el("p", line.vi, "vietnamese-line"),
       );
       const chunks=sentenceSegments(line.id,c.assetBase),original=originalSegment('lines',line.id,c.assetBase);
-      for(const note of precisionRecordingNotes(line.id)){const p=el('p',note,'recording-note');p.dataset.recordingNote=line.id;row.append(p);}
-      if(precisionNonSpokenAnnotation(line.id)){const note=el('p',copy('场景说明（原录音中没有单独朗读）','Chỉ dẫn bối cảnh (không được đọc riêng trong bản ghi gốc)'));note.dataset.audioAnnotation=line.id;row.append(note);}
-      else if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const play=button(copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`),async()=>{await c.audio.play(chunk.request,{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const play=button(isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc'),async()=>{await c.audio.play(original,{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
+      row.append(transcript);
+      for(const note of precisionRecordingNotes(line.id)){const p=el('p',note,'recording-note');p.dataset.recordingNote=line.id;transcript.append(p);}
+      if(precisionNonSpokenAnnotation(line.id)){const note=el('p',copy('场景说明（原录音中没有单独朗读）','Chỉ dẫn bối cảnh (không được đọc riêng trong bản ghi gốc)'));note.dataset.audioAnnotation=line.id;transcript.append(note);}
+      else if(chunks.length){const actions=el('div',undefined,'sentence-audio');for(const chunk of chunks){const label=copy(`第${chunk.sentenceNumber}句原音`,`Âm thanh câu ${chunk.sentenceNumber}`);const play=button(label,async()=>{await c.audio.play({...chunk.request,label:bilingualText(label)},{signal:events.signal})});play.dataset.audioSegment=chunk.id;actions.append(play)}row.append(actions)}else if(original){const label=isSingleSentence(line.id)?copy('本句原音','Nghe câu gốc'):copy('本段原音','Nghe đoạn gốc');const play=button(label,async()=>{await c.audio.play({...original,label:bilingualText(label)},{signal:events.signal})});play.dataset.audioSegment=line.id;row.append(play)}
       textBody.append(row);
     }
     body.append(

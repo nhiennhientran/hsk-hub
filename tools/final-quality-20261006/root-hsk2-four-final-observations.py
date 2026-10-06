@@ -25,7 +25,7 @@ def main():
   for w in f['wholeSourceUnpromptedEvidence']:
    raw=checked(w);support.unprompted(raw);assert raw.get('cropPCM_SHA256',raw.get('track',{}).get('pcm',{}).get('sha256'))==r['sourcePCM_SHA256'];assert ''.join(q['text'] for q in raw['rawSegments'])==w['wholeSourceTranscript'];whole.append({'file':w['file'],'sha256':w['sha256'],'unalteredRawTranscript':w['wholeSourceTranscript']})
   c=f['independentCTCActualCropEvidence'];raw=checked(c);assert raw['rawText']==c['rawText'] and raw['cropPCM_SHA256']==r['cropPCM_SHA256'] and raw['expectedTextPromptUsed'] is False and json.loads(raw['rawResultString'])==raw['rawResult'];ctc={'file':c['file'],'sha256':c['sha256'],'unalteredRawTranscript':raw['rawText']}
-  x=np.frombuffer(pcm,dtype='<f4');fig,axes=plt.subplots(4,1,figsize=(15,8));a=max(0,s-4000);b=min(len(x),e+4000)
+  x=np.frombuffer(pcm,dtype='<f4');fig,axes=plt.subplots(4,1,figsize=(15,8));a=max(0,s-48000);b=min(len(x),e+48000)
   for k,(a,b) in enumerate([(a,b),[int(scope[0]*16000),int(scope[1]*16000)]]):
    axes[k*2].plot(np.arange(a,b)/16000,x[a:b],lw=.4);axes[k*2+1].specgram(x[a:b],NFFT=512,Fs=16000,noverlap=448,xextent=(a/16000,b/16000),vmin=-100,vmax=-20,cmap='magma');axes[k*2+1].set_ylim(0,6000)
    if k==0:
