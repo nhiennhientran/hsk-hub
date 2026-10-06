@@ -27,10 +27,14 @@ export function requireCompleteReview(report,catalogSHA){
 // spectrum and decision reports remain outside the student-facing manifest.
 export function verifyReviewReferences(value,root){
  let count=0;const seen=new Map();
+ const recordedRoot=value?.recordedRepositoryRoot;
+ if(recordedRoot!==undefined)assert.ok(typeof recordedRoot==='string'&&isAbsolute(recordedRoot),'Recorded repository root must be an absolute source identity');
  const visit=v=>{
   if(!v||typeof v!=='object')return;
   if(!Array.isArray(v)&&typeof v.file==='string'&&typeof v.sha256==='string'){
-   assert.match(v.sha256,/^[a-f0-9]{64}$/);const p=isAbsolute(v.file)?resolve(v.file):resolve(root,v.file);
+   assert.match(v.sha256,/^[a-f0-9]{64}$/);let p;
+   if(isAbsolute(v.file)&&recordedRoot){const oldRelative=relative(resolve(recordedRoot),resolve(v.file));assert.ok(oldRelative&&!oldRelative.startsWith('../')&&!isAbsolute(oldRelative),'Audit absolute reference lies outside the recorded repository');p=resolve(root,oldRelative);}
+   else p=isAbsolute(v.file)?resolve(v.file):resolve(root,v.file);
    const rel=relative(root,p);assert.ok(rel&&!rel.startsWith('../')&&!isAbsolute(rel),'Audit reference must remain in the recorded repository');
    if(seen.has(p))assert.equal(seen.get(p),v.sha256,'Conflicting audit reference identity');
    else {assert.equal(hash(readFileSync(p)),v.sha256,'Independent audit evidence changed: '+rel);seen.set(p,v.sha256);count++;}

@@ -13,9 +13,12 @@ sha = lambda body: hashlib.sha256(body).hexdigest()
 
 
 def pack(root, report_name, output_name):
+    recorded_root = root
     def inside(name):
         relative = Path(name)
-        if relative.is_absolute() or not relative.parts or '..' in relative.parts:
+        if relative.is_absolute():
+            relative = relative.resolve().relative_to(recorded_root)
+        if not relative.parts or '..' in relative.parts:
             raise ValueError('audit path must remain in recorded repository')
         path = (root / relative).resolve()
         path.relative_to(root)
@@ -24,6 +27,11 @@ def pack(root, report_name, output_name):
     report_path = inside(report_name)
     report_bytes = report_path.read_bytes()
     report = json.loads(report_bytes)
+    if 'recordedRepositoryRoot' in report:
+        recorded_root = Path(report['recordedRepositoryRoot'])
+        if not recorded_root.is_absolute():
+            raise ValueError('recorded repository root must be an absolute source identity')
+        recorded_root = recorded_root.resolve()
     gates = report.get('acceptedSourceFrameGates', [])
     if report.get('status') != 'accepted-complete-source-frame-review' or report.get('completeCoverage') is not True:
         raise ValueError('partial review cannot create final audit inventory')

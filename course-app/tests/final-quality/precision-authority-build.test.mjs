@@ -27,3 +27,22 @@ test('audit references cannot escape the recorded repository or silently conflic
   assert.throws(()=>verifyReviewReferences({claims:'accepted'},root),/actual retained evidence/);
  }finally{rmSync(root,{recursive:true,force:true});}
 });
+test('retained absolute audit identities map from the recorded checkout to the current checkout without rewriting raw bytes',()=>{
+ const root=mkdtempSync(join(tmpdir(),'hsk-portable-audit-'));
+ try{
+  const raw=Buffer.from('{"raw":"面条","unchanged":true}\n');writeFileSync(join(root,'raw.json'),raw);
+  const report={recordedRepositoryRoot:'/recorded/hsk-source',evidence:{file:'/recorded/hsk-source/raw.json',sha256:hash(raw)}};
+  assert.equal(verifyReviewReferences(report,root),1);
+  assert.equal(report.evidence.file,'/recorded/hsk-source/raw.json');
+  writeFileSync(join(root,'raw.json'),Buffer.from('{"raw":"面条儿","unchanged":true}\n'));
+  assert.throws(()=>verifyReviewReferences(report,root),/evidence changed/);
+ }finally{rmSync(root,{recursive:true,force:true});}
+});
+test('portable absolute audit mapping rejects paths outside the exact recorded root',()=>{
+ const root=mkdtempSync(join(tmpdir(),'hsk-portable-scope-'));
+ try{
+  const sha='a'.repeat(64);
+  for(const file of ['/recorded/hsk-source-other/raw.json','/recorded/hsk-source/../private/raw.json','/private/raw.json'])assert.throws(()=>verifyReviewReferences({recordedRepositoryRoot:'/recorded/hsk-source',evidence:{file,sha256:sha}},root),/outside the recorded repository/);
+  assert.throws(()=>verifyReviewReferences({recordedRepositoryRoot:'relative',evidence:{file:'raw.json',sha256:sha}},root),/absolute source identity/);
+ }finally{rmSync(root,{recursive:true,force:true});}
+});
