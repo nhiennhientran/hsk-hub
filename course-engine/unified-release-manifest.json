@@ -1,19 +1,34 @@
 {
   "schemaVersion": 2,
   "mode": "checkpoint",
-  "sourceCommit": "003cbae9fe3a8f9f085522bb66ea108d451fa52a",
+  "sourceCommit": "598a7000bf1f99feaf2326e1c71989ccda2a1f85",
   "protectedProduction": "2da6a5c80c62d4ff5bdfa72a5bdb929b2b1ff3d4",
   "app": "hsk123-unified",
   "sharedEngine": "course-engine",
   "sourceDirty": false,
   "buildProvenance": "built-from-recorded-worktree",
   "sourceSnapshot": {
-    "sha256": "651e5eee4082c055e24d849553f76b3df1508e3f40069181d6e426ef30823845",
+    "sha256": "4dd2f4362c13982bb009a3df0f251da730e581b16b81f7e3853d340523045707",
     "files": [
       {
         "path": "course-app/content/audio-manifest.json",
         "mode": "100644",
         "sha256": "c11bca42ca19055ff9f7c7d48aa6fa39551035fda3191b8a54876cb47ca4519f"
+      },
+      {
+        "path": "course-app/content/audio-precision-20261006.json",
+        "mode": "100644",
+        "sha256": "a25a56ad91840b958507b98bc3c7446c3380067baadfbd7534ee44547b8ed597"
+      },
+      {
+        "path": "course-app/content/audio-precision-authority-20261006.json",
+        "mode": "100644",
+        "sha256": "5675b2629e65b30afe81468d567f0edbe384c96394a484598e02406ce15b8e31"
+      },
+      {
+        "path": "course-app/content/audio-precision-targets-20261006.json",
+        "mode": "100644",
+        "sha256": "b4f1c953fb85648649ef928bfd027da2341a62282f71932588c945525c496be5"
       },
       {
         "path": "course-app/content/audio-segment-authority.json",
@@ -249,6 +264,16 @@
         "path": "course-app/content/source-sentinels.json",
         "mode": "100644",
         "sha256": "0a3b2625afdba8ad9b9b1571e10985d9106d49a313d9d58209004a1519e3645b"
+      },
+      {
+        "path": "course-app/content/teaching-clarifications-20261006.json",
+        "mode": "100644",
+        "sha256": "3c26f1c14b03cf0e0926e9d1c040088b6b337b366ea0b42e4fc4c6fc791018ab"
+      },
+      {
+        "path": "course-app/content/translation-choice-distractors-20261006.json",
+        "mode": "100644",
+        "sha256": "4dbc382562014e5dd1283a3583ca16d3c89cebfab2a31e50d3c144b8d0d37569"
       },
       {
         "path": "course-app/index.html",
@@ -3776,6 +3801,11 @@
         "sha256": "8d023f3167d11968cc07ee8b5990bbb76c304d4328dad9d7057b692b8fd275d9"
       },
       {
+        "path": "course-app/src/access-policy.ts",
+        "mode": "100644",
+        "sha256": "13e0afde1667536a160e312761bc664884b90f2010953606f7620e86955b02d8"
+      },
+      {
         "path": "course-app/src/activity-commit.ts",
         "mode": "100644",
         "sha256": "173e4fd812cfbf62738304e3bd8c901946a0bae705d3e70bba38ad9ad1d0b79b"
@@ -3813,7 +3843,7 @@
       {
         "path": "course-app/src/content.ts",
         "mode": "100644",
-        "sha256": "d478ad7b4b799249ac7aa0890fa730e642955dc9399d2dba22ea984a7f4b8137"
+        "sha256": "556b724d5b1635708c8145638dadcb18672f6e14d9d89c4a3b55110218eed5f3"
       },
       {
         "path": "course-app/src/dom.ts",
@@ -3823,12 +3853,12 @@
       {
         "path": "course-app/src/hsk1-bridge.ts",
         "mode": "100644",
-        "sha256": "013b682bf884bef3211277166fb285114f8824392e88bb615885596057bd7ae5"
+        "sha256": "daa11f28250cc2bc147204f647aac04411d07efe16ab6709b364aa257f3867a7"
       },
       {
         "path": "course-app/src/lesson-view.ts",
         "mode": "100644",
-        "sha256": "30fc525e7885765b2241950e2eb0041f88d6cdecf3194ddad22a23fbb317be24"
+        "sha256": "fed8c41f41d4e3275ecc19760a54ab53bf48d4333d6e46f956fc4264cc3d7627"
       },
       {
         "path": "course-app/src/lexicon.ts",
@@ -3843,12 +3873,27 @@
       {
         "path": "course-app/src/main.ts",
         "mode": "100644",
-        "sha256": "e4b627f9781e91ddb646c3b273f662bd988393f329f2ea03daab7d08cd717a9d"
+        "sha256": "270bb5995f17fa7727605565df2adf4804fb625c0e4ab5d4233079c404b3ef82"
       },
       {
         "path": "course-app/src/official-vi-revisions.ts",
         "mode": "100644",
         "sha256": "5f2d9fbd6751655fc95c161b3c93637715882960d25721211936a3f3d8420c0f"
+      },
+      {
+        "path": "course-app/src/precision-contract.ts",
+        "mode": "100644",
+        "sha256": "5b64d4de0d1d4d03548ebc28c9f02ef3b15a474fdd176e6b20eca770e22b0a7e"
+      },
+      {
+        "path": "course-app/src/precision-loader.ts",
+        "mode": "100644",
+        "sha256": "7a27c4fe07ef9daec68b3504452f14272d6608f3cf58e2201a1ef4d3ba71f3c8"
+      },
+      {
+        "path": "course-app/src/precision-resolver.ts",
+        "mode": "100644",
+        "sha256": "d409b6122314d38087dd918c6c0bd4e33834e549abc8ea535f5e98840672fe07"
       },
       {
         "path": "course-app/src/router.ts",
@@ -3858,12 +3903,12 @@
       {
         "path": "course-app/src/segment-resolver.ts",
         "mode": "100644",
-        "sha256": "f07829059f3426d5d57e79b5e7cf0739bfa8bba2b7737a68f2773b683e186a61"
+        "sha256": "df12571d2192da102f6ee7b91f838e070831797c887e75d5ad3bf7eb6eb5c3c4"
       },
       {
         "path": "course-app/src/segments.ts",
         "mode": "100644",
-        "sha256": "bec026507a53aaf19fd8f3af7627b21a3779371a4e5de717fdad27089e4eed00"
+        "sha256": "a457bddd5b7384e6c1722d1470ed72633d60ab856428fd5391ef6defb73af5c0"
       },
       {
         "path": "course-app/src/state.ts",
@@ -3873,7 +3918,17 @@
       {
         "path": "course-app/src/style.css",
         "mode": "100644",
-        "sha256": "9af9711588168b506f16e62f6a1737f91f34cb9b0a2d39856daee966dff9a9c6"
+        "sha256": "15539df8fded236fdab1217b729725b95f1f172e572ba0f5b62fe4b7fd12d98f"
+      },
+      {
+        "path": "course-app/src/teaching-clarifications.ts",
+        "mode": "100644",
+        "sha256": "19aa3514bb3c4d6120b3dc0f69c007795f382405e192aafc0eb0e8f0bdf43115"
+      },
+      {
+        "path": "course-app/src/translation-choice-overlay.ts",
+        "mode": "100644",
+        "sha256": "4c9dbb081da217ba61306573aadfeac089ed8bfe2c9c7fb78ef235ac962d3fa3"
       },
       {
         "path": "course-app/src/types.ts",
@@ -3893,7 +3948,7 @@
       {
         "path": "course-app/tools/assemble-unified-checkpoint.mjs",
         "mode": "100644",
-        "sha256": "fa8b32c471d4eaee60320a214c527c720f3a1b160547dd19118eef5716800876"
+        "sha256": "7e52eb0147cc3f6e2c808b39a5570f366b1d242d8b4ea6be3907e16eb7244263"
       },
       {
         "path": "course-app/tools/build-audio-authority.mjs",
@@ -3909,6 +3964,386 @@
         "path": "course-app/tools/draft-lexicon.mjs",
         "mode": "100644",
         "sha256": "c10f2dfe1eedd90472856a641fc06215c37a2286fad2a13eecda2fc0af7d4275"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/asr-requirements.txt",
+        "mode": "100644",
+        "sha256": "3bd6aa37d459a450e7605a3bf50cd7370c94decdf6c8965ff99dc1b968f03e43"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/assemble-site.mjs",
+        "mode": "100644",
+        "sha256": "c788687fba9318ceef521d1af17713e4b3ecbd0b4a98dde3553270aa45ca7d52"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/audio_pipeline.py",
+        "mode": "100644",
+        "sha256": "968cae093722e32383d12f5ed0ad2ba254149b422cf11a4e53888620a3637a59"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/audit-historical-feature-index.py",
+        "mode": "100644",
+        "sha256": "4e917c3e5b3dc7f8141ad4f218a50f20a8ac7b009e6134d52d8d9e5c745706e0"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/audit_reference_graph.py",
+        "mode": "100644",
+        "sha256": "9e0bac20d45e9ec6bea0f39cb393fb1c05e77f93be896be4edc7f9f2928ac323"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/build-precision-manifest.mjs",
+        "mode": "100644",
+        "sha256": "4bda8af793779b6df79a1da4ab594ac0a890c1fb77188c6aaa87dee4f8f923f9"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/build-precision-targets.mjs",
+        "mode": "100644",
+        "sha256": "240019ef3f9209094be00ba156d79fdcb4391a8bc1758f7280d5b666c39a6b81"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/download-models.py",
+        "mode": "100644",
+        "sha256": "1a50a7ef4119461d1e0146e25127a528c6f82181c83aa18fd954790aa3a4a5dd"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/freeze-contract.mjs",
+        "mode": "100644",
+        "sha256": "bbfeb6c9d00ecea01e10ed3a960f7a68f8c21446da422d67e2975bdebf5e2932"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/freeze-final-site.mjs",
+        "mode": "100644",
+        "sha256": "6865cb223d8f0fc402b001e8a1ab83f6c58665fb47688ac757f7e962998c1cde"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/freeze-preflight.mjs",
+        "mode": "100644",
+        "sha256": "aac7e5ae4b76fa2eb7d650cfddaea7d56f2959232dfef311ba77e3c21d00bb54"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/live-contract.mjs",
+        "mode": "100644",
+        "sha256": "68b3118e51cb7c2a1d35f1787c32aa6653ad830ed1a03a344dc5edb84106319c"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/materialize-precision-review.py",
+        "mode": "100644",
+        "sha256": "abd703108b1eaf07a3a1a98a03eb2a3940389b8996b56527e8d36927a68cacdb"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/pack-final-audit.py",
+        "mode": "100644",
+        "sha256": "726a97155f283ce1afb6ce311ed2f7abfe0350f44da9f32f7deafc4d30162d30"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-bian-nasal-control.py",
+        "mode": "100644",
+        "sha256": "60e935f901633202d48df953bc9e15209e35efbb956376d8632c8f327117c24e"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-dajia-recorded-rime-variant.py",
+        "mode": "100644",
+        "sha256": "eb551032969490c27c0637c31d0b5dbcf2fa851795a1e3c0d60735bf621669f0"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-dajia-source-tail-fine.py",
+        "mode": "100644",
+        "sha256": "60d8c8382c922f8d7a7068709b398a057b860adbe6f2bb3c655a19afb38edd49"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-haowan-spoken-context-decisions.py",
+        "mode": "100644",
+        "sha256": "cceb0bcee39f7d8672c7f0de7d3064bfd777462407a59b0ae40d18cab241a755"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-miantiao-recorded-variant-decisions.py",
+        "mode": "100644",
+        "sha256": "ab8674e21c8515476bb950202e0ccb1d2832f844a34409d2b289d399526bc13c"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-remaining-six-ns-decisions.py",
+        "mode": "100644",
+        "sha256": "8ba485101b98a3f9c81a643518ccadd9ef7cc14cf16b03db207753e4a73b9ddd"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-remaining22-observations.py",
+        "mode": "100644",
+        "sha256": "cb9f5d886257d85c4adf41d24c27d9e2050da277040d428cb804614283ac953b"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-spoken-contrast-fine-panels.py",
+        "mode": "100644",
+        "sha256": "abb07769d1f27cb7eff91e9e580dc9cd1cb9c0619b334b415a8d3fa214e8d018"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-spoken-contrast-measurements.py",
+        "mode": "100644",
+        "sha256": "d3763d4600385f48c0e84f79608297297cbc55a78b0dfd30302e5731b72d3015"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-spoken-nasal-rime-context-decisions.py",
+        "mode": "100644",
+        "sha256": "a9e40034b06be22ad42bca2dd0daf3b09bd115189cf864fff6130cf30bc1b4fc"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-spoken-rime-LPC-panels.py",
+        "mode": "100644",
+        "sha256": "5680129fc6de69a2cfeeb0b23a2d00b3c71cbc0177dd1004d8469d3b12c59444"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-spoken-stop-context-decisions.py",
+        "mode": "100644",
+        "sha256": "3202c4d52fb09fc3462adb11507951255c4c32cfaccd661ae9fe93dbe370b0fa"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk1-word-rime-source-controls.py",
+        "mode": "100644",
+        "sha256": "e3324b093510db085ea16ef6c02ca52d8595389b76595fd251eaad2e3c1cdd40"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-old15-peer-decisions.py",
+        "mode": "100644",
+        "sha256": "80958a474325f9e532a42695739d8f678e21ed701c245b066d768fd3826dbb9f"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-old15-peer-observations.py",
+        "mode": "100644",
+        "sha256": "65bc08dd4d3b983ce6cc8bccd8880004d6189b845b39857a7ac1ed8c7aa8c2ae"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-second7-peer-decisions.py",
+        "mode": "100644",
+        "sha256": "dcf09dec8c1b9b1f069e5d1dbcae91898cb73da9c5471d9859eb1141c9b547cd"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-second7-peer-observations.py",
+        "mode": "100644",
+        "sha256": "f6099d7f8de24702709ca4130affdb5aefcea82b528f19ef3ba34c19153a163e"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-text-six-decisions.py",
+        "mode": "100644",
+        "sha256": "04f1884c4d89ed44b7fa68554657fb52888cb3ef504845f7989c462b4389f745"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-text-six-observations.py",
+        "mode": "100644",
+        "sha256": "fab594e23113b1f896c31f63997a190eddaebbe2719684a5e2c3fee03d6455f3"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-word-peer-decisions.py",
+        "mode": "100644",
+        "sha256": "88a7ff2ba4a15cfeb852bc2286ebd5e1e6e0790f025cc23c166eb4fb8cf4e2bb"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk2-word-peer-observations.py",
+        "mode": "100644",
+        "sha256": "6af8cbd591ef18979e8dd3af8072ff6a920f485de886a432b1d2f38a9d7d1e2f"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-four-repaired-word-decisions.py",
+        "mode": "100644",
+        "sha256": "c5ee1d49c8f07b86188e423dce7fe84a6ca489c6062324b5766f8919ec9c2e27"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-four-repaired-word-peer.py",
+        "mode": "100644",
+        "sha256": "f26156b763d822383b3f8214303ae56929fd96e4d0f16f3f1c941b41829949d3"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-four-literal-proofs.py",
+        "mode": "100644",
+        "sha256": "fc69978cafc8b4391a4bd2def2ef51232a03d8aa8bbf1d328107ab88288f630c"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-nine-fixed-decisions.py",
+        "mode": "100644",
+        "sha256": "d8e0305a7b14d79f23cccd537df6a3ea67c0729ae6e6aa0804d9c88bc65156bf"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-original-fine-phases.py",
+        "mode": "100644",
+        "sha256": "3ab7449cfc8542d1b759fe9b56638bdac75056246a65cb209f0f89022c02cf73"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-seven-source-physical-proposals.py",
+        "mode": "100644",
+        "sha256": "cce85bff8084189c578b31bb75cdd1f3822c3223f819e973f3aa1133715de84f"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-two-differences-source-proposals.py",
+        "mode": "100644",
+        "sha256": "bf6833aee6a1235cfa22e0bfc22fd0aacb85b6a57752e49319d73b376e1db38d"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-two-fixed-source-decisions.py",
+        "mode": "100644",
+        "sha256": "cedd6c7602d0eb4a8e73accbb56a6d2ff21c40407e60964fd156d1a8915d5a7f"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-hard15-two-zero-physical-proposals.py",
+        "mode": "100644",
+        "sha256": "3ee2e19656e9e1193ea5f13603bca833100a5573ecd20868f0ebccfd937b262c"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-optional-r-boundary8-decisions.py",
+        "mode": "100644",
+        "sha256": "a656f3d15a12021509f61c1c432221aad4942de021cd87c944da8c754e2b98fd"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-optional-r-boundary8-source.py",
+        "mode": "100644",
+        "sha256": "99e9418e31b6861be050bc4c2c2ad04147941e40aae692fbce60b2e83cdf112c"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-optional-r-first20-decisions.py",
+        "mode": "100644",
+        "sha256": "b1673f9eb19d2c28ec56b33cfa3d7b37007f29e50fdbc96c098763b163eab66b"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-optional-r-first20-source.py",
+        "mode": "100644",
+        "sha256": "a96731d6d20c8f2ec7873facecca0f9b95c1bef008f6f9eef79df0986d83f54b"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-optional-r-next14-decisions.py",
+        "mode": "100644",
+        "sha256": "c6ec0f3f92afd85569c85eff703feb18125217eb05a2bc8949a38afe1c7451c2"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-optional-r-next14-source.py",
+        "mode": "100644",
+        "sha256": "670805e7469c53d3c42433969e4b8eadc1e393eb3ce40f18840d807607a5dbe7"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-remaining-hard15-source.py",
+        "mode": "100644",
+        "sha256": "00050918383991225143994d2a2e69b68e4f13ecb317132bfc9272fc7ac69cf5"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-remaining-spoken-background3-decisions.py",
+        "mode": "100644",
+        "sha256": "df2a3015f70df99310f87d0e81be4840f66bea03632e1b96545068cf2f6ffcac"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-remaining-spoken-fine.py",
+        "mode": "100644",
+        "sha256": "1f111ef6d55fb9a7651c51ad4c35637ad6b5457e3cc6e756d5ededf2d6a81dc1"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-remaining-spoken-first6-decisions.py",
+        "mode": "100644",
+        "sha256": "02a00404b36a64622ad600f3714a5dbca7ad9b687d4806adba558b79519fd190"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-remaining-spoken-source.py",
+        "mode": "100644",
+        "sha256": "9287b0395c90f3be75055166ccf8c8bdee2f9248257a75a7e3d81d4a7dff079b"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-remaining-spoken-two-context-proposals.py",
+        "mode": "100644",
+        "sha256": "47a27c714ad473bd5be553392e65dc15312c73a305554f40f079c2449ce5bcf1"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-rword3-actual-source.py",
+        "mode": "100644",
+        "sha256": "420dd1e8582f58eaea8b1cd2fa948261321f9d6ebfe0084369fe6a16709750ed"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-rword3-context-boundary-decisions.py",
+        "mode": "100644",
+        "sha256": "6edac27fe7ba3514474d4c2cbf7f7288ed13d6db96377c8abf8aa2cbe22969f5"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-shangchang-source-controls.py",
+        "mode": "100644",
+        "sha256": "537d13b347faffc874fdbf994681b5979c6d860f6c1bf3feb60667acc09ecfc8"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-sole-zero-complete-fixed-handoff.py",
+        "mode": "100644",
+        "sha256": "498f6709169c3414944e83dd21d26a7be37184a7a3ba34539963e60ca300992f"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-sole-zero-fixed-decision.py",
+        "mode": "100644",
+        "sha256": "bf64bec1044a8e6e9cfaf94506030ff7764715722e7f01eca41c16745616beaa"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-sole-zero-original-phase.py",
+        "mode": "100644",
+        "sha256": "d776568f5307308f03da15f909094779ba610aab334150089e7b8fd12fc2f0aa"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-sole-zero-physical-handoff.py",
+        "mode": "100644",
+        "sha256": "969e92441e076ae52260d8fc09c62ea7ec4272994c77123a283b93a8c0bc6834"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-hsk3-sole-zero-sentence-source.py",
+        "mode": "100644",
+        "sha256": "1831226cc635096c454abbe73545c0872be741cdaf92d9266946c32d90398ec1"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/qa-teaching-ledger.mjs",
+        "mode": "100644",
+        "sha256": "ec5e5e096e1e7dad11f711a68d3dc36002d6e19a9d27bb7e988b89d38766848b"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/refine-quiet-boundaries.py",
+        "mode": "100644",
+        "sha256": "be93999bef53a7cfed93ca0c9b11d7607ee3fe4472cb639e900eb9bc908982f8"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/review-hsk3-five-complete-readings.py",
+        "mode": "100644",
+        "sha256": "3cca6bdfcf9259788e414a0a67118cc0190b3ec578603742ca76807b1e24bafe"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/review-hsk3-nine-spoken-source-decisions.py",
+        "mode": "100644",
+        "sha256": "3e41fd16c04181a8fbbf35d04602b3c54f13a3ce3c80165d000289b24585165d"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/run-asr-ci.py",
+        "mode": "100644",
+        "sha256": "eb183a0fe0ce613b797c29741eb9848fd773fa4658e6ff5fc18dea4752c6ad08"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/stage-final-freeze.mjs",
+        "mode": "100644",
+        "sha256": "b94e533ebbee992a9486ccc84e1376e4d3bed767486721f0818639e1835ee826"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/test-audit-reference-graph.py",
+        "mode": "100644",
+        "sha256": "b49eb646880c5f289c5b1576a68d2a6b9716028168b425047fe09468246bf405"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/test-refine-quiet-boundaries.py",
+        "mode": "100644",
+        "sha256": "7ae13c690febc877b19429fab0a9159f14d5e07334c76ba5d549a6d3ae711bb7"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/verify-final-freeze.mjs",
+        "mode": "100644",
+        "sha256": "66f44f61e76b15c15ddffe56bb779036b23ca1a74bdf4e87dd848dff499df88e"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/verify-final-live.mjs",
+        "mode": "100644",
+        "sha256": "75efc6ce149ceed88ac1a2bfc9d83d6be11d5217f491e1be5fd0b0d927aaa164"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/verify-final-native-set.mjs",
+        "mode": "100644",
+        "sha256": "8d9fc0853be645b3a2a3198b53837c9ec4c1573d5f95a4e2e5eb7e091d69bd58"
+      },
+      {
+        "path": "course-app/tools/final-quality-20261006/verify-git-tree.mjs",
+        "mode": "100644",
+        "sha256": "dffd0f00a036da859b81da98f25903a9f37014f58e6adf974c3af27ef9cb8f5b"
       },
       {
         "path": "course-app/tools/integrate-hsk1-source-candidates.mjs",
@@ -5088,7 +5523,7 @@
       {
         "path": "hsk1-app/src/app/contracts.ts",
         "mode": "100644",
-        "sha256": "4af2258587aafd208f8cdac28f4ab3765c10b0f2591ef768b002aeee9442387f"
+        "sha256": "bfb528dd97a73fcb104c0368387b87aa127a7242aae5c7e508ce9d09d7e41f86"
       },
       {
         "path": "hsk1-app/src/app/i18n/core.ts",
@@ -5318,7 +5753,7 @@
       {
         "path": "hsk1-app/src/features/homework/homework.css",
         "mode": "100644",
-        "sha256": "66f1596805b56ed052b8e96b2c34ba38c46e3258c9e1ac0c398a3b79d815278d"
+        "sha256": "da64f538d409fb4960e5506a130d49c6c52bb47fe1c843d1fbb7ed12b6dd9d71"
       },
       {
         "path": "hsk1-app/src/features/homework/index.ts",
@@ -5343,7 +5778,7 @@
       {
         "path": "hsk1-app/src/features/listening/index.ts",
         "mode": "100644",
-        "sha256": "20bac7d6dcc51f450edf65939d78cce1d6ea4e720753653205a46e5ebdffad81"
+        "sha256": "f6f67e9bf6c5842b68658dcdc0dbc911b6de76eee4f6cc549a1b74420ccbf56c"
       },
       {
         "path": "hsk1-app/src/features/listening/listening.css",
@@ -5463,7 +5898,7 @@
       {
         "path": "hsk1-app/src/features/textbook/text.ts",
         "mode": "100644",
-        "sha256": "4858677c9840db097e8dfae0ea6180c725ebd33dbadc8bd2ea27933454b84330"
+        "sha256": "87ea029c4d5a42d62914af291445fdec46a7ea3235d1600fc91cb8335c8f726c"
       },
       {
         "path": "hsk1-app/src/features/textbook/textbook.css",
@@ -5473,7 +5908,7 @@
       {
         "path": "hsk1-app/src/features/textbook/vocabulary.ts",
         "mode": "100644",
-        "sha256": "73af993be2ba0a20bcc90c80f2e59710326cadc9c8772d4e9bc972a159a059ca"
+        "sha256": "7462a4e4f1c477b5ff885d1a15c2e59d2e9806f2569d6f45852ad64aa204ae9e"
       },
       {
         "path": "hsk1-app/src/features/vocabulary/index.ts",
@@ -5483,7 +5918,7 @@
       {
         "path": "hsk1-app/src/features/vocabulary/view.ts",
         "mode": "100644",
-        "sha256": "3baadbba67a046017e6f77bdec796e7cec9c8907779ab9219f99ceea8dfae5ed"
+        "sha256": "2a0fe8a577c82ecc88ae78959da617211c948223152d37c4e2b50b036f99d7e3"
       },
       {
         "path": "hsk1-app/src/features/vocabulary/vocabulary.css",
@@ -5493,7 +5928,7 @@
       {
         "path": "hsk1-app/src/services/audio/index.ts",
         "mode": "100644",
-        "sha256": "2e8674730405a59bc82556923f588013378495e238f097e75356083dcf2ec4d0"
+        "sha256": "dcf972ec21f6600e5e940a62a183eea830656c48ecda4eb68dff97ddc859a150"
       },
       {
         "path": "hsk1-app/src/services/auth/index.ts",
@@ -5536,6 +5971,11 @@
         "sha256": "c26e9d53656877df6825b3d4a15d9325e0ef6053764adc66b855045ebab673b6"
       },
       {
+        "path": "hsk1-app/src/services/content/reviewed-audio.ts",
+        "mode": "100644",
+        "sha256": "3d83dfac4debe0b594e007c67b8f7793476102c8a656fda798920d35ddcc7b93"
+      },
+      {
         "path": "hsk1-app/src/services/content/textbook-display-revisions.ts",
         "mode": "100644",
         "sha256": "2ee435e327f656981fc4bf30ecd680907c2d33b31ef79f7074cef8176f308a09"
@@ -5548,7 +5988,7 @@
       {
         "path": "hsk1-app/src/services/content/textbook.ts",
         "mode": "100644",
-        "sha256": "033d731e73a18b6d4a817eb1f327711fc49e46960a447076d4375f44da423d18"
+        "sha256": "d88c913fa58b5379de37bf50a3f5c0cf7b68c32468941543057dfc3f41812309"
       },
       {
         "path": "hsk1-app/src/services/content/vi-presentation-state.ts",
@@ -10965,14 +11405,29 @@
       "sha256": "d50fc8a0bc03a7f042190dd829011eb135eff4305b89ca4410317d1d74207269"
     },
     {
-      "path": "assets/archive-CspRLzlu.js",
-      "bytes": 21223,
-      "sha256": "cda99e03e6b3a8e8d84c9c40f4669281bbe0b073693a8a83261309be4be20245"
+      "path": "assets/archive-Dl0zJ44K.js",
+      "bytes": 21215,
+      "sha256": "b8973dcf695af08e83661d34ecf86a0f9084ff5ba74c4b328bcc008173d111ea"
     },
     {
       "path": "assets/asset-base-DAkFL0yR.js",
       "bytes": 160,
       "sha256": "2113321c6b36c08b797463a2839f5ef7702682eda07616a8f37a28a26a5c2d1f"
+    },
+    {
+      "path": "assets/audio-precision-20261006-D-h_m1Lq.js",
+      "bytes": 2185595,
+      "sha256": "e08e2eb43b6f7132dc016535491c10fbf70060fc0d705716c63f9668936a14c0"
+    },
+    {
+      "path": "assets/audio-precision-authority-20261006-ByW7vl6f.js",
+      "bytes": 2186495,
+      "sha256": "499e302eed9d9b6ff0b6fc6aa643fddef9888b3b366a781259dd4366db5264d3"
+    },
+    {
+      "path": "assets/audio-precision-targets-20261006-CMmkdrti.js",
+      "bytes": 857174,
+      "sha256": "211f8e2c352439d6fc59c83bac93c70e785bf2338e8095bd53cbe096344179cc"
     },
     {
       "path": "assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js",
@@ -10990,19 +11445,14 @@
       "sha256": "b2d8cda0aeac7efc3fde250440156a2497fa6dc8690c940ac98e1cc9d12286a4"
     },
     {
-      "path": "assets/backup-view-CfWDSpkU.js",
+      "path": "assets/backup-view-DgC2g1_c.js",
       "bytes": 9026,
-      "sha256": "fa343acde916196d781d748e2378efc708e7fea61f2cc1bcc03cdf73db44b7b7"
+      "sha256": "5d965c277019c54fc1b38406d7a5a4caf7978950d44bd33cdcca70958cd35d8a"
     },
     {
-      "path": "assets/bilingual-YzyU8AOp.js",
-      "bytes": 550,
-      "sha256": "1d3486eaf4f448c320b976113efc3c70e1fffd251d96036a62695e09771b9200"
-    },
-    {
-      "path": "assets/browser-pair-BFEhQLRt.js",
+      "path": "assets/browser-pair-CU4CAsDw.js",
       "bytes": 10817,
-      "sha256": "06bc4039aa3f2195a850a91912e0d06e7cf6729c6b39581f07d62e3810e212be"
+      "sha256": "d00993acced1dae77f625c4155acff9b6bcff21a0e7947c73ecbc29bcf6df731"
     },
     {
       "path": "assets/catalogue-C_U9rwbD.js",
@@ -11010,19 +11460,19 @@
       "sha256": "459c0867aca0f0a7fc39319ccda741ce11630fc45bbc1c753ca404dc8ab39afb"
     },
     {
-      "path": "assets/compatibility-DHZqng-d.js",
-      "bytes": 36806,
-      "sha256": "a9e0f2dfbfe751d809036646d43a1eedea668fec9379a444d25603972153d9e5"
+      "path": "assets/compatibility-B2suCbgr.js",
+      "bytes": 36748,
+      "sha256": "7e09a821590dad9239e355511af5b631d2100783244b7f2a06d2e06cbbae30ec"
     },
     {
-      "path": "assets/content-C02ovMO6.js",
-      "bytes": 1030,
-      "sha256": "c188a20ec7d538d871955b26aa219a3d3c086fb139609dc91674ec781256f2d5"
-    },
-    {
-      "path": "assets/content-x5qU45wN.js",
+      "path": "assets/content-DZGKYVzc.js",
       "bytes": 853415,
-      "sha256": "e1149406274d19931f492e0c537ebb1feef418b127c603df350bbe17a0e8ff4c"
+      "sha256": "83af55fc541784ed8f00db21107270914ea93a90983f463bed162aa18b0061ab"
+    },
+    {
+      "path": "assets/content-QhAeDj-p.js",
+      "bytes": 1030,
+      "sha256": "99db20fa8ce3fd27221e6fe860038c41ebbe4cc01d35792b79601f3682ebecb6"
     },
     {
       "path": "assets/copy-yY9kyqvF.js",
@@ -11050,24 +11500,14 @@
       "sha256": "43139a3da66713b11897954317bea2df9c7e28141bc855fc360c62df8f7ef21b"
     },
     {
-      "path": "assets/data-panel-DvXZjpEG.js",
-      "bytes": 9053,
-      "sha256": "27401a3d496953079a5e3acbed84388c111de403ee674d7318ce6f5b5e939915"
+      "path": "assets/data-panel-DMeEzCDn.js",
+      "bytes": 8988,
+      "sha256": "d7888a4130e5f5778344c8615680e0914e0e7e90efd86fe04be23bbfb25b67c1"
     },
     {
-      "path": "assets/dom-BIyVRf8h.js",
-      "bytes": 515,
-      "sha256": "653e72d4c82f45519c5fba54d5a7a3e121740af52ca1b89e28b87273cd4be282"
-    },
-    {
-      "path": "assets/engine-BAT6QHsN.js",
-      "bytes": 16100,
-      "sha256": "7fc5a27abae69a82aa8c1a1399867cbe64dd774cc7851a2980818bebff9759ee"
-    },
-    {
-      "path": "assets/engine-CBi3sj57.js",
-      "bytes": 5900,
-      "sha256": "b60d98b836d95e191dcc39ce42f5ec9485b3c0f86cae4ee6e70d75f94c73b3ab"
+      "path": "assets/dom-D9mOsW9v.js",
+      "bytes": 478,
+      "sha256": "41538cd59b9ef8f8cc8bdab14c4ca02b517dbdd3ab64547afca251155c9ac49f"
     },
     {
       "path": "assets/engine-DJNGzNN8.js",
@@ -11080,34 +11520,34 @@
       "sha256": "1c416a8c4325cab51823890036525153d17c189343ff437c935a614bcf8768a5"
     },
     {
-      "path": "assets/hanzi-Dk4X6n0J.js",
-      "bytes": 55111,
-      "sha256": "84001b1b83cd94b0984aaf02bc6db0957c5daeb8cdd7c04f9a8adf62b227b389"
+      "path": "assets/hanzi-ypM4aLZ4.js",
+      "bytes": 55107,
+      "sha256": "42715f48a5c0a0c6d09f5ccdf2704c5d936ec4997c32d3fb9dfd956ad251fadf"
     },
     {
-      "path": "assets/home-Dm79vwL7.js",
-      "bytes": 4320,
-      "sha256": "e5ed450cbab97e6c2d05293ea90e3e3c847359dfbbe50e88f2e19392390d87f7"
+      "path": "assets/home-CU-xntx4.js",
+      "bytes": 4293,
+      "sha256": "822b129c051311caba10ee5fa4a6cc42540de6b708373f64704b32f6dacdd034"
     },
     {
-      "path": "assets/homework-8E-U9jBU.css",
-      "bytes": 8119,
-      "sha256": "7452ac18b71b1de89f9a0f16d6eaa1246b6bcfc66caa46f640861ff8b4cbcc35"
+      "path": "assets/homework-CpNcnAFo.js",
+      "bytes": 1815,
+      "sha256": "f75901f43032a7ae29ee8391fb0d3686de6eb4c70b11f65b2f5a1235a08498a5"
     },
     {
-      "path": "assets/homework-C7rR7QKa.js",
-      "bytes": 1811,
-      "sha256": "6422eb051a86397075865aecc292579e6a6600ad4f9f0fe31c1b20acccfbe8fb"
+      "path": "assets/homework-DgHnpddf.js",
+      "bytes": 36439,
+      "sha256": "92bbc88f98d9e6511dc4d24e32f67e1c4e40cb9acb9097085bc10f117eb05228"
     },
     {
-      "path": "assets/homework-DdTGju_X.js",
-      "bytes": 36529,
-      "sha256": "2c69fb607357dfae72a5821f79834b7e453d047338b355b3526d595c1a8ca1a0"
+      "path": "assets/homework-LHmH-Hqc.css",
+      "bytes": 8312,
+      "sha256": "833b5da6d88f4725734a4e6766eb87ae063d6b219d153af17fa711586b3eeee2"
     },
     {
-      "path": "assets/homework30-BVBKAbRf.js",
-      "bytes": 613907,
-      "sha256": "85dd10b8fa9330a94e92395842b8fa9ed4ea421f757eac9cd33d3ee6b482cfbd"
+      "path": "assets/homework30-Bp9uIIs5.js",
+      "bytes": 613906,
+      "sha256": "78518f6e6dce4e45f5810c8a323366e58c2df92fb84998a87aaba63f2ac55b0a"
     },
     {
       "path": "assets/homework30-bank-Bti0xGBV.js",
@@ -11165,14 +11605,14 @@
       "sha256": "f2bc584580fe14a6187f9676f60353dd5487fe74edf23c65361441e187ce897e"
     },
     {
-      "path": "assets/index-6oLOlbZ9.css",
-      "bytes": 34668,
-      "sha256": "6c944b8f362f53a1bc562636889442a10b9f30707868e932c905f8785fdd4c22"
+      "path": "assets/index-BXaSSNbU.css",
+      "bytes": 34994,
+      "sha256": "6936354dc7981f62567f0918aa61f0b3e27cc5bd9c467dbfd9731b9da92c9d3c"
     },
     {
-      "path": "assets/index-C03nNvlS.js",
-      "bytes": 351188,
-      "sha256": "bce2bf38681b26e03df4d6fb2bc1db01a9f12e6d54e60a86e85f440d0c67c791"
+      "path": "assets/index-C6SSyMiw.js",
+      "bytes": 659679,
+      "sha256": "448597d48efb25efa0e3004547ef770a146624f7a05e9eecf124ee3bce46d5d3"
     },
     {
       "path": "assets/legacy-exercises-BfEaU4Qq.js",
@@ -11430,19 +11870,19 @@
       "sha256": "f9e31027ade81095b289d19b94a6a56553e389d1c7698008aa1e86d4c30c6147"
     },
     {
-      "path": "assets/listening-BPfn1IPw.js",
-      "bytes": 16464,
-      "sha256": "32b5ff933fef31b35811c4edb4d0a148418cf3a592a69ece6167fc5330a2ccc5"
-    },
-    {
       "path": "assets/listening-BXM9emsG.js",
       "bytes": 19057,
       "sha256": "66271385aa94ddc17713e6cb38c41405040597c263572c8cc65a9958ed390ba3"
     },
     {
-      "path": "assets/listening-DPnlNigw.js",
+      "path": "assets/listening-BYZPgFa5.js",
       "bytes": 6035,
-      "sha256": "1722732b507bf62c8c28bf7c61cb779a6c572b8e2ed34d97a65b5b2cc2c5ecee"
+      "sha256": "0adbf3d9c46adfaac3a53b31daab89fda978aff52089165cf9e06b3cd956f6e4"
+    },
+    {
+      "path": "assets/listening-C1gh6ixb.js",
+      "bytes": 16611,
+      "sha256": "d2293c2c9515b633fb7521a5f6256d3574eb5486ef12cae3e3ddd8ffdef9cb88"
     },
     {
       "path": "assets/listening-DTyrhIy_.css",
@@ -11475,19 +11915,19 @@
       "sha256": "ee096ab74b647fd197f8ef5c29300d5aa9a4f7dd5ff95236a1cd122c0b5e4c41"
     },
     {
-      "path": "assets/official-vi-revisions-BwI-PwOu.js",
+      "path": "assets/official-vi-revisions-BDdwjKHo.js",
       "bytes": 24950,
-      "sha256": "7ef4ac6c1a846ef544c65f5f55790ef1f8d2a72d25b0f5071536b65a1185d2db"
+      "sha256": "97d560db3ba89250aa0913aa30258bea714da47c52aa5ecdcd8a12e3b66c7fb9"
     },
     {
-      "path": "assets/pair-panel-CcYxwAGg.js",
-      "bytes": 8413,
-      "sha256": "6731a4f836cf724e540a9c11e39fe9db1c1e6ab3e64df446f8168897048b265f"
+      "path": "assets/pair-panel-Ch-p2miF.js",
+      "bytes": 8381,
+      "sha256": "30f92f27fc6c4f6f53f8c805d226bb7083b24bfc76798fa514a190907cf1ec9d"
     },
     {
-      "path": "assets/progress-CBXDfojx.js",
-      "bytes": 24585,
-      "sha256": "616d7dbba62d848b3c481808fb05209943cb0678702d67c321b0ef5c137df2fb"
+      "path": "assets/progress-CFhpO9hi.js",
+      "bytes": 24518,
+      "sha256": "4b0366ee50608c1bbaf35acc09f1fa0c6caed083aa28d62859f81254c9a12ac8"
     },
     {
       "path": "assets/progress-DgeKDxiU.css",
@@ -11495,14 +11935,14 @@
       "sha256": "f8ef402f526825fe2cccf5fcc5ed0519f1159a7ce4eda0b46a0c88febd9c0586"
     },
     {
-      "path": "assets/progress-M4-zpKdW.js",
-      "bytes": 3257,
-      "sha256": "8471df83e3ba192c4a5c3d1d7a0d1de8f55ad9dd95e852964e894a4c31380dd7"
+      "path": "assets/progress-O7rKltjt.js",
+      "bytes": 3139,
+      "sha256": "b13886731c1eaceec51a72f9d979bb9c1cd2a52a0189ab332f1418b0db522886"
     },
     {
-      "path": "assets/review-CJlTAPNG.js",
+      "path": "assets/review-C69KWDyA.js",
       "bytes": 87,
-      "sha256": "bf861d902e87d0da87a909430a39485034f0eecea7437889774a7e389dfdd01c"
+      "sha256": "3a83e13f1ccd964513016962f77d5922ae1210a48a14b185fdfcb738e00816d8"
     },
     {
       "path": "assets/rolldown-runtime-DK3Fl9T5.js",
@@ -11510,9 +11950,9 @@
       "sha256": "a526d1bb3288ef04d001028843220a24b0867a4edf8c685b69506d6525af36ff"
     },
     {
-      "path": "assets/session-2O3NcK26.js",
+      "path": "assets/session-BUO4-qI-.js",
       "bytes": 2369,
-      "sha256": "64708b1299a9399f12c52e0accfaa0e3c053883413e0ce6ec26ac96fabbd6de6"
+      "sha256": "f5e451886eb29fafbdf8114d4f7074d22c74ac2a070de9746f4696ceb2f14589"
     },
     {
       "path": "assets/source-activities-CUgKkJar.css",
@@ -11520,9 +11960,9 @@
       "sha256": "2e84c244b71602d780b211b64cdd3992c493bc814504d18a461aee924519ffb7"
     },
     {
-      "path": "assets/source-activities-DF3RWc5y.js",
-      "bytes": 32594,
-      "sha256": "0254dfc864bb631a0899b7418563d2c0fe141744124d6b60e38d8114be435203"
+      "path": "assets/source-activities-O0s310dZ.js",
+      "bytes": 32567,
+      "sha256": "591db6a35e1b296f7ed5b9d47dae82dd4812ad3f297d147bcf2334ec232b9c58"
     },
     {
       "path": "assets/stage2-bank-Bjx02knS.js",
@@ -11550,9 +11990,9 @@
       "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
     },
     {
-      "path": "assets/store-DLxQt9Xa.js",
+      "path": "assets/store-76RbJJ3w.js",
       "bytes": 8982,
-      "sha256": "d4ab25293b0ff8df0532ff0d69186a8eb0c9050cd563c7ba1f2ceb79a22ab178"
+      "sha256": "c00d800a743401ab02f4219289cdd61eac1a6f89ae7151155f2a09cc4cfbe7e6"
     },
     {
       "path": "assets/textbook-B8IduQIO.css",
@@ -11560,9 +12000,9 @@
       "sha256": "c51acb2e4fc69dc8503bca1d35c4dda16f3835f3b4836272f6b62a680133ad61"
     },
     {
-      "path": "assets/textbook-BJCQsFT1.js",
-      "bytes": 33925,
-      "sha256": "2e5a15608400f89003a467308d08093652888417127f6bddcc49328bd04306c9"
+      "path": "assets/textbook-BGC85YVN.js",
+      "bytes": 21947,
+      "sha256": "9581a7902a4bd3783dc7ced928dc609a1ff4565aa0782663da1d7b49712f6147"
     },
     {
       "path": "assets/textbook-BNPI77hK.js",
@@ -11575,9 +12015,9 @@
       "sha256": "b54dd0c5a540bc80a9870bf005a2a9b667c613ca3c61a3a93e0ee01e84855c7d"
     },
     {
-      "path": "assets/textbook-CaRsdqIx.js",
-      "bytes": 21787,
-      "sha256": "12682c728bb75f41bef43b368e1228e26bbea10d9b3ff0c6979196c67f38672c"
+      "path": "assets/textbook-CYeI3cRn.js",
+      "bytes": 34784,
+      "sha256": "8f900bd4665244106434f2cbf0a3427eca66aac953ebb01481c255ded593c864"
     },
     {
       "path": "assets/textbook-display-revisions-CGs5GDJK.js",
@@ -11605,14 +12045,14 @@
       "sha256": "a51d7d751f1f76ce21c0fb854c0cbb1218a8b9598891b94068477c04d1695fce"
     },
     {
-      "path": "assets/ui-CeZcCjwl.js",
-      "bytes": 383,
-      "sha256": "363059a5922f2571b8938adf8fc83ed4103bf2f4a286cb7aa23f59d5eb5292a2"
+      "path": "assets/ui-D8ge1KvB.js",
+      "bytes": 346,
+      "sha256": "e5bd18c24c8ad63afa50a12ea94cf81406baa55ed15283643d00e6083e3009f1"
     },
     {
-      "path": "assets/vi-presentation-state-e1tQ9QF9.js",
+      "path": "assets/vi-presentation-state-BOGpdttw.js",
       "bytes": 9767,
-      "sha256": "2b90ea028c4551a2e0a33ec2dd51234820c89220f6a6454995a8c71c241981a3"
+      "sha256": "9fff18f45f69bfde96cc209420cbd8bd660af146c871a2fdd0142b67d4910877"
     },
     {
       "path": "assets/view-BYaiqWuX.css",
@@ -11620,14 +12060,14 @@
       "sha256": "58ed7b3742138d4744d74c97a5044fd181709cfaf1821cde9eb9cd55c717b2d5"
     },
     {
-      "path": "assets/view-Bs7Hr2lV.js",
-      "bytes": 24259,
-      "sha256": "cfb069312ab12d5d712d70e9d377ae2e4c1e0809660ad64e6705985b0123b30c"
+      "path": "assets/view-Di25y0Pv.js",
+      "bytes": 24342,
+      "sha256": "287171226d73cfbd2dadbe219761f71c1002b535e523c303c6b59c7500b980de"
     },
     {
-      "path": "assets/vocabulary-BfkgDj5e.js",
+      "path": "assets/vocabulary-C2oIFHkv.js",
       "bytes": 91,
-      "sha256": "7740f7b204bfc106af65aee08c03bcb3bcb4f8bc387966172eb787bc72925aab"
+      "sha256": "6a345feae23fda619e58b9908d3b575519ea043c5f6cdd1734d79c1a18fd1bef"
     },
     {
       "path": "content-manifest.json",
@@ -18982,7 +19422,7 @@
     {
       "path": "index.html",
       "bytes": 457,
-      "sha256": "ce1993699525e116292f7ddcdc87e19f6c1639e59df5c3813f66c3ee8c30e796"
+      "sha256": "1b45f8e03998b0560ddf7d4029240bcef5ea640def73ad388e5ce1923818c53c"
     },
     {
       "path": "source-activities/figures/l01-text-1-photo.png",
@@ -19742,14 +20182,29 @@
       "sha256": "d50fc8a0bc03a7f042190dd829011eb135eff4305b89ca4410317d1d74207269"
     },
     {
-      "path": "course-engine/assets/archive-CspRLzlu.js",
-      "bytes": 21223,
-      "sha256": "cda99e03e6b3a8e8d84c9c40f4669281bbe0b073693a8a83261309be4be20245"
+      "path": "course-engine/assets/archive-Dl0zJ44K.js",
+      "bytes": 21215,
+      "sha256": "b8973dcf695af08e83661d34ecf86a0f9084ff5ba74c4b328bcc008173d111ea"
     },
     {
       "path": "course-engine/assets/asset-base-DAkFL0yR.js",
       "bytes": 160,
       "sha256": "2113321c6b36c08b797463a2839f5ef7702682eda07616a8f37a28a26a5c2d1f"
+    },
+    {
+      "path": "course-engine/assets/audio-precision-20261006-D-h_m1Lq.js",
+      "bytes": 2185595,
+      "sha256": "e08e2eb43b6f7132dc016535491c10fbf70060fc0d705716c63f9668936a14c0"
+    },
+    {
+      "path": "course-engine/assets/audio-precision-authority-20261006-ByW7vl6f.js",
+      "bytes": 2186495,
+      "sha256": "499e302eed9d9b6ff0b6fc6aa643fddef9888b3b366a781259dd4366db5264d3"
+    },
+    {
+      "path": "course-engine/assets/audio-precision-targets-20261006-CMmkdrti.js",
+      "bytes": 857174,
+      "sha256": "211f8e2c352439d6fc59c83bac93c70e785bf2338e8095bd53cbe096344179cc"
     },
     {
       "path": "course-engine/assets/audio-segments-hsk2-lessons02-03-DhnzM86H.js",
@@ -19767,19 +20222,14 @@
       "sha256": "b2d8cda0aeac7efc3fde250440156a2497fa6dc8690c940ac98e1cc9d12286a4"
     },
     {
-      "path": "course-engine/assets/backup-view-CfWDSpkU.js",
+      "path": "course-engine/assets/backup-view-DgC2g1_c.js",
       "bytes": 9026,
-      "sha256": "fa343acde916196d781d748e2378efc708e7fea61f2cc1bcc03cdf73db44b7b7"
+      "sha256": "5d965c277019c54fc1b38406d7a5a4caf7978950d44bd33cdcca70958cd35d8a"
     },
     {
-      "path": "course-engine/assets/bilingual-YzyU8AOp.js",
-      "bytes": 550,
-      "sha256": "1d3486eaf4f448c320b976113efc3c70e1fffd251d96036a62695e09771b9200"
-    },
-    {
-      "path": "course-engine/assets/browser-pair-BFEhQLRt.js",
+      "path": "course-engine/assets/browser-pair-CU4CAsDw.js",
       "bytes": 10817,
-      "sha256": "06bc4039aa3f2195a850a91912e0d06e7cf6729c6b39581f07d62e3810e212be"
+      "sha256": "d00993acced1dae77f625c4155acff9b6bcff21a0e7947c73ecbc29bcf6df731"
     },
     {
       "path": "course-engine/assets/catalogue-C_U9rwbD.js",
@@ -19787,19 +20237,19 @@
       "sha256": "459c0867aca0f0a7fc39319ccda741ce11630fc45bbc1c753ca404dc8ab39afb"
     },
     {
-      "path": "course-engine/assets/compatibility-DHZqng-d.js",
-      "bytes": 36806,
-      "sha256": "a9e0f2dfbfe751d809036646d43a1eedea668fec9379a444d25603972153d9e5"
+      "path": "course-engine/assets/compatibility-B2suCbgr.js",
+      "bytes": 36748,
+      "sha256": "7e09a821590dad9239e355511af5b631d2100783244b7f2a06d2e06cbbae30ec"
     },
     {
-      "path": "course-engine/assets/content-C02ovMO6.js",
-      "bytes": 1030,
-      "sha256": "c188a20ec7d538d871955b26aa219a3d3c086fb139609dc91674ec781256f2d5"
-    },
-    {
-      "path": "course-engine/assets/content-x5qU45wN.js",
+      "path": "course-engine/assets/content-DZGKYVzc.js",
       "bytes": 853415,
-      "sha256": "e1149406274d19931f492e0c537ebb1feef418b127c603df350bbe17a0e8ff4c"
+      "sha256": "83af55fc541784ed8f00db21107270914ea93a90983f463bed162aa18b0061ab"
+    },
+    {
+      "path": "course-engine/assets/content-QhAeDj-p.js",
+      "bytes": 1030,
+      "sha256": "99db20fa8ce3fd27221e6fe860038c41ebbe4cc01d35792b79601f3682ebecb6"
     },
     {
       "path": "course-engine/assets/copy-yY9kyqvF.js",
@@ -19827,24 +20277,14 @@
       "sha256": "43139a3da66713b11897954317bea2df9c7e28141bc855fc360c62df8f7ef21b"
     },
     {
-      "path": "course-engine/assets/data-panel-DvXZjpEG.js",
-      "bytes": 9053,
-      "sha256": "27401a3d496953079a5e3acbed84388c111de403ee674d7318ce6f5b5e939915"
+      "path": "course-engine/assets/data-panel-DMeEzCDn.js",
+      "bytes": 8988,
+      "sha256": "d7888a4130e5f5778344c8615680e0914e0e7e90efd86fe04be23bbfb25b67c1"
     },
     {
-      "path": "course-engine/assets/dom-BIyVRf8h.js",
-      "bytes": 515,
-      "sha256": "653e72d4c82f45519c5fba54d5a7a3e121740af52ca1b89e28b87273cd4be282"
-    },
-    {
-      "path": "course-engine/assets/engine-BAT6QHsN.js",
-      "bytes": 16100,
-      "sha256": "7fc5a27abae69a82aa8c1a1399867cbe64dd774cc7851a2980818bebff9759ee"
-    },
-    {
-      "path": "course-engine/assets/engine-CBi3sj57.js",
-      "bytes": 5900,
-      "sha256": "b60d98b836d95e191dcc39ce42f5ec9485b3c0f86cae4ee6e70d75f94c73b3ab"
+      "path": "course-engine/assets/dom-D9mOsW9v.js",
+      "bytes": 478,
+      "sha256": "41538cd59b9ef8f8cc8bdab14c4ca02b517dbdd3ab64547afca251155c9ac49f"
     },
     {
       "path": "course-engine/assets/engine-DJNGzNN8.js",
@@ -19857,29 +20297,29 @@
       "sha256": "1c416a8c4325cab51823890036525153d17c189343ff437c935a614bcf8768a5"
     },
     {
-      "path": "course-engine/assets/hanzi-Dk4X6n0J.js",
-      "bytes": 55111,
-      "sha256": "84001b1b83cd94b0984aaf02bc6db0957c5daeb8cdd7c04f9a8adf62b227b389"
+      "path": "course-engine/assets/hanzi-ypM4aLZ4.js",
+      "bytes": 55107,
+      "sha256": "42715f48a5c0a0c6d09f5ccdf2704c5d936ec4997c32d3fb9dfd956ad251fadf"
     },
     {
-      "path": "course-engine/assets/home-Dm79vwL7.js",
-      "bytes": 4320,
-      "sha256": "e5ed450cbab97e6c2d05293ea90e3e3c847359dfbbe50e88f2e19392390d87f7"
+      "path": "course-engine/assets/home-CU-xntx4.js",
+      "bytes": 4293,
+      "sha256": "822b129c051311caba10ee5fa4a6cc42540de6b708373f64704b32f6dacdd034"
     },
     {
-      "path": "course-engine/assets/homework-8E-U9jBU.css",
-      "bytes": 8119,
-      "sha256": "7452ac18b71b1de89f9a0f16d6eaa1246b6bcfc66caa46f640861ff8b4cbcc35"
+      "path": "course-engine/assets/homework-CpNcnAFo.js",
+      "bytes": 1815,
+      "sha256": "f75901f43032a7ae29ee8391fb0d3686de6eb4c70b11f65b2f5a1235a08498a5"
     },
     {
-      "path": "course-engine/assets/homework-C7rR7QKa.js",
-      "bytes": 1811,
-      "sha256": "6422eb051a86397075865aecc292579e6a6600ad4f9f0fe31c1b20acccfbe8fb"
+      "path": "course-engine/assets/homework-DgHnpddf.js",
+      "bytes": 36439,
+      "sha256": "92bbc88f98d9e6511dc4d24e32f67e1c4e40cb9acb9097085bc10f117eb05228"
     },
     {
-      "path": "course-engine/assets/homework-DdTGju_X.js",
-      "bytes": 36529,
-      "sha256": "2c69fb607357dfae72a5821f79834b7e453d047338b355b3526d595c1a8ca1a0"
+      "path": "course-engine/assets/homework-LHmH-Hqc.css",
+      "bytes": 8312,
+      "sha256": "833b5da6d88f4725734a4e6766eb87ae063d6b219d153af17fa711586b3eeee2"
     },
     {
       "path": "course-engine/assets/homework30-bank-Bti0xGBV.js",
@@ -19887,9 +20327,9 @@
       "sha256": "fed00ddcf71b70347c899f5fee21183362de2c8af115ffb2da129bbe84bca3c2"
     },
     {
-      "path": "course-engine/assets/homework30-BVBKAbRf.js",
-      "bytes": 613907,
-      "sha256": "85dd10b8fa9330a94e92395842b8fa9ed4ea421f757eac9cd33d3ee6b482cfbd"
+      "path": "course-engine/assets/homework30-Bp9uIIs5.js",
+      "bytes": 613906,
+      "sha256": "78518f6e6dce4e45f5810c8a323366e58c2df92fb84998a87aaba63f2ac55b0a"
     },
     {
       "path": "course-engine/assets/hsk1-l01-core-20261005-B28rk1P9.js",
@@ -19942,14 +20382,14 @@
       "sha256": "f2bc584580fe14a6187f9676f60353dd5487fe74edf23c65361441e187ce897e"
     },
     {
-      "path": "course-engine/assets/index-6oLOlbZ9.css",
-      "bytes": 34668,
-      "sha256": "6c944b8f362f53a1bc562636889442a10b9f30707868e932c905f8785fdd4c22"
+      "path": "course-engine/assets/index-BXaSSNbU.css",
+      "bytes": 34994,
+      "sha256": "6936354dc7981f62567f0918aa61f0b3e27cc5bd9c467dbfd9731b9da92c9d3c"
     },
     {
-      "path": "course-engine/assets/index-C03nNvlS.js",
-      "bytes": 351188,
-      "sha256": "bce2bf38681b26e03df4d6fb2bc1db01a9f12e6d54e60a86e85f440d0c67c791"
+      "path": "course-engine/assets/index-C6SSyMiw.js",
+      "bytes": 659679,
+      "sha256": "448597d48efb25efa0e3004547ef770a146624f7a05e9eecf124ee3bce46d5d3"
     },
     {
       "path": "course-engine/assets/legacy-exercises-BfEaU4Qq.js",
@@ -20207,19 +20647,19 @@
       "sha256": "f9e31027ade81095b289d19b94a6a56553e389d1c7698008aa1e86d4c30c6147"
     },
     {
-      "path": "course-engine/assets/listening-BPfn1IPw.js",
-      "bytes": 16464,
-      "sha256": "32b5ff933fef31b35811c4edb4d0a148418cf3a592a69ece6167fc5330a2ccc5"
-    },
-    {
       "path": "course-engine/assets/listening-BXM9emsG.js",
       "bytes": 19057,
       "sha256": "66271385aa94ddc17713e6cb38c41405040597c263572c8cc65a9958ed390ba3"
     },
     {
-      "path": "course-engine/assets/listening-DPnlNigw.js",
+      "path": "course-engine/assets/listening-BYZPgFa5.js",
       "bytes": 6035,
-      "sha256": "1722732b507bf62c8c28bf7c61cb779a6c572b8e2ed34d97a65b5b2cc2c5ecee"
+      "sha256": "0adbf3d9c46adfaac3a53b31daab89fda978aff52089165cf9e06b3cd956f6e4"
+    },
+    {
+      "path": "course-engine/assets/listening-C1gh6ixb.js",
+      "bytes": 16611,
+      "sha256": "d2293c2c9515b633fb7521a5f6256d3574eb5486ef12cae3e3ddd8ffdef9cb88"
     },
     {
       "path": "course-engine/assets/listening-DTyrhIy_.css",
@@ -20252,19 +20692,19 @@
       "sha256": "ee096ab74b647fd197f8ef5c29300d5aa9a4f7dd5ff95236a1cd122c0b5e4c41"
     },
     {
-      "path": "course-engine/assets/official-vi-revisions-BwI-PwOu.js",
+      "path": "course-engine/assets/official-vi-revisions-BDdwjKHo.js",
       "bytes": 24950,
-      "sha256": "7ef4ac6c1a846ef544c65f5f55790ef1f8d2a72d25b0f5071536b65a1185d2db"
+      "sha256": "97d560db3ba89250aa0913aa30258bea714da47c52aa5ecdcd8a12e3b66c7fb9"
     },
     {
-      "path": "course-engine/assets/pair-panel-CcYxwAGg.js",
-      "bytes": 8413,
-      "sha256": "6731a4f836cf724e540a9c11e39fe9db1c1e6ab3e64df446f8168897048b265f"
+      "path": "course-engine/assets/pair-panel-Ch-p2miF.js",
+      "bytes": 8381,
+      "sha256": "30f92f27fc6c4f6f53f8c805d226bb7083b24bfc76798fa514a190907cf1ec9d"
     },
     {
-      "path": "course-engine/assets/progress-CBXDfojx.js",
-      "bytes": 24585,
-      "sha256": "616d7dbba62d848b3c481808fb05209943cb0678702d67c321b0ef5c137df2fb"
+      "path": "course-engine/assets/progress-CFhpO9hi.js",
+      "bytes": 24518,
+      "sha256": "4b0366ee50608c1bbaf35acc09f1fa0c6caed083aa28d62859f81254c9a12ac8"
     },
     {
       "path": "course-engine/assets/progress-DgeKDxiU.css",
@@ -20272,14 +20712,14 @@
       "sha256": "f8ef402f526825fe2cccf5fcc5ed0519f1159a7ce4eda0b46a0c88febd9c0586"
     },
     {
-      "path": "course-engine/assets/progress-M4-zpKdW.js",
-      "bytes": 3257,
-      "sha256": "8471df83e3ba192c4a5c3d1d7a0d1de8f55ad9dd95e852964e894a4c31380dd7"
+      "path": "course-engine/assets/progress-O7rKltjt.js",
+      "bytes": 3139,
+      "sha256": "b13886731c1eaceec51a72f9d979bb9c1cd2a52a0189ab332f1418b0db522886"
     },
     {
-      "path": "course-engine/assets/review-CJlTAPNG.js",
+      "path": "course-engine/assets/review-C69KWDyA.js",
       "bytes": 87,
-      "sha256": "bf861d902e87d0da87a909430a39485034f0eecea7437889774a7e389dfdd01c"
+      "sha256": "3a83e13f1ccd964513016962f77d5922ae1210a48a14b185fdfcb738e00816d8"
     },
     {
       "path": "course-engine/assets/rolldown-runtime-DK3Fl9T5.js",
@@ -20287,9 +20727,9 @@
       "sha256": "a526d1bb3288ef04d001028843220a24b0867a4edf8c685b69506d6525af36ff"
     },
     {
-      "path": "course-engine/assets/session-2O3NcK26.js",
+      "path": "course-engine/assets/session-BUO4-qI-.js",
       "bytes": 2369,
-      "sha256": "64708b1299a9399f12c52e0accfaa0e3c053883413e0ce6ec26ac96fabbd6de6"
+      "sha256": "f5e451886eb29fafbdf8114d4f7074d22c74ac2a070de9746f4696ceb2f14589"
     },
     {
       "path": "course-engine/assets/source-activities-CUgKkJar.css",
@@ -20297,9 +20737,9 @@
       "sha256": "2e84c244b71602d780b211b64cdd3992c493bc814504d18a461aee924519ffb7"
     },
     {
-      "path": "course-engine/assets/source-activities-DF3RWc5y.js",
-      "bytes": 32594,
-      "sha256": "0254dfc864bb631a0899b7418563d2c0fe141744124d6b60e38d8114be435203"
+      "path": "course-engine/assets/source-activities-O0s310dZ.js",
+      "bytes": 32567,
+      "sha256": "591db6a35e1b296f7ed5b9d47dae82dd4812ad3f297d147bcf2334ec232b9c58"
     },
     {
       "path": "course-engine/assets/stage2-bank-Bjx02knS.js",
@@ -20327,9 +20767,9 @@
       "sha256": "35a15efbf9cc80c8e4ccb51d154ca8d906b970b13acabb0cc179a64423162913"
     },
     {
-      "path": "course-engine/assets/store-DLxQt9Xa.js",
+      "path": "course-engine/assets/store-76RbJJ3w.js",
       "bytes": 8982,
-      "sha256": "d4ab25293b0ff8df0532ff0d69186a8eb0c9050cd563c7ba1f2ceb79a22ab178"
+      "sha256": "c00d800a743401ab02f4219289cdd61eac1a6f89ae7151155f2a09cc4cfbe7e6"
     },
     {
       "path": "course-engine/assets/textbook-B8IduQIO.css",
@@ -20337,9 +20777,9 @@
       "sha256": "c51acb2e4fc69dc8503bca1d35c4dda16f3835f3b4836272f6b62a680133ad61"
     },
     {
-      "path": "course-engine/assets/textbook-BJCQsFT1.js",
-      "bytes": 33925,
-      "sha256": "2e5a15608400f89003a467308d08093652888417127f6bddcc49328bd04306c9"
+      "path": "course-engine/assets/textbook-BGC85YVN.js",
+      "bytes": 21947,
+      "sha256": "9581a7902a4bd3783dc7ced928dc609a1ff4565aa0782663da1d7b49712f6147"
     },
     {
       "path": "course-engine/assets/textbook-Bkb8B-ul.js",
@@ -20352,9 +20792,9 @@
       "sha256": "2cbf53413b43f72a93154f3c347417d7b917257d4b35939818ba0e541ddd0e22"
     },
     {
-      "path": "course-engine/assets/textbook-CaRsdqIx.js",
-      "bytes": 21787,
-      "sha256": "12682c728bb75f41bef43b368e1228e26bbea10d9b3ff0c6979196c67f38672c"
+      "path": "course-engine/assets/textbook-CYeI3cRn.js",
+      "bytes": 34784,
+      "sha256": "8f900bd4665244106434f2cbf0a3427eca66aac953ebb01481c255ded593c864"
     },
     {
       "path": "course-engine/assets/textbook-display-revisions-CGs5GDJK.js",
@@ -20382,19 +20822,14 @@
       "sha256": "a51d7d751f1f76ce21c0fb854c0cbb1218a8b9598891b94068477c04d1695fce"
     },
     {
-      "path": "course-engine/assets/ui-CeZcCjwl.js",
-      "bytes": 383,
-      "sha256": "363059a5922f2571b8938adf8fc83ed4103bf2f4a286cb7aa23f59d5eb5292a2"
+      "path": "course-engine/assets/ui-D8ge1KvB.js",
+      "bytes": 346,
+      "sha256": "e5bd18c24c8ad63afa50a12ea94cf81406baa55ed15283643d00e6083e3009f1"
     },
     {
-      "path": "course-engine/assets/vi-presentation-state-e1tQ9QF9.js",
+      "path": "course-engine/assets/vi-presentation-state-BOGpdttw.js",
       "bytes": 9767,
-      "sha256": "2b90ea028c4551a2e0a33ec2dd51234820c89220f6a6454995a8c71c241981a3"
-    },
-    {
-      "path": "course-engine/assets/view-Bs7Hr2lV.js",
-      "bytes": 24259,
-      "sha256": "cfb069312ab12d5d712d70e9d377ae2e4c1e0809660ad64e6705985b0123b30c"
+      "sha256": "9fff18f45f69bfde96cc209420cbd8bd660af146c871a2fdd0142b67d4910877"
     },
     {
       "path": "course-engine/assets/view-BYaiqWuX.css",
@@ -20402,9 +20837,14 @@
       "sha256": "58ed7b3742138d4744d74c97a5044fd181709cfaf1821cde9eb9cd55c717b2d5"
     },
     {
-      "path": "course-engine/assets/vocabulary-BfkgDj5e.js",
+      "path": "course-engine/assets/view-Di25y0Pv.js",
+      "bytes": 24342,
+      "sha256": "287171226d73cfbd2dadbe219761f71c1002b535e523c303c6b59c7500b980de"
+    },
+    {
+      "path": "course-engine/assets/vocabulary-C2oIFHkv.js",
       "bytes": 91,
-      "sha256": "7740f7b204bfc106af65aee08c03bcb3bcb4f8bc387966172eb787bc72925aab"
+      "sha256": "6a345feae23fda619e58b9908d3b575519ea043c5f6cdd1734d79c1a18fd1bef"
     },
     {
       "path": "course-engine/content-manifest.json",
@@ -28509,27 +28949,27 @@
     {
       "path": "index.html",
       "bytes": 581,
-      "sha256": "62cfb47c47b16cebbb6d3c9ae338d7477da681e73e79bd367edbc6129e1874b3"
+      "sha256": "1262f3bbc4df66ec30a97413b4bea02d5b9c5d9b6b94963d64ea513ad6efa080"
     },
     {
       "path": "new-hsk1/hsk1/index.html",
       "bytes": 594,
-      "sha256": "0e8e7d299e4e5c741cb1da8aade597c4c1f010c746d19edee15f30a505eb1d7a"
+      "sha256": "e097ee6830369ce2f8bdea5d0036b091a547b5b5789c2616f0db75a245ec4d9d"
     },
     {
       "path": "new-hsk1/hsk1/learning.html",
       "bytes": 594,
-      "sha256": "0e8e7d299e4e5c741cb1da8aade597c4c1f010c746d19edee15f30a505eb1d7a"
+      "sha256": "e097ee6830369ce2f8bdea5d0036b091a547b5b5789c2616f0db75a245ec4d9d"
     },
     {
       "path": "new-hsk1/hsk1/lesson.html",
       "bytes": 594,
-      "sha256": "0e8e7d299e4e5c741cb1da8aade597c4c1f010c746d19edee15f30a505eb1d7a"
+      "sha256": "e097ee6830369ce2f8bdea5d0036b091a547b5b5789c2616f0db75a245ec4d9d"
     },
     {
       "path": "new-hsk1/hsk1/lesson9-pilot.html",
       "bytes": 594,
-      "sha256": "0e8e7d299e4e5c741cb1da8aade597c4c1f010c746d19edee15f30a505eb1d7a"
+      "sha256": "e097ee6830369ce2f8bdea5d0036b091a547b5b5789c2616f0db75a245ec4d9d"
     },
     {
       "path": "new-hsk1/hsk1/source-activities/figures/l01-text-1-photo.png",
@@ -29284,7 +29724,7 @@
     {
       "path": "new-hsk1/index.html",
       "bytes": 585,
-      "sha256": "c17e224e286863fb700220097d0de82b1c2e7f30b17b588f2ebf2a56e3dde973"
+      "sha256": "092a0da4ea2a3ad176626b1628413323858a22fc87cfa3ac5b9ec724630bb153"
     },
     {
       "path": "new-hsk1/source-activities/figures/l01-text-1-photo.png",
@@ -30039,7 +30479,7 @@
     {
       "path": "new-hsk2/hsk2/index.html",
       "bytes": 594,
-      "sha256": "5bd54f3b09ca0eef157843b2b4327b55c9047df5f7b8fcb579ad569a7dd2582b"
+      "sha256": "f8ad130bef81962cf463ad5a463c4ea26ba26085a5bd3168ab09973808677216"
     },
     {
       "path": "new-hsk2/hsk2/source-activities/figures/l01-text-1-photo.png",
@@ -30794,7 +31234,7 @@
     {
       "path": "new-hsk2/index.html",
       "bytes": 585,
-      "sha256": "ecf5e389eabe32f4c3547604d9391d2962da6ab464e93e11510d8d5818b55566"
+      "sha256": "eb85837a1688cf7ad33e788a402f6e4ccf665a0e22fe5c7ad5dc554745af61f8"
     },
     {
       "path": "new-hsk2/source-activities/figures/l01-text-1-photo.png",
@@ -31549,7 +31989,7 @@
     {
       "path": "new-hsk3/hsk3/index.html",
       "bytes": 594,
-      "sha256": "1e22b77f66bba960f50705e852c82ada131e605a60128511c9a63c7efe905c00"
+      "sha256": "adb5e6838af283e45dca269fd989244bfd54d5e376ec454f111be1c61226a41c"
     },
     {
       "path": "new-hsk3/hsk3/source-activities/figures/l01-text-1-photo.png",
@@ -32304,7 +32744,7 @@
     {
       "path": "new-hsk3/index.html",
       "bytes": 585,
-      "sha256": "c2d082207b997119b4966c53f0bf6c3dcdacf78c31fb1cf5f1006aef236777c6"
+      "sha256": "58a7d678b27e2d61365c2da2cbf9e3f10689bb07d8573e01da25463b35c80386"
     },
     {
       "path": "new-hsk3/source-activities/figures/l01-text-1-photo.png",
