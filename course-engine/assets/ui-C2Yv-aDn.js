@@ -1,0 +1,1 @@
+import{d as e,i as t}from"./index-Dg9BdLqD.js";function n(t,n){let r=document.createElement(t);return typeof n==`string`?r.textContent=n:n&&e(r,n),r}function r(e,r){let i=n(`a`,e);return i.href=t(r),i.dataset.routeLink=``,i}function i(e,t=`secondary-details`){let r=n(`details`);return r.className=t,r.append(n(`summary`,e)),r}export{n,r,i as t};
