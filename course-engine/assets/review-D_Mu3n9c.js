@@ -1,0 +1,1 @@
+import{t as e}from"./view-y_dFrycj.js";var t=(t,n)=>e(t,n,`review`);export{t as mount};
