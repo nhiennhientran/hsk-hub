@@ -337,7 +337,7 @@ function lessonNav(accessible=(n:number)=>sharedLessonAccessible(store.snapshot(
     const option = el("option", `第${n}课 · Bài ${n}`);
     option.value = String(n);
     option.disabled=!accessible(n);
-    if(option.disabled)option.textContent+=` · 先完成第${n-1}课 / Hoàn thành bài ${n-1} trước`;
+    if(option.disabled)option.textContent+=' · 课程暂不可用 / Bài học hiện chưa có';
     select.append(option);
   }
   select.value = String(route.lesson);
@@ -353,10 +353,10 @@ function lessonNav(accessible=(n:number)=>sharedLessonAccessible(store.snapshot(
   );
   main.append(row);
 }
-function renderLockedLesson(){
-  main.dataset.lessonState='locked';main.dataset.lockedLesson=String(route.lesson);
-  heading(copy(`第${route.lesson}课尚未解锁`,`Bài ${route.lesson} chưa mở khóa`));
-  main.append(el('p',copy(`请先完成第${route.lesson-1}课的教材学习，或提交该课全部五组作业。提交即可，不要求满分。`,`Hãy hoàn thành phần giáo trình bài ${route.lesson-1}, hoặc nộp đủ năm phần bài tập của bài đó. Chỉ cần nộp bài, không cần điểm tuyệt đối.`)),link(copy('返回课程','Về các bài học'),routeHref({view:'courses'})),link(copy(`继续第${route.lesson-1}课`,`Học tiếp bài ${route.lesson-1}`),routeHref({view:'homework',lesson:route.lesson-1,part:'vocabGrammar',homeworkVersion:'30-v1'})));
+function renderUnavailableLesson(){
+  main.dataset.lessonState='unavailable';
+  heading(copy('课程暂不可用','Bài học hiện chưa có'));
+  main.append(el('p',copy('请选择课程列表中的有效课次。','Hãy chọn một bài học có trong danh sách.')),link(copy('返回课程','Về các bài học'),routeHref({view:'courses'})));
 }
 function audioControl(trackId: string, title?: Copy) {
   const track = trackFor(config, trackId),
@@ -485,7 +485,7 @@ async function render() {
     await prepareViCourse(requestedConfig);
     if(token!==generation||config!==requestedConfig)return;
     const accessible=(n:number)=>sharedLessonAccessible(store.snapshot().data,n,config.count);
-    if(['lesson','homework','archive','listening'].includes(route.view)&&!accessible(route.lesson)){renderLockedLesson();return;}
+    if(['lesson','homework','archive','listening'].includes(route.view)&&!accessible(route.lesson)){renderUnavailableLesson();return;}
     const wanted =
       route.view === "courses" || route.view === "progress"
         ? []
@@ -590,7 +590,7 @@ function renderCourses() {
     ),
   );
   main.append(hero);
-  main.append(el('p',copy('完成前一课教材学习或提交全部五组作业，即可解锁下一课；已解锁课程内可自由学习。','Hoàn thành giáo trình hoặc nộp đủ năm phần bài tập của bài trước để mở khóa bài tiếp theo; có thể học tự do trong bài đã mở.')));
+  main.append(el('p',copy('全部课次均可自由选择；生词支持单课、任意多课及全部课程混合练习。','Có thể tự do chọn tất cả các bài; luyện từ vựng theo một bài, nhiều bài tùy chọn hoặc toàn bộ khóa học.')));
   const searchLabel=el("label",copy("查找课程","Tìm bài học")),search=el("input");search.type="search";search.id="lesson-search";search.placeholder="课次 / 标题 / tiêu đề";searchLabel.htmlFor=search.id;main.append(searchLabel,search);
   const grid = el("div", undefined, "course-grid");
   for (const lesson of lessonSummaries(config)) {
@@ -612,8 +612,8 @@ function renderCourses() {
       ),
       link(
         copy(
-          accessible?(sharedLessonComplete(store.snapshot().data,lesson.number) ? "继续学习" : "开始学习"):`先完成第${lesson.number-1}课`,
-          accessible?(sharedLessonComplete(store.snapshot().data,lesson.number) ? "Học tiếp" : "Bắt đầu học"):`Hoàn thành bài ${lesson.number-1} trước`,
+          accessible?(sharedLessonComplete(store.snapshot().data,lesson.number) ? "继续学习" : "开始学习"):'课程暂不可用',
+          accessible?(sharedLessonComplete(store.snapshot().data,lesson.number) ? "Học tiếp" : "Bắt đầu học"):'Bài học hiện chưa có',
         ),
         routeHref({ view: "lesson", lesson: lesson.number,section:reading?.lastSection as Route["section"]??"overview",scene:reading?.scene }),
         "lesson-open",
@@ -1567,7 +1567,7 @@ async function renderHSK1(token:number) {
   const bridge=hsk1,requestedRoute=route;
   const one=await bridge.store();if(token!==generation||hsk1!==bridge||level!==1)return;
   const accessible=(n:number)=>hsk1LessonAccessible(one.snapshot().data,n);
-  if(['lesson','homework','archive','listening'].includes(route.view)&&!accessible(route.lesson)){renderLockedLesson();return;}
+  if(['lesson','homework','archive','listening'].includes(route.view)&&!accessible(route.lesson)){renderUnavailableLesson();return;}
   if (["lesson", "homework", "archive"].includes(route.view)) {
     const prior = available;
     available = Array.from({ length: 15 }, (_, i) => i + 1);
@@ -1580,7 +1580,7 @@ async function renderHSK1(token:number) {
   if(token!==generation||hsk1!==bridge||level!==1)return;
   main.dataset.moduleState=main.querySelector('#module-host')?.getAttribute('data-state')??'loading';
   const decorate=()=>{
-    const status=main.querySelector('#home-course-status');if(status)status.replaceChildren(el('span',copy('完成前一课教材学习或提交全部五组作业，解锁下一课。','Hoàn thành giáo trình hoặc nộp đủ năm phần bài tập của bài trước để mở khóa bài tiếp theo.')));
+    const status=main.querySelector('#home-course-status');if(status)status.replaceChildren(el('span',copy('全部课次均可自由选择；生词支持单课、任意多课及全部课程混合练习。','Có thể tự do chọn tất cả các bài; luyện từ vựng theo một bài, nhiều bài tùy chọn hoặc toàn bộ khóa học.')));
     for(const card of main.querySelectorAll<HTMLElement>('.lesson-card[data-lesson]')){
       const n=Number(card.dataset.lesson),open=accessible(n);card.dataset.lessonState=open?'unlocked':'locked';
       for(const a of card.querySelectorAll<HTMLAnchorElement>('a')){
@@ -1588,7 +1588,7 @@ async function renderHSK1(token:number) {
         else {if(a.dataset.lockedHref)a.setAttribute('href',a.dataset.lockedHref);delete a.dataset.lockedHref;a.removeAttribute('aria-disabled');}
       }
       let note=card.querySelector<HTMLElement>('[data-access-note]');if(!note){note=el('p');note.dataset.accessNote='';card.append(note);}note.hidden=open;
-      note.replaceChildren(el('span',copy(`先完成第${n-1}课`,`Hoàn thành bài ${n-1} trước`)));
+      note.replaceChildren(el('span',copy('课程暂不可用','Bài học hiện chưa có')));
     }
   };
   decorate();cleanup=one.subscribe(decorate);

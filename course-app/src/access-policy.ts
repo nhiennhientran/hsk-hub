@@ -19,8 +19,9 @@ export function sharedLessonHasPriorAccess(state:State,lesson:number):boolean{
   return [...Object.values(state.homework),...Object.values(state.listening)].some(r=>sharedAttempt(r.first??r.latest,lessonId+':'))||
     (state.listeningRound?.queue.some(q=>q.startsWith(lessonId+':'))??false)||(state.mixed?.queue.some(q=>q.startsWith(lessonId+':'))??false);
 }
-export function sharedLessonAccessible(state:State,lesson:number,count:number):boolean{
-  return Number.isInteger(lesson)&&lesson>=1&&lesson<=count&&(lesson===1||sharedLessonHasPriorAccess(state,lesson)||sharedLessonComplete(state,lesson-1));
+export function sharedLessonAccessible(_state:State,lesson:number,count:number):boolean{
+  // Learning history records completion; every valid lesson is available for study.
+  return Number.isInteger(lesson)&&lesson>=1&&lesson<=count;
 }
 function h1Submission(data:AppData,lesson:number,all:boolean):boolean{
   const row=data.homework30?.lessons[String(lesson)];
@@ -40,6 +41,6 @@ export function hsk1LessonHasPriorAccess(data:AppData,lesson:number):boolean{
     (data.mixedVocabulary?.round?.lessons.includes(lesson)??false)||
     (Array.isArray(data.practice.listening.session?.questionIds)&&data.practice.listening.session.questionIds.some(id=>typeof id==='string'&&id.startsWith(`l${String(lesson).padStart(2,'0')}-`)));
 }
-export function hsk1LessonAccessible(data:AppData,lesson:number):boolean{
-  return Number.isInteger(lesson)&&lesson>=1&&lesson<=15&&(lesson===1||hsk1LessonHasPriorAccess(data,lesson)||hsk1LessonComplete(data,lesson-1));
+export function hsk1LessonAccessible(_data:AppData,lesson:number):boolean{
+  return Number.isInteger(lesson)&&lesson>=1&&lesson<=15;
 }

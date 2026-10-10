@@ -3,6 +3,8 @@ import {readFileSync} from 'node:fs';
 import legacy from '../../../hsk1-app/src/domain/homework/engine.js';
 const h1=JSON.parse(readFileSync(new URL('../../../hsk1-app/content/homework30-bank.json',import.meta.url),'utf8')).lessons;
 const mapping=[['vocabGrammar','choice'],['ordering','sort'],['listening','listening'],['translationChoice','translationChoice'],['writing','translation']] as const;
+const h1Vocabulary=JSON.parse(readFileSync(new URL('../../../hsk1-app/content/stage3-catalog.json',import.meta.url),'utf8')).vocabulary;
+const lexicons=Object.fromEntries([2,3].map(level=>[level,JSON.parse(readFileSync(new URL(`../../content/hsk${level}-lexicon.json`,import.meta.url),'utf8'))]));
 const oldKey='hsk4_upper_ranteacher_progress_v1',oldBytes=' { "1": { "complete": true, "note": "retained QA legacy bytes" } } ';
 test.beforeEach(async({page})=>{
   await page.addInitScript(({key,bytes})=>{sessionStorage.setItem('hsk_portal_unlocked_v2','1');if(localStorage.getItem(key)===null)localStorage.setItem(key,bytes);},{key:oldKey,bytes:oldBytes});
@@ -14,11 +16,18 @@ async function ready(page:Page,level:number){
     await expect(page.locator('.save-status')).toHaveAttribute('data-problem','false');
   }
 }
-async function locked(page:Page){
-  await expect(page.locator('main')).toHaveAttribute('data-lesson-state','locked');
-  await expect(page.locator('main')).toHaveAttribute('data-locked-lesson','2');
-  await expect(page.locator('#assignment,#scene-content')).toHaveCount(0);
+async function accessible(page:Page,level:number){
+  await ready(page,level);
+  await expect(page.locator('main')).not.toHaveAttribute('data-lesson-state','locked');
   expect(await page.evaluate(k=>localStorage.getItem(k),oldKey)).toBe(oldBytes);
+}
+const storageKey=(level:number)=>level===1?'ran_hsk1_modular_v1':`ran_hsk${level}_fltrp_2026_v1`;
+async function savedData(page:Page,level:number){
+  return page.evaluate(key=>JSON.parse(localStorage.getItem(key)!).data,storageKey(level));
+}
+function completionAndHomework(data:any,level:number){
+  return level===1?{completed:Object.entries(data.reading.lessons).filter(([,row]:[string,any])=>row.complete),homework:data.homework,homework30:data.homework30}
+    :{completed:data.completed,homework:data.homework};
 }
 function order(q:any):number[]{
   const target=legacy.normal(q.answers[0]);
@@ -26,27 +35,41 @@ function order(q:any):number[]{
   const found=walk([],target);if(!found)throw Error('Invalid sort fixture '+q.id);return found;
 }
 for(const level of [1,2,3]){
-  test(`HSK${level} lesson2 direct textbook and homework URLs stay locked for a new learner`,async({page})=>{
-    await page.goto(`./#view=lesson&level=${level}&lesson=2&section=text`);await locked(page);
-    await page.reload();await locked(page);
-    await page.goto(`./#view=homework&level=${level}&lesson=2&part=writing`);await locked(page);
-    await page.goto(`./#view=listening&level=${level}&lesson=2`);await locked(page);
+  test(`HSK${level} every course entry and practice selector is enabled for a new learner`,async({page})=>{
+    const count=level===3?18:15;
     await page.goto(`./#view=courses&level=${level}`);await ready(page,level);
-    const card=page.locator('.lesson-card[data-lesson="2"]');await expect(card).toHaveAttribute('data-lesson-state','locked');await expect(card.locator('a[href]')).toHaveCount(0);
+    await expect(page.locator('.lesson-card[data-lesson]')).toHaveCount(count);
+    for(let n=1;n<=count;n++){
+      const card=page.locator(`.lesson-card[data-lesson="${n}"]`);await expect(card).toHaveAttribute('data-lesson-state','unlocked');
+      expect(await card.locator('a[href]').count(),`lesson ${n} has live entry links`).toBeGreaterThan(0);
+      await expect(card.locator('a[aria-disabled="true"]')).toHaveCount(0);
+    }
+    for(const view of ['lesson','homework','listening']){
+      await page.goto(`./#view=${view}&level=${level}&lesson=${count}&section=text&part=writing`);await accessible(page,level);
+    }
+    await page.reload();await accessible(page,level);
     await page.goto(`./#view=practice&level=${level}&lesson=1`);await ready(page,level);
     const choices=level===1?page.locator('input[data-vocabulary-lesson]'):page.locator('.lesson-choices input');
-    await expect(choices).toHaveCount(level===3?18:15);await expect(choices.nth(0)).toBeEnabled();await expect(choices.nth(1)).toBeDisabled();
+    await expect(choices).toHaveCount(count);for(const choice of await choices.all())await expect(choice).toBeEnabled();
     await page.goto(`./#view=listening&level=${level}&lesson=1`);await ready(page,level);
-    if(level===1){await expect(page.locator('input[data-listening-lesson="2"]')).toBeDisabled();await page.locator('#listening-all').click();await expect(page.locator('input[data-listening-lesson="2"]')).not.toBeChecked();}
-    else await expect(page.locator('.listening-module .lesson-choices input')).toHaveCount(1);
+    const listeningChoices=level===1?page.locator('input[data-listening-lesson]'):page.locator('.listening-module .lesson-choices input');
+    await expect(listeningChoices).toHaveCount(count);for(const choice of await listeningChoices.all())await expect(choice).toBeEnabled();
+    if(level===1){await page.locator('#listening-all').click();for(const choice of await listeningChoices.all())await expect(choice).toBeChecked();}
+    const data=await savedData(page,level);expect(completionAndHomework(data,level).completed).toEqual([]);
+    expect(Object.keys(level===1?data.homework30.lessons:data.homework)).toHaveLength(0);
+    expect(await page.evaluate(k=>localStorage.getItem(k),oldKey)).toBe(oldBytes);
   });
-  test(`HSK${level} an unsubmitted lesson1 draft cannot unlock lesson2`,async({page})=>{
+  test(`HSK${level} an unsubmitted draft stays incomplete while any later lesson is accessible`,async({page})=>{
     await page.goto(`./#view=homework&level=${level}&lesson=1&part=vocabGrammar&version=30-v1`);await ready(page,level);
     await page.locator('input[type=radio]').first().check();
     if(level===1)await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state','saved');else await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');
-    await page.goto(`./#view=lesson&level=${level}&lesson=2&section=vocab`);await locked(page);
+    const before=await savedData(page,level),count=level===3?18:15;
+    await page.goto(`./#view=lesson&level=${level}&lesson=${count}&section=vocab`);await accessible(page,level);
+    await page.reload();await accessible(page,level);
+    const after=await savedData(page,level);expect(completionAndHomework(after,level)).toEqual(completionAndHomework(before,level));
+    if(level===1)expect(after.homework30.lessons['1'].choice.first).toBeNull();else expect(after.drafts).toEqual(before.drafts);
   });
-  test(`HSK${level} submitted lesson1 work including manual writing unlocks lesson2 without a perfection requirement`,async({page},info)=>{
+  test(`HSK${level} actual submissions including manual writing retain real completion records while all courses stay accessible`,async({page},info)=>{
     test.setTimeout(180000);
     const source=level===1?h1.find((l:any)=>l.lesson===1):JSON.parse(readFileSync(new URL(`../../content/hsk${level}/lesson-01.json`,import.meta.url),'utf8'));
     for(const [part,p1]of mapping){
@@ -67,7 +90,7 @@ for(const level of [1,2,3]){
       await page.locator(level===1?'#submit-homework':'#assignment button[type=submit]').click();
       if(level===1){await expect(page.locator('#homework-save-status')).toHaveAttribute('data-state','saved');await expect(page.locator('#homework-result')).toBeVisible();}
       else{await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');await expect(page.locator('#receipt')).toBeVisible();}
-      if(part!=='writing'){await page.goto(`./#view=lesson&level=${level}&lesson=2&section=vocab`);await locked(page);}
+      if(part!=='writing'){await page.goto(`./#view=lesson&level=${level}&lesson=2&section=vocab`);await accessible(page,level);}
     }
     await page.goto(`./#view=lesson&level=${level}&lesson=2&section=vocab`);await ready(page,level);await expect(page.locator('main')).not.toHaveAttribute('data-lesson-state','locked');
     await page.reload();await ready(page,level);
@@ -76,6 +99,35 @@ for(const level of [1,2,3]){
     for(const [part,p1]of mapping){const attempt=records[level===1?p1:part].first;expect(attempt).toBeTruthy();if(part==='writing'){expect(attempt.assessment).toBe('manual');expect(attempt.correct).toBeNull();}else expect(attempt.correct).toBe(0);}
     expect(await page.evaluate(k=>localStorage.getItem(k),oldKey)).toBe(oldBytes);
     await info.attach('completion-without-perfect-score.json',{body:JSON.stringify({level,allFiveSubmitted:true,manualNotAutoScored:true,automaticScoresZero:true,lesson2AccessibleAfterReload:true,oldBytesPreserved:true}),contentType:'application/json'});
+  });
+  test(`HSK${level} single lessons, arbitrary nonconsecutive combinations and all lessons produce the complete selected vocabulary pool`,async({page},info)=>{
+    const count=level===3?18:15,all=Array.from({length:count},(_,i)=>i+1),scopes=[[count],[1,5,12],[2,8,count],all];
+    const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message));
+    await page.goto(`./#view=practice&level=${level}&lesson=1`);await ready(page,level);
+    const settings=page.locator(level===1?'#vocabulary-settings':'.lesson-selection');
+    const choices=level===1?page.locator('input[data-vocabulary-lesson]'):page.locator('.lesson-choices input');
+    const evidence:unknown[]=[];
+    for(const selected of scopes){
+      if(await settings.getAttribute('open')===null)await settings.locator('summary').click();
+      if(selected.length===count){await page.locator(level===1?'#vocabulary-all':'.lesson-selection > button').click();}
+      else for(let index=0;index<count;index++)await choices.nth(index).setChecked(selected.includes(index+1));
+      for(let index=0;index<count;index++){await expect(choices.nth(index)).toBeEnabled();await expect(choices.nth(index)).toHaveJSProperty('checked',selected.includes(index+1));}
+      await page.locator(level===1?'#vocabulary-start':'.practice-setup button').click();
+      if(level===1){await expect(page.locator('#vocabulary-grid .mixed-card-toggle').first()).toBeVisible();await expect(page.locator('#vocabulary-save-status')).toHaveAttribute('data-state','saved');}
+      else {await expect(page.locator('.mixed-flip').first()).toBeVisible();await expect(page.locator('.save-status')).toHaveAttribute('data-status','saved');}
+      const data=await savedData(page,level),round=level===1?data.mixedVocabulary.round:data.mixed;
+      expect(level===1?round.lessons:round.selected).toEqual(selected);
+      const senseByWord=new Map<string,string>(level===1?[]:lexicons[level].senses.flatMap((sense:any)=>sense.sources.map((source:any)=>[source.wordId,sense.id])));
+      const actual:string[]=level===1?round.senseIds:round.queue.map((id:string)=>senseByWord.get(id));
+      const expected:string[]=level===1?[...new Set<string>(h1Vocabulary.filter((row:any)=>selected.includes(row.lesson)).map((row:any)=>row.senseId))]
+        :lexicons[level].senses.filter((sense:any)=>sense.sources.some((source:any)=>selected.includes(source.lesson))).map((sense:any)=>sense.id);
+      expect(actual.length).toBeGreaterThan(0);expect(new Set(actual).size).toBe(actual.length);expect([...actual].sort()).toEqual([...expected].sort());
+      expect(completionAndHomework(data,level).completed).toEqual([]);expect(Object.keys(level===1?data.homework30.lessons:data.homework)).toHaveLength(0);
+      await page.reload();await ready(page,level);expect(level===1?(await savedData(page,level)).mixedVocabulary.round:(await savedData(page,level)).mixed).toEqual(round);
+      evidence.push({selected,uniqueWords:actual.length,retainedAfterRefresh:true});
+    }
+    expect(errors).toEqual([]);expect(await page.evaluate(k=>localStorage.getItem(k),oldKey)).toBe(oldBytes);
+    await info.attach('free-selection-vocabulary-pools.json',{body:JSON.stringify({level,scopes:evidence,completionInvented:false,oldBytesPreserved:true}),contentType:'application/json'});
   });
 }
 for(const level of [2,3])test(`HSK${level} designated five translation choices render real ABCD options with preserved original answer positions`,async({page})=>{
