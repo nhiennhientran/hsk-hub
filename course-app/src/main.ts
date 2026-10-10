@@ -1068,9 +1068,13 @@ function renderPractice() {
     usableLessons=loaded.filter(l=>accessibleLessons.includes(l.number)),
     selection = new Set((data.mixed?.selected ?? accessibleLessons).filter(n=>accessibleLessons.includes(n))),
     controls = el("details", undefined, "lesson-selection");
-  controls.append(
-    el("summary", copy(`已选${selection.size}课 · 调整范围`, `Đã chọn ${selection.size} bài · Đổi phạm vi`)),
-  );
+  const selectionSummary = el("summary", copy("", ""));
+  function refreshSelectionSummary() {
+    selectionSummary.querySelector('[lang="zh"]')!.textContent = `已选${selection.size}课 · 调整范围`;
+    selectionSummary.querySelector('[lang="vi"]')!.textContent = `Đã chọn ${selection.size} bài · Đổi phạm vi`;
+  }
+  refreshSelectionSummary();
+  controls.append(selectionSummary);
   const choices = el("div", undefined, "lesson-choices");
   for (const n of available) {
     const label = el("label"),
@@ -1079,8 +1083,10 @@ function renderPractice() {
     input.value = String(n);
     input.checked = selection.has(n);
     input.disabled=!accessibleLessons.includes(n);
-    input.onchange = () =>
+    input.onchange = () => {
       input.checked ? selection.add(n) : selection.delete(n);
+      refreshSelectionSummary();
+    };
     label.append(input, el("span", `第${n}课 · Bài ${n}`));
     choices.append(label);
   }
@@ -1088,6 +1094,7 @@ function renderPractice() {
     selection.clear();
     accessibleLessons.forEach((n) => selection.add(n));
     choices.querySelectorAll("input").forEach((i) => (i.checked = !i.disabled));
+    refreshSelectionSummary();
   });
   controls.append(selectAll, choices);
   main.append(controls);
