@@ -31,9 +31,9 @@ export function homework30Group(state: Homework30State, lesson: number, part: Ho
   const row = state.lessons[String(lesson)] ??= {};
   return row[part] ??= { draft: {}, orders: {}, first: null, attempt: null, latest: null, completed: false, history: [] };
 }
-export function homework30CanOpen(state: Homework30State, lesson: number, part: Homework30Part): boolean {
-  const index = HOMEWORK30_PARTS.indexOf(part);
-  return lessonId(lesson) && index >= 0 && HOMEWORK30_PARTS.slice(0, index).every(previous => !!state.lessons[String(lesson)]?.[previous]?.first);
+export function homework30CanOpen(_state: Homework30State, lesson: number, part: Homework30Part): boolean {
+  // Submission history records progress, not permission to enter another part.
+  return lessonId(lesson) && HOMEWORK30_PARTS.includes(part);
 }
 export const homework30Answered = (question: Homework30Question, value: unknown) => legacy.isAnswered(question, value);
 export const homework30Check = (question: Homework30Question, value: unknown) => legacy.check(question, value);
@@ -112,7 +112,6 @@ export function validateHomework30(input: unknown, bank: readonly Homework30Less
       }
     }
   }
-  for (const [id, row] of Object.entries(state.lessons)) for (const part of HOMEWORK30_PARTS) if (row[part]?.first && !homework30CanOpen(state, Number(id), part)) fail();
   return state;
 }
 export function homework30LessonTotals(state: Homework30State, lesson: number) {

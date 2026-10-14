@@ -39,14 +39,64 @@ test('view reads and rejected actions do not create or dirty empty lesson groups
   for (let lesson = 1; lesson <= 15; lesson++) {
     const choice = ctx.controller(lesson, 'choice'); const sort = ctx.controller(lesson, 'sort');
     assert.equal(choice.read().group, null); assert.equal(choice.read().locked, false);
-    assert.equal(sort.read().group, null); assert.equal(sort.read().locked, true);
-    assert.equal(sort.ensureSortOrders().reason, 'locked'); assert.equal(sort.submit().reason, 'locked');
+    assert.equal(sort.read().group, null); assert.equal(sort.read().locked, false);
+    assert.equal(sort.submit().reason, 'missing'); assert.equal(sort.submit().missing.length, 5);
     assert.equal(choice.submit().reason, 'missing'); assert.equal(choice.submit().missing.length, 5);
     assert.equal(choice.answer('constructor', 0).reason, 'unknown');
     assert.equal(choice.restart().reason, 'invalid');
   }
   assert.deepEqual(ctx.store.snapshot().data.homework.lessons, {});
   assert.equal(ctx.store.snapshot().status, 'empty'); assert.equal(ctx.changes(), 0);
+});
+
+test('all legacy homework groups open independently while invalid state, lessons and kinds remain rejected', () => {
+  const state = engine.blank();
+  for (let lesson = 1; lesson <= 15; lesson++) for (const kind of engine.KINDS) {
+    assert.equal(engine.canOpen(state, lesson, kind), true, `${lesson}:${kind}`);
+  }
+  for (const lesson of [0, 16, -1, 1.5, '01', 'constructor', null]) {
+    assert.equal(engine.canOpen(state, lesson, 'sort'), false);
+  }
+  assert.equal(engine.canOpen(state, 1, 'constructor'), false);
+  assert.equal(engine.canOpen({...state, app: 'other-app'}, 1, 'sort'), false);
+  assert.equal(engine.canOpen({...state, schema: 999}, 1, 'translation'), false);
+  assert.equal(engine.canOpen({...state, lessons: []}, 1, 'sort'), false);
+  assert.deepEqual(state.lessons, {});
+});
+
+test('sorting and writing can submit before choice and survive save and backup import', async () => {
+  const ctx = setup();
+  const manual = ctx.controller(15, 'translation');
+  fill(manual, q => `独立书写 ${q.id}`);
+  assert.equal(manual.submit().ok, true);
+  const sort = ctx.controller(15, 'sort');
+  assert.equal(sort.ensureSortOrders().ok, true);
+  fill(sort, correctOrder);
+  assert.equal(sort.submit().correct, 5);
+  assert.equal(ctx.store.snapshot().data.homework.lessons['15'].choice, undefined);
+  assert.equal((await ctx.store.save()).ok, true);
+  const restored = setup();
+  assert.equal((await restored.store.confirm(restored.store.previewBackup(ctx.store.exportBackup()))).ok, true);
+  const row = restored.store.snapshot().data.homework.lessons['15'];
+  assert.equal(row.choice, undefined);
+  assert.equal(row.sort.first.correct, 5);
+  assert.equal(row.translation.first.assessment, 'manual');
+  assert.equal(restored.controller(15, 'choice').read().locked, false);
+});
+
+test('compatible legacy sorting submissions are retained without a prior choice submission', () => {
+  const row = structuredClone(bank[0]);
+  row.sort.forEach(q => { q.legacyCompatible = true; });
+  const state = engine.blank();
+  const group = engine.group(state, row.lesson, 'sort');
+  group.draft = Object.fromEntries(row.sort.map(q => [q.id, correctOrder(q)]));
+  assert.equal(engine.submit(state, row.lesson, 'sort', row.sort, at).ok, true);
+  const raw = {schema: 2, lessons: {[row.lesson]: {sort: structuredClone(group)}}};
+  const restored = engine.migrateLegacy(raw, [row], at);
+  assert.equal(restored.lessons[row.lesson].choice, undefined);
+  assert.equal(restored.lessons[row.lesson].sort.first.correct, 5);
+  assert.deepEqual(restored.archive.migration.restoredGroups, ['1:sort']);
+  assert.deepEqual(restored.archive.migration.heldGroups, []);
 });
 
 test('all 75 choice questions accept only the calibrated option among four choices', () => {

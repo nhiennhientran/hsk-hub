@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import legacy from '../src/domain/homework/engine.js';
 import { getHomework30Bank, validateHomework30Bank, homework30Audio } from '../src/services/content/homework30.ts';
-import { HOMEWORK30_PARTS, blankHomework30, homework30Group, submitHomework30, validateHomework30, homework30Check, homework30CourseTotals, restartHomework30 } from '../src/domain/homework30/engine.ts';
+import { HOMEWORK30_PARTS, blankHomework30, homework30Group, homework30CanOpen, submitHomework30, validateHomework30, homework30Check, homework30CourseTotals, restartHomework30 } from '../src/domain/homework30/engine.ts';
 import { createHomework30Controller } from '../src/features/homework/controller30.ts';
 import { createCompatibility } from '../src/services/storage/compatibility.ts';
 import { createStore, STORAGE_KEY } from '../src/services/storage/index.ts';
@@ -58,18 +58,40 @@ test('all 450 distinct questions submit with 375 automatic results and 75 genuin
   assert.equal(homework30CourseTotals(state).automatic.firstCorrect, 375);
   assert.equal(homework30CourseTotals(state).manual.submitted, 75);
 });
-test('read, invalid answers, locked groups and incomplete submissions never dirty or create groups', () => {
+test('every lesson part opens immediately; reads, invalid answers and incomplete submissions never create progress', () => {
   const ctx = setup();
   for (const lesson of bank) for (const part of HOMEWORK30_PARTS) {
     const controller = ctx.controller(lesson.lesson, part); controller.read();
-    assert.equal(controller.read().locked, part !== 'choice');
-    assert.equal(controller.submit().reason, part === 'choice' ? 'missing' : 'locked');
+    assert.equal(controller.read().locked, false);
+    assert.equal(controller.submit().reason, 'missing');
     assert.equal(controller.answer('__proto__', 0).reason, 'unknown');
     if (part === 'choice') assert.equal(controller.answer(lesson.choice[0].id, 9).reason, 'invalid');
   }
   assert.deepEqual(ctx.store.snapshot().data.homework30, blankHomework30()); assert.equal(ctx.changes(), 0);
 });
-test('zero-score completed section unlocks next; restart retains immutable first/latest/history and does not relock', () => {
+test('all 75 parts submit independently and restore without completing earlier parts or lessons', async () => {
+  for (const lesson of bank) for (const part of HOMEWORK30_PARTS) {
+    const ctx = setup(), controller = ctx.controller(lesson.lesson, part);
+    for (const q of lesson[part]) assert.equal(controller.answer(q.id, answer(q)).ok, true);
+    assert.equal(controller.submit().ok, true, `lesson ${lesson.lesson}: ${part}`);
+    assert.equal((await ctx.store.save()).ok, true);
+    ctx.store.reloadDiscardingDraft();
+    const restored = compatibility.validate(ctx.store.snapshot().data).homework30;
+    assert.deepEqual(Object.keys(restored.lessons), [String(lesson.lesson)]);
+    assert.deepEqual(Object.keys(restored.lessons[String(lesson.lesson)]), [part]);
+    assert.equal(restored.lessons[String(lesson.lesson)][part].completed, true);
+    const backup = JSON.parse(ctx.store.exportBackup());
+    assert.deepEqual(compatibility.validate(backup.data).homework30, restored);
+    for (const target of HOMEWORK30_PARTS) assert.equal(homework30CanOpen(restored, lesson.lesson, target), true);
+  }
+});
+test('invalid lesson and part identifiers remain inaccessible without changing progress', () => {
+  const state = blankHomework30(), before = structuredClone(state);
+  for (const lesson of [0, -1, 16, 1.5, NaN, Infinity]) assert.equal(homework30CanOpen(state, lesson, 'choice'), false);
+  for (const part of ['unknown', '__proto__', '', null, undefined]) assert.equal(homework30CanOpen(state, 1, part), false);
+  assert.deepEqual(state, before);
+});
+test('zero-score submissions and restarts preserve free access and immutable first/latest/history', () => {
   const ctx = setup(), controller = ctx.controller(1, 'choice'), lesson = bank[0];
   for (const q of lesson.choice) controller.answer(q.id, (q.answer + 1) % 4);
   const first = controller.submit(); assert.equal(first.correct, 0); assert.equal(controller.submit().reason, 'submitted');
@@ -127,7 +149,6 @@ test('new-state tampering and cross-version answers are rejected rather than acc
     s => s.lessons['1'].translation.latest.correct = 5,
     s => s.lessons['1'].translation.latest.results = {},
     s => s.lessons['1'].choice.completed = false,
-    s => delete s.lessons['1'].choice,
     s => s.lessons['1'].sort.orders[bank[0].sort[0].id] = [0, 0],
     s => s.lessons['16'] = {}, s => s.profile = { ...s.profile, admin: true },
     s => s.lessons['1'].choice.latest.answers.extra = 0,

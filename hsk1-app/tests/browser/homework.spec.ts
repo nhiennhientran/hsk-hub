@@ -107,8 +107,9 @@ test.describe('complete homework course', () => {
         if (lesson !== start) await page.locator('#lesson-select').selectOption(String(lesson));
         await ready(page, lesson, 'choice');
         await expect(page.locator('[data-question-id]')).toHaveCount(5);
-        await expect(page.locator('[data-homework-part="sort"]')).toHaveAttribute('data-locked', 'true');
-        // Every answer can be wrong: submission, rather than a passing score, opens the next part.
+        await expect(page.locator('[data-homework-part="sort"]')).toHaveAttribute('data-locked', 'false');
+        await expect(page.locator('[data-homework-part="translation"]')).toHaveAttribute('data-locked', 'false');
+        // Every part is available before submission; wrong answers still retain their own scores.
         await fillChoice(page, row, true);
         await page.locator('#submit-homework').click();
         const choice = await savedGroup(page, lesson, 'choice');

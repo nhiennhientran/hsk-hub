@@ -1,6 +1,7 @@
 /* Pure ESM adaptation of new-hsk1/hsk1/stage2/engine.js.
  * Source SHA-256: 2c0f552b815a3c7ae215fee67d187887210d6c5754bbfdb726022760fc8bf12c
- * Only the UMD wrapper and final export change; grading/state rules stay identical. */
+ * Grading/state rules preserve the original adaptation; valid homework groups
+ * are now available independently, without prerequisite submissions. */
 
   const APP = 'hsk1-stage2';
   const KEY = 'ran_hsk1_stage2_v3';
@@ -131,10 +132,7 @@
     const id = lessonNumber(lesson);
     if (id === null || !KINDS.includes(kind) || !record(state) || state.app !== APP ||
         state.schema !== SCHEMA || !record(state.lessons)) return false;
-    if (kind === 'choice' || kind === 'listening') return true;
-    const position = PATH.indexOf(kind);
-    return position > 0 && PATH.slice(0, position).every(previous =>
-      state.lessons[id]?.[previous]?.completed === true && !!state.lessons[id][previous].first);
+    return true;
   }
 
   function assertQuestions(lesson, kind, questions) {
@@ -450,11 +448,6 @@
         }
       }
     }
-    for (const [lesson, row] of Object.entries(state.lessons)) {
-      for (const kind of PATH) {
-        if (row[kind]?.first && !canOpen(state, lesson, kind)) fail('Thứ tự hoàn thành bài tập không hợp lệ.');
-      }
-    }
     // Question-review outcomes are reconstructed from answers, never imported as grades.
     rebuildReviews(state, bankIndex);
     return state;
@@ -524,16 +517,6 @@
           migration.draftOnlyGroups.push(label);
           migration.warnings.push(label + ': ' + error.message);
         }
-      }
-    }
-    for (const [lesson, row] of Object.entries(state.lessons)) {
-      const target = row.sort;
-      if (target?.first && !canOpen(state, lesson, 'sort')) {
-        target.first = null; target.latest = null; target.attempt = null;
-        target.completed = false; target.history = [];
-        const label = lesson + ':sort';
-        migration.heldGroups.push(label);
-        migration.restoredGroups = migration.restoredGroups.filter(item => item !== label);
       }
     }
     // New free-writing groups remain absent and unsubmitted. The entire old
