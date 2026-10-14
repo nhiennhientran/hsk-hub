@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "eef6486d58095c308546c218c201b9b9889b0177",
+  "previousDeploymentCommit": "8e04d352fa731189d364507e89b266da9845010a",
+  "change": "All HSK1/2/3 lessons and homework parts can be accessed independently.",
+  "checks": {
+    "hsk1HomeworkTestsPassed": 25,
+    "sharedAccessHistoryTestsPassed": 13,
+    "sharedIndependentHomeworkTestsPassed": 2,
+    "hsk1IndependentParts": 75,
+    "sharedIndependentParts": 165,
+    "typeScriptCheck": "passed",
+    "productionBuild": "passed",
+    "courseContentManifestUnchanged": true,
+    "liveBrowserAcceptance": "pending"
+  },
+  "files": [
+    {
+      "path": "course-engine/assets/archive-D0f_FAmg.js",
+      "bytes": 21215,
+      "sha256": "a704a8ba970a4e3a08167112304744215073b4c5e0a481a7a4cd7abb2efa8cb1"
+    },
+    {
+      "path": "course-engine/assets/backup-view-HpOW5Ebu.js",
+      "bytes": 9026,
+      "sha256": "b64f46b5702e9f3f8fa84692045c0620c2093e2c2f37f95ab692494a26af2971"
+    },
+    {
+      "path": "course-engine/assets/browser-pair-D1Py6wM9.js",
+      "bytes": 10817,
+      "sha256": "70e190a456e3f11bae38563587055f5eb534c9efd696ad830ac42e4c9587e464"
+    },
+    {
+      "path": "course-engine/assets/compatibility-Bk5QQu_5.js",
+      "bytes": 36748,
+      "sha256": "82daf75fc643e2fcd56a9901bd3f10869495b9e455005ef9fea870d83f87fdfe"
+    },
+    {
+      "path": "course-engine/assets/content-BHt6P7jQ.js",
+      "bytes": 1030,
+      "sha256": "50acdb608e42480f068632fb8e4acafc1c320014e71ec4ddc19e78b1dea9cade"
+    },
+    {
+      "path": "course-engine/assets/content-DYnMBnmi.js",
+      "bytes": 853415,
+      "sha256": "7d8df02dd0bff8e963fbdabeffdbea635dabd6d4f0508ea1d850594d57fc6159"
+    },
+    {
+      "path": "course-engine/assets/data-panel-mUPg5jVu.js",
+      "bytes": 8988,
+      "sha256": "31179ab50a7564138f9576472f665017af142a343cc7366c60ce25a4f2ea4116"
+    },
+    {
+      "path": "course-engine/assets/dom-Dzm4YJ9g.js",
+      "bytes": 478,
+      "sha256": "84c07969e5b67437a48e56969edb2e2e6b60bd6d48a89998978ecd383f7c0ae1"
+    },
+    {
+      "path": "course-engine/assets/hanzi-1-yNQsFk.js",
+      "bytes": 55107,
+      "sha256": "a24107107cad2f55f052ad8f481b1432e880f9b3dc20547c1c8913b894de7998"
+    },
+    {
+      "path": "course-engine/assets/home-CEUmipvv.js",
+      "bytes": 4293,
+      "sha256": "8e75d7f5715e9fb1792582946c5c42df76ba1078b9461ce8be25488ccf85eaad"
+    },
+    {
+      "path": "course-engine/assets/homework-Dcv3hbzQ.js",
+      "bytes": 1815,
+      "sha256": "60233cb7e77f4c89dfc005521f0f55d394f2ced7ab8f85029b115d1b4d1feb5e"
+    },
+    {
+      "path": "course-engine/assets/homework-_PjNqH43.js",
+      "bytes": 36439,
+      "sha256": "43d25feafaa630160228b221dafda2d9d846efb8a7cc179195d260e5ea89bce7"
+    },
+    {
+      "path": "course-engine/assets/homework30-BNKtr93z.js",
+      "bytes": 613906,
+      "sha256": "89bf9917d2f8497b463cce4b53d6d8947b01a47bd25a9e47688032ad4dda3438"
+    },
+    {
+      "path": "course-engine/assets/index-BAQ7MNOs.js",
+      "bytes": 657378,
+      "sha256": "6cd44c19b3c5b68a1e753fc56f3e4a4e4588a4ed2c9b5d3a62dbd835c2d962e3"
+    },
+    {
+      "path": "course-engine/assets/listening-5j4iLK7O.js",
+      "bytes": 16611,
+      "sha256": "82793899062a4580d2f5f3f93acd5f79b860cb7af4abd72fb59951cba752f805"
+    },
+    {
+      "path": "course-engine/assets/listening-DSp8InU7.js",
+      "bytes": 6035,
+      "sha256": "20a755437c9f726a461c302c79af8b691fdda334f5e60e8edcd1613465c3a2ae"
+    },
+    {
+      "path": "course-engine/assets/official-vi-revisions-C_Jvwien.js",
+      "bytes": 24950,
+      "sha256": "5b4b49f75d7b4eb7d56c4d8c1fc5bfd3a21c3b7c5ee698eea3387a9b60a5f9c5"
+    },
+    {
+      "path": "course-engine/assets/pair-panel-Bc65vSGQ.js",
+      "bytes": 8381,
+      "sha256": "e25fc8fd0a2413fc1e1353f4c8f258ac45489ada66a279df025f5561be7d9869"
+    },
+    {
+      "path": "course-engine/assets/progress-BsdVLQSj.js",
+      "bytes": 3139,
+      "sha256": "7fc6c47b379b8a9cf70abc81172c4d8b98ba9fe904940694aa59382ac39158ca"
+    },
+    {
+      "path": "course-engine/assets/progress-DAenqQmt.js",
+      "bytes": 24518,
+      "sha256": "f6e4688c2ce5dc0b5461a8ce2707a2336210262baf2b483aac6866ae6b342f8f"
+    },
+    {
+      "path": "course-engine/assets/review-DhFywgTv.js",
+      "bytes": 87,
+      "sha256": "89e6435a0b91dd95bf60d6bf06d7b503ad8113fc1dd3b82862f91e216d375c5b"
+    },
+    {
+      "path": "course-engine/assets/session-yELt27pi.js",
+      "bytes": 2369,
+      "sha256": "7a70cc48c165bc6d42d371f57cec67e11f0473a0da637d0184d128e9cedda5d8"
+    },
+    {
+      "path": "course-engine/assets/source-activities-Dex2tW8i.js",
+      "bytes": 32567,
+      "sha256": "eec2c03e103b60b7d4617259de563325f920ec4c4c8a03dfa5e35f9b9d19d06a"
+    },
+    {
+      "path": "course-engine/assets/store-BJjwfVWl.js",
+      "bytes": 8982,
+      "sha256": "3b76de170a900ab6b1c128dab7dbd55afceaf93165b5bc2268f91efa21018b4e"
+    },
+    {
+      "path": "course-engine/assets/textbook-DKQG_EJm.js",
+      "bytes": 21947,
+      "sha256": "361bebca945d64e9660ae72a2b761ebf3c3626980a95f6aaa6592c4b801dc5c1"
+    },
+    {
+      "path": "course-engine/assets/textbook-DNLRIxZU.js",
+      "bytes": 34784,
+      "sha256": "97bf9920a701f28af86fcae91c1f30c04a5f02afc7dbb343b85b11f12eef4a03"
+    },
+    {
+      "path": "course-engine/assets/ui-CehOE742.js",
+      "bytes": 346,
+      "sha256": "0059c5faa4ee10d85b4bff7809b26a9a9dcb4cc732d6c0ddac706841c59a7424"
+    },
+    {
+      "path": "course-engine/assets/vi-presentation-state-DAworYAB.js",
+      "bytes": 9767,
+      "sha256": "8d72e9df9e001ad1b871cf291979e9ec443f96c2169cf4b63c46ff47ee884dc3"
+    },
+    {
+      "path": "course-engine/assets/view-BHVY1_VC.js",
+      "bytes": 24342,
+      "sha256": "fb1086aaffb05dba191426a8a0f3d0d0e6e69a2e6eaefa92d4fee75a4fd79137"
+    },
+    {
+      "path": "course-engine/assets/vocabulary-J44Oi-oS.js",
+      "bytes": 91,
+      "sha256": "4a7bfcabc4a35b867f72c2776c66e7a856322c4cea27f66e9203cd9d23b30cfb"
+    },
+    {
+      "path": "index.html",
+      "bytes": 581,
+      "sha256": "c011735522564f27d71f43f0168cfc2b41d764191dc972c67b1f28880a13ab77"
+    },
+    {
+      "path": "new-hsk1/index.html",
+      "bytes": 585,
+      "sha256": "c90693afafd4ab8e792b64233ff032b277d317175f855732e1ea4557f434b9e6"
+    },
+    {
+      "path": "new-hsk1/hsk1/index.html",
+      "bytes": 594,
+      "sha256": "9ef38fa3a981c634f7f55a356b2b5fedce5eee1752aee9ffb9118654986ed472"
+    },
+    {
+      "path": "new-hsk1/hsk1/learning.html",
+      "bytes": 594,
+      "sha256": "9ef38fa3a981c634f7f55a356b2b5fedce5eee1752aee9ffb9118654986ed472"
+    },
+    {
+      "path": "new-hsk1/hsk1/lesson.html",
+      "bytes": 594,
+      "sha256": "9ef38fa3a981c634f7f55a356b2b5fedce5eee1752aee9ffb9118654986ed472"
+    },
+    {
+      "path": "new-hsk1/hsk1/lesson9-pilot.html",
+      "bytes": 594,
+      "sha256": "9ef38fa3a981c634f7f55a356b2b5fedce5eee1752aee9ffb9118654986ed472"
+    },
+    {
+      "path": "new-hsk2/index.html",
+      "bytes": 585,
+      "sha256": "d91967f64686ec7885b738a775e8cb21e7826fb6811c98166bdf6b503c1e0ed7"
+    },
+    {
+      "path": "new-hsk2/hsk2/index.html",
+      "bytes": 594,
+      "sha256": "af30ac7b6843cc044afb5ff46855ae9b3d0dd94b9763bad694400cceab1c011b"
+    },
+    {
+      "path": "new-hsk3/index.html",
+      "bytes": 585,
+      "sha256": "4ee867e3b0df7474023b59ca63d15df168d3a7d9f414cbb718fe571b35d33bb8"
+    },
+    {
+      "path": "new-hsk3/hsk3/index.html",
+      "bytes": 594,
+      "sha256": "148bc7a98c01c86d8acfd1234832fe4dcafe4d3a0fcbe5c963fd4291e16b5332"
+    }
+  ]
+}
