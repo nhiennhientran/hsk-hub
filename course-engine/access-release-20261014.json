@@ -12,7 +12,20 @@
     "typeScriptCheck": "passed",
     "productionBuild": "passed",
     "courseContentManifestUnchanged": true,
-    "liveBrowserAcceptance": "pending"
+    "liveBrowserAcceptance": "passed",
+    "liveLessonsChecked": 48,
+    "liveHomeworkPartsChecked": 240,
+    "byLevel": {
+      "HSK1": 75,
+      "HSK2": 75,
+      "HSK3": 90
+    },
+    "independentSubmissionAndRestore": [
+      1,
+      2,
+      3
+    ],
+    "publishedFilesMatched": 41
   },
   "files": [
     {
@@ -215,5 +228,7 @@
       "bytes": 594,
       "sha256": "148bc7a98c01c86d8acfd1234832fe4dcafe4d3a0fcbe5c963fd4291e16b5332"
     }
-  ]
+  ],
+  "verifiedDeploymentCommit": "93eb4f985be521c536880a9359a9a52e338d2255",
+  "verifiedAt": "2026-10-14T13:07:25.263785+00:00"
 }
